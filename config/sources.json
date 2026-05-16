@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generatedAt": "2026-05-13",
+  "generatedAt": "2026-05-16",
   "note": "Wearables & sports-health intelligence sources. primary_rss = verified RSS/Atom feeds. api_sources = public APIs fetched centrally. websearch_sites = fetched centrally by GitHub Actions via Tavily. title_blacklist = hard filter before LLM sees items.",
   "primary_rss": {
     "academic": [
@@ -320,6 +320,44 @@
         "why": "Health tech subfeed; filtered for wearable and remote-monitoring signal",
         "keywordScope": "title"
       }
+    ],
+    "regulatory": [
+      {
+        "name": "FDA MedWatch Safety Alerts",
+        "category": "regulatory",
+        "priority": "P1",
+        "rssUrl": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/medwatch/rss.xml",
+        "homeUrl": "https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program",
+        "lang": "en",
+        "signalType": "clinical_regulatory",
+        "keywordFilter": [
+          "wearable",
+          "smartwatch",
+          "smart watch",
+          "fitness tracker",
+          "smart ring",
+          "remote monitoring",
+          "digital biomarker",
+          "cgm",
+          "continuous glucose",
+          "glucose",
+          "freestyle libre",
+          "dexcom",
+          "ecg",
+          "electrocardiogram",
+          "holter",
+          "ambulatory",
+          "cardiac monitor",
+          "spo2",
+          "pulse oximeter",
+          "pulse oximetry",
+          "blood pressure",
+          "actigraphy",
+          "patch"
+        ],
+        "keywordScope": "title_summary",
+        "why": "FDA safety alerts for wearable, sensor, CGM, and remote-monitoring products"
+      }
     ]
   },
   "websearch_sites": {
@@ -334,8 +372,23 @@
       {
         "name": "Apple Developer Health & Fitness",
         "sourceCategory": "vendor_websearch",
+        "signalType": "platform_api",
         "query": "site:developer.apple.com health fitness HealthKit WorkoutKit watchOS",
         "homeUrl": "https://developer.apple.com/health-fitness/"
+      },
+      {
+        "name": "Apple HealthKit Updates",
+        "sourceCategory": "vendor_websearch",
+        "signalType": "platform_api",
+        "query": "site:developer.apple.com/documentation/Updates/HealthKit HealthKit updates watchOS WorkoutKit",
+        "homeUrl": "https://developer.apple.com/documentation/Updates/HealthKit"
+      },
+      {
+        "name": "Apple WorkoutKit / watchOS Developer Docs",
+        "sourceCategory": "vendor_websearch",
+        "signalType": "platform_api",
+        "query": "site:developer.apple.com/documentation WorkoutKit OR HealthKit OR watchOS release notes",
+        "homeUrl": "https://developer.apple.com/documentation/workoutkit"
       },
       {
         "name": "Google Blog / Fitbit",
@@ -346,8 +399,23 @@
       {
         "name": "Android Developers Health & Fitness",
         "sourceCategory": "vendor_websearch",
+        "signalType": "platform_api",
         "query": "site:developer.android.com/health-and-fitness Health Connect OR Wear OS OR Health Services",
         "homeUrl": "https://developer.android.com/health-and-fitness"
+      },
+      {
+        "name": "Android Health Connect Release Notes",
+        "sourceCategory": "vendor_websearch",
+        "signalType": "platform_api",
+        "query": "site:developer.android.com/jetpack/androidx/releases/health-connect Health Connect release notes",
+        "homeUrl": "https://developer.android.com/jetpack/androidx/releases/health-connect"
+      },
+      {
+        "name": "Android Health Services / Wear OS Docs",
+        "sourceCategory": "vendor_websearch",
+        "signalType": "platform_api",
+        "query": "site:developer.android.com/health-and-fitness/guides/health-services Health Services Wear OS release notes",
+        "homeUrl": "https://developer.android.com/health-and-fitness/guides/health-services"
       },
       {
         "name": "Samsung Global Newsroom (Digital Health)",
@@ -826,6 +894,179 @@
         "homeUrl": "https://clinicaltrials.gov/",
         "lang": "en",
         "why": "Registry signal for wearable-derived endpoints, remote monitoring, and clinical adoption"
+      }
+    ],
+    "openfda": [
+      {
+        "name": "openFDA Device 510(k): wearable-relevant clearances",
+        "category": "regulatory",
+        "priority": "P1",
+        "kind": "510k",
+        "endpoint": "https://api.fda.gov/device/510k.json",
+        "dateField": "decision_date",
+        "idField": "k_number",
+        "deviceField": "device_name",
+        "companyField": "applicant",
+        "signalType": "clinical_regulatory",
+        "limit": 100,
+        "homeUrl": "https://open.fda.gov/apis/device/510k/",
+        "lang": "en",
+        "keywordFilter": [
+          "wearable",
+          "smartwatch",
+          "smart watch",
+          "fitness tracker",
+          "smart ring",
+          "remote monitoring",
+          "digital biomarker",
+          "cgm",
+          "continuous glucose",
+          "glucose",
+          "freestyle libre",
+          "dexcom",
+          "ecg",
+          "electrocardiogram",
+          "holter",
+          "ambulatory",
+          "cardiac monitor",
+          "spo2",
+          "pulse oximeter",
+          "pulse oximetry",
+          "blood pressure",
+          "actigraphy",
+          "patch"
+        ],
+        "keywordScope": "title_summary",
+        "why": "FDA 510(k) clearance signal for wearable, sensor, and remote-monitoring devices",
+        "excludeKeywordFilter": [
+          "non-wearable",
+          "breast pump",
+          "defibrillator",
+          "spinal cord stimulation",
+          "deep brain stimulation",
+          "implantable pulse generator",
+          "transcatheter heart valve",
+          "heart valve",
+          "catheter",
+          "dental",
+          "surgical",
+          "endoscope",
+          "endoscopic"
+        ]
+      },
+      {
+        "name": "openFDA Device PMA: wearable-relevant approvals",
+        "category": "regulatory",
+        "priority": "P1",
+        "kind": "pma",
+        "endpoint": "https://api.fda.gov/device/pma.json",
+        "dateField": "decision_date",
+        "idField": "pma_number",
+        "deviceField": "trade_name",
+        "companyField": "applicant",
+        "signalType": "clinical_regulatory",
+        "limit": 100,
+        "homeUrl": "https://open.fda.gov/apis/device/pma/",
+        "lang": "en",
+        "keywordFilter": [
+          "wearable",
+          "smartwatch",
+          "smart watch",
+          "fitness tracker",
+          "smart ring",
+          "remote monitoring",
+          "digital biomarker",
+          "cgm",
+          "continuous glucose",
+          "glucose",
+          "freestyle libre",
+          "dexcom",
+          "ecg",
+          "electrocardiogram",
+          "holter",
+          "ambulatory",
+          "cardiac monitor",
+          "spo2",
+          "pulse oximeter",
+          "pulse oximetry",
+          "blood pressure",
+          "actigraphy",
+          "patch"
+        ],
+        "keywordScope": "title_summary",
+        "why": "FDA PMA approval signal for higher-risk sensor and monitoring devices",
+        "excludeKeywordFilter": [
+          "non-wearable",
+          "breast pump",
+          "defibrillator",
+          "spinal cord stimulation",
+          "deep brain stimulation",
+          "implantable pulse generator",
+          "transcatheter heart valve",
+          "heart valve",
+          "catheter",
+          "dental",
+          "surgical",
+          "endoscope",
+          "endoscopic"
+        ]
+      },
+      {
+        "name": "openFDA Device Recall: wearable-relevant recalls",
+        "category": "regulatory",
+        "priority": "P1",
+        "kind": "recall",
+        "endpoint": "https://api.fda.gov/device/recall.json",
+        "dateField": "event_date_initiated",
+        "idField": "product_res_number",
+        "deviceField": "product_description",
+        "companyField": "recalling_firm",
+        "signalType": "clinical_regulatory",
+        "limit": 100,
+        "homeUrl": "https://open.fda.gov/apis/device/recall/",
+        "lang": "en",
+        "keywordFilter": [
+          "wearable",
+          "smartwatch",
+          "smart watch",
+          "fitness tracker",
+          "smart ring",
+          "remote monitoring",
+          "digital biomarker",
+          "cgm",
+          "continuous glucose",
+          "glucose",
+          "freestyle libre",
+          "dexcom",
+          "ecg",
+          "electrocardiogram",
+          "holter",
+          "ambulatory",
+          "cardiac monitor",
+          "spo2",
+          "pulse oximeter",
+          "pulse oximetry",
+          "blood pressure",
+          "actigraphy",
+          "patch"
+        ],
+        "keywordScope": "title_summary",
+        "why": "FDA recall signal for wearable, sensor, CGM, and remote-monitoring product risk",
+        "excludeKeywordFilter": [
+          "non-wearable",
+          "breast pump",
+          "defibrillator",
+          "spinal cord stimulation",
+          "deep brain stimulation",
+          "implantable pulse generator",
+          "transcatheter heart valve",
+          "heart valve",
+          "catheter",
+          "dental",
+          "surgical",
+          "endoscope",
+          "endoscopic"
+        ]
       }
     ]
   }

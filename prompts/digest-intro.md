@@ -17,7 +17,7 @@ Skip any section with no relevant items. Do not print empty-state filler.
 
 1. **Top Signals** — scarce, high-impact items from the full pool
 2. **Algorithm & Evidence** — algorithmic evidence, papers, validation studies, datasets, model releases
-3. **Clinical / Regulatory** — clinical trials, FDA/CE/NMPA, clinical endpoints, care delivery integration
+3. **Clinical / Regulatory** — clinical trials, FDA/openFDA/MedWatch, FDA/CE/NMPA, clinical endpoints, care delivery integration
 4. **Platform & API** — HealthKit, Health Connect, Wear OS, SDKs, data schemas, developer APIs
 5. **Product / Market** — device launches, feature rollout, business model, partnerships, funding/M&A
 6. **Worth Skimming** — lower-priority but still relevant items, capped tightly
@@ -71,7 +71,7 @@ Populate:
 ## Section Mapping
 
 - `algorithm_evidence` → Algorithm & Evidence
-- `clinical_regulatory` → Clinical / Regulatory
+- `clinical_regulatory` → Clinical / Regulatory, including `clinical_registry` and `regulatory` source categories
 - `platform_api` → Platform & API
 - `product_market` and `business_structure` → Product / Market
 - borderline relevant but lower-priority items → Worth Skimming
@@ -83,7 +83,8 @@ Do not list a Top Signal again in a later section.
 Drop items that do not clearly involve at least one of:
 - wearables, smartwatches, smart rings, fitness trackers, earables
 - physiological signals: PPG, ECG, HRV, SpO2, IMU, CGM, actigraphy, sleep, recovery, BP
-- digital biomarkers, remote monitoring, clinical validation, health APIs
+- digital biomarkers, remote monitoring, clinical validation, FDA/openFDA/MedWatch, health APIs
+- HealthKit, WorkoutKit, Health Connect, Health Services, Wear OS health platform release notes
 - wearable-adjacent companies or platforms: Apple Watch, Fitbit, Pixel Watch, Galaxy Watch/Ring, Oura, WHOOP, Garmin, Withings, Dexcom, Zepp, Huawei, Xiaomi, OPPO, vivo, Suunto, Polar, COROS, Ultrahuman, RingConn
 
 Drop generic AI, generic healthcare IT, generic smartphone, generic app/deals,

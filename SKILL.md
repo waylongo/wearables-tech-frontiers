@@ -16,6 +16,7 @@ remixes that feed into a dense digest with Top Signals scarcity scoring.
 - **No ad-hoc topic search.** `/wtf` has no arguments beyond natural-language config/window overrides.
 - **No runtime Tavily/WebSearch.** Vendor fallback is already included in the central feed.
 - **No Chinese industry-media feed.** Output may be Chinese/bilingual, but sources are English/global technical and official sources.
+- **No openFDA adverse-event feed.** FDA 510(k), PMA, recall, and MedWatch are included; individual adverse-event reports are excluded by default.
 - **No X/Twitter coverage.** Use `follow-builders` in parallel if needed.
 - **No telemetry.** Healthcheck output is printed only to the user.
 
@@ -24,7 +25,7 @@ remixes that feed into a dense digest with Top Signals scarcity scoring.
 - **Central feed:** `feed-wearables.json` from `https://raw.githubusercontent.com/waylongo/wearables-tech-frontiers/main`.
 - **Remote prompts/catalog:** loaded from the same GitHub raw base when available.
 - **Local fallback:** shipped `config/sources.json` and `prompts/*.md`.
-- **User override:** `~/.wtf/sources.json` or `~/.wtf/prompts/<file>.md`; if user sources exist, `prepare-digest.js` uses local RSS fallback so private sources are included.
+- **User override:** `~/.wtf/sources.json` or `~/.wtf/prompts/<file>.md`; if user sources exist, `prepare-digest.js` uses local RSS/API fallback so private sources are included.
 
 ---
 
@@ -43,10 +44,12 @@ Tell the user:
 - **学术 / 预印本** — arXiv、PubMed、medRxiv、bioRxiv、npj Digital Medicine、Nature BME、JMIR mHealth、Lancet Digital Health、PLOS Digital Health、IEEE JBHI、Frontiers Digital Health、Sensors
 - **厂商研究** — Apple ML Research / Google Research / DeepMind
 - **临床注册** — ClinicalTrials.gov
+- **监管硬信号** — FDA MedWatch / openFDA device 510(k)、PMA、Recall
 - **行业媒体** — MobiHealthNews / 9to5Mac / 9to5Google / The Verge / Fierce Healthcare（带关键词过滤）
 - **官方 / 厂商 / 行业兜底** — Apple / Google / Samsung / Huawei / Xiaomi / OPPO / vivo / OnePlus / Oura / WHOOP / Garmin / Withings / Dexcom / Abbott / Zepp / Suunto / Polar / COROS / Ultrahuman / RingConn / Levels / MedTech Dive / Rock Health 等（由中心 GitHub Actions 调 Tavily，不在本地运行）
+- **平台 API 变更** — Apple HealthKit / WorkoutKit / watchOS docs、Android Health Connect / Health Services / Wear OS docs
 
-**我不覆盖：** X/Twitter · 中文科技/产业媒体 · 商业融资数据库 API
+**我不覆盖：** X/Twitter · 中文科技/产业媒体 · openFDA adverse event · 商业融资数据库 API
 
 **我怎么工作：** 你输入 `/wtf`，我读取中心 feed，按信号强度生成结构化 digest。不推送、不定时、不在你睡觉时干活。"
 
@@ -64,7 +67,7 @@ cat > ~/.wtf/config.json << 'CFGEOF'
 {
   "windowDays": <1|7|14>,
   "language": "<zh|en|bilingual>",
-  "categories": [<academic, vendor_research, industry_news, clinical_registry>],
+  "categories": [<academic, vendor_research, industry_news, clinical_registry, regulatory>],
   "onboardingComplete": true
 }
 CFGEOF
@@ -111,7 +114,7 @@ Follow the prompts in the JSON:
 - `prompts.digest_intro` — Top Signals rubric + structure + healthcheck footer
 - `prompts.summarize_papers` — academic items
 - `prompts.summarize_official` — vendor_research items
-- `prompts.summarize_news` — industry_news, vendor_websearch, and clinical_registry items
+- `prompts.summarize_news` — industry_news, vendor_websearch, clinical_registry, and regulatory items
 - `prompts.translate` — apply when language is zh or bilingual
 
 Top Signals selection is the single most important decision. Apply the 5-step flow in
@@ -159,7 +162,7 @@ When the user says "换成每日" / "只看学术" / "默认改成 14 天" / "�
 Supported changes:
 - `windowDays`: 日报 / 周报 / 双周报 / 月报 → 1 / 7 / 14 / 30
 - `language`: zh / en / bilingual
-- `categories`: academic / vendor_research / industry_news / clinical_registry
+- `categories`: academic / vendor_research / industry_news / clinical_registry / regulatory
 
 ### One-time window vs persistent default
 

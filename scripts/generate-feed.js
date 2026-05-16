@@ -113,6 +113,20 @@ function withinDays(dateStr, days) {
   return d.getTime() >= now - days * 24 * 60 * 60 * 1000;
 }
 
+function formatOpenFdaDate(date) {
+  const y = date.getUTCFullYear();
+  const m = String(date.getUTCMonth() + 1).padStart(2, '0');
+  const d = String(date.getUTCDate()).padStart(2, '0');
+  return `${y}${m}${d}`;
+}
+
+function parseOpenFdaDate(s) {
+  if (!s) return null;
+  const m = String(s).match(/^(\d{4})(\d{2})(\d{2})$/);
+  if (!m) return s;
+  return `${m[1]}-${m[2]}-${m[3]}`;
+}
+
 function passesKeywordFilter(item, keywords, scope = 'title_summary') {
   if (!keywords?.length) return true;
   const hay = (scope === 'title' ? item.title : `${item.title} ${item.summary}`).toLowerCase();
@@ -125,7 +139,14 @@ function passesBlacklist(title, patterns) {
   return !patterns.some(p => t.includes(p.toLowerCase()));
 }
 
+function passesSourceExcludeFilter(item, patterns) {
+  if (!patterns?.length) return true;
+  const hay = `${item.title || ''} ${item.summary || ''}`.toLowerCase().replace(/[’‘]/g, "'");
+  return !patterns.some(p => hay.includes(p.toLowerCase()));
+}
+
 function inferSignalType(item) {
+  if (item.sourceCategory === 'regulatory') return 'clinical_regulatory';
   const hay = `${item.title || ''} ${item.summary || ''} ${item.sourceName || ''}`.toLowerCase();
   if (item.sourceCategory === 'clinical_registry') return 'clinical_regulatory';
   if (/(fda|510\(k\)|de novo|ce mark|mdr|clearance|approval|clinical trial|clinical validation|registry|endpoint)/i.test(hay)) {
@@ -139,6 +160,59 @@ function inferSignalType(item) {
   }
   if (item.sourceCategory === 'academic' || item.sourceCategory === 'vendor_research') return 'algorithm_evidence';
   return 'product_market';
+}
+
+function openFdaDetailUrl(source, row) {
+  const id = row[source.idField];
+  if (source.kind === '510k' && id) {
+    return `https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=${encodeURIComponent(id)}`;
+  }
+  if (source.kind === 'pma' && id) {
+    return `https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=${encodeURIComponent(id)}`;
+  }
+  if (source.kind === 'recall' && id) {
+    return `https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=${encodeURIComponent(id)}`;
+  }
+  return source.homeUrl;
+}
+
+function mapOpenFdaRow(source, row) {
+  const id = row[source.idField] || null;
+  const date = parseOpenFdaDate(row[source.dateField]);
+  const company = row[source.companyField] || row.applicant || row.recalling_firm || '';
+  const deviceName = row[source.deviceField] || row.device_name || row.trade_name || row.product_description || '';
+  const decisionCode = row.decision_description || row.decision_code || row.supplement_type || null;
+  const recallStatus = row.recall_status || null;
+  const productCode = row.product_code || '';
+  const titlePrefix = source.kind === 'recall'
+    ? 'FDA device recall'
+    : source.kind === 'pma'
+      ? 'FDA PMA decision'
+      : 'FDA 510(k) decision';
+  const titleBits = [
+    titlePrefix,
+    deviceName || source.name,
+    company && `(${company})`
+  ].filter(Boolean);
+  const summaryParts = [
+    id && `Regulatory ID: ${id}`,
+    productCode && `Product code: ${productCode}`,
+    decisionCode && `Decision: ${decisionCode}`,
+    recallStatus && `Recall status: ${recallStatus}`,
+    row.reason_for_recall && `Reason: ${row.reason_for_recall}`,
+    row.generic_name && `Generic name: ${row.generic_name}`
+  ].filter(Boolean);
+  return {
+    title: titleBits.join(' '),
+    url: openFdaDetailUrl(source, row),
+    publishedAt: date,
+    summary: summaryParts.join(' | ').slice(0, 2000),
+    regulatoryId: id,
+    company,
+    deviceName,
+    decisionCode,
+    recallStatus
+  };
 }
 
 async function fetchFeed(source) {
@@ -233,6 +307,25 @@ async function fetchPubMed(source) {
         pmid: id
       };
     }).filter(Boolean);
+    return { source, items, error: null };
+  } catch (err) {
+    return { source, items: [], error: `parse: ${err.message}` };
+  }
+}
+
+async function fetchOpenFda(source, days) {
+  const end = new Date(Date.now() + 24 * 60 * 60 * 1000);
+  const start = new Date(Date.now() - days * 24 * 60 * 60 * 1000);
+  const query = `search=${source.dateField}:[${formatOpenFdaDate(start)}+TO+${formatOpenFdaDate(end)}]`
+    + `&sort=${source.dateField}:desc&limit=${source.limit || 100}`;
+  const url = `${source.endpoint}?${query}`;
+
+  const r = await httpGet(url, 20000);
+  if (r.status === 404) return { source, items: [], error: null };
+  if (!r.ok) return { source, items: [], error: `HTTP ${r.status}${r.error ? ': ' + r.error : ''}` };
+  try {
+    const data = JSON.parse(r.text);
+    const items = (data.results || []).map(row => mapOpenFdaRow(source, row)).filter(it => it.title && it.url);
     return { source, items, error: null };
   } catch (err) {
     return { source, items: [], error: `parse: ${err.message}` };
@@ -386,6 +479,10 @@ async function main() {
         healthcheck.filtered_out_by_keyword++;
         continue;
       }
+      if (!passesSourceExcludeFilter(it, source.excludeKeywordFilter)) {
+        healthcheck.filtered_out_by_keyword++;
+        continue;
+      }
       const pushed = pushUnique(items, {
         ...it,
         sourceName: source.name,
@@ -402,7 +499,8 @@ async function main() {
 
   const apiFetchers = [
     ...(catalog.api_sources?.pubmed || []).map(source => ({ source, fetcher: fetchPubMed })),
-    ...(catalog.api_sources?.clinical_trials || []).map(source => ({ source, fetcher: fetchClinicalTrials }))
+    ...(catalog.api_sources?.clinical_trials || []).map(source => ({ source, fetcher: fetchClinicalTrials })),
+    ...(catalog.api_sources?.openfda || []).map(source => ({ source, fetcher: s => fetchOpenFda(s, args.days) }))
   ];
   const apiResults = await Promise.all(apiFetchers.map(({ source, fetcher }) => fetcher(source)));
   for (const { source, items: sourceItems, error } of apiResults) {
@@ -417,6 +515,14 @@ async function main() {
         healthcheck.filtered_out_by_blacklist++;
         continue;
       }
+      if (source.keywordFilter && !passesKeywordFilter(it, source.keywordFilter, source.keywordScope)) {
+        healthcheck.filtered_out_by_keyword++;
+        continue;
+      }
+      if (!passesSourceExcludeFilter(it, source.excludeKeywordFilter)) {
+        healthcheck.filtered_out_by_keyword++;
+        continue;
+      }
       const item = {
         ...it,
         sourceName: source.name,
@@ -425,7 +531,7 @@ async function main() {
         sourceLang: source.lang || 'en',
         retrievalMethod: 'api'
       };
-      item.signalType = inferSignalType(item);
+      item.signalType = source.signalType || inferSignalType(item);
       const pushed = pushUnique(items, item, seen);
       if (pushed) healthcheck.per_api_source[source.name].kept++;
       else healthcheck.duplicate_urls++;
@@ -459,7 +565,7 @@ async function main() {
           sourceLang: 'en',
           retrievalMethod: 'tavily',
           score: it.score || null,
-          signalType: inferSignalType({
+          signalType: site.signalType || inferSignalType({
             title: it.title,
             summary: it.summary,
             sourceName: site.name,

@@ -1,14 +1,15 @@
 # Summarize News Prompt
 
-For `industry_news` and `vendor_websearch` items, extract the concrete signal.
+For `industry_news`, `vendor_websearch`, `clinical_registry`, and `regulatory`
+items, extract the concrete signal.
 
 ## Relevance gate
 
 **Keep** items where the story is clearly about:
 - A wearable device launch, hardware spec, or firmware/OS update (watchOS, Wear OS, Zepp OS, Amazfit, Oura, WHOOP, Garmin, Suunto, Polar, Coros, Withings, Xiaomi, Huawei, Samsung, Apple)
 - A new health algorithm/feature shipping (sleep stage, arrhythmia, SpO2, BP, CGM, stress, recovery score)
-- Regulatory milestone (FDA clearance, CE mark, 510(k)) for a wearable or digital-health device
-- Platform API change (HealthKit, Health Connect, Samsung Health SDK, Huawei Health Kit)
+- Regulatory milestone or safety signal (FDA clearance, PMA, recall, MedWatch, CE mark, 510(k)) for a wearable, sensor, CGM, or digital-health device
+- Platform API change (HealthKit, WorkoutKit, Health Connect, Health Services, Wear OS, Samsung Health SDK, Huawei Health Kit)
 - Clinical study or partnership announcement linking a consumer device to a health outcome
 - Funding / M&A in the wearable / digital-health / sports-tech category
 
