@@ -108,6 +108,6 @@ Keep this compact:
 ─── 本次运行体检 ───
 · feed：[feed_source] · generatedAt=[remote_feed_generated_at or generatedAt]
 · RSS：[sourcesWithResults]/[sourcesQueried] 成功 · API：[apiSourcesWithResults]/[apiSourcesQueried] 成功 · Tavily：[tavilySitesWithResults]/[tavilySitesQueried] 返回条目
-· 过滤：黑名单 [filtered_out_by_blacklist] · 关键词 [filtered_out_by_keyword] · 时间窗 [filtered_out_by_date]
+· 过滤：黑名单 [filtered_out_by_blacklist] · 关键词 [filtered_out_by_keyword] · 负向 [filtered_out_by_source_exclude] · Tavily 质量 [filtered_out_by_tavily_quality] · cap [tavily_items_capped] · 时间窗 [filtered_out_by_date]
 · Top Signals：[top3_categories as labels] · 分值：[top3_scores]
 ```

@@ -86,5 +86,5 @@ Wearables Tech Frontiers — 2026-05-16
 ─── 本次运行体检 ───
 · feed：local_rss · generatedAt=2026-05-16T12:44:00Z
 · RSS：14/22 成功 · API：2/5 成功 · Tavily：0/0 返回条目
-· 过滤：黑名单 0 · 关键词 646 · 时间窗 30
+· 过滤：黑名单 0 · 关键词 610 · 负向 10 · Tavily 质量 0 · cap 0 · 时间窗 30
 · Top Signals：regulatory milestone / regulatory milestone / platform surface change · 分值：4.8 / 4.8 / 3.6

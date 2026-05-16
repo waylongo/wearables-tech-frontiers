@@ -205,7 +205,20 @@ function parseOpenFdaDate(s) {
 function passesKeywordFilter(item, keywords, scope = 'title_summary') {
   if (!keywords?.length) return true;
   const hay = (scope === 'title' ? item.title : `${item.title} ${item.summary}`).toLowerCase();
-  return keywords.some(k => hay.includes(k.toLowerCase()));
+  return keywords.some(k => keywordMatches(hay, k));
+}
+
+function escapeRe(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function keywordMatches(hay, keyword) {
+  const k = String(keyword || '').toLowerCase();
+  if (!k) return false;
+  if (/^[a-z0-9]+$/.test(k) && k.length <= 4) {
+    return new RegExp(`(^|[^a-z0-9])${escapeRe(k)}([^a-z0-9]|$)`, 'i').test(hay);
+  }
+  return hay.includes(k);
 }
 
 function passesBlacklist(title, patterns) {
@@ -227,6 +240,7 @@ function inferSignalType(item) {
   if (/(fda|510\(k\)|de novo|ce mark|mdr|clearance|approval|clinical trial|clinical validation|registry|endpoint)/i.test(hay)) {
     return 'clinical_regulatory';
   }
+  if (item.sourceCategory === 'academic') return 'algorithm_evidence';
   if (/(api|sdk|developer|healthkit|workoutkit|health connect|health services|schema|permission|release notes|watchos|wear os)/i.test(hay)) {
     return 'platform_api';
   }
@@ -361,7 +375,10 @@ function buildFromRemoteFeed(feed, categories, windowDays, healthcheck) {
   healthcheck.tavily_per_site = feed.healthcheck?.tavily_per_site || {};
   healthcheck.filtered_out_by_blacklist = feed.healthcheck?.filtered_out_by_blacklist || 0;
   healthcheck.filtered_out_by_keyword = feed.healthcheck?.filtered_out_by_keyword || 0;
+  healthcheck.filtered_out_by_source_exclude = feed.healthcheck?.filtered_out_by_source_exclude || 0;
+  healthcheck.filtered_out_by_tavily_quality = feed.healthcheck?.filtered_out_by_tavily_quality || 0;
   healthcheck.filtered_out_by_date = feed.healthcheck?.filtered_out_by_date || 0;
+  healthcheck.tavily_items_capped = feed.healthcheck?.tavily_items_capped || 0;
   healthcheck.top3_categories = null;
   healthcheck.top3_scores = null;
   healthcheck.top3_rejected_candidates = null;
@@ -436,7 +453,7 @@ async function buildFromLocalRss(catalog, categories, windowDays, healthcheck) {
         continue;
       }
       if (!passesSourceExcludeFilter(it, source.excludeKeywordFilter)) {
-        healthcheck.filtered_out_by_keyword++;
+        healthcheck.filtered_out_by_source_exclude++;
         continue;
       }
       const item = {
@@ -477,7 +494,7 @@ async function buildFromLocalRss(catalog, categories, windowDays, healthcheck) {
         continue;
       }
       if (!passesSourceExcludeFilter(it, source.excludeKeywordFilter)) {
-        healthcheck.filtered_out_by_keyword++;
+        healthcheck.filtered_out_by_source_exclude++;
         continue;
       }
       const item = {
@@ -530,8 +547,11 @@ async function main() {
     tavily_per_site: {},
     filtered_out_by_blacklist: 0,
     filtered_out_by_keyword: 0,
+    filtered_out_by_source_exclude: 0,
+    filtered_out_by_tavily_quality: 0,
     filtered_out_by_date: 0,
     filtered_out_by_category: 0,
+    tavily_items_capped: 0,
     top3_categories: null,
     top3_scores: null,
     top3_rejected_candidates: null

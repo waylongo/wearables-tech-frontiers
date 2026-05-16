@@ -103,7 +103,7 @@ TAVILY_API_KEY=... node scripts/generate-feed.js
 · feed 源：remote_feed / local_rss
 · RSS / API：成功/失败统计
 · 厂商站 Tavily 兜底：成功/失败统计
-· 过滤：黑名单 / 关键词 / 时间窗
+· 过滤：黑名单 / 关键词 / 负向规则 / Tavily 质量 / cap / 时间窗
 · Top Signals 类别与分值
 ```
 

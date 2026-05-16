@@ -130,7 +130,20 @@ function parseOpenFdaDate(s) {
 function passesKeywordFilter(item, keywords, scope = 'title_summary') {
   if (!keywords?.length) return true;
   const hay = (scope === 'title' ? item.title : `${item.title} ${item.summary}`).toLowerCase();
-  return keywords.some(k => hay.includes(k.toLowerCase()));
+  return keywords.some(k => keywordMatches(hay, k));
+}
+
+function escapeRe(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function keywordMatches(hay, keyword) {
+  const k = String(keyword || '').toLowerCase();
+  if (!k) return false;
+  if (/^[a-z0-9]+$/.test(k) && k.length <= 4) {
+    return new RegExp(`(^|[^a-z0-9])${escapeRe(k)}([^a-z0-9]|$)`, 'i').test(hay);
+  }
+  return hay.includes(k);
 }
 
 function passesBlacklist(title, patterns) {
@@ -145,6 +158,12 @@ function passesSourceExcludeFilter(item, patterns) {
   return !patterns.some(p => hay.includes(p.toLowerCase()));
 }
 
+function passesUrlExcludeFilter(item, patterns) {
+  if (!patterns?.length) return true;
+  const hay = `${item.url || ''}`.toLowerCase();
+  return !patterns.some(p => hay.includes(p.toLowerCase()));
+}
+
 function inferSignalType(item) {
   if (item.sourceCategory === 'regulatory') return 'clinical_regulatory';
   const hay = `${item.title || ''} ${item.summary || ''} ${item.sourceName || ''}`.toLowerCase();
@@ -152,6 +171,7 @@ function inferSignalType(item) {
   if (/(fda|510\(k\)|de novo|ce mark|mdr|clearance|approval|clinical trial|clinical validation|registry|endpoint)/i.test(hay)) {
     return 'clinical_regulatory';
   }
+  if (item.sourceCategory === 'academic') return 'algorithm_evidence';
   if (/(api|sdk|developer|healthkit|workoutkit|health connect|health services|schema|permission|release notes|watchos|wear os)/i.test(hay)) {
     return 'platform_api';
   }
@@ -451,8 +471,11 @@ async function main() {
     tavily_per_site: {},
     filtered_out_by_blacklist: 0,
     filtered_out_by_keyword: 0,
+    filtered_out_by_source_exclude: 0,
+    filtered_out_by_tavily_quality: 0,
     filtered_out_by_date: 0,
     duplicate_urls: 0,
+    tavily_items_capped: 0,
     top3_categories: null,
     top3_scores: null,
     top3_rejected_candidates: null
@@ -480,7 +503,7 @@ async function main() {
         continue;
       }
       if (!passesSourceExcludeFilter(it, source.excludeKeywordFilter)) {
-        healthcheck.filtered_out_by_keyword++;
+        healthcheck.filtered_out_by_source_exclude++;
         continue;
       }
       const pushed = pushUnique(items, {
@@ -520,7 +543,7 @@ async function main() {
         continue;
       }
       if (!passesSourceExcludeFilter(it, source.excludeKeywordFilter)) {
-        healthcheck.filtered_out_by_keyword++;
+        healthcheck.filtered_out_by_source_exclude++;
         continue;
       }
       const item = {
@@ -547,11 +570,38 @@ async function main() {
   } else {
     const tavilyResults = await Promise.all(tavilySites.map(site => fetchTavilySite(site, tavilyKey, args.days)));
     for (const { site, items: siteItems, error } of tavilyResults) {
-      healthcheck.tavily_per_site[site.name] = { fetched: siteItems.length, kept: 0, error };
+      healthcheck.tavily_per_site[site.name] = { fetched: siteItems.length, qualityKept: 0, finalKept: 0, kept: 0, capped: 0, error };
       if (error) continue;
+      const maxItems = Number.isFinite(site.maxItems) ? site.maxItems : 2;
       for (const it of siteItems) {
         if (!passesBlacklist(it.title, blacklistPatterns)) {
           healthcheck.filtered_out_by_blacklist++;
+          continue;
+        }
+        if (site.keywordFilter && !passesKeywordFilter(it, site.keywordFilter, site.keywordScope)) {
+          healthcheck.filtered_out_by_tavily_quality++;
+          continue;
+        }
+        const tavilyExclude = [
+          ...(catalog.websearch_sites?.excludeKeywordFilter || []),
+          ...(site.excludeKeywordFilter || [])
+        ];
+        if (!passesSourceExcludeFilter(it, tavilyExclude)) {
+          healthcheck.filtered_out_by_tavily_quality++;
+          continue;
+        }
+        const urlExclude = [
+          ...(catalog.websearch_sites?.urlExcludeFilter || []),
+          ...(site.urlExcludeFilter || [])
+        ];
+        if (!passesUrlExcludeFilter(it, urlExclude)) {
+          healthcheck.filtered_out_by_tavily_quality++;
+          continue;
+        }
+        healthcheck.tavily_per_site[site.name].qualityKept++;
+        if (healthcheck.tavily_per_site[site.name].finalKept >= maxItems) {
+          healthcheck.tavily_per_site[site.name].capped++;
+          healthcheck.tavily_items_capped++;
           continue;
         }
         const pushed = pushUnique(items, {
@@ -572,7 +622,10 @@ async function main() {
             sourceCategory: site.sourceCategory || 'vendor_websearch'
           })
         }, seen);
-        if (pushed) healthcheck.tavily_per_site[site.name].kept++;
+        if (pushed) {
+          healthcheck.tavily_per_site[site.name].finalKept++;
+          healthcheck.tavily_per_site[site.name].kept++;
+        }
         else healthcheck.duplicate_urls++;
       }
     }
