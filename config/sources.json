@@ -1,0 +1,392 @@
+{
+  "schema_version": 2,
+  "generatedAt": "2026-05-13",
+  "note": "Wearables & sports-health intelligence sources. primary_rss = verified working RSS/Atom feeds. websearch_sites = fetched centrally by GitHub Actions via Tavily. chinese_media is reserved for a future central extractor. title_blacklist = hard filter before LLM sees items.",
+
+  "primary_rss": {
+    "academic": [
+      {
+        "name": "arXiv eess.SP (Signal Processing)",
+        "category": "academic",
+        "priority": "P1",
+        "rssUrl": "https://rss.arxiv.org/rss/eess.SP",
+        "homeUrl": "https://arxiv.org/list/eess.SP/recent",
+        "lang": "en",
+        "why": "PPG/ECG/IMU algorithm preprints"
+      },
+      {
+        "name": "arXiv cs.HC (Human-Computer Interaction)",
+        "category": "academic",
+        "priority": "P1",
+        "rssUrl": "https://rss.arxiv.org/rss/cs.HC",
+        "homeUrl": "https://arxiv.org/list/cs.HC/recent",
+        "lang": "en",
+        "why": "Wearable UX, sensor fusion, health HCI"
+      },
+      {
+        "name": "medRxiv: new results",
+        "category": "academic",
+        "priority": "P1",
+        "rssUrl": "https://connect.medrxiv.org/medrxiv_xml.php?subject=all",
+        "homeUrl": "https://www.medrxiv.org/",
+        "lang": "en",
+        "why": "Medical preprints — clinical validation"
+      },
+      {
+        "name": "bioRxiv: new results",
+        "category": "academic",
+        "priority": "P2",
+        "rssUrl": "https://connect.biorxiv.org/biorxiv_xml.php?subject=all",
+        "homeUrl": "https://www.biorxiv.org/",
+        "lang": "en",
+        "why": "Bio preprints — physiology, biosignals"
+      },
+      {
+        "name": "npj Digital Medicine",
+        "category": "academic",
+        "priority": "P1",
+        "rssUrl": "https://www.nature.com/npjdigitalmed.rss",
+        "homeUrl": "https://www.nature.com/npjdigitalmed/",
+        "lang": "en",
+        "why": "Flagship digital-medicine journal"
+      },
+      {
+        "name": "Nature Biomedical Engineering",
+        "category": "academic",
+        "priority": "P1",
+        "rssUrl": "https://www.nature.com/natbiomedeng.rss",
+        "homeUrl": "https://www.nature.com/natbiomedeng/",
+        "lang": "en",
+        "why": "New wearable devices, bioelectronics"
+      },
+      {
+        "name": "JMIR mHealth and uHealth",
+        "category": "academic",
+        "priority": "P1",
+        "rssUrl": "https://mhealth.jmir.org/feed/atom",
+        "homeUrl": "https://mhealth.jmir.org/",
+        "lang": "en",
+        "why": "Mobile health / wearables / digital biomarkers journal"
+      },
+      {
+        "name": "Lancet Digital Health",
+        "category": "academic",
+        "priority": "P1",
+        "rssUrl": "https://www.thelancet.com/rssfeed/landig_online.xml",
+        "homeUrl": "https://www.thelancet.com/journals/landig/home",
+        "lang": "en",
+        "why": "Clinical digital health — validation & deployment"
+      },
+      {
+        "name": "PLOS Digital Health",
+        "category": "academic",
+        "priority": "P1",
+        "rssUrl": "https://journals.plos.org/digitalhealth/feed/atom",
+        "homeUrl": "https://journals.plos.org/digitalhealth/",
+        "lang": "en",
+        "why": "Open-access digital health — good coverage of wearables & mHealth"
+      },
+      {
+        "name": "IEEE Journal of Biomedical and Health Informatics (JBHI)",
+        "category": "academic",
+        "priority": "P1",
+        "rssUrl": "https://ieeexplore.ieee.org/rss/TOC6221020.XML",
+        "homeUrl": "https://www.embs.org/jbhi/",
+        "lang": "en",
+        "why": "PPG/ECG/digital biomarker algorithm papers"
+      },
+      {
+        "name": "Frontiers in Digital Health",
+        "category": "academic",
+        "priority": "P2",
+        "rssUrl": "https://www.frontiersin.org/journals/digital-health/rss",
+        "homeUrl": "https://www.frontiersin.org/journals/digital-health",
+        "lang": "en",
+        "why": "Digital health, mHealth, wearables"
+      }
+    ],
+
+    "vendor_research": [
+      {
+        "name": "Apple Machine Learning Research",
+        "category": "vendor_research",
+        "priority": "P1",
+        "rssUrl": "https://machinelearning.apple.com/rss.xml",
+        "homeUrl": "https://machinelearning.apple.com/",
+        "lang": "en",
+        "why": "Apple health algorithm research (HR, fall, sleep)"
+      },
+      {
+        "name": "Google Research Blog",
+        "category": "vendor_research",
+        "priority": "P1",
+        "rssUrl": "https://research.google/blog/rss/",
+        "homeUrl": "https://research.google/blog/",
+        "lang": "en",
+        "why": "Google Health AI / Fitbit research"
+      },
+      {
+        "name": "Google DeepMind Blog",
+        "category": "vendor_research",
+        "priority": "P2",
+        "rssUrl": "https://deepmind.google/blog/rss.xml",
+        "homeUrl": "https://deepmind.google/discover/blog/",
+        "lang": "en",
+        "why": "Occasional wearable / health-AI research"
+      }
+    ],
+
+    "industry_news": [
+      {
+        "name": "MobiHealthNews",
+        "category": "industry_news",
+        "priority": "P1",
+        "rssUrl": "https://www.mobihealthnews.com/feed",
+        "homeUrl": "https://www.mobihealthnews.com/",
+        "lang": "en",
+        "why": "Digital health + wearables"
+      },
+      {
+        "name": "9to5Mac",
+        "category": "industry_news",
+        "priority": "P1",
+        "rssUrl": "https://9to5mac.com/feed/",
+        "homeUrl": "https://9to5mac.com/",
+        "lang": "en",
+        "keywordFilter": ["apple watch", "watchos", "healthkit", "health app", "fitness+", "workout"],
+        "why": "Apple Watch / HealthKit"
+      },
+      {
+        "name": "9to5Google",
+        "category": "industry_news",
+        "priority": "P1",
+        "rssUrl": "https://9to5google.com/feed/",
+        "homeUrl": "https://9to5google.com/",
+        "lang": "en",
+        "keywordFilter": ["pixel watch", "wear os", "fitbit", "health connect"],
+        "why": "Pixel Watch / Wear OS / Fitbit"
+      },
+      {
+        "name": "The Verge",
+        "category": "industry_news",
+        "priority": "P2",
+        "rssUrl": "https://www.theverge.com/rss/index.xml",
+        "homeUrl": "https://www.theverge.com/",
+        "lang": "en",
+        "keywordFilter": ["wearable", "smartwatch", "smart ring", "fitness tracker", "health tracker", "oura", "whoop", "garmin"],
+        "why": "Wide tech — needs keyword filter"
+      }
+    ]
+  },
+
+  "websearch_sites": {
+    "note": "GitHub Actions executes site-scoped Tavily search for these during central feed generation. These are high-signal vendor sources with no reliable RSS.",
+    "sites": [
+      { "name": "Samsung Global Newsroom (Digital Health)", "query": "site:news.samsung.com galaxy watch OR galaxy ring OR samsung health", "homeUrl": "https://news.samsung.com/global/tag/digital-health" },
+      { "name": "Huawei Consumer Press", "query": "site:consumer.huawei.com watch OR band OR health", "homeUrl": "https://consumer.huawei.com/en/press/" },
+      { "name": "Oura Science & Research", "query": "site:ouraring.com research OR clinical OR validation OR algorithm", "homeUrl": "https://ouraring.com/science-and-research" },
+      { "name": "WHOOP / The Locker", "query": "site:whoop.com algorithm OR recovery OR feature OR launch", "homeUrl": "https://www.whoop.com/thelocker/" },
+      { "name": "Garmin Developers", "query": "site:developer.garmin.com connect IQ OR health API OR SDK", "homeUrl": "https://developer.garmin.com/" },
+      { "name": "Withings Newsroom", "query": "site:withings.com press OR launch OR clinical", "homeUrl": "https://www.withings.com/us/en/press" },
+      { "name": "Dexcom News", "query": "site:dexcom.com OR site:investors.dexcom.com CGM OR sensor OR algorithm", "homeUrl": "https://investors.dexcom.com/news/default.aspx" },
+      { "name": "Zepp Press", "query": "site:zepp.com OR site:amazfit.com press OR AI OR recovery", "homeUrl": "https://www.zepp.com/press-releases" }
+    ]
+  },
+
+  "chinese_media": {
+    "note": "Reserved for a future central HTML extractor. Runtime digest does not WebFetch these sources in v1. The listSelector_hint is natural-language guidance, NOT a CSS selector.",
+    "sources": [
+      {
+        "name": "深圳湾 Shenzhenware",
+        "homeUrl": "https://www.shenzhenware.com/news_flash",
+        "priority": "P1",
+        "lang": "zh",
+        "why": "高密度中文硬件创业 / 可穿戴 news flash",
+        "listSelector_hint": "列表页每条通常是一个 <a> 链接指向 /articles/xxx，旁边有相对时间（如'3 小时前'）。没有明确的 class，但每条就是 title + url + 时间戳"
+      },
+      {
+        "name": "IT之家 / 智能手表",
+        "homeUrl": "https://digi.ithome.com/smartwatch",
+        "priority": "P1",
+        "lang": "zh",
+        "why": "中文智能手表新品报道密度最高",
+        "listSelector_hint": "列表页是一组文章卡片，每个含标题 <a>、发布时间、描述摘要。时间格式如 '2026-05-12 14:30' 或相对时间"
+      },
+      {
+        "name": "36氪 / 可穿戴",
+        "homeUrl": "https://36kr.com/search/articles/%E5%8F%AF%E7%A9%BF%E6%88%B4",
+        "priority": "P1",
+        "lang": "zh",
+        "why": "中文创投 / 融资 / 产业分析",
+        "listSelector_hint": "搜索结果页；注意 36kr 有 JS 动态加载，WebFetch 只能拿到 SSR 部分（通常前 10-20 条）。提取 <a> 标题 + 发布时间"
+      }
+    ]
+  },
+
+  "monitor_only": {
+    "note": "No reliable RSS, not in websearch_sites or chinese_media either. Listed as manual-check bookmark hints at digest tail. Users may promote any of these to websearch_sites via local override.",
+    "vendor_official": [
+      { "name": "Apple Newsroom / Watch", "url": "https://www.apple.com/newsroom/topics/watch/" },
+      { "name": "Xiaomi Global Wearables", "url": "https://www.mi.com/global/wearables/" },
+      { "name": "OPPO Newsroom", "url": "https://www.oppo.com/en/newsroom/" },
+      { "name": "vivo Watch 3", "url": "https://www.vivo.com/en/products/watch3" },
+      { "name": "Abbott Biowearables", "url": "https://www.abbott.com/en-us/products-solutions/biowearables" },
+      { "name": "Ultrahuman Blog", "url": "https://blog.ultrahuman.com/blog/" },
+      { "name": "RingConn News", "url": "https://ringconn.com/blogs/news" },
+      { "name": "Suunto News", "url": "https://www.suunto.com/News/" },
+      { "name": "COROS Training Hub", "url": "https://coros.com/traininghub" },
+      { "name": "Polar Training Load", "url": "https://www.polar.com/en/smart-coaching/training-load" }
+    ],
+    "industry_media": [
+      { "name": "Wareable (Cloudflare-blocked)", "url": "https://www.wareable.com/" },
+      { "name": "Gadgets & Wearables", "url": "https://gadgetsandwearables.com/" },
+      { "name": "MedTech Dive", "url": "https://www.medtechdive.com/" },
+      { "name": "Fierce Healthcare Tech", "url": "https://www.fiercehealthcare.com/tech" },
+      { "name": "TechCrunch HealthTech", "url": "https://techcrunch.com/category/healthtech/" },
+      { "name": "Rock Health Insights", "url": "https://rockhealth.com/insights/" }
+    ],
+    "chinese_media_p2": [
+      { "name": "中关村在线 / 智能穿戴", "url": "https://smartwear.zol.com.cn/more/2_1737.shtml" },
+      { "name": "动脉网", "url": "https://www.vbdata.cn/" },
+      { "name": "爱范儿", "url": "https://www.ifanr.com/" },
+      { "name": "极客公园", "url": "https://www.geekpark.net/" }
+    ]
+  },
+
+  "title_blacklist": {
+    "note": "Hard-filter in prepare-digest.js BEFORE sending to LLM. Matched case-insensitively as substrings against item.title. Cuts ~50% of noise on 9to5Mac/Verge feeds.",
+    "patterns": [
+      "deals:",
+      "best deals",
+      "app of the day",
+      "app of the week",
+      "daily deals",
+      "today's best",
+      "magsafe monday",
+      "rumor",
+      "rumored",
+      "may arrive",
+      "could arrive",
+      "allegedly",
+      "leaks",
+      "leaked",
+      "concept",
+      "fan-made",
+      "giveaway",
+      "sweepstake",
+      "gift guide",
+      "accessories roundup",
+      "best accessories",
+      "cyber monday",
+      "black friday"
+    ]
+  },
+
+  "scarcity_taxonomy": {
+    "note": "Top 3 selection rubric. Each Top 3 item MUST be labeled with exactly one category from `categories`, assigned a frequency anchor (`annual`/`quarterly`/`monthly`), and scored as `base_score × anchor_weight`. LLM only does category+anchor matching — it does NOT need historical knowledge (categories define scarcity, not LLM memory). Revise quarterly based on dogfooding.",
+    "anchor_weights": {
+      "annual": 0.9,
+      "quarterly": 0.6,
+      "monthly": 0.3
+    },
+    "anchor_definitions": {
+      "annual": "Once-a-year or rarer event within this category (e.g., FDA's first consumer-grade AFib clearance for a wearable — happens at most once a year globally).",
+      "quarterly": "Few-per-year event within this category (e.g., a major vendor's new regulatory clearance in a new jurisdiction).",
+      "monthly": "Routine-but-still-notable within this category (e.g., another vendor achieving a similar clearance that's already established)."
+    },
+    "categories": [
+      {
+        "id": "regulatory_milestone",
+        "label_zh": "监管里程碑",
+        "label_en": "Regulatory milestone",
+        "base_score": 9,
+        "criteria": "FDA 510(k) / De Novo / PMA, CE mark MDR, NMPA certification, PMDA, TGA — for a wearable health feature. Peer-reviewed multi-site prospective clinical validation also qualifies.",
+        "examples_positive": ["Apple Watch gets FDA clearance for new sleep apnea detection", "Samsung Health Monitor BP approved in US", "Oura ring NMPA class-II certification"],
+        "examples_negative": ["Another vendor clones an already-approved feature in a new region (→ monthly anchor, not annual)", "Pre-print clinical study with n<1000"]
+      },
+      {
+        "id": "open_release",
+        "label_zh": "开源发布",
+        "label_en": "Open release",
+        "base_score": 9,
+        "criteria": "Vendor or academic publicly releases model weights, pretrained foundation model, large labeled dataset, or production-grade SDK/code for wearable/physiological signals. Must be usable (not just a paper claiming 'code coming soon').",
+        "examples_positive": ["Meta releases wearable foundation model weights on HuggingFace", "Stanford/Apple release 1M-ECG labeled dataset", "Google open-sources Fitbit sleep staging model"],
+        "examples_negative": ["Academic paper promises code release but repo is empty", "Small toy dataset (<10k samples)"]
+      },
+      {
+        "id": "structural_change",
+        "label_zh": "结构性变化",
+        "label_en": "Structural change",
+        "base_score": 8,
+        "criteria": "M&A, major exec/founder departure or appointment at a wearable company, large funding round (≥$50M), strategic pivot announcement. Affects competitive landscape or talent flow.",
+        "examples_positive": ["Google acquires Oura", "Shwetak Patel leaves Google Health for X startup", "WHOOP pivots from consumer to B2B-clinical"],
+        "examples_negative": ["Mid-level hire news", "Seed rounds <$10M from unknowns", "Generic press release about 'team expansion'"]
+      },
+      {
+        "id": "new_sensor_modality",
+        "label_zh": "新传感器模态",
+        "label_en": "New sensor modality",
+        "base_score": 8,
+        "criteria": "Consumer wearable first-time integration of a physical/biochemical sensing modality (non-invasive BP, non-invasive glucose, EMG, sweat cortisol, SpHb, real-time hydration, etc.). Must ship in a real product, not just a research paper.",
+        "examples_positive": ["Samsung ships first consumer non-invasive glucose on Galaxy Watch", "Apple adds wrist-based cuffless BP to Series X", "Oura integrates continuous sweat-lactate sensor"],
+        "examples_negative": ["New optical HR sensor iteration in existing form factor (already-done modality)", "Academic prototype for a new sensor — belongs in algorithmic_breakthrough or open_release if qualifying"]
+      },
+      {
+        "id": "algorithmic_breakthrough",
+        "label_zh": "算法突破",
+        "label_en": "Algorithmic breakthrough",
+        "base_score": 7,
+        "criteria": "New SOTA with concrete metric on wearable/physiological task, OR foundation-model / self-supervised training at ≥10M-sample scale, OR on-device breakthrough with specific latency/size/power numbers. Must have reproducible evidence (paper with code, benchmark result).",
+        "examples_positive": ["ECG foundation model at 11M samples with systematic SSL comparison (today's Top 3 example)", "On-device AFib detection at <5ms/inference on Apple S10 chip", "New sleep-stage SOTA on SHHS with 3pp gain"],
+        "examples_negative": ["Incremental +1pp gain with cherry-picked test set", "Retrospective study without wearable data"]
+      },
+      {
+        "id": "large_clinical",
+        "label_zh": "大规模临床",
+        "label_en": "Large-scale clinical",
+        "base_score": 7,
+        "criteria": "Prospective or multi-site clinical study with n≥10,000 participants OR multi-center design, wearable-derived endpoint, peer-reviewed or at top conference.",
+        "examples_positive": ["Ultrahuman Ring N=3086 longitudinal sleep study (today's example — note: n<10k but near-threshold + longitudinal design keeps it in this category at monthly anchor)", "All of Us cohort wearable analysis n>50k", "Apple Heart Study n=419k"],
+        "examples_negative": ["Single-site retrospective n<1000", "Case series, pilot studies"]
+      },
+      {
+        "id": "business_pivot",
+        "label_zh": "商业模式转向",
+        "label_en": "Business model pivot",
+        "base_score": 7,
+        "criteria": "Wearable vendor first-time entry into new go-to-market category: clinical services, B2B/B2B2C, insurance, subscription, EHR integration, pharma partnership. Must be a real product launch, not a trial balloon.",
+        "examples_positive": ["WHOOP launches clinician video visits + HealthEx EHR integration (today's example)", "Oura partners with large insurer for reimbursed rings", "Apple Watch Atrial Fibrillation History gets CMS reimbursement code"],
+        "examples_negative": ["Another D2C price cut", "New subscription tier of existing product"]
+      },
+      {
+        "id": "platform_api_change",
+        "label_zh": "平台 API 变更",
+        "label_en": "Platform / API change",
+        "base_score": 5,
+        "criteria": "HealthKit / Health Connect / Samsung Health SDK / Huawei Health Kit / Wear OS schema, new data type, permission, or interoperability standard (FHIR wearables profile). Must be shipping, not WWDC keynote hype.",
+        "examples_positive": ["HealthKit adds glucose trend data type in watchOS 27", "Health Connect adds cross-app mental-health schema", "New IEEE standard for wearable data exchange ratified"],
+        "examples_negative": ["Rumored API at I/O", "Documentation-only changes"]
+      }
+    ]
+  },
+
+  "keyword_filters": {
+    "wearables_en": [
+      "wearable", "smartwatch", "smartband", "smart ring", "fitness tracker",
+      "apple watch", "pixel watch", "galaxy watch", "galaxy ring",
+      "oura ring", "whoop", "fitbit", "garmin", "withings", "dexcom",
+      "cgm", "continuous glucose", "ppg", "ecg", "ekg", "hrv", "spo2",
+      "sleep tracking", "sleep staging", "heart rate variability",
+      "actigraphy", "activity recognition", "biosignal", "digital biomarker",
+      "on-device health", "health coaching", "remote monitoring"
+    ],
+    "wearables_zh": [
+      "可穿戴", "智能手表", "智能手环", "智能戒指", "健康手表",
+      "运动手表", "血氧", "心率", "睡眠监测", "睡眠分期",
+      "CGM", "连续血糖", "心电", "心率变异",
+      "华为手表", "小米手环", "小米手表", "荣耀手表",
+      "OPPO Watch", "vivo Watch", "Apple Watch", "Galaxy Watch",
+      "Oura", "WHOOP", "Garmin", "Fitbit", "佳明", "Ultrahuman"
+    ]
+  }
+}

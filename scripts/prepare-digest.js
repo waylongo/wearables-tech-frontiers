@@ -1,0 +1,430 @@
+#!/usr/bin/env node
+
+// ============================================================================
+// Wearables Tech Frontiers (wtf) — Prepare Digest
+// ============================================================================
+// Default mode reads the centrally generated GitHub feed. Local RSS fallback is
+// kept for --no-remote, remote failures, and user-private source overrides.
+//
+// Output (stdout): one JSON blob for the agent to remix. The LLM must not refetch
+// article URLs or run vendor websearch; those are handled by the central feed.
+// ============================================================================
+
+import { readFile } from 'fs/promises';
+import { existsSync } from 'fs';
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
+import { homedir } from 'os';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const SKILL_ROOT = join(__dirname, '..');
+const LOCAL_CATALOG = join(SKILL_ROOT, 'config', 'sources.json');
+const LOCAL_PROMPTS_DIR = join(SKILL_ROOT, 'prompts');
+
+const USER_DIR = join(homedir(), '.wtf');
+const USER_CONFIG = join(USER_DIR, 'config.json');
+const USER_CATALOG = join(USER_DIR, 'sources.json');
+const USER_PROMPTS_DIR = join(USER_DIR, 'prompts');
+
+const REMOTE_BASE = 'https://raw.githubusercontent.com/waylongo/wearables-tech-frontiers/main';
+const REMOTE_FEED = `${REMOTE_BASE}/feed-wearables.json`;
+const REMOTE_CATALOG = `${REMOTE_BASE}/config/sources.json`;
+const REMOTE_PROMPTS = `${REMOTE_BASE}/prompts`;
+
+const PROMPT_FILES = [
+  'digest-intro.md',
+  'summarize-papers.md',
+  'summarize-official.md',
+  'summarize-news.md',
+  'summarize-chinese.md',
+  'translate.md'
+];
+
+const USER_AGENT = 'Mozilla/5.0 (wearables-tech-frontiers-skill/2.0)';
+
+function parseArgs() {
+  const args = { days: null, categories: null, noRemote: false };
+  for (const arg of process.argv.slice(2)) {
+    if (arg.startsWith('--days=')) {
+      const n = parseInt(arg.slice(7), 10);
+      if (!Number.isFinite(n) || n < 1 || n > 365) {
+        console.error(JSON.stringify({ status: 'error', message: `--days must be an integer in [1, 365], got: ${arg.slice(7)}` }));
+        process.exit(2);
+      }
+      args.days = n;
+    } else if (arg.startsWith('--category=')) {
+      args.categories = arg.slice(11).split(',').map(s => s.trim()).filter(Boolean);
+    } else if (arg === '--no-remote') {
+      args.noRemote = true;
+    }
+  }
+  return args;
+}
+
+function stripTags(s) {
+  return (s || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/<[^>]+>/g, '').trim();
+}
+
+function decodeEntities(s) {
+  return (s || '')
+    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&apos;/g, "'")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(parseInt(n, 10)));
+}
+
+function extractField(block, tag) {
+  const cdataRe = new RegExp(`<${tag}[^>]*>\\s*<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>\\s*<\\/${tag}>`, 'i');
+  const cdata = block.match(cdataRe);
+  if (cdata) return decodeEntities(cdata[1].trim());
+  const re = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, 'i');
+  const m = block.match(re);
+  if (m) return decodeEntities(stripTags(m[1]));
+  const selfRe = new RegExp(`<${tag}[^>]*href=["']([^"']+)["'][^>]*\\/?>`, 'i');
+  const self = block.match(selfRe);
+  return self ? self[1] : null;
+}
+
+function parseFeed(xml) {
+  const items = [];
+  const blocks = xml.match(/<item[\s>][\s\S]*?<\/item>/gi) || xml.match(/<entry[\s>][\s\S]*?<\/entry>/gi) || [];
+  for (const b of blocks) {
+    const title = extractField(b, 'title');
+    const link = extractField(b, 'link');
+    const pubDate = extractField(b, 'pubDate') || extractField(b, 'published') || extractField(b, 'updated') || extractField(b, 'dc:date');
+    const description = extractField(b, 'description') || extractField(b, 'summary') || extractField(b, 'content') || '';
+    if (!title || !link) continue;
+    items.push({
+      title: title.slice(0, 500),
+      url: link,
+      publishedAt: pubDate || null,
+      summary: description.slice(0, 2000)
+    });
+  }
+  return items;
+}
+
+async function httpGet(url, timeoutMs = 15000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        'User-Agent': USER_AGENT,
+        'Accept': 'application/rss+xml, application/atom+xml, application/xml, application/json, text/xml, */*'
+      }
+    });
+    if (!res.ok) return { ok: false, status: res.status, text: null };
+    return { ok: true, status: res.status, text: await res.text() };
+  } catch (err) {
+    return { ok: false, status: 0, text: null, error: err.message };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function loadCatalog(noRemote, healthcheck) {
+  if (existsSync(USER_CATALOG)) {
+    try {
+      const c = JSON.parse(await readFile(USER_CATALOG, 'utf-8'));
+      healthcheck.catalog_source = 'user_override';
+      return c;
+    } catch (err) {
+      healthcheck.warnings.push(`User catalog unreadable (${err.message}); falling through`);
+    }
+  }
+  if (!noRemote) {
+    const r = await httpGet(REMOTE_CATALOG, 8000);
+    if (r.ok) {
+      try {
+        const c = JSON.parse(r.text);
+        healthcheck.catalog_source = 'remote_catalog';
+        healthcheck.remote_catalog_version = c.generatedAt || null;
+        return c;
+      } catch (err) {
+        healthcheck.warnings.push(`Remote catalog JSON invalid (${err.message}); falling back to local`);
+      }
+    } else {
+      healthcheck.warnings.push(`Remote catalog fetch failed (status=${r.status})${r.error ? ': ' + r.error : ''}; falling back to local`);
+    }
+  }
+  const c = JSON.parse(await readFile(LOCAL_CATALOG, 'utf-8'));
+  healthcheck.catalog_source = 'local_fallback';
+  return c;
+}
+
+async function loadPrompt(filename, noRemote, healthcheck) {
+  const userPath = join(USER_PROMPTS_DIR, filename);
+  if (existsSync(userPath)) {
+    healthcheck.prompt_sources[filename] = 'user_override';
+    return await readFile(userPath, 'utf-8');
+  }
+  if (!noRemote) {
+    const r = await httpGet(`${REMOTE_PROMPTS}/${filename}`, 6000);
+    if (r.ok && r.text) {
+      healthcheck.prompt_sources[filename] = 'remote';
+      return r.text;
+    }
+  }
+  const localPath = join(LOCAL_PROMPTS_DIR, filename);
+  if (existsSync(localPath)) {
+    healthcheck.prompt_sources[filename] = 'local_fallback';
+    return await readFile(localPath, 'utf-8');
+  }
+  healthcheck.prompt_sources[filename] = 'MISSING';
+  return null;
+}
+
+function withinDays(dateStr, days) {
+  if (!dateStr) return true;
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return true;
+  return d.getTime() >= Date.now() - days * 24 * 60 * 60 * 1000;
+}
+
+function passesKeywordFilter(item, keywords) {
+  if (!keywords?.length) return true;
+  const hay = `${item.title} ${item.summary}`.toLowerCase();
+  return keywords.some(k => hay.includes(k.toLowerCase()));
+}
+
+function passesBlacklist(title, patterns) {
+  if (!patterns?.length) return true;
+  const t = (title || '').toLowerCase();
+  return !patterns.some(p => t.includes(p.toLowerCase()));
+}
+
+async function fetchFeed(source) {
+  const r = await httpGet(source.rssUrl);
+  if (!r.ok) return { source, items: [], error: `HTTP ${r.status}${r.error ? ': ' + r.error : ''}` };
+  try {
+    return { source, items: parseFeed(r.text), error: null };
+  } catch (err) {
+    return { source, items: [], error: `parse: ${err.message}` };
+  }
+}
+
+async function loadRemoteFeed(args, healthcheck) {
+  if (args.noRemote) return null;
+  if (existsSync(USER_CATALOG)) {
+    healthcheck.warnings.push('User catalog override detected; skipped central feed so private sources can be fetched locally');
+    return null;
+  }
+  const r = await httpGet(REMOTE_FEED, 10000);
+  if (!r.ok) {
+    healthcheck.warnings.push(`Remote feed fetch failed (status=${r.status})${r.error ? ': ' + r.error : ''}; falling back to local RSS`);
+    return null;
+  }
+  try {
+    return JSON.parse(r.text);
+  } catch (err) {
+    healthcheck.warnings.push(`Remote feed JSON invalid (${err.message}); falling back to local RSS`);
+    return null;
+  }
+}
+
+function categoryAllowed(itemCategory, categories) {
+  if (categories.includes(itemCategory)) return true;
+  if (itemCategory === 'vendor_websearch') {
+    return categories.includes('vendor_research') || categories.includes('industry_news') || categories.includes('vendor_websearch');
+  }
+  return false;
+}
+
+function buildFromRemoteFeed(feed, categories, windowDays, healthcheck) {
+  healthcheck.feed_source = 'remote_feed';
+  healthcheck.remote_feed_generated_at = feed.generatedAt || null;
+  healthcheck.remote_feed_lookback_days = feed.lookbackDays || null;
+  healthcheck.per_source = feed.healthcheck?.per_source || {};
+  healthcheck.tavily_per_site = feed.healthcheck?.tavily_per_site || {};
+  healthcheck.filtered_out_by_blacklist = feed.healthcheck?.filtered_out_by_blacklist || 0;
+  healthcheck.filtered_out_by_keyword = feed.healthcheck?.filtered_out_by_keyword || 0;
+  healthcheck.filtered_out_by_date = feed.healthcheck?.filtered_out_by_date || 0;
+  healthcheck.top3_categories = null;
+  healthcheck.top3_scores = null;
+  healthcheck.top3_rejected_candidates = null;
+
+  const allItems = [];
+  let localFilteredByDate = 0;
+  let localFilteredByCategory = 0;
+  for (const it of feed.items || []) {
+    if (!categoryAllowed(it.sourceCategory, categories)) {
+      localFilteredByCategory++;
+      continue;
+    }
+    if (!withinDays(it.publishedAt, windowDays)) {
+      localFilteredByDate++;
+      continue;
+    }
+    allItems.push(it);
+  }
+  healthcheck.filtered_out_by_date += localFilteredByDate;
+  healthcheck.filtered_out_by_category = localFilteredByCategory;
+  return {
+    items: allItems,
+    stats: {
+      rawItems: feed.stats?.rawItems || (feed.items || []).length,
+      keptItems: allItems.length,
+      sourcesQueried: feed.stats?.sourcesQueried || 0,
+      sourcesWithResults: feed.stats?.sourcesWithResults || 0,
+      sourcesFailed: feed.stats?.sourcesFailed || 0,
+      tavilySitesQueried: feed.stats?.tavilySitesQueried || 0,
+      tavilySitesWithResults: feed.stats?.tavilySitesWithResults || 0,
+      tavilySitesFailed: feed.stats?.tavilySitesFailed || 0
+    },
+    monitorOnlyHints: feed.monitorOnlyHints || null,
+    keywordFilters: feed.keywordFilters || null,
+    scarcityTaxonomy: feed.scarcityTaxonomy || null
+  };
+}
+
+async function buildFromLocalRss(catalog, categories, windowDays, healthcheck) {
+  healthcheck.feed_source = 'local_rss';
+  const sources = [];
+  for (const cat of categories) {
+    for (const s of (catalog.primary_rss?.[cat] || [])) sources.push(s);
+  }
+  if (sources.length === 0) {
+    healthcheck.warnings.push(`No primary_rss sources matched categories: ${categories.join(', ')}`);
+  }
+
+  const fetchResults = await Promise.all(sources.map(fetchFeed));
+  const blacklistPatterns = catalog.title_blacklist?.patterns || [];
+  const allItems = [];
+  for (const { source, items, error } of fetchResults) {
+    healthcheck.per_source[source.name] = { fetched: items.length, kept: 0, error };
+    if (error) continue;
+
+    for (const it of items) {
+      if (!withinDays(it.publishedAt, windowDays)) {
+        healthcheck.filtered_out_by_date++;
+        continue;
+      }
+      if (!passesBlacklist(it.title, blacklistPatterns)) {
+        healthcheck.filtered_out_by_blacklist++;
+        continue;
+      }
+      if (source.keywordFilter && !passesKeywordFilter(it, source.keywordFilter)) {
+        healthcheck.filtered_out_by_keyword++;
+        continue;
+      }
+      allItems.push({
+        ...it,
+        sourceName: source.name,
+        sourceCategory: source.category,
+        sourcePriority: source.priority,
+        sourceLang: source.lang || 'en',
+        retrievalMethod: 'rss'
+      });
+      healthcheck.per_source[source.name].kept++;
+    }
+  }
+
+  return {
+    items: allItems,
+    stats: {
+      rawItems: Object.values(healthcheck.per_source).reduce((s, x) => s + x.fetched, 0),
+      keptItems: allItems.length,
+      sourcesQueried: sources.length,
+      sourcesWithResults: Object.values(healthcheck.per_source).filter(x => x.kept > 0).length,
+      sourcesFailed: Object.values(healthcheck.per_source).filter(x => x.error).length,
+      tavilySitesQueried: 0,
+      tavilySitesWithResults: 0,
+      tavilySitesFailed: 0
+    },
+    monitorOnlyHints: null,
+    keywordFilters: null,
+    scarcityTaxonomy: null
+  };
+}
+
+async function main() {
+  const args = parseArgs();
+  const healthcheck = {
+    catalog_source: null,
+    feed_source: null,
+    remote_catalog_version: null,
+    remote_feed_generated_at: null,
+    remote_feed_lookback_days: null,
+    prompt_sources: {},
+    warnings: [],
+    per_source: {},
+    tavily_per_site: {},
+    filtered_out_by_blacklist: 0,
+    filtered_out_by_keyword: 0,
+    filtered_out_by_date: 0,
+    filtered_out_by_category: 0,
+    top3_categories: null,
+    top3_scores: null,
+    top3_rejected_candidates: null
+  };
+
+  let userCfg = {};
+  if (existsSync(USER_CONFIG)) {
+    try { userCfg = JSON.parse(await readFile(USER_CONFIG, 'utf-8')); }
+    catch (err) { healthcheck.warnings.push(`User config unreadable: ${err.message}`); }
+  }
+  const config = {
+    language: userCfg.language || 'zh',
+    windowDays: userCfg.windowDays || 7,
+    categories: userCfg.categories || ['academic', 'vendor_research', 'industry_news'],
+    onboardingComplete: userCfg.onboardingComplete || false,
+    firstRunShown: userCfg.firstRunShown || false
+  };
+  const windowDays = args.days || config.windowDays;
+  const categories = args.categories || config.categories;
+
+  const catalog = await loadCatalog(args.noRemote, healthcheck);
+  const remoteFeed = await loadRemoteFeed(args, healthcheck);
+  const sourceData = remoteFeed
+    ? buildFromRemoteFeed(remoteFeed, categories, windowDays, healthcheck)
+    : await buildFromLocalRss(catalog, categories, windowDays, healthcheck);
+  healthcheck.stats = sourceData.stats;
+
+  const allItems = sourceData.items.sort((a, b) => (new Date(b.publishedAt || 0).getTime()) - (new Date(a.publishedAt || 0).getTime()));
+  const groupedByCategory = {};
+  for (const it of allItems) (groupedByCategory[it.sourceCategory] ||= []).push(it);
+
+  const prompts = {};
+  for (const f of PROMPT_FILES) {
+    const content = await loadPrompt(f, args.noRemote, healthcheck);
+    const key = f.replace('.md', '').replace(/-/g, '_');
+    if (content) prompts[key] = content;
+  }
+
+  const monitorOnlyHints = sourceData.monitorOnlyHints || {
+    vendor_official: (catalog.monitor_only?.vendor_official || []).slice(0, 8),
+    industry_media: (catalog.monitor_only?.industry_media || []).slice(0, 5),
+    chinese_media_p2: (catalog.monitor_only?.chinese_media_p2 || []).slice(0, 4)
+  };
+
+  const output = {
+    status: 'ok',
+    generatedAt: new Date().toISOString(),
+    windowDays,
+    config: {
+      language: config.language,
+      categories,
+      firstRunShown: config.firstRunShown,
+      onboardingComplete: config.onboardingComplete
+    },
+    stats: sourceData.stats,
+    items: allItems,
+    groupedByCategory,
+    websearchSites: [],
+    chineseMedia: [],
+    monitorOnlyHints,
+    keywordFilters: sourceData.keywordFilters || catalog.keyword_filters || {},
+    scarcityTaxonomy: sourceData.scarcityTaxonomy || catalog.scarcity_taxonomy || null,
+    prompts,
+    healthcheck
+  };
+  console.log(JSON.stringify(output, null, 2));
+}
+
+main().catch(err => {
+  console.error(JSON.stringify({ status: 'error', message: err.message, stack: err.stack }));
+  process.exit(1);
+});
