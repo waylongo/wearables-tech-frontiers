@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "status": "ok",
-  "generatedAt": "2026-05-16T06:09:04.731Z",
+  "generatedAt": "2026-05-16T06:48:18.830Z",
   "lookbackDays": 30,
   "stats": {
-    "rawItems": 692,
-    "keptItems": 226,
+    "rawItems": 798,
+    "keptItems": 232,
     "sourcesQueried": 21,
-    "sourcesWithResults": 13,
-    "sourcesFailed": 2,
+    "sourcesWithResults": 14,
+    "sourcesFailed": 0,
     "apiSourcesQueried": 2,
     "apiSourcesWithResults": 1,
     "apiSourcesFailed": 0,
@@ -17,6 +17,42 @@
     "tavilySitesFailed": 0
   },
   "items": [
+    {
+      "title": "AI-PACE: a framework for integrating AI into medical education",
+      "url": "https://www.nature.com/articles/s41746-026-02768-2",
+      "publishedAt": "2026-05-16",
+      "summary": "",
+      "sourceName": "npj Digital Medicine",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Global spatiotemporal biomechanics using video swin transformer: multiscale validation and clinical impact for keratoconus suspects",
+      "url": "https://www.nature.com/articles/s41746-026-02751-x",
+      "publishedAt": "2026-05-16",
+      "summary": "",
+      "sourceName": "npj Digital Medicine",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Use of AI scribes in UK primary care: a survey of general practitioners",
+      "url": "https://www.nature.com/articles/s41746-026-02762-8",
+      "publishedAt": "2026-05-16",
+      "summary": "",
+      "sourceName": "npj Digital Medicine",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
     {
       "title": "Engagement of Users in Digital Health Applications: Scoping Review",
       "url": "https://mhealth.jmir.org/2026/1/e66002",
@@ -30,6 +66,30 @@
       "signalType": "platform_api"
     },
     {
+      "title": "AI's healthcare future may require a hybrid build-buy approach",
+      "url": "https://www.mobihealthnews.com/video/ais-healthcare-future-may-require-hybrid-build-buy-approach",
+      "publishedAt": "Fri, 15 May 2026 16:03:08 -0400",
+      "summary": "<div><div><iframe allow=\"encrypted-media\" allowfullscreen src=\"https://players.brightcove.net/1824526989001/default_default/index.html?videoId=6395533590112\" title=\"Future patients may expect AI-augmented care\"></iframe></div></div>",
+      "sourceName": "MobiHealthNews",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
+    },
+    {
+      "title": "OpenAI sued over alleged fatal ChatGPT drug advice",
+      "url": "https://www.mobihealthnews.com/news/openai-sued-over-alleged-fatal-chatgpt-drug-advice",
+      "publishedAt": "Fri, 15 May 2026 14:31:21 -0400",
+      "summary": "<p dir=\"ltr\"><em>Editor's note: This article has been updated with a quote from OpenAI to MobiHealthNews.&nbsp;</em></p><p dir=\"ltr\"><a href=\"https://www.mobihealthnews.com/tag/openai\">OpenAI</a> is facing another <a href=\"https://techjusticelaw.org/press-releases/parents-sue-openai-after-chatgpt-medical-advice-results-in-overdose-death-my-son-was-a-normal-kid/\" target=\"_blank\">lawsuit</a> in California by parents alleging their son died from an accidental overdose after ChatGPT \"coached him to mix Kratom and Xanax and provided an unprompted and lethal dosage recommendation.\"</p>",
+      "sourceName": "MobiHealthNews",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
+    },
+    {
       "title": "WhatsApp-Supported Teledentistry to Reinforce Oral Health Promotion Among Older Adults Residing in Rural and Urban Areas: Randomized Controlled Trial",
       "url": "https://mhealth.jmir.org/2026/1/e71251",
       "publishedAt": "2026-05-15T13:30:03-04:00",
@@ -40,6 +100,30 @@
       "sourceLang": "en",
       "retrievalMethod": "rss",
       "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "9amHealth raises $26M for virtual specialty care platform and more funding news",
+      "url": "https://www.mobihealthnews.com/news/9amhealth-raises-26m-virtual-specialty-care-platform-and-more-funding-news",
+      "publishedAt": "Fri, 15 May 2026 10:57:23 -0400",
+      "summary": "<p dir=\"ltr\"><a href=\"https://www.mobihealthnews.com/tag/9amhealth-0\">9amHealth</a>, a virtual specialty care platform for cardiometabolic health, announced $26 million in Series B funding.&nbsp;</p><p dir=\"ltr\">Define Ventures led the round, with new participation from SemperVirens, Catalio Capital Management and NewHealth Ventures.&nbsp;</p><p dir=\"ltr\">Lynne O'Keefe, Define Ventures' founder and managing partner, will join the company's board of directors.&nbsp;</p><p dir=\"ltr\">The funds will be used to support the company's growth and enhance its platform.&nbsp;</p>",
+      "sourceName": "MobiHealthNews",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "platform_api"
+    },
+    {
+      "title": "Combining data can identify high-risk cohorts for SDOH initiatives",
+      "url": "https://www.mobihealthnews.com/video/combining-data-can-identify-high-risk-cohorts-sdoh-initiatives",
+      "publishedAt": "Fri, 15 May 2026 10:11:49 -0400",
+      "summary": "<div><div><iframe allow=\"encrypted-media\" allowfullscreen src=\"https://players.brightcove.net/1824526989001/default_default/index.html?videoId=6395535898112\" title=\"Operationalizing the social determinants of health\"></iframe></div></div>",
+      "sourceName": "MobiHealthNews",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
     },
     {
       "title": "Cross-spectral fusion of thermal and RGB imaging for objective pain estimation",
@@ -76,6 +160,18 @@
       "sourceLang": "en",
       "retrievalMethod": "rss",
       "signalType": "product_market"
+    },
+    {
+      "title": "Malaysia OKs Korean AI for sepsis prediction and more AI briefs",
+      "url": "https://www.mobihealthnews.com/news/asia/malaysia-oks-korean-ai-sepsis-prediction-and-more-ai-briefs",
+      "publishedAt": "Fri, 15 May 2026 08:47:30 -0400",
+      "summary": "<p dir=\"ltr\"><strong>Korean AI for sepsis prediction cleared in Malaysia</strong></p><p dir=\"ltr\">AITRICS from South Korea has received Class C medical device approval from Malaysia's Medical Device Authority for its AI software for predicting patient deterioration.</p><p dir=\"ltr\">The AITRICS-VC, or VitalCare, uses hospital electronic medical record data to identify patients at risk of early deterioration, supporting faster clinical decisions and intervention.</p>",
+      "sourceName": "MobiHealthNews",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "clinical_regulatory"
     },
     {
       "title": "Real-World Performance of Urine β-amyloid Test Kits in Multiple Hospital Clinics and Neighborhood Communities of China",
@@ -426,6 +522,78 @@
       "signalType": "algorithm_evidence"
     },
     {
+      "title": "Continuous negative autoregulation fine-tunes dosage-sensitive transcription factor expression to maintain post-mitotic neuron identity",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.725191v1?rss=1",
+      "publishedAt": "2026-05-15",
+      "summary": "How post-mitotic neurons maintain precise transcription factor (TF) levels throughout life remains a fundamental open question. Here, we challenge the prevailing model of positive autoregulation by demonstrating that UNC-3 (Collier/EBF1-4), a dosage-sensitive TF continuously required for cholinergic motor neuron identity in C. elegans, negatively regulates its own expression. Using genetics, biochemistry, and inducible protein depletion, we show this self-repression occurs directly at the transcriptional level and persists beyond development. CRISPR/Cas9 disruption of negative autoregulation causes motor neuron identity and locomotion defects, establishing its functional necessity. Mechanistically, the UNC-3 DNA-binding domain is required and sufficient for self-repression, with an AlphaFold2 screen implicating chromatin factors as interaction partners. Critically, UNC-3 self-repression is continuously counterbalanced by positive input from the HOX cofactor CEH-20/PBX, revealing a dynamic \"balancing act\" between opposing regulatory inputs that stabilize TF dosage over time. Mutations in the unc-3 ortholog EBF3 cause a neurodevelopmental syndrome, and disease-associated variants disrupt UNC-3 self-repression, revealing a key molecular mechanism underlying the disorder. We propose that negative autoregulation continuously counteracted by positive input represents a broadly applicable principle for maintaining dosage-sensitive TF expression to secure post-mitotic cell identity.",
+      "sourceName": "bioRxiv: new results",
+      "sourceCategory": "academic",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Noisy information about the environment: A source of individual differences within and across generations",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725332v1?rss=1",
+      "publishedAt": "2026-05-15",
+      "summary": "Despite sharing the same genes and the same environment, individuals often develop substantial phenotypic differences. While this pattern has been documented across diverse species and traits, the processes giving rise to this 'stochastic' or non-shared environmental variation remain unclear. Recent mathematical models of development in which phenotypes are gradually constructed may offer some clues. These models show that imperfect environmental cues can generate striking variation in developmental trajectories and adult phenotypes. At the population level, such imperfect cues produce increasing stability of individual differences across ontogeny (e.g. animal personality) and patterned distributions of mature phenotypes (e.g. normal or skewed) that resemble those observed in real organisms. Our paper synthesizes existing models in which stochastic phenotypic variation arises solely as a by-product of mechanisms missing their phenotypic targets because of imperfect cues. We then link these models to related, but independent, mathematical theory exploring the environmental conditions under which stochastic phenotypic variation is favoured by natural selection. Our integration shows that stochastic sampling is often favoured over classic bet-hedging strategies involving non-plastic generalist or specialist strategies. Our findings provide new directions of research on stochastic sampling as a mechanism for adaptive stochastic variation within and across generations.",
+      "sourceName": "bioRxiv: new results",
+      "sourceCategory": "academic",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Dendrite-soma interactions in cultured hippocampal neurons form non-random structural motifs with local presynaptic enrichment and strengthening",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725585v1?rss=1",
+      "publishedAt": "2026-05-15",
+      "summary": "Dendritic arbor morphology is shaped in part by interactions with neighboring dendrites, and its geometry strongly influences the spatial distribution and strength of synapses. These observations raise the possibility that local dendritic contacts help determine where synapses accumulate and strengthen. Previous work in cultured hippocampal neurons showed that dendrite-dendrite contact sites are non-random and associated with local synaptic clustering. Here we asked whether a different type of dendritic contact, formed between a dendrite and the soma of a neighboring neuron, behaves similarly. Using dissociated hippocampal cultures, immunofluorescence imaging, time-lapse microscopy, quantitative image analysis, stochastic spatial simulations, and minimal quantitative modeling, we identified three recurrent classes of dendrite-soma interactions (DSIs): dendrites crossing directly over a neighboring soma, growing tangentially along the soma perimeter, or contacting the proximal region where a neighboring dendrite emerges from the soma. These interactions were abundant, occurred exclusively between different neurons, and showed substantial structural persistence over several days. Their overall frequency exceeded stochastic predictions across culture densities, and two configurations - proximal and tangential contacts - were selectively enriched above random expectation, whereas soma-crossing contacts were largely consistent with stochastic overlap. DSI composition also changed over development, with proximal contacts becoming progressively more prevalent. At DSI sites, synaptophysin-positive puncta were significantly denser and more intense than on non-interacting dendritic segments, consistent with local enrichment and strengthening of presynaptic specializations. Minimal modeling further indicated that biased formation together with developmental stabilization explains the observed organization better than stochastic geometry alone. These findings identify DSIs as n",
+      "sourceName": "bioRxiv: new results",
+      "sourceCategory": "academic",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Spatially resolved transcriptomic identification of thousands of neurons recorded in vivo.",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725413v1?rss=1",
+      "publishedAt": "2026-05-15",
+      "summary": "Transcriptomics has transformed our understanding of the brain, but assigning transcriptomic identities to neurons recorded in vivo remains challenging at scale. Existing platforms can pair transcriptomic identity with two-photon calcium imaging in small populations of approximately 100 neurons, but they require recorded cells to be sparse and therefore cannot be applied to large population recordings. Here, we present coppaFISH 3D, a spatially resolved transcriptomics method, and CASTalign, an in silico alignment framework, which together enable transcriptomic identification of thousands of simultaneously recorded cells. coppaFISH 3D detects hundreds of genes in thick 50m fixed sections while preserving tissue integrity, enabling both 3D registration to in vivo imaging and integration with immunofluorescence labelling. The platform is fully powered by open chemistry and open source software, runs on commodity hardware, and can be performed at very low cost per section. It therefore enables transcriptomic identification of recorded neurons at scale, making it possible to study how transcriptomic identity shapes activity in neural populations.",
+      "sourceName": "bioRxiv: new results",
+      "sourceCategory": "academic",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Word meaning, not surface statistics, is essential for predictive language processing",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.724229v1?rss=1",
+      "publishedAt": "2026-05-15",
+      "summary": "Humans comprehend language incrementally, updating the representation of sentence meaning with each incoming word. These updates are guided by the distance between each perceived word and prior expectations--the prediction error. The alignment between large language models (LLMs) and cortical activity inspires the hypothesis that the cortical computation of prediction error is Surface-based, driven by statistical patterns of word form co-occurrence. In contrast, psycholinguistic models propose that prediction error computation is Meaning-based, driven by word semantics. We used polysemic words with ambiguous semantics to distinguish these models: ambiguity would introduce uncertainty into meaning representations and hence the prediction error, if Meaning-based, but would not affect the prediction error, if Surface-based. We examined how ambiguity influenced prediction error signatures in self-paced reading times and magnetoencephalographic (MEG) neural responses during sentence processing. While an LLM-based proxy of prediction error robustly predicted reading times and neural responses to unambiguous words, it failed to predict either under ambiguity. That is, prediction error computation was altered by uncertainty in word meaning, which supports the Meaning-based model and corroborates the essential role of word meaning in predictive language processing. Our findings highlight an important limitation of LLMs as in silico models of the human language faculty.",
+      "sourceName": "bioRxiv: new results",
+      "sourceCategory": "academic",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "An ordinal Language of Thought supports human memory for regular sequences",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.725160v1?rss=1",
+      "publishedAt": "2026-05-15",
+      "summary": "How do humans store sequences that far exceed working memory capacity? Using visuo-spatial and binary auditory sequences, we previously showed that a Language of Thought (LoT) architecture, in which simple primitives are recursively combined into hierarchical programs, enables efficient storage of structured sequences. Here we ask whether this principle extends to purely ordinal structure: sequences defined by how items repeat and in what order, as in AABBCCAABBCC, independently of their spatial content. Across three experiments, participants reproduced 12-item sequences of spatial locations with various ordinal structures. The minimal description length derived from the LoT model predicted recall accuracy with remarkable precision (r = .96), substantially outperforming Shannon entropy, Lempel-Ziv complexity, chunking models and subjective complexity ratings. Critically, fine-grained analyses of participants' inter-click intervals during reproduction revealed systematic slowdowns at the hierarchical boundaries predicted by the LoT programs, providing a behavioral signature of the underlying mental syntax. These results identify a compact vocabulary of mental primitives, repetition, mirroring, and interleaving, whose composition accounts for the symbolic compression of ordinal structures. For ordinal regularities, human sequence memory operates as a form of program induction, leveraging a domain-general capacity for hierarchical compression to encode complex structured information.",
+      "sourceName": "bioRxiv: new results",
+      "sourceCategory": "academic",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
       "title": "In Silico Structure-Based Interactomic Analysis of the Scaffolding Protein DCAF7",
       "url": "https://www.biorxiv.org/content/10.64898/2026.05.13.724911v1?rss=1",
       "publishedAt": "2026-05-15",
@@ -714,11 +882,59 @@
       "signalType": "algorithm_evidence"
     },
     {
-      "title": "Listianol, a Carotenoid Biosynthesis Inhibitor from a Methylotrophic Bacterium, Alters the Composition of a Phyllosphere Microbial Community",
-      "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.725204v1?rss=1",
+      "title": "Clinical setting-dependent diagnostic accuracy of artificial intelligence and store-and-forward diabetic retinopathy screening: a systematic review and meta-analysis",
+      "url": "https://www.nature.com/articles/s41746-026-02627-0",
       "publishedAt": "2026-05-15",
-      "summary": "In the plant phyllosphere, many bacteria produce pigments to mitigate oxidative stress, including pink-pigmented facultative methylotrophs (PPFMs). PPFMs are prominent members of the phyllosphere microbiota, yet their secondary metabolism remains underexplored. This limits our understanding of how these bacteria interact with other phyllosphere constituents at the molecular level. Here, we develop a screen for PPFM biosynthetic gene clusters and identify listianol, a previously undescribed metabolite that inhibits the pigmentation and growth of diverse bacteria. Listianol blocks carotenoid biosynthesis by targeting the desaturases CrtN and CrtI, revealing a previously unrecognized inhibitory mechanism for a secondary metabolite. This activity sensitizes normally pigmented bacteria to UVB radiation in vitro, and a listianol-producing strain reshapes the composition of a synthetic bacterial community on Arabidopsis thaliana under UVB exposure. Together, these findings establish a platform for exploring PPFM biosynthetic potential and uncover a new metabolite with potential to impact the phyllosphere microbiota composition.",
-      "sourceName": "bioRxiv: new results",
+      "summary": "",
+      "sourceName": "npj Digital Medicine",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "A dynamic risk prediction framework for Alzheimer's disease and related dementias with interpretability",
+      "url": "https://www.nature.com/articles/s41746-026-02732-0",
+      "publishedAt": "2026-05-15",
+      "summary": "",
+      "sourceName": "npj Digital Medicine",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Beyond translation: a patient-centered research agenda for artificial intelligence interpreter services in healthcare",
+      "url": "https://www.nature.com/articles/s41746-026-02764-6",
+      "publishedAt": "2026-05-15",
+      "summary": "",
+      "sourceName": "npj Digital Medicine",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Large language models require a new form of oversight: capability-based monitoring",
+      "url": "https://www.nature.com/articles/s41746-026-02740-0",
+      "publishedAt": "2026-05-15",
+      "summary": "",
+      "sourceName": "npj Digital Medicine",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Development of reconfigurable smart medical wards using integrated components and complex features",
+      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1784460",
+      "publishedAt": "2026-05-15T00:00:00Z",
+      "summary": "Patient treatment in hospitals requires their regular monitoring to assess their health conditions. At the same time, routine measurements are often delayed, missed, or not analyzed, and this situation worsens at night and on weekends due to reduced staffing, which in turn affects the quality of treatment. Innovations in the field of infocommunication technologies allow the healthcare industry to enhance the provided medical services. One of the promising areas is the creation of smart wards so that the patient information will be easily accessible and properly analyzed, with real-time alerts sent to healthcare professionals. Assessing health and diagnosing diseases require data collection and processing techniques that can be implemented by the smart ward modules. The variety of data, situations, diseases, and techniques creates the need to simplify and speed up the development of such modules and to increase the reusability of such development. In this work, we propose a method that allows the creation of applications as integrated components for smart wards for assessing patient health using complex feature techniques. The proposed method provides the necessary software flexibility and reusability for smart wards, enabling dynamic construction of processing pipelines. Thus, it becomes possible to reduce labor costs not only in the application usage but also in the development of such components.",
+      "sourceName": "Frontiers in Digital Health",
       "sourceCategory": "academic",
       "sourcePriority": "P2",
       "sourceLang": "en",
@@ -726,11 +942,11 @@
       "signalType": "algorithm_evidence"
     },
     {
-      "title": "A protease-sensing circuit links neutrophil inflammation to virulence regulation in Streptococcus pyogenes",
-      "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725401v1?rss=1",
-      "publishedAt": "2026-05-15",
-      "summary": "Streptococcus pyogenes (Group A Streptococcus) causes infections with a disproportionately hyperinflammatory response from the host, such as scarlet fever, necrotizing fasciitis, and toxic shock syndrome. Inflammation is specifically driven by S. pyogenes virulence factors, including the protease SpeB, but how inflammation impacts SpeB expression in return during disease is unknown. In this study, we identify a novel interaction between NETosis, a form of inflammatory cell death for neutrophils, and the induction of speB. Specifically, while the cathelicidin peptide LL-37 can repress speB through the two-component regulatory system CovRS, neutrophil proteases released during NETosis relieve repression of speB by degrading another repressor of speB, the bacterial protein Vfr. Furthermore, at high cell densities, SpeB autoregulates its expression through similar degradation of Vfr. Abrogating the formation of NETs or depleting neutrophils resulted in speB repression in vivo, showing the mutual host and pathogen counterattacks collectively lead to the pathological exacerbations characteristic of disease.",
-      "sourceName": "bioRxiv: new results",
+      "title": "Why digital health fails silently: a sociotechnical theory of health information technology–related risk",
+      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1785086",
+      "publishedAt": "2026-05-15T00:00:00Z",
+      "summary": "IntroductionHealth information technology (HIT) is now integral to healthcare delivery, supporting clinical documentation, prescribing, diagnostics, and care coordination. Although these technologies offer substantial benefits, they have also introduced new patient safety risks that are often difficult to anticipate, detect, or manage. Many HIT-related safety problems arise not from isolated technical failures or individual mistakes, but from complex interactions between digital systems, clinical work practices, organisational structures, and governance arrangements. Traditional patient safety models that focus on discrete errors or linear causality are therefore insufficient for explaining how digital risks emerge and persist in practice.Methods/theoretical approachThis article develops a sociotechnical theory of HIT-related risk grounded in patient safety science and sociotechnical systems theory. The theory is informed by empirical insights from incident-based research on HIT-related safety problems and synthesises evidence from real-world incident narratives. It adopts a conceptual, theory-building approach informed by purposive, iterative engagement with the relevant literature on health IT safety, sociotechnical systems, and resilience-oriented patient safety frameworks. Rather than analysing a single dataset, the paper identifies recurring mechanisms through which digital risks arise, remain hidden, propagate across contexts, and become recoverable or not.Results/theoretical propositionsThe proposed theory conceptualises HIT-related risk as a dynamic process involving four interrelated mechanisms: risk emergence, risk concealment, risk propagation, and recoverability. Risks emerge through misalignments between system design, configuration, and clinical workflows; they are concealed by automation, information fragmentation, and adaptive workarounds; they propagate through tightly coupled digital infrastructures and shared dependencies; and their recoverability",
+      "sourceName": "Frontiers in Digital Health",
       "sourceCategory": "academic",
       "sourcePriority": "P2",
       "sourceLang": "en",
@@ -738,47 +954,11 @@
       "signalType": "algorithm_evidence"
     },
     {
-      "title": "Targeting intracellular mycobacteria using novel antibiotic-loaded nanoparticles",
-      "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.725169v1?rss=1",
-      "publishedAt": "2026-05-15",
-      "summary": "Tuberculosis (TB), caused by Mycobacterium tuberculosis (Mtb), remains a significant global health challenge. Currently treatment of drug-sensitive TB, involves a six-month regimen consisting of a combination of four anti-TB drugs, with drug-resistant TB requiring over two years of treatment and additional drugs. As toxicity of anti-TB drugs often leads to poor compliance, disease relapse and the emergence of drug-resistant strains, new strategies to reduce drug toxicity and shorten treatment duration are critical. We report nanocarrier-based drug delivery systems targeting macrophages, which primarily support replication and survival of Mtb. We have developed mannose-functionalized nanoparticles that bind to mannose receptors on macrophages and feature a pH-sensitive core which releases an encapsulated drug in the acidic lysosomal environment of macrophages. Rifampicin (RIF), a main anti-TB drug currently in use clinically, was encapsulated within the nanoparticles. We demonstrate that antibiotic-containing nanocarriers efficiently accumulated in macrophages without causing toxicity. Encapsulated RIF showed enhanced efficacy against both BCG and Mtb in primary macrophages. Biodistribution studies in mice revealed that the nanoparticles have extended circulation time and do not induce toxicity. In addition, the encapsulated RIF showed better targeting of mycobacteria when compared to free RIF in a murine model of mycobacterial infection. Such an enhanced bacterial killing using mannose-functionalised nanocarriers loaded with the key anti-TB drug rifampicin offers excellent potential for TB therapy.",
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic",
-      "sourcePriority": "P2",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Susceptibility of Klebsiella pneumoniae Clinical Isolates in Biofilms to Antibiotics and Assessment of Secondary Drug Effects",
-      "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725361v1?rss=1",
-      "publishedAt": "2026-05-15",
-      "summary": "Biofilms pose a significant challenge to antimicrobial therapy. Bacteria in biofilms differ from planktonic counterpart in their altered metabolism, collective behavior, protective role of extracellular matrix and diversified microbial subpopulations. These attributions significantly influence bioavailability and activity of antibiotics. The presence of bacterial aggregates during acute infections expands the problem to many other conditions previously not discussed in the biofilm context. Klebsiella pneumoniae is a leading cause of life-threatening hospital-acquired infections and is included in the WHO Bacterial Priority Pathogens List due to increasing antimicrobial resistance. The combination of antimicrobial resistance and the ability to form biofilms severely limits the efficacy of antibiotic treatments. In this study, we investigated the in vitro susceptibility of mature biofilms to 13 antimicrobials of K. pneumoniae clinical isolates from a single hospital. The resistance profiles of the local clinical isolates were consistent with the global epidemiology of K. pneumoniae. Minimal biofilm eradication concentrations (MBEC) for mature biofilms were defined with two assays (biomass and metabolic activity measurements) and brought into relation with susceptibility breakpoints and plasma (Cmax). Colistin sulfate, tigecycline, cephalosporins and combination of imipenem with cilastatin were the most potent biomass eradicators, while suppression of metabolic activity was barely reachable. Moreover, we observed a notable increase in metabolic activity upon exposure to sub-MBEC concentrations of antibiotics. Finally, our data broach a subject of antibiotic prioritization with respect to biofilm tolerance.",
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic",
-      "sourcePriority": "P2",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "business_structure"
-    },
-    {
-      "title": "Nef and Vpu protect infected cells from ADCP mediated by plasma from people with HIV-1",
-      "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.725178v1?rss=1",
-      "publishedAt": "2026-05-15",
-      "summary": "The HIV-1 envelope glycoprotein (Env) represents the only viral antigen at the surface of infected cells, making it an ideal target for antibody-based therapies. Most antibodies elicited in people with HIV (PWH) do not recognize Env in its native closed conformation but readily bind to Env when it samples the CD4-bound open conformation. Downregulation of CD4 at the surface of infected cells by the viral accessory proteins Nef and Vpu prevents the premature opening of Env and has been shown to protect infected cells from antibody-dependent cellular cytotoxicity (ADCC) mediated by PWH plasma. Here, we report that deletion of Nef and Vpu from primary infectious molecular clones renders infected cells vulnerable to antibody-dependent cellular phagocytosis (ADCP) mediated by PWH plasma. This is in part linked to the premature engagement of Env with CD4. In agreement with an open Env being vulnerable to ADCP, small CD4 mimetic compounds (CD4mc) sensitize in vitro-infected cells and ex vivo-expanded CD4 T cells to ADCP mediated by autologous monocytes in presence of PWH plasma. This effect was further improved by increasing cell surface Env through IFN-induced BST-2 upregulation.",
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic",
-      "sourcePriority": "P2",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "platform_api"
-    },
-    {
-      "title": "Manipulation of rhizosphere microbiome by Microbacterium sp. GB16_1_BI to promote plant growth.",
-      "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725310v1?rss=1",
-      "publishedAt": "2026-05-15",
-      "summary": "Plant growth promoting microbes enhance developmental progression of the host by influencing its nutrient availability or by deploying secondary metabolites responsible for manipulating the hormonal crosstalk. Microbacterium bengalense sp. nov. GB16_1_BI (Accession number: SRX9280401), a newly identified ammonium releasing Actinomycetota, could enhance plant growth by manipulating rhizosphere bacteria. Amplicon sequencing of the 16S rRNA V3-V4 region from the rhizosphere of the black rice (Chakhao Poireiton) showed that GB16_1_BI could inhibit most bacteria. However, GB16_1_BI inoculation encouraged the growth of rare bacteria specific to waterlogged rice rhizosphere. Analysis of the OTUs using PICRUSt2 (Phylogenetic investigation of communities by reconstruction of unobserved states) showed increased abundance in the marker genes for nitrogen cycling (nifH, nrfA and nrt) but not for nifD or nifK which was also reflected in the ANOSIM analysis in the OTUs of the N-fixing bacteria. Marker genes for methane metabolism (comA, comB, cofG and cofH) were also more abundant in the inoculated plants than the control; however, ANOSIM studies did not support this observation in the OTUs of methane cycling bacteria. Both Methylosinus and Methylocystis, the two most abundant methanotrophic OTUs, are also known to be nitrogen fixers. Hence, GB16_1_BI could influence plant growth predominantly by manipulating nitrogen cycling microbes. The genome sequence as well as untargeted metabolome analyses of GB16_1_BI showed abundance of secondary metabolites with probable antimicrobial activity. GB16_1_BI could utilize varied carbohydrates and amino acid as energy source and form persister-like cells may help it to survive in the soil in absence of the host plant.",
-      "sourceName": "bioRxiv: new results",
+      "title": "A maturity model framework for federated networks of trusted research environments",
+      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1699125",
+      "publishedAt": "2026-05-15T00:00:00Z",
+      "summary": "IntroductionA Trusted Research Environment (TRE) is a highly secure computer system where sensitive data is stored that researchers can access remotely and make use of in a safe setting. TREs can form federated networks when they have overlapping objectives, such as providing data access to the same researchers for the same project. However, there is variation in the design and implementation of TREs. This makes it difficult for these systems to interoperate without guidance on the technical pathway that should be followed to achieve federation maturity, and resources to assess the current state of maturity.MethodsWe evaluated international maturity models for measuring the capabilities of life sciences and healthcare federated digital infrastructures to identify essential components for federation. Merging synonymous and related components resulted in a maturity model framework consisting of six discreet domains that are required for optimal TRE federation.ResultsThe framework comprises of one governance structure domain (governance and policies), one service delivery domain (operations and performance), three technical domains (data management and security, operational infrastructure, clinical/research infrastructure) and one engagement strategy domain (outreach and communication). The TRE community in the UK, convened by DARE UK, have developed a technical blueprint for deploying standalone TREs (called SATRE) and a technical Federated Architecture Blueprint (FAB) for enabling federation between TREs. These blueprints align with many of the maturity model framework's domains.DiscussionWe suggest criteria for implementing the maturity model framework domains and for assessing their relative levels of maturity, and where appropriate reference the recommendations from SATRE and FAB. The maturity model framework can be used as a foundation for assessing the governance, operational and technical readiness of TREs when joining federated networks.",
+      "sourceName": "Frontiers in Digital Health",
       "sourceCategory": "academic",
       "sourcePriority": "P2",
       "sourceLang": "en",
@@ -798,46 +978,10 @@
       "signalType": "platform_api"
     },
     {
-      "title": "Why digital health fails silently: a sociotechnical theory of health information technology–related risk",
-      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1785086",
-      "publishedAt": "2026-05-15T00:00:00Z",
-      "summary": "IntroductionHealth information technology (HIT) is now integral to healthcare delivery, supporting clinical documentation, prescribing, diagnostics, and care coordination. Although these technologies offer substantial benefits, they have also introduced new patient safety risks that are often difficult to anticipate, detect, or manage. Many HIT-related safety problems arise not from isolated technical failures or individual mistakes, but from complex interactions between digital systems, clinical work practices, organisational structures, and governance arrangements. Traditional patient safety models that focus on discrete errors or linear causality are therefore insufficient for explaining how digital risks emerge and persist in practice.Methods/theoretical approachThis article develops a sociotechnical theory of HIT-related risk grounded in patient safety science and sociotechnical systems theory. The theory is informed by empirical insights from incident-based research on HIT-related safety problems and synthesises evidence from real-world incident narratives. It adopts a conceptual, theory-building approach informed by purposive, iterative engagement with the relevant literature on health IT safety, sociotechnical systems, and resilience-oriented patient safety frameworks. Rather than analysing a single dataset, the paper identifies recurring mechanisms through which digital risks arise, remain hidden, propagate across contexts, and become recoverable or not.Results/theoretical propositionsThe proposed theory conceptualises HIT-related risk as a dynamic process involving four interrelated mechanisms: risk emergence, risk concealment, risk propagation, and recoverability. Risks emerge through misalignments between system design, configuration, and clinical workflows; they are concealed by automation, information fragmentation, and adaptive workarounds; they propagate through tightly coupled digital infrastructures and shared dependencies; and their recoverability",
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic",
-      "sourcePriority": "P2",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Development of reconfigurable smart medical wards using integrated components and complex features",
-      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1784460",
-      "publishedAt": "2026-05-15T00:00:00Z",
-      "summary": "Patient treatment in hospitals requires their regular monitoring to assess their health conditions. At the same time, routine measurements are often delayed, missed, or not analyzed, and this situation worsens at night and on weekends due to reduced staffing, which in turn affects the quality of treatment. Innovations in the field of infocommunication technologies allow the healthcare industry to enhance the provided medical services. One of the promising areas is the creation of smart wards so that the patient information will be easily accessible and properly analyzed, with real-time alerts sent to healthcare professionals. Assessing health and diagnosing diseases require data collection and processing techniques that can be implemented by the smart ward modules. The variety of data, situations, diseases, and techniques creates the need to simplify and speed up the development of such modules and to increase the reusability of such development. In this work, we propose a method that allows the creation of applications as integrated components for smart wards for assessing patient health using complex feature techniques. The proposed method provides the necessary software flexibility and reusability for smart wards, enabling dynamic construction of processing pipelines. Thus, it becomes possible to reduce labor costs not only in the application usage but also in the development of such components.",
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic",
-      "sourcePriority": "P2",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
       "title": "Why health information technology safety problems remain invisible",
       "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1785141",
       "publishedAt": "2026-05-15T00:00:00Z",
       "summary": "",
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic",
-      "sourcePriority": "P2",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "A maturity model framework for federated networks of trusted research environments",
-      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1699125",
-      "publishedAt": "2026-05-15T00:00:00Z",
-      "summary": "IntroductionA Trusted Research Environment (TRE) is a highly secure computer system where sensitive data is stored that researchers can access remotely and make use of in a safe setting. TREs can form federated networks when they have overlapping objectives, such as providing data access to the same researchers for the same project. However, there is variation in the design and implementation of TREs. This makes it difficult for these systems to interoperate without guidance on the technical pathway that should be followed to achieve federation maturity, and resources to assess the current state of maturity.MethodsWe evaluated international maturity models for measuring the capabilities of life sciences and healthcare federated digital infrastructures to identify essential components for federation. Merging synonymous and related components resulted in a maturity model framework consisting of six discreet domains that are required for optimal TRE federation.ResultsThe framework comprises of one governance structure domain (governance and policies), one service delivery domain (operations and performance), three technical domains (data management and security, operational infrastructure, clinical/research infrastructure) and one engagement strategy domain (outreach and communication). The TRE community in the UK, convened by DARE UK, have developed a technical blueprint for deploying standalone TREs (called SATRE) and a technical Federated Architecture Blueprint (FAB) for enabling federation between TREs. These blueprints align with many of the maturity model framework's domains.DiscussionWe suggest criteria for implementing the maturity model framework domains and for assessing their relative levels of maturity, and where appropriate reference the recommendations from SATRE and FAB. The maturity model framework can be used as a foundation for assessing the governance, operational and technical readiness of TREs when joining federated networks.",
       "sourceName": "Frontiers in Digital Health",
       "sourceCategory": "academic",
       "sourcePriority": "P2",
@@ -1072,138 +1216,6 @@
       "sourceLang": "en",
       "retrievalMethod": "rss",
       "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Google’s Fitbit Air is super comfortable, but its AI coach is already hallucinating",
-      "url": "https://9to5google.com/2026/05/14/google-fitbit-air-initial-impressions/",
-      "publishedAt": "Thu, 14 May 2026 16:30:00 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/google-fitbit-air-hands-on-1.jpg?quality=82&strip=all&w=1600\" /></div><p>What should a modern fitness tracker be in 2026? With smartwatches readily available — and for not much more than your run-of-the-mill Fitbit — it’s a tricky proposition, especially for <a href=\"https://9to5google.com/2026/02/12/pixel-watch-4-long-term-review/\">brands like Google that live in both spaces</a>. The <a href=\"https://store.google.com/product/google_fitbit_air?hl=en-US\">Fitbit Air</a> feels like an admission from Google that Whoop, the obvious competitor for something like this, is on the right path, offering a minimalist band that exists to gather data, not to serve as a miniature wrist-based computer. So far, I’m liking what I’m seeing from my time with the device, but not without some unsurprising concerns surrounding its AI coach.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,fitbit-air\" data-layer-viewtype=\"unknown\" data-post-id=\"714677\" href=\"https://9to5google.com/2026/05/14/google-fitbit-air-initial-impressions/#more-714677\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "Fitbit Air has status light & double-tap gesture, gets Whoop size comparison",
-      "url": "https://9to5google.com/2026/05/10/fitbit-air-whoop-size/",
-      "publishedAt": "Sun, 10 May 2026 19:46:04 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Fitbit-Air-Lavender-Performance-Loop.jpg?quality=82&strip=all&w=1600\" /></div><p>The hardware design of the <a href=\"https://9to5google.com/2026/05/07/fitbit-air-launch/\" type=\"post\" id=\"713649\">Fitbit Air</a> is quite straightforward, but there are two features that aren’t particularly obvious until you start wearing the wearable.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air\" data-layer-viewtype=\"unknown\" data-post-id=\"714375\" href=\"https://9to5google.com/2026/05/10/fitbit-air-whoop-size/#more-714375\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "Google Health kills the Fitbit we knew, but maybe that’s not a bad thing",
-      "url": "https://9to5google.com/2026/05/10/google-health-kills-the-fitbit-we-knew-but-maybe-thats-not-a-bad-thing/",
-      "publishedAt": "Sun, 10 May 2026 16:00:00 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/03/fitbit-google-account-2.jpg?quality=82&strip=all&w=1600\" /></div><p>Alongside its new Fitbit Air, Google this week announced that the Fitbit app is dead, to be replaced by “Google Health.” If you’d told me this would happen a few months ago, I’d be worried, but the end result actually seems like an overall win for everyone involved. Let’s take a closer look.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"9to5google-weekender,fitbit,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"714194\" href=\"https://9to5google.com/2026/05/10/google-health-kills-the-fitbit-we-knew-but-maybe-thats-not-a-bad-thing/#more-714194\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "Review: I want to love Belkin’s 3-in-1 Pixel Watch charging dock, but Google ruined it [Gallery]",
-      "url": "https://9to5google.com/2026/05/09/belkin-modular-charging-dock-pixel-watch-review/",
-      "publishedAt": "Sat, 09 May 2026 15:00:00 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/belkin-pixel-watch-charging-dock-1.jpg?quality=82&strip=all&w=1600\" /></div><p>Four generations in, perhaps the most annoying thing about Google’s Pixel Watch lineup is the lack of accessories and, in particular, charging stations. The appeal of a multi-device charging station that tops off your phone, earbuds, and smartwatch is obvious, but one that Pixel Watch owners are sadly left out of. Belkin is now showcasing what is easily the best Pixel Watch-compatible charging station I’ve seen, but Google’s seeming inability to stick with a decision basically ruins it.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"belkin,google-pixel-watch,google-pixel-watch-4,qi2\" data-layer-viewtype=\"unknown\" data-post-id=\"713545\" href=\"https://9to5google.com/2026/05/09/belkin-modular-charging-dock-pixel-watch-review/#more-713545\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "These Fitbit features won’t be available in the Google Health app: Badges, sleep animals, more",
-      "url": "https://9to5google.com/2026/05/07/google-health-fitbit-features/",
-      "publishedAt": "Thu, 07 May 2026 20:08:17 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/04/Fitbit-Google-Health-icon-cover-a.jpg?quality=82&strip=all&w=1600\" /></div><p>Ahead of the <a href=\"https://9to5google.com/2026/05/07/google-health-app-fitbit/\">Google Health app</a> rolling out next week, the company has <a href=\"https://support.google.com/fitbit/answer/17068213\">detailed</a> what Fitbit features are going away or significantly changing.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"714198\" href=\"https://9to5google.com/2026/05/07/google-health-fitbit-features/#more-714198\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "Google will still sell you the Fitbit Sense 2 or Versa 4 after launching ‘Air’",
-      "url": "https://9to5google.com/2026/05/07/google-fitbit-versa-4-sense-2-still-available-after-air/",
-      "publishedAt": "Thu, 07 May 2026 16:20:44 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2022/11/fitbit-sense-2-versa-4-1.jpg?quality=82&strip=all&w=1600\" /></div><p>Google’s Fitbit lineup is remaining almost entirely unchanged after launching the screenless Air tracker. That means you can still buy flagship models outside of the Pixel Watch family.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air,fitbit-sense-2,fitbit-versa-4\" data-layer-viewtype=\"unknown\" data-post-id=\"714168\" href=\"https://9to5google.com/2026/05/07/google-fitbit-versa-4-sense-2-still-available-after-air/#more-714168\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "Fitbit Air’s special Stephen Curry edition might be the best one for workouts [Gallery]",
-      "url": "https://9to5google.com/2026/05/07/fitbit-air-stephen-curry-edition/",
-      "publishedAt": "Thu, 07 May 2026 14:30:00 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/fitbit-air-stephen-curry-1.jpg?quality=82&strip=all&w=1600\" /></div><p>Google’s new Fitbit Air tracker is here and comes in a variety of different styles, but the best option might just be the special Stephen Curry edition.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,fitbit-air\" data-layer-viewtype=\"unknown\" data-post-id=\"713912\" href=\"https://9to5google.com/2026/05/07/fitbit-air-stephen-curry-edition/#more-713912\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "You won’t need to leave your Pixel Watch behind to use Google’s new Fitbit Air",
-      "url": "https://9to5google.com/2026/05/07/google-pixel-watch-fitbit-air-support/",
-      "publishedAt": "Thu, 07 May 2026 14:10:00 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/02/Pixel-Watch-4-sleep-tracking-data.jpg?quality=82&strip=all&w=1600\" /></div><p>Google’s display-less <a href=\"https://9to5google.com/?p=713649\">Fitbit Air is finally official</a>, and today’s announcement comes with some great news for exercise-minded users who already own a Pixel Watch: you can use both wearables at the same time.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air,google-pixel-watch\" data-layer-viewtype=\"unknown\" data-post-id=\"714060\" href=\"https://9to5google.com/2026/05/07/google-pixel-watch-fitbit-air-support/#more-714060\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "‘Google Health’ replaces Fitbit app as new ‘Premium’ plan joins AI Pro",
-      "url": "https://9to5google.com/2026/05/07/google-health-app-fitbit/",
-      "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Google-Health-cover.png?w=1600\" /></div><p>After months of <a href=\"https://9to5google.com/2025/10/27/fitbit-coach-preview/\">Public Preview testing</a>, Google is replacing the Fitbit app and launching “Google Health.” It’s meant to bring “together the best of Fitbit’s pioneering spirit with the helpfulness of Google.”</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,gemini,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713901\" href=\"https://9to5google.com/2026/05/07/google-health-app-fitbit/#more-713901\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "Google announces $99 Fitbit Air for screen-less, all-day tracking",
-      "url": "https://9to5google.com/2026/05/07/fitbit-air-launch/",
-      "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Fitbit-Air-cover.jpg?quality=82&strip=all&w=1600\" /></div><p>Google today announced the Fitbit Air as a screen-less fitness tracker that has a low-profile and affordable $99.99 price.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713649\" href=\"https://9to5google.com/2026/05/07/fitbit-air-launch/#more-713649\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "Health Tech Weekly Rundown: Headspace app launches on Apple Watch; Visby, RAINN partner on safe access program",
-      "url": "https://www.fiercehealthcare.com/health-tech/health-tech-weekly-rundown-carrot-adds-menopause-care-ai-native-metabolic-health",
-      "publishedAt": "May 14, 2026 2:06pm",
-      "summary": "Stay up to date on the latest in health tech, digital health and health AI news with this weekly brief.",
-      "sourceName": "Fierce Healthcare",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
     },
     {
       "title": "Healthy Eating and Active Living for People Living With Multiple Sclerosis (HEAL MS): A Lifestyle Program for People With Multiple Sclerosis",
@@ -1465,6 +1477,18 @@
       "signalType": "algorithm_evidence"
     },
     {
+      "title": "Dexcom unveils next-generation G8 CGM for real-time glucose monitoring",
+      "url": "https://www.mobihealthnews.com/news/dexcom-unveils-next-generation-g8-cgm-real-time-glucose-monitoring",
+      "publishedAt": "Thu, 14 May 2026 17:26:30 -0400",
+      "summary": "<p dir=\"ltr\">During glucose-monitoring specialist <a href=\"https://www.mobihealthnews.com/tag/dexcom\">Dexcom</a>'s Investor Day on Thursday, CEO Jake Leach announced the release of its Dexcom G8 continuous glucose monitor, which Leach describes as a \"completely new product platform.”</p>",
+      "sourceName": "MobiHealthNews",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
+    },
+    {
       "title": "Vaccination-Related Applications and Health Care Professionals’ Observed Changes in Human Papillomavirus Vaccine Hesitancy: Cross-Sectional Survey",
       "url": "https://mhealth.jmir.org/2026/1/e77778",
       "publishedAt": "2026-05-14T17:15:16-04:00",
@@ -1487,6 +1511,18 @@
       "sourceLang": "en",
       "retrievalMethod": "rss",
       "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Google’s Fitbit Air is super comfortable, but its AI coach is already hallucinating",
+      "url": "https://9to5google.com/2026/05/14/google-fitbit-air-initial-impressions/",
+      "publishedAt": "Thu, 14 May 2026 16:30:00 +0000",
+      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/google-fitbit-air-hands-on-1.jpg?quality=82&strip=all&w=1600\" /></div><p>What should a modern fitness tracker be in 2026? With smartwatches readily available — and for not much more than your run-of-the-mill Fitbit — it’s a tricky proposition, especially for <a href=\"https://9to5google.com/2026/02/12/pixel-watch-4-long-term-review/\">brands like Google that live in both spaces</a>. The <a href=\"https://store.google.com/product/google_fitbit_air?hl=en-US\">Fitbit Air</a> feels like an admission from Google that Whoop, the obvious competitor for something like this, is on the right path, offering a minimalist band that exists to gather data, not to serve as a miniature wrist-based computer. So far, I’m liking what I’m seeing from my time with the device, but not without some unsurprising concerns surrounding its AI coach.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,fitbit-air\" data-layer-viewtype=\"unknown\" data-post-id=\"714677\" href=\"https://9to5google.com/2026/05/14/google-fitbit-air-initial-impressions/#more-714677\" class=\"more-link\">more…</a>",
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
     },
     {
       "title": "Explainable AI in hospital clinical decision support systems: A scoping review of healthcare professionals’ perspectives",
@@ -1515,90 +1551,6 @@
     {
       "title": "A data and knowledge cross-level fusion-driven learning framework for detecting missing diagnosis",
       "url": "https://www.nature.com/articles/s41746-026-02725-z",
-      "publishedAt": "2026-05-14",
-      "summary": "",
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "AUBADE-syn: a novel deep learning ensemble method for glaucoma detection using synthetic fundus images on imbalanced datasets",
-      "url": "https://www.nature.com/articles/s41746-026-02752-w",
-      "publishedAt": "2026-05-14",
-      "summary": "",
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Flexible and scalable federated learning with deep feature prompts for digital pathology",
-      "url": "https://www.nature.com/articles/s41746-026-02710-6",
-      "publishedAt": "2026-05-14",
-      "summary": "",
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "A human-in-the-loop explanation framework for morphologically transparent AI predictions from whole-slide images",
-      "url": "https://www.nature.com/articles/s41746-026-02741-z",
-      "publishedAt": "2026-05-14",
-      "summary": "",
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Perspective: large language models and antimicrobial resistance among migrants: an equity imperative",
-      "url": "https://www.nature.com/articles/s41746-026-02742-y",
-      "publishedAt": "2026-05-14",
-      "summary": "",
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Predicting dynamic individual out-of-hospital cardiac arrest risks using explainable machine learning: a multicenter study in China",
-      "url": "https://www.nature.com/articles/s41746-026-02754-8",
-      "publishedAt": "2026-05-14",
-      "summary": "",
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "A foundational model encodes deep phenotyping data and enables diverse downstream applications",
-      "url": "https://www.nature.com/articles/s41746-026-02736-w",
-      "publishedAt": "2026-05-14",
-      "summary": "",
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Generalizable CT-free PET attenuation and scatter correction via few-shot cross domain adaptation",
-      "url": "https://www.nature.com/articles/s41746-026-02760-w",
       "publishedAt": "2026-05-14",
       "summary": "",
       "sourceName": "npj Digital Medicine",
@@ -1891,18 +1843,6 @@
       "signalType": "algorithm_evidence"
     },
     {
-      "title": "Recruitment strategies and participant motivations in a digital randomized controlled trial for the prevention of anxiety disorders: the prevANS study",
-      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1746430",
-      "publishedAt": "2026-05-13T00:00:00Z",
-      "summary": "BackgroundAnxiety disorders are among the most prevalent mental health problems worldwide, and access to effective treatment is not always available. Preventive interventions need to be scalable and cost-effective, which can be achieved through communication and information technologies. However, recruiting participants for digital prevention trials remains a major methodological challenge.AimTo evaluate the performance of different approaches to recruiting participants for a digital preventive intervention for anxiety (the prevANS trial), and to assess participants' motivations for enrolling in the trial.MethodsDescriptive analyses were conducted to evaluate the performance of each recruitment strategy (number of potential participants attracted per week). Quantitative data were obtained from website records of individuals initiating the online screening process while each strategy was active, and self-reported information on how participants learned about the study. Baseline group differences between the intervention and control groups were examined using chi-square and Mann–Whitney U-tests. Reflexive inductive thematic analysis was used to analyze qualitative data on participants' main motivations for enrolling, collected through an open-ended survey question.ResultsOver a 26-month recruitment period, 6,017 individuals initiated screening and 1,054 participants were enrolled (17.5% conversion rate). The most effective strategies for attracting potential participants were social media and university dissemination. Self-reported data also indicated that word of mouth had a notable impact on recruitment. The final sample was mainly composed of women and highly educated participants, and the intervention and control groups were balanced across all variables except for age. Thematic analysis revealed three main motivations for enrollment: helping others, health related issues, and own benefits.ConclusionRecruitment strategies should be tailored to the target populatio",
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic",
-      "sourcePriority": "P2",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
       "title": "AI-driven healthcare: a trend toward better healthcare or the emergence of public health burden",
       "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1845875",
       "publishedAt": "2026-05-13T00:00:00Z",
@@ -1913,6 +1853,18 @@
       "sourceLang": "en",
       "retrievalMethod": "rss",
       "signalType": "platform_api"
+    },
+    {
+      "title": "Recruitment strategies and participant motivations in a digital randomized controlled trial for the prevention of anxiety disorders: the prevANS study",
+      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1746430",
+      "publishedAt": "2026-05-13T00:00:00Z",
+      "summary": "BackgroundAnxiety disorders are among the most prevalent mental health problems worldwide, and access to effective treatment is not always available. Preventive interventions need to be scalable and cost-effective, which can be achieved through communication and information technologies. However, recruiting participants for digital prevention trials remains a major methodological challenge.AimTo evaluate the performance of different approaches to recruiting participants for a digital preventive intervention for anxiety (the prevANS trial), and to assess participants' motivations for enrolling in the trial.MethodsDescriptive analyses were conducted to evaluate the performance of each recruitment strategy (number of potential participants attracted per week). Quantitative data were obtained from website records of individuals initiating the online screening process while each strategy was active, and self-reported information on how participants learned about the study. Baseline group differences between the intervention and control groups were examined using chi-square and Mann–Whitney U-tests. Reflexive inductive thematic analysis was used to analyze qualitative data on participants' main motivations for enrolling, collected through an open-ended survey question.ResultsOver a 26-month recruitment period, 6,017 individuals initiated screening and 1,054 participants were enrolled (17.5% conversion rate). The most effective strategies for attracting potential participants were social media and university dissemination. Self-reported data also indicated that word of mouth had a notable impact on recruitment. The final sample was mainly composed of women and highly educated participants, and the intervention and control groups were balanced across all variables except for age. Thematic analysis revealed three main motivations for enrollment: helping others, health related issues, and own benefits.ConclusionRecruitment strategies should be tailored to the target populatio",
+      "sourceName": "Frontiers in Digital Health",
+      "sourceCategory": "academic",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
     },
     {
       "title": "Sensors, Vol. 26, Pages 3092: Evolution Mechanism and High-Precision Quantitative Identification of MFL Signals from Defects Under Supersaturated Magnetization Conditions",
@@ -2107,10 +2059,10 @@
       "signalType": "algorithm_evidence"
     },
     {
-      "title": "Explainable AI in kidney stone detection and segmentation: a mini review",
-      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1750411",
+      "title": "A pilot feasibility study of a tablet-based virtual community application with shared avatars for promoting health behavior change in older adult care facilities",
+      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1757054",
       "publishedAt": "2026-05-12T00:00:00Z",
-      "summary": "Kidney stones are one of the most common renal disorders that can produce severe complications if not diagnosed and treated early. Recently, advances in AI have ensured that deep learning and explainable AI enable the automatic segmentation and detection of kidney stones from medical imaging, thus improving diagnostic efficiency and accuracy. For this review, eighteen representative studies using machine learning, deep learning, and hybrid models for kidney stone segmentation were considered, which were published in the period between 2020 and 2025. The XAI techniques being mainly utilized with the discussed models in the study are SHAP, LIME, Grad-CAM, Layer-wise Relevance Propagation, and EigenCAM. Such approaches tend to enhance clinicians’ trust in allowing early diagnosis and supporting clinical decision-making, especially in resource-constrained settings. Regardless of the towering results, this area still suffers due to certain limitations such as lack of diversity in datasets, absence of multimodal integration, and scarcity of real-world validation. All in all, integrating DL with XAI presents a transparent, reliable, and clinically acceptable approach to detecting and segmenting kidney stones.",
+      "summary": "BackgroundMaintaining exercise and medication habits is crucial for older adults, but conventional reminder-based digital interventions often produce only transient effects.MethodsWe conducted a mixed-methods pilot feasibility study comparing a reminder-only intervention (Experiment 1, N = 10) with a healthcare community app combining reminders and avatar-based virtual social interaction (Experiment 2, N = 10) in older adult care facilities over 4-week baseline and 4-week intervention periods. Primary outcomes were daily step counts and medication adherence.ResultsThe Reminder group showed a transient increase in step count in Week 1 (+16%) that declined to below baseline by Week 4 (−10.3%). In contrast, the Reminder + Support group maintained substantial step count improvements throughout the intervention (Week 4: +58.4%), with statistically significant differences at all time points. Medication adherence showed similar trends. A between-group comparison (Mann-Whitney U = 11.0, p < 0.05) supported greater efficacy of the Reminder + Support intervention. Qualitative data confirmed higher satisfaction and stronger social motivation in the Reminder + Support group.ConclusionThese preliminary findings suggest that integrating avatar-based social interaction with reminder functions may support more sustained health behavior change in older adults than reminders alone, warranting confirmation in larger randomized trials.",
       "sourceName": "Frontiers in Digital Health",
       "sourceCategory": "academic",
       "sourcePriority": "P2",
@@ -2119,10 +2071,10 @@
       "signalType": "algorithm_evidence"
     },
     {
-      "title": "A pilot feasibility study of a tablet-based virtual community application with shared avatars for promoting health behavior change in older adult care facilities",
-      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1757054",
+      "title": "Explainable AI in kidney stone detection and segmentation: a mini review",
+      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1750411",
       "publishedAt": "2026-05-12T00:00:00Z",
-      "summary": "BackgroundMaintaining exercise and medication habits is crucial for older adults, but conventional reminder-based digital interventions often produce only transient effects.MethodsWe conducted a mixed-methods pilot feasibility study comparing a reminder-only intervention (Experiment 1, N = 10) with a healthcare community app combining reminders and avatar-based virtual social interaction (Experiment 2, N = 10) in older adult care facilities over 4-week baseline and 4-week intervention periods. Primary outcomes were daily step counts and medication adherence.ResultsThe Reminder group showed a transient increase in step count in Week 1 (+16%) that declined to below baseline by Week 4 (−10.3%). In contrast, the Reminder + Support group maintained substantial step count improvements throughout the intervention (Week 4: +58.4%), with statistically significant differences at all time points. Medication adherence showed similar trends. A between-group comparison (Mann-Whitney U = 11.0, p < 0.05) supported greater efficacy of the Reminder + Support intervention. Qualitative data confirmed higher satisfaction and stronger social motivation in the Reminder + Support group.ConclusionThese preliminary findings suggest that integrating avatar-based social interaction with reminder functions may support more sustained health behavior change in older adults than reminders alone, warranting confirmation in larger randomized trials.",
+      "summary": "Kidney stones are one of the most common renal disorders that can produce severe complications if not diagnosed and treated early. Recently, advances in AI have ensured that deep learning and explainable AI enable the automatic segmentation and detection of kidney stones from medical imaging, thus improving diagnostic efficiency and accuracy. For this review, eighteen representative studies using machine learning, deep learning, and hybrid models for kidney stone segmentation were considered, which were published in the period between 2020 and 2025. The XAI techniques being mainly utilized with the discussed models in the study are SHAP, LIME, Grad-CAM, Layer-wise Relevance Propagation, and EigenCAM. Such approaches tend to enhance clinicians’ trust in allowing early diagnosis and supporting clinical decision-making, especially in resource-constrained settings. Regardless of the towering results, this area still suffers due to certain limitations such as lack of diversity in datasets, absence of multimodal integration, and scarcity of real-world validation. All in all, integrating DL with XAI presents a transparent, reliable, and clinically acceptable approach to detecting and segmenting kidney stones.",
       "sourceName": "Frontiers in Digital Health",
       "sourceCategory": "academic",
       "sourcePriority": "P2",
@@ -2263,6 +2215,42 @@
       "signalType": "algorithm_evidence"
     },
     {
+      "title": "Fitbit Air has status light & double-tap gesture, gets Whoop size comparison",
+      "url": "https://9to5google.com/2026/05/10/fitbit-air-whoop-size/",
+      "publishedAt": "Sun, 10 May 2026 19:46:04 +0000",
+      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Fitbit-Air-Lavender-Performance-Loop.jpg?quality=82&strip=all&w=1600\" /></div><p>The hardware design of the <a href=\"https://9to5google.com/2026/05/07/fitbit-air-launch/\" type=\"post\" id=\"713649\">Fitbit Air</a> is quite straightforward, but there are two features that aren’t particularly obvious until you start wearing the wearable.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air\" data-layer-viewtype=\"unknown\" data-post-id=\"714375\" href=\"https://9to5google.com/2026/05/10/fitbit-air-whoop-size/#more-714375\" class=\"more-link\">more…</a>",
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
+    },
+    {
+      "title": "Google Health kills the Fitbit we knew, but maybe that’s not a bad thing",
+      "url": "https://9to5google.com/2026/05/10/google-health-kills-the-fitbit-we-knew-but-maybe-thats-not-a-bad-thing/",
+      "publishedAt": "Sun, 10 May 2026 16:00:00 +0000",
+      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/03/fitbit-google-account-2.jpg?quality=82&strip=all&w=1600\" /></div><p>Alongside its new Fitbit Air, Google this week announced that the Fitbit app is dead, to be replaced by “Google Health.” If you’d told me this would happen a few months ago, I’d be worried, but the end result actually seems like an overall win for everyone involved. Let’s take a closer look.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"9to5google-weekender,fitbit,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"714194\" href=\"https://9to5google.com/2026/05/10/google-health-kills-the-fitbit-we-knew-but-maybe-thats-not-a-bad-thing/#more-714194\" class=\"more-link\">more…</a>",
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
+    },
+    {
+      "title": "Review: I want to love Belkin’s 3-in-1 Pixel Watch charging dock, but Google ruined it [Gallery]",
+      "url": "https://9to5google.com/2026/05/09/belkin-modular-charging-dock-pixel-watch-review/",
+      "publishedAt": "Sat, 09 May 2026 15:00:00 +0000",
+      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/belkin-pixel-watch-charging-dock-1.jpg?quality=82&strip=all&w=1600\" /></div><p>Four generations in, perhaps the most annoying thing about Google’s Pixel Watch lineup is the lack of accessories and, in particular, charging stations. The appeal of a multi-device charging station that tops off your phone, earbuds, and smartwatch is obvious, but one that Pixel Watch owners are sadly left out of. Belkin is now showcasing what is easily the best Pixel Watch-compatible charging station I’ve seen, but Google’s seeming inability to stick with a decision basically ruins it.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"belkin,google-pixel-watch,google-pixel-watch-4,qi2\" data-layer-viewtype=\"unknown\" data-post-id=\"713545\" href=\"https://9to5google.com/2026/05/09/belkin-modular-charging-dock-pixel-watch-review/#more-713545\" class=\"more-link\">more…</a>",
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
+    },
+    {
       "title": "Efficacy and Safety of a Telemedicine System in Patients With Gestational Diabetes Mellitus (TELEGLAM): Single-Center, 2-Arm, Randomized, Open-Label, Parallel-Group Study",
       "url": "https://mhealth.jmir.org/2026/1/e72242",
       "publishedAt": "2026-05-08T14:45:13-04:00",
@@ -2335,6 +2323,18 @@
       "signalType": "algorithm_evidence"
     },
     {
+      "title": "Using the behavior change wheel to develop text messages intervention (MedText-PCI) to promote medication adherence in patients after PCI",
+      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1727102",
+      "publishedAt": "2026-05-08T00:00:00Z",
+      "summary": "ObjectivesThis study aimed to use the Behaviour Change Wheel (BCW) framework to develop a theory-informed text message intervention (MedText-PCI) to improve medication adherence in patients after percutaneous coronary intervention (PCI).MethodsThis intervention development study was guided by the BCW framework. A behavioural diagnosis was first undertaken to identify barriers and facilitators to medication adherence, which were then mapped onto the Capability, Opportunity, Motivation–Behaviour (COM-B) model. Intervention functions and behaviour change techniques (BCTs) were selected systematically using the APEASE criteria. Based on the selected BCTs, text messages were developed collaboratively by medical experts and a communication specialist.ResultsThe final MedText-PCI intervention comprised 115 theory-informed text messages incorporating 15 distinct BCTs. The messages addressed key domains including treatment benefits, consequences of non-adherence, action planning, and motivational reinforcement. Iterative expert review supported the clinical accuracy, clarity, and accessibility of the intervention content.ConclusionUsing the BCW framework, this study developed a theory-informed text message intervention to support medication adherence after PCI. The development process was systematic and transparent, providing a reproducible basis for future feasibility testing and outcome evaluation. MedText-PCI has the potential to inform adherence support strategies in post-PCI secondary prevention.Clinical Trial Registration:https://www.chictr.org.cn/bin/project/edit?pid=172238, identifier ChiCTR2200061353.",
+      "sourceName": "Frontiers in Digital Health",
+      "sourceCategory": "academic",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "clinical_regulatory"
+    },
+    {
       "title": "Rationale and methods of the MOVI-HIIT! cluster-randomized controlled trial: an avatar-guided virtual platform for classroom activity breaks and its impact on cognition, adiposity, and fitness in preschoolers",
       "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1829401",
       "publishedAt": "2026-05-08T00:00:00Z",
@@ -2347,16 +2347,52 @@
       "signalType": "algorithm_evidence"
     },
     {
-      "title": "Using the behavior change wheel to develop text messages intervention (MedText-PCI) to promote medication adherence in patients after PCI",
-      "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1727102",
-      "publishedAt": "2026-05-08T00:00:00Z",
-      "summary": "ObjectivesThis study aimed to use the Behaviour Change Wheel (BCW) framework to develop a theory-informed text message intervention (MedText-PCI) to improve medication adherence in patients after percutaneous coronary intervention (PCI).MethodsThis intervention development study was guided by the BCW framework. A behavioural diagnosis was first undertaken to identify barriers and facilitators to medication adherence, which were then mapped onto the Capability, Opportunity, Motivation–Behaviour (COM-B) model. Intervention functions and behaviour change techniques (BCTs) were selected systematically using the APEASE criteria. Based on the selected BCTs, text messages were developed collaboratively by medical experts and a communication specialist.ResultsThe final MedText-PCI intervention comprised 115 theory-informed text messages incorporating 15 distinct BCTs. The messages addressed key domains including treatment benefits, consequences of non-adherence, action planning, and motivational reinforcement. Iterative expert review supported the clinical accuracy, clarity, and accessibility of the intervention content.ConclusionUsing the BCW framework, this study developed a theory-informed text message intervention to support medication adherence after PCI. The development process was systematic and transparent, providing a reproducible basis for future feasibility testing and outcome evaluation. MedText-PCI has the potential to inform adherence support strategies in post-PCI secondary prevention.Clinical Trial Registration:https://www.chictr.org.cn/bin/project/edit?pid=172238, identifier ChiCTR2200061353.",
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic",
-      "sourcePriority": "P2",
+      "title": "These Fitbit features won’t be available in the Google Health app: Badges, sleep animals, more",
+      "url": "https://9to5google.com/2026/05/07/google-health-fitbit-features/",
+      "publishedAt": "Thu, 07 May 2026 20:08:17 +0000",
+      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/04/Fitbit-Google-Health-icon-cover-a.jpg?quality=82&strip=all&w=1600\" /></div><p>Ahead of the <a href=\"https://9to5google.com/2026/05/07/google-health-app-fitbit/\">Google Health app</a> rolling out next week, the company has <a href=\"https://support.google.com/fitbit/answer/17068213\">detailed</a> what Fitbit features are going away or significantly changing.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"714198\" href=\"https://9to5google.com/2026/05/07/google-health-fitbit-features/#more-714198\" class=\"more-link\">more…</a>",
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "rss",
-      "signalType": "clinical_regulatory"
+      "signalType": "product_market"
+    },
+    {
+      "title": "Google will still sell you the Fitbit Sense 2 or Versa 4 after launching ‘Air’",
+      "url": "https://9to5google.com/2026/05/07/google-fitbit-versa-4-sense-2-still-available-after-air/",
+      "publishedAt": "Thu, 07 May 2026 16:20:44 +0000",
+      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2022/11/fitbit-sense-2-versa-4-1.jpg?quality=82&strip=all&w=1600\" /></div><p>Google’s Fitbit lineup is remaining almost entirely unchanged after launching the screenless Air tracker. That means you can still buy flagship models outside of the Pixel Watch family.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air,fitbit-sense-2,fitbit-versa-4\" data-layer-viewtype=\"unknown\" data-post-id=\"714168\" href=\"https://9to5google.com/2026/05/07/google-fitbit-versa-4-sense-2-still-available-after-air/#more-714168\" class=\"more-link\">more…</a>",
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
+    },
+    {
+      "title": "Fitbit Air’s special Stephen Curry edition might be the best one for workouts [Gallery]",
+      "url": "https://9to5google.com/2026/05/07/fitbit-air-stephen-curry-edition/",
+      "publishedAt": "Thu, 07 May 2026 14:30:00 +0000",
+      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/fitbit-air-stephen-curry-1.jpg?quality=82&strip=all&w=1600\" /></div><p>Google’s new Fitbit Air tracker is here and comes in a variety of different styles, but the best option might just be the special Stephen Curry edition.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,fitbit-air\" data-layer-viewtype=\"unknown\" data-post-id=\"713912\" href=\"https://9to5google.com/2026/05/07/fitbit-air-stephen-curry-edition/#more-713912\" class=\"more-link\">more…</a>",
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
+    },
+    {
+      "title": "You won’t need to leave your Pixel Watch behind to use Google’s new Fitbit Air",
+      "url": "https://9to5google.com/2026/05/07/google-pixel-watch-fitbit-air-support/",
+      "publishedAt": "Thu, 07 May 2026 14:10:00 +0000",
+      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/02/Pixel-Watch-4-sleep-tracking-data.jpg?quality=82&strip=all&w=1600\" /></div><p>Google’s display-less <a href=\"https://9to5google.com/?p=713649\">Fitbit Air is finally official</a>, and today’s announcement comes with some great news for exercise-minded users who already own a Pixel Watch: you can use both wearables at the same time.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air,google-pixel-watch\" data-layer-viewtype=\"unknown\" data-post-id=\"714060\" href=\"https://9to5google.com/2026/05/07/google-pixel-watch-fitbit-air-support/#more-714060\" class=\"more-link\">more…</a>",
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
     },
     {
       "title": "Effectiveness of a universal digital–human parenting intervention in promoting early childhood development and protection: A pragmatic cluster randomized controlled trial",
@@ -2393,6 +2429,30 @@
       "sourceLang": "en",
       "retrievalMethod": "rss",
       "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "‘Google Health’ replaces Fitbit app as new ‘Premium’ plan joins AI Pro",
+      "url": "https://9to5google.com/2026/05/07/google-health-app-fitbit/",
+      "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
+      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Google-Health-cover.png?w=1600\" /></div><p>After months of <a href=\"https://9to5google.com/2025/10/27/fitbit-coach-preview/\">Public Preview testing</a>, Google is replacing the Fitbit app and launching “Google Health.” It’s meant to bring “together the best of Fitbit’s pioneering spirit with the helpfulness of Google.”</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,gemini,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713901\" href=\"https://9to5google.com/2026/05/07/google-health-app-fitbit/#more-713901\" class=\"more-link\">more…</a>",
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
+    },
+    {
+      "title": "Google announces $99 Fitbit Air for screen-less, all-day tracking",
+      "url": "https://9to5google.com/2026/05/07/fitbit-air-launch/",
+      "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
+      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Fitbit-Air-cover.jpg?quality=82&strip=all&w=1600\" /></div><p>Google today announced the Fitbit Air as a screen-less fitness tracker that has a low-profile and affordable $99.99 price.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713649\" href=\"https://9to5google.com/2026/05/07/fitbit-air-launch/#more-713649\" class=\"more-link\">more…</a>",
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
     },
     {
       "title": "Front Cover",
@@ -2753,10 +2813,58 @@
       "sourceLang": "en",
       "retrievalMethod": "rss",
       "signalType": "platform_api"
+    },
+    {
+      "title": "Health Tech Weekly Rundown: Headspace app launches on Apple Watch; Visby, RAINN partner on safe access program",
+      "url": "https://www.fiercehealthcare.com/health-tech/health-tech-weekly-rundown-carrot-adds-menopause-care-ai-native-metabolic-health",
+      "publishedAt": "May 14, 2026 2:06pm",
+      "summary": "Stay up to date on the latest in health tech, digital health and health AI news with this weekly brief.",
+      "sourceName": "Fierce Healthcare",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
     }
   ],
   "groupedByCategory": {
     "academic": [
+      {
+        "title": "AI-PACE: a framework for integrating AI into medical education",
+        "url": "https://www.nature.com/articles/s41746-026-02768-2",
+        "publishedAt": "2026-05-16",
+        "summary": "",
+        "sourceName": "npj Digital Medicine",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Global spatiotemporal biomechanics using video swin transformer: multiscale validation and clinical impact for keratoconus suspects",
+        "url": "https://www.nature.com/articles/s41746-026-02751-x",
+        "publishedAt": "2026-05-16",
+        "summary": "",
+        "sourceName": "npj Digital Medicine",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Use of AI scribes in UK primary care: a survey of general practitioners",
+        "url": "https://www.nature.com/articles/s41746-026-02762-8",
+        "publishedAt": "2026-05-16",
+        "summary": "",
+        "sourceName": "npj Digital Medicine",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
       {
         "title": "Engagement of Users in Digital Health Applications: Scoping Review",
         "url": "https://mhealth.jmir.org/2026/1/e66002",
@@ -3154,6 +3262,78 @@
         "signalType": "algorithm_evidence"
       },
       {
+        "title": "Continuous negative autoregulation fine-tunes dosage-sensitive transcription factor expression to maintain post-mitotic neuron identity",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.725191v1?rss=1",
+        "publishedAt": "2026-05-15",
+        "summary": "How post-mitotic neurons maintain precise transcription factor (TF) levels throughout life remains a fundamental open question. Here, we challenge the prevailing model of positive autoregulation by demonstrating that UNC-3 (Collier/EBF1-4), a dosage-sensitive TF continuously required for cholinergic motor neuron identity in C. elegans, negatively regulates its own expression. Using genetics, biochemistry, and inducible protein depletion, we show this self-repression occurs directly at the transcriptional level and persists beyond development. CRISPR/Cas9 disruption of negative autoregulation causes motor neuron identity and locomotion defects, establishing its functional necessity. Mechanistically, the UNC-3 DNA-binding domain is required and sufficient for self-repression, with an AlphaFold2 screen implicating chromatin factors as interaction partners. Critically, UNC-3 self-repression is continuously counterbalanced by positive input from the HOX cofactor CEH-20/PBX, revealing a dynamic \"balancing act\" between opposing regulatory inputs that stabilize TF dosage over time. Mutations in the unc-3 ortholog EBF3 cause a neurodevelopmental syndrome, and disease-associated variants disrupt UNC-3 self-repression, revealing a key molecular mechanism underlying the disorder. We propose that negative autoregulation continuously counteracted by positive input represents a broadly applicable principle for maintaining dosage-sensitive TF expression to secure post-mitotic cell identity.",
+        "sourceName": "bioRxiv: new results",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Noisy information about the environment: A source of individual differences within and across generations",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725332v1?rss=1",
+        "publishedAt": "2026-05-15",
+        "summary": "Despite sharing the same genes and the same environment, individuals often develop substantial phenotypic differences. While this pattern has been documented across diverse species and traits, the processes giving rise to this 'stochastic' or non-shared environmental variation remain unclear. Recent mathematical models of development in which phenotypes are gradually constructed may offer some clues. These models show that imperfect environmental cues can generate striking variation in developmental trajectories and adult phenotypes. At the population level, such imperfect cues produce increasing stability of individual differences across ontogeny (e.g. animal personality) and patterned distributions of mature phenotypes (e.g. normal or skewed) that resemble those observed in real organisms. Our paper synthesizes existing models in which stochastic phenotypic variation arises solely as a by-product of mechanisms missing their phenotypic targets because of imperfect cues. We then link these models to related, but independent, mathematical theory exploring the environmental conditions under which stochastic phenotypic variation is favoured by natural selection. Our integration shows that stochastic sampling is often favoured over classic bet-hedging strategies involving non-plastic generalist or specialist strategies. Our findings provide new directions of research on stochastic sampling as a mechanism for adaptive stochastic variation within and across generations.",
+        "sourceName": "bioRxiv: new results",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Dendrite-soma interactions in cultured hippocampal neurons form non-random structural motifs with local presynaptic enrichment and strengthening",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725585v1?rss=1",
+        "publishedAt": "2026-05-15",
+        "summary": "Dendritic arbor morphology is shaped in part by interactions with neighboring dendrites, and its geometry strongly influences the spatial distribution and strength of synapses. These observations raise the possibility that local dendritic contacts help determine where synapses accumulate and strengthen. Previous work in cultured hippocampal neurons showed that dendrite-dendrite contact sites are non-random and associated with local synaptic clustering. Here we asked whether a different type of dendritic contact, formed between a dendrite and the soma of a neighboring neuron, behaves similarly. Using dissociated hippocampal cultures, immunofluorescence imaging, time-lapse microscopy, quantitative image analysis, stochastic spatial simulations, and minimal quantitative modeling, we identified three recurrent classes of dendrite-soma interactions (DSIs): dendrites crossing directly over a neighboring soma, growing tangentially along the soma perimeter, or contacting the proximal region where a neighboring dendrite emerges from the soma. These interactions were abundant, occurred exclusively between different neurons, and showed substantial structural persistence over several days. Their overall frequency exceeded stochastic predictions across culture densities, and two configurations - proximal and tangential contacts - were selectively enriched above random expectation, whereas soma-crossing contacts were largely consistent with stochastic overlap. DSI composition also changed over development, with proximal contacts becoming progressively more prevalent. At DSI sites, synaptophysin-positive puncta were significantly denser and more intense than on non-interacting dendritic segments, consistent with local enrichment and strengthening of presynaptic specializations. Minimal modeling further indicated that biased formation together with developmental stabilization explains the observed organization better than stochastic geometry alone. These findings identify DSIs as n",
+        "sourceName": "bioRxiv: new results",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Spatially resolved transcriptomic identification of thousands of neurons recorded in vivo.",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725413v1?rss=1",
+        "publishedAt": "2026-05-15",
+        "summary": "Transcriptomics has transformed our understanding of the brain, but assigning transcriptomic identities to neurons recorded in vivo remains challenging at scale. Existing platforms can pair transcriptomic identity with two-photon calcium imaging in small populations of approximately 100 neurons, but they require recorded cells to be sparse and therefore cannot be applied to large population recordings. Here, we present coppaFISH 3D, a spatially resolved transcriptomics method, and CASTalign, an in silico alignment framework, which together enable transcriptomic identification of thousands of simultaneously recorded cells. coppaFISH 3D detects hundreds of genes in thick 50m fixed sections while preserving tissue integrity, enabling both 3D registration to in vivo imaging and integration with immunofluorescence labelling. The platform is fully powered by open chemistry and open source software, runs on commodity hardware, and can be performed at very low cost per section. It therefore enables transcriptomic identification of recorded neurons at scale, making it possible to study how transcriptomic identity shapes activity in neural populations.",
+        "sourceName": "bioRxiv: new results",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Word meaning, not surface statistics, is essential for predictive language processing",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.724229v1?rss=1",
+        "publishedAt": "2026-05-15",
+        "summary": "Humans comprehend language incrementally, updating the representation of sentence meaning with each incoming word. These updates are guided by the distance between each perceived word and prior expectations--the prediction error. The alignment between large language models (LLMs) and cortical activity inspires the hypothesis that the cortical computation of prediction error is Surface-based, driven by statistical patterns of word form co-occurrence. In contrast, psycholinguistic models propose that prediction error computation is Meaning-based, driven by word semantics. We used polysemic words with ambiguous semantics to distinguish these models: ambiguity would introduce uncertainty into meaning representations and hence the prediction error, if Meaning-based, but would not affect the prediction error, if Surface-based. We examined how ambiguity influenced prediction error signatures in self-paced reading times and magnetoencephalographic (MEG) neural responses during sentence processing. While an LLM-based proxy of prediction error robustly predicted reading times and neural responses to unambiguous words, it failed to predict either under ambiguity. That is, prediction error computation was altered by uncertainty in word meaning, which supports the Meaning-based model and corroborates the essential role of word meaning in predictive language processing. Our findings highlight an important limitation of LLMs as in silico models of the human language faculty.",
+        "sourceName": "bioRxiv: new results",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "An ordinal Language of Thought supports human memory for regular sequences",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.725160v1?rss=1",
+        "publishedAt": "2026-05-15",
+        "summary": "How do humans store sequences that far exceed working memory capacity? Using visuo-spatial and binary auditory sequences, we previously showed that a Language of Thought (LoT) architecture, in which simple primitives are recursively combined into hierarchical programs, enables efficient storage of structured sequences. Here we ask whether this principle extends to purely ordinal structure: sequences defined by how items repeat and in what order, as in AABBCCAABBCC, independently of their spatial content. Across three experiments, participants reproduced 12-item sequences of spatial locations with various ordinal structures. The minimal description length derived from the LoT model predicted recall accuracy with remarkable precision (r = .96), substantially outperforming Shannon entropy, Lempel-Ziv complexity, chunking models and subjective complexity ratings. Critically, fine-grained analyses of participants' inter-click intervals during reproduction revealed systematic slowdowns at the hierarchical boundaries predicted by the LoT programs, providing a behavioral signature of the underlying mental syntax. These results identify a compact vocabulary of mental primitives, repetition, mirroring, and interleaving, whose composition accounts for the symbolic compression of ordinal structures. For ordinal regularities, human sequence memory operates as a form of program induction, leveraging a domain-general capacity for hierarchical compression to encode complex structured information.",
+        "sourceName": "bioRxiv: new results",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
         "title": "In Silico Structure-Based Interactomic Analysis of the Scaffolding Protein DCAF7",
         "url": "https://www.biorxiv.org/content/10.64898/2026.05.13.724911v1?rss=1",
         "publishedAt": "2026-05-15",
@@ -3442,11 +3622,59 @@
         "signalType": "algorithm_evidence"
       },
       {
-        "title": "Listianol, a Carotenoid Biosynthesis Inhibitor from a Methylotrophic Bacterium, Alters the Composition of a Phyllosphere Microbial Community",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.725204v1?rss=1",
+        "title": "Clinical setting-dependent diagnostic accuracy of artificial intelligence and store-and-forward diabetic retinopathy screening: a systematic review and meta-analysis",
+        "url": "https://www.nature.com/articles/s41746-026-02627-0",
         "publishedAt": "2026-05-15",
-        "summary": "In the plant phyllosphere, many bacteria produce pigments to mitigate oxidative stress, including pink-pigmented facultative methylotrophs (PPFMs). PPFMs are prominent members of the phyllosphere microbiota, yet their secondary metabolism remains underexplored. This limits our understanding of how these bacteria interact with other phyllosphere constituents at the molecular level. Here, we develop a screen for PPFM biosynthetic gene clusters and identify listianol, a previously undescribed metabolite that inhibits the pigmentation and growth of diverse bacteria. Listianol blocks carotenoid biosynthesis by targeting the desaturases CrtN and CrtI, revealing a previously unrecognized inhibitory mechanism for a secondary metabolite. This activity sensitizes normally pigmented bacteria to UVB radiation in vitro, and a listianol-producing strain reshapes the composition of a synthetic bacterial community on Arabidopsis thaliana under UVB exposure. Together, these findings establish a platform for exploring PPFM biosynthetic potential and uncover a new metabolite with potential to impact the phyllosphere microbiota composition.",
-        "sourceName": "bioRxiv: new results",
+        "summary": "",
+        "sourceName": "npj Digital Medicine",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "A dynamic risk prediction framework for Alzheimer's disease and related dementias with interpretability",
+        "url": "https://www.nature.com/articles/s41746-026-02732-0",
+        "publishedAt": "2026-05-15",
+        "summary": "",
+        "sourceName": "npj Digital Medicine",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Beyond translation: a patient-centered research agenda for artificial intelligence interpreter services in healthcare",
+        "url": "https://www.nature.com/articles/s41746-026-02764-6",
+        "publishedAt": "2026-05-15",
+        "summary": "",
+        "sourceName": "npj Digital Medicine",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Large language models require a new form of oversight: capability-based monitoring",
+        "url": "https://www.nature.com/articles/s41746-026-02740-0",
+        "publishedAt": "2026-05-15",
+        "summary": "",
+        "sourceName": "npj Digital Medicine",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Development of reconfigurable smart medical wards using integrated components and complex features",
+        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1784460",
+        "publishedAt": "2026-05-15T00:00:00Z",
+        "summary": "Patient treatment in hospitals requires their regular monitoring to assess their health conditions. At the same time, routine measurements are often delayed, missed, or not analyzed, and this situation worsens at night and on weekends due to reduced staffing, which in turn affects the quality of treatment. Innovations in the field of infocommunication technologies allow the healthcare industry to enhance the provided medical services. One of the promising areas is the creation of smart wards so that the patient information will be easily accessible and properly analyzed, with real-time alerts sent to healthcare professionals. Assessing health and diagnosing diseases require data collection and processing techniques that can be implemented by the smart ward modules. The variety of data, situations, diseases, and techniques creates the need to simplify and speed up the development of such modules and to increase the reusability of such development. In this work, we propose a method that allows the creation of applications as integrated components for smart wards for assessing patient health using complex feature techniques. The proposed method provides the necessary software flexibility and reusability for smart wards, enabling dynamic construction of processing pipelines. Thus, it becomes possible to reduce labor costs not only in the application usage but also in the development of such components.",
+        "sourceName": "Frontiers in Digital Health",
         "sourceCategory": "academic",
         "sourcePriority": "P2",
         "sourceLang": "en",
@@ -3454,11 +3682,11 @@
         "signalType": "algorithm_evidence"
       },
       {
-        "title": "A protease-sensing circuit links neutrophil inflammation to virulence regulation in Streptococcus pyogenes",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725401v1?rss=1",
-        "publishedAt": "2026-05-15",
-        "summary": "Streptococcus pyogenes (Group A Streptococcus) causes infections with a disproportionately hyperinflammatory response from the host, such as scarlet fever, necrotizing fasciitis, and toxic shock syndrome. Inflammation is specifically driven by S. pyogenes virulence factors, including the protease SpeB, but how inflammation impacts SpeB expression in return during disease is unknown. In this study, we identify a novel interaction between NETosis, a form of inflammatory cell death for neutrophils, and the induction of speB. Specifically, while the cathelicidin peptide LL-37 can repress speB through the two-component regulatory system CovRS, neutrophil proteases released during NETosis relieve repression of speB by degrading another repressor of speB, the bacterial protein Vfr. Furthermore, at high cell densities, SpeB autoregulates its expression through similar degradation of Vfr. Abrogating the formation of NETs or depleting neutrophils resulted in speB repression in vivo, showing the mutual host and pathogen counterattacks collectively lead to the pathological exacerbations characteristic of disease.",
-        "sourceName": "bioRxiv: new results",
+        "title": "Why digital health fails silently: a sociotechnical theory of health information technology–related risk",
+        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1785086",
+        "publishedAt": "2026-05-15T00:00:00Z",
+        "summary": "IntroductionHealth information technology (HIT) is now integral to healthcare delivery, supporting clinical documentation, prescribing, diagnostics, and care coordination. Although these technologies offer substantial benefits, they have also introduced new patient safety risks that are often difficult to anticipate, detect, or manage. Many HIT-related safety problems arise not from isolated technical failures or individual mistakes, but from complex interactions between digital systems, clinical work practices, organisational structures, and governance arrangements. Traditional patient safety models that focus on discrete errors or linear causality are therefore insufficient for explaining how digital risks emerge and persist in practice.Methods/theoretical approachThis article develops a sociotechnical theory of HIT-related risk grounded in patient safety science and sociotechnical systems theory. The theory is informed by empirical insights from incident-based research on HIT-related safety problems and synthesises evidence from real-world incident narratives. It adopts a conceptual, theory-building approach informed by purposive, iterative engagement with the relevant literature on health IT safety, sociotechnical systems, and resilience-oriented patient safety frameworks. Rather than analysing a single dataset, the paper identifies recurring mechanisms through which digital risks arise, remain hidden, propagate across contexts, and become recoverable or not.Results/theoretical propositionsThe proposed theory conceptualises HIT-related risk as a dynamic process involving four interrelated mechanisms: risk emergence, risk concealment, risk propagation, and recoverability. Risks emerge through misalignments between system design, configuration, and clinical workflows; they are concealed by automation, information fragmentation, and adaptive workarounds; they propagate through tightly coupled digital infrastructures and shared dependencies; and their recoverability",
+        "sourceName": "Frontiers in Digital Health",
         "sourceCategory": "academic",
         "sourcePriority": "P2",
         "sourceLang": "en",
@@ -3466,47 +3694,11 @@
         "signalType": "algorithm_evidence"
       },
       {
-        "title": "Targeting intracellular mycobacteria using novel antibiotic-loaded nanoparticles",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.725169v1?rss=1",
-        "publishedAt": "2026-05-15",
-        "summary": "Tuberculosis (TB), caused by Mycobacterium tuberculosis (Mtb), remains a significant global health challenge. Currently treatment of drug-sensitive TB, involves a six-month regimen consisting of a combination of four anti-TB drugs, with drug-resistant TB requiring over two years of treatment and additional drugs. As toxicity of anti-TB drugs often leads to poor compliance, disease relapse and the emergence of drug-resistant strains, new strategies to reduce drug toxicity and shorten treatment duration are critical. We report nanocarrier-based drug delivery systems targeting macrophages, which primarily support replication and survival of Mtb. We have developed mannose-functionalized nanoparticles that bind to mannose receptors on macrophages and feature a pH-sensitive core which releases an encapsulated drug in the acidic lysosomal environment of macrophages. Rifampicin (RIF), a main anti-TB drug currently in use clinically, was encapsulated within the nanoparticles. We demonstrate that antibiotic-containing nanocarriers efficiently accumulated in macrophages without causing toxicity. Encapsulated RIF showed enhanced efficacy against both BCG and Mtb in primary macrophages. Biodistribution studies in mice revealed that the nanoparticles have extended circulation time and do not induce toxicity. In addition, the encapsulated RIF showed better targeting of mycobacteria when compared to free RIF in a murine model of mycobacterial infection. Such an enhanced bacterial killing using mannose-functionalised nanocarriers loaded with the key anti-TB drug rifampicin offers excellent potential for TB therapy.",
-        "sourceName": "bioRxiv: new results",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Susceptibility of Klebsiella pneumoniae Clinical Isolates in Biofilms to Antibiotics and Assessment of Secondary Drug Effects",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725361v1?rss=1",
-        "publishedAt": "2026-05-15",
-        "summary": "Biofilms pose a significant challenge to antimicrobial therapy. Bacteria in biofilms differ from planktonic counterpart in their altered metabolism, collective behavior, protective role of extracellular matrix and diversified microbial subpopulations. These attributions significantly influence bioavailability and activity of antibiotics. The presence of bacterial aggregates during acute infections expands the problem to many other conditions previously not discussed in the biofilm context. Klebsiella pneumoniae is a leading cause of life-threatening hospital-acquired infections and is included in the WHO Bacterial Priority Pathogens List due to increasing antimicrobial resistance. The combination of antimicrobial resistance and the ability to form biofilms severely limits the efficacy of antibiotic treatments. In this study, we investigated the in vitro susceptibility of mature biofilms to 13 antimicrobials of K. pneumoniae clinical isolates from a single hospital. The resistance profiles of the local clinical isolates were consistent with the global epidemiology of K. pneumoniae. Minimal biofilm eradication concentrations (MBEC) for mature biofilms were defined with two assays (biomass and metabolic activity measurements) and brought into relation with susceptibility breakpoints and plasma (Cmax). Colistin sulfate, tigecycline, cephalosporins and combination of imipenem with cilastatin were the most potent biomass eradicators, while suppression of metabolic activity was barely reachable. Moreover, we observed a notable increase in metabolic activity upon exposure to sub-MBEC concentrations of antibiotics. Finally, our data broach a subject of antibiotic prioritization with respect to biofilm tolerance.",
-        "sourceName": "bioRxiv: new results",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "business_structure"
-      },
-      {
-        "title": "Nef and Vpu protect infected cells from ADCP mediated by plasma from people with HIV-1",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.725178v1?rss=1",
-        "publishedAt": "2026-05-15",
-        "summary": "The HIV-1 envelope glycoprotein (Env) represents the only viral antigen at the surface of infected cells, making it an ideal target for antibody-based therapies. Most antibodies elicited in people with HIV (PWH) do not recognize Env in its native closed conformation but readily bind to Env when it samples the CD4-bound open conformation. Downregulation of CD4 at the surface of infected cells by the viral accessory proteins Nef and Vpu prevents the premature opening of Env and has been shown to protect infected cells from antibody-dependent cellular cytotoxicity (ADCC) mediated by PWH plasma. Here, we report that deletion of Nef and Vpu from primary infectious molecular clones renders infected cells vulnerable to antibody-dependent cellular phagocytosis (ADCP) mediated by PWH plasma. This is in part linked to the premature engagement of Env with CD4. In agreement with an open Env being vulnerable to ADCP, small CD4 mimetic compounds (CD4mc) sensitize in vitro-infected cells and ex vivo-expanded CD4 T cells to ADCP mediated by autologous monocytes in presence of PWH plasma. This effect was further improved by increasing cell surface Env through IFN-induced BST-2 upregulation.",
-        "sourceName": "bioRxiv: new results",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "platform_api"
-      },
-      {
-        "title": "Manipulation of rhizosphere microbiome by Microbacterium sp. GB16_1_BI to promote plant growth.",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725310v1?rss=1",
-        "publishedAt": "2026-05-15",
-        "summary": "Plant growth promoting microbes enhance developmental progression of the host by influencing its nutrient availability or by deploying secondary metabolites responsible for manipulating the hormonal crosstalk. Microbacterium bengalense sp. nov. GB16_1_BI (Accession number: SRX9280401), a newly identified ammonium releasing Actinomycetota, could enhance plant growth by manipulating rhizosphere bacteria. Amplicon sequencing of the 16S rRNA V3-V4 region from the rhizosphere of the black rice (Chakhao Poireiton) showed that GB16_1_BI could inhibit most bacteria. However, GB16_1_BI inoculation encouraged the growth of rare bacteria specific to waterlogged rice rhizosphere. Analysis of the OTUs using PICRUSt2 (Phylogenetic investigation of communities by reconstruction of unobserved states) showed increased abundance in the marker genes for nitrogen cycling (nifH, nrfA and nrt) but not for nifD or nifK which was also reflected in the ANOSIM analysis in the OTUs of the N-fixing bacteria. Marker genes for methane metabolism (comA, comB, cofG and cofH) were also more abundant in the inoculated plants than the control; however, ANOSIM studies did not support this observation in the OTUs of methane cycling bacteria. Both Methylosinus and Methylocystis, the two most abundant methanotrophic OTUs, are also known to be nitrogen fixers. Hence, GB16_1_BI could influence plant growth predominantly by manipulating nitrogen cycling microbes. The genome sequence as well as untargeted metabolome analyses of GB16_1_BI showed abundance of secondary metabolites with probable antimicrobial activity. GB16_1_BI could utilize varied carbohydrates and amino acid as energy source and form persister-like cells may help it to survive in the soil in absence of the host plant.",
-        "sourceName": "bioRxiv: new results",
+        "title": "A maturity model framework for federated networks of trusted research environments",
+        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1699125",
+        "publishedAt": "2026-05-15T00:00:00Z",
+        "summary": "IntroductionA Trusted Research Environment (TRE) is a highly secure computer system where sensitive data is stored that researchers can access remotely and make use of in a safe setting. TREs can form federated networks when they have overlapping objectives, such as providing data access to the same researchers for the same project. However, there is variation in the design and implementation of TREs. This makes it difficult for these systems to interoperate without guidance on the technical pathway that should be followed to achieve federation maturity, and resources to assess the current state of maturity.MethodsWe evaluated international maturity models for measuring the capabilities of life sciences and healthcare federated digital infrastructures to identify essential components for federation. Merging synonymous and related components resulted in a maturity model framework consisting of six discreet domains that are required for optimal TRE federation.ResultsThe framework comprises of one governance structure domain (governance and policies), one service delivery domain (operations and performance), three technical domains (data management and security, operational infrastructure, clinical/research infrastructure) and one engagement strategy domain (outreach and communication). The TRE community in the UK, convened by DARE UK, have developed a technical blueprint for deploying standalone TREs (called SATRE) and a technical Federated Architecture Blueprint (FAB) for enabling federation between TREs. These blueprints align with many of the maturity model framework's domains.DiscussionWe suggest criteria for implementing the maturity model framework domains and for assessing their relative levels of maturity, and where appropriate reference the recommendations from SATRE and FAB. The maturity model framework can be used as a foundation for assessing the governance, operational and technical readiness of TREs when joining federated networks.",
+        "sourceName": "Frontiers in Digital Health",
         "sourceCategory": "academic",
         "sourcePriority": "P2",
         "sourceLang": "en",
@@ -3526,46 +3718,10 @@
         "signalType": "platform_api"
       },
       {
-        "title": "Why digital health fails silently: a sociotechnical theory of health information technology–related risk",
-        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1785086",
-        "publishedAt": "2026-05-15T00:00:00Z",
-        "summary": "IntroductionHealth information technology (HIT) is now integral to healthcare delivery, supporting clinical documentation, prescribing, diagnostics, and care coordination. Although these technologies offer substantial benefits, they have also introduced new patient safety risks that are often difficult to anticipate, detect, or manage. Many HIT-related safety problems arise not from isolated technical failures or individual mistakes, but from complex interactions between digital systems, clinical work practices, organisational structures, and governance arrangements. Traditional patient safety models that focus on discrete errors or linear causality are therefore insufficient for explaining how digital risks emerge and persist in practice.Methods/theoretical approachThis article develops a sociotechnical theory of HIT-related risk grounded in patient safety science and sociotechnical systems theory. The theory is informed by empirical insights from incident-based research on HIT-related safety problems and synthesises evidence from real-world incident narratives. It adopts a conceptual, theory-building approach informed by purposive, iterative engagement with the relevant literature on health IT safety, sociotechnical systems, and resilience-oriented patient safety frameworks. Rather than analysing a single dataset, the paper identifies recurring mechanisms through which digital risks arise, remain hidden, propagate across contexts, and become recoverable or not.Results/theoretical propositionsThe proposed theory conceptualises HIT-related risk as a dynamic process involving four interrelated mechanisms: risk emergence, risk concealment, risk propagation, and recoverability. Risks emerge through misalignments between system design, configuration, and clinical workflows; they are concealed by automation, information fragmentation, and adaptive workarounds; they propagate through tightly coupled digital infrastructures and shared dependencies; and their recoverability",
-        "sourceName": "Frontiers in Digital Health",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Development of reconfigurable smart medical wards using integrated components and complex features",
-        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1784460",
-        "publishedAt": "2026-05-15T00:00:00Z",
-        "summary": "Patient treatment in hospitals requires their regular monitoring to assess their health conditions. At the same time, routine measurements are often delayed, missed, or not analyzed, and this situation worsens at night and on weekends due to reduced staffing, which in turn affects the quality of treatment. Innovations in the field of infocommunication technologies allow the healthcare industry to enhance the provided medical services. One of the promising areas is the creation of smart wards so that the patient information will be easily accessible and properly analyzed, with real-time alerts sent to healthcare professionals. Assessing health and diagnosing diseases require data collection and processing techniques that can be implemented by the smart ward modules. The variety of data, situations, diseases, and techniques creates the need to simplify and speed up the development of such modules and to increase the reusability of such development. In this work, we propose a method that allows the creation of applications as integrated components for smart wards for assessing patient health using complex feature techniques. The proposed method provides the necessary software flexibility and reusability for smart wards, enabling dynamic construction of processing pipelines. Thus, it becomes possible to reduce labor costs not only in the application usage but also in the development of such components.",
-        "sourceName": "Frontiers in Digital Health",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
         "title": "Why health information technology safety problems remain invisible",
         "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1785141",
         "publishedAt": "2026-05-15T00:00:00Z",
         "summary": "",
-        "sourceName": "Frontiers in Digital Health",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "A maturity model framework for federated networks of trusted research environments",
-        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1699125",
-        "publishedAt": "2026-05-15T00:00:00Z",
-        "summary": "IntroductionA Trusted Research Environment (TRE) is a highly secure computer system where sensitive data is stored that researchers can access remotely and make use of in a safe setting. TREs can form federated networks when they have overlapping objectives, such as providing data access to the same researchers for the same project. However, there is variation in the design and implementation of TREs. This makes it difficult for these systems to interoperate without guidance on the technical pathway that should be followed to achieve federation maturity, and resources to assess the current state of maturity.MethodsWe evaluated international maturity models for measuring the capabilities of life sciences and healthcare federated digital infrastructures to identify essential components for federation. Merging synonymous and related components resulted in a maturity model framework consisting of six discreet domains that are required for optimal TRE federation.ResultsThe framework comprises of one governance structure domain (governance and policies), one service delivery domain (operations and performance), three technical domains (data management and security, operational infrastructure, clinical/research infrastructure) and one engagement strategy domain (outreach and communication). The TRE community in the UK, convened by DARE UK, have developed a technical blueprint for deploying standalone TREs (called SATRE) and a technical Federated Architecture Blueprint (FAB) for enabling federation between TREs. These blueprints align with many of the maturity model framework's domains.DiscussionWe suggest criteria for implementing the maturity model framework domains and for assessing their relative levels of maturity, and where appropriate reference the recommendations from SATRE and FAB. The maturity model framework can be used as a foundation for assessing the governance, operational and technical readiness of TREs when joining federated networks.",
         "sourceName": "Frontiers in Digital Health",
         "sourceCategory": "academic",
         "sourcePriority": "P2",
@@ -3874,90 +4030,6 @@
         "signalType": "algorithm_evidence"
       },
       {
-        "title": "AUBADE-syn: a novel deep learning ensemble method for glaucoma detection using synthetic fundus images on imbalanced datasets",
-        "url": "https://www.nature.com/articles/s41746-026-02752-w",
-        "publishedAt": "2026-05-14",
-        "summary": "",
-        "sourceName": "npj Digital Medicine",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Flexible and scalable federated learning with deep feature prompts for digital pathology",
-        "url": "https://www.nature.com/articles/s41746-026-02710-6",
-        "publishedAt": "2026-05-14",
-        "summary": "",
-        "sourceName": "npj Digital Medicine",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "A human-in-the-loop explanation framework for morphologically transparent AI predictions from whole-slide images",
-        "url": "https://www.nature.com/articles/s41746-026-02741-z",
-        "publishedAt": "2026-05-14",
-        "summary": "",
-        "sourceName": "npj Digital Medicine",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Perspective: large language models and antimicrobial resistance among migrants: an equity imperative",
-        "url": "https://www.nature.com/articles/s41746-026-02742-y",
-        "publishedAt": "2026-05-14",
-        "summary": "",
-        "sourceName": "npj Digital Medicine",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Predicting dynamic individual out-of-hospital cardiac arrest risks using explainable machine learning: a multicenter study in China",
-        "url": "https://www.nature.com/articles/s41746-026-02754-8",
-        "publishedAt": "2026-05-14",
-        "summary": "",
-        "sourceName": "npj Digital Medicine",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "A foundational model encodes deep phenotyping data and enables diverse downstream applications",
-        "url": "https://www.nature.com/articles/s41746-026-02736-w",
-        "publishedAt": "2026-05-14",
-        "summary": "",
-        "sourceName": "npj Digital Medicine",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Generalizable CT-free PET attenuation and scatter correction via few-shot cross domain adaptation",
-        "url": "https://www.nature.com/articles/s41746-026-02760-w",
-        "publishedAt": "2026-05-14",
-        "summary": "",
-        "sourceName": "npj Digital Medicine",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
         "title": "Patient and clinician perceptions, expectations, and usability of ankle exoskeletons for daily living: a mixed-methods survey study",
         "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1745605",
         "publishedAt": "2026-05-14T00:00:00Z",
@@ -4162,18 +4234,6 @@
         "signalType": "algorithm_evidence"
       },
       {
-        "title": "Recruitment strategies and participant motivations in a digital randomized controlled trial for the prevention of anxiety disorders: the prevANS study",
-        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1746430",
-        "publishedAt": "2026-05-13T00:00:00Z",
-        "summary": "BackgroundAnxiety disorders are among the most prevalent mental health problems worldwide, and access to effective treatment is not always available. Preventive interventions need to be scalable and cost-effective, which can be achieved through communication and information technologies. However, recruiting participants for digital prevention trials remains a major methodological challenge.AimTo evaluate the performance of different approaches to recruiting participants for a digital preventive intervention for anxiety (the prevANS trial), and to assess participants' motivations for enrolling in the trial.MethodsDescriptive analyses were conducted to evaluate the performance of each recruitment strategy (number of potential participants attracted per week). Quantitative data were obtained from website records of individuals initiating the online screening process while each strategy was active, and self-reported information on how participants learned about the study. Baseline group differences between the intervention and control groups were examined using chi-square and Mann–Whitney U-tests. Reflexive inductive thematic analysis was used to analyze qualitative data on participants' main motivations for enrolling, collected through an open-ended survey question.ResultsOver a 26-month recruitment period, 6,017 individuals initiated screening and 1,054 participants were enrolled (17.5% conversion rate). The most effective strategies for attracting potential participants were social media and university dissemination. Self-reported data also indicated that word of mouth had a notable impact on recruitment. The final sample was mainly composed of women and highly educated participants, and the intervention and control groups were balanced across all variables except for age. Thematic analysis revealed three main motivations for enrollment: helping others, health related issues, and own benefits.ConclusionRecruitment strategies should be tailored to the target populatio",
-        "sourceName": "Frontiers in Digital Health",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
         "title": "AI-driven healthcare: a trend toward better healthcare or the emergence of public health burden",
         "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1845875",
         "publishedAt": "2026-05-13T00:00:00Z",
@@ -4184,6 +4244,18 @@
         "sourceLang": "en",
         "retrievalMethod": "rss",
         "signalType": "platform_api"
+      },
+      {
+        "title": "Recruitment strategies and participant motivations in a digital randomized controlled trial for the prevention of anxiety disorders: the prevANS study",
+        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1746430",
+        "publishedAt": "2026-05-13T00:00:00Z",
+        "summary": "BackgroundAnxiety disorders are among the most prevalent mental health problems worldwide, and access to effective treatment is not always available. Preventive interventions need to be scalable and cost-effective, which can be achieved through communication and information technologies. However, recruiting participants for digital prevention trials remains a major methodological challenge.AimTo evaluate the performance of different approaches to recruiting participants for a digital preventive intervention for anxiety (the prevANS trial), and to assess participants' motivations for enrolling in the trial.MethodsDescriptive analyses were conducted to evaluate the performance of each recruitment strategy (number of potential participants attracted per week). Quantitative data were obtained from website records of individuals initiating the online screening process while each strategy was active, and self-reported information on how participants learned about the study. Baseline group differences between the intervention and control groups were examined using chi-square and Mann–Whitney U-tests. Reflexive inductive thematic analysis was used to analyze qualitative data on participants' main motivations for enrolling, collected through an open-ended survey question.ResultsOver a 26-month recruitment period, 6,017 individuals initiated screening and 1,054 participants were enrolled (17.5% conversion rate). The most effective strategies for attracting potential participants were social media and university dissemination. Self-reported data also indicated that word of mouth had a notable impact on recruitment. The final sample was mainly composed of women and highly educated participants, and the intervention and control groups were balanced across all variables except for age. Thematic analysis revealed three main motivations for enrollment: helping others, health related issues, and own benefits.ConclusionRecruitment strategies should be tailored to the target populatio",
+        "sourceName": "Frontiers in Digital Health",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
       },
       {
         "title": "Sensors, Vol. 26, Pages 3092: Evolution Mechanism and High-Precision Quantitative Identification of MFL Signals from Defects Under Supersaturated Magnetization Conditions",
@@ -4378,10 +4450,10 @@
         "signalType": "algorithm_evidence"
       },
       {
-        "title": "Explainable AI in kidney stone detection and segmentation: a mini review",
-        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1750411",
+        "title": "A pilot feasibility study of a tablet-based virtual community application with shared avatars for promoting health behavior change in older adult care facilities",
+        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1757054",
         "publishedAt": "2026-05-12T00:00:00Z",
-        "summary": "Kidney stones are one of the most common renal disorders that can produce severe complications if not diagnosed and treated early. Recently, advances in AI have ensured that deep learning and explainable AI enable the automatic segmentation and detection of kidney stones from medical imaging, thus improving diagnostic efficiency and accuracy. For this review, eighteen representative studies using machine learning, deep learning, and hybrid models for kidney stone segmentation were considered, which were published in the period between 2020 and 2025. The XAI techniques being mainly utilized with the discussed models in the study are SHAP, LIME, Grad-CAM, Layer-wise Relevance Propagation, and EigenCAM. Such approaches tend to enhance clinicians’ trust in allowing early diagnosis and supporting clinical decision-making, especially in resource-constrained settings. Regardless of the towering results, this area still suffers due to certain limitations such as lack of diversity in datasets, absence of multimodal integration, and scarcity of real-world validation. All in all, integrating DL with XAI presents a transparent, reliable, and clinically acceptable approach to detecting and segmenting kidney stones.",
+        "summary": "BackgroundMaintaining exercise and medication habits is crucial for older adults, but conventional reminder-based digital interventions often produce only transient effects.MethodsWe conducted a mixed-methods pilot feasibility study comparing a reminder-only intervention (Experiment 1, N = 10) with a healthcare community app combining reminders and avatar-based virtual social interaction (Experiment 2, N = 10) in older adult care facilities over 4-week baseline and 4-week intervention periods. Primary outcomes were daily step counts and medication adherence.ResultsThe Reminder group showed a transient increase in step count in Week 1 (+16%) that declined to below baseline by Week 4 (−10.3%). In contrast, the Reminder + Support group maintained substantial step count improvements throughout the intervention (Week 4: +58.4%), with statistically significant differences at all time points. Medication adherence showed similar trends. A between-group comparison (Mann-Whitney U = 11.0, p < 0.05) supported greater efficacy of the Reminder + Support intervention. Qualitative data confirmed higher satisfaction and stronger social motivation in the Reminder + Support group.ConclusionThese preliminary findings suggest that integrating avatar-based social interaction with reminder functions may support more sustained health behavior change in older adults than reminders alone, warranting confirmation in larger randomized trials.",
         "sourceName": "Frontiers in Digital Health",
         "sourceCategory": "academic",
         "sourcePriority": "P2",
@@ -4390,10 +4462,10 @@
         "signalType": "algorithm_evidence"
       },
       {
-        "title": "A pilot feasibility study of a tablet-based virtual community application with shared avatars for promoting health behavior change in older adult care facilities",
-        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1757054",
+        "title": "Explainable AI in kidney stone detection and segmentation: a mini review",
+        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1750411",
         "publishedAt": "2026-05-12T00:00:00Z",
-        "summary": "BackgroundMaintaining exercise and medication habits is crucial for older adults, but conventional reminder-based digital interventions often produce only transient effects.MethodsWe conducted a mixed-methods pilot feasibility study comparing a reminder-only intervention (Experiment 1, N = 10) with a healthcare community app combining reminders and avatar-based virtual social interaction (Experiment 2, N = 10) in older adult care facilities over 4-week baseline and 4-week intervention periods. Primary outcomes were daily step counts and medication adherence.ResultsThe Reminder group showed a transient increase in step count in Week 1 (+16%) that declined to below baseline by Week 4 (−10.3%). In contrast, the Reminder + Support group maintained substantial step count improvements throughout the intervention (Week 4: +58.4%), with statistically significant differences at all time points. Medication adherence showed similar trends. A between-group comparison (Mann-Whitney U = 11.0, p < 0.05) supported greater efficacy of the Reminder + Support intervention. Qualitative data confirmed higher satisfaction and stronger social motivation in the Reminder + Support group.ConclusionThese preliminary findings suggest that integrating avatar-based social interaction with reminder functions may support more sustained health behavior change in older adults than reminders alone, warranting confirmation in larger randomized trials.",
+        "summary": "Kidney stones are one of the most common renal disorders that can produce severe complications if not diagnosed and treated early. Recently, advances in AI have ensured that deep learning and explainable AI enable the automatic segmentation and detection of kidney stones from medical imaging, thus improving diagnostic efficiency and accuracy. For this review, eighteen representative studies using machine learning, deep learning, and hybrid models for kidney stone segmentation were considered, which were published in the period between 2020 and 2025. The XAI techniques being mainly utilized with the discussed models in the study are SHAP, LIME, Grad-CAM, Layer-wise Relevance Propagation, and EigenCAM. Such approaches tend to enhance clinicians’ trust in allowing early diagnosis and supporting clinical decision-making, especially in resource-constrained settings. Regardless of the towering results, this area still suffers due to certain limitations such as lack of diversity in datasets, absence of multimodal integration, and scarcity of real-world validation. All in all, integrating DL with XAI presents a transparent, reliable, and clinically acceptable approach to detecting and segmenting kidney stones.",
         "sourceName": "Frontiers in Digital Health",
         "sourceCategory": "academic",
         "sourcePriority": "P2",
@@ -4606,18 +4678,6 @@
         "signalType": "algorithm_evidence"
       },
       {
-        "title": "Rationale and methods of the MOVI-HIIT! cluster-randomized controlled trial: an avatar-guided virtual platform for classroom activity breaks and its impact on cognition, adiposity, and fitness in preschoolers",
-        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1829401",
-        "publishedAt": "2026-05-08T00:00:00Z",
-        "summary": "IntroductionClassroom-based active breaks (ABs) have been shown to reduce sedentary time and increase physical activity in primary school children; however, evidence regarding their effects on body composition, physical fitness, cognition and other health-related outcomes remains limited in preschool children. This article describes the rationale and prespecified methods of the MOVI-HIIT study, a cluster-randomised controlled trial (RCT) evaluating a classroom-based, HIIT-inspired ABs intervention delivered through a gamified digital platform to improve body composition, physical fitness, and cognition in children aged 4–6 years. In addition, we outline a nested qualitative study designed to explore teachers’ perceptions of barriers and facilitators to programme implementation and monitoring.MethodsA RCT was conducted in nine schools in the province of Ciudad Real, Spain. Schools were randomly assigned to the MOVI-HIIT intervention group (n = 5) or the control group (n = 4). A total of 522 children aged 4–6 years were assessed at baseline (September 2022) and post-intervention (June 2023). The programme included two daily 6-minute HIIT-based ABs (20″/10″ work-to-rest ratio) guided by interactive avatars via a gamified digital platform. The primary outcomes were body composition, physical fitness, and executive function. Secondary outcomes included physical activity, sleep quality, blood pressure, and health-related quality of life. In parallel, a qualitative study using semi-structured interviews and focus groups examined teachers’ perceptions of barriers and facilitators related to the implementation and monitoring of the programme.DiscussionMOVI-HIIT represents the first intervention in early childhood education to integrate HIIT-based ABs with a gamified digital platform. Its structured, high-intensity exercise, combined with a mixed-methods process evaluation, may provide an innovative and potential reproducible model that can strengthen the evidence on classroo",
-        "sourceName": "Frontiers in Digital Health",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
         "title": "Using the behavior change wheel to develop text messages intervention (MedText-PCI) to promote medication adherence in patients after PCI",
         "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1727102",
         "publishedAt": "2026-05-08T00:00:00Z",
@@ -4628,6 +4688,18 @@
         "sourceLang": "en",
         "retrievalMethod": "rss",
         "signalType": "clinical_regulatory"
+      },
+      {
+        "title": "Rationale and methods of the MOVI-HIIT! cluster-randomized controlled trial: an avatar-guided virtual platform for classroom activity breaks and its impact on cognition, adiposity, and fitness in preschoolers",
+        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1829401",
+        "publishedAt": "2026-05-08T00:00:00Z",
+        "summary": "IntroductionClassroom-based active breaks (ABs) have been shown to reduce sedentary time and increase physical activity in primary school children; however, evidence regarding their effects on body composition, physical fitness, cognition and other health-related outcomes remains limited in preschool children. This article describes the rationale and prespecified methods of the MOVI-HIIT study, a cluster-randomised controlled trial (RCT) evaluating a classroom-based, HIIT-inspired ABs intervention delivered through a gamified digital platform to improve body composition, physical fitness, and cognition in children aged 4–6 years. In addition, we outline a nested qualitative study designed to explore teachers’ perceptions of barriers and facilitators to programme implementation and monitoring.MethodsA RCT was conducted in nine schools in the province of Ciudad Real, Spain. Schools were randomly assigned to the MOVI-HIIT intervention group (n = 5) or the control group (n = 4). A total of 522 children aged 4–6 years were assessed at baseline (September 2022) and post-intervention (June 2023). The programme included two daily 6-minute HIIT-based ABs (20″/10″ work-to-rest ratio) guided by interactive avatars via a gamified digital platform. The primary outcomes were body composition, physical fitness, and executive function. Secondary outcomes included physical activity, sleep quality, blood pressure, and health-related quality of life. In parallel, a qualitative study using semi-structured interviews and focus groups examined teachers’ perceptions of barriers and facilitators related to the implementation and monitoring of the programme.DiscussionMOVI-HIIT represents the first intervention in early childhood education to integrate HIIT-based ABs with a gamified digital platform. Its structured, high-intensity exercise, combined with a mixed-methods process evaluation, may provide an innovative and potential reproducible model that can strengthen the evidence on classroo",
+        "sourceName": "Frontiers in Digital Health",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
       },
       {
         "title": "Effectiveness of a universal digital–human parenting intervention in promoting early childhood development and protection: A pragmatic cluster randomized controlled trial",
@@ -5016,11 +5088,83 @@
     ],
     "industry_news": [
       {
+        "title": "AI's healthcare future may require a hybrid build-buy approach",
+        "url": "https://www.mobihealthnews.com/video/ais-healthcare-future-may-require-hybrid-build-buy-approach",
+        "publishedAt": "Fri, 15 May 2026 16:03:08 -0400",
+        "summary": "<div><div><iframe allow=\"encrypted-media\" allowfullscreen src=\"https://players.brightcove.net/1824526989001/default_default/index.html?videoId=6395533590112\" title=\"Future patients may expect AI-augmented care\"></iframe></div></div>",
+        "sourceName": "MobiHealthNews",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "product_market"
+      },
+      {
+        "title": "OpenAI sued over alleged fatal ChatGPT drug advice",
+        "url": "https://www.mobihealthnews.com/news/openai-sued-over-alleged-fatal-chatgpt-drug-advice",
+        "publishedAt": "Fri, 15 May 2026 14:31:21 -0400",
+        "summary": "<p dir=\"ltr\"><em>Editor's note: This article has been updated with a quote from OpenAI to MobiHealthNews.&nbsp;</em></p><p dir=\"ltr\"><a href=\"https://www.mobihealthnews.com/tag/openai\">OpenAI</a> is facing another <a href=\"https://techjusticelaw.org/press-releases/parents-sue-openai-after-chatgpt-medical-advice-results-in-overdose-death-my-son-was-a-normal-kid/\" target=\"_blank\">lawsuit</a> in California by parents alleging their son died from an accidental overdose after ChatGPT \"coached him to mix Kratom and Xanax and provided an unprompted and lethal dosage recommendation.\"</p>",
+        "sourceName": "MobiHealthNews",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "product_market"
+      },
+      {
+        "title": "9amHealth raises $26M for virtual specialty care platform and more funding news",
+        "url": "https://www.mobihealthnews.com/news/9amhealth-raises-26m-virtual-specialty-care-platform-and-more-funding-news",
+        "publishedAt": "Fri, 15 May 2026 10:57:23 -0400",
+        "summary": "<p dir=\"ltr\"><a href=\"https://www.mobihealthnews.com/tag/9amhealth-0\">9amHealth</a>, a virtual specialty care platform for cardiometabolic health, announced $26 million in Series B funding.&nbsp;</p><p dir=\"ltr\">Define Ventures led the round, with new participation from SemperVirens, Catalio Capital Management and NewHealth Ventures.&nbsp;</p><p dir=\"ltr\">Lynne O'Keefe, Define Ventures' founder and managing partner, will join the company's board of directors.&nbsp;</p><p dir=\"ltr\">The funds will be used to support the company's growth and enhance its platform.&nbsp;</p>",
+        "sourceName": "MobiHealthNews",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "platform_api"
+      },
+      {
+        "title": "Combining data can identify high-risk cohorts for SDOH initiatives",
+        "url": "https://www.mobihealthnews.com/video/combining-data-can-identify-high-risk-cohorts-sdoh-initiatives",
+        "publishedAt": "Fri, 15 May 2026 10:11:49 -0400",
+        "summary": "<div><div><iframe allow=\"encrypted-media\" allowfullscreen src=\"https://players.brightcove.net/1824526989001/default_default/index.html?videoId=6395535898112\" title=\"Operationalizing the social determinants of health\"></iframe></div></div>",
+        "sourceName": "MobiHealthNews",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "product_market"
+      },
+      {
         "title": "Fitbit 4.69 rolls out with redesign of focus stats and logging",
         "url": "https://9to5google.com/2026/05/15/fitbit-4-69/",
         "publishedAt": "Fri, 15 May 2026 14:00:00 +0000",
         "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2023/03/fitbit-logo-8.jpg?quality=82&strip=all&w=1600\" /></div><p>Google has rolled out version 4.69 of Fitbit for Android as the last update before the <a href=\"https://9to5google.com/2026/05/07/google-health-app-fitbit/\" type=\"post\" id=\"713901\">Google Health rebrand</a>.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit\" data-layer-viewtype=\"unknown\" data-post-id=\"714901\" href=\"https://9to5google.com/2026/05/15/fitbit-4-69/#more-714901\" class=\"more-link\">more…</a>",
         "sourceName": "9to5Google",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "product_market"
+      },
+      {
+        "title": "Malaysia OKs Korean AI for sepsis prediction and more AI briefs",
+        "url": "https://www.mobihealthnews.com/news/asia/malaysia-oks-korean-ai-sepsis-prediction-and-more-ai-briefs",
+        "publishedAt": "Fri, 15 May 2026 08:47:30 -0400",
+        "summary": "<p dir=\"ltr\"><strong>Korean AI for sepsis prediction cleared in Malaysia</strong></p><p dir=\"ltr\">AITRICS from South Korea has received Class C medical device approval from Malaysia's Medical Device Authority for its AI software for predicting patient deterioration.</p><p dir=\"ltr\">The AITRICS-VC, or VitalCare, uses hospital electronic medical record data to identify patients at risk of early deterioration, supporting faster clinical decisions and intervention.</p>",
+        "sourceName": "MobiHealthNews",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "clinical_regulatory"
+      },
+      {
+        "title": "Dexcom unveils next-generation G8 CGM for real-time glucose monitoring",
+        "url": "https://www.mobihealthnews.com/news/dexcom-unveils-next-generation-g8-cgm-real-time-glucose-monitoring",
+        "publishedAt": "Thu, 14 May 2026 17:26:30 -0400",
+        "summary": "<p dir=\"ltr\">During glucose-monitoring specialist <a href=\"https://www.mobihealthnews.com/tag/dexcom\">Dexcom</a>'s Investor Day on Thursday, CEO Jake Leach announced the release of its Dexcom G8 continuous glucose monitor, which Leach describes as a \"completely new product platform.”</p>",
+        "sourceName": "MobiHealthNews",
         "sourceCategory": "industry_news",
         "sourcePriority": "P1",
         "sourceLang": "en",
@@ -5716,7 +5860,7 @@
     "catalog_source": "local_repo",
     "remote_catalog_version": "2026-05-13",
     "warnings": [
-      "Tavily skipped because --rss-only was set"
+      "TAVILY_API_KEY not set; skipped vendor websearch fallback"
     ],
     "per_source": {
       "arXiv eess.SP (Signal Processing)": {
@@ -5785,9 +5929,9 @@
         "error": null
       },
       "Google Research Blog": {
-        "fetched": 0,
+        "fetched": 100,
         "kept": 0,
-        "error": "HTTP 0: fetch failed"
+        "error": null
       },
       "Google DeepMind Blog": {
         "fetched": 100,
@@ -5795,9 +5939,9 @@
         "error": null
       },
       "MobiHealthNews": {
-        "fetched": 0,
-        "kept": 0,
-        "error": "HTTP 403"
+        "fetched": 6,
+        "kept": 6,
+        "error": null
       },
       "9to5Mac": {
         "fetched": 100,
@@ -5839,8 +5983,8 @@
     },
     "tavily_per_site": {},
     "filtered_out_by_blacklist": 22,
-    "filtered_out_by_keyword": 274,
-    "filtered_out_by_date": 170,
+    "filtered_out_by_keyword": 280,
+    "filtered_out_by_date": 264,
     "duplicate_urls": 0,
     "top3_categories": null,
     "top3_scores": null,
