@@ -132,7 +132,28 @@
         "rssUrl": "https://machinelearning.apple.com/rss.xml",
         "homeUrl": "https://machinelearning.apple.com/",
         "lang": "en",
-        "why": "Apple health algorithm research (HR, fall, sleep)"
+        "why": "Apple health algorithm research (HR, fall, sleep)",
+        "keywordFilter": [
+          "wearable",
+          "smartwatch",
+          "watchos",
+          "wear os",
+          "fitbit",
+          "healthkit",
+          "health connect",
+          "fitness",
+          "health",
+          "sleep",
+          "heart",
+          "ppg",
+          "ecg",
+          "hrv",
+          "spo2",
+          "digital biomarker",
+          "remote monitoring",
+          "on-device"
+        ],
+        "keywordScope": "title_summary"
       },
       {
         "name": "Google Research Blog",
@@ -141,7 +162,28 @@
         "rssUrl": "https://research.google/blog/rss/",
         "homeUrl": "https://research.google/blog/",
         "lang": "en",
-        "why": "Google Health AI / Fitbit research"
+        "why": "Google Health AI / Fitbit research",
+        "keywordFilter": [
+          "wearable",
+          "smartwatch",
+          "watchos",
+          "wear os",
+          "fitbit",
+          "healthkit",
+          "health connect",
+          "fitness",
+          "health",
+          "sleep",
+          "heart",
+          "ppg",
+          "ecg",
+          "hrv",
+          "spo2",
+          "digital biomarker",
+          "remote monitoring",
+          "on-device"
+        ],
+        "keywordScope": "title_summary"
       },
       {
         "name": "Google DeepMind Blog",
@@ -150,7 +192,28 @@
         "rssUrl": "https://deepmind.google/blog/rss.xml",
         "homeUrl": "https://deepmind.google/discover/blog/",
         "lang": "en",
-        "why": "Occasional wearable / health-AI research"
+        "why": "Occasional wearable / health-AI research",
+        "keywordFilter": [
+          "wearable",
+          "smartwatch",
+          "watchos",
+          "wear os",
+          "fitbit",
+          "healthkit",
+          "health connect",
+          "fitness",
+          "health",
+          "sleep",
+          "heart",
+          "ppg",
+          "ecg",
+          "hrv",
+          "spo2",
+          "digital biomarker",
+          "remote monitoring",
+          "on-device"
+        ],
+        "keywordScope": "title_summary"
       }
     ],
     "industry_news": [
@@ -178,7 +241,8 @@
           "fitness+",
           "workout"
         ],
-        "why": "Apple Watch / HealthKit"
+        "why": "Apple Watch / HealthKit",
+        "keywordScope": "title"
       },
       {
         "name": "9to5Google",
@@ -193,7 +257,8 @@
           "fitbit",
           "health connect"
         ],
-        "why": "Pixel Watch / Wear OS / Fitbit"
+        "why": "Pixel Watch / Wear OS / Fitbit",
+        "keywordScope": "title"
       },
       {
         "name": "The Verge",
@@ -212,7 +277,8 @@
           "whoop",
           "garmin"
         ],
-        "why": "Wide tech — needs keyword filter"
+        "why": "Wide tech — needs keyword filter",
+        "keywordScope": "title"
       },
       {
         "name": "Fierce Healthcare",
@@ -231,7 +297,8 @@
           "sensor",
           "health tech"
         ],
-        "why": "Digital health, provider adoption, regulation and business model signal"
+        "why": "Digital health, provider adoption, regulation and business model signal",
+        "keywordScope": "title"
       },
       {
         "name": "Fierce Healthcare Health Tech",
@@ -250,7 +317,8 @@
           "sensor",
           "health tech"
         ],
-        "why": "Health tech subfeed; filtered for wearable and remote-monitoring signal"
+        "why": "Health tech subfeed; filtered for wearable and remote-monitoring signal",
+        "keywordScope": "title"
       }
     ]
   },
@@ -518,7 +586,13 @@
       "accessories roundup",
       "best accessories",
       "cyber monday",
-      "black friday"
+      "black friday",
+      "deals",
+      "freebies",
+      "app deals",
+      "today’s best",
+      "today best android app deals",
+      "best android app deals"
     ]
   },
   "scarcity_taxonomy": {

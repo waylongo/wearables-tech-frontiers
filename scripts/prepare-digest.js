@@ -183,18 +183,20 @@ function withinDays(dateStr, days) {
   if (!dateStr) return true;
   const d = new Date(dateStr);
   if (isNaN(d.getTime())) return true;
-  return d.getTime() >= Date.now() - days * 24 * 60 * 60 * 1000;
+  const now = Date.now();
+  if (d.getTime() > now + 24 * 60 * 60 * 1000) return false;
+  return d.getTime() >= now - days * 24 * 60 * 60 * 1000;
 }
 
-function passesKeywordFilter(item, keywords) {
+function passesKeywordFilter(item, keywords, scope = 'title_summary') {
   if (!keywords?.length) return true;
-  const hay = `${item.title} ${item.summary}`.toLowerCase();
+  const hay = (scope === 'title' ? item.title : `${item.title} ${item.summary}`).toLowerCase();
   return keywords.some(k => hay.includes(k.toLowerCase()));
 }
 
 function passesBlacklist(title, patterns) {
   if (!patterns?.length) return true;
-  const t = (title || '').toLowerCase();
+  const t = (title || '').toLowerCase().replace(/[’‘]/g, "'");
   return !patterns.some(p => t.includes(p.toLowerCase()));
 }
 
@@ -333,7 +335,7 @@ async function buildFromLocalRss(catalog, categories, windowDays, healthcheck) {
         healthcheck.filtered_out_by_blacklist++;
         continue;
       }
-      if (source.keywordFilter && !passesKeywordFilter(it, source.keywordFilter)) {
+      if (source.keywordFilter && !passesKeywordFilter(it, source.keywordFilter, source.keywordScope)) {
         healthcheck.filtered_out_by_keyword++;
         continue;
       }
