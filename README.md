@@ -46,7 +46,7 @@ node scripts/prepare-digest.js --days=14 --category=academic
 node scripts/prepare-digest.js --no-remote
 ```
 
-默认会读取：
+脚本默认通过 GitHub Contents API 读取中心 feed，避免 raw CDN 缓存延迟。人工查看可用：
 
 ```text
 https://raw.githubusercontent.com/waylongo/wearables-tech-frontiers/main/feed-wearables.json
