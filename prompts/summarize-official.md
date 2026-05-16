@@ -21,7 +21,9 @@ Per kept item:
 
 ```
 • [Title] — [One-line summary of what they shipped / published / argued]
-  [关键启示：一句话，为什么这对可穿戴产品或算法团队重要]
+  信号类型：[algorithm_evidence / platform_api / product_market / clinical_regulatory]
+  为什么重要：[一句话，为什么这对可穿戴产品或算法团队重要]
+  影响对象：[algorithm / sensor / clinical / platform / product]
   [sourceName] · [YYYY-MM-DD] · [url]
 ```
 

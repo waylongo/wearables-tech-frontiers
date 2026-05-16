@@ -38,7 +38,6 @@ const PROMPT_FILES = [
   'summarize-papers.md',
   'summarize-official.md',
   'summarize-news.md',
-  'summarize-chinese.md',
   'translate.md'
 ];
 
@@ -196,6 +195,22 @@ function passesBlacklist(title, patterns) {
   return !patterns.some(p => t.includes(p.toLowerCase()));
 }
 
+function inferSignalType(item) {
+  const hay = `${item.title || ''} ${item.summary || ''} ${item.sourceName || ''}`.toLowerCase();
+  if (item.sourceCategory === 'clinical_registry') return 'clinical_regulatory';
+  if (/(fda|510\(k\)|de novo|ce mark|mdr|clearance|approval|clinical trial|clinical validation|registry|endpoint)/i.test(hay)) {
+    return 'clinical_regulatory';
+  }
+  if (/(api|sdk|developer|healthkit|workoutkit|health connect|health services|schema|permission|release notes|watchos|wear os)/i.test(hay)) {
+    return 'platform_api';
+  }
+  if (/(funding|series [abc]|acquir|merger|partnership|ehr|insurance|subscription|reimbursement|business model)/i.test(hay)) {
+    return 'business_structure';
+  }
+  if (item.sourceCategory === 'academic' || item.sourceCategory === 'vendor_research') return 'algorithm_evidence';
+  return 'product_market';
+}
+
 async function fetchFeed(source) {
   const r = await httpGet(source.rssUrl);
   if (!r.ok) return { source, items: [], error: `HTTP ${r.status}${r.error ? ': ' + r.error : ''}` };
@@ -227,6 +242,9 @@ async function loadRemoteFeed(args, healthcheck) {
 
 function categoryAllowed(itemCategory, categories) {
   if (categories.includes(itemCategory)) return true;
+  if (itemCategory === 'clinical_registry') {
+    return categories.includes('academic') || categories.includes('industry_news') || categories.includes('clinical_registry');
+  }
   if (itemCategory === 'vendor_websearch') {
     return categories.includes('vendor_research') || categories.includes('industry_news') || categories.includes('vendor_websearch');
   }
@@ -238,6 +256,7 @@ function buildFromRemoteFeed(feed, categories, windowDays, healthcheck) {
   healthcheck.remote_feed_generated_at = feed.generatedAt || null;
   healthcheck.remote_feed_lookback_days = feed.lookbackDays || null;
   healthcheck.per_source = feed.healthcheck?.per_source || {};
+  healthcheck.per_api_source = feed.healthcheck?.per_api_source || {};
   healthcheck.tavily_per_site = feed.healthcheck?.tavily_per_site || {};
   healthcheck.filtered_out_by_blacklist = feed.healthcheck?.filtered_out_by_blacklist || 0;
   healthcheck.filtered_out_by_keyword = feed.healthcheck?.filtered_out_by_keyword || 0;
@@ -258,7 +277,10 @@ function buildFromRemoteFeed(feed, categories, windowDays, healthcheck) {
       localFilteredByDate++;
       continue;
     }
-    allItems.push(it);
+    allItems.push({
+      ...it,
+      signalType: it.signalType || inferSignalType(it)
+    });
   }
   healthcheck.filtered_out_by_date += localFilteredByDate;
   healthcheck.filtered_out_by_category = localFilteredByCategory;
@@ -270,11 +292,13 @@ function buildFromRemoteFeed(feed, categories, windowDays, healthcheck) {
       sourcesQueried: feed.stats?.sourcesQueried || 0,
       sourcesWithResults: feed.stats?.sourcesWithResults || 0,
       sourcesFailed: feed.stats?.sourcesFailed || 0,
+      apiSourcesQueried: feed.stats?.apiSourcesQueried || 0,
+      apiSourcesWithResults: feed.stats?.apiSourcesWithResults || 0,
+      apiSourcesFailed: feed.stats?.apiSourcesFailed || 0,
       tavilySitesQueried: feed.stats?.tavilySitesQueried || 0,
       tavilySitesWithResults: feed.stats?.tavilySitesWithResults || 0,
       tavilySitesFailed: feed.stats?.tavilySitesFailed || 0
     },
-    monitorOnlyHints: feed.monitorOnlyHints || null,
     keywordFilters: feed.keywordFilters || null,
     scarcityTaxonomy: feed.scarcityTaxonomy || null
   };
@@ -310,14 +334,16 @@ async function buildFromLocalRss(catalog, categories, windowDays, healthcheck) {
         healthcheck.filtered_out_by_keyword++;
         continue;
       }
-      allItems.push({
+      const item = {
         ...it,
         sourceName: source.name,
         sourceCategory: source.category,
         sourcePriority: source.priority,
         sourceLang: source.lang || 'en',
         retrievalMethod: 'rss'
-      });
+      };
+      item.signalType = inferSignalType(item);
+      allItems.push(item);
       healthcheck.per_source[source.name].kept++;
     }
   }
@@ -330,11 +356,13 @@ async function buildFromLocalRss(catalog, categories, windowDays, healthcheck) {
       sourcesQueried: sources.length,
       sourcesWithResults: Object.values(healthcheck.per_source).filter(x => x.kept > 0).length,
       sourcesFailed: Object.values(healthcheck.per_source).filter(x => x.error).length,
+      apiSourcesQueried: 0,
+      apiSourcesWithResults: 0,
+      apiSourcesFailed: 0,
       tavilySitesQueried: 0,
       tavilySitesWithResults: 0,
       tavilySitesFailed: 0
     },
-    monitorOnlyHints: null,
     keywordFilters: null,
     scarcityTaxonomy: null
   };
@@ -351,6 +379,7 @@ async function main() {
     prompt_sources: {},
     warnings: [],
     per_source: {},
+    per_api_source: {},
     tavily_per_site: {},
     filtered_out_by_blacklist: 0,
     filtered_out_by_keyword: 0,
@@ -369,7 +398,7 @@ async function main() {
   const config = {
     language: userCfg.language || 'zh',
     windowDays: userCfg.windowDays || 7,
-    categories: userCfg.categories || ['academic', 'vendor_research', 'industry_news'],
+    categories: userCfg.categories || ['academic', 'vendor_research', 'industry_news', 'clinical_registry'],
     onboardingComplete: userCfg.onboardingComplete || false,
     firstRunShown: userCfg.firstRunShown || false
   };
@@ -394,12 +423,6 @@ async function main() {
     if (content) prompts[key] = content;
   }
 
-  const monitorOnlyHints = sourceData.monitorOnlyHints || {
-    vendor_official: (catalog.monitor_only?.vendor_official || []).slice(0, 8),
-    industry_media: (catalog.monitor_only?.industry_media || []).slice(0, 5),
-    chinese_media_p2: (catalog.monitor_only?.chinese_media_p2 || []).slice(0, 4)
-  };
-
   const output = {
     status: 'ok',
     generatedAt: new Date().toISOString(),
@@ -413,9 +436,6 @@ async function main() {
     stats: sourceData.stats,
     items: allItems,
     groupedByCategory,
-    websearchSites: [],
-    chineseMedia: [],
-    monitorOnlyHints,
     keywordFilters: sourceData.keywordFilters || catalog.keyword_filters || {},
     scarcityTaxonomy: sourceData.scarcityTaxonomy || catalog.scarcity_taxonomy || null,
     prompts,

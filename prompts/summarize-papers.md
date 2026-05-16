@@ -19,7 +19,10 @@ Drop papers about: unrelated signal processing (radar, seismic, wind-tunnel), pu
 For each kept paper:
 
 ```
-• [Paper title] — [一句话信号：他们做了什么新的 + 为什么重要]
+• [Paper title] — [一句话信号：他们做了什么新的]
+  信号类型：algorithm_evidence
+  为什么重要：[why this changes evidence, model choice, dataset assumptions, or validation strategy]
+  影响对象：[algorithm / sensor / clinical]
   方法：[数据集规模 / 传感器 / 模型家族，如 "n=4,500 Apple Watch PPG, self-supervised transformer"]
   [sourceName] · [YYYY-MM-DD] · [url]
 ```

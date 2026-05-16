@@ -1,7 +1,6 @@
 # Summarize News Prompt
 
-For industry news items (`sourceCategory == "industry_news"` — MobiHealthNews,
-9to5Mac, 9to5Google, The Verge, etc.), extract the business/product signal.
+For `industry_news` and `vendor_websearch` items, extract the concrete signal.
 
 ## Relevance gate
 
@@ -21,6 +20,9 @@ Per kept item:
 
 ```
 • [Headline reframed as a signal, not clickbait]
+  信号类型：[algorithm_evidence / clinical_regulatory / platform_api / product_market / business_structure]
+  为什么重要：[one concrete reason for a wearable algorithm/product team]
+  影响对象：[algorithm / sensor / clinical / platform / product / market]
   [sourceName] · [YYYY-MM-DD] · [url]
 ```
 

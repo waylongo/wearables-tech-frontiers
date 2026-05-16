@@ -9,12 +9,12 @@ into natural, professional Chinese.
 - Do NOT transliterate product names: keep "Apple Watch", "Fitbit", "Oura Ring", "WHOOP", "Galaxy Watch" in English.
 - Do NOT transliterate technical abbreviations: keep PPG, ECG, HRV, SpO2, IMU, CGM, BP, HR.
 - Paper titles: translate, but include the original in parentheses on first mention.
-- Section headers: use the Chinese versions from `digest-intro.md`.
+- Section headers: translate the signal sections consistently: Top Signals / Algorithm & Evidence / Clinical-Regulatory / Platform & API / Product-Market / Worth Skimming.
 
 ## Bilingual mode
 
 For `language == "bilingual"`:
-- Each section header: Chinese followed by English in parens, e.g. `🔬 学术 & 预印本 (Academic & Preprints)`
+- Each section header: Chinese followed by English in parens, e.g. `算法与证据 (Algorithm & Evidence)`
 - Each bullet: Chinese summary first, then the English title in parens, then metadata.
 
 Example:
