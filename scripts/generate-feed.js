@@ -451,9 +451,29 @@ async function saveState(state, items) {
   await writeFile(STATE_PATH, JSON.stringify(state, null, 2));
 }
 
+function canonicalUrlForDedupe(url) {
+  try {
+    const u = new URL(url);
+    u.hash = '';
+    const host = u.hostname.replace(/^www\./, '');
+    if (host === 'ieeexplore.ieee.org') {
+      const m = u.pathname.match(/^\/(?:abstract\/)?document\/(\d+)/);
+      if (m) {
+        u.pathname = `/document/${m[1]}`;
+        u.search = '';
+      }
+    }
+    return u.toString().replace(/\/$/, '');
+  } catch {
+    return url;
+  }
+}
+
 function pushUnique(items, item, seen) {
-  if (!item.url || seen.has(item.url)) return false;
-  seen.add(item.url);
+  if (!item.url) return false;
+  const key = canonicalUrlForDedupe(item.url);
+  if (seen.has(key)) return false;
+  seen.add(key);
   items.push(item);
   return true;
 }
