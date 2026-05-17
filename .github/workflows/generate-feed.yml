@@ -2,7 +2,8 @@ name: Generate Wearables Feed
 
 on:
   schedule:
-    - cron: "0 6 * * *"
+    # Runs every Monday at 07:30 Beijing time (Sunday 23:30 UTC).
+    - cron: "30 23 * * 0"
   workflow_dispatch:
     inputs:
       mode:
@@ -21,6 +22,7 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: write
 
@@ -46,6 +48,31 @@ jobs:
           else
             node scripts/generate-feed.js
           fi
+
+      - name: Write run summary
+        run: |
+          node <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const feed = require('./feed-wearables.json');
+          const stats = feed.stats || {};
+          const health = feed.healthcheck || {};
+          const warnings = health.warnings || [];
+          console.log('## Wearables Feed Summary');
+          console.log('');
+          console.log(`- Generated at: ${feed.generatedAt || 'unknown'}`);
+          console.log(`- Lookback days: ${feed.lookbackDays || 'unknown'}`);
+          console.log(`- Kept items: ${stats.keptItems ?? 'unknown'}`);
+          console.log(`- Raw items: ${stats.rawItems ?? 'unknown'}`);
+          console.log(`- RSS sources: ${stats.sourcesWithResults ?? 0}/${stats.sourcesQueried ?? 0} with results, ${stats.sourcesFailed ?? 0} failed`);
+          console.log(`- API sources: ${stats.apiSourcesWithResults ?? 0}/${stats.apiSourcesQueried ?? 0} with results, ${stats.apiSourcesFailed ?? 0} failed`);
+          console.log(`- Tavily sites: ${stats.tavilySitesWithResults ?? 0}/${stats.tavilySitesQueried ?? 0} with results, ${stats.tavilySitesFailed ?? 0} failed`);
+          console.log(`- Duplicate URLs skipped: ${health.duplicate_urls ?? 0}`);
+          console.log(`- Filtered out: date=${health.filtered_out_by_date ?? 0}, blacklist=${health.filtered_out_by_blacklist ?? 0}, keyword=${health.filtered_out_by_keyword ?? 0}, source_exclude=${health.filtered_out_by_source_exclude ?? 0}, tavily_quality=${health.filtered_out_by_tavily_quality ?? 0}`);
+          if (warnings.length) {
+            console.log('');
+            console.log('### Warnings');
+            for (const warning of warnings) console.log(`- ${warning}`);
+          }
+          NODE
 
       - name: Commit and push feed
         run: |

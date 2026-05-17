@@ -6,15 +6,15 @@
 
 | 层 | 机制 | 源 |
 |---|---|---|
-| 学术 / 预印本 | GitHub Actions 中心抓 RSS/API | arXiv、PubMed、medRxiv、bioRxiv、npj Digital Medicine、Nature BME、JMIR mHealth、Lancet Digital Health、PLOS Digital Health、IEEE JBHI、Frontiers Digital Health、Sensors |
+| 学术 / 预印本 / 会议 | GitHub Actions 中心抓 RSS/API + Tavily | arXiv、PubMed、medRxiv、bioRxiv、npj Digital Medicine、Nature BME、JMIR mHealth、Lancet Digital Health、PLOS Digital Health、IEEE JBHI、Frontiers Digital Health、Sensors、NeurIPS / ICML health workshops、EMBC、BIBM、IMWUT / UbiComp、ISWC、IEEE Sensors |
 | 厂商研究 | GitHub Actions 中心抓 RSS | Apple ML Research、Google Research、DeepMind |
 | 临床注册 | GitHub Actions 中心调用公开 API | ClinicalTrials.gov |
-| 监管硬信号 | GitHub Actions 中心抓 RSS/API | FDA MedWatch、openFDA device 510(k)、PMA、Recall |
+| 监管硬信号 | GitHub Actions 中心抓 RSS/API + Tavily | FDA MedWatch、openFDA device 510(k)、PMA、Recall、中国 NMPA 医疗器械监管 |
 | 行业媒体 | GitHub Actions 中心抓 RSS + 关键词过滤 | MobiHealthNews、9to5Mac、9to5Google、The Verge、Fierce Healthcare |
 | 官方 / 厂商 / 行业兜底 | GitHub Actions 中心调用 Tavily | Apple、Google、Samsung、Huawei、Xiaomi、OPPO、vivo、OnePlus、Oura、WHOOP、Garmin、Withings、Dexcom、Abbott、Zepp、Suunto、Polar、COROS、Ultrahuman、RingConn、Levels、MedTech Dive、Rock Health 等 |
 | 平台 API 变更 | GitHub Actions 中心调用 Tavily | Apple HealthKit / WorkoutKit / watchOS docs、Android Health Connect / Health Services / Wear OS docs |
 
-中心 feed 每天由 GitHub Actions 更新到 `feed-wearables.json`。用户本地只负责拉取 JSON、按个人配置过滤，并让 agent 按 prompts remix。
+中心 feed 每周一由 GitHub Actions 更新到 `feed-wearables.json`。用户本地只负责拉取 JSON、按个人配置过滤，并让 agent 按 prompts remix。
 
 ## 不覆盖的
 
@@ -68,7 +68,7 @@ https://raw.githubusercontent.com/waylongo/wearables-tech-frontiers/main/feed-we
 
 GitHub Actions workflow 位于 `.github/workflows/generate-feed.yml`：
 
-- 每天 06:00 UTC 运行
+- 每周日 23:30 UTC 运行（北京时间周一 07:30）
 - 支持手动触发
 - 使用 Node 22
 - 需要在 GitHub repo secrets 配置 `TAVILY_API_KEY`
