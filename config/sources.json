@@ -2360,23 +2360,19 @@
         "name": "China NMPA Medical Device Approvals",
         "sourceCategory": "regulatory",
         "signalType": "clinical_regulatory",
-        "query": "site:nmpa.gov.cn 医疗器械 OR 注册 OR 批准 OR 创新医疗器械 OR 可穿戴 OR 手环 OR 智能手表 OR 监测 OR 传感器 OR 血糖 OR 心电 OR 血压",
+        "query": "site:nmpa.gov.cn 医疗器械 可穿戴 OR 智能手表 OR 手环 OR 连续葡萄糖 OR 血糖监测 OR 动态心电 OR 心电监测 OR 血压监测 OR 远程监测 OR 传感器",
         "homeUrl": "https://www.nmpa.gov.cn/",
         "keywordFilter": [
-          "医疗器械",
-          "注册",
-          "批准",
-          "创新医疗器械",
           "可穿戴",
           "手环",
           "智能手表",
-          "监测",
+          "连续葡萄糖",
+          "血糖监测",
+          "动态心电",
+          "心电监测",
+          "血压监测",
+          "远程监测",
           "传感器",
-          "血糖",
-          "心电",
-          "血压",
-          "nmpa",
-          "medical device",
           "wearable",
           "smartwatch",
           "sensor",
@@ -2408,7 +2404,16 @@
           "digital biomarker",
           "remote monitoring"
         ],
-        "keywordScope": "title_summary",
+        "keywordScope": "title",
+        "excludeKeywordFilter": [
+          "table of contents",
+          "front matter",
+          "proceedings",
+          "call for papers",
+          "program committee",
+          "author index",
+          "preface"
+        ],
         "maxItems": 3
       },
       {
@@ -2431,7 +2436,16 @@
           "digital biomarker",
           "remote monitoring"
         ],
-        "keywordScope": "title_summary",
+        "keywordScope": "title",
+        "excludeKeywordFilter": [
+          "table of contents",
+          "front matter",
+          "proceedings",
+          "call for papers",
+          "program committee",
+          "author index",
+          "preface"
+        ],
         "maxItems": 3
       },
       {
@@ -2450,11 +2464,23 @@
           "ppg",
           "ecg",
           "actigraphy",
+          "sleep",
+          "heart",
+          "health",
           "digital biomarker",
           "remote monitoring",
           "biomedical"
         ],
-        "keywordScope": "title_summary",
+        "keywordScope": "title",
+        "excludeKeywordFilter": [
+          "table of contents",
+          "front matter",
+          "proceedings",
+          "call for papers",
+          "program committee",
+          "author index",
+          "preface"
+        ],
         "maxItems": 3
       },
       {
@@ -2473,12 +2499,24 @@
           "ppg",
           "ecg",
           "actigraphy",
+          "sleep",
+          "heart",
+          "health",
           "digital biomarker",
           "remote monitoring",
           "bioinformatics",
           "biomedicine"
         ],
-        "keywordScope": "title_summary",
+        "keywordScope": "title",
+        "excludeKeywordFilter": [
+          "table of contents",
+          "front matter",
+          "proceedings",
+          "call for papers",
+          "program committee",
+          "author index",
+          "preface"
+        ],
         "maxItems": 3
       },
       {
@@ -2501,7 +2539,16 @@
           "digital biomarker",
           "remote monitoring"
         ],
-        "keywordScope": "title_summary",
+        "keywordScope": "title",
+        "excludeKeywordFilter": [
+          "table of contents",
+          "front matter",
+          "proceedings",
+          "call for papers",
+          "program committee",
+          "author index",
+          "preface"
+        ],
         "maxItems": 3
       },
       {
@@ -2518,12 +2565,22 @@
           "on-body",
           "body-worn",
           "sensor",
+          "sensing",
           "activity recognition",
           "health",
           "fitness",
           "digital biomarker"
         ],
-        "keywordScope": "title_summary",
+        "keywordScope": "title",
+        "excludeKeywordFilter": [
+          "table of contents",
+          "front matter",
+          "proceedings",
+          "call for papers",
+          "program committee",
+          "author index",
+          "preface"
+        ],
         "maxItems": 3
       },
       {
@@ -2541,11 +2598,23 @@
           "ecg",
           "imu",
           "inertial",
+          "sleep",
+          "heart",
+          "health",
           "health monitoring",
           "digital biomarker",
           "remote monitoring"
         ],
-        "keywordScope": "title_summary",
+        "keywordScope": "title",
+        "excludeKeywordFilter": [
+          "table of contents",
+          "front matter",
+          "proceedings",
+          "call for papers",
+          "program committee",
+          "author index",
+          "preface"
+        ],
         "maxItems": 3
       },
       {
