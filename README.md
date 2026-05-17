@@ -1,16 +1,53 @@
-# Wearables Tech Frontiers (wtf)
+# Wearables Tech Frontiers Skill
 
-`wearables-tech-frontiers` is an on-demand digest skill for tracking wearables R&D, product, platform, clinical, and market signals across Apple, Google/Fitbit, Oura, Garmin, Samsung, WHOOP, and adjacent sports-health companies.
+`/wtf` stands for Wearables Tech Frontiers.
 
-It reads a central feed, applies local preferences, and asks the agent to turn the result into a short signal brief. It is not a push service, a live web-search tool, or a general health-news aggregator.
+It is an on-demand skill for following wearables R&D, platform, clinical, product, and market signals across Apple, Google/Fitbit, Oura, Garmin, Samsung, WHOOP, and adjacent sports-health companies. It reads a maintained central feed and turns it into a short signal brief through Claude Code or Codex.
+
+## Information Sources
+
+The source catalog is `config/sources.json`.
+
+- **Academic evidence**: papers, preprints, validation studies, datasets, and physiological time-series methods from arXiv, PubMed, medRxiv, bioRxiv, and digital-health journals.
+- **Vendor research**: official research channels such as Apple Machine Learning Research, Google Research, and DeepMind.
+- **Clinical / Regulatory**: ClinicalTrials.gov, FDA MedWatch, openFDA 510(k), PMA, and recall signals.
+- **Platform & API**: HealthKit, WorkoutKit, Health Connect, Health Services, Wear OS, and related developer updates.
+- **Product / Market**: launches, health features, partnerships, funding, M&A, category movement, and official vendor updates.
+
+Not covered: X/Twitter, paid funding databases, individual openFDA adverse-event reports, push notifications, or telemetry.
+
+## Data Flow
+
+```text
+1. Source catalog
+   config/sources.json
+
+2. Central feed generation
+   GitHub Actions -> scripts/generate-feed.js
+   schedule: every Monday 07:30 Beijing time
+   lookback: 30 days
+
+3. Published feed
+   feed-wearables.json
+   state-feed.json
+
+4. Digest preparation
+   scripts/prepare-digest.js
+   default display window: 30 days
+   applies local language/category/source overrides
+
+5. Agent output
+   prompts/*.md
+   Claude Code / Codex digest
+```
+
+`remote_feed` is the default path. It reads the central feed through the GitHub Contents API.
+
+`local_rss` is the fallback path. It is used by `--no-remote` or `~/.wtf/sources.json`, and only fetches local RSS plus the local openFDA subset.
+
+Schema note: `config/sources.json` uses `schema_version`; `feed-wearables.json` uses `schemaVersion`.
 
 ## Install
-
-Codex:
-
-```bash
-git clone https://github.com/waylongo/wearables-tech-frontiers.git ~/.codex/skills/wearables-tech-frontiers
-```
 
 Claude Code:
 
@@ -18,107 +55,23 @@ Claude Code:
 git clone https://github.com/waylongo/wearables-tech-frontiers.git ~/.claude/skills/wearables-tech-frontiers
 ```
 
+Codex:
+
+```bash
+git clone https://github.com/waylongo/wearables-tech-frontiers.git ~/.codex/skills/wearables-tech-frontiers
+```
+
 Requires Node 22+. There are no npm dependencies.
 
 ## Use
 
-In the agent:
+Use `/wtf` directly in Claude Code or Codex.
 
-```text
-/wtf
-```
+Examples:
 
-Standalone:
-
-```bash
-node scripts/prepare-digest.js --days=7
-node scripts/prepare-digest.js --days=14 --category=academic
-node scripts/prepare-digest.js --no-remote
-```
-
-Common preference changes:
-
-- `past 14 days`: one-time `--days=14`
-- `academic only`: one-time `--category=academic`
-- `default to biweekly`: update `~/.wtf/config.json`
-- `switch to Chinese`: update `~/.wtf/config.json` with `"language": "zh"`
-
-## Data Flow
-
-```text
-config/sources.json
-  -> GitHub Actions runs scripts/generate-feed.js
-  -> feed-wearables.json + state-feed.json
-  -> scripts/prepare-digest.js
-  -> prompts/*.md
-  -> agent digest
-```
-
-Default path: `remote_feed`. `prepare-digest.js` reads the central feed through the GitHub Contents API, filters by local window/category preferences, loads prompts, and emits one JSON object for the agent.
-
-Fallback path: `local_rss`. `--no-remote` or `~/.wtf/sources.json` skips the central feed and fetches local RSS plus the local openFDA subset. This is useful for private sources and debugging, but it is not equivalent to the full central feed because it does not run Tavily or every central API fetcher.
-
-Schema note: `config/sources.json` is the source catalog schema and uses `schema_version`; `feed-wearables.json` is the feed output schema and uses `schemaVersion`. V1 keeps both names for compatibility.
-
-## Coverage
-
-`config/sources.json` is the source of truth.
-
-- Academic evidence: papers, preprints, validation studies, datasets, physiological time-series methods
-- Vendor research: Apple ML Research, Google Research, DeepMind, and similar official research channels
-- Clinical / Regulatory: ClinicalTrials.gov, FDA MedWatch, openFDA 510(k), PMA, recall
-- Platform & API: HealthKit, WorkoutKit, Health Connect, Health Services, Wear OS
-- Product / Market: launches, health features, partnerships, funding, M&A, category movement
-- Vendor / official fallback: site-scoped Tavily results generated by GitHub Actions
-
-Not covered:
-
-- X / Twitter
-- Chinese industry-media feeds
-- openFDA individual adverse-event reports
-- Paid funding databases
-- User push notifications or telemetry
-
-## Feed Maintenance
-
-Workflow: `.github/workflows/generate-feed.yml`
-
-- Schedule: every Monday 07:30 Beijing time
-- Manual trigger: `workflow_dispatch`
-- Runtime: Node 22
-- Full generation uses the GitHub repo secret `TAVILY_API_KEY`
-- Output: commits `feed-wearables.json` and `state-feed.json` to `main`
-
-Local commands:
-
-```bash
-node scripts/generate-feed.js --rss-only
-TAVILY_API_KEY=... node scripts/generate-feed.js
-```
-
-Do not commit API keys or local `.env` files.
-
-## Debug
-
-Ask the agent:
-
-```text
-debug
-dump JSON
-```
-
-The agent should rerun `prepare-digest.js`, output the JSON, and summarize:
-
-```text
-feed: remote_feed / local_rss
-RSS/API/Tavily source counts
-filter counts: blacklist / keyword / source exclude / Tavily quality / cap / date
-Top Signals categories and scores
-```
-
-## Principles
-
-1. Rank Top Signals by scarcity and impact.
-2. Keep central generation deterministic: fetch, filter, dedupe, publish.
-3. Let the user-side agent handle language and sectioning from the emitted JSON.
-4. Keep a short healthcheck so source quality and filtering remain visible.
+- `/wtf`
+- `/wtf latest wearable tech frontiers`
+- `/wtf past 14 days`
+- `/wtf academic and vendor research only`
+- `/wtf switch output to Chinese`
+- `/wtf add this private RSS source: https://example.com/feed.xml`

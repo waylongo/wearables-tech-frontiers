@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // ============================================================================
-// Wearables Tech Frontiers (wtf) — Prepare Digest
+// /wtf — Prepare Digest
 // ============================================================================
 // Default mode reads the centrally generated GitHub feed. Local RSS fallback is
 // kept for --no-remote, remote failures, and user-private source overrides.
@@ -564,7 +564,7 @@ async function main() {
   }
   const config = {
     language: userCfg.language || 'en',
-    windowDays: userCfg.windowDays || 7,
+    windowDays: userCfg.windowDays || 30,
     categories: userCfg.categories || ['academic', 'vendor_research', 'industry_news', 'clinical_registry', 'regulatory'],
     onboardingComplete: userCfg.onboardingComplete || false,
     firstRunShown: userCfg.firstRunShown || false

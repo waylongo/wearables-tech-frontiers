@@ -79,7 +79,7 @@ jobs:
           const result = spawnSync(process.execPath, [
             'scripts/prepare-digest.js',
             '--no-remote',
-            '--days=7'
+            '--days=30'
           ], {
             encoding: 'utf8',
             maxBuffer: 20 * 1024 * 1024
@@ -94,6 +94,9 @@ jobs:
           if (payload.status !== 'ok') throw new Error(`Unexpected status: ${payload.status}`);
           if (payload.config?.language !== 'en') {
             throw new Error(`Expected default language en, got ${payload.config?.language}`);
+          }
+          if (payload.windowDays !== 30) {
+            throw new Error(`Expected windowDays 30, got ${payload.windowDays}`);
           }
           if (payload.healthcheck?.feed_source !== 'local_rss') {
             throw new Error(`Expected local_rss, got ${payload.healthcheck?.feed_source}`);
