@@ -66,7 +66,8 @@ jobs:
           console.log(`- API sources: ${stats.apiSourcesWithResults ?? 0}/${stats.apiSourcesQueried ?? 0} with results, ${stats.apiSourcesFailed ?? 0} failed`);
           console.log(`- Tavily sites: ${stats.tavilySitesWithResults ?? 0}/${stats.tavilySitesQueried ?? 0} with results, ${stats.tavilySitesFailed ?? 0} failed`);
           console.log(`- Duplicate URLs skipped: ${health.duplicate_urls ?? 0}`);
-          console.log(`- Filtered out: date=${health.filtered_out_by_date ?? 0}, blacklist=${health.filtered_out_by_blacklist ?? 0}, keyword=${health.filtered_out_by_keyword ?? 0}, source_exclude=${health.filtered_out_by_source_exclude ?? 0}, tavily_quality=${health.filtered_out_by_tavily_quality ?? 0}`);
+          console.log(`- Duplicate titles skipped: ${health.duplicate_titles ?? 0}`);
+          console.log(`- Filtered out: date=${health.filtered_out_by_date ?? 0}, blacklist=${health.filtered_out_by_blacklist ?? 0}, keyword=${health.filtered_out_by_keyword ?? 0}, required_keyword=${health.filtered_out_by_required_keyword ?? 0}, source_exclude=${health.filtered_out_by_source_exclude ?? 0}, entry_page=${health.filtered_out_by_entry_page ?? 0}, tavily_quality=${health.filtered_out_by_tavily_quality ?? 0}`);
           if (warnings.length) {
             console.log('');
             console.log('### Warnings');

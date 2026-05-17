@@ -133,6 +133,10 @@ function passesKeywordFilter(item, keywords, scope = 'title_summary') {
   return keywords.some(k => keywordMatches(hay, k));
 }
 
+function passesRequiredKeywordFilter(item, keywords, scope = 'title_summary') {
+  return passesKeywordFilter(item, keywords, scope);
+}
+
 function escapeRe(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
@@ -162,6 +166,30 @@ function passesUrlExcludeFilter(item, patterns) {
   if (!patterns?.length) return true;
   const hay = `${item.url || ''}`.toLowerCase();
   return !patterns.some(p => hay.includes(p.toLowerCase()));
+}
+
+function isAllowedIncrementalDocPage(item) {
+  const hay = `${item.title || ''} ${item.url || ''}`.toLowerCase();
+  return /\b(change\s*log|changelog|release notes?|releases?|release-notes|api-changelog)\b/i.test(hay);
+}
+
+function passesEntryPageFilter(item) {
+  if (isAllowedIncrementalDocPage(item)) return true;
+  const title = (item.title || '').toLowerCase().replace(/[’‘]/g, "'");
+  const entryPatterns = [
+    /\bapi\s*\|\s*home\b/,
+    /\bdeveloper docs?\b/,
+    /\bapi docs?\b/,
+    /\bpublic api\b/,
+    /\bpartner hub\b/,
+    /\bwhoop 101\b/,
+    /\b101\b/,
+    /\bconnect iq sdk\b/,
+    /^(home|overview)$/i,
+    /^(home|overview)\s*[|-]/i,
+    /\s[|-]\s*(home|overview)$/i
+  ];
+  return !entryPatterns.some(re => re.test(title));
 }
 
 function inferSignalType(item) {
@@ -269,11 +297,25 @@ async function fetchClinicalTrials(source) {
         .slice(0, 5)
         .join('; ');
       const phases = (p.designModule?.phases || []).join(', ');
+      const briefSummary = p.descriptionModule?.briefSummary || '';
+      const primaryOutcomes = (p.outcomesModule?.primaryOutcomes || [])
+        .map(x => [x.measure, x.description].filter(Boolean).join(': '))
+        .filter(Boolean)
+        .slice(0, 3)
+        .join('; ');
+      const secondaryOutcomes = (p.outcomesModule?.secondaryOutcomes || [])
+        .map(x => [x.measure, x.description].filter(Boolean).join(': '))
+        .filter(Boolean)
+        .slice(0, 3)
+        .join('; ');
       const summaryParts = [
         status && `Status: ${status}`,
         conditions && `Conditions: ${conditions}`,
         interventions && `Interventions: ${interventions}`,
-        phases && `Phase: ${phases}`
+        phases && `Phase: ${phases}`,
+        primaryOutcomes && `Primary outcomes: ${primaryOutcomes}`,
+        secondaryOutcomes && `Secondary outcomes: ${secondaryOutcomes}`,
+        briefSummary && `Summary: ${briefSummary}`
       ].filter(Boolean);
       return {
         title,
@@ -381,13 +423,15 @@ function tavilyTimeRange(days) {
 }
 
 function inferPublicationYear(item) {
-  const hay = `${item.title || ''}\n${item.summary || ''}`;
+  const hay = `${item.title || ''}\n${item.summary || ''}\n${item.url || ''}`;
   const patterns = [
     /\bpublished in:\s*(\d{4})\b/i,
     /\bdate of conference:\s*[^.\n]*\b(20\d{2})\b/i,
     /\b(20\d{2})\s+IEEE\b/i,
     /\b(20\d{2})\s+ACM\b/i,
-    /\b(?:NeurIPS|ICML|EMBC|BIBM|ISWC|UbiComp|IMWUT)\s*(20\d{2})\b/i
+    /\b(?:NeurIPS|ICML|EMBC|BIBM|ISWC|UbiComp|IMWUT)\s*(20\d{2})\b/i,
+    /(?:^|[\/_-])(20\d{2})(?:[\/_-]|$)/i,
+    /\b(?:q[1-4][\s-]*)?(20\d{2})\b/i
   ];
   for (const re of patterns) {
     const m = hay.match(re);
@@ -401,7 +445,7 @@ function passesTavilyFreshness(item, site, days) {
   if (!site.requireRecentYear) return true;
   const year = inferPublicationYear(item);
   if (!year) return false;
-  return year >= new Date().getUTCFullYear();
+  return year === new Date().getUTCFullYear();
 }
 
 async function fetchTavilySite(site, apiKey, days) {
@@ -499,13 +543,24 @@ function canonicalUrlForDedupe(url) {
   }
 }
 
-function pushUnique(items, item, seen) {
+function normalizedTitleForDedupe(item) {
+  return `${item.sourceName || ''}|${item.title || ''}`
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function pushUnique(items, item, seenUrls, seenTitles) {
   if (!item.url) return false;
   const key = canonicalUrlForDedupe(item.url);
-  if (seen.has(key)) return false;
-  seen.add(key);
+  if (seenUrls.has(key)) return 'duplicate_url';
+  const titleKey = normalizedTitleForDedupe(item);
+  if (titleKey && seenTitles.has(titleKey)) return 'duplicate_title';
+  seenUrls.add(key);
+  if (titleKey) seenTitles.add(titleKey);
   items.push(item);
-  return true;
+  return 'pushed';
 }
 
 async function main() {
@@ -523,8 +578,11 @@ async function main() {
     filtered_out_by_keyword: 0,
     filtered_out_by_source_exclude: 0,
     filtered_out_by_tavily_quality: 0,
+    filtered_out_by_required_keyword: 0,
+    filtered_out_by_entry_page: 0,
     filtered_out_by_date: 0,
     duplicate_urls: 0,
+    duplicate_titles: 0,
     tavily_items_capped: 0,
     top3_categories: null,
     top3_scores: null,
@@ -534,7 +592,8 @@ async function main() {
   const sources = Object.values(catalog.primary_rss || {}).flat();
   const rssResults = await Promise.all(sources.map(fetchFeed));
   const items = [];
-  const seen = new Set();
+  const seenUrls = new Set();
+  const seenTitles = new Set();
 
   for (const { source, items: sourceItems, error } of rssResults) {
     healthcheck.per_source[source.name] = { fetched: sourceItems.length, kept: 0, error };
@@ -552,6 +611,10 @@ async function main() {
         healthcheck.filtered_out_by_keyword++;
         continue;
       }
+      if (source.requiredKeywordFilter && !passesRequiredKeywordFilter(it, source.requiredKeywordFilter, source.requiredKeywordScope || source.keywordScope)) {
+        healthcheck.filtered_out_by_required_keyword++;
+        continue;
+      }
       if (!passesSourceExcludeFilter(it, source.excludeKeywordFilter)) {
         healthcheck.filtered_out_by_source_exclude++;
         continue;
@@ -564,8 +627,9 @@ async function main() {
         sourceLang: source.lang || 'en',
         retrievalMethod: 'rss',
         signalType: inferSignalType({ ...it, sourceName: source.name, sourceCategory: source.category })
-      }, seen);
-      if (pushed) healthcheck.per_source[source.name].kept++;
+      }, seenUrls, seenTitles);
+      if (pushed === 'pushed') healthcheck.per_source[source.name].kept++;
+      else if (pushed === 'duplicate_title') healthcheck.duplicate_titles++;
       else healthcheck.duplicate_urls++;
     }
   }
@@ -592,6 +656,10 @@ async function main() {
         healthcheck.filtered_out_by_keyword++;
         continue;
       }
+      if (source.requiredKeywordFilter && !passesRequiredKeywordFilter(it, source.requiredKeywordFilter, source.requiredKeywordScope || source.keywordScope)) {
+        healthcheck.filtered_out_by_required_keyword++;
+        continue;
+      }
       if (!passesSourceExcludeFilter(it, source.excludeKeywordFilter)) {
         healthcheck.filtered_out_by_source_exclude++;
         continue;
@@ -605,8 +673,9 @@ async function main() {
         retrievalMethod: 'api'
       };
       item.signalType = source.signalType || inferSignalType(item);
-      const pushed = pushUnique(items, item, seen);
-      if (pushed) healthcheck.per_api_source[source.name].kept++;
+      const pushed = pushUnique(items, item, seenUrls, seenTitles);
+      if (pushed === 'pushed') healthcheck.per_api_source[source.name].kept++;
+      else if (pushed === 'duplicate_title') healthcheck.duplicate_titles++;
       else healthcheck.duplicate_urls++;
     }
   }
@@ -632,6 +701,10 @@ async function main() {
           healthcheck.filtered_out_by_tavily_quality++;
           continue;
         }
+        if (site.requiredKeywordFilter && !passesRequiredKeywordFilter(it, site.requiredKeywordFilter, site.requiredKeywordScope || site.keywordScope)) {
+          healthcheck.filtered_out_by_required_keyword++;
+          continue;
+        }
         const tavilyExclude = [
           ...(catalog.websearch_sites?.excludeKeywordFilter || []),
           ...(site.excludeKeywordFilter || [])
@@ -646,6 +719,10 @@ async function main() {
         ];
         if (!passesUrlExcludeFilter(it, urlExclude)) {
           healthcheck.filtered_out_by_tavily_quality++;
+          continue;
+        }
+        if (!passesEntryPageFilter(it)) {
+          healthcheck.filtered_out_by_entry_page++;
           continue;
         }
         if (!passesTavilyFreshness(it, site, args.days)) {
@@ -675,11 +752,12 @@ async function main() {
             sourceName: site.name,
             sourceCategory: site.sourceCategory || 'vendor_websearch'
           })
-        }, seen);
-        if (pushed) {
+        }, seenUrls, seenTitles);
+        if (pushed === 'pushed') {
           healthcheck.tavily_per_site[site.name].finalKept++;
           healthcheck.tavily_per_site[site.name].kept++;
         }
+        else if (pushed === 'duplicate_title') healthcheck.duplicate_titles++;
         else healthcheck.duplicate_urls++;
       }
     }
