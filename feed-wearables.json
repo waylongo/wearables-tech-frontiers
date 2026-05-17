@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "status": "ok",
-  "generatedAt": "2026-05-17T05:26:45.764Z",
+  "generatedAt": "2026-05-17T08:13:37.539Z",
   "lookbackDays": 30,
   "stats": {
     "rawItems": 1007,
-    "keptItems": 68,
+    "keptItems": 69,
     "sourcesQueried": 20,
     "sourcesWithResults": 13,
     "sourcesFailed": 0,
@@ -30,10 +30,10 @@
       "signalType": "product_market"
     },
     {
-      "title": "TorchRef: An open-source PyTorch Framework for Crystallographic Refinement",
-      "url": "https://www.biorxiv.org/content/10.64898/2026.05.13.724821v1?rss=1",
+      "title": "Discovering conserved regulatory modules in predicted gene regulatory networks across species",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725337v1?rss=1",
       "publishedAt": "2026-05-16",
-      "summary": "Macromolecular crystallographic refinement underpins structural biology, yet existing software packages often lack accessible, modular codebases amenable to rapid method development. Here, we introduce TorchRef, a PyTorch-based crystallographic refinement framework that exposes all refinable parameters, atomic coordinates, displacement parameters, occupancies, and scale factors to automatic differentiation. The framework implements FFT-based structure-factor calculations, the French-Wilson treatment of intensities, bulk-solvent modeling with established mask parameters, and stereochemical restraints from the CCP4 Monomer Library. A modular target architecture allows loss functions to be combined, weighted, and extended independently of the core refinement machinery. Validation against 1,000 PDB structures demonstrates that TorchRef-based refinement reproduces a median R-free within 1% of Phenix while maintaining comparable model quality. Structure factor calculation in TorchRef scales readily across multiple CPU cores and is over 100 times faster on modern GPUs than CCTBX. To showcase how modern methods like time-resolved crystallography can benefit from the flexibility that TorchRef provides, we implemented direct refinement of a typical time-resolved model against amplitude differences, a use case currently not explored by classic refinement programs. TorchRef is released under the MIT license with full API documentation and tutorials, providing an accessible platform for developing and testing new crystallographic refinement protocols.",
+      "summary": "The discovery of conserved regulatory motifs across different species is a fundamental challenge in systems biology, especially considering the noisy and incomplete nature of predicted gene regulatory networks (GRNs) and the intractability of the underlying graph alignment problem. Traditional network alignment methods frequently enforce one-to-one node mappings or strict topological isomorphism, which fail to accommodate the many-to-many orthology mappings caused by evolutionary gene duplication. Consequently, strict constraints often yield highly fragmented topological islands rather than cohesive functional modules. In this work, we propose a relaxed topological alignment algorithm designed to extract conserved regulatory structures from cross-species GRNs. We formulate the discovery process as a multi-objective optimization problem that balances sequence homology, functional coherence, and a normalized topological consensus. To navigate the exponentially scaling search space, we introduce a greedy seed-and-extend heuristic bounded by a dynamic {epsilon}-stopping condition, which evaluates marginal objective gains to prevent functional dilution. We validate our algorithm using time-series transcriptomic data from Arabidopsis thaliana, Zea mays, and Sorghum bicolor focused on drought and developmental stress responses. While a strict topological baseline extracted only fragmented subgraphs limited to 51 homologous tuples, our relaxed heuristic successfully converged on a highly connected 444-tuple module. The resulting topology effectively links strictly conserved upstream transcription factors to their highly duplicated, species-specific downstream pathways. Our algorithm provides a robust, scalable computational methodology for identifying core regulatory logic across complex biological systems, facilitating the translation of conserved network architectures among multiple species.",
       "sourceName": "bioRxiv: new results",
       "sourceCategory": "academic",
       "sourcePriority": "P2",
@@ -184,68 +184,6 @@
       "sourceLang": "en",
       "retrievalMethod": "rss",
       "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Remote Game-based Exercise Program for Cognitive and Motor Function Improvement",
-      "url": "https://clinicaltrials.gov/study/NCT05235113",
-      "publishedAt": "2026-05-15",
-      "summary": "Status: ACTIVE_NOT_RECRUITING | Conditions: Mild Cognitive Impairment; Dementia; Cognitive Impairment; Memory Loss | Interventions: Tele-Exergame Platform; No Tele-Exergame Platform | Phase: NA | Primary outcomes: Change in Balance: Change in balance from baseline to 12 weeks will be measured. Balance will be assessed by measuring center of mass sway. The investigator will use a validated wearable platform (BalanSen) to measure body sway.; Change in Cognitive Function: Changes from baseline in cognitive function at 12 weeks. Cognitive performance will be assessed using Montreal Cognitive Assessment (MoCA). Scores on the MoCA range from zero to 30, with a score of 26 and higher generally considered normal. | Secondary outcomes: Change in Physical Activity: Changes in physical activity from baseline to 12 weeks will be assessed. Physical activity will be quantified by measuring number of taken steps per day and will be measured using a validated wearable sensor named PAMSys. Monitoring of physical activity will be done during 48h baseline and 48 hour at 12 weeks.; Change in Quality of Life: Quality of life will be assessed using a validated questionnaire, called PROMIS Global-10.\n\nThe PROMIS Global-10 is a 10-item patient-reported questionnaire in which the response options are presented as 5-point (as well as a single 11-point) rating scales. The results of the questions are used to calculate two summary scores: a Global Physical Health Score and a Global Mental Health score. These scores are then standardized to the general population, using the \"T-Score\". The average \"T-Score\" for the United States population is 50 points, with a standard deviation of 10 points. Higher scores indicate a healthier patient.; change in depression: Changes in depression from baseline to 12 weeks will be assessed. Depression will be quantified by the Center for Epidemiologic Studies Depression Scale (CES-D) at baseline and 12 weeks. The CES-D consists of 20 items, and each item is scored on a scale of 0 to 3, with 0 representing \"Rarely or none of the time\" and 3 representing \"Most or all of the time.\" The total score for the CES-D ranges from 0 to 60, with higher scores indicating a greater severity of depressive symptoms.\n\nA score of 16 or higher is often considered as a cutoff point for identifying individuals who may be at risk for clinical depression. However, it is important to note that the CES-D is a screening tool, not a diagnostic tool, and a higher score should prompt further evaluation by a mental health professional. | Summary: As our population ages, more older adults face motor-cognitive declines, increasing their risk of falls and fear of falling. Exercise is an effective way to maintain cognitive function, as supported by recent studies. However, those with poor motor and cognitive abilities often struggle to visit rehabilitation centers, leading to high dropout rates and low adherence to unsupervised programs. A remote exercise program tailored for individuals with cognitive impairments is urgently needed to preserve cognitive function, promote independent living, and reduce related costs. Researchers aim to develop an in-home system for adults with mild cognitive issues or dementia, designed to improve balance and cognition while being remotely supervised through telemedicine.",
-      "nctId": "NCT05235113",
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_registry",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "api",
-      "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "‘Google Health’ replaces Fitbit app as new ‘Premium’ plan joins AI Pro",
-      "url": "https://9to5google.com/2026/05/07/google-health-app-fitbit/",
-      "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Google-Health-cover.png?w=1600\" /></div><p>After months of <a href=\"https://9to5google.com/2025/10/27/fitbit-coach-preview/\">Public Preview testing</a>, Google is replacing the Fitbit app and launching “Google Health.” It’s meant to bring “together the best of Fitbit’s pioneering spirit with the helpfulness of Google.”</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,gemini,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713901\" href=\"https://9to5google.com/2026/05/07/google-health-app-fitbit/#more-713901\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "Google announces $99 Fitbit Air for screen-less, all-day tracking",
-      "url": "https://9to5google.com/2026/05/07/fitbit-air-launch/",
-      "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Fitbit-Air-cover.jpg?quality=82&strip=all&w=1600\" /></div><p>Google today announced the Fitbit Air as a screen-less fitness tracker that has a low-profile and affordable $99.99 price.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713649\" href=\"https://9to5google.com/2026/05/07/fitbit-air-launch/#more-713649\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "Health Tech Weekly Rundown: Headspace app launches on Apple Watch; Visby, RAINN partner on safe access program",
-      "url": "https://www.fiercehealthcare.com/health-tech/health-tech-weekly-rundown-carrot-adds-menopause-care-ai-native-metabolic-health",
-      "publishedAt": "May 14, 2026 2:06pm",
-      "summary": "Stay up to date on the latest in health tech, digital health and health AI news with this weekly brief.",
-      "sourceName": "Fierce Healthcare",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "Perfusion Index Parameter",
-      "url": "https://clinicaltrials.gov/study/NCT06586918",
-      "publishedAt": "2026-05-15",
-      "summary": "Status: COMPLETED | Conditions: Perfusion; Complications | Primary outcomes: Perfusion Index (PI) correlation to doppler measurement: To confirm correlation of Perfusion Index measured by the investigational pulse oximeter PCBA and Market Released sensors to the laser doppler measure of skin perfusion (LDSP) as determined by an overall instantaneous (lag(0)) Spearman rank correlation. | Summary: To evaluate the association between the Perfusion index parameter and an independent measure of perfusion.",
-      "nctId": "NCT06586918",
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_registry",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "api",
-      "signalType": "clinical_regulatory"
     },
     {
       "title": "Dexcom unveils next-generation G8 CGM for real-time glucose monitoring",
@@ -428,6 +366,30 @@
       "signalType": "product_market"
     },
     {
+      "title": "‘Google Health’ replaces Fitbit app as new ‘Premium’ plan joins AI Pro",
+      "url": "https://9to5google.com/2026/05/07/google-health-app-fitbit/",
+      "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
+      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Google-Health-cover.png?w=1600\" /></div><p>After months of <a href=\"https://9to5google.com/2025/10/27/fitbit-coach-preview/\">Public Preview testing</a>, Google is replacing the Fitbit app and launching “Google Health.” It’s meant to bring “together the best of Fitbit’s pioneering spirit with the helpfulness of Google.”</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,gemini,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713901\" href=\"https://9to5google.com/2026/05/07/google-health-app-fitbit/#more-713901\" class=\"more-link\">more…</a>",
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
+    },
+    {
+      "title": "Google announces $99 Fitbit Air for screen-less, all-day tracking",
+      "url": "https://9to5google.com/2026/05/07/fitbit-air-launch/",
+      "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
+      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Fitbit-Air-cover.jpg?quality=82&strip=all&w=1600\" /></div><p>Google today announced the Fitbit Air as a screen-less fitness tracker that has a low-profile and affordable $99.99 price.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713649\" href=\"https://9to5google.com/2026/05/07/fitbit-air-launch/#more-713649\" class=\"more-link\">more…</a>",
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
+    },
+    {
       "title": "A systematic review and meta-analysis on dual-task sensor-based motion analysis for dementia detection",
       "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1728588",
       "publishedAt": "2026-05-07T00:00:00Z",
@@ -450,6 +412,68 @@
       "sourceLang": "en",
       "retrievalMethod": "rss",
       "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Accuracy of heart rate measurement using AirPods Pro 3 during graded treadmill exercise: A laboratory-based validation study",
+      "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001373",
+      "publishedAt": "2026-04-30T14:00:00Z",
+      "summary": "<p>by Cailbhe Doherty, David Burke, Owen Mitchell, David Lawless, Jasman Brar, Michael Fuchs, Rory Lambe</p>\r\n\r\nAirPods Pro 3 incorporate an in-ear optical heart-rate sensor, but independent validation during exercise is limited. We evaluated agreement between AirPods Pro 3 heart rate and an ECG-derived chest-strap reference (Polar H10) during graded treadmill exercise in a controlled laboratory setting. Forty adults (mean age 23·8 years; 37·5% female) completed a protocol comprising rest and progressive exercise stages targeting ~40–85% of age-predicted maximal heart rate, including rapid workload transitions. Heart-rate time series from both devices were synchronised by timestamp and aggregated into non-overlapping 5-s epochs. Agreement was assessed using a repeated-measures Bland–Altman approach implemented via a linear mixed-effects model with participant-level random effects; absolute error metrics were calculated at the participant level and summarised overall and by intensity category. Across 16,735 paired epochs, mean bias was −0·03 beats·min ⁻ ¹ (AirPods Pro 3 minus Polar H10; 95% CI −0·22 to 0·17), indicating negligible systematic error. The total standard deviation of differences was 5·23 beats·min ⁻ ¹, yielding 95% limits of agreement from −10·27 to 10·22 beats·min ⁻ ¹, with greater dispersion at higher heart rates. Overall mean absolute error was 2·08 beats·min ⁻ ¹ and mean absolute percentage error was 2·02%, with mean absolute error ranging from 1·31 to 2·4 beats·min ⁻ ¹ across intensity categories. AirPods Pro 3 therefore provided heart-rate estimates closely aligned with a validated chest-worn reference during graded treadmill exercise in healthy adults, with minimal bias and low average error but wider epoch-to-epoch variability at higher intensities.",
+      "sourceName": "PLOS Digital Health",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Enabling a new model for healthcare with AI co-clinician",
+      "url": "https://deepmind.google/blog/ai-co-clinician/",
+      "publishedAt": "Thu, 30 Apr 2026 12:14:15 +0000",
+      "summary": "Researching the path to AI-augmented care and development of an AI co-clinician.",
+      "sourceName": "Google DeepMind Blog",
+      "sourceCategory": "vendor_research",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Health Tech Weekly Rundown: Headspace app launches on Apple Watch; Visby, RAINN partner on safe access program",
+      "url": "https://www.fiercehealthcare.com/health-tech/health-tech-weekly-rundown-carrot-adds-menopause-care-ai-native-metabolic-health",
+      "publishedAt": "May 14, 2026 2:06pm",
+      "summary": "Stay up to date on the latest in health tech, digital health and health AI news with this weekly brief.",
+      "sourceName": "Fierce Healthcare",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "product_market"
+    },
+    {
+      "title": "Remote Game-based Exercise Program for Cognitive and Motor Function Improvement",
+      "url": "https://clinicaltrials.gov/study/NCT05235113",
+      "publishedAt": "2026-05-15",
+      "summary": "Status: ACTIVE_NOT_RECRUITING | Conditions: Mild Cognitive Impairment; Dementia; Cognitive Impairment; Memory Loss | Interventions: Tele-Exergame Platform; No Tele-Exergame Platform | Phase: NA | Primary outcomes: Change in Balance: Change in balance from baseline to 12 weeks will be measured. Balance will be assessed by measuring center of mass sway. The investigator will use a validated wearable platform (BalanSen) to measure body sway.; Change in Cognitive Function: Changes from baseline in cognitive function at 12 weeks. Cognitive performance will be assessed using Montreal Cognitive Assessment (MoCA). Scores on the MoCA range from zero to 30, with a score of 26 and higher generally considered normal. | Secondary outcomes: Change in Physical Activity: Changes in physical activity from baseline to 12 weeks will be assessed. Physical activity will be quantified by measuring number of taken steps per day and will be measured using a validated wearable sensor named PAMSys. Monitoring of physical activity will be done during 48h baseline and 48 hour at 12 weeks.; Change in Quality of Life: Quality of life will be assessed using a validated questionnaire, called PROMIS Global-10.\n\nThe PROMIS Global-10 is a 10-item patient-reported questionnaire in which the response options are presented as 5-point (as well as a single 11-point) rating scales. The results of the questions are used to calculate two summary scores: a Global Physical Health Score and a Global Mental Health score. These scores are then standardized to the general population, using the \"T-Score\". The average \"T-Score\" for the United States population is 50 points, with a standard deviation of 10 points. Higher scores indicate a healthier patient.; change in depression: Changes in depression from baseline to 12 weeks will be assessed. Depression will be quantified by the Center for Epidemiologic Studies Depression Scale (CES-D) at baseline and 12 weeks. The CES-D consists of 20 items, and each item is scored on a scale of 0 to 3, with 0 representing \"Rarely or none of the time\" and 3 representing \"Most or all of the time.\" The total score for the CES-D ranges from 0 to 60, with higher scores indicating a greater severity of depressive symptoms.\n\nA score of 16 or higher is often considered as a cutoff point for identifying individuals who may be at risk for clinical depression. However, it is important to note that the CES-D is a screening tool, not a diagnostic tool, and a higher score should prompt further evaluation by a mental health professional. | Summary: As our population ages, more older adults face motor-cognitive declines, increasing their risk of falls and fear of falling. Exercise is an effective way to maintain cognitive function, as supported by recent studies. However, those with poor motor and cognitive abilities often struggle to visit rehabilitation centers, leading to high dropout rates and low adherence to unsupervised programs. A remote exercise program tailored for individuals with cognitive impairments is urgently needed to preserve cognitive function, promote independent living, and reduce related costs. Researchers aim to develop an in-home system for adults with mild cognitive issues or dementia, designed to improve balance and cognition while being remotely supervised through telemedicine.",
+      "nctId": "NCT05235113",
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_registry",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "api",
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "Perfusion Index Parameter",
+      "url": "https://clinicaltrials.gov/study/NCT06586918",
+      "publishedAt": "2026-05-15",
+      "summary": "Status: COMPLETED | Conditions: Perfusion; Complications | Primary outcomes: Perfusion Index (PI) correlation to doppler measurement: To confirm correlation of Perfusion Index measured by the investigational pulse oximeter PCBA and Market Released sensors to the laser doppler measure of skin perfusion (LDSP) as determined by an overall instantaneous (lag(0)) Spearman rank correlation. | Summary: To evaluate the association between the Perfusion index parameter and an independent measure of perfusion.",
+      "nctId": "NCT06586918",
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_registry",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "api",
+      "signalType": "clinical_regulatory"
     },
     {
       "title": "Trividia Health Correction for TRUE METRIX Blood Glucose Monitoring Systems",
@@ -479,30 +503,6 @@
       "sourceLang": "en",
       "retrievalMethod": "api",
       "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "Accuracy of heart rate measurement using AirPods Pro 3 during graded treadmill exercise: A laboratory-based validation study",
-      "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001373",
-      "publishedAt": "2026-04-30T14:00:00Z",
-      "summary": "<p>by Cailbhe Doherty, David Burke, Owen Mitchell, David Lawless, Jasman Brar, Michael Fuchs, Rory Lambe</p>\r\n\r\nAirPods Pro 3 incorporate an in-ear optical heart-rate sensor, but independent validation during exercise is limited. We evaluated agreement between AirPods Pro 3 heart rate and an ECG-derived chest-strap reference (Polar H10) during graded treadmill exercise in a controlled laboratory setting. Forty adults (mean age 23·8 years; 37·5% female) completed a protocol comprising rest and progressive exercise stages targeting ~40–85% of age-predicted maximal heart rate, including rapid workload transitions. Heart-rate time series from both devices were synchronised by timestamp and aggregated into non-overlapping 5-s epochs. Agreement was assessed using a repeated-measures Bland–Altman approach implemented via a linear mixed-effects model with participant-level random effects; absolute error metrics were calculated at the participant level and summarised overall and by intensity category. Across 16,735 paired epochs, mean bias was −0·03 beats·min ⁻ ¹ (AirPods Pro 3 minus Polar H10; 95% CI −0·22 to 0·17), indicating negligible systematic error. The total standard deviation of differences was 5·23 beats·min ⁻ ¹, yielding 95% limits of agreement from −10·27 to 10·22 beats·min ⁻ ¹, with greater dispersion at higher heart rates. Overall mean absolute error was 2·08 beats·min ⁻ ¹ and mean absolute percentage error was 2·02%, with mean absolute error ranging from 1·31 to 2·4 beats·min ⁻ ¹ across intensity categories. AirPods Pro 3 therefore provided heart-rate estimates closely aligned with a validated chest-worn reference during graded treadmill exercise in healthy adults, with minimal bias and low average error but wider epoch-to-epoch variability at higher intensities.",
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Enabling a new model for healthcare with AI co-clinician",
-      "url": "https://deepmind.google/blog/ai-co-clinician/",
-      "publishedAt": "Thu, 30 Apr 2026 12:14:15 +0000",
-      "summary": "Researching the path to AI-augmented care and development of an AI co-clinician.",
-      "sourceName": "Google DeepMind Blog",
-      "sourceCategory": "vendor_research",
-      "sourcePriority": "P2",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
     },
     {
       "title": "Risks of Using TRUE METRIX Blood Glucose Monitoring Systems by Trividia Health: FDA Safety Communication",
@@ -592,29 +592,16 @@
       "signalType": "clinical_regulatory"
     },
     {
-      "title": "watchOS 9.4 Release Notes | Apple Developer Documentation",
-      "url": "https://developer.apple.com/documentation/watchos-release-notes/watchos-9_4-release-notes?changes=latest_7",
+      "title": "Apple introduces a new Pride Collection - Apple",
+      "url": "https://www.apple.com/newsroom/2026/05/apple-introduces-a-new-pride-collection/",
       "publishedAt": null,
-      "summary": "watchOS 9.4 Release Notes. Update your apps to use new features, and test your ... Health & Fitness · In-App Purchase · Localization · Maps & Location · Machine",
-      "sourceName": "Apple Developer HealthKit / WorkoutKit / watchOS",
+      "summary": "# Apple introduces a new Pride Collection. Apple Watch Series 11 is paired with the Pride Luminance watch face and Pride Edition Sport Loop. Matching wallpaper from the new Apple Watch Pride Collection is displayed on an 11-inch iPad Pro and iPhone 17 Pro. Today, Apple introduced a new Apple Watch Pride Edition Sport Loop, watch face, and iPhone and iPad wallpaper to celebrate LGBTQ+ communities around the world during Pride Month and beyond. The new Pride Edition Sport Loop, available to order today, is woven from a rainbow of 11 colors of nylon yarns. The resulting design is joyful and vibrant, showcasing a full spectrum of colors that reflect the unique identities that shape LGBTQ+ communities worldwide. The new Pride Luminance watch face complements the band design with colors that refract dynamically to celebrate the vibrancy, spirit, and individuality of the LGBTQ+ community. With this collection, users can customize the watch face with even more color options to create a unique expression of themselves and their communities.",
+      "sourceName": "Apple Newsroom / Watch",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9995453,
-      "signalType": "platform_api"
-    },
-    {
-      "title": "Introducing the all-new Fitbit Air - Google Blog",
-      "url": "https://blog.google/products-and-platforms/devices/fitbit/fitbit-air/",
-      "publishedAt": null,
-      "summary": "# Introducing the all-new Fitbit Air. Our newest screenless wearable is lightweight and delivers our most in-depth health insights yet. We are introducing the Fitbit Air, our smallest and most affordable tracker designed for comfortable, 24/7 health monitoring. This screenless device pairs with the Google Health app to provide advanced fitness insights, sleep tracking, and a week-long battery life. You can pre-order the Fitbit Air today starting at $99.99, which includes a three-month trial of Google Health Premium. * Meet the Fitbit Air, a tiny, affordable tracker designed for comfortable, all-day health monitoring. * Pre-order yours today for $99.99 and get a three-month Google Health Premium trial. You can check all your stats and get personalized advice through the Google Health app on your phone. The Google Fitbit Air Special Edition will also be available for pre-order today, and on-shelf in the U.S. May 26 for $129.99.",
-      "sourceName": "Google Blog / Fitbit",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.99933845,
+      "score": 0.49804688,
       "signalType": "product_market"
     },
     {
@@ -627,24 +614,50 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.99890983,
+      "score": 0.48074743,
       "signalType": "platform_api"
     },
     {
-      "title": "Track sleep sessions | Android health & fitness",
-      "url": "https://developer.android.com/health-and-fitness/health-connect/features/sleep-sessions",
+      "title": "Introducing the Google Health app",
+      "url": "https://blog.google/products-and-platforms/products/google-health/google-health-app/",
       "publishedAt": null,
-      "summary": "Health Connect provides a sleep session data type, to store information about a user's sleep, such as a nightly session or daytime nap.",
+      "summary": "# A new era for your wellness: Introducing the Google Health app. The Google Health app brings all of your health and wellness into one place debuting new and advanced capabilities. The Fitbit app is becoming the Google Health app, offering a redesigned, centralized hub for your wellness data. You will see an intuitive four-tab layout, improved data tracking, and a new artificial intelligence coach to help you reach your goals. * The Fitbit app is becoming the Google Health app to centralize your wellness data. * The new Google Health Coach uses artificial intelligence to provide personalized workout and health insights. The Fitbit app is becoming the new Google Health app to help you track your fitness and wellness in one place. We’re updating the Fitbit app to become the Google Health app, a centralized place for your health and wellness data. And, on Health, in addition to getting a snapshot of your key health metrics, you can get summaries of your medical records from the Coach.",
+      "sourceName": "Google Blog / Fitbit",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.468621,
+      "signalType": "product_market"
+    },
+    {
+      "title": "Track steps  |  Android health & fitness  |  Android Developers",
+      "url": "https://developer.android.com/health-and-fitness/health-connect/features/steps",
+      "publishedAt": null,
+      "summary": "Health Connect provides a *steps* data type for recording step counts using. Steps are a fundamental measurement in health. ## Read mobile steps. With Android 14 (API level 34) and SDK Extension version 20 or higher,. Health Connect provides on-device step counting. the `READ_STEPS` permission, Health Connect starts capturing steps from the. Android-powered device, and users see steps data automatically added to. To check if on-device step counting is available, you need to verify that the. If your app needs to read on-device steps, or if it displays step data. data, you should attribute data from the android package to the current device. The following example shows how to read aggregated mobile step count data by. Before attempting to use Health Connect, your app should verify that Health Connect is available. permissions for the `Steps` data type. To read steps, you need to request the following permissions:. The following example shows how to read the total step count for a.",
       "sourceName": "Android Developers Health & Fitness",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.61834323,
+      "score": 0.99929035,
       "signalType": "platform_api"
     },
     {
-      "title": "Health Connect | Jetpack - Android Developers",
+      "title": "Add exercise routes  |  Android health & fitness  |  Android Developers",
+      "url": "https://developer.android.com/health-and-fitness/health-connect/features/exercise-routes",
+      "publishedAt": null,
+      "summary": "Exercise routes allow users to track a GPS route for associated exercise. ## Check Health Connect availability. Before attempting to use Health Connect, your app should verify that Health Connect is available. You can check for availability using the `HealthConnectClient.getSdkStatus()`. This guide provides information on how to request permissions from the user and. The read and write functionality for exercise routes includes:. If the user doesn't have write permissions and the route is not set, the route. If your app has a route write permission and tries to update a session by. Access to exercise route is protected by the following permissions:. To read exercise route, you need to request the following permissions:. The following code snippets show how to read and write an exercise route. // The user doesn't allow the app to read exercise session data. // The user doesn't allow the app to write exercise session data. // The user doesn't allow the app to write exercise route data.",
+      "sourceName": "Android Developers Health & Fitness",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.9988927,
+      "signalType": "platform_api"
+    },
+    {
+      "title": "Health Connect  |  Jetpack  |  Android Developers",
       "url": "https://developer.android.com/jetpack/androidx/releases/health-connect",
       "publishedAt": null,
       "summary": "# Health Connect. | April 22, 2026 | 1.1.0 | - | - | 1.2.0-alpha04 |. To help us strengthen user privacy and security, developers integrating with Health Connect **must declare read and/or write access for the data types** that their apps use. For more information, visit Provide information for the Health apps declaration form and Health Connect by Android Permissions. To add a dependency on health, you must add the Google Maven repository to your. Add the dependencies for the artifacts you need in the `build.gradle` file for. ## Health Connect Testing Version 1.0. `androidx.health.connect:connect-testing:1.0.0-alpha03` is released. `androidx.health.connect:connect-testing:1.0.0-alpha03`. You can use the library to create local unit tests, which typically verify the behavior of the classes in your app that interact with the Health Connect client. `androidx.health.connect:connect-client:1.1.0`, `androidx.health.connect:connect-client-external-protobuf:1.1.0`, and `androidx.health.connect:connect-client-proto:1.1.0` have been promoted to its first stable release with no changes since its previous RC release. `androidx.health.connect:connect-client:1.1.0-rc03`, `androidx.health.connect:connect-client-external-protobuf:1.1.0-rc03`, and `androidx.health.connect:connect-client-proto:1.1.0-rc03` are released. `androidx.health.connect:connect-client:1.1.0-rc03`. `androidx.health.connect:connect-client-external-protobuf:1.1.0-rc03`. `androidx.health.connect:connect-client-proto:1.1.0-rc03`. `androidx.health.connect:connect-client:1.1.0-beta02`, `androidx.health.connect:connect-client-external-protobuf:1.1.0-beta02`, and `androidx.health.connect:connect-client-proto:1.1.0-beta02` are released. `androidx.health.connect:connect-client:1.1.0-beta02`. `androidx.health.connect:connect-client-proto:1.1.0-beta02`.",
@@ -653,8 +666,21 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.81979275,
+      "score": 0.9999877,
       "signalType": "platform_api"
+    },
+    {
+      "title": "[CES 2026] A Care Companion for Family Health and Safety",
+      "url": "https://news.samsung.com/sg/ces-2026-a-care-companion-for-family-health-and-safety",
+      "publishedAt": null,
+      "summary": "In the Self Care – Good Sleep section, visitors learned how wearables such as Galaxy Watch and Galaxy Ring track sleep conditions while working in concert with",
+      "sourceName": "Samsung Global Newsroom (Digital Health)",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.71377134,
+      "signalType": "product_market"
     },
     {
       "title": "Level Up Your Health with Galaxy Watch and Receive a Withings Smart Scale on Us",
@@ -666,37 +692,11 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.99977654,
+      "score": 0.66045773,
       "signalType": "product_market"
     },
     {
-      "title": "[World Health Day 2026] How Jacob Kiplimo's Galaxy Watch Turns ...",
-      "url": "https://news.samsung.com/ca/world-health-day-2026-how-jacob-kiplimos-galaxy-watch-turns-data-into-world-record-performance",
-      "publishedAt": null,
-      "summary": "# [World Health Day 2026] How Jacob Kiplimo’s Galaxy Watch Turns Data Into World-Record Performance. When **Jacob Kiplimo** storms past the finish line, he’s not just running on talent — he’s running on data. After securing a dominant win at the 2025 Chicago Marathon and shattering the half-marathon world record this March in Lisbon, the 25-year-old is now targeting success at the 2026 London Marathon. To mark World Health Day (WHD) 2026 on April 7, Samsung asked him to detail his data-driven training regime which embodies this year’s WHD slogan, “Together for health. With exclusive access to his Samsung Health metrics, we take an inside look into his grueling training program which has seen him cover **over 100 km in just one week**. Discover how insights led him to adjust his training for optimal recovery and how even a “rest day” can include a 3 km run. I use the **Running Coach** feature in Samsung Health to get real-time analysis and reports on my running form through the **Running Analysis** feature in Samsung Health.",
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.9992679,
-      "signalType": "product_market"
-    },
-    {
-      "title": "Health | Samsung Developers",
-      "url": "http://developer.samsung.com/health",
-      "publishedAt": null,
-      "summary": "# Samsung Health SDK Suite. Develop innovative health and wellness applications for Galaxy Watch and smartphones. # Accelerate health and wellness innovation with Samsung Health SDKs. Samsung's Health SDKs enable a broad ecosystem of partners to accelerate innovation and solution development. As Galaxy Watch sensors and capabilities improve, you can read, with user consent, and integrate health data from Galaxy Watch and smartphones into your existing applications and platforms, as well as create innovative and powerful new products that enhance users' well-being through health insights. ##### Samsung Health Data SDK allows partners the ability to integrate Samsung Health data into their own apps, enabling them to monitor users` health and provide health and wellness services based on user consent. By connecting smartphones with Samsung wearables like the Galaxy Watch and Galaxy Ring as well as other connected devices such as activity trackers or heart rate monitors, it seamlessly integrates health monitoring into daily life. ##### Samsung Health Sensor SDK is a software platform that enables the medical community and digital health solution providers to harness the power of Galaxy Watch’s advanced sensors; providing both raw sensor signal data and processed data with our differentiated features. ##### Samsung Health Accessory SDK defines Bluetooth Low Energy (BLE) compatibility guidelines and Samsung Health specifications based on Bluetooth Generic Attributes (GATT), including service structure to connect with Samsung Health. ##### Samsung Health Research Stack is backed by open-source tools, applications, and services for running, managing, and analyzing medical research studies and clinician services on Android and Wear OS devices. ##### Samsung collaborates with the world’s most innovative organizations to pave the way for better health and wellness by advancing solutions in connected care. ### Samsung Health SDK Suite Guide. Use Samsung Health SDK Suite to impl",
-      "sourceName": "Samsung Developers Health",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.8900749,
-      "signalType": "platform_api"
-    },
-    {
-      "title": "Samsung R&D Institute Poland Awarded 1st Place at Interspeech ...",
+      "title": "Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge | Samsung Research",
       "url": "https://research.samsung.com/news/Samsung-R-D-Institute-Poland-awarded-1st-place-at-INTERSPEECH-2026-Challenge",
       "publishedAt": null,
       "summary": "- Samsung R&D Institute United Kingdom. - Samsung R&D Institute Poland. - Samsung R&D Institute Ukraine. - Samsung R&D Institute Russia. - Samsung R&D Institute Israel. - Samsung R&D Institute Jordan. - Samsung R&D Institute India-Bangalore. - Samsung R&D Institute Philippines. - Samsung R&D Institute Indonesia. - Samsung R&D Institute Bangladesh. - Samsung R&D Institute China-Beijing. # Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge. The Audio Intelligence Group at Samsung R&D Institute Poland (SRPOL) achieved a major breakthrough in the international NeckVibe Challenge, securing first place in the detection of Phonotraumatic Vocal Hyperfunction (PVH). The challenge involved nine global teams from institutions including Seoul National University, Gwangju Institute of Science and Technology, and Harvard University, representing Poland, South Korea, India, and the USA. This year’s first-place at the NeckVibe challenge is the third consecutive win for the SRPOL Audio Intelligence Group (ICASSP 2024, INTERSPEECH 2025) using lightweight AI and signal processing to solve complex health problems.",
@@ -705,8 +705,34 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.43974736,
+      "score": 0.24508502,
       "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "About This Kit-Health-Developing Basic Capabilities-Atomic Service Development-Guides",
+      "url": "https://developer.huawei.com/consumer/en/doc/atomic-guides/health-service-kit-ability-as",
+      "publishedAt": null,
+      "summary": "# About This Kit-Health-Developing Basic Capabilities-Atomic Service Development-Guides - HUAWEI Developers. Health Service Kit provides a platform for ecosystem apps to access users' health and fitness data based on users' HUAWEI ID and authorization. Upon obtaining user's consent and authorization, you can access their health and fitness data with the open capabilities provided by Health Service Kit, and use these data to build various kinds of apps and services to deliver professional health and fitness experiences. Health Service Kit incorporates its health and fitness data services with apps, services, and third-party devices, to construct a smart health and fitness ecosystem that provides users with unmatched convenience and security. ## Health Service Kit. As shown in the preceding figure, Health Service Kit provides a series of open capabilities, for ecosystem apps/services and hardware devices. *   Open data: As a health and fitness data platform, this kit unlocks extensive health data and professional workout and fitness data.",
+      "sourceName": "Huawei Health Kit",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.99990165,
+      "signalType": "platform_api"
+    },
+    {
+      "title": "Enabling Health Service Kit in Huawei Health-Developing Your App-HarmonyOS (JavaScript)-Device-side Data Openness-Accessing Health Kit-Health Service Kit",
+      "url": "https://developer.huawei.com/consumer/en/doc/HMSCore-Guides/harmonyos-enabling-health-kit-0000001204685000",
+      "publishedAt": null,
+      "summary": "# Enabling Health Service Kit in Huawei Health-Developing Your App-HarmonyOS (JavaScript)-Device-side Data Openness-Accessing Health Kit-Health Service Kit - HUAWEI Developers. Introduction to Health Service Kit. Enabling Health Service Kit in Huawei Health. # Enabling Health Service Kit in Huawei Health. If your app runs on smartphones and needs to access Huawei Health data, prompt users to enable Health Service Kit in the Huawei Health app. If users do not enable Health Service Kit as prompted, or disable it after enabling it as prompted, you will be unable to query data by calling related APIs. For a better interaction experience, you are advised to check whether users have enabled Health Service Kit by calling getHealthAppAuthorization before querying health and fitness data. You can also call checkHealthAppAuthorization to check whether users have enabled Health Service Kit. If Health Service Kit is not enabled, users will be prompted to enable it. You can also prompt users to enable Health Service Kit by going to **Me**>**Privacy management** in the Huawei Health app and toggling on **HUAWEI Health Kit**.",
+      "sourceName": "Huawei Health Kit",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.9998634,
+      "signalType": "platform_api"
     },
     {
       "title": "Xiaomi Smart Band 10 Glimmer Edition HyperOS3 V3.2.1 Update",
@@ -718,20 +744,20 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9986853,
+      "score": 0.47124818,
       "signalType": "product_market"
     },
     {
-      "title": "Xiaomi Smart Band 10 Ceramic Edition HyperOS3 V3.2.1 Update",
-      "url": "https://new.c.mi.com/global/post/1764675",
+      "title": "Xiaomi Watch 5 announced with EMG and ECG.",
+      "url": "https://c.mi.com/global/post/2050127",
       "publishedAt": null,
-      "summary": "Introducing the exclusive Xiaomi Smart Band 10 Ceramic Edition with an all-new look, amazing screen, smarter experience and experience a jade-smooth finish that",
+      "summary": "Along with the EMG, the Xiaomi Smartwatch is packed with the ECG (Electrocardiogram) sensor, which further helps the wearer analyze heart rhythms on the wrist",
       "sourceName": "Xiaomi Global Wearables",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.99657035,
+      "score": 0.43352634,
       "signalType": "product_market"
     },
     {
@@ -744,33 +770,20 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.34760407,
+      "score": 0.9763105,
       "signalType": "platform_api"
     },
     {
-      "title": "API Changelog | WHOOP for Developers",
-      "url": "https://developer.whoop.com/docs/api-changelog",
+      "title": "Pulling Health Data Manually | Withings",
+      "url": "https://developer.withings.com/developer-guide/v3/integration-guide/onsite-mode/data-api/fetch-data-example-manual",
       "publishedAt": null,
-      "summary": "Learn how to look up mappings from v1 to v2 ids.**. This changelog highlights notable changes to the WHOOP Developer Platform, such as new API endpoints or webhook event types. ### Webhook Updates, New V1 Migration API​. Updated webhook documentation to clarify that v1 webhooks are no longer being published. Provided documentation for new activity mapping endpoint to look up historical v1 activity ids. * **Documentation**: ✨New✨ v1 -> v2 activity id mapping documentation for activity v1 id lookups. Updated webhook documentation to clarify that v2 recovery webhooks use the UUID of the associated sleep, not the cycle ID. * **v1 Recovery Webhooks**: Continue to use cycle ID as the identifier. * **v2 Recovery Webhooks**: Use the UUID of the sleep that the recovery is associated with. * **Documentation**: Updated webhook documentation to reflect the correct identifier usage. ### v2 API Launch​. * **Migration Guide**: A comprehensive v1 to v2 migration guide is available to assist with the transition. Strength Trainer activities are available via the `/workout` endpoint.",
-      "sourceName": "WHOOP Developer API",
+      "summary": "In some cases, you might prefer to fetch the user's health data manually rather than relying on the notification system. This approach requires providing a mechanism within your application—such as a button—that allows the user to initiate the data retrieval process when they're ready. To facilitate manual data retrieval, include a user interface element (like a \"Refresh Data\" button) that the user can interact with once their measurement is complete. This action signals your system to fetch the latest health data from the Withings API. The first step in the data retrieval process is to locate the access token associated with the user. By querying your database, you can retrieve this token, which authorizes your request to the Withings API. With the access token and time range in hand, decide which API endpoint to call based on the type of data you wish to retrieve. Construct your API call with the necessary parameters and execute the request to fetch the health data.",
+      "sourceName": "Withings API / Research",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.99991846,
-      "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "[PDF] Investor Day 2026 Dexcom",
-      "url": "https://investors.dexcom.com/files/doc_presentations/2026/May/15/Investor-Day-Presentation_FINAL-PDF.pdf",
-      "publishedAt": null,
-      "summary": "financial position, including estimated revenue, organic revenue growth, non -GAAP gross profit margin, non -GAAP operating margin , Adjusted EBITDA. margin, and free cash flow conversion, and growth rates related thereto for future years; projected costs, operating expenses , c apital allocation and. “973 -P: Initiation of Dexcom CGM Is Associated with Improved Renal Outcomes in Adults with Chronic Kidney Disease (CKD) on Insulin Therapy.” Diabetes 20 June 2025; 74. “Reduction in Diabetes -Related Hospitalizations and Medical Costs After Real -Time Continuous Glucose Monitor ( rtCGM ) Initiation in Patients with Type 2 Diabetes (PWT2D) on Intensive Insulin Therapy (IIT).” Data presented at American Diabete s A ssociation’s 83 rd Scientific Sessions June. One -Year Real -World Impact of Dexcom CGM on HbA1c in Non -Insulin -Treated Type 2 Diabetes: Evidence From U.S. P rimary Care Registry Analysis. 2.  Dexcom defines free cash flow conversion as (operating cash flow minus capex)/non -GAAP net income.",
-      "sourceName": "Dexcom News",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.99760324,
+      "score": 0.9999777,
       "signalType": "clinical_regulatory"
     },
     {
@@ -783,24 +796,24 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9921841,
+      "score": 0.35333946,
       "signalType": "product_market"
     },
     {
-      "title": "About Abbott | Company Overview, Mission and Values",
-      "url": "https://www.abbott.com/en-us/about-abbott",
+      "title": "Investor-Day-Presentation_FINAL-PDF.pdf",
+      "url": "https://investors.dexcom.com/files/doc_presentations/2026/May/15/Investor-Day-Presentation_FINAL-PDF.pdf",
       "publishedAt": null,
-      "summary": "Live your best life, now and in the future. At Abbott, we’re driven by a shared mission: to help you live a healthier, fuller life. The revolutionary health technologies and products we create serve that very human purpose. Through our products, our science and our partnerships, we work to bring better health to more people, so that our next breakthrough can lead to theirs. Abbott, a 30-year-old practicing physician, begins in the rear of his People’s Drug Store in Chicago. Initial public offering provides shares for the first time in the year of the stock market crash that began the Great Depression. One of our greatest achievements: Approval of the first licensed test to identify HIV in blood, helping to secure the safety of the blood supply. We were named to TIME Magazine’s list of the 100 Most Influential Companies of 2025. Find answers to some of the most frequently asked questions about our company.",
-      "sourceName": "Abbott Biowearables",
+      "summary": "financial position, including estimated revenue, organic revenue growth, non -GAAP gross profit margin, non -GAAP operating margin , Adjusted EBITDA. margin, and free cash flow conversion, and growth rates related thereto for future years; projected costs, operating expenses , c apital allocation and. “973 -P: Initiation of Dexcom CGM Is Associated with Improved Renal Outcomes in Adults with Chronic Kidney Disease (CKD) on Insulin Therapy.” Diabetes 20 June 2025; 74. “Reduction in Diabetes -Related Hospitalizations and Medical Costs After Real -Time Continuous Glucose Monitor ( rtCGM ) Initiation in Patients with Type 2 Diabetes (PWT2D) on Intensive Insulin Therapy (IIT).” Data presented at American Diabete s A ssociation’s 83 rd Scientific Sessions June. One -Year Real -World Impact of Dexcom CGM on HbA1c in Non -Insulin -Treated Type 2 Diabetes: Evidence From U.S. P rimary Care Registry Analysis. 2.  Dexcom defines free cash flow conversion as (operating cash flow minus capex)/non -GAAP net income.",
+      "sourceName": "Dexcom News",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.5389832,
+      "score": 0.29364797,
       "signalType": "clinical_regulatory"
     },
     {
-      "title": "Meet the members of the 2026 Abbott HeartMates Draft",
+      "title": "Meet the members of the 2026 Abbott HeartMates Draft | Abbott Newsroom",
       "url": "https://www.abbott.com/en-us/corpnewsroom/healthy-heart/meet-the-members-of-the-2026-abbott-heartmates-draft",
       "publishedAt": null,
       "summary": "This year’s class is made up of 11 individuals who exemplify what it means to be a member of the Abbott HeartMates community through their active participation in the program and their commitment to inspiring others by sharing their stories with the world. At 31 years old and with little knowledge of her family’s heart history, Sonya was diagnosed with a bicuspid aortic valve, a congenital heart condition in which the aortic valve has two flaps instead of three. An echocardiogram revealed that her valve disease had progressed from moderate to severe, and she had developed an aortic aneurysm, a bulge that occurs in the wall of the aorta and can be life-threatening if it ruptures. Within weeks — and shortly after graduating with her masters in social work —  Sonya had open-heart surgery in 2019 to replace her valve and repair her aneurysm. “Recovery from surgery has been a journey that I'm grateful to have experienced,” she says.",
@@ -809,11 +822,11 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.012624949,
+      "score": 0.023691783,
       "signalType": "product_market"
     },
     {
-      "title": "From reactive nutrition coaching to real-time metabolic care | Levels",
+      "title": "From reactive nutrition coaching to real-time metabolic care | Levels | Levels",
       "url": "https://www.levels.com/blog/reactive-coaching-real-time-metabolic-care",
       "publishedAt": null,
       "summary": "This story shows how real-time data, unified timelines, and clinician dashboards enable intervention during the moments that actually matter. # From reactive nutrition coaching to real-time metabolic care. Real-time continuous glucose monitoring, unified patient timelines, and practitioner dashboards shift the care model from reactive analysis to intervention during the moments that drive outcomes. Real-time metabolic care changes the equation: when continuous glucose monitoring, food logs, and lifestyle data flow through one patient app and one practitioner dashboard, you can guide behavior during the meal, the workout, and the sleep window—not weeks later in a debrief. ### Learn more about Levels Pro. Extend care beyond the exam room with Levels Pro, the metabolic health operating system that unifies CGM, labs, food logs, and lifestyle data into a single, clinician‑ready view. Levels Pro gives your team the infrastructure to make that shift: one app for patients to learn in real time, one dashboard for clinicians to guide in real time, and a metabolic health operating system that turns reactive nutrition coaching into proactive, personalized, preventative care.",
@@ -822,7 +835,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.5637388,
+      "score": 0.9994429,
       "signalType": "product_market"
     },
     {
@@ -835,20 +848,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.4813325,
-      "signalType": "product_market"
-    },
-    {
-      "title": "Wahoo & COROS Hook Up: Here's What Connecting!",
-      "url": "https://www.dcrainmaker.com/2026/04/coros-wahoo-partnership.html",
-      "publishedAt": null,
-      "summary": "+ The Girl’s Sports Gear I Use List. # Wahoo & COROS Hook Up: Here’s What Happening! Wahoo Fitness & COROS have decided to hook up, in the most literal relationship way possible. They aren’t merging (getting married), but they are swapping data and borrowing some of each other’s things. This one was definitely not on my bingo card for this year, at least, not in this way. > 2) There’s immediately going to be improved KICKR RUN integration for COROS watches. > 3) Wahoo is going to start selling certain COROS watches on their site. With that bit out of the way (handy to have on record for some time down the road), here’s exactly what’s happening:. This means if you complete a workout on a Wahoo bike computer, it’ll show up in the COROS app. And likewise, if you complete a workout on a COROS watch (or Dura), it’ll show up on the Wahoo side.",
-      "sourceName": "DC Rainmaker",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.9993881,
+      "score": 0.9988752,
       "signalType": "product_market"
     },
     {
@@ -861,8 +861,21 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9993687,
+      "score": 0.32988858,
       "signalType": "business_structure"
+    },
+    {
+      "title": "Wahoo & COROS Hook Up: Here's What Happening! - DC Rainmaker",
+      "url": "https://www.dcrainmaker.com/2026/04/coros-wahoo-partnership.html",
+      "publishedAt": null,
+      "summary": "Wahoo Fitness & COROS have joined forces, connecting the two companies products together - here's what it means, and what's changing.",
+      "sourceName": "DC Rainmaker",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.28068832,
+      "signalType": "product_market"
     },
     {
       "title": "Polar Street X In-Depth Review: What's the Catch?",
@@ -874,7 +887,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9986646,
+      "score": 0.26975837,
       "signalType": "product_market"
     }
   ],
@@ -963,42 +976,6 @@
         "sourceLang": "en",
         "retrievalMethod": "rss",
         "signalType": "clinical_regulatory"
-      },
-      {
-        "title": "‘Google Health’ replaces Fitbit app as new ‘Premium’ plan joins AI Pro",
-        "url": "https://9to5google.com/2026/05/07/google-health-app-fitbit/",
-        "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
-        "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Google-Health-cover.png?w=1600\" /></div><p>After months of <a href=\"https://9to5google.com/2025/10/27/fitbit-coach-preview/\">Public Preview testing</a>, Google is replacing the Fitbit app and launching “Google Health.” It’s meant to bring “together the best of Fitbit’s pioneering spirit with the helpfulness of Google.”</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,gemini,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713901\" href=\"https://9to5google.com/2026/05/07/google-health-app-fitbit/#more-713901\" class=\"more-link\">more…</a>",
-        "sourceName": "9to5Google",
-        "sourceCategory": "industry_news",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "product_market"
-      },
-      {
-        "title": "Google announces $99 Fitbit Air for screen-less, all-day tracking",
-        "url": "https://9to5google.com/2026/05/07/fitbit-air-launch/",
-        "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
-        "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Fitbit-Air-cover.jpg?quality=82&strip=all&w=1600\" /></div><p>Google today announced the Fitbit Air as a screen-less fitness tracker that has a low-profile and affordable $99.99 price.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713649\" href=\"https://9to5google.com/2026/05/07/fitbit-air-launch/#more-713649\" class=\"more-link\">more…</a>",
-        "sourceName": "9to5Google",
-        "sourceCategory": "industry_news",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "product_market"
-      },
-      {
-        "title": "Health Tech Weekly Rundown: Headspace app launches on Apple Watch; Visby, RAINN partner on safe access program",
-        "url": "https://www.fiercehealthcare.com/health-tech/health-tech-weekly-rundown-carrot-adds-menopause-care-ai-native-metabolic-health",
-        "publishedAt": "May 14, 2026 2:06pm",
-        "summary": "Stay up to date on the latest in health tech, digital health and health AI news with this weekly brief.",
-        "sourceName": "Fierce Healthcare",
-        "sourceCategory": "industry_news",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "product_market"
       },
       {
         "title": "Dexcom unveils next-generation G8 CGM for real-time glucose monitoring",
@@ -1109,16 +1086,39 @@
         "signalType": "product_market"
       },
       {
-        "title": "Wahoo & COROS Hook Up: Here's What Connecting!",
-        "url": "https://www.dcrainmaker.com/2026/04/coros-wahoo-partnership.html",
-        "publishedAt": null,
-        "summary": "+ The Girl’s Sports Gear I Use List. # Wahoo & COROS Hook Up: Here’s What Happening! Wahoo Fitness & COROS have decided to hook up, in the most literal relationship way possible. They aren’t merging (getting married), but they are swapping data and borrowing some of each other’s things. This one was definitely not on my bingo card for this year, at least, not in this way. > 2) There’s immediately going to be improved KICKR RUN integration for COROS watches. > 3) Wahoo is going to start selling certain COROS watches on their site. With that bit out of the way (handy to have on record for some time down the road), here’s exactly what’s happening:. This means if you complete a workout on a Wahoo bike computer, it’ll show up in the COROS app. And likewise, if you complete a workout on a COROS watch (or Dura), it’ll show up on the Wahoo side.",
-        "sourceName": "DC Rainmaker",
+        "title": "‘Google Health’ replaces Fitbit app as new ‘Premium’ plan joins AI Pro",
+        "url": "https://9to5google.com/2026/05/07/google-health-app-fitbit/",
+        "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
+        "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Google-Health-cover.png?w=1600\" /></div><p>After months of <a href=\"https://9to5google.com/2025/10/27/fitbit-coach-preview/\">Public Preview testing</a>, Google is replacing the Fitbit app and launching “Google Health.” It’s meant to bring “together the best of Fitbit’s pioneering spirit with the helpfulness of Google.”</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,gemini,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713901\" href=\"https://9to5google.com/2026/05/07/google-health-app-fitbit/#more-713901\" class=\"more-link\">more…</a>",
+        "sourceName": "9to5Google",
         "sourceCategory": "industry_news",
         "sourcePriority": "P1",
         "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.9993881,
+        "retrievalMethod": "rss",
+        "signalType": "product_market"
+      },
+      {
+        "title": "Google announces $99 Fitbit Air for screen-less, all-day tracking",
+        "url": "https://9to5google.com/2026/05/07/fitbit-air-launch/",
+        "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
+        "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Fitbit-Air-cover.jpg?quality=82&strip=all&w=1600\" /></div><p>Google today announced the Fitbit Air as a screen-less fitness tracker that has a low-profile and affordable $99.99 price.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713649\" href=\"https://9to5google.com/2026/05/07/fitbit-air-launch/#more-713649\" class=\"more-link\">more…</a>",
+        "sourceName": "9to5Google",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "product_market"
+      },
+      {
+        "title": "Health Tech Weekly Rundown: Headspace app launches on Apple Watch; Visby, RAINN partner on safe access program",
+        "url": "https://www.fiercehealthcare.com/health-tech/health-tech-weekly-rundown-carrot-adds-menopause-care-ai-native-metabolic-health",
+        "publishedAt": "May 14, 2026 2:06pm",
+        "summary": "Stay up to date on the latest in health tech, digital health and health AI news with this weekly brief.",
+        "sourceName": "Fierce Healthcare",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
         "signalType": "product_market"
       },
       {
@@ -1131,8 +1131,21 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9993687,
+        "score": 0.32988858,
         "signalType": "business_structure"
+      },
+      {
+        "title": "Wahoo & COROS Hook Up: Here's What Happening! - DC Rainmaker",
+        "url": "https://www.dcrainmaker.com/2026/04/coros-wahoo-partnership.html",
+        "publishedAt": null,
+        "summary": "Wahoo Fitness & COROS have joined forces, connecting the two companies products together - here's what it means, and what's changing.",
+        "sourceName": "DC Rainmaker",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.28068832,
+        "signalType": "product_market"
       },
       {
         "title": "Polar Street X In-Depth Review: What's the Catch?",
@@ -1144,16 +1157,16 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9986646,
+        "score": 0.26975837,
         "signalType": "product_market"
       }
     ],
     "academic": [
       {
-        "title": "TorchRef: An open-source PyTorch Framework for Crystallographic Refinement",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.05.13.724821v1?rss=1",
+        "title": "Discovering conserved regulatory modules in predicted gene regulatory networks across species",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725337v1?rss=1",
         "publishedAt": "2026-05-16",
-        "summary": "Macromolecular crystallographic refinement underpins structural biology, yet existing software packages often lack accessible, modular codebases amenable to rapid method development. Here, we introduce TorchRef, a PyTorch-based crystallographic refinement framework that exposes all refinable parameters, atomic coordinates, displacement parameters, occupancies, and scale factors to automatic differentiation. The framework implements FFT-based structure-factor calculations, the French-Wilson treatment of intensities, bulk-solvent modeling with established mask parameters, and stereochemical restraints from the CCP4 Monomer Library. A modular target architecture allows loss functions to be combined, weighted, and extended independently of the core refinement machinery. Validation against 1,000 PDB structures demonstrates that TorchRef-based refinement reproduces a median R-free within 1% of Phenix while maintaining comparable model quality. Structure factor calculation in TorchRef scales readily across multiple CPU cores and is over 100 times faster on modern GPUs than CCTBX. To showcase how modern methods like time-resolved crystallography can benefit from the flexibility that TorchRef provides, we implemented direct refinement of a typical time-resolved model against amplitude differences, a use case currently not explored by classic refinement programs. TorchRef is released under the MIT license with full API documentation and tutorials, providing an accessible platform for developing and testing new crystallographic refinement protocols.",
+        "summary": "The discovery of conserved regulatory motifs across different species is a fundamental challenge in systems biology, especially considering the noisy and incomplete nature of predicted gene regulatory networks (GRNs) and the intractability of the underlying graph alignment problem. Traditional network alignment methods frequently enforce one-to-one node mappings or strict topological isomorphism, which fail to accommodate the many-to-many orthology mappings caused by evolutionary gene duplication. Consequently, strict constraints often yield highly fragmented topological islands rather than cohesive functional modules. In this work, we propose a relaxed topological alignment algorithm designed to extract conserved regulatory structures from cross-species GRNs. We formulate the discovery process as a multi-objective optimization problem that balances sequence homology, functional coherence, and a normalized topological consensus. To navigate the exponentially scaling search space, we introduce a greedy seed-and-extend heuristic bounded by a dynamic {epsilon}-stopping condition, which evaluates marginal objective gains to prevent functional dilution. We validate our algorithm using time-series transcriptomic data from Arabidopsis thaliana, Zea mays, and Sorghum bicolor focused on drought and developmental stress responses. While a strict topological baseline extracted only fragmented subgraphs limited to 51 homologous tuples, our relaxed heuristic successfully converged on a highly connected 444-tuple module. The resulting topology effectively links strictly conserved upstream transcription factors to their highly duplicated, species-specific downstream pathways. Our algorithm provides a robust, scalable computational methodology for identifying core regulatory logic across complex biological systems, facilitating the translation of conserved network architectures among multiple species.",
         "sourceName": "bioRxiv: new results",
         "sourceCategory": "academic",
         "sourcePriority": "P2",
@@ -1354,6 +1367,33 @@
         "signalType": "algorithm_evidence"
       }
     ],
+    "vendor_research": [
+      {
+        "title": "Enabling a new model for healthcare with AI co-clinician",
+        "url": "https://deepmind.google/blog/ai-co-clinician/",
+        "publishedAt": "Thu, 30 Apr 2026 12:14:15 +0000",
+        "summary": "Researching the path to AI-augmented care and development of an AI co-clinician.",
+        "sourceName": "Google DeepMind Blog",
+        "sourceCategory": "vendor_research",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge | Samsung Research",
+        "url": "https://research.samsung.com/news/Samsung-R-D-Institute-Poland-awarded-1st-place-at-INTERSPEECH-2026-Challenge",
+        "publishedAt": null,
+        "summary": "- Samsung R&D Institute United Kingdom. - Samsung R&D Institute Poland. - Samsung R&D Institute Ukraine. - Samsung R&D Institute Russia. - Samsung R&D Institute Israel. - Samsung R&D Institute Jordan. - Samsung R&D Institute India-Bangalore. - Samsung R&D Institute Philippines. - Samsung R&D Institute Indonesia. - Samsung R&D Institute Bangladesh. - Samsung R&D Institute China-Beijing. # Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge. The Audio Intelligence Group at Samsung R&D Institute Poland (SRPOL) achieved a major breakthrough in the international NeckVibe Challenge, securing first place in the detection of Phonotraumatic Vocal Hyperfunction (PVH). The challenge involved nine global teams from institutions including Seoul National University, Gwangju Institute of Science and Technology, and Harvard University, representing Poland, South Korea, India, and the USA. This year’s first-place at the NeckVibe challenge is the third consecutive win for the SRPOL Audio Intelligence Group (ICASSP 2024, INTERSPEECH 2025) using lightweight AI and signal processing to solve complex health problems.",
+        "sourceName": "Samsung Research Publications",
+        "sourceCategory": "vendor_research",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.24508502,
+        "signalType": "algorithm_evidence"
+      }
+    ],
     "clinical_registry": [
       {
         "title": "Remote Game-based Exercise Program for Cognitive and Motor Function Improvement",
@@ -1488,58 +1528,18 @@
         "signalType": "clinical_regulatory"
       }
     ],
-    "vendor_research": [
-      {
-        "title": "Enabling a new model for healthcare with AI co-clinician",
-        "url": "https://deepmind.google/blog/ai-co-clinician/",
-        "publishedAt": "Thu, 30 Apr 2026 12:14:15 +0000",
-        "summary": "Researching the path to AI-augmented care and development of an AI co-clinician.",
-        "sourceName": "Google DeepMind Blog",
-        "sourceCategory": "vendor_research",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Samsung R&D Institute Poland Awarded 1st Place at Interspeech ...",
-        "url": "https://research.samsung.com/news/Samsung-R-D-Institute-Poland-awarded-1st-place-at-INTERSPEECH-2026-Challenge",
-        "publishedAt": null,
-        "summary": "- Samsung R&D Institute United Kingdom. - Samsung R&D Institute Poland. - Samsung R&D Institute Ukraine. - Samsung R&D Institute Russia. - Samsung R&D Institute Israel. - Samsung R&D Institute Jordan. - Samsung R&D Institute India-Bangalore. - Samsung R&D Institute Philippines. - Samsung R&D Institute Indonesia. - Samsung R&D Institute Bangladesh. - Samsung R&D Institute China-Beijing. # Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge. The Audio Intelligence Group at Samsung R&D Institute Poland (SRPOL) achieved a major breakthrough in the international NeckVibe Challenge, securing first place in the detection of Phonotraumatic Vocal Hyperfunction (PVH). The challenge involved nine global teams from institutions including Seoul National University, Gwangju Institute of Science and Technology, and Harvard University, representing Poland, South Korea, India, and the USA. This year’s first-place at the NeckVibe challenge is the third consecutive win for the SRPOL Audio Intelligence Group (ICASSP 2024, INTERSPEECH 2025) using lightweight AI and signal processing to solve complex health problems.",
-        "sourceName": "Samsung Research Publications",
-        "sourceCategory": "vendor_research",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.43974736,
-        "signalType": "algorithm_evidence"
-      }
-    ],
     "vendor_websearch": [
       {
-        "title": "watchOS 9.4 Release Notes | Apple Developer Documentation",
-        "url": "https://developer.apple.com/documentation/watchos-release-notes/watchos-9_4-release-notes?changes=latest_7",
+        "title": "Apple introduces a new Pride Collection - Apple",
+        "url": "https://www.apple.com/newsroom/2026/05/apple-introduces-a-new-pride-collection/",
         "publishedAt": null,
-        "summary": "watchOS 9.4 Release Notes. Update your apps to use new features, and test your ... Health & Fitness · In-App Purchase · Localization · Maps & Location · Machine",
-        "sourceName": "Apple Developer HealthKit / WorkoutKit / watchOS",
+        "summary": "# Apple introduces a new Pride Collection. Apple Watch Series 11 is paired with the Pride Luminance watch face and Pride Edition Sport Loop. Matching wallpaper from the new Apple Watch Pride Collection is displayed on an 11-inch iPad Pro and iPhone 17 Pro. Today, Apple introduced a new Apple Watch Pride Edition Sport Loop, watch face, and iPhone and iPad wallpaper to celebrate LGBTQ+ communities around the world during Pride Month and beyond. The new Pride Edition Sport Loop, available to order today, is woven from a rainbow of 11 colors of nylon yarns. The resulting design is joyful and vibrant, showcasing a full spectrum of colors that reflect the unique identities that shape LGBTQ+ communities worldwide. The new Pride Luminance watch face complements the band design with colors that refract dynamically to celebrate the vibrancy, spirit, and individuality of the LGBTQ+ community. With this collection, users can customize the watch face with even more color options to create a unique expression of themselves and their communities.",
+        "sourceName": "Apple Newsroom / Watch",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9995453,
-        "signalType": "platform_api"
-      },
-      {
-        "title": "Introducing the all-new Fitbit Air - Google Blog",
-        "url": "https://blog.google/products-and-platforms/devices/fitbit/fitbit-air/",
-        "publishedAt": null,
-        "summary": "# Introducing the all-new Fitbit Air. Our newest screenless wearable is lightweight and delivers our most in-depth health insights yet. We are introducing the Fitbit Air, our smallest and most affordable tracker designed for comfortable, 24/7 health monitoring. This screenless device pairs with the Google Health app to provide advanced fitness insights, sleep tracking, and a week-long battery life. You can pre-order the Fitbit Air today starting at $99.99, which includes a three-month trial of Google Health Premium. * Meet the Fitbit Air, a tiny, affordable tracker designed for comfortable, all-day health monitoring. * Pre-order yours today for $99.99 and get a three-month Google Health Premium trial. You can check all your stats and get personalized advice through the Google Health app on your phone. The Google Fitbit Air Special Edition will also be available for pre-order today, and on-shelf in the U.S. May 26 for $129.99.",
-        "sourceName": "Google Blog / Fitbit",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.99933845,
+        "score": 0.49804688,
         "signalType": "product_market"
       },
       {
@@ -1552,24 +1552,50 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.99890983,
+        "score": 0.48074743,
         "signalType": "platform_api"
       },
       {
-        "title": "Track sleep sessions | Android health & fitness",
-        "url": "https://developer.android.com/health-and-fitness/health-connect/features/sleep-sessions",
+        "title": "Introducing the Google Health app",
+        "url": "https://blog.google/products-and-platforms/products/google-health/google-health-app/",
         "publishedAt": null,
-        "summary": "Health Connect provides a sleep session data type, to store information about a user's sleep, such as a nightly session or daytime nap.",
+        "summary": "# A new era for your wellness: Introducing the Google Health app. The Google Health app brings all of your health and wellness into one place debuting new and advanced capabilities. The Fitbit app is becoming the Google Health app, offering a redesigned, centralized hub for your wellness data. You will see an intuitive four-tab layout, improved data tracking, and a new artificial intelligence coach to help you reach your goals. * The Fitbit app is becoming the Google Health app to centralize your wellness data. * The new Google Health Coach uses artificial intelligence to provide personalized workout and health insights. The Fitbit app is becoming the new Google Health app to help you track your fitness and wellness in one place. We’re updating the Fitbit app to become the Google Health app, a centralized place for your health and wellness data. And, on Health, in addition to getting a snapshot of your key health metrics, you can get summaries of your medical records from the Coach.",
+        "sourceName": "Google Blog / Fitbit",
+        "sourceCategory": "vendor_websearch",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.468621,
+        "signalType": "product_market"
+      },
+      {
+        "title": "Track steps  |  Android health & fitness  |  Android Developers",
+        "url": "https://developer.android.com/health-and-fitness/health-connect/features/steps",
+        "publishedAt": null,
+        "summary": "Health Connect provides a *steps* data type for recording step counts using. Steps are a fundamental measurement in health. ## Read mobile steps. With Android 14 (API level 34) and SDK Extension version 20 or higher,. Health Connect provides on-device step counting. the `READ_STEPS` permission, Health Connect starts capturing steps from the. Android-powered device, and users see steps data automatically added to. To check if on-device step counting is available, you need to verify that the. If your app needs to read on-device steps, or if it displays step data. data, you should attribute data from the android package to the current device. The following example shows how to read aggregated mobile step count data by. Before attempting to use Health Connect, your app should verify that Health Connect is available. permissions for the `Steps` data type. To read steps, you need to request the following permissions:. The following example shows how to read the total step count for a.",
         "sourceName": "Android Developers Health & Fitness",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.61834323,
+        "score": 0.99929035,
         "signalType": "platform_api"
       },
       {
-        "title": "Health Connect | Jetpack - Android Developers",
+        "title": "Add exercise routes  |  Android health & fitness  |  Android Developers",
+        "url": "https://developer.android.com/health-and-fitness/health-connect/features/exercise-routes",
+        "publishedAt": null,
+        "summary": "Exercise routes allow users to track a GPS route for associated exercise. ## Check Health Connect availability. Before attempting to use Health Connect, your app should verify that Health Connect is available. You can check for availability using the `HealthConnectClient.getSdkStatus()`. This guide provides information on how to request permissions from the user and. The read and write functionality for exercise routes includes:. If the user doesn't have write permissions and the route is not set, the route. If your app has a route write permission and tries to update a session by. Access to exercise route is protected by the following permissions:. To read exercise route, you need to request the following permissions:. The following code snippets show how to read and write an exercise route. // The user doesn't allow the app to read exercise session data. // The user doesn't allow the app to write exercise session data. // The user doesn't allow the app to write exercise route data.",
+        "sourceName": "Android Developers Health & Fitness",
+        "sourceCategory": "vendor_websearch",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.9988927,
+        "signalType": "platform_api"
+      },
+      {
+        "title": "Health Connect  |  Jetpack  |  Android Developers",
         "url": "https://developer.android.com/jetpack/androidx/releases/health-connect",
         "publishedAt": null,
         "summary": "# Health Connect. | April 22, 2026 | 1.1.0 | - | - | 1.2.0-alpha04 |. To help us strengthen user privacy and security, developers integrating with Health Connect **must declare read and/or write access for the data types** that their apps use. For more information, visit Provide information for the Health apps declaration form and Health Connect by Android Permissions. To add a dependency on health, you must add the Google Maven repository to your. Add the dependencies for the artifacts you need in the `build.gradle` file for. ## Health Connect Testing Version 1.0. `androidx.health.connect:connect-testing:1.0.0-alpha03` is released. `androidx.health.connect:connect-testing:1.0.0-alpha03`. You can use the library to create local unit tests, which typically verify the behavior of the classes in your app that interact with the Health Connect client. `androidx.health.connect:connect-client:1.1.0`, `androidx.health.connect:connect-client-external-protobuf:1.1.0`, and `androidx.health.connect:connect-client-proto:1.1.0` have been promoted to its first stable release with no changes since its previous RC release. `androidx.health.connect:connect-client:1.1.0-rc03`, `androidx.health.connect:connect-client-external-protobuf:1.1.0-rc03`, and `androidx.health.connect:connect-client-proto:1.1.0-rc03` are released. `androidx.health.connect:connect-client:1.1.0-rc03`. `androidx.health.connect:connect-client-external-protobuf:1.1.0-rc03`. `androidx.health.connect:connect-client-proto:1.1.0-rc03`. `androidx.health.connect:connect-client:1.1.0-beta02`, `androidx.health.connect:connect-client-external-protobuf:1.1.0-beta02`, and `androidx.health.connect:connect-client-proto:1.1.0-beta02` are released. `androidx.health.connect:connect-client:1.1.0-beta02`. `androidx.health.connect:connect-client-proto:1.1.0-beta02`.",
@@ -1578,8 +1604,21 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.81979275,
+        "score": 0.9999877,
         "signalType": "platform_api"
+      },
+      {
+        "title": "[CES 2026] A Care Companion for Family Health and Safety",
+        "url": "https://news.samsung.com/sg/ces-2026-a-care-companion-for-family-health-and-safety",
+        "publishedAt": null,
+        "summary": "In the Self Care – Good Sleep section, visitors learned how wearables such as Galaxy Watch and Galaxy Ring track sleep conditions while working in concert with",
+        "sourceName": "Samsung Global Newsroom (Digital Health)",
+        "sourceCategory": "vendor_websearch",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.71377134,
+        "signalType": "product_market"
       },
       {
         "title": "Level Up Your Health with Galaxy Watch and Receive a Withings Smart Scale on Us",
@@ -1591,33 +1630,33 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.99977654,
+        "score": 0.66045773,
         "signalType": "product_market"
       },
       {
-        "title": "[World Health Day 2026] How Jacob Kiplimo's Galaxy Watch Turns ...",
-        "url": "https://news.samsung.com/ca/world-health-day-2026-how-jacob-kiplimos-galaxy-watch-turns-data-into-world-record-performance",
+        "title": "About This Kit-Health-Developing Basic Capabilities-Atomic Service Development-Guides",
+        "url": "https://developer.huawei.com/consumer/en/doc/atomic-guides/health-service-kit-ability-as",
         "publishedAt": null,
-        "summary": "# [World Health Day 2026] How Jacob Kiplimo’s Galaxy Watch Turns Data Into World-Record Performance. When **Jacob Kiplimo** storms past the finish line, he’s not just running on talent — he’s running on data. After securing a dominant win at the 2025 Chicago Marathon and shattering the half-marathon world record this March in Lisbon, the 25-year-old is now targeting success at the 2026 London Marathon. To mark World Health Day (WHD) 2026 on April 7, Samsung asked him to detail his data-driven training regime which embodies this year’s WHD slogan, “Together for health. With exclusive access to his Samsung Health metrics, we take an inside look into his grueling training program which has seen him cover **over 100 km in just one week**. Discover how insights led him to adjust his training for optimal recovery and how even a “rest day” can include a 3 km run. I use the **Running Coach** feature in Samsung Health to get real-time analysis and reports on my running form through the **Running Analysis** feature in Samsung Health.",
-        "sourceName": "Samsung Global Newsroom (Digital Health)",
+        "summary": "# About This Kit-Health-Developing Basic Capabilities-Atomic Service Development-Guides - HUAWEI Developers. Health Service Kit provides a platform for ecosystem apps to access users' health and fitness data based on users' HUAWEI ID and authorization. Upon obtaining user's consent and authorization, you can access their health and fitness data with the open capabilities provided by Health Service Kit, and use these data to build various kinds of apps and services to deliver professional health and fitness experiences. Health Service Kit incorporates its health and fitness data services with apps, services, and third-party devices, to construct a smart health and fitness ecosystem that provides users with unmatched convenience and security. ## Health Service Kit. As shown in the preceding figure, Health Service Kit provides a series of open capabilities, for ecosystem apps/services and hardware devices. *   Open data: As a health and fitness data platform, this kit unlocks extensive health data and professional workout and fitness data.",
+        "sourceName": "Huawei Health Kit",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9992679,
-        "signalType": "product_market"
+        "score": 0.99990165,
+        "signalType": "platform_api"
       },
       {
-        "title": "Health | Samsung Developers",
-        "url": "http://developer.samsung.com/health",
+        "title": "Enabling Health Service Kit in Huawei Health-Developing Your App-HarmonyOS (JavaScript)-Device-side Data Openness-Accessing Health Kit-Health Service Kit",
+        "url": "https://developer.huawei.com/consumer/en/doc/HMSCore-Guides/harmonyos-enabling-health-kit-0000001204685000",
         "publishedAt": null,
-        "summary": "# Samsung Health SDK Suite. Develop innovative health and wellness applications for Galaxy Watch and smartphones. # Accelerate health and wellness innovation with Samsung Health SDKs. Samsung's Health SDKs enable a broad ecosystem of partners to accelerate innovation and solution development. As Galaxy Watch sensors and capabilities improve, you can read, with user consent, and integrate health data from Galaxy Watch and smartphones into your existing applications and platforms, as well as create innovative and powerful new products that enhance users' well-being through health insights. ##### Samsung Health Data SDK allows partners the ability to integrate Samsung Health data into their own apps, enabling them to monitor users` health and provide health and wellness services based on user consent. By connecting smartphones with Samsung wearables like the Galaxy Watch and Galaxy Ring as well as other connected devices such as activity trackers or heart rate monitors, it seamlessly integrates health monitoring into daily life. ##### Samsung Health Sensor SDK is a software platform that enables the medical community and digital health solution providers to harness the power of Galaxy Watch’s advanced sensors; providing both raw sensor signal data and processed data with our differentiated features. ##### Samsung Health Accessory SDK defines Bluetooth Low Energy (BLE) compatibility guidelines and Samsung Health specifications based on Bluetooth Generic Attributes (GATT), including service structure to connect with Samsung Health. ##### Samsung Health Research Stack is backed by open-source tools, applications, and services for running, managing, and analyzing medical research studies and clinician services on Android and Wear OS devices. ##### Samsung collaborates with the world’s most innovative organizations to pave the way for better health and wellness by advancing solutions in connected care. ### Samsung Health SDK Suite Guide. Use Samsung Health SDK Suite to impl",
-        "sourceName": "Samsung Developers Health",
+        "summary": "# Enabling Health Service Kit in Huawei Health-Developing Your App-HarmonyOS (JavaScript)-Device-side Data Openness-Accessing Health Kit-Health Service Kit - HUAWEI Developers. Introduction to Health Service Kit. Enabling Health Service Kit in Huawei Health. # Enabling Health Service Kit in Huawei Health. If your app runs on smartphones and needs to access Huawei Health data, prompt users to enable Health Service Kit in the Huawei Health app. If users do not enable Health Service Kit as prompted, or disable it after enabling it as prompted, you will be unable to query data by calling related APIs. For a better interaction experience, you are advised to check whether users have enabled Health Service Kit by calling getHealthAppAuthorization before querying health and fitness data. You can also call checkHealthAppAuthorization to check whether users have enabled Health Service Kit. If Health Service Kit is not enabled, users will be prompted to enable it. You can also prompt users to enable Health Service Kit by going to **Me**>**Privacy management** in the Huawei Health app and toggling on **HUAWEI Health Kit**.",
+        "sourceName": "Huawei Health Kit",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.8900749,
+        "score": 0.9998634,
         "signalType": "platform_api"
       },
       {
@@ -1630,20 +1669,20 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9986853,
+        "score": 0.47124818,
         "signalType": "product_market"
       },
       {
-        "title": "Xiaomi Smart Band 10 Ceramic Edition HyperOS3 V3.2.1 Update",
-        "url": "https://new.c.mi.com/global/post/1764675",
+        "title": "Xiaomi Watch 5 announced with EMG and ECG.",
+        "url": "https://c.mi.com/global/post/2050127",
         "publishedAt": null,
-        "summary": "Introducing the exclusive Xiaomi Smart Band 10 Ceramic Edition with an all-new look, amazing screen, smarter experience and experience a jade-smooth finish that",
+        "summary": "Along with the EMG, the Xiaomi Smartwatch is packed with the ECG (Electrocardiogram) sensor, which further helps the wearer analyze heart rhythms on the wrist",
         "sourceName": "Xiaomi Global Wearables",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.99657035,
+        "score": 0.43352634,
         "signalType": "product_market"
       },
       {
@@ -1656,33 +1695,20 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.34760407,
+        "score": 0.9763105,
         "signalType": "platform_api"
       },
       {
-        "title": "API Changelog | WHOOP for Developers",
-        "url": "https://developer.whoop.com/docs/api-changelog",
+        "title": "Pulling Health Data Manually | Withings",
+        "url": "https://developer.withings.com/developer-guide/v3/integration-guide/onsite-mode/data-api/fetch-data-example-manual",
         "publishedAt": null,
-        "summary": "Learn how to look up mappings from v1 to v2 ids.**. This changelog highlights notable changes to the WHOOP Developer Platform, such as new API endpoints or webhook event types. ### Webhook Updates, New V1 Migration API​. Updated webhook documentation to clarify that v1 webhooks are no longer being published. Provided documentation for new activity mapping endpoint to look up historical v1 activity ids. * **Documentation**: ✨New✨ v1 -> v2 activity id mapping documentation for activity v1 id lookups. Updated webhook documentation to clarify that v2 recovery webhooks use the UUID of the associated sleep, not the cycle ID. * **v1 Recovery Webhooks**: Continue to use cycle ID as the identifier. * **v2 Recovery Webhooks**: Use the UUID of the sleep that the recovery is associated with. * **Documentation**: Updated webhook documentation to reflect the correct identifier usage. ### v2 API Launch​. * **Migration Guide**: A comprehensive v1 to v2 migration guide is available to assist with the transition. Strength Trainer activities are available via the `/workout` endpoint.",
-        "sourceName": "WHOOP Developer API",
+        "summary": "In some cases, you might prefer to fetch the user's health data manually rather than relying on the notification system. This approach requires providing a mechanism within your application—such as a button—that allows the user to initiate the data retrieval process when they're ready. To facilitate manual data retrieval, include a user interface element (like a \"Refresh Data\" button) that the user can interact with once their measurement is complete. This action signals your system to fetch the latest health data from the Withings API. The first step in the data retrieval process is to locate the access token associated with the user. By querying your database, you can retrieve this token, which authorizes your request to the Withings API. With the access token and time range in hand, decide which API endpoint to call based on the type of data you wish to retrieve. Construct your API call with the necessary parameters and execute the request to fetch the health data.",
+        "sourceName": "Withings API / Research",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.99991846,
-        "signalType": "clinical_regulatory"
-      },
-      {
-        "title": "[PDF] Investor Day 2026 Dexcom",
-        "url": "https://investors.dexcom.com/files/doc_presentations/2026/May/15/Investor-Day-Presentation_FINAL-PDF.pdf",
-        "publishedAt": null,
-        "summary": "financial position, including estimated revenue, organic revenue growth, non -GAAP gross profit margin, non -GAAP operating margin , Adjusted EBITDA. margin, and free cash flow conversion, and growth rates related thereto for future years; projected costs, operating expenses , c apital allocation and. “973 -P: Initiation of Dexcom CGM Is Associated with Improved Renal Outcomes in Adults with Chronic Kidney Disease (CKD) on Insulin Therapy.” Diabetes 20 June 2025; 74. “Reduction in Diabetes -Related Hospitalizations and Medical Costs After Real -Time Continuous Glucose Monitor ( rtCGM ) Initiation in Patients with Type 2 Diabetes (PWT2D) on Intensive Insulin Therapy (IIT).” Data presented at American Diabete s A ssociation’s 83 rd Scientific Sessions June. One -Year Real -World Impact of Dexcom CGM on HbA1c in Non -Insulin -Treated Type 2 Diabetes: Evidence From U.S. P rimary Care Registry Analysis. 2.  Dexcom defines free cash flow conversion as (operating cash flow minus capex)/non -GAAP net income.",
-        "sourceName": "Dexcom News",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.99760324,
+        "score": 0.9999777,
         "signalType": "clinical_regulatory"
       },
       {
@@ -1695,24 +1721,24 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9921841,
+        "score": 0.35333946,
         "signalType": "product_market"
       },
       {
-        "title": "About Abbott | Company Overview, Mission and Values",
-        "url": "https://www.abbott.com/en-us/about-abbott",
+        "title": "Investor-Day-Presentation_FINAL-PDF.pdf",
+        "url": "https://investors.dexcom.com/files/doc_presentations/2026/May/15/Investor-Day-Presentation_FINAL-PDF.pdf",
         "publishedAt": null,
-        "summary": "Live your best life, now and in the future. At Abbott, we’re driven by a shared mission: to help you live a healthier, fuller life. The revolutionary health technologies and products we create serve that very human purpose. Through our products, our science and our partnerships, we work to bring better health to more people, so that our next breakthrough can lead to theirs. Abbott, a 30-year-old practicing physician, begins in the rear of his People’s Drug Store in Chicago. Initial public offering provides shares for the first time in the year of the stock market crash that began the Great Depression. One of our greatest achievements: Approval of the first licensed test to identify HIV in blood, helping to secure the safety of the blood supply. We were named to TIME Magazine’s list of the 100 Most Influential Companies of 2025. Find answers to some of the most frequently asked questions about our company.",
-        "sourceName": "Abbott Biowearables",
+        "summary": "financial position, including estimated revenue, organic revenue growth, non -GAAP gross profit margin, non -GAAP operating margin , Adjusted EBITDA. margin, and free cash flow conversion, and growth rates related thereto for future years; projected costs, operating expenses , c apital allocation and. “973 -P: Initiation of Dexcom CGM Is Associated with Improved Renal Outcomes in Adults with Chronic Kidney Disease (CKD) on Insulin Therapy.” Diabetes 20 June 2025; 74. “Reduction in Diabetes -Related Hospitalizations and Medical Costs After Real -Time Continuous Glucose Monitor ( rtCGM ) Initiation in Patients with Type 2 Diabetes (PWT2D) on Intensive Insulin Therapy (IIT).” Data presented at American Diabete s A ssociation’s 83 rd Scientific Sessions June. One -Year Real -World Impact of Dexcom CGM on HbA1c in Non -Insulin -Treated Type 2 Diabetes: Evidence From U.S. P rimary Care Registry Analysis. 2.  Dexcom defines free cash flow conversion as (operating cash flow minus capex)/non -GAAP net income.",
+        "sourceName": "Dexcom News",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.5389832,
+        "score": 0.29364797,
         "signalType": "clinical_regulatory"
       },
       {
-        "title": "Meet the members of the 2026 Abbott HeartMates Draft",
+        "title": "Meet the members of the 2026 Abbott HeartMates Draft | Abbott Newsroom",
         "url": "https://www.abbott.com/en-us/corpnewsroom/healthy-heart/meet-the-members-of-the-2026-abbott-heartmates-draft",
         "publishedAt": null,
         "summary": "This year’s class is made up of 11 individuals who exemplify what it means to be a member of the Abbott HeartMates community through their active participation in the program and their commitment to inspiring others by sharing their stories with the world. At 31 years old and with little knowledge of her family’s heart history, Sonya was diagnosed with a bicuspid aortic valve, a congenital heart condition in which the aortic valve has two flaps instead of three. An echocardiogram revealed that her valve disease had progressed from moderate to severe, and she had developed an aortic aneurysm, a bulge that occurs in the wall of the aorta and can be life-threatening if it ruptures. Within weeks — and shortly after graduating with her masters in social work —  Sonya had open-heart surgery in 2019 to replace her valve and repair her aneurysm. “Recovery from surgery has been a journey that I'm grateful to have experienced,” she says.",
@@ -1721,11 +1747,11 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.012624949,
+        "score": 0.023691783,
         "signalType": "product_market"
       },
       {
-        "title": "From reactive nutrition coaching to real-time metabolic care | Levels",
+        "title": "From reactive nutrition coaching to real-time metabolic care | Levels | Levels",
         "url": "https://www.levels.com/blog/reactive-coaching-real-time-metabolic-care",
         "publishedAt": null,
         "summary": "This story shows how real-time data, unified timelines, and clinician dashboards enable intervention during the moments that actually matter. # From reactive nutrition coaching to real-time metabolic care. Real-time continuous glucose monitoring, unified patient timelines, and practitioner dashboards shift the care model from reactive analysis to intervention during the moments that drive outcomes. Real-time metabolic care changes the equation: when continuous glucose monitoring, food logs, and lifestyle data flow through one patient app and one practitioner dashboard, you can guide behavior during the meal, the workout, and the sleep window—not weeks later in a debrief. ### Learn more about Levels Pro. Extend care beyond the exam room with Levels Pro, the metabolic health operating system that unifies CGM, labs, food logs, and lifestyle data into a single, clinician‑ready view. Levels Pro gives your team the infrastructure to make that shift: one app for patients to learn in real time, one dashboard for clinicians to guide in real time, and a metabolic health operating system that turns reactive nutrition coaching into proactive, personalized, preventative care.",
@@ -1734,7 +1760,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.5637388,
+        "score": 0.9994429,
         "signalType": "product_market"
       },
       {
@@ -1747,7 +1773,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.4813325,
+        "score": 0.9988752,
         "signalType": "product_market"
       }
     ]
@@ -2097,18 +2123,18 @@
     },
     "tavily_per_site": {
       "Apple Newsroom / Watch": {
-        "fetched": 4,
-        "qualityKept": 0,
-        "finalKept": 0,
-        "kept": 0,
+        "fetched": 5,
+        "qualityKept": 1,
+        "finalKept": 1,
+        "kept": 1,
         "capped": 0,
         "error": null
       },
       "Apple Developer HealthKit / WorkoutKit / watchOS": {
         "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
@@ -2122,9 +2148,9 @@
       },
       "Android Developers Health & Fitness": {
         "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "qualityKept": 2,
+        "finalKept": 2,
+        "kept": 2,
         "capped": 0,
         "error": null
       },
@@ -2145,10 +2171,10 @@
         "error": null
       },
       "Samsung Developers Health": {
-        "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "fetched": 0,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
@@ -2161,10 +2187,10 @@
         "error": null
       },
       "Huawei Health Kit": {
-        "fetched": 3,
-        "qualityKept": 0,
-        "finalKept": 0,
-        "kept": 0,
+        "fetched": 5,
+        "qualityKept": 2,
+        "finalKept": 2,
+        "kept": 2,
         "capped": 0,
         "error": null
       },
@@ -2209,10 +2235,10 @@
         "error": null
       },
       "WHOOP Developer API": {
-        "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "fetched": 0,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
@@ -2226,9 +2252,9 @@
       },
       "Withings API / Research": {
         "fetched": 5,
-        "qualityKept": 0,
-        "finalKept": 0,
-        "kept": 0,
+        "qualityKept": 1,
+        "finalKept": 1,
+        "kept": 1,
         "capped": 0,
         "error": null
       },
@@ -2241,7 +2267,7 @@
         "error": null
       },
       "Dexcom Developer API": {
-        "fetched": 5,
+        "fetched": 0,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2249,10 +2275,10 @@
         "error": null
       },
       "Abbott Biowearables": {
-        "fetched": 3,
-        "qualityKept": 2,
-        "finalKept": 2,
-        "kept": 2,
+        "fetched": 2,
+        "qualityKept": 1,
+        "finalKept": 1,
+        "kept": 1,
         "capped": 0,
         "error": null
       },
@@ -2321,7 +2347,7 @@
         "error": null
       },
       "ICML Health Workshops / PMLR": {
-        "fetched": 0,
+        "fetched": 5,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2329,7 +2355,7 @@
         "error": null
       },
       "IEEE EMBC Proceedings": {
-        "fetched": 5,
+        "fetched": 0,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2361,7 +2387,7 @@
         "error": null
       },
       "IEEE Sensors / Wearable Proceedings": {
-        "fetched": 5,
+        "fetched": 4,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2380,10 +2406,10 @@
     "filtered_out_by_blacklist": 24,
     "filtered_out_by_keyword": 637,
     "filtered_out_by_source_exclude": 14,
-    "filtered_out_by_tavily_quality": 83,
+    "filtered_out_by_tavily_quality": 70,
     "filtered_out_by_required_keyword": 13,
     "filtered_out_by_entry_page": 0,
-    "filtered_out_by_date": 300,
+    "filtered_out_by_date": 298,
     "duplicate_urls": 0,
     "duplicate_titles": 0,
     "tavily_items_capped": 8,
