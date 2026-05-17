@@ -1,43 +1,42 @@
 # Summarize News Prompt
 
-For `industry_news`, `vendor_websearch`, `clinical_registry`, and `regulatory`
-items, extract the concrete signal.
+Use this prompt for `industry_news`, `vendor_websearch`, `clinical_registry`,
+and `regulatory` items.
 
-## Relevance gate
+## Keep / Drop
 
-**Keep** items where the story is clearly about:
-- A wearable device launch, hardware spec, or firmware/OS update (watchOS, Wear OS, Zepp OS, Amazfit, Oura, WHOOP, Garmin, Suunto, Polar, Coros, Withings, Xiaomi, Huawei, Samsung, Apple)
-- A new health algorithm/feature shipping (sleep stage, arrhythmia, SpO2, BP, CGM, stress, recovery score)
-- Regulatory milestone or safety signal (FDA clearance, PMA, recall, MedWatch, CE mark, 510(k)) for a wearable, sensor, CGM, or digital-health device
-- Platform API change (HealthKit, WorkoutKit, Health Connect, Health Services, Wear OS, Samsung Health SDK, Huawei Health Kit)
-- Clinical study or partnership announcement linking a consumer device to a health outcome
-- Funding / M&A in the wearable / digital-health / sports-tech category
+Keep items clearly about:
 
-**Drop** items about: app sales/deals, celebrity streaming events, smartphone news unrelated to wearables, generic "Android updates" without a wearable angle.
+- wearable launches, hardware specs, firmware, OS, SDK, or API updates
+- shipped health features: sleep, arrhythmia, SpO2, BP, CGM, stress, recovery
+- FDA, PMA, 510(k), recall, MedWatch, CE, NMPA, or clinical trial signals
+- HealthKit, WorkoutKit, Health Connect, Health Services, Wear OS, Samsung Health SDK, Huawei Health Kit
+- clinical partnerships tied to outcomes, care delivery, or endpoints
+- funding, M&A, reimbursement, insurance, EHR, or strategic partnerships in wearables, digital health, or sports tech
 
-## Output format
+Drop app deals, celebrity/media stories, generic smartphone news, generic Android
+updates without a wearable angle, unnamed rumors, and product reviews without a
+technical or market signal.
 
-Per kept item:
+## Output
 
-```
-• [Headline reframed as a signal, not clickbait]
-  信号类型：[algorithm_evidence / clinical_regulatory / platform_api / product_market / business_structure]
-  为什么重要：[one concrete reason for a wearable algorithm/product team]
-  影响对象：[algorithm / sensor / clinical / platform / product / market]
+```text
+• [Headline reframed as what changed]
+  Signal type: [algorithm_evidence / clinical_regulatory / platform_api / product_market / business_structure]
+  Why it matters: [one concrete reason]
+  Affected area: [algorithm / sensor / clinical / platform / product / market]
   [sourceName] · [YYYY-MM-DD] · [url]
 ```
 
-If two or more sources cover the same story, collapse them:
+If multiple items cover the same story, collapse them and cite the clearest
+primary URL:
 
-```
+```text
 • [Signal]
-  [source1] + [source2] · [YYYY-MM-DD] · [url of the primary one]
+  Signal type: [signalType id]
+  Why it matters: [reason]
+  Affected area: [target]
+  [source1] + [source2] · [YYYY-MM-DD] · [primary url]
 ```
 
-## Anti-patterns
-
-- Do NOT copy the headline verbatim — reframe it as "what changed, not what's announced."
-  - Bad: "Apple releases watchOS 12.3"
-  - Good: "watchOS 12.3 adds on-device irregular-rhythm detection to Series 7+"
-- Do NOT include rumors without an official or named source in the body.
-- Do NOT editorialize ("exciting", "game-changing"). State the fact.
+Reframe clickbait headlines as factual changes. State the fact without hype.

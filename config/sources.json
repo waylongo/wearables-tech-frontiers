@@ -2744,33 +2744,6 @@
         "maxItems": 3
       },
       {
-        "name": "China NMPA Medical Device Approvals",
-        "sourceCategory": "regulatory",
-        "signalType": "clinical_regulatory",
-        "query": "site:nmpa.gov.cn 医疗器械 可穿戴 OR 智能手表 OR 手环 OR 连续葡萄糖 OR 血糖监测 OR 动态心电 OR 心电监测 OR 血压监测 OR 远程监测 OR 传感器",
-        "homeUrl": "https://www.nmpa.gov.cn/",
-        "keywordFilter": [
-          "可穿戴",
-          "手环",
-          "智能手表",
-          "连续葡萄糖",
-          "血糖监测",
-          "动态心电",
-          "心电监测",
-          "血压监测",
-          "远程监测",
-          "传感器",
-          "wearable",
-          "smartwatch",
-          "sensor",
-          "glucose",
-          "ecg",
-          "blood pressure"
-        ],
-        "keywordScope": "title_summary",
-        "maxItems": 3
-      },
-      {
         "name": "NeurIPS Health Workshops / OpenReview",
         "sourceCategory": "academic",
         "signalType": "algorithm_evidence",
@@ -3162,7 +3135,6 @@
     "categories": [
       {
         "id": "regulatory_milestone",
-        "label_zh": "监管里程碑",
         "label_en": "Regulatory milestone",
         "base_score": 9,
         "criteria": "FDA 510(k) / De Novo / PMA, CE mark MDR, NMPA certification, PMDA, TGA — for a wearable health feature. Peer-reviewed multi-site prospective clinical validation also qualifies.",
@@ -3178,7 +3150,6 @@
       },
       {
         "id": "open_release",
-        "label_zh": "开源发布",
         "label_en": "Open release",
         "base_score": 9,
         "criteria": "Vendor or academic publicly releases model weights, pretrained foundation model, large labeled dataset, or production-grade SDK/code for wearable/physiological signals. Must be usable (not just a paper claiming 'code coming soon').",
@@ -3194,7 +3165,6 @@
       },
       {
         "id": "structural_change",
-        "label_zh": "结构性变化",
         "label_en": "Structural change",
         "base_score": 8,
         "criteria": "M&A, major exec/founder departure or appointment at a wearable company, large funding round (≥$50M), strategic pivot announcement. Affects competitive landscape or talent flow.",
@@ -3211,7 +3181,6 @@
       },
       {
         "id": "new_sensor_modality",
-        "label_zh": "新传感器模态",
         "label_en": "New sensor modality",
         "base_score": 8,
         "criteria": "Consumer wearable first-time integration of a physical/biochemical sensing modality (non-invasive BP, non-invasive glucose, EMG, sweat cortisol, SpHb, real-time hydration, etc.). Must ship in a real product, not just a research paper.",
@@ -3227,7 +3196,6 @@
       },
       {
         "id": "algorithmic_breakthrough",
-        "label_zh": "算法突破",
         "label_en": "Algorithmic breakthrough",
         "base_score": 7,
         "criteria": "New SOTA with concrete metric on wearable/physiological task, OR foundation-model / self-supervised training at ≥10M-sample scale, OR on-device breakthrough with specific latency/size/power numbers. Must have reproducible evidence (paper with code, benchmark result).",
@@ -3243,7 +3211,6 @@
       },
       {
         "id": "large_clinical",
-        "label_zh": "大规模临床",
         "label_en": "Large-scale clinical",
         "base_score": 7,
         "criteria": "Prospective or multi-site clinical study with n≥10,000 participants OR multi-center design, wearable-derived endpoint, peer-reviewed or at top conference.",
@@ -3259,7 +3226,6 @@
       },
       {
         "id": "business_pivot",
-        "label_zh": "商业模式转向",
         "label_en": "Business model pivot",
         "base_score": 7,
         "criteria": "Wearable vendor first-time entry into new go-to-market category: clinical services, B2B/B2B2C, insurance, subscription, EHR integration, pharma partnership. Must be a real product launch, not a trial balloon.",
@@ -3275,7 +3241,6 @@
       },
       {
         "id": "platform_api_change",
-        "label_zh": "平台 API 变更",
         "label_en": "Platform / API change",
         "base_score": 5,
         "criteria": "HealthKit / Health Connect / Samsung Health SDK / Huawei Health Kit / Wear OS schema, new data type, permission, or interoperability standard (FHIR wearables profile). Must be shipping, not WWDC keynote hype.",
@@ -3325,36 +3290,6 @@
       "on-device health",
       "health coaching",
       "remote monitoring"
-    ],
-    "wearables_zh": [
-      "可穿戴",
-      "智能手表",
-      "智能手环",
-      "智能戒指",
-      "健康手表",
-      "运动手表",
-      "血氧",
-      "心率",
-      "睡眠监测",
-      "睡眠分期",
-      "CGM",
-      "连续血糖",
-      "心电",
-      "心率变异",
-      "华为手表",
-      "小米手环",
-      "小米手表",
-      "荣耀手表",
-      "OPPO Watch",
-      "vivo Watch",
-      "Apple Watch",
-      "Galaxy Watch",
-      "Oura",
-      "WHOOP",
-      "Garmin",
-      "Fitbit",
-      "佳明",
-      "Ultrahuman"
     ]
   },
   "api_sources": {

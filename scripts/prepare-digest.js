@@ -563,7 +563,7 @@ async function main() {
     catch (err) { healthcheck.warnings.push(`User config unreadable: ${err.message}`); }
   }
   const config = {
-    language: userCfg.language || 'zh',
+    language: userCfg.language || 'en',
     windowDays: userCfg.windowDays || 7,
     categories: userCfg.categories || ['academic', 'vendor_research', 'industry_news', 'clinical_registry', 'regulatory'],
     onboardingComplete: userCfg.onboardingComplete || false,

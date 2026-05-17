@@ -1,43 +1,34 @@
 # Summarize Papers Prompt
 
-For academic items (`sourceCategory == "academic"`), read the `title` and
-`summary` field (the latter is the abstract), and produce a one-line signal.
+Use this prompt for `sourceCategory == "academic"` items. Read only `title` and
+`summary`.
 
-## What counts as a relevant paper
+## Keep / Drop
 
-Keep papers where **at least one** of these is true:
-- Wearable device / smartwatch / smartband / smart ring / earable is the *study system*
-- The signal is PPG, ECG, IMU, EMG, EEG, SpO2, HRV, actigraphy, CGM, or similar
-- The task is health-related: sleep staging, activity recognition, HR/HRV estimation, stress, fall detection, arrhythmia, blood pressure, glucose, digital biomarker
-- The paper applies a novel ML/foundation-model method to physiological time series
-- The paper is a clinical validation of a consumer wearable
+Keep papers where the study system, signal, method, or validation target is
+clearly wearable or sports-health related:
 
-Drop papers about: unrelated signal processing (radar, seismic, wind-tunnel), pure theory with no health framing, robotics/vision unrelated to wearables.
+- wearables, smartwatches, smart rings, smartbands, earables
+- PPG, ECG, IMU, EMG, EEG, SpO2, HRV, actigraphy, CGM, BP, sleep, recovery
+- activity recognition, stress, falls, arrhythmia, glucose, digital biomarkers
+- physiological time-series ML, foundation models, self-supervised learning
+- clinical validation of consumer or body-worn devices
 
-## Output format
+Drop unrelated signal processing, pure theory without a health/wearable frame,
+robotics/vision-only work, and papers whose wearable relevance is unclear.
 
-For each kept paper:
+## Output
 
-```
-• [Paper title] — [一句话信号：他们做了什么新的]
-  信号类型：algorithm_evidence
-  为什么重要：[why this changes evidence, model choice, dataset assumptions, or validation strategy]
-  影响对象：[algorithm / sensor / clinical]
-  方法：[数据集规模 / 传感器 / 模型家族，如 "n=4,500 Apple Watch PPG, self-supervised transformer"]
+```text
+• [Paper title] — [one-line signal: what is new]
+  Signal type: algorithm_evidence
+  Why it matters: [why this changes evidence, model choice, dataset assumptions, or validation strategy]
+  Affected area: [algorithm / sensor / clinical]
+  Method: [sample size / sensor / model family, or undisclosed]
   [sourceName] · [YYYY-MM-DD] · [url]
 ```
 
-If the abstract does not name dataset / model / sample size, write `方法：未披露` — do NOT make up numbers.
+Write `Method: undisclosed` when the abstract does not name dataset size,
+sensor, model, or sample size. Do not make up numbers.
 
-## Extraction tips
-
-- Size signal: "n=", "participants", "subjects", "hours of", "days of"
-- Model signal: "transformer", "CNN", "LSTM", "foundation model", "self-supervised", "contrastive"
-- Sensor signal: "PPG", "ECG", "IMU", "accelerometer", "gyroscope", "inertial"
-- Deployment: "on-device", "edge", "real-time", "Apple Watch", "Fitbit", "smartphone"
-
-## Anti-patterns
-
-- Do NOT paraphrase the abstract verbatim — extract the *delta*.
-- Do NOT say "this paper shows..." — start with the result/finding.
-- Do NOT include papers whose relevance is unclear after reading the abstract.
+Extract concrete deltas; do not paraphrase the abstract sentence by sentence.

@@ -1,47 +1,34 @@
 # Wearables Tech Frontiers (wtf)
 
-给**可穿戴算法 / 产品技术 lead** 用的按需 digest skill。它不做定时推送、不做即席搜索；当你输入 `/wtf` 时，读取中心 feed，输出一份按信号强度组织的结构化可穿戴行业情报。
+`wearables-tech-frontiers` is an on-demand digest skill for tracking wearables R&D, product, platform, clinical, and market signals across Apple, Google/Fitbit, Oura, Garmin, Samsung, WHOOP, and adjacent sports-health companies.
 
-## 覆盖范围
+It reads a central feed, applies local preferences, and asks the agent to turn the result into a short signal brief. It is not a push service, a live web-search tool, or a general health-news aggregator.
 
-| 层 | 机制 | 源 |
-|---|---|---|
-| 学术 / 预印本 / 会议 | GitHub Actions 中心抓 RSS/API + Tavily | arXiv、PubMed、medRxiv、bioRxiv、npj Digital Medicine、Nature BME、JMIR mHealth、Lancet Digital Health、PLOS Digital Health、IEEE JBHI、Frontiers Digital Health、Sensors、NeurIPS / ICML health workshops、EMBC、BIBM、IMWUT / UbiComp、ISWC、IEEE Sensors |
-| 厂商研究 | GitHub Actions 中心抓 RSS | Apple ML Research、Google Research、DeepMind |
-| 临床注册 | GitHub Actions 中心调用公开 API | ClinicalTrials.gov |
-| 监管硬信号 | GitHub Actions 中心抓 RSS/API + Tavily | FDA MedWatch、openFDA device 510(k)、PMA、Recall、中国 NMPA 医疗器械监管 |
-| 行业媒体 | GitHub Actions 中心抓 RSS + Tavily | MobiHealthNews、9to5Mac、9to5Google、Fierce Healthcare、MedTech Dive、Healthcare IT News、Rock Health、Digital Health Wire、DC Rainmaker |
-| 官方 / 厂商 / 行业兜底 | GitHub Actions 中心调用 Tavily | Apple、Google / Fitbit、Samsung、Xiaomi、Garmin、Oura、WHOOP、Withings、Dexcom、Abbott、Levels 等 |
-| 平台 API 变更 | GitHub Actions 中心调用 Tavily | Apple HealthKit / WorkoutKit / watchOS docs、Android Health Connect / Health Services / Wear OS docs |
+## Install
 
-中心 feed 每周一由 GitHub Actions 更新到 `feed-wearables.json`。用户本地只负责拉取 JSON、按个人配置过滤，并让 agent 按 prompts remix。
-
-## 不覆盖的
-
-- **X / Twitter**：需要 auth 和服务端 scraper；如需跟人，建议并用 `follow-builders`。
-- **中文媒体源**：不抓中文科技/产业媒体页面。
-- **openFDA adverse event**：首版不接个案不良事件，避免把 digest 拉向高噪声病例报告。
-- **商业融资数据库 API**：不接 Crunchbase、PitchBook、Dealroom、Tracxn 等付费 API。
-- **定时推送**：这是按需 skill，不发 Telegram/邮件。
-- **遥测**：不向第三方发送用户配置或运行数据。
-
-## 安装
-
-### Codex
+Codex:
 
 ```bash
 git clone https://github.com/waylongo/wearables-tech-frontiers.git ~/.codex/skills/wearables-tech-frontiers
 ```
 
-### Claude Code
+Claude Code:
 
 ```bash
 git clone https://github.com/waylongo/wearables-tech-frontiers.git ~/.claude/skills/wearables-tech-frontiers
 ```
 
-要求：Node 22+ 推荐；脚本使用 native `fetch`，无 npm 依赖。
+Requires Node 22+. There are no npm dependencies.
 
-## 独立运行
+## Use
+
+In the agent:
+
+```text
+/wtf
+```
+
+Standalone:
 
 ```bash
 node scripts/prepare-digest.js --days=7
@@ -49,70 +36,89 @@ node scripts/prepare-digest.js --days=14 --category=academic
 node scripts/prepare-digest.js --no-remote
 ```
 
-脚本默认通过 GitHub Contents API 读取中心 feed，避免 raw CDN 缓存延迟。人工查看可用：
+Common preference changes:
+
+- `past 14 days`: one-time `--days=14`
+- `academic only`: one-time `--category=academic`
+- `default to biweekly`: update `~/.wtf/config.json`
+- `switch to Chinese`: update `~/.wtf/config.json` with `"language": "zh"`
+
+## Data Flow
 
 ```text
-https://raw.githubusercontent.com/waylongo/wearables-tech-frontiers/main/feed-wearables.json
+config/sources.json
+  -> GitHub Actions runs scripts/generate-feed.js
+  -> feed-wearables.json + state-feed.json
+  -> scripts/prepare-digest.js
+  -> prompts/*.md
+  -> agent digest
 ```
 
-`--no-remote` 会跳过中心 feed，改用本地 `config/sources.json` 直接抓 RSS/API。若存在 `~/.wtf/sources.json`，脚本也会跳过中心 feed，以便包含你的私有源。
+Default path: `remote_feed`. `prepare-digest.js` reads the central feed through the GitHub Contents API, filters by local window/category preferences, loads prompts, and emits one JSON object for the agent.
 
-## 资源优先级
+Fallback path: `local_rss`. `--no-remote` or `~/.wtf/sources.json` skips the central feed and fetches local RSS plus the local openFDA subset. This is useful for private sources and debugging, but it is not equivalent to the full central feed because it does not run Tavily or every central API fetcher.
 
-1. 用户 override：`~/.wtf/sources.json`、`~/.wtf/prompts/<name>.md`
-2. 中心 feed：`feed-wearables.json`
-3. 远程 prompts / catalog：GitHub raw
-4. 本地 fallback：仓库里的 `config/sources.json` 和 `prompts/*.md`
+Schema note: `config/sources.json` is the source catalog schema and uses `schema_version`; `feed-wearables.json` is the feed output schema and uses `schemaVersion`. V1 keeps both names for compatibility.
 
-## 中心 feed 维护
+## Coverage
 
-GitHub Actions workflow 位于 `.github/workflows/generate-feed.yml`：
+`config/sources.json` is the source of truth.
 
-- 每周日 23:30 UTC 运行（北京时间周一 07:30）
-- 支持手动触发
-- 使用 Node 22
-- 需要在 GitHub repo secrets 配置 `TAVILY_API_KEY`
-- 生成并提交 `feed-wearables.json`、`state-feed.json`
+- Academic evidence: papers, preprints, validation studies, datasets, physiological time-series methods
+- Vendor research: Apple ML Research, Google Research, DeepMind, and similar official research channels
+- Clinical / Regulatory: ClinicalTrials.gov, FDA MedWatch, openFDA 510(k), PMA, recall
+- Platform & API: HealthKit, WorkoutKit, Health Connect, Health Services, Wear OS
+- Product / Market: launches, health features, partnerships, funding, M&A, category movement
+- Vendor / official fallback: site-scoped Tavily results generated by GitHub Actions
 
-本地可测试：
+Not covered:
+
+- X / Twitter
+- Chinese industry-media feeds
+- openFDA individual adverse-event reports
+- Paid funding databases
+- User push notifications or telemetry
+
+## Feed Maintenance
+
+Workflow: `.github/workflows/generate-feed.yml`
+
+- Schedule: every Monday 07:30 Beijing time
+- Manual trigger: `workflow_dispatch`
+- Runtime: Node 22
+- Full generation uses the GitHub repo secret `TAVILY_API_KEY`
+- Output: commits `feed-wearables.json` and `state-feed.json` to `main`
+
+Local commands:
 
 ```bash
 node scripts/generate-feed.js --rss-only
 TAVILY_API_KEY=... node scripts/generate-feed.js
 ```
 
-不要把 API key 写进仓库。
+Do not commit API keys or local `.env` files.
 
-## 调配置
+## Debug
 
-可以直接用自然语言让 agent 修改：
-
-- “换成双语” / “switch to English”
-- “看过去 14 天”
-- “只看学术”
-- “加上厂商研究”
-- “加一个源 https://example.com/feed”
-- “summary 再短一点”
-
-## 体检段
-
-每次 digest 末尾都会显示：
+Ask the agent:
 
 ```text
-─── 本次运行体检 ───
-· feed 源：remote_feed / local_rss
-· RSS / API：成功/失败统计
-· 厂商站 Tavily 兜底：成功/失败统计
-· 过滤：黑名单 / 关键词 / 负向规则 / Tavily 质量 / cap / 时间窗
-· Top Signals 类别与分值
+debug
+dump JSON
 ```
 
-回复“这次 digest 有问题” / “debug” / “dump JSON” 时，agent 会重新运行 `prepare-digest.js` 并输出完整 JSON 供排查。
+The agent should rerun `prepare-digest.js`, output the JSON, and summarize:
 
-## 设计原则
+```text
+feed: remote_feed / local_rss
+RSS/API/Tavily source counts
+filter counts: blacklist / keyword / source exclude / Tavily quality / cap / date
+Top Signals categories and scores
+```
 
-1. 面向算法 / 产品技术 lead，不面向泛行业读者。
-2. Top Signals 用稀缺度 rubric，不按“最新”或“最像新闻标题”排序。
-3. 中心端只抓取和去重，不做 LLM 摘要，避免模型 API 成本。
-4. 用户端负责 remix、翻译和 Top Signals 判断。
-5. 每次输出都保留短体检段，让源健康度和过滤情况可见。
+## Principles
+
+1. Rank Top Signals by scarcity and impact.
+2. Keep central generation deterministic: fetch, filter, dedupe, publish.
+3. Let the user-side agent handle language and sectioning from the emitted JSON.
+4. Keep a short healthcheck so source quality and filtering remain visible.
