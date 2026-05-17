@@ -1,22 +1,94 @@
 {
   "schemaVersion": 1,
   "status": "ok",
-  "generatedAt": "2026-05-17T08:13:37.539Z",
+  "generatedAt": "2026-05-17T23:48:32.542Z",
   "lookbackDays": 30,
   "stats": {
     "rawItems": 1007,
-    "keptItems": 69,
+    "keptItems": 68,
     "sourcesQueried": 20,
     "sourcesWithResults": 13,
     "sourcesFailed": 0,
     "apiSourcesQueried": 5,
     "apiSourcesWithResults": 2,
     "apiSourcesFailed": 0,
-    "tavilySitesQueried": 35,
-    "tavilySitesWithResults": 14,
+    "tavilySitesQueried": 34,
+    "tavilySitesWithResults": 12,
     "tavilySitesFailed": 0
   },
   "items": [
+    {
+      "title": "A Prospective Observational Study on a Multimodal Non-Invasive Physiological Monitoring System (Hayl): Feasibility, Signal Characterization, and Exploratory Biomarker Correlation",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.05.13.26353115v1?rss=1",
+      "publishedAt": "2026-05-17",
+      "summary": "Chronic conditions such as Type 2 Diabetes Mellitus (T2DM) and Hypertension (HTN) remain underdiagnosed in community settings, particularly in resource-limited populations. Conventional diagnostic approaches rely on episodic measurements and laboratory-based assessments, limiting scalability for large-scale screening. Non-invasive physiological monitoring systems offer a potential pathway for accessible and rapid wellness assessment in real-world environments. This study aimed to evaluate the feasibility, signal acquisition performance, and exploratory physiological signal characteristics of a non-invasive multimodal monitoring system (Hayl) in community-based screening settings. Methods: A prospective, cross-sectional, multicenter observational pilot study was conducted across rural and urban screening camps in south India. A total of 281 adult participants were enrolled, including individuals with known T2DM, HTN, and those without known comorbidities, encompassing both symptomatic and asymptomatic subjects. Physiological data were acquired using the Hayl system, which integrates photoplethysmography (PPG) and temperature sensing. Signal acquisition feasibility, waveform quality, and derived signal characteristics were evaluated. Comparative and exploratory analyses were performed across predefined clinical subgroups. The study was conducted under Institutional Ethics Committee approval in accordance with guidelines from the Indian Council of Medical Research. Conclusion: The Hayl system demonstrated high feasibility for physiological signal acquisition, with successful PPG recordings in 274 participants (97.5%) and temperature signals in 279 participants (99.3%). Most recordings exhibited high waveform quality (74.0%), with observable variations in signal characteristics across clinically relevant subgroups. Reduced pulse variability and increased waveform irregularity were more frequently observed in participants with T2DM and HTN, while symptomatic individuals ",
+      "sourceName": "medRxiv: new results",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "Real-time hip biomechanics from smart garments via a physics-informed neural network",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.05.06.26352104v1?rss=1",
+      "publishedAt": "2026-05-17",
+      "summary": "Tissue-level mechanical stimuli are primary drivers of tissue adaptation and can be optimised during conservative treatments to improve treatment outcomes for many highly prevalent musculoskeletal conditions. Current laboratory-based technologies limit our ability to connect conservative interventions such as exercise and movement modification with muscle, joint, and tissue-level mechanics, in natural environments. We introduce a physics-informed neural network (PINN) to estimate clinically relevant biomechanics from smart garments. By accounting for physiological dynamics of neural activation and muscle contraction, the PINN accurately predicted hip joint angles (RMSE <6 degrees), moments (RMSE 0.12 N*m/kg to 0.30 N*m/kg), and joint forces (RMSE 6 to 16%) from three inertial measurement units and four electromyographic sensors. We demonstrated that the trained PINN can be combined with a smart garment to estimate hip biomechanics, in real-time, during a gait retraining intervention aimed at modifying joint loading to treat hip osteoarthritis. The developed PINN and smart garment system may be adapted and generalised for personalised management or rehabilitation of a broad range of musculoskeletal diseases and injuries, in clinical, home, workplace, and sporting environments.",
+      "sourceName": "medRxiv: new results",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Melanin regulates mitochondrial dynamics, metabolism and inflammatory signaling to protect the retina",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.724948v1?rss=1",
+      "publishedAt": "2026-05-17",
+      "summary": "Albino individuals are clinically recognized to exhibit heightened susceptibility to light induced retinal injury, yet the cellular and metabolic mechanisms underlying this vulnerability remain poorly defined. Here, we investigated whether retinal pigment epithelium (RPE) pigmentation governs mitochondrial structure, metabolism, and inflammatory responses that ultimately determine retinal resilience to blue light stress. Using pigmented (C57BL/6J) and albino (Balb/c) mice, we demonstrate that albino animals exhibit markedly increased retinal phototoxicity following blue light exposure, manifested by fundus lesions, outer nuclear layer (ONL) disruption, and structural degeneration evident by OCT. Primary RPE cultures derived from albino mice exhibited profound differences in mitochondrial morphology, characterized by increased mitochondrial number, reduced size, and enhanced fragmentation, accompanied by elevated mitochondrial DNA copy number. These structural changes correlated with transcriptional skewing toward mitochondrial fission (increased Drp1) and suppression of mitochondrial fusion (Mfn1, Mfn2, OPA1). Functionally, albino and depigmented RPE displayed impaired oxidative phosphorylation, reduced ATP production, and diminished reliance on mitochondrial pyruvate carrier (MPC) dependent metabolism. In parallel, albino RPE demonstrated cell cycle accumulation at G2/M and heightened basal and blue light induced secretion of pro inflammatory cytokines, particularly IFN beta1, IL 6, and TNF alpha. Importantly, exogenous melanin supplementation partially restored mitochondrial fusion gene expression, pyruvate dependent respiration, and inflammatory restraint. Together, these findings identify melanin as a critical regulator of RPE mitochondrial architecture, metabolic substrate utilization, and inflammatory signaling, providing a mechanistic framework to explain enhanced photo vulnerability in the albino retina. These insights establish pigmentation dependent mitoch",
+      "sourceName": "bioRxiv: new results",
+      "sourceCategory": "academic",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Cell-Type Clusters in the MICrONS Connectome Reveal Hidden Organizational Principles of the Mouse Visual Cortex and Possible Candidate Substrates for Elementary Perceptual States",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.12.724707v1?rss=1",
+      "publishedAt": "2026-05-17",
+      "summary": "How neural structure constrains cortical dynamics and perceptual experience remains a fundamental open question. The MICrONS connectomics dataset enables direct examination of this problem by combining dense ultrastructural reconstructions with functional measurements across a mesoscale volume of mouse visual cortex. Here, I test a prediction arising from field-based models of perception: that subsets of cortical neurons should exhibit rare but reproducible structural similarity and spatial clustering. Using exhaustive pairwise NBLAST comparisons across tens of thousands of reconstructed neurons, I quantified morphological similarity among excitatory populations spanning layers 2/3, 5, and 6, including extratelencephalic, intratelencephalic, and near-projecting cells. High similarity scores were exceedingly rare, occurring more than 8 to 10 standard deviations above population means. Despite this rarity, structurally similar neurons formed discrete, spatially coherent clusters across primary and higher-order visual areas, often aligning across cortical layers. These findings reveal a previously unrecognized level of mesoscale structural organization and provide an empirical foundation for linking cortical microarchitecture to field-based models of visual experience.",
+      "sourceName": "bioRxiv: new results",
+      "sourceCategory": "academic",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Maternal iron deficiency remodels cardiac mitochondria and alters stress responses in hypertensive pregnancy",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.12.724698v1?rss=1",
+      "publishedAt": "2026-05-17",
+      "summary": "Aim. Maternal iron deficiency (ID) during pregnancy induces cardiovascular adaptations, including reduced blood pressure and improved cardiac efficiency in hypertensive pregnancy. Iron is essential for mitochondrial function, particularly oxidative phosphorylation, where it serves as a cofactor within electron transfer complexes. Given the high metabolic demands of the maternal heart and irons central role in mitochondrial metabolism, we examined how maternal ID affects cardiac mitochondrial ultrastructure, respiration, dynamics, and redox status in pregnant spontaneously hypertensive rats (SHR) and normotensive Wistar-Kyoto (WKY) rats. Methods and Results. Female SHR and WKY rats were fed iron-replete or iron-restricted diets before and throughout gestation. On gestational day 21, cardiac mitochondrial ultrastructure was assessed by transmission electron microscopy (TEM), respiration by high-resolution respirometry, and the expression of proteins involved in fusion, fission, autophagy, and apoptosis markers by immunoblotting. Antioxidant gene expression was quantified by RT-qPCR. Data were analyzed by two-way ANOVA with Holm-Sidak post hoc test. Maternal iron restriction reduced hemoglobin levels in both strains. TEM revealed enlarged, morphologically heterogeneous mitochondria with reduced and disrupted cristae architecture in ID dams of both strains. Iron restriction reduced succinate-supported respiration and tended to reduce NADH-supported respiration, in both strains. SHR dams exhibited reduced fusion signalling, reflected by a lower L-OPA1:S-OPA1 ratio. MFN1 expression was reduced by ID in both strains, whereas MFN2 expression was lower in SHR and further reduced by ID. In contrast, DRP1 phosphorylation increased selectively in ID-WKY dams. Iron restriction increased LC3-II:I ratio and BNIP3 in SHR, and increased PINK1 in both strains, while Parkin and p62 were unchanged. Antioxidant gene expression increased in ID-SHR but decreased in ID-WKY dams. Despite th",
+      "sourceName": "bioRxiv: new results",
+      "sourceCategory": "academic",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Repurposing antiviral drugs as a new avenue for Klebsiella pneumoniae decolonization",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.725135v1?rss=1",
+      "publishedAt": "2026-05-17",
+      "summary": "Klebsiella pneumoniae (Kp) is a common antibiotic-resistant pathogen that colonizes the gastrointestinal tract and can disseminate to peripheral sites, causing a range of infections including bacteremia, urinary tract infections, and pneumonia. Intestinal colonization with Kp is a risk factor for subsequent infection, as the colonizing strain frequently corresponds to the infecting isolate. Accordingly, targeting Kp prior to dissemination at the site of colonization through decolonization strategies offers a promising approach to mitigate infection risk. In this study, we evaluated the repurposing of existing drugs with previously uncharacterized antibacterial activity as candidates for Kp decolonization. To this end, we screened an antiviral compound library for their activity against Kp. We identified and validated six compounds with previously uncharacterized activity against Kp. Then, we screened a library of clinical Kp strains against a subset of these compounds and found that their activity was strain-specific to degrees that differed based on the compound. Finally, we tested the activity of these compounds in conditions relevant to the human gut. We determined the activity of these candidates was dependent on biological context. Collectively, these findings support further investigation of antiviral drugs as potential gut decolonization therapies for Kp.",
+      "sourceName": "bioRxiv: new results",
+      "sourceCategory": "academic",
+      "sourcePriority": "P2",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
     {
       "title": "Apple Watch Series 12: Here’s what we know so far",
       "url": "https://9to5mac.com/2026/05/16/apple-watch-series-12-heres-what-we-know-so-far/",
@@ -28,18 +100,6 @@
       "sourceLang": "en",
       "retrievalMethod": "rss",
       "signalType": "product_market"
-    },
-    {
-      "title": "Discovering conserved regulatory modules in predicted gene regulatory networks across species",
-      "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725337v1?rss=1",
-      "publishedAt": "2026-05-16",
-      "summary": "The discovery of conserved regulatory motifs across different species is a fundamental challenge in systems biology, especially considering the noisy and incomplete nature of predicted gene regulatory networks (GRNs) and the intractability of the underlying graph alignment problem. Traditional network alignment methods frequently enforce one-to-one node mappings or strict topological isomorphism, which fail to accommodate the many-to-many orthology mappings caused by evolutionary gene duplication. Consequently, strict constraints often yield highly fragmented topological islands rather than cohesive functional modules. In this work, we propose a relaxed topological alignment algorithm designed to extract conserved regulatory structures from cross-species GRNs. We formulate the discovery process as a multi-objective optimization problem that balances sequence homology, functional coherence, and a normalized topological consensus. To navigate the exponentially scaling search space, we introduce a greedy seed-and-extend heuristic bounded by a dynamic {epsilon}-stopping condition, which evaluates marginal objective gains to prevent functional dilution. We validate our algorithm using time-series transcriptomic data from Arabidopsis thaliana, Zea mays, and Sorghum bicolor focused on drought and developmental stress responses. While a strict topological baseline extracted only fragmented subgraphs limited to 51 homologous tuples, our relaxed heuristic successfully converged on a highly connected 444-tuple module. The resulting topology effectively links strictly conserved upstream transcription factors to their highly duplicated, species-specific downstream pathways. Our algorithm provides a robust, scalable computational methodology for identifying core regulatory logic across complex biological systems, facilitating the translation of conserved network architectures among multiple species.",
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic",
-      "sourcePriority": "P2",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
     },
     {
       "title": "Sensors, Vol. 26, Pages 3166: Real-Time Foot Height Estimation and Activity Classification Using a Foot-Mounted IMU Implemented on a Smartphone",
@@ -138,30 +198,6 @@
       "signalType": "clinical_regulatory"
     },
     {
-      "title": "CUOREMA: Immersive Bio & Behavioral Feedback and Digital Interventions for Cardiac Rehabilitation - Exploratory Analysis",
-      "url": "https://www.medrxiv.org/content/10.64898/2026.05.15.26353188v1?rss=1",
-      "publishedAt": "2026-05-15",
-      "summary": "Cardiac rehabilitation is critical for secondary prevention, yet long-term adherence remains low. We present CUOREMA, a new personalized mobile health system integrating self-monitoring diaries, wearable data, virtual coaching, and reinforcement learning-enhanced adaptive interventions to support lifestyle change during and after outpatient cardiac rehabilitation. In a six-month two-center feasibility study (N = 53, Switzerland and France), we evaluated usability, engagement patterns, and preliminary health-related outcomes. Attrition was high: only 19% of participants used the app on more than 100 days, and questionnaire response rates declined from 55% at baseline to 13% at six months. Despite these limitations, exploratory data-driven analysis revealed three distinct engagement clusters (dropout, sporadic, and consistent), which were further supported by matching patterns in app component usage, medication diary adoption, and smartwatch wearing time. Engagement clusters were not associated with demographic factors; instead, psychological themes of patients' personal goals suggested that intrinsic motivation characterized sustained users, whereas extrinsic motivation predominated among early dropouts. User experience was rated positively, and validated questionnaire scores showed no deterioration over time. One center demonstrated a statistically significant improvement in 6-minute walking test performance, though the study was not powered to detect clinical outcomes and selective dropout cannot be ruled out. These findings highlight engagement variability as a central challenge in digital cardiac rehabilitation and suggest that tailoring interventions to individual motivational profiles may improve long-term adherence.",
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Rheumatic Heart Disease Detection in Asymptomatic Schoolchildren using ECG and PCG",
-      "url": "https://www.medrxiv.org/content/10.64898/2026.05.12.26352939v1?rss=1",
-      "publishedAt": "2026-05-15",
-      "summary": "Rheumatic heart disease (RHD) remains a major public health concern across low- and middle-income countries in the Global South. Early detection through community-based screening of asymptomatic individuals has been identified as a critical strategy for reducing the disease burden. Despite this, the absence of accessible, automated population screening tools continues to impede implementation at scale. This study investigates the screening potential of integrating electrocardiography (ECG) and phonocardiography (PCG) for the early detection of RHD in asymptomatic schoolchildren. The dataset was obtained as part of an ambulatory screening initiative conducted across multiple school sites in rural areas of Ethiopia. It comprised ECG and PCG recordings from 611 asymptomatic schoolchildren aged 10 to 20 years. A comprehensive set of time-frequency, visibility graph and non-linear features were extracted from both signal modalities. These features were subsequently evaluated using machine learning models to assess their utility in the automated screening of early RHD. The best model achieved an average 10-folds cross-validation scores on sensitivity, positive-predictive-value and F1-score of 59.6%, 63.6% and 60.8%, respectively for multimodal ECG and PCG signals. Whereas separate evaluation of ECG showed an F1-score of 61.1% and PCG achieved 23.5%. Key features included the T-wave, the area under the QRS complex, and entropy measures derived from beat visibility graphs in the ECG. In addition, visibility graph features from multi-band S1 and S2 heart sound segments, along with MFCC coefficients from the PCG, were also relevant. However, PCG alone performed poorly and did not show improved results over the ECG features. Although auscultation is key clinical diagnosis tool in symptomatic RHD, combined PCG with ECG features does not enhance asymptomatic RHD detection using the ECG modality alone.",
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
       "title": "Sensors, Vol. 26, Pages 3143: A Lightweight Machine Learning Framework for Post-Stroke Gait Abnormality Classification Using Wearable Gyroscope Features",
       "url": "https://www.mdpi.com/1424-8220/26/10/3143",
       "publishedAt": "2026-05-15",
@@ -250,18 +286,6 @@
       "url": "https://www.mdpi.com/1424-8220/26/10/3085",
       "publishedAt": "2026-05-13",
       "summary": "Accurate automatic sleep staging remains challenging due to complex temporal dynamics, inter-subject variability, and the difficulty of effectively integrating heterogeneous physiological signals. Electroencephalogram (EEG) and electrooculogram (EOG) recordings provide complementary information for sleep analysis; however, most existing multimodal approaches rely on simple feature concatenation, which limits their ability to capture structured inter-modality relationships. This paper proposes MFSleepNet, a multimodal sleep staging framework that explicitly models interactions between EEG and EOG signals. The proposed system incorporates a multimodal feature fusion module to enable bidirectional information exchange between modality-specific representations, followed by a gated temporal-channel attention mechanism to adaptively emphasize informative temporal segments and signal channels, facilitating joint representation learning while preserving modality-specific characteristics. Experiments on three public datasets (Sleep-EDF, SHHS, and HSP) under an epoch-level cross-validation protocol show that MFSleepNet consistently outperforms representative single-modality and multimodal baseline methods in terms of overall accuracy, Cohen&amp;rsquo;s &amp;kappa;, and Macro-F1. Ablation studies further demonstrate the contribution of each functional module. Correlation analysis indicates stage-dependent variations in EEG&amp;ndash;EOG relationships, while interaction-based experiments show that explicit feature interaction improves both joint and modality-specific representations. Grad-CAM visualizations provide interpretability of model decisions. External validation on unseen subjects reveals a noticeable performance drop, highlighting the challenges of inter-subject variability and the limited baseline generalization capability of the model. To address this, a lightweight subject-specific adaptation strategy is introduced, which improves performance using a small amount o",
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic",
-      "sourcePriority": "P2",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Sensors, Vol. 26, Pages 3074: A Wearable Acoustic-Bluetooth Dual Model Communication-Based Real-Time Heart Rate Monitoring and Ranging System for Swimmers",
-      "url": "https://www.mdpi.com/1424-8220/26/10/3074",
-      "publishedAt": "2026-05-13",
-      "summary": "Underwater communication devices typically suffer from large size and high power consumption, which pose significant challenges for real-time monitoring of swimmers&amp;rsquo; heart rate and distance. To tackle these challenges, this study successfully developed a wearable acoustic-Bluetooth dual model communication-based real-time heart rate monitoring and ranging system (WARM) for swimmers by implementing an integrated miniaturized acoustic transducer design, narrow-pulse OOK modulation, and acoustic multipath interference suppression techniques. The final self-developed system measures 47 mm &amp;times; 36 mm &amp;times; 18 mm and weighs 54 g. Six swimming volunteers were recruited to conduct underwater real-time heart rate monitoring and distance measurement experiments for performance evaluation of this self-developed system. Experimental results demonstrate that within an effective communication range of 2500 cm, the system achieved an average transmission power consumption of 52&amp;ndash;58 mW, a frame loss rate of only 1.1%, and a mode-switching time of 1&amp;ndash;2 s between the underwater acoustic and Bluetooth transmissions. In addition, the system enabled real-time heart rate monitoring and underwater ranging, with an average ranging error below 50 cm. These results verify the reliability and stability of the proposed system and provide a useful reference for the design and application of wearable underwater communication systems.",
       "sourceName": "Sensors Journal",
       "sourceCategory": "academic",
       "sourcePriority": "P2",
@@ -370,18 +394,6 @@
       "url": "https://9to5google.com/2026/05/07/google-health-app-fitbit/",
       "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
       "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Google-Health-cover.png?w=1600\" /></div><p>After months of <a href=\"https://9to5google.com/2025/10/27/fitbit-coach-preview/\">Public Preview testing</a>, Google is replacing the Fitbit app and launching “Google Health.” It’s meant to bring “together the best of Fitbit’s pioneering spirit with the helpfulness of Google.”</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit,gemini,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713901\" href=\"https://9to5google.com/2026/05/07/google-health-app-fitbit/#more-713901\" class=\"more-link\">more…</a>",
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "product_market"
-    },
-    {
-      "title": "Google announces $99 Fitbit Air for screen-less, all-day tracking",
-      "url": "https://9to5google.com/2026/05/07/fitbit-air-launch/",
-      "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
-      "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Fitbit-Air-cover.jpg?quality=82&strip=all&w=1600\" /></div><p>Google today announced the Fitbit Air as a screen-less fitness tracker that has a low-profile and affordable $99.99 price.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713649\" href=\"https://9to5google.com/2026/05/07/fitbit-air-launch/#more-713649\" class=\"more-link\">more…</a>",
       "sourceName": "9to5Google",
       "sourceCategory": "industry_news",
       "sourcePriority": "P1",
@@ -592,7 +604,20 @@
       "signalType": "clinical_regulatory"
     },
     {
-      "title": "Apple introduces a new Pride Collection - Apple",
+      "title": "Wackadoo! Join Bluey for the ultimate playdate on Apple Arcade ...",
+      "url": "https://www.apple.com/newsroom/2026/05/wackadoo-join-bluey-for-the-ultimate-playdate-on-apple-arcade-starting-may-21/",
+      "publishedAt": null,
+      "summary": "*   [Store](https://www.apple.com/us/shop/goto/store). *   [Shop the Latest](https://www.apple.com/us/shop/goto/store). *   [Mac](https://www.apple.com/us/shop/goto/buy_mac). *   [iPad](https://www.apple.com/us/shop/goto/buy_ipad). *   [iPhone](https://www.apple.com/us/shop/goto/buy_iphone). *   [Apple Watch](https://www.apple.com/us/shop/goto/buy_watch). *   [AirPods](https://www.apple.com/us/shop/goto/airpods/accessories). *   [Accessories](https://www.apple.com/us/shop/goto/buy_accessories). *   [Financing](https://www.apple.com/us/shop/goto/payment_plan). *   [Education](https://www.apple.com/us/shop/goto/educationrouting). *   [Explore All Mac](https://www.apple.com/mac/). *   [Shop Mac](https://www.apple.com/us/shop/goto/buy_mac). *   [Mac Accessories](https://www.apple.com/us/shop/goto/mac/accessories). *   [Financing](https://www.apple.com/us/shop/goto/payment_plan). *   [Explore All iPad](https://www.apple.com/ipad/). *   [Shop iPad](https://www.apple.com/us/shop/goto/buy_ipad). *   [iPad Accessories](https://www.apple.com/us/shop/goto/ipad/accessories). *   [Financing](https://www.apple.com/us/shop/goto/payment_plan). *   [Explore All iPhone](https://www.apple.com/iphone/). *   [iPhone 16](https://www.apple.com/us/shop/goto/buy_iphone/iphone_16). *   [Shop iPhone](https://www.apple.com/us/shop/goto/buy_iphone). *   [iPhone Accessories](https://www.apple.com/us/shop/goto/iphone/accessories). *   [Financing](https://www.apple.com/us/shop/goto/payment_plan). *   [Financing](https://www.apple.com/us/shop/goto/payment_plan). *   [Financing](https://www.apple.com/us/shop/goto/payment_plan). *   [Explore All AirPods](https://www.apple.com/airpods/). *   [AirPods Accessories](https://www.apple.com/us/shop/goto/airpods/accessories). *   [Explore Entertainment](https://www.apple.com/services/). *   [Accessories](https://www.apple.com/us/shop/goto/buy_accessories). *   [Mac](https://www.apple.com/us/shop/goto/mac/accessories). *   [iPad](https://www.apple.com/us/shop",
+      "sourceName": "Apple Newsroom / Watch",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.47826138,
+      "signalType": "product_market"
+    },
+    {
+      "title": "Apple introduces a new Pride Collection",
       "url": "https://www.apple.com/newsroom/2026/05/apple-introduces-a-new-pride-collection/",
       "publishedAt": null,
       "summary": "# Apple introduces a new Pride Collection. Apple Watch Series 11 is paired with the Pride Luminance watch face and Pride Edition Sport Loop. Matching wallpaper from the new Apple Watch Pride Collection is displayed on an 11-inch iPad Pro and iPhone 17 Pro. Today, Apple introduced a new Apple Watch Pride Edition Sport Loop, watch face, and iPhone and iPad wallpaper to celebrate LGBTQ+ communities around the world during Pride Month and beyond. The new Pride Edition Sport Loop, available to order today, is woven from a rainbow of 11 colors of nylon yarns. The resulting design is joyful and vibrant, showcasing a full spectrum of colors that reflect the unique identities that shape LGBTQ+ communities worldwide. The new Pride Luminance watch face complements the band design with colors that refract dynamically to celebrate the vibrancy, spirit, and individuality of the LGBTQ+ community. With this collection, users can customize the watch face with even more color options to create a unique expression of themselves and their communities.",
@@ -601,7 +626,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.49804688,
+      "score": 0.18457669,
       "signalType": "product_market"
     },
     {
@@ -621,13 +646,13 @@
       "title": "Introducing the Google Health app",
       "url": "https://blog.google/products-and-platforms/products/google-health/google-health-app/",
       "publishedAt": null,
-      "summary": "# A new era for your wellness: Introducing the Google Health app. The Google Health app brings all of your health and wellness into one place debuting new and advanced capabilities. The Fitbit app is becoming the Google Health app, offering a redesigned, centralized hub for your wellness data. You will see an intuitive four-tab layout, improved data tracking, and a new artificial intelligence coach to help you reach your goals. * The Fitbit app is becoming the Google Health app to centralize your wellness data. * The new Google Health Coach uses artificial intelligence to provide personalized workout and health insights. The Fitbit app is becoming the new Google Health app to help you track your fitness and wellness in one place. We’re updating the Fitbit app to become the Google Health app, a centralized place for your health and wellness data. And, on Health, in addition to getting a snapshot of your key health metrics, you can get summaries of your medical records from the Coach.",
+      "summary": "A new era for your wellness: Introducing the Google Health app. [\"What is the Fitbit Air?\", \"How can I learn new AI skills?\", \"What's the latest Android news?\"]. The Google Health app brings all of your health and wellness into one place debuting new and advanced capabilities. The Fitbit app is becoming the Google Health app, offering a redesigned, centralized hub for your wellness data. You will see an intuitive four-tab layout, improved data tracking, and a new artificial intelligence coach to help you reach your goals. * The Fitbit app is becoming the Google Health app to centralize your wellness data. The Fitbit app is becoming the new Google Health app to help you track your fitness and wellness in one place. We’re updating the Fitbit app to become the Google Health app, a centralized place for your health and wellness data.",
       "sourceName": "Google Blog / Fitbit",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.468621,
+      "score": 0.42391166,
       "signalType": "product_market"
     },
     {
@@ -709,32 +734,6 @@
       "signalType": "algorithm_evidence"
     },
     {
-      "title": "About This Kit-Health-Developing Basic Capabilities-Atomic Service Development-Guides",
-      "url": "https://developer.huawei.com/consumer/en/doc/atomic-guides/health-service-kit-ability-as",
-      "publishedAt": null,
-      "summary": "# About This Kit-Health-Developing Basic Capabilities-Atomic Service Development-Guides - HUAWEI Developers. Health Service Kit provides a platform for ecosystem apps to access users' health and fitness data based on users' HUAWEI ID and authorization. Upon obtaining user's consent and authorization, you can access their health and fitness data with the open capabilities provided by Health Service Kit, and use these data to build various kinds of apps and services to deliver professional health and fitness experiences. Health Service Kit incorporates its health and fitness data services with apps, services, and third-party devices, to construct a smart health and fitness ecosystem that provides users with unmatched convenience and security. ## Health Service Kit. As shown in the preceding figure, Health Service Kit provides a series of open capabilities, for ecosystem apps/services and hardware devices. *   Open data: As a health and fitness data platform, this kit unlocks extensive health data and professional workout and fitness data.",
-      "sourceName": "Huawei Health Kit",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.99990165,
-      "signalType": "platform_api"
-    },
-    {
-      "title": "Enabling Health Service Kit in Huawei Health-Developing Your App-HarmonyOS (JavaScript)-Device-side Data Openness-Accessing Health Kit-Health Service Kit",
-      "url": "https://developer.huawei.com/consumer/en/doc/HMSCore-Guides/harmonyos-enabling-health-kit-0000001204685000",
-      "publishedAt": null,
-      "summary": "# Enabling Health Service Kit in Huawei Health-Developing Your App-HarmonyOS (JavaScript)-Device-side Data Openness-Accessing Health Kit-Health Service Kit - HUAWEI Developers. Introduction to Health Service Kit. Enabling Health Service Kit in Huawei Health. # Enabling Health Service Kit in Huawei Health. If your app runs on smartphones and needs to access Huawei Health data, prompt users to enable Health Service Kit in the Huawei Health app. If users do not enable Health Service Kit as prompted, or disable it after enabling it as prompted, you will be unable to query data by calling related APIs. For a better interaction experience, you are advised to check whether users have enabled Health Service Kit by calling getHealthAppAuthorization before querying health and fitness data. You can also call checkHealthAppAuthorization to check whether users have enabled Health Service Kit. If Health Service Kit is not enabled, users will be prompted to enable it. You can also prompt users to enable Health Service Kit by going to **Me**>**Privacy management** in the Huawei Health app and toggling on **HUAWEI Health Kit**.",
-      "sourceName": "Huawei Health Kit",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.9998634,
-      "signalType": "platform_api"
-    },
-    {
       "title": "Xiaomi Smart Band 10 Glimmer Edition HyperOS3 V3.2.1 Update",
       "url": "https://c.mi.com/global/post/1663600",
       "publishedAt": null,
@@ -744,20 +743,20 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.47124818,
+      "score": 0.9986853,
       "signalType": "product_market"
     },
     {
-      "title": "Xiaomi Watch 5 announced with EMG and ECG.",
-      "url": "https://c.mi.com/global/post/2050127",
+      "title": "Xiaomi Smart Band 10 Ceramic Edition HyperOS3 V3.2.1 Update",
+      "url": "https://new.c.mi.com/global/post/1764675",
       "publishedAt": null,
-      "summary": "Along with the EMG, the Xiaomi Smartwatch is packed with the ECG (Electrocardiogram) sensor, which further helps the wearer analyze heart rhythms on the wrist",
+      "summary": "Introducing the exclusive Xiaomi Smart Band 10 Ceramic Edition with an all-new look, amazing screen, smarter experience and experience a jade-smooth finish that",
       "sourceName": "Xiaomi Global Wearables",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.43352634,
+      "score": 0.99657035,
       "signalType": "product_market"
     },
     {
@@ -774,16 +773,16 @@
       "signalType": "platform_api"
     },
     {
-      "title": "Pulling Health Data Manually | Withings",
-      "url": "https://developer.withings.com/developer-guide/v3/integration-guide/onsite-mode/data-api/fetch-data-example-manual",
+      "title": "API Changelog | WHOOP for Developers",
+      "url": "https://developer.whoop.com/docs/api-changelog",
       "publishedAt": null,
-      "summary": "In some cases, you might prefer to fetch the user's health data manually rather than relying on the notification system. This approach requires providing a mechanism within your application—such as a button—that allows the user to initiate the data retrieval process when they're ready. To facilitate manual data retrieval, include a user interface element (like a \"Refresh Data\" button) that the user can interact with once their measurement is complete. This action signals your system to fetch the latest health data from the Withings API. The first step in the data retrieval process is to locate the access token associated with the user. By querying your database, you can retrieve this token, which authorizes your request to the Withings API. With the access token and time range in hand, decide which API endpoint to call based on the type of data you wish to retrieve. Construct your API call with the necessary parameters and execute the request to fetch the health data.",
-      "sourceName": "Withings API / Research",
+      "summary": "Learn how to look up mappings from v1 to v2 ids.**. This changelog highlights notable changes to the WHOOP Developer Platform, such as new API endpoints or webhook event types. ### Webhook Updates, New V1 Migration API​. Updated webhook documentation to clarify that v1 webhooks are no longer being published. Provided documentation for new activity mapping endpoint to look up historical v1 activity ids. * **Documentation**: ✨New✨ v1 -> v2 activity id mapping documentation for activity v1 id lookups. Updated webhook documentation to clarify that v2 recovery webhooks use the UUID of the associated sleep, not the cycle ID. * **v1 Recovery Webhooks**: Continue to use cycle ID as the identifier. * **v2 Recovery Webhooks**: Use the UUID of the sleep that the recovery is associated with. * **Documentation**: Updated webhook documentation to reflect the correct identifier usage. ### v2 API Launch​. * **Migration Guide**: A comprehensive v1 to v2 migration guide is available to assist with the transition. Strength Trainer activities are available via the `/workout` endpoint.",
+      "sourceName": "WHOOP Developer API",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9999777,
+      "score": 0.99991846,
       "signalType": "clinical_regulatory"
     },
     {
@@ -796,7 +795,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.35333946,
+      "score": 0.3606697,
       "signalType": "product_market"
     },
     {
@@ -809,21 +808,8 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.29364797,
+      "score": 0.31459826,
       "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "Meet the members of the 2026 Abbott HeartMates Draft | Abbott Newsroom",
-      "url": "https://www.abbott.com/en-us/corpnewsroom/healthy-heart/meet-the-members-of-the-2026-abbott-heartmates-draft",
-      "publishedAt": null,
-      "summary": "This year’s class is made up of 11 individuals who exemplify what it means to be a member of the Abbott HeartMates community through their active participation in the program and their commitment to inspiring others by sharing their stories with the world. At 31 years old and with little knowledge of her family’s heart history, Sonya was diagnosed with a bicuspid aortic valve, a congenital heart condition in which the aortic valve has two flaps instead of three. An echocardiogram revealed that her valve disease had progressed from moderate to severe, and she had developed an aortic aneurysm, a bulge that occurs in the wall of the aorta and can be life-threatening if it ruptures. Within weeks — and shortly after graduating with her masters in social work —  Sonya had open-heart surgery in 2019 to replace her valve and repair her aneurysm. “Recovery from surgery has been a journey that I'm grateful to have experienced,” she says.",
-      "sourceName": "Abbott Biowearables",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.023691783,
-      "signalType": "product_market"
     },
     {
       "title": "From reactive nutrition coaching to real-time metabolic care | Levels | Levels",
@@ -865,16 +851,16 @@
       "signalType": "business_structure"
     },
     {
-      "title": "Wahoo & COROS Hook Up: Here's What Happening! - DC Rainmaker",
+      "title": "Wahoo & COROS Hook Up: Here's What Connecting!",
       "url": "https://www.dcrainmaker.com/2026/04/coros-wahoo-partnership.html",
       "publishedAt": null,
-      "summary": "Wahoo Fitness & COROS have joined forces, connecting the two companies products together - here's what it means, and what's changing.",
+      "summary": "+ The Girl’s Sports Gear I Use List. # Wahoo & COROS Hook Up: Here’s What Happening! Wahoo Fitness & COROS have decided to hook up, in the most literal relationship way possible. They aren’t merging (getting married), but they are swapping data and borrowing some of each other’s things. This one was definitely not on my bingo card for this year, at least, not in this way. > 2) There’s immediately going to be improved KICKR RUN integration for COROS watches. > 3) Wahoo is going to start selling certain COROS watches on their site. With that bit out of the way (handy to have on record for some time down the road), here’s exactly what’s happening:. This means if you complete a workout on a Wahoo bike computer, it’ll show up in the COROS app. And likewise, if you complete a workout on a COROS watch (or Dura), it’ll show up on the Wahoo side.",
       "sourceName": "DC Rainmaker",
       "sourceCategory": "industry_news",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.28068832,
+      "score": 0.28336525,
       "signalType": "product_market"
     },
     {
@@ -892,6 +878,236 @@
     }
   ],
   "groupedByCategory": {
+    "academic": [
+      {
+        "title": "A Prospective Observational Study on a Multimodal Non-Invasive Physiological Monitoring System (Hayl): Feasibility, Signal Characterization, and Exploratory Biomarker Correlation",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.13.26353115v1?rss=1",
+        "publishedAt": "2026-05-17",
+        "summary": "Chronic conditions such as Type 2 Diabetes Mellitus (T2DM) and Hypertension (HTN) remain underdiagnosed in community settings, particularly in resource-limited populations. Conventional diagnostic approaches rely on episodic measurements and laboratory-based assessments, limiting scalability for large-scale screening. Non-invasive physiological monitoring systems offer a potential pathway for accessible and rapid wellness assessment in real-world environments. This study aimed to evaluate the feasibility, signal acquisition performance, and exploratory physiological signal characteristics of a non-invasive multimodal monitoring system (Hayl) in community-based screening settings. Methods: A prospective, cross-sectional, multicenter observational pilot study was conducted across rural and urban screening camps in south India. A total of 281 adult participants were enrolled, including individuals with known T2DM, HTN, and those without known comorbidities, encompassing both symptomatic and asymptomatic subjects. Physiological data were acquired using the Hayl system, which integrates photoplethysmography (PPG) and temperature sensing. Signal acquisition feasibility, waveform quality, and derived signal characteristics were evaluated. Comparative and exploratory analyses were performed across predefined clinical subgroups. The study was conducted under Institutional Ethics Committee approval in accordance with guidelines from the Indian Council of Medical Research. Conclusion: The Hayl system demonstrated high feasibility for physiological signal acquisition, with successful PPG recordings in 274 participants (97.5%) and temperature signals in 279 participants (99.3%). Most recordings exhibited high waveform quality (74.0%), with observable variations in signal characteristics across clinically relevant subgroups. Reduced pulse variability and increased waveform irregularity were more frequently observed in participants with T2DM and HTN, while symptomatic individuals ",
+        "sourceName": "medRxiv: new results",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "clinical_regulatory"
+      },
+      {
+        "title": "Real-time hip biomechanics from smart garments via a physics-informed neural network",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.06.26352104v1?rss=1",
+        "publishedAt": "2026-05-17",
+        "summary": "Tissue-level mechanical stimuli are primary drivers of tissue adaptation and can be optimised during conservative treatments to improve treatment outcomes for many highly prevalent musculoskeletal conditions. Current laboratory-based technologies limit our ability to connect conservative interventions such as exercise and movement modification with muscle, joint, and tissue-level mechanics, in natural environments. We introduce a physics-informed neural network (PINN) to estimate clinically relevant biomechanics from smart garments. By accounting for physiological dynamics of neural activation and muscle contraction, the PINN accurately predicted hip joint angles (RMSE <6 degrees), moments (RMSE 0.12 N*m/kg to 0.30 N*m/kg), and joint forces (RMSE 6 to 16%) from three inertial measurement units and four electromyographic sensors. We demonstrated that the trained PINN can be combined with a smart garment to estimate hip biomechanics, in real-time, during a gait retraining intervention aimed at modifying joint loading to treat hip osteoarthritis. The developed PINN and smart garment system may be adapted and generalised for personalised management or rehabilitation of a broad range of musculoskeletal diseases and injuries, in clinical, home, workplace, and sporting environments.",
+        "sourceName": "medRxiv: new results",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Melanin regulates mitochondrial dynamics, metabolism and inflammatory signaling to protect the retina",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.724948v1?rss=1",
+        "publishedAt": "2026-05-17",
+        "summary": "Albino individuals are clinically recognized to exhibit heightened susceptibility to light induced retinal injury, yet the cellular and metabolic mechanisms underlying this vulnerability remain poorly defined. Here, we investigated whether retinal pigment epithelium (RPE) pigmentation governs mitochondrial structure, metabolism, and inflammatory responses that ultimately determine retinal resilience to blue light stress. Using pigmented (C57BL/6J) and albino (Balb/c) mice, we demonstrate that albino animals exhibit markedly increased retinal phototoxicity following blue light exposure, manifested by fundus lesions, outer nuclear layer (ONL) disruption, and structural degeneration evident by OCT. Primary RPE cultures derived from albino mice exhibited profound differences in mitochondrial morphology, characterized by increased mitochondrial number, reduced size, and enhanced fragmentation, accompanied by elevated mitochondrial DNA copy number. These structural changes correlated with transcriptional skewing toward mitochondrial fission (increased Drp1) and suppression of mitochondrial fusion (Mfn1, Mfn2, OPA1). Functionally, albino and depigmented RPE displayed impaired oxidative phosphorylation, reduced ATP production, and diminished reliance on mitochondrial pyruvate carrier (MPC) dependent metabolism. In parallel, albino RPE demonstrated cell cycle accumulation at G2/M and heightened basal and blue light induced secretion of pro inflammatory cytokines, particularly IFN beta1, IL 6, and TNF alpha. Importantly, exogenous melanin supplementation partially restored mitochondrial fusion gene expression, pyruvate dependent respiration, and inflammatory restraint. Together, these findings identify melanin as a critical regulator of RPE mitochondrial architecture, metabolic substrate utilization, and inflammatory signaling, providing a mechanistic framework to explain enhanced photo vulnerability in the albino retina. These insights establish pigmentation dependent mitoch",
+        "sourceName": "bioRxiv: new results",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Cell-Type Clusters in the MICrONS Connectome Reveal Hidden Organizational Principles of the Mouse Visual Cortex and Possible Candidate Substrates for Elementary Perceptual States",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.05.12.724707v1?rss=1",
+        "publishedAt": "2026-05-17",
+        "summary": "How neural structure constrains cortical dynamics and perceptual experience remains a fundamental open question. The MICrONS connectomics dataset enables direct examination of this problem by combining dense ultrastructural reconstructions with functional measurements across a mesoscale volume of mouse visual cortex. Here, I test a prediction arising from field-based models of perception: that subsets of cortical neurons should exhibit rare but reproducible structural similarity and spatial clustering. Using exhaustive pairwise NBLAST comparisons across tens of thousands of reconstructed neurons, I quantified morphological similarity among excitatory populations spanning layers 2/3, 5, and 6, including extratelencephalic, intratelencephalic, and near-projecting cells. High similarity scores were exceedingly rare, occurring more than 8 to 10 standard deviations above population means. Despite this rarity, structurally similar neurons formed discrete, spatially coherent clusters across primary and higher-order visual areas, often aligning across cortical layers. These findings reveal a previously unrecognized level of mesoscale structural organization and provide an empirical foundation for linking cortical microarchitecture to field-based models of visual experience.",
+        "sourceName": "bioRxiv: new results",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Maternal iron deficiency remodels cardiac mitochondria and alters stress responses in hypertensive pregnancy",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.05.12.724698v1?rss=1",
+        "publishedAt": "2026-05-17",
+        "summary": "Aim. Maternal iron deficiency (ID) during pregnancy induces cardiovascular adaptations, including reduced blood pressure and improved cardiac efficiency in hypertensive pregnancy. Iron is essential for mitochondrial function, particularly oxidative phosphorylation, where it serves as a cofactor within electron transfer complexes. Given the high metabolic demands of the maternal heart and irons central role in mitochondrial metabolism, we examined how maternal ID affects cardiac mitochondrial ultrastructure, respiration, dynamics, and redox status in pregnant spontaneously hypertensive rats (SHR) and normotensive Wistar-Kyoto (WKY) rats. Methods and Results. Female SHR and WKY rats were fed iron-replete or iron-restricted diets before and throughout gestation. On gestational day 21, cardiac mitochondrial ultrastructure was assessed by transmission electron microscopy (TEM), respiration by high-resolution respirometry, and the expression of proteins involved in fusion, fission, autophagy, and apoptosis markers by immunoblotting. Antioxidant gene expression was quantified by RT-qPCR. Data were analyzed by two-way ANOVA with Holm-Sidak post hoc test. Maternal iron restriction reduced hemoglobin levels in both strains. TEM revealed enlarged, morphologically heterogeneous mitochondria with reduced and disrupted cristae architecture in ID dams of both strains. Iron restriction reduced succinate-supported respiration and tended to reduce NADH-supported respiration, in both strains. SHR dams exhibited reduced fusion signalling, reflected by a lower L-OPA1:S-OPA1 ratio. MFN1 expression was reduced by ID in both strains, whereas MFN2 expression was lower in SHR and further reduced by ID. In contrast, DRP1 phosphorylation increased selectively in ID-WKY dams. Iron restriction increased LC3-II:I ratio and BNIP3 in SHR, and increased PINK1 in both strains, while Parkin and p62 were unchanged. Antioxidant gene expression increased in ID-SHR but decreased in ID-WKY dams. Despite th",
+        "sourceName": "bioRxiv: new results",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Repurposing antiviral drugs as a new avenue for Klebsiella pneumoniae decolonization",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.725135v1?rss=1",
+        "publishedAt": "2026-05-17",
+        "summary": "Klebsiella pneumoniae (Kp) is a common antibiotic-resistant pathogen that colonizes the gastrointestinal tract and can disseminate to peripheral sites, causing a range of infections including bacteremia, urinary tract infections, and pneumonia. Intestinal colonization with Kp is a risk factor for subsequent infection, as the colonizing strain frequently corresponds to the infecting isolate. Accordingly, targeting Kp prior to dissemination at the site of colonization through decolonization strategies offers a promising approach to mitigate infection risk. In this study, we evaluated the repurposing of existing drugs with previously uncharacterized antibacterial activity as candidates for Kp decolonization. To this end, we screened an antiviral compound library for their activity against Kp. We identified and validated six compounds with previously uncharacterized activity against Kp. Then, we screened a library of clinical Kp strains against a subset of these compounds and found that their activity was strain-specific to degrees that differed based on the compound. Finally, we tested the activity of these compounds in conditions relevant to the human gut. We determined the activity of these candidates was dependent on biological context. Collectively, these findings support further investigation of antiviral drugs as potential gut decolonization therapies for Kp.",
+        "sourceName": "bioRxiv: new results",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Sensors, Vol. 26, Pages 3166: Real-Time Foot Height Estimation and Activity Classification Using a Foot-Mounted IMU Implemented on a Smartphone",
+        "url": "https://www.mdpi.com/1424-8220/26/10/3166",
+        "publishedAt": "2026-05-16",
+        "summary": "Wearable sensors are transformative tools for continuous gait assessment in daily life. Tripping, a leading cause of falls, is closely linked to inadequate foot clearance, making accurate foot height measurement critical for fall risk evaluation. Inertial measurement units offer a practical solution for foot trajectory reconstruction; however, conventional drift correction methods such as zero-velocity updates fail to adequately address cumulative height errors. Recent kinematic constraint-based approaches improve height accuracy but remain limited to offline processing and lack simultaneous activity classification. To address these gaps, we developed a real-time, single-IMU system for continuous foot height trajectory reconstruction with simultaneous classification of five locomotion activities deployed on a smartphone. Twenty healthy adults were recruited for model training and independent validation. Level walking maintained ground reference (0.0 cm, 95% CI: [&amp;minus;1.8, 1.8] cm), cumulative height errors remained below 1.1 cm across ramp and stair negotiation with a mean absolute error of 0.42%, and obstacle clearance was quantified. The system achieved 96.08% overall classification accuracy with less than one gait cycle latency. Toe height was estimated through rigid-body transformation with comparable accuracy to the foot height. This framework provides a practical foundation for real-time gait intervention and fall prevention applications.",
+        "sourceName": "Sensors Journal",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "clinical_regulatory"
+      },
+      {
+        "title": "Sensors, Vol. 26, Pages 3165: Dynamic-Attentive Selective Mamba with Group-Aware Convolution for Wearable Sensor-Based Sports and Daily Activity Recognition",
+        "url": "https://www.mdpi.com/1424-8220/26/10/3165",
+        "publishedAt": "2026-05-16",
+        "summary": "Wearable inertial sensors produce multi-axis motion signals with rich spatial and temporal structure. Existing deep-learning pipelines for human activity recognition (HAR) rarely tackle three issues jointly: explicit modeling of the body-part grouping of multi-location inertial channels, bidirectional temporal modeling at linear-time cost, and dynamic, time-varying attention for non-stationary motion. We aim to close these three gaps within a single architecture. To this end we propose Dynamic-Attentive Selective Mamba (DASM), which combines three components: Group-Aware Convolutions (GroupConv) for body-part-aware local features, a Bidirectional Mamba (BiMamba) module for linear-time forward and backward temporal context, and a Dynamic CBAM (DCBAM) that produces per-timestep channel and spatial attention for non-stationary windows. On the UCI Daily and Sports Activities dataset (19 classes, 8 subjects), under stratified segment-level 5-fold cross-validation (3 seeds, 15 runs/model), DASM reaches 99.89% accuracy and F1, a 0.11% gain over CNN-BiGRU-CBAM and 0.50% over Multi-STMT; under leave-one-subject-out (LOSO), it reaches 89.34%, 1.69% above the strongest baseline. The 10.55% drop under LOSO shows that segment-level results overestimate cross-subject generalization. Ablations show small but statistically detectable gains (Cohen&amp;rsquo;s d&amp;isin;[0.4,0.7] per module, d&amp;ge;1.5 full-vs-baseline). We therefore position the contribution as a structured architecture within a near-saturated benchmark; broader deployment claims require multi-dataset subject-independent validation.",
+        "sourceName": "Sensors Journal",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Sensors, Vol. 26, Pages 3143: A Lightweight Machine Learning Framework for Post-Stroke Gait Abnormality Classification Using Wearable Gyroscope Features",
+        "url": "https://www.mdpi.com/1424-8220/26/10/3143",
+        "publishedAt": "2026-05-15",
+        "summary": "Accurately classifying gait abnormalities is crucial for the effective monitoring and rehabilitation of stroke patients. This study proposed a lightweight machine learning framework for distinguishing healthy from abnormal gait patterns using statistical features extracted from wearable gyroscope data. Statistical z-axis angular velocity values from both limbs were derived and used to evaluate the performance of multiple classifiers, including logistic regression, support vector machines, and ensemble methods. A leave-one-out cross-validation strategy was employed to enhance generalizability across subjects. The results indicated that several classifiers achieve accuracy and area under the curve (AUC) values exceeding 0.95, with random forest and support vector machine-based models demonstrating near-perfect class separability, with an AUC of 0.98. These findings highlighted the effectiveness of using minimal set of biomechanically relevant gyroscope features for gait classification in real-world healthcare applications. The proposed pipeline is computationally efficient, making it well suited for implementing in wearable and remote monitoring systems.",
+        "sourceName": "Sensors Journal",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Sensors, Vol. 26, Pages 3141: &ldquo;Are You Okay, Honey?&rdquo;: Recognizing Emotions Among Couples Managing Diabetes in Daily Life Using Multimodal Real-World Smartwatch Data",
+        "url": "https://www.mdpi.com/1424-8220/26/10/3141",
+        "publishedAt": "2026-05-15",
+        "summary": "Couples generally manage chronic diseases together and the management takes an emotional toll on both patients and their romantic partners. Consequently, recognizing the emotions of each partner in daily life could provide insight into their emotional well-being in chronic disease management. Currently, the process of assessing each partner&amp;rsquo;s emotions is manual, time-intensive, and costly. Despite the existence of works on emotion recognition among couples, none of these works have used data collected from couples&amp;rsquo; interactions in daily life. In this work, we collected 85 h (1021 5-min samples) of real-world multimodal smartwatch sensor data (speech, heart rate, accelerometer, and gyroscope) and self-reported emotion data (n = 612) from 26 partners (13 couples) managing diabetes mellitus type 2 in daily life. We extracted physiological, movement, acoustic, and linguistic features, and trained machine learning models (support vector machine and random forest) to recognize each partner&amp;rsquo;s self-reported emotions (valence and arousal). Our results from the best models&amp;mdash;balanced accuracies of 63.8% and 78.1% for arousal and valence respectively&amp;mdash;are better than the results from (1) chance, (2) prior work that also used data from German-speaking, Swiss-based couples, and (3) partners&amp;rsquo; perceptions of each other&amp;rsquo;s emotions. This work contributes toward building automated emotion recognition systems that would eventually enable partners to monitor their emotions in daily life and enable the delivery of interventions to improve their emotional well-being.",
+        "sourceName": "Sensors Journal",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Sensors, Vol. 26, Pages 3097: Wearable Functional Near-Infrared Spectroscopy (fNIRS) Monitoring of Prefrontal Activation and Connectivity During Purpose-Driven Consumption",
+        "url": "https://www.mdpi.com/1424-8220/26/10/3097",
+        "publishedAt": "2026-05-14",
+        "summary": "This study investigated the cortical activation patterns and functional connectivity underlying human decision-making by comparing two distinct purchasing orientations: other-oriented consumption (OOC) and self-oriented consumption (SOC), using functional near-infrared spectroscopy (fNIRS) as a wearable neuroimaging modality. The results revealed significant temporal concentration differences in &amp;#8710;HbO under the OOC condition in Ch06 (p&amp;nbsp;&amp;lt; 0.05). The 15 fNIRS channels were mapped to seven anatomically defined regions of interest (ROIs) to better capture regional activation patterns and functional network properties. While global network metrics showed no significant differences, seed-based connectivity analysis revealed that the OOC condition elicited significantly stronger functional connectivity between the medial prefrontal cortex (ROI4) and the left lower PFC (ROI6, p &amp;lt; 0.05, d = 0.45). In summary, while the overall network efficiency remained stable across conditions, our findings highlight a spatially specific enhancement in functional connectivity centered on the PFC, indicating an increased cognitive load from engaging in complex social cognitive processes. These findings advance the understanding of neural correlates underlying human decision-making and demonstrate the utility of wearable monitoring using fNIRS for capturing cognitive state differences in human-centered decision contexts.",
+        "sourceName": "Sensors Journal",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Using wearable sensors during the timed up and go and 6-minute walk test in Spinal Bulbar Muscular Atrophy",
+        "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001416",
+        "publishedAt": "2026-05-13T14:00:00Z",
+        "summary": "<p>by Kruthika Doreswamy, Henry Roberts, Angela Kokkinis, Galen Joe, Abdullah Alqahtani, Christopher Grunseich, Minal Jain</p>\r\n\r\nSpinal Bulbar Muscular Atrophy (SBMA) is a rare and slowly progressive disease that affects males. The Timed Up and Go (TUG) and 6-minute walk test (6MWT) are used in the clinic to track progression. Recent studies have used wearable sensors to track subtle changes in gait and balance in people with rare disease. The objective of this study was to determine whether inertial sensors could be used in men with SBMA to track changes in gait and balance. Our methods included ten participants with SBMA who completed the TUG and 6MWT while wearing six wearable sensors at the baseline, 6-month, and 12-month follow up visits. Our findings showed that this group of men did not progress in their disease over 12 months as evidenced by the stability of TUG durations, 6MWT distance, and sensor parameters. We observed strong associations between the sensor-derived parameters and both TUG duration and 6MWT distance. The sensors can be used during clinic assessments to measure gait and balance parameters. Further studies examining a larger sample size and at-home monitoring should be considered.",
+        "sourceName": "PLOS Digital Health",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Wireless and in situ regenerable multimodal wearable bioelectronic sweat sensor for continuous biomarker monitoring in everyday settings",
+        "url": "https://www.nature.com/articles/s41551-026-01670-2",
+        "publishedAt": "2026-05-13",
+        "summary": "",
+        "sourceName": "Nature Biomedical Engineering",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Sensors, Vol. 26, Pages 3085: MFSleepNet: An Interactive Multimodal Fusion Framework for Automatic Sleep Staging",
+        "url": "https://www.mdpi.com/1424-8220/26/10/3085",
+        "publishedAt": "2026-05-13",
+        "summary": "Accurate automatic sleep staging remains challenging due to complex temporal dynamics, inter-subject variability, and the difficulty of effectively integrating heterogeneous physiological signals. Electroencephalogram (EEG) and electrooculogram (EOG) recordings provide complementary information for sleep analysis; however, most existing multimodal approaches rely on simple feature concatenation, which limits their ability to capture structured inter-modality relationships. This paper proposes MFSleepNet, a multimodal sleep staging framework that explicitly models interactions between EEG and EOG signals. The proposed system incorporates a multimodal feature fusion module to enable bidirectional information exchange between modality-specific representations, followed by a gated temporal-channel attention mechanism to adaptively emphasize informative temporal segments and signal channels, facilitating joint representation learning while preserving modality-specific characteristics. Experiments on three public datasets (Sleep-EDF, SHHS, and HSP) under an epoch-level cross-validation protocol show that MFSleepNet consistently outperforms representative single-modality and multimodal baseline methods in terms of overall accuracy, Cohen&amp;rsquo;s &amp;kappa;, and Macro-F1. Ablation studies further demonstrate the contribution of each functional module. Correlation analysis indicates stage-dependent variations in EEG&amp;ndash;EOG relationships, while interaction-based experiments show that explicit feature interaction improves both joint and modality-specific representations. Grad-CAM visualizations provide interpretability of model decisions. External validation on unseen subjects reveals a noticeable performance drop, highlighting the challenges of inter-subject variability and the limited baseline generalization capability of the model. To address this, a lightweight subject-specific adaptation strategy is introduced, which improves performance using a small amount o",
+        "sourceName": "Sensors Journal",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Contribution of Longitudinal Mobile Health Measures in the Dynamic Track of Patients With Major Depressive Disorder: Multiple Centers, Prospective Cohort Study Using Functional Data Analysis and Machine Learning",
+        "url": "https://mhealth.jmir.org/2026/1/e81397",
+        "publishedAt": "2026-05-11T16:30:13-04:00",
+        "summary": "Background: Continuous follow-up for patients with major depressive disorder (MDD) is essential for treatment decisions and a better prognosis. There remains limited evidence regarding the critical issue of depression variation trajectory prediction using mobile health (mHealth) measures. Moreover, the temporal dynamics of mHealth measures have not been fully modeled in previous studies, and the poor patient adherence to mHealth records poses great challenges to the dynamic feature modeling. Objective: This study aimed to examine the contribution of mHealth measures in predicting depression variation trajectory for patients with MDD, with full consideration of the temporal dynamics of mHealth measures. Methods: A total of 229 patients with MDD from a multiple-center, prospective cohort were included. A 12-week follow-up was conducted involving the collection of the Hamilton Depression Rating Scale (HAMD-17), along with patient-reported outcomes (Immediate Mood Scaler and Altman Self-Rating Mania Scale) via mobile devices and sleep duration through wearable wristbands. We used functional data analysis to extract dynamic features from the sparse mHealth records, rather than aggregating the data to a single scalar summary measure through collapsing over time. Subsequently, 3 machine learning models were applied to predict the depression variation trajectory classes based on the baseline characteristics and these extracted dynamic features. Results: Based on the variation of HAMD-17 scores within 12 weeks, the participants were labeled into 4 classes through the -means algorithm. The classes included stable decline (n=93), fluctuate decline (n=44), fast decline (n=60), and delayed and fluctuate (n=32), in light of the shape of depression trajectories. With both baseline features and dynamic features of the mHealth measures, accuracy rates for the overall data were 54.35%, 60.87%, and 56.52%, for the stable decline patients were 78.95%, 84.21%, and 73.68%, for the nonsta",
+        "sourceName": "JMIR mHealth and uHealth",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "A systematic review and meta-analysis on dual-task sensor-based motion analysis for dementia detection",
+        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1728588",
+        "publishedAt": "2026-05-07T00:00:00Z",
+        "summary": "IntroductionEarly diagnosis of dementia may be improved by objective, scalable tests that capture how cognitive tasks interfere with movement. This study examined the use of instrumented dual-task paradigms for dementia detection and characterisation.MethodsWe performed a PRISMA-guided systematic review and meta-analysis of peer-reviewed studies that used dual-task paradigms in adults with clinically defined dementia and an appropriate comparator. We extracted primary motor tasks, secondary cognitive or motor loads, sensor modalities, and analytic approaches. Walking outcomes were meta-analysed using inverse-variance weighted random-effects models, including subgroup analyses for single-task versus dual-task conditions and for arithmetic versus memory and verbal fluency assessments.ResultsThe literature was dominated by cognitive-motor dual-task paradigms in Alzheimer's disease cohorts. Inertial measurement units and force plates were the most common instruments, and most studies used classical statistics, with fewer applying machine learning. Pooled effects showed consistent group differences; compared with controls, people with dementia walked more slowly, took shorter steps, and showed less steady timing. Although heterogeneity was substantial across studies, the direction of effects was stable, and dual-task conditions generally amplified group differences relative to single-task performance. Arithmetic loads tended to accentuate changes linked to speed and cadence, whereas memory and verbal fluency assessments tended to prolong timing measures. Balance, turning, and some upper-limb outcomes also differentiated groups.DiscussionInstrumented dual-task assessments appear to enhance detection of cognitive-motor impairment in dementia and may complement existing evaluations. To support clinical translation, future work should extend beyond Alzheimer's disease, standardise task instructions and reporting, and evaluate multi-modal, validated analytic approaches across",
+        "sourceName": "Frontiers in Digital Health",
+        "sourceCategory": "academic",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Long-Term Effectiveness of a Game-Based Mobile App for Training in Cardiopulmonary Resuscitation and Automated External Defibrillator Use: Nonrandomized Controlled Trial",
+        "url": "https://mhealth.jmir.org/2026/1/e78689",
+        "publishedAt": "2026-05-06T12:45:14-04:00",
+        "summary": "Background: Bystander cardiopulmonary resuscitation (CPR) and automated external defibrillator (AED) use are critical for improving survival after out-of-hospital cardiac arrest. Although conventional training methods are initially effective, they are often hampered by rapid skill decay over time. Game-based mobile apps have emerged as a promising and scalable alternative for CPR and AED education; however, evidence of their long-term efficacy remains scarce. Objective: This study aimed to evaluate the integration of a game-based mobile app into traditional CPR and AED training. We assessed its impact on university students’ theoretical knowledge, practical skills, and theoretical knowledge retention, as well as their willingness to perform CPR and their awareness of disseminating these skills. Methods: A nonrandomized controlled trial was conducted among university students in China from March 21 to September 21, 2024. Participants were assigned to either an experimental group, which received game-based mobile app training supplemented with traditional training, or a control group, which received traditional training only. The game-based app featured a simulated scenario that required users to execute the correct sequence of resuscitation procedures and operate a virtual AED under time constraints. The intervention period lasted for 6 months. Participants’ theoretical knowledge and practical skills were assessed immediately after training (baseline) and at the 7-day follow-up. Long-term retention of knowledge, willingness to perform CPR, and dissemination awareness were evaluated at the 6-month follow-up. Data were analyzed using SPSS software (IBM Corp), employing the chi-square test, Mann-Whitney test, and Wilcoxon signed-rank test. Results: A total of 481 participants completed the entire survey (n=241 in the experimental group and n=240 in the control group). In the short-term (7-d) assessment, the experimental group demonstrated significantly higher scores in ",
+        "sourceName": "JMIR mHealth and uHealth",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Accuracy of heart rate measurement using AirPods Pro 3 during graded treadmill exercise: A laboratory-based validation study",
+        "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001373",
+        "publishedAt": "2026-04-30T14:00:00Z",
+        "summary": "<p>by Cailbhe Doherty, David Burke, Owen Mitchell, David Lawless, Jasman Brar, Michael Fuchs, Rory Lambe</p>\r\n\r\nAirPods Pro 3 incorporate an in-ear optical heart-rate sensor, but independent validation during exercise is limited. We evaluated agreement between AirPods Pro 3 heart rate and an ECG-derived chest-strap reference (Polar H10) during graded treadmill exercise in a controlled laboratory setting. Forty adults (mean age 23·8 years; 37·5% female) completed a protocol comprising rest and progressive exercise stages targeting ~40–85% of age-predicted maximal heart rate, including rapid workload transitions. Heart-rate time series from both devices were synchronised by timestamp and aggregated into non-overlapping 5-s epochs. Agreement was assessed using a repeated-measures Bland–Altman approach implemented via a linear mixed-effects model with participant-level random effects; absolute error metrics were calculated at the participant level and summarised overall and by intensity category. Across 16,735 paired epochs, mean bias was −0·03 beats·min ⁻ ¹ (AirPods Pro 3 minus Polar H10; 95% CI −0·22 to 0·17), indicating negligible systematic error. The total standard deviation of differences was 5·23 beats·min ⁻ ¹, yielding 95% limits of agreement from −10·27 to 10·22 beats·min ⁻ ¹, with greater dispersion at higher heart rates. Overall mean absolute error was 2·08 beats·min ⁻ ¹ and mean absolute percentage error was 2·02%, with mean absolute error ranging from 1·31 to 2·4 beats·min ⁻ ¹ across intensity categories. AirPods Pro 3 therefore provided heart-rate estimates closely aligned with a validated chest-worn reference during graded treadmill exercise in healthy adults, with minimal bias and low average error but wider epoch-to-epoch variability at higher intensities.",
+        "sourceName": "PLOS Digital Health",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Sharing digital health data responsibly: Balancing open science with participant privacy",
+        "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001377",
+        "publishedAt": "2026-04-24T14:00:00Z",
+        "summary": "<p>by Camille Nebeker, Shahin Samiei, Santosh Kumar</p>\r\n\r\nData sharing is essential for modern science, advancing transparency, reproducibility, and discovery. Emerging evidence shows that certain digital health data, particularly high-frequency accelerometry from body-worn sensors, carry re-identification risks even when de-identified. In 2023, the National Institutes of Health published its Data Management and Sharing (DMS) Policy formalizing a commitment to openness by requiring all funded researchers to share scientific data. However, the policy did not anticipate that raw motion signals collected by wearable devices can function as biometric identifiers. The WristPrint study demonstrated that a single day of raw accelerometry data could be used to re-identify individuals with 96% accuracy. Related research in gait detection shows that as few as ten steps may be enough to uniquely identify someone. These findings highlight gaps in current data sharing policies and the need for tailored guidance. We argue that policy updates, enforceable data use agreements, and educational initiatives are essential to align openness with protection. The path forward is not to retreat from data sharing but to share more wisely, safeguarding participant trust while sustaining scientific progress.",
+        "sourceName": "PLOS Digital Health",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      }
+    ],
     "industry_news": [
       {
         "title": "Apple Watch Series 12: Here’s what we know so far",
@@ -1098,18 +1314,6 @@
         "signalType": "product_market"
       },
       {
-        "title": "Google announces $99 Fitbit Air for screen-less, all-day tracking",
-        "url": "https://9to5google.com/2026/05/07/fitbit-air-launch/",
-        "publishedAt": "Thu, 07 May 2026 14:00:00 +0000",
-        "summary": "<div class=\"feat-image\"><img src=\"https://9to5google.com/wp-content/uploads/sites/4/2026/05/Fitbit-Air-cover.jpg?quality=82&strip=all&w=1600\" /></div><p>Google today announced the Fitbit Air as a screen-less fitness tracker that has a low-profile and affordable $99.99 price.</p>\n\n\n\n <a data-layer-pagetype=\"post\" data-layer-postcategory=\"fitbit-air,google-health\" data-layer-viewtype=\"unknown\" data-post-id=\"713649\" href=\"https://9to5google.com/2026/05/07/fitbit-air-launch/#more-713649\" class=\"more-link\">more…</a>",
-        "sourceName": "9to5Google",
-        "sourceCategory": "industry_news",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "product_market"
-      },
-      {
         "title": "Health Tech Weekly Rundown: Headspace app launches on Apple Watch; Visby, RAINN partner on safe access program",
         "url": "https://www.fiercehealthcare.com/health-tech/health-tech-weekly-rundown-carrot-adds-menopause-care-ai-native-metabolic-health",
         "publishedAt": "May 14, 2026 2:06pm",
@@ -1135,16 +1339,16 @@
         "signalType": "business_structure"
       },
       {
-        "title": "Wahoo & COROS Hook Up: Here's What Happening! - DC Rainmaker",
+        "title": "Wahoo & COROS Hook Up: Here's What Connecting!",
         "url": "https://www.dcrainmaker.com/2026/04/coros-wahoo-partnership.html",
         "publishedAt": null,
-        "summary": "Wahoo Fitness & COROS have joined forces, connecting the two companies products together - here's what it means, and what's changing.",
+        "summary": "+ The Girl’s Sports Gear I Use List. # Wahoo & COROS Hook Up: Here’s What Happening! Wahoo Fitness & COROS have decided to hook up, in the most literal relationship way possible. They aren’t merging (getting married), but they are swapping data and borrowing some of each other’s things. This one was definitely not on my bingo card for this year, at least, not in this way. > 2) There’s immediately going to be improved KICKR RUN integration for COROS watches. > 3) Wahoo is going to start selling certain COROS watches on their site. With that bit out of the way (handy to have on record for some time down the road), here’s exactly what’s happening:. This means if you complete a workout on a Wahoo bike computer, it’ll show up in the COROS app. And likewise, if you complete a workout on a COROS watch (or Dura), it’ll show up on the Wahoo side.",
         "sourceName": "DC Rainmaker",
         "sourceCategory": "industry_news",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.28068832,
+        "score": 0.28336525,
         "signalType": "product_market"
       },
       {
@@ -1159,212 +1363,6 @@
         "retrievalMethod": "tavily",
         "score": 0.26975837,
         "signalType": "product_market"
-      }
-    ],
-    "academic": [
-      {
-        "title": "Discovering conserved regulatory modules in predicted gene regulatory networks across species",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725337v1?rss=1",
-        "publishedAt": "2026-05-16",
-        "summary": "The discovery of conserved regulatory motifs across different species is a fundamental challenge in systems biology, especially considering the noisy and incomplete nature of predicted gene regulatory networks (GRNs) and the intractability of the underlying graph alignment problem. Traditional network alignment methods frequently enforce one-to-one node mappings or strict topological isomorphism, which fail to accommodate the many-to-many orthology mappings caused by evolutionary gene duplication. Consequently, strict constraints often yield highly fragmented topological islands rather than cohesive functional modules. In this work, we propose a relaxed topological alignment algorithm designed to extract conserved regulatory structures from cross-species GRNs. We formulate the discovery process as a multi-objective optimization problem that balances sequence homology, functional coherence, and a normalized topological consensus. To navigate the exponentially scaling search space, we introduce a greedy seed-and-extend heuristic bounded by a dynamic {epsilon}-stopping condition, which evaluates marginal objective gains to prevent functional dilution. We validate our algorithm using time-series transcriptomic data from Arabidopsis thaliana, Zea mays, and Sorghum bicolor focused on drought and developmental stress responses. While a strict topological baseline extracted only fragmented subgraphs limited to 51 homologous tuples, our relaxed heuristic successfully converged on a highly connected 444-tuple module. The resulting topology effectively links strictly conserved upstream transcription factors to their highly duplicated, species-specific downstream pathways. Our algorithm provides a robust, scalable computational methodology for identifying core regulatory logic across complex biological systems, facilitating the translation of conserved network architectures among multiple species.",
-        "sourceName": "bioRxiv: new results",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Sensors, Vol. 26, Pages 3166: Real-Time Foot Height Estimation and Activity Classification Using a Foot-Mounted IMU Implemented on a Smartphone",
-        "url": "https://www.mdpi.com/1424-8220/26/10/3166",
-        "publishedAt": "2026-05-16",
-        "summary": "Wearable sensors are transformative tools for continuous gait assessment in daily life. Tripping, a leading cause of falls, is closely linked to inadequate foot clearance, making accurate foot height measurement critical for fall risk evaluation. Inertial measurement units offer a practical solution for foot trajectory reconstruction; however, conventional drift correction methods such as zero-velocity updates fail to adequately address cumulative height errors. Recent kinematic constraint-based approaches improve height accuracy but remain limited to offline processing and lack simultaneous activity classification. To address these gaps, we developed a real-time, single-IMU system for continuous foot height trajectory reconstruction with simultaneous classification of five locomotion activities deployed on a smartphone. Twenty healthy adults were recruited for model training and independent validation. Level walking maintained ground reference (0.0 cm, 95% CI: [&amp;minus;1.8, 1.8] cm), cumulative height errors remained below 1.1 cm across ramp and stair negotiation with a mean absolute error of 0.42%, and obstacle clearance was quantified. The system achieved 96.08% overall classification accuracy with less than one gait cycle latency. Toe height was estimated through rigid-body transformation with comparable accuracy to the foot height. This framework provides a practical foundation for real-time gait intervention and fall prevention applications.",
-        "sourceName": "Sensors Journal",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "clinical_regulatory"
-      },
-      {
-        "title": "Sensors, Vol. 26, Pages 3165: Dynamic-Attentive Selective Mamba with Group-Aware Convolution for Wearable Sensor-Based Sports and Daily Activity Recognition",
-        "url": "https://www.mdpi.com/1424-8220/26/10/3165",
-        "publishedAt": "2026-05-16",
-        "summary": "Wearable inertial sensors produce multi-axis motion signals with rich spatial and temporal structure. Existing deep-learning pipelines for human activity recognition (HAR) rarely tackle three issues jointly: explicit modeling of the body-part grouping of multi-location inertial channels, bidirectional temporal modeling at linear-time cost, and dynamic, time-varying attention for non-stationary motion. We aim to close these three gaps within a single architecture. To this end we propose Dynamic-Attentive Selective Mamba (DASM), which combines three components: Group-Aware Convolutions (GroupConv) for body-part-aware local features, a Bidirectional Mamba (BiMamba) module for linear-time forward and backward temporal context, and a Dynamic CBAM (DCBAM) that produces per-timestep channel and spatial attention for non-stationary windows. On the UCI Daily and Sports Activities dataset (19 classes, 8 subjects), under stratified segment-level 5-fold cross-validation (3 seeds, 15 runs/model), DASM reaches 99.89% accuracy and F1, a 0.11% gain over CNN-BiGRU-CBAM and 0.50% over Multi-STMT; under leave-one-subject-out (LOSO), it reaches 89.34%, 1.69% above the strongest baseline. The 10.55% drop under LOSO shows that segment-level results overestimate cross-subject generalization. Ablations show small but statistically detectable gains (Cohen&amp;rsquo;s d&amp;isin;[0.4,0.7] per module, d&amp;ge;1.5 full-vs-baseline). We therefore position the contribution as a structured architecture within a near-saturated benchmark; broader deployment claims require multi-dataset subject-independent validation.",
-        "sourceName": "Sensors Journal",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "CUOREMA: Immersive Bio & Behavioral Feedback and Digital Interventions for Cardiac Rehabilitation - Exploratory Analysis",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.05.15.26353188v1?rss=1",
-        "publishedAt": "2026-05-15",
-        "summary": "Cardiac rehabilitation is critical for secondary prevention, yet long-term adherence remains low. We present CUOREMA, a new personalized mobile health system integrating self-monitoring diaries, wearable data, virtual coaching, and reinforcement learning-enhanced adaptive interventions to support lifestyle change during and after outpatient cardiac rehabilitation. In a six-month two-center feasibility study (N = 53, Switzerland and France), we evaluated usability, engagement patterns, and preliminary health-related outcomes. Attrition was high: only 19% of participants used the app on more than 100 days, and questionnaire response rates declined from 55% at baseline to 13% at six months. Despite these limitations, exploratory data-driven analysis revealed three distinct engagement clusters (dropout, sporadic, and consistent), which were further supported by matching patterns in app component usage, medication diary adoption, and smartwatch wearing time. Engagement clusters were not associated with demographic factors; instead, psychological themes of patients' personal goals suggested that intrinsic motivation characterized sustained users, whereas extrinsic motivation predominated among early dropouts. User experience was rated positively, and validated questionnaire scores showed no deterioration over time. One center demonstrated a statistically significant improvement in 6-minute walking test performance, though the study was not powered to detect clinical outcomes and selective dropout cannot be ruled out. These findings highlight engagement variability as a central challenge in digital cardiac rehabilitation and suggest that tailoring interventions to individual motivational profiles may improve long-term adherence.",
-        "sourceName": "medRxiv: new results",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Rheumatic Heart Disease Detection in Asymptomatic Schoolchildren using ECG and PCG",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.05.12.26352939v1?rss=1",
-        "publishedAt": "2026-05-15",
-        "summary": "Rheumatic heart disease (RHD) remains a major public health concern across low- and middle-income countries in the Global South. Early detection through community-based screening of asymptomatic individuals has been identified as a critical strategy for reducing the disease burden. Despite this, the absence of accessible, automated population screening tools continues to impede implementation at scale. This study investigates the screening potential of integrating electrocardiography (ECG) and phonocardiography (PCG) for the early detection of RHD in asymptomatic schoolchildren. The dataset was obtained as part of an ambulatory screening initiative conducted across multiple school sites in rural areas of Ethiopia. It comprised ECG and PCG recordings from 611 asymptomatic schoolchildren aged 10 to 20 years. A comprehensive set of time-frequency, visibility graph and non-linear features were extracted from both signal modalities. These features were subsequently evaluated using machine learning models to assess their utility in the automated screening of early RHD. The best model achieved an average 10-folds cross-validation scores on sensitivity, positive-predictive-value and F1-score of 59.6%, 63.6% and 60.8%, respectively for multimodal ECG and PCG signals. Whereas separate evaluation of ECG showed an F1-score of 61.1% and PCG achieved 23.5%. Key features included the T-wave, the area under the QRS complex, and entropy measures derived from beat visibility graphs in the ECG. In addition, visibility graph features from multi-band S1 and S2 heart sound segments, along with MFCC coefficients from the PCG, were also relevant. However, PCG alone performed poorly and did not show improved results over the ECG features. Although auscultation is key clinical diagnosis tool in symptomatic RHD, combined PCG with ECG features does not enhance asymptomatic RHD detection using the ECG modality alone.",
-        "sourceName": "medRxiv: new results",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Sensors, Vol. 26, Pages 3143: A Lightweight Machine Learning Framework for Post-Stroke Gait Abnormality Classification Using Wearable Gyroscope Features",
-        "url": "https://www.mdpi.com/1424-8220/26/10/3143",
-        "publishedAt": "2026-05-15",
-        "summary": "Accurately classifying gait abnormalities is crucial for the effective monitoring and rehabilitation of stroke patients. This study proposed a lightweight machine learning framework for distinguishing healthy from abnormal gait patterns using statistical features extracted from wearable gyroscope data. Statistical z-axis angular velocity values from both limbs were derived and used to evaluate the performance of multiple classifiers, including logistic regression, support vector machines, and ensemble methods. A leave-one-out cross-validation strategy was employed to enhance generalizability across subjects. The results indicated that several classifiers achieve accuracy and area under the curve (AUC) values exceeding 0.95, with random forest and support vector machine-based models demonstrating near-perfect class separability, with an AUC of 0.98. These findings highlighted the effectiveness of using minimal set of biomechanically relevant gyroscope features for gait classification in real-world healthcare applications. The proposed pipeline is computationally efficient, making it well suited for implementing in wearable and remote monitoring systems.",
-        "sourceName": "Sensors Journal",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Sensors, Vol. 26, Pages 3141: &ldquo;Are You Okay, Honey?&rdquo;: Recognizing Emotions Among Couples Managing Diabetes in Daily Life Using Multimodal Real-World Smartwatch Data",
-        "url": "https://www.mdpi.com/1424-8220/26/10/3141",
-        "publishedAt": "2026-05-15",
-        "summary": "Couples generally manage chronic diseases together and the management takes an emotional toll on both patients and their romantic partners. Consequently, recognizing the emotions of each partner in daily life could provide insight into their emotional well-being in chronic disease management. Currently, the process of assessing each partner&amp;rsquo;s emotions is manual, time-intensive, and costly. Despite the existence of works on emotion recognition among couples, none of these works have used data collected from couples&amp;rsquo; interactions in daily life. In this work, we collected 85 h (1021 5-min samples) of real-world multimodal smartwatch sensor data (speech, heart rate, accelerometer, and gyroscope) and self-reported emotion data (n = 612) from 26 partners (13 couples) managing diabetes mellitus type 2 in daily life. We extracted physiological, movement, acoustic, and linguistic features, and trained machine learning models (support vector machine and random forest) to recognize each partner&amp;rsquo;s self-reported emotions (valence and arousal). Our results from the best models&amp;mdash;balanced accuracies of 63.8% and 78.1% for arousal and valence respectively&amp;mdash;are better than the results from (1) chance, (2) prior work that also used data from German-speaking, Swiss-based couples, and (3) partners&amp;rsquo; perceptions of each other&amp;rsquo;s emotions. This work contributes toward building automated emotion recognition systems that would eventually enable partners to monitor their emotions in daily life and enable the delivery of interventions to improve their emotional well-being.",
-        "sourceName": "Sensors Journal",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Sensors, Vol. 26, Pages 3097: Wearable Functional Near-Infrared Spectroscopy (fNIRS) Monitoring of Prefrontal Activation and Connectivity During Purpose-Driven Consumption",
-        "url": "https://www.mdpi.com/1424-8220/26/10/3097",
-        "publishedAt": "2026-05-14",
-        "summary": "This study investigated the cortical activation patterns and functional connectivity underlying human decision-making by comparing two distinct purchasing orientations: other-oriented consumption (OOC) and self-oriented consumption (SOC), using functional near-infrared spectroscopy (fNIRS) as a wearable neuroimaging modality. The results revealed significant temporal concentration differences in &amp;#8710;HbO under the OOC condition in Ch06 (p&amp;nbsp;&amp;lt; 0.05). The 15 fNIRS channels were mapped to seven anatomically defined regions of interest (ROIs) to better capture regional activation patterns and functional network properties. While global network metrics showed no significant differences, seed-based connectivity analysis revealed that the OOC condition elicited significantly stronger functional connectivity between the medial prefrontal cortex (ROI4) and the left lower PFC (ROI6, p &amp;lt; 0.05, d = 0.45). In summary, while the overall network efficiency remained stable across conditions, our findings highlight a spatially specific enhancement in functional connectivity centered on the PFC, indicating an increased cognitive load from engaging in complex social cognitive processes. These findings advance the understanding of neural correlates underlying human decision-making and demonstrate the utility of wearable monitoring using fNIRS for capturing cognitive state differences in human-centered decision contexts.",
-        "sourceName": "Sensors Journal",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Using wearable sensors during the timed up and go and 6-minute walk test in Spinal Bulbar Muscular Atrophy",
-        "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001416",
-        "publishedAt": "2026-05-13T14:00:00Z",
-        "summary": "<p>by Kruthika Doreswamy, Henry Roberts, Angela Kokkinis, Galen Joe, Abdullah Alqahtani, Christopher Grunseich, Minal Jain</p>\r\n\r\nSpinal Bulbar Muscular Atrophy (SBMA) is a rare and slowly progressive disease that affects males. The Timed Up and Go (TUG) and 6-minute walk test (6MWT) are used in the clinic to track progression. Recent studies have used wearable sensors to track subtle changes in gait and balance in people with rare disease. The objective of this study was to determine whether inertial sensors could be used in men with SBMA to track changes in gait and balance. Our methods included ten participants with SBMA who completed the TUG and 6MWT while wearing six wearable sensors at the baseline, 6-month, and 12-month follow up visits. Our findings showed that this group of men did not progress in their disease over 12 months as evidenced by the stability of TUG durations, 6MWT distance, and sensor parameters. We observed strong associations between the sensor-derived parameters and both TUG duration and 6MWT distance. The sensors can be used during clinic assessments to measure gait and balance parameters. Further studies examining a larger sample size and at-home monitoring should be considered.",
-        "sourceName": "PLOS Digital Health",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Wireless and in situ regenerable multimodal wearable bioelectronic sweat sensor for continuous biomarker monitoring in everyday settings",
-        "url": "https://www.nature.com/articles/s41551-026-01670-2",
-        "publishedAt": "2026-05-13",
-        "summary": "",
-        "sourceName": "Nature Biomedical Engineering",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Sensors, Vol. 26, Pages 3085: MFSleepNet: An Interactive Multimodal Fusion Framework for Automatic Sleep Staging",
-        "url": "https://www.mdpi.com/1424-8220/26/10/3085",
-        "publishedAt": "2026-05-13",
-        "summary": "Accurate automatic sleep staging remains challenging due to complex temporal dynamics, inter-subject variability, and the difficulty of effectively integrating heterogeneous physiological signals. Electroencephalogram (EEG) and electrooculogram (EOG) recordings provide complementary information for sleep analysis; however, most existing multimodal approaches rely on simple feature concatenation, which limits their ability to capture structured inter-modality relationships. This paper proposes MFSleepNet, a multimodal sleep staging framework that explicitly models interactions between EEG and EOG signals. The proposed system incorporates a multimodal feature fusion module to enable bidirectional information exchange between modality-specific representations, followed by a gated temporal-channel attention mechanism to adaptively emphasize informative temporal segments and signal channels, facilitating joint representation learning while preserving modality-specific characteristics. Experiments on three public datasets (Sleep-EDF, SHHS, and HSP) under an epoch-level cross-validation protocol show that MFSleepNet consistently outperforms representative single-modality and multimodal baseline methods in terms of overall accuracy, Cohen&amp;rsquo;s &amp;kappa;, and Macro-F1. Ablation studies further demonstrate the contribution of each functional module. Correlation analysis indicates stage-dependent variations in EEG&amp;ndash;EOG relationships, while interaction-based experiments show that explicit feature interaction improves both joint and modality-specific representations. Grad-CAM visualizations provide interpretability of model decisions. External validation on unseen subjects reveals a noticeable performance drop, highlighting the challenges of inter-subject variability and the limited baseline generalization capability of the model. To address this, a lightweight subject-specific adaptation strategy is introduced, which improves performance using a small amount o",
-        "sourceName": "Sensors Journal",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Sensors, Vol. 26, Pages 3074: A Wearable Acoustic-Bluetooth Dual Model Communication-Based Real-Time Heart Rate Monitoring and Ranging System for Swimmers",
-        "url": "https://www.mdpi.com/1424-8220/26/10/3074",
-        "publishedAt": "2026-05-13",
-        "summary": "Underwater communication devices typically suffer from large size and high power consumption, which pose significant challenges for real-time monitoring of swimmers&amp;rsquo; heart rate and distance. To tackle these challenges, this study successfully developed a wearable acoustic-Bluetooth dual model communication-based real-time heart rate monitoring and ranging system (WARM) for swimmers by implementing an integrated miniaturized acoustic transducer design, narrow-pulse OOK modulation, and acoustic multipath interference suppression techniques. The final self-developed system measures 47 mm &amp;times; 36 mm &amp;times; 18 mm and weighs 54 g. Six swimming volunteers were recruited to conduct underwater real-time heart rate monitoring and distance measurement experiments for performance evaluation of this self-developed system. Experimental results demonstrate that within an effective communication range of 2500 cm, the system achieved an average transmission power consumption of 52&amp;ndash;58 mW, a frame loss rate of only 1.1%, and a mode-switching time of 1&amp;ndash;2 s between the underwater acoustic and Bluetooth transmissions. In addition, the system enabled real-time heart rate monitoring and underwater ranging, with an average ranging error below 50 cm. These results verify the reliability and stability of the proposed system and provide a useful reference for the design and application of wearable underwater communication systems.",
-        "sourceName": "Sensors Journal",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Contribution of Longitudinal Mobile Health Measures in the Dynamic Track of Patients With Major Depressive Disorder: Multiple Centers, Prospective Cohort Study Using Functional Data Analysis and Machine Learning",
-        "url": "https://mhealth.jmir.org/2026/1/e81397",
-        "publishedAt": "2026-05-11T16:30:13-04:00",
-        "summary": "Background: Continuous follow-up for patients with major depressive disorder (MDD) is essential for treatment decisions and a better prognosis. There remains limited evidence regarding the critical issue of depression variation trajectory prediction using mobile health (mHealth) measures. Moreover, the temporal dynamics of mHealth measures have not been fully modeled in previous studies, and the poor patient adherence to mHealth records poses great challenges to the dynamic feature modeling. Objective: This study aimed to examine the contribution of mHealth measures in predicting depression variation trajectory for patients with MDD, with full consideration of the temporal dynamics of mHealth measures. Methods: A total of 229 patients with MDD from a multiple-center, prospective cohort were included. A 12-week follow-up was conducted involving the collection of the Hamilton Depression Rating Scale (HAMD-17), along with patient-reported outcomes (Immediate Mood Scaler and Altman Self-Rating Mania Scale) via mobile devices and sleep duration through wearable wristbands. We used functional data analysis to extract dynamic features from the sparse mHealth records, rather than aggregating the data to a single scalar summary measure through collapsing over time. Subsequently, 3 machine learning models were applied to predict the depression variation trajectory classes based on the baseline characteristics and these extracted dynamic features. Results: Based on the variation of HAMD-17 scores within 12 weeks, the participants were labeled into 4 classes through the -means algorithm. The classes included stable decline (n=93), fluctuate decline (n=44), fast decline (n=60), and delayed and fluctuate (n=32), in light of the shape of depression trajectories. With both baseline features and dynamic features of the mHealth measures, accuracy rates for the overall data were 54.35%, 60.87%, and 56.52%, for the stable decline patients were 78.95%, 84.21%, and 73.68%, for the nonsta",
-        "sourceName": "JMIR mHealth and uHealth",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "A systematic review and meta-analysis on dual-task sensor-based motion analysis for dementia detection",
-        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1728588",
-        "publishedAt": "2026-05-07T00:00:00Z",
-        "summary": "IntroductionEarly diagnosis of dementia may be improved by objective, scalable tests that capture how cognitive tasks interfere with movement. This study examined the use of instrumented dual-task paradigms for dementia detection and characterisation.MethodsWe performed a PRISMA-guided systematic review and meta-analysis of peer-reviewed studies that used dual-task paradigms in adults with clinically defined dementia and an appropriate comparator. We extracted primary motor tasks, secondary cognitive or motor loads, sensor modalities, and analytic approaches. Walking outcomes were meta-analysed using inverse-variance weighted random-effects models, including subgroup analyses for single-task versus dual-task conditions and for arithmetic versus memory and verbal fluency assessments.ResultsThe literature was dominated by cognitive-motor dual-task paradigms in Alzheimer's disease cohorts. Inertial measurement units and force plates were the most common instruments, and most studies used classical statistics, with fewer applying machine learning. Pooled effects showed consistent group differences; compared with controls, people with dementia walked more slowly, took shorter steps, and showed less steady timing. Although heterogeneity was substantial across studies, the direction of effects was stable, and dual-task conditions generally amplified group differences relative to single-task performance. Arithmetic loads tended to accentuate changes linked to speed and cadence, whereas memory and verbal fluency assessments tended to prolong timing measures. Balance, turning, and some upper-limb outcomes also differentiated groups.DiscussionInstrumented dual-task assessments appear to enhance detection of cognitive-motor impairment in dementia and may complement existing evaluations. To support clinical translation, future work should extend beyond Alzheimer's disease, standardise task instructions and reporting, and evaluate multi-modal, validated analytic approaches across",
-        "sourceName": "Frontiers in Digital Health",
-        "sourceCategory": "academic",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Long-Term Effectiveness of a Game-Based Mobile App for Training in Cardiopulmonary Resuscitation and Automated External Defibrillator Use: Nonrandomized Controlled Trial",
-        "url": "https://mhealth.jmir.org/2026/1/e78689",
-        "publishedAt": "2026-05-06T12:45:14-04:00",
-        "summary": "Background: Bystander cardiopulmonary resuscitation (CPR) and automated external defibrillator (AED) use are critical for improving survival after out-of-hospital cardiac arrest. Although conventional training methods are initially effective, they are often hampered by rapid skill decay over time. Game-based mobile apps have emerged as a promising and scalable alternative for CPR and AED education; however, evidence of their long-term efficacy remains scarce. Objective: This study aimed to evaluate the integration of a game-based mobile app into traditional CPR and AED training. We assessed its impact on university students’ theoretical knowledge, practical skills, and theoretical knowledge retention, as well as their willingness to perform CPR and their awareness of disseminating these skills. Methods: A nonrandomized controlled trial was conducted among university students in China from March 21 to September 21, 2024. Participants were assigned to either an experimental group, which received game-based mobile app training supplemented with traditional training, or a control group, which received traditional training only. The game-based app featured a simulated scenario that required users to execute the correct sequence of resuscitation procedures and operate a virtual AED under time constraints. The intervention period lasted for 6 months. Participants’ theoretical knowledge and practical skills were assessed immediately after training (baseline) and at the 7-day follow-up. Long-term retention of knowledge, willingness to perform CPR, and dissemination awareness were evaluated at the 6-month follow-up. Data were analyzed using SPSS software (IBM Corp), employing the chi-square test, Mann-Whitney test, and Wilcoxon signed-rank test. Results: A total of 481 participants completed the entire survey (n=241 in the experimental group and n=240 in the control group). In the short-term (7-d) assessment, the experimental group demonstrated significantly higher scores in ",
-        "sourceName": "JMIR mHealth and uHealth",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Accuracy of heart rate measurement using AirPods Pro 3 during graded treadmill exercise: A laboratory-based validation study",
-        "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001373",
-        "publishedAt": "2026-04-30T14:00:00Z",
-        "summary": "<p>by Cailbhe Doherty, David Burke, Owen Mitchell, David Lawless, Jasman Brar, Michael Fuchs, Rory Lambe</p>\r\n\r\nAirPods Pro 3 incorporate an in-ear optical heart-rate sensor, but independent validation during exercise is limited. We evaluated agreement between AirPods Pro 3 heart rate and an ECG-derived chest-strap reference (Polar H10) during graded treadmill exercise in a controlled laboratory setting. Forty adults (mean age 23·8 years; 37·5% female) completed a protocol comprising rest and progressive exercise stages targeting ~40–85% of age-predicted maximal heart rate, including rapid workload transitions. Heart-rate time series from both devices were synchronised by timestamp and aggregated into non-overlapping 5-s epochs. Agreement was assessed using a repeated-measures Bland–Altman approach implemented via a linear mixed-effects model with participant-level random effects; absolute error metrics were calculated at the participant level and summarised overall and by intensity category. Across 16,735 paired epochs, mean bias was −0·03 beats·min ⁻ ¹ (AirPods Pro 3 minus Polar H10; 95% CI −0·22 to 0·17), indicating negligible systematic error. The total standard deviation of differences was 5·23 beats·min ⁻ ¹, yielding 95% limits of agreement from −10·27 to 10·22 beats·min ⁻ ¹, with greater dispersion at higher heart rates. Overall mean absolute error was 2·08 beats·min ⁻ ¹ and mean absolute percentage error was 2·02%, with mean absolute error ranging from 1·31 to 2·4 beats·min ⁻ ¹ across intensity categories. AirPods Pro 3 therefore provided heart-rate estimates closely aligned with a validated chest-worn reference during graded treadmill exercise in healthy adults, with minimal bias and low average error but wider epoch-to-epoch variability at higher intensities.",
-        "sourceName": "PLOS Digital Health",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Sharing digital health data responsibly: Balancing open science with participant privacy",
-        "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001377",
-        "publishedAt": "2026-04-24T14:00:00Z",
-        "summary": "<p>by Camille Nebeker, Shahin Samiei, Santosh Kumar</p>\r\n\r\nData sharing is essential for modern science, advancing transparency, reproducibility, and discovery. Emerging evidence shows that certain digital health data, particularly high-frequency accelerometry from body-worn sensors, carry re-identification risks even when de-identified. In 2023, the National Institutes of Health published its Data Management and Sharing (DMS) Policy formalizing a commitment to openness by requiring all funded researchers to share scientific data. However, the policy did not anticipate that raw motion signals collected by wearable devices can function as biometric identifiers. The WristPrint study demonstrated that a single day of raw accelerometry data could be used to re-identify individuals with 96% accuracy. Related research in gait detection shows that as few as ten steps may be enough to uniquely identify someone. These findings highlight gaps in current data sharing policies and the need for tailored guidance. We argue that policy updates, enforceable data use agreements, and educational initiatives are essential to align openness with protection. The path forward is not to retreat from data sharing but to share more wisely, safeguarding participant trust while sustaining scientific progress.",
-        "sourceName": "PLOS Digital Health",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
       }
     ],
     "vendor_research": [
@@ -1530,7 +1528,20 @@
     ],
     "vendor_websearch": [
       {
-        "title": "Apple introduces a new Pride Collection - Apple",
+        "title": "Wackadoo! Join Bluey for the ultimate playdate on Apple Arcade ...",
+        "url": "https://www.apple.com/newsroom/2026/05/wackadoo-join-bluey-for-the-ultimate-playdate-on-apple-arcade-starting-may-21/",
+        "publishedAt": null,
+        "summary": "*   [Store](https://www.apple.com/us/shop/goto/store). *   [Shop the Latest](https://www.apple.com/us/shop/goto/store). *   [Mac](https://www.apple.com/us/shop/goto/buy_mac). *   [iPad](https://www.apple.com/us/shop/goto/buy_ipad). *   [iPhone](https://www.apple.com/us/shop/goto/buy_iphone). *   [Apple Watch](https://www.apple.com/us/shop/goto/buy_watch). *   [AirPods](https://www.apple.com/us/shop/goto/airpods/accessories). *   [Accessories](https://www.apple.com/us/shop/goto/buy_accessories). *   [Financing](https://www.apple.com/us/shop/goto/payment_plan). *   [Education](https://www.apple.com/us/shop/goto/educationrouting). *   [Explore All Mac](https://www.apple.com/mac/). *   [Shop Mac](https://www.apple.com/us/shop/goto/buy_mac). *   [Mac Accessories](https://www.apple.com/us/shop/goto/mac/accessories). *   [Financing](https://www.apple.com/us/shop/goto/payment_plan). *   [Explore All iPad](https://www.apple.com/ipad/). *   [Shop iPad](https://www.apple.com/us/shop/goto/buy_ipad). *   [iPad Accessories](https://www.apple.com/us/shop/goto/ipad/accessories). *   [Financing](https://www.apple.com/us/shop/goto/payment_plan). *   [Explore All iPhone](https://www.apple.com/iphone/). *   [iPhone 16](https://www.apple.com/us/shop/goto/buy_iphone/iphone_16). *   [Shop iPhone](https://www.apple.com/us/shop/goto/buy_iphone). *   [iPhone Accessories](https://www.apple.com/us/shop/goto/iphone/accessories). *   [Financing](https://www.apple.com/us/shop/goto/payment_plan). *   [Financing](https://www.apple.com/us/shop/goto/payment_plan). *   [Financing](https://www.apple.com/us/shop/goto/payment_plan). *   [Explore All AirPods](https://www.apple.com/airpods/). *   [AirPods Accessories](https://www.apple.com/us/shop/goto/airpods/accessories). *   [Explore Entertainment](https://www.apple.com/services/). *   [Accessories](https://www.apple.com/us/shop/goto/buy_accessories). *   [Mac](https://www.apple.com/us/shop/goto/mac/accessories). *   [iPad](https://www.apple.com/us/shop",
+        "sourceName": "Apple Newsroom / Watch",
+        "sourceCategory": "vendor_websearch",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.47826138,
+        "signalType": "product_market"
+      },
+      {
+        "title": "Apple introduces a new Pride Collection",
         "url": "https://www.apple.com/newsroom/2026/05/apple-introduces-a-new-pride-collection/",
         "publishedAt": null,
         "summary": "# Apple introduces a new Pride Collection. Apple Watch Series 11 is paired with the Pride Luminance watch face and Pride Edition Sport Loop. Matching wallpaper from the new Apple Watch Pride Collection is displayed on an 11-inch iPad Pro and iPhone 17 Pro. Today, Apple introduced a new Apple Watch Pride Edition Sport Loop, watch face, and iPhone and iPad wallpaper to celebrate LGBTQ+ communities around the world during Pride Month and beyond. The new Pride Edition Sport Loop, available to order today, is woven from a rainbow of 11 colors of nylon yarns. The resulting design is joyful and vibrant, showcasing a full spectrum of colors that reflect the unique identities that shape LGBTQ+ communities worldwide. The new Pride Luminance watch face complements the band design with colors that refract dynamically to celebrate the vibrancy, spirit, and individuality of the LGBTQ+ community. With this collection, users can customize the watch face with even more color options to create a unique expression of themselves and their communities.",
@@ -1539,7 +1550,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.49804688,
+        "score": 0.18457669,
         "signalType": "product_market"
       },
       {
@@ -1559,13 +1570,13 @@
         "title": "Introducing the Google Health app",
         "url": "https://blog.google/products-and-platforms/products/google-health/google-health-app/",
         "publishedAt": null,
-        "summary": "# A new era for your wellness: Introducing the Google Health app. The Google Health app brings all of your health and wellness into one place debuting new and advanced capabilities. The Fitbit app is becoming the Google Health app, offering a redesigned, centralized hub for your wellness data. You will see an intuitive four-tab layout, improved data tracking, and a new artificial intelligence coach to help you reach your goals. * The Fitbit app is becoming the Google Health app to centralize your wellness data. * The new Google Health Coach uses artificial intelligence to provide personalized workout and health insights. The Fitbit app is becoming the new Google Health app to help you track your fitness and wellness in one place. We’re updating the Fitbit app to become the Google Health app, a centralized place for your health and wellness data. And, on Health, in addition to getting a snapshot of your key health metrics, you can get summaries of your medical records from the Coach.",
+        "summary": "A new era for your wellness: Introducing the Google Health app. [\"What is the Fitbit Air?\", \"How can I learn new AI skills?\", \"What's the latest Android news?\"]. The Google Health app brings all of your health and wellness into one place debuting new and advanced capabilities. The Fitbit app is becoming the Google Health app, offering a redesigned, centralized hub for your wellness data. You will see an intuitive four-tab layout, improved data tracking, and a new artificial intelligence coach to help you reach your goals. * The Fitbit app is becoming the Google Health app to centralize your wellness data. The Fitbit app is becoming the new Google Health app to help you track your fitness and wellness in one place. We’re updating the Fitbit app to become the Google Health app, a centralized place for your health and wellness data.",
         "sourceName": "Google Blog / Fitbit",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.468621,
+        "score": 0.42391166,
         "signalType": "product_market"
       },
       {
@@ -1634,32 +1645,6 @@
         "signalType": "product_market"
       },
       {
-        "title": "About This Kit-Health-Developing Basic Capabilities-Atomic Service Development-Guides",
-        "url": "https://developer.huawei.com/consumer/en/doc/atomic-guides/health-service-kit-ability-as",
-        "publishedAt": null,
-        "summary": "# About This Kit-Health-Developing Basic Capabilities-Atomic Service Development-Guides - HUAWEI Developers. Health Service Kit provides a platform for ecosystem apps to access users' health and fitness data based on users' HUAWEI ID and authorization. Upon obtaining user's consent and authorization, you can access their health and fitness data with the open capabilities provided by Health Service Kit, and use these data to build various kinds of apps and services to deliver professional health and fitness experiences. Health Service Kit incorporates its health and fitness data services with apps, services, and third-party devices, to construct a smart health and fitness ecosystem that provides users with unmatched convenience and security. ## Health Service Kit. As shown in the preceding figure, Health Service Kit provides a series of open capabilities, for ecosystem apps/services and hardware devices. *   Open data: As a health and fitness data platform, this kit unlocks extensive health data and professional workout and fitness data.",
-        "sourceName": "Huawei Health Kit",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.99990165,
-        "signalType": "platform_api"
-      },
-      {
-        "title": "Enabling Health Service Kit in Huawei Health-Developing Your App-HarmonyOS (JavaScript)-Device-side Data Openness-Accessing Health Kit-Health Service Kit",
-        "url": "https://developer.huawei.com/consumer/en/doc/HMSCore-Guides/harmonyos-enabling-health-kit-0000001204685000",
-        "publishedAt": null,
-        "summary": "# Enabling Health Service Kit in Huawei Health-Developing Your App-HarmonyOS (JavaScript)-Device-side Data Openness-Accessing Health Kit-Health Service Kit - HUAWEI Developers. Introduction to Health Service Kit. Enabling Health Service Kit in Huawei Health. # Enabling Health Service Kit in Huawei Health. If your app runs on smartphones and needs to access Huawei Health data, prompt users to enable Health Service Kit in the Huawei Health app. If users do not enable Health Service Kit as prompted, or disable it after enabling it as prompted, you will be unable to query data by calling related APIs. For a better interaction experience, you are advised to check whether users have enabled Health Service Kit by calling getHealthAppAuthorization before querying health and fitness data. You can also call checkHealthAppAuthorization to check whether users have enabled Health Service Kit. If Health Service Kit is not enabled, users will be prompted to enable it. You can also prompt users to enable Health Service Kit by going to **Me**>**Privacy management** in the Huawei Health app and toggling on **HUAWEI Health Kit**.",
-        "sourceName": "Huawei Health Kit",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.9998634,
-        "signalType": "platform_api"
-      },
-      {
         "title": "Xiaomi Smart Band 10 Glimmer Edition HyperOS3 V3.2.1 Update",
         "url": "https://c.mi.com/global/post/1663600",
         "publishedAt": null,
@@ -1669,20 +1654,20 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.47124818,
+        "score": 0.9986853,
         "signalType": "product_market"
       },
       {
-        "title": "Xiaomi Watch 5 announced with EMG and ECG.",
-        "url": "https://c.mi.com/global/post/2050127",
+        "title": "Xiaomi Smart Band 10 Ceramic Edition HyperOS3 V3.2.1 Update",
+        "url": "https://new.c.mi.com/global/post/1764675",
         "publishedAt": null,
-        "summary": "Along with the EMG, the Xiaomi Smartwatch is packed with the ECG (Electrocardiogram) sensor, which further helps the wearer analyze heart rhythms on the wrist",
+        "summary": "Introducing the exclusive Xiaomi Smart Band 10 Ceramic Edition with an all-new look, amazing screen, smarter experience and experience a jade-smooth finish that",
         "sourceName": "Xiaomi Global Wearables",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.43352634,
+        "score": 0.99657035,
         "signalType": "product_market"
       },
       {
@@ -1699,16 +1684,16 @@
         "signalType": "platform_api"
       },
       {
-        "title": "Pulling Health Data Manually | Withings",
-        "url": "https://developer.withings.com/developer-guide/v3/integration-guide/onsite-mode/data-api/fetch-data-example-manual",
+        "title": "API Changelog | WHOOP for Developers",
+        "url": "https://developer.whoop.com/docs/api-changelog",
         "publishedAt": null,
-        "summary": "In some cases, you might prefer to fetch the user's health data manually rather than relying on the notification system. This approach requires providing a mechanism within your application—such as a button—that allows the user to initiate the data retrieval process when they're ready. To facilitate manual data retrieval, include a user interface element (like a \"Refresh Data\" button) that the user can interact with once their measurement is complete. This action signals your system to fetch the latest health data from the Withings API. The first step in the data retrieval process is to locate the access token associated with the user. By querying your database, you can retrieve this token, which authorizes your request to the Withings API. With the access token and time range in hand, decide which API endpoint to call based on the type of data you wish to retrieve. Construct your API call with the necessary parameters and execute the request to fetch the health data.",
-        "sourceName": "Withings API / Research",
+        "summary": "Learn how to look up mappings from v1 to v2 ids.**. This changelog highlights notable changes to the WHOOP Developer Platform, such as new API endpoints or webhook event types. ### Webhook Updates, New V1 Migration API​. Updated webhook documentation to clarify that v1 webhooks are no longer being published. Provided documentation for new activity mapping endpoint to look up historical v1 activity ids. * **Documentation**: ✨New✨ v1 -> v2 activity id mapping documentation for activity v1 id lookups. Updated webhook documentation to clarify that v2 recovery webhooks use the UUID of the associated sleep, not the cycle ID. * **v1 Recovery Webhooks**: Continue to use cycle ID as the identifier. * **v2 Recovery Webhooks**: Use the UUID of the sleep that the recovery is associated with. * **Documentation**: Updated webhook documentation to reflect the correct identifier usage. ### v2 API Launch​. * **Migration Guide**: A comprehensive v1 to v2 migration guide is available to assist with the transition. Strength Trainer activities are available via the `/workout` endpoint.",
+        "sourceName": "WHOOP Developer API",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9999777,
+        "score": 0.99991846,
         "signalType": "clinical_regulatory"
       },
       {
@@ -1721,7 +1706,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.35333946,
+        "score": 0.3606697,
         "signalType": "product_market"
       },
       {
@@ -1734,21 +1719,8 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.29364797,
+        "score": 0.31459826,
         "signalType": "clinical_regulatory"
-      },
-      {
-        "title": "Meet the members of the 2026 Abbott HeartMates Draft | Abbott Newsroom",
-        "url": "https://www.abbott.com/en-us/corpnewsroom/healthy-heart/meet-the-members-of-the-2026-abbott-heartmates-draft",
-        "publishedAt": null,
-        "summary": "This year’s class is made up of 11 individuals who exemplify what it means to be a member of the Abbott HeartMates community through their active participation in the program and their commitment to inspiring others by sharing their stories with the world. At 31 years old and with little knowledge of her family’s heart history, Sonya was diagnosed with a bicuspid aortic valve, a congenital heart condition in which the aortic valve has two flaps instead of three. An echocardiogram revealed that her valve disease had progressed from moderate to severe, and she had developed an aortic aneurysm, a bulge that occurs in the wall of the aorta and can be life-threatening if it ruptures. Within weeks — and shortly after graduating with her masters in social work —  Sonya had open-heart surgery in 2019 to replace her valve and repair her aneurysm. “Recovery from surgery has been a journey that I'm grateful to have experienced,” she says.",
-        "sourceName": "Abbott Biowearables",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.023691783,
-        "signalType": "product_market"
       },
       {
         "title": "From reactive nutrition coaching to real-time metabolic care | Levels | Levels",
@@ -1972,7 +1944,7 @@
       },
       "bioRxiv: new results": {
         "fetched": 30,
-        "kept": 1,
+        "kept": 4,
         "error": null
       },
       "npj Digital Medicine": {
@@ -2012,7 +1984,7 @@
       },
       "Sensors Journal": {
         "fetched": 100,
-        "kept": 7,
+        "kept": 6,
         "error": null
       },
       "Apple Machine Learning Research": {
@@ -2042,7 +2014,7 @@
       },
       "9to5Google": {
         "fetched": 100,
-        "kept": 11,
+        "kept": 10,
         "error": null
       },
       "Fierce Healthcare": {
@@ -2086,9 +2058,9 @@
     "tavily_per_site": {
       "Apple Newsroom / Watch": {
         "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "qualityKept": 2,
+        "finalKept": 2,
+        "kept": 2,
         "capped": 0,
         "error": null
       },
@@ -2102,10 +2074,10 @@
       },
       "Google Blog / Fitbit": {
         "fetched": 5,
-        "qualityKept": 3,
+        "qualityKept": 2,
         "finalKept": 2,
         "kept": 2,
-        "capped": 1,
+        "capped": 0,
         "error": null
       },
       "Android Developers Health & Fitness": {
@@ -2149,19 +2121,19 @@
         "error": null
       },
       "Huawei Health Kit": {
-        "fetched": 5,
-        "qualityKept": 2,
-        "finalKept": 2,
-        "kept": 2,
+        "fetched": 3,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
       "Xiaomi Global Wearables": {
         "fetched": 5,
-        "qualityKept": 3,
+        "qualityKept": 4,
         "finalKept": 2,
         "kept": 2,
-        "capped": 1,
+        "capped": 2,
         "error": null
       },
       "Garmin Developers": {
@@ -2197,10 +2169,10 @@
         "error": null
       },
       "WHOOP Developer API": {
-        "fetched": 0,
-        "qualityKept": 0,
-        "finalKept": 0,
-        "kept": 0,
+        "fetched": 5,
+        "qualityKept": 1,
+        "finalKept": 1,
+        "kept": 1,
         "capped": 0,
         "error": null
       },
@@ -2213,10 +2185,10 @@
         "error": null
       },
       "Withings API / Research": {
-        "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "fetched": 0,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
@@ -2229,7 +2201,7 @@
         "error": null
       },
       "Dexcom Developer API": {
-        "fetched": 0,
+        "fetched": 5,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2237,10 +2209,10 @@
         "error": null
       },
       "Abbott Biowearables": {
-        "fetched": 2,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "fetched": 5,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
@@ -2269,7 +2241,7 @@
         "error": null
       },
       "Rock Health Insights": {
-        "fetched": 5,
+        "fetched": 0,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2277,7 +2249,7 @@
         "error": null
       },
       "Digital Health Wire": {
-        "fetched": 4,
+        "fetched": 5,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2292,14 +2264,6 @@
         "capped": 1,
         "error": null
       },
-      "China NMPA Medical Device Approvals": {
-        "fetched": 1,
-        "qualityKept": 0,
-        "finalKept": 0,
-        "kept": 0,
-        "capped": 0,
-        "error": null
-      },
       "NeurIPS Health Workshops / OpenReview": {
         "fetched": 5,
         "qualityKept": 0,
@@ -2309,7 +2273,7 @@
         "error": null
       },
       "ICML Health Workshops / PMLR": {
-        "fetched": 5,
+        "fetched": 0,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2317,7 +2281,7 @@
         "error": null
       },
       "IEEE EMBC Proceedings": {
-        "fetched": 0,
+        "fetched": 1,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2349,7 +2313,7 @@
         "error": null
       },
       "IEEE Sensors / Wearable Proceedings": {
-        "fetched": 4,
+        "fetched": 5,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2357,7 +2321,7 @@
         "error": null
       },
       "Digital Biomarkers Journal": {
-        "fetched": 1,
+        "fetched": 0,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2366,12 +2330,12 @@
       }
     },
     "filtered_out_by_blacklist": 24,
-    "filtered_out_by_keyword": 637,
+    "filtered_out_by_keyword": 639,
     "filtered_out_by_source_exclude": 14,
-    "filtered_out_by_tavily_quality": 70,
-    "filtered_out_by_required_keyword": 13,
+    "filtered_out_by_tavily_quality": 75,
+    "filtered_out_by_required_keyword": 10,
     "filtered_out_by_entry_page": 0,
-    "filtered_out_by_date": 298,
+    "filtered_out_by_date": 292,
     "duplicate_urls": 0,
     "duplicate_titles": 0,
     "tavily_items_capped": 8,
