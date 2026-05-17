@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "status": "ok",
-  "generatedAt": "2026-05-17T03:23:47.682Z",
+  "generatedAt": "2026-05-17T03:26:16.735Z",
   "lookbackDays": 30,
   "stats": {
     "rawItems": 1017,
-    "keptItems": 168,
+    "keptItems": 170,
     "sourcesQueried": 22,
     "sourcesWithResults": 16,
     "sourcesFailed": 0,
@@ -13,7 +13,7 @@
     "apiSourcesWithResults": 2,
     "apiSourcesFailed": 0,
     "tavilySitesQueried": 51,
-    "tavilySitesWithResults": 30,
+    "tavilySitesWithResults": 31,
     "tavilySitesFailed": 0
   },
   "items": [
@@ -449,6 +449,32 @@
       "publishedAt": "2026-05-15",
       "summary": "Status: RECRUITING | Conditions: Postoperative Care; Rehabilitation; Artificial Intelligence (Al); Randomized Controlled Trial (RCT) | Interventions: Conventional Internet-Based Rehabilitation Information; Large Language Model-Assisted Rehabilitation Nursing | Phase: NA",
       "nctId": "NCT07588737",
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_registry",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "api",
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "Personalized Robotic Telerehabilitation for Upper Limb Functional Recovery After Stroke in a Home-Based Setting",
+      "url": "https://clinicaltrials.gov/study/NCT07590349",
+      "publishedAt": "2026-05-15",
+      "summary": "Status: NOT_YET_RECRUITING | Conditions: Stroke; Hemiparesis; Upper Extremity Paresis; Motor Impairment; Rehabilitation | Interventions: Robotic-Assisted Telerehabilitation Virtual Reality-Based Telerehabilitation; Virtual reality-based rehabilitation platform without robotic assistance | Phase: NA",
+      "nctId": "NCT07590349",
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_registry",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "api",
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "Restoring Bile Acid Homeostasis Via Lifestyle Adjustments to Prevent the Development of Liver Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT07111130",
+      "publishedAt": "2026-05-15",
+      "summary": "Status: NOT_YET_RECRUITING | Conditions: Liver Diseases | Interventions: 12-week Lifestyle Intervention | Phase: NA",
+      "nctId": "NCT07111130",
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_registry",
       "sourcePriority": "P1",
@@ -997,32 +1023,6 @@
       "signalType": "product_market"
     },
     {
-      "title": "Personalized Robotic Telerehabilitation for Upper Limb Functional Recovery After Stroke in a Home-Based Setting",
-      "url": "https://clinicaltrials.gov/study/NCT07590349",
-      "publishedAt": "2026-05-15",
-      "summary": "Status: NOT_YET_RECRUITING | Conditions: Stroke; Hemiparesis; Upper Extremity Paresis; Motor Impairment; Rehabilitation | Interventions: Robotic-Assisted Telerehabilitation Virtual Reality-Based Telerehabilitation; Virtual reality-based rehabilitation platform without robotic assistance | Phase: NA",
-      "nctId": "NCT07590349",
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_registry",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "api",
-      "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "Restoring Bile Acid Homeostasis Via Lifestyle Adjustments to Prevent the Development of Liver Cancer",
-      "url": "https://clinicaltrials.gov/study/NCT07111130",
-      "publishedAt": "2026-05-15",
-      "summary": "Status: NOT_YET_RECRUITING | Conditions: Liver Diseases | Interventions: 12-week Lifestyle Intervention | Phase: NA",
-      "nctId": "NCT07111130",
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_registry",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "api",
-      "signalType": "clinical_regulatory"
-    },
-    {
       "title": "GLP-1 Medication & Behavioral Health Programs on Weight & Metabolic Outcomes: FLOURISH and THRIVE Prospective Cohort Study",
       "url": "https://clinicaltrials.gov/study/NCT07588984",
       "publishedAt": "2026-05-15",
@@ -1474,7 +1474,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.19456702,
+      "score": 0.43974736,
       "signalType": "algorithm_evidence"
     },
     {
@@ -1608,6 +1608,45 @@
       "signalType": "clinical_regulatory"
     },
     {
+      "title": "Advanced Research API | Withings",
+      "url": "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+      "publishedAt": null,
+      "summary": "# Advanced Research API. ## Designed for research groups, universities, and advanced health studies. The Advanced Research API provides research institutions, universities, and healthcare innovators with direct access to raw sensor data from Withings devices, enabling groundbreaking insights and in-depth studies on health and behavior. **3-axis Accelerometer**: Withings trackers are equipped with a MEMS accelerometer that samples at 25Hz by default (up to 100Hz), ideal for detailed motion and activity analysis. **PPG Sensor**: Withings devices utilize optical techniques to track blood volume changes in the microvascular bed. Depending on the device, you'll have access to a PPG sensor with either three LEDs (green, red, and infrared) or one LED (green), providing versatile data for cardiovascular research. ### Compatible Devices. Currently, the Advanced Research API is compatible exclusively with the Withings ScanWatch. ### Raw data documentation. Looking for the raw data services and data structure documentation? Learn about raw data services, activation, and data structure for accelerometer and PPG sensors.",
+      "sourceName": "Withings API / Research",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.9999976,
+      "signalType": "platform_api"
+    },
+    {
+      "title": "Advanced Research API | Withings",
+      "url": "http://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+      "publishedAt": null,
+      "summary": "# Advanced Research API. ## Designed for research groups, universities, and advanced health studies. The Advanced Research API provides research institutions, universities, and healthcare innovators with direct access to raw sensor data from Withings devices, enabling groundbreaking insights and in-depth studies on health and behavior. **3-axis Accelerometer**: Withings trackers are equipped with a MEMS accelerometer that samples at 25Hz by default (up to 100Hz), ideal for detailed motion and activity analysis. **PPG Sensor**: Withings devices utilize optical techniques to track blood volume changes in the microvascular bed. Depending on the device, you'll have access to a PPG sensor with either three LEDs (green, red, and infrared) or one LED (green), providing versatile data for cardiovascular research. ### Compatible Devices. Currently, the Advanced Research API is compatible exclusively with the Withings ScanWatch. ### Raw data documentation. Looking for the raw data services and data structure documentation? Learn about raw data services, activation, and data structure for accelerometer and PPG sensors.",
+      "sourceName": "Withings API / Research",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.99999046,
+      "signalType": "platform_api"
+    },
+    {
+      "title": "Pulling Health Data Manually | Withings",
+      "url": "https://developer.withings.com/developer-guide/v3/integration-guide/onsite-mode/data-api/fetch-data-example-manual",
+      "publishedAt": null,
+      "summary": "In some cases, you might prefer to fetch the user's health data manually rather than relying on the notification system. This approach requires providing a mechanism within your application—such as a button—that allows the user to initiate the data retrieval process when they're ready. To facilitate manual data retrieval, include a user interface element (like a \"Refresh Data\" button) that the user can interact with once their measurement is complete. This action signals your system to fetch the latest health data from the Withings API. The first step in the data retrieval process is to locate the access token associated with the user. By querying your database, you can retrieve this token, which authorizes your request to the Withings API. With the access token and time range in hand, decide which API endpoint to call based on the type of data you wish to retrieve. Construct your API call with the necessary parameters and execute the request to fetch the health data.",
+      "sourceName": "Withings API / Research",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.9999777,
+      "signalType": "clinical_regulatory"
+    },
+    {
       "title": "[PDF] Investor Day 2026 Dexcom",
       "url": "https://investors.dexcom.com/files/doc_presentations/2026/May/15/Investor-Day-Presentation_FINAL-PDF.pdf",
       "publishedAt": null,
@@ -1682,7 +1721,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.5389832,
+      "score": 0.11555113,
       "signalType": "clinical_regulatory"
     },
     {
@@ -1695,7 +1734,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.012624949,
+      "score": 0.023583598,
       "signalType": "product_market"
     },
     {
@@ -1708,7 +1747,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.575517,
+      "score": 0.5752307,
       "signalType": "product_market"
     },
     {
@@ -1855,19 +1894,6 @@
       "signalType": "product_market"
     },
     {
-      "title": "Photon, Perplexity, and Prior Auths - Digital Health Wire",
-      "url": "https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/",
-      "publishedAt": null,
-      "summary": "Photon just closed $16M of Series A finding to give patients more control over their prescriptions and bring transparency to pharmacy.",
-      "sourceName": "Digital Health Wire",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.9912209,
-      "signalType": "business_structure"
-    },
-    {
       "title": "Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA ...",
       "url": "https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/",
       "publishedAt": null,
@@ -1877,8 +1903,21 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.979354,
+      "score": 0.30844066,
       "signalType": "platform_api"
+    },
+    {
+      "title": "Photon, Perplexity, and Prior Auths - Digital Health Wire",
+      "url": "https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/",
+      "publishedAt": null,
+      "summary": "Photon just closed $16M of Series A finding to give patients more control over their prescriptions and bring transparency to pharmacy.",
+      "sourceName": "Digital Health Wire",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.22220221,
+      "signalType": "business_structure"
     },
     {
       "title": "Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership | DC Rainmaker",
@@ -2034,19 +2073,6 @@
       "sourceLang": "en",
       "retrievalMethod": "tavily",
       "score": 0.7016523,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore",
-      "url": "https://ieeexplore.ieee.org/abstract/document/10385998",
-      "publishedAt": null,
-      "summary": "Title: End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore\nEnd-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore. Conferences >2023 IEEE International Confe... # End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous...Show More. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous monitoring of cardiovascular parameters, such as heart rate (HR) and heart rate variability (HRV). However, PPG signals collected in daily life are prone to artifacts and noise, posing challenges to HR and HRV extraction. The existing HR and HRV extraction methods cannot effectively handle noisy PPG signals and ensure accurate results. Additionally, current Python packages were primarily designed for analyzing \"clean\" PPG signals, limiting their performance in handling artifacts and noise and resulting in unreliable HR and HRV measurements. In this paper, we propose a robust end-to-end PPG processing pipeline to reliably extract HR and HRV from PPG signals collected in free-living settings. The pipeline comprises three machine learning-based PPG analysis methods: signal quality assessment, reconstruction of noisy signal, and systolic peak detection. We assess the proposed PPG pipeline using a dataset including PPG and Electrocardiogram (ECG) signals recorded from 46 individuals by smartwatches. **Published in:** 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM).",
-      "sourceName": "IEEE BIBM Proceedings",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.70067,
       "signalType": "algorithm_evidence"
     },
     {
@@ -2450,19 +2476,6 @@
         "signalType": "product_market"
       },
       {
-        "title": "Photon, Perplexity, and Prior Auths - Digital Health Wire",
-        "url": "https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/",
-        "publishedAt": null,
-        "summary": "Photon just closed $16M of Series A finding to give patients more control over their prescriptions and bring transparency to pharmacy.",
-        "sourceName": "Digital Health Wire",
-        "sourceCategory": "industry_news",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.9912209,
-        "signalType": "business_structure"
-      },
-      {
         "title": "Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA ...",
         "url": "https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/",
         "publishedAt": null,
@@ -2472,8 +2485,21 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.979354,
+        "score": 0.30844066,
         "signalType": "platform_api"
+      },
+      {
+        "title": "Photon, Perplexity, and Prior Auths - Digital Health Wire",
+        "url": "https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/",
+        "publishedAt": null,
+        "summary": "Photon just closed $16M of Series A finding to give patients more control over their prescriptions and bring transparency to pharmacy.",
+        "sourceName": "Digital Health Wire",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.22220221,
+        "signalType": "business_structure"
       },
       {
         "title": "Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership | DC Rainmaker",
@@ -3282,19 +3308,6 @@
         "signalType": "algorithm_evidence"
       },
       {
-        "title": "End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore",
-        "url": "https://ieeexplore.ieee.org/abstract/document/10385998",
-        "publishedAt": null,
-        "summary": "Title: End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore\nEnd-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore. Conferences >2023 IEEE International Confe... # End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous...Show More. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous monitoring of cardiovascular parameters, such as heart rate (HR) and heart rate variability (HRV). However, PPG signals collected in daily life are prone to artifacts and noise, posing challenges to HR and HRV extraction. The existing HR and HRV extraction methods cannot effectively handle noisy PPG signals and ensure accurate results. Additionally, current Python packages were primarily designed for analyzing \"clean\" PPG signals, limiting their performance in handling artifacts and noise and resulting in unreliable HR and HRV measurements. In this paper, we propose a robust end-to-end PPG processing pipeline to reliably extract HR and HRV from PPG signals collected in free-living settings. The pipeline comprises three machine learning-based PPG analysis methods: signal quality assessment, reconstruction of noisy signal, and systolic peak detection. We assess the proposed PPG pipeline using a dataset including PPG and Electrocardiogram (ECG) signals recorded from 46 individuals by smartwatches. **Published in:** 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM).",
-        "sourceName": "IEEE BIBM Proceedings",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.70067,
-        "signalType": "algorithm_evidence"
-      },
-      {
         "title": "Intelligent Wearable Systems: Opportunities and Challenges in ...",
         "url": "https://dl.acm.org/doi/abs/10.1145/3648469",
         "publishedAt": null,
@@ -3842,7 +3855,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.19456702,
+        "score": 0.43974736,
         "signalType": "algorithm_evidence"
       }
     ],
@@ -4108,6 +4121,45 @@
         "signalType": "clinical_regulatory"
       },
       {
+        "title": "Advanced Research API | Withings",
+        "url": "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+        "publishedAt": null,
+        "summary": "# Advanced Research API. ## Designed for research groups, universities, and advanced health studies. The Advanced Research API provides research institutions, universities, and healthcare innovators with direct access to raw sensor data from Withings devices, enabling groundbreaking insights and in-depth studies on health and behavior. **3-axis Accelerometer**: Withings trackers are equipped with a MEMS accelerometer that samples at 25Hz by default (up to 100Hz), ideal for detailed motion and activity analysis. **PPG Sensor**: Withings devices utilize optical techniques to track blood volume changes in the microvascular bed. Depending on the device, you'll have access to a PPG sensor with either three LEDs (green, red, and infrared) or one LED (green), providing versatile data for cardiovascular research. ### Compatible Devices. Currently, the Advanced Research API is compatible exclusively with the Withings ScanWatch. ### Raw data documentation. Looking for the raw data services and data structure documentation? Learn about raw data services, activation, and data structure for accelerometer and PPG sensors.",
+        "sourceName": "Withings API / Research",
+        "sourceCategory": "vendor_websearch",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.9999976,
+        "signalType": "platform_api"
+      },
+      {
+        "title": "Advanced Research API | Withings",
+        "url": "http://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+        "publishedAt": null,
+        "summary": "# Advanced Research API. ## Designed for research groups, universities, and advanced health studies. The Advanced Research API provides research institutions, universities, and healthcare innovators with direct access to raw sensor data from Withings devices, enabling groundbreaking insights and in-depth studies on health and behavior. **3-axis Accelerometer**: Withings trackers are equipped with a MEMS accelerometer that samples at 25Hz by default (up to 100Hz), ideal for detailed motion and activity analysis. **PPG Sensor**: Withings devices utilize optical techniques to track blood volume changes in the microvascular bed. Depending on the device, you'll have access to a PPG sensor with either three LEDs (green, red, and infrared) or one LED (green), providing versatile data for cardiovascular research. ### Compatible Devices. Currently, the Advanced Research API is compatible exclusively with the Withings ScanWatch. ### Raw data documentation. Looking for the raw data services and data structure documentation? Learn about raw data services, activation, and data structure for accelerometer and PPG sensors.",
+        "sourceName": "Withings API / Research",
+        "sourceCategory": "vendor_websearch",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.99999046,
+        "signalType": "platform_api"
+      },
+      {
+        "title": "Pulling Health Data Manually | Withings",
+        "url": "https://developer.withings.com/developer-guide/v3/integration-guide/onsite-mode/data-api/fetch-data-example-manual",
+        "publishedAt": null,
+        "summary": "In some cases, you might prefer to fetch the user's health data manually rather than relying on the notification system. This approach requires providing a mechanism within your application—such as a button—that allows the user to initiate the data retrieval process when they're ready. To facilitate manual data retrieval, include a user interface element (like a \"Refresh Data\" button) that the user can interact with once their measurement is complete. This action signals your system to fetch the latest health data from the Withings API. The first step in the data retrieval process is to locate the access token associated with the user. By querying your database, you can retrieve this token, which authorizes your request to the Withings API. With the access token and time range in hand, decide which API endpoint to call based on the type of data you wish to retrieve. Construct your API call with the necessary parameters and execute the request to fetch the health data.",
+        "sourceName": "Withings API / Research",
+        "sourceCategory": "vendor_websearch",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.9999777,
+        "signalType": "clinical_regulatory"
+      },
+      {
         "title": "[PDF] Investor Day 2026 Dexcom",
         "url": "https://investors.dexcom.com/files/doc_presentations/2026/May/15/Investor-Day-Presentation_FINAL-PDF.pdf",
         "publishedAt": null,
@@ -4182,7 +4234,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.5389832,
+        "score": 0.11555113,
         "signalType": "clinical_regulatory"
       },
       {
@@ -4195,7 +4247,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.012624949,
+        "score": 0.023583598,
         "signalType": "product_market"
       },
       {
@@ -4208,7 +4260,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.575517,
+        "score": 0.5752307,
         "signalType": "product_market"
       },
       {
@@ -4641,7 +4693,7 @@
         "error": null
       },
       "Apple Developer Health & Fitness": {
-        "fetched": 0,
+        "fetched": 5,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -4729,7 +4781,7 @@
         "error": null
       },
       "Huawei Health Kit": {
-        "fetched": 3,
+        "fetched": 0,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -4817,11 +4869,11 @@
         "error": null
       },
       "Withings API / Research": {
-        "fetched": 0,
-        "qualityKept": 0,
-        "finalKept": 0,
-        "kept": 0,
-        "capped": 0,
+        "fetched": 5,
+        "qualityKept": 5,
+        "finalKept": 3,
+        "kept": 3,
+        "capped": 2,
         "error": null
       },
       "Dexcom News": {
@@ -4953,7 +5005,7 @@
         "error": null
       },
       "Android Central Wearables": {
-        "fetched": 4,
+        "fetched": 5,
         "qualityKept": 1,
         "finalKept": 1,
         "kept": 1,
@@ -5003,8 +5055,8 @@
       "IEEE BIBM Proceedings": {
         "fetched": 5,
         "qualityKept": 4,
-        "finalKept": 2,
-        "kept": 2,
+        "finalKept": 1,
+        "kept": 1,
         "capped": 0,
         "error": null
       },
@@ -5033,7 +5085,7 @@
         "error": null
       },
       "Digital Biomarkers Journal": {
-        "fetched": 0,
+        "fetched": 1,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -5044,10 +5096,10 @@
     "filtered_out_by_blacklist": 24,
     "filtered_out_by_keyword": 606,
     "filtered_out_by_source_exclude": 8,
-    "filtered_out_by_tavily_quality": 98,
+    "filtered_out_by_tavily_quality": 102,
     "filtered_out_by_date": 273,
-    "duplicate_urls": 5,
-    "tavily_items_capped": 14,
+    "duplicate_urls": 6,
+    "tavily_items_capped": 16,
     "top3_categories": null,
     "top3_scores": null,
     "top3_rejected_candidates": null
