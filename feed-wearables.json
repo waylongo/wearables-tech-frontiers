@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "status": "ok",
-  "generatedAt": "2026-05-17T03:21:16.176Z",
+  "generatedAt": "2026-05-17T03:23:47.682Z",
   "lookbackDays": 30,
   "stats": {
     "rawItems": 1017,
-    "keptItems": 166,
+    "keptItems": 168,
     "sourcesQueried": 22,
     "sourcesWithResults": 16,
     "sourcesFailed": 0,
@@ -13,7 +13,7 @@
     "apiSourcesWithResults": 2,
     "apiSourcesFailed": 0,
     "tavilySitesQueried": 51,
-    "tavilySitesWithResults": 29,
+    "tavilySitesWithResults": 30,
     "tavilySitesFailed": 0
   },
   "items": [
@@ -1348,32 +1348,6 @@
       "signalType": "product_market"
     },
     {
-      "title": "HealthKit updates | Apple Developer Documentation",
-      "url": "https://developer.apple.com/documentation/Updates/HealthKit",
-      "publishedAt": null,
-      "summary": "Title: HealthKit updates | Apple Developer Documentation\n1 of 90 symbols inside <root>. 1 of 119 symbols inside -1272746079. 2 of 119 symbols inside -1272746079 visionOS. 4 of 119 symbols inside -1272746079 Creating your first visionOS app. 8 of 119 symbols inside -1272746079. 9 of 119 symbols inside -1272746079 SwiftData. 10 of 119 symbols inside -1272746079 Building a document-based app using SwiftData. 11 of 119 symbols inside -1272746079. 22 of 119 symbols inside -1272746079 Animating data updates in widgets and Live Activities. 23 of 119 symbols inside -1272746079 Linking to specific app scenes from your widget or Live Activity. 29 of 119 symbols inside -1272746079 Displaying live data with Live Activities. 30 of 119 symbols inside -1272746079. 99 of 119 symbols inside -1272746079. 102 of 119 symbols inside -1272746079 Group Activities. 102 of 119 symbols inside -1272746079 Group Activities. 103 of 119 symbols inside -1272746079. 106 of 119 symbols inside -1272746079. 107 of 119 symbols inside -1272746079 HealthKit updates. 108 of 119 symbols inside -1272746079. 112 of 119 symbols inside -1272746079. 115 of 119 symbols inside -1272746079 Virtualization. 116 of 119 symbols inside -1272746079. 117 of 119 symbols inside -1272746079 ScreenCaptureKit updates. 118 of 119 symbols inside -1272746079. 119 of 119 symbols inside -1272746079 Symbols. 7 of 90 symbols inside <root>. 8 of 90 symbols inside <root>Accelerate updates. 9 of 90 symbols inside <root>Accessibility updates. 10 of 90 symbols inside <root>ActivityKit updates. 11 of 90 symbols inside <root>AdAttributionKit Updates. 12 of 90 symbols inside <root>App Clips updates. 13 of 90 symbols inside <root>App Intents updates. 14 of 90 symbols inside <root>AppKit updates. 15 of 90 symbols inside <root>Apple Intelligence updates. 16 of 90 symbols inside <root>AppleMapsServerAPI Updates. 17 of 90 symbols inside <root>Apple Pencil updates. 18 of 90 symbols inside <root>ARKit updates. 19 of 90 symbols inside <root>Audio ",
-      "sourceName": "Apple HealthKit Updates",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.76300776,
-      "signalType": "platform_api"
-    },
-    {
-      "title": "HealthKit updates | Apple Developer Documentation",
-      "url": "https://developer.apple.com/documentation/Updates/HealthKit?changes=_6_3",
-      "publishedAt": null,
-      "summary": "Title: HealthKit updates | Apple Developer Documentation\n99 of 119 symbols inside -1272746079. 31 of 119 symbols inside -1272746079 SwiftUI updates. 30 of 119 symbols inside -1272746079. 29 of 119 symbols inside -1272746079 Displaying live data with Live Activities. 23 of 119 symbols inside -1272746079 Linking to specific app scenes from your widget or Live Activity. 22 of 119 symbols inside -1272746079 Animating data updates in widgets and Live Activities. 11 of 119 symbols inside -1272746079. 10 of 119 symbols inside -1272746079 Building a document-based app using SwiftData. 9 of 119 symbols inside -1272746079 SwiftData. 8 of 119 symbols inside -1272746079. 4 of 119 symbols inside -1272746079 Creating your first visionOS app. 2 of 119 symbols inside -1272746079 visionOS. 1 of 119 symbols inside -1272746079. 1 of 90 symbols inside <root>. 102 of 119 symbols inside -1272746079 Group Activities. 28 of 90 symbols inside <root>Core Location updates. 27 of 90 symbols inside <root>ContactsUI updates. 26 of 90 symbols inside <root>CallKit updates. 25 of 90 symbols inside <root>BrowserEngineKit updates. 24 of 90 symbols inside <root>Bundle Resources updates. 23 of 90 symbols inside <root>Background Tasks updates. 22 of 90 symbols inside <root>AVFoundation updates. 21 of 90 symbols inside <root>AVFAudio updates. 20 of 90 symbols inside <root>AuthenticationServices updates. 19 of 90 symbols inside <root>Audio Toolbox updates. 18 of 90 symbols inside <root>ARKit updates. 17 of 90 symbols inside <root>Apple Pencil updates. 16 of 90 symbols inside <root>AppleMapsServerAPI Updates. 15 of 90 symbols inside <root>Apple Intelligence updates. 14 of 90 symbols inside <root>AppKit updates. 13 of 90 symbols inside <root>App Intents updates. 12 of 90 symbols inside <root>App Clips updates. 11 of 90 symbols inside <root>AdAttributionKit Updates. 10 of 90 symbols inside <root>ActivityKit updates. 9 of 90 symbols inside <root>Accessibility updates. 8 of 90 symbols inside <root>Accelerate u",
-      "sourceName": "Apple HealthKit Updates",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.7420672,
-      "signalType": "platform_api"
-    },
-    {
       "title": "watchOS 9.4 Release Notes | Apple Developer Documentation",
       "url": "https://developer.apple.com/documentation/watchos-release-notes/watchos-9_4-release-notes?changes=latest_7",
       "publishedAt": null,
@@ -1452,7 +1426,7 @@
       "signalType": "platform_api"
     },
     {
-      "title": "Health Connect  |  Jetpack  |  Android Developers",
+      "title": "Health Connect | Jetpack - Android Developers",
       "url": "https://developer.android.com/jetpack/androidx/releases/health-connect",
       "publishedAt": null,
       "summary": "# Health Connect. | April 22, 2026 | 1.1.0 | - | - | 1.2.0-alpha04 |. To help us strengthen user privacy and security, developers integrating with Health Connect **must declare read and/or write access for the data types** that their apps use. For more information, visit Provide information for the Health apps declaration form and Health Connect by Android Permissions. To add a dependency on health, you must add the Google Maven repository to your. Add the dependencies for the artifacts you need in the `build.gradle` file for. ## Health Connect Testing Version 1.0. `androidx.health.connect:connect-testing:1.0.0-alpha03` is released. `androidx.health.connect:connect-testing:1.0.0-alpha03`. You can use the library to create local unit tests, which typically verify the behavior of the classes in your app that interact with the Health Connect client. `androidx.health.connect:connect-client:1.1.0`, `androidx.health.connect:connect-client-external-protobuf:1.1.0`, and `androidx.health.connect:connect-client-proto:1.1.0` have been promoted to its first stable release with no changes since its previous RC release. `androidx.health.connect:connect-client:1.1.0-rc03`, `androidx.health.connect:connect-client-external-protobuf:1.1.0-rc03`, and `androidx.health.connect:connect-client-proto:1.1.0-rc03` are released. `androidx.health.connect:connect-client:1.1.0-rc03`. `androidx.health.connect:connect-client-external-protobuf:1.1.0-rc03`. `androidx.health.connect:connect-client-proto:1.1.0-rc03`. `androidx.health.connect:connect-client:1.1.0-beta02`, `androidx.health.connect:connect-client-external-protobuf:1.1.0-beta02`, and `androidx.health.connect:connect-client-proto:1.1.0-beta02` are released. `androidx.health.connect:connect-client:1.1.0-beta02`. `androidx.health.connect:connect-client-proto:1.1.0-beta02`.",
@@ -1461,7 +1435,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9999621,
+      "score": 0.8991304,
       "signalType": "platform_api"
     },
     {
@@ -1491,7 +1465,7 @@
       "signalType": "product_market"
     },
     {
-      "title": "Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge | Samsung Research",
+      "title": "Samsung R&D Institute Poland Awarded 1st Place at Interspeech ...",
       "url": "https://research.samsung.com/news/Samsung-R-D-Institute-Poland-awarded-1st-place-at-INTERSPEECH-2026-Challenge",
       "publishedAt": null,
       "summary": "- Samsung R&D Institute United Kingdom. - Samsung R&D Institute Poland. - Samsung R&D Institute Ukraine. - Samsung R&D Institute Russia. - Samsung R&D Institute Israel. - Samsung R&D Institute Jordan. - Samsung R&D Institute India-Bangalore. - Samsung R&D Institute Philippines. - Samsung R&D Institute Indonesia. - Samsung R&D Institute Bangladesh. - Samsung R&D Institute China-Beijing. # Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge. The Audio Intelligence Group at Samsung R&D Institute Poland (SRPOL) achieved a major breakthrough in the international NeckVibe Challenge, securing first place in the detection of Phonotraumatic Vocal Hyperfunction (PVH). The challenge involved nine global teams from institutions including Seoul National University, Gwangju Institute of Science and Technology, and Harvard University, representing Poland, South Korea, India, and the USA. This year’s first-place at the NeckVibe challenge is the third consecutive win for the SRPOL Audio Intelligence Group (ICASSP 2024, INTERSPEECH 2025) using lightweight AI and signal processing to solve complex health problems.",
@@ -1500,7 +1474,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.21423115,
+      "score": 0.19456702,
       "signalType": "algorithm_evidence"
     },
     {
@@ -1708,11 +1682,11 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.11555113,
+      "score": 0.5389832,
       "signalType": "clinical_regulatory"
     },
     {
-      "title": "Meet the members of the 2026 Abbott HeartMates Draft | Abbott Newsroom",
+      "title": "Meet the members of the 2026 Abbott HeartMates Draft",
       "url": "https://www.abbott.com/en-us/corpnewsroom/healthy-heart/meet-the-members-of-the-2026-abbott-heartmates-draft",
       "publishedAt": null,
       "summary": "This year’s class is made up of 11 individuals who exemplify what it means to be a member of the Abbott HeartMates community through their active participation in the program and their commitment to inspiring others by sharing their stories with the world. At 31 years old and with little knowledge of her family’s heart history, Sonya was diagnosed with a bicuspid aortic valve, a congenital heart condition in which the aortic valve has two flaps instead of three. An echocardiogram revealed that her valve disease had progressed from moderate to severe, and she had developed an aortic aneurysm, a bulge that occurs in the wall of the aorta and can be life-threatening if it ruptures. Within weeks — and shortly after graduating with her masters in social work —  Sonya had open-heart surgery in 2019 to replace her valve and repair her aneurysm. “Recovery from surgery has been a journey that I'm grateful to have experienced,” she says.",
@@ -1721,7 +1695,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.023691783,
+      "score": 0.012624949,
       "signalType": "product_market"
     },
     {
@@ -1734,7 +1708,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9996724,
+      "score": 0.575517,
       "signalType": "product_market"
     },
     {
@@ -1747,11 +1721,11 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.99293363,
+      "score": 0.17317663,
       "signalType": "product_market"
     },
     {
-      "title": "Nachricht",
+      "title": "Nachricht - RingConn",
       "url": "https://de.ringconn.com/blogs/news",
       "publishedAt": null,
       "summary": "Zur Account-Seite  Suche öffnen. Suche öffnen  Zur Account-Seite. RingConn präsentiert auf der IFA 2025 eine Demo zu Blutdruckinformationen. Diese Woche haben wir auf der IFA Berlin 2025 etwas vorgestellt, auf das wir lange hingearbeitet haben: eine Demo unserer kommenden Funktion „Blood Pressure Insights“ . Für uns ist es mehr als nur ... The Smart Ring for Women: A New Era in Health & Wellness. Der smarte Ring für Frauen: Eine neue Ära in Gesundheit und Wohlbefinden. Major Upgrade: RingConn’s Period Forecasts Just Got Smarter. Wichtiges Upgrade: RingConns Periodenvorhersagen sind jetzt intelligenter. Im April haben wir ein umfassendes Upgrade unserer Funktion „Periodenprognosen“ eingeführt – entwickelt, um Ihnen noch genauere, wissenschaftlich fundierte und personalisierte Einblicke während ... Track Temperature Shifts Across Your Cycle with a Smart Ring. Verfolge Temperaturschwankungen während deines Zyklus mit einem intelligenten Ring. TL;DR: Die Messung Ihrer Körpertemperatur mit einem Smartring hilft Ihnen, subtile Signale Ihres Menstruationszyklus, Ihres Energielevels, Ihrer Stimmung und Ihres Schlafs zu entschlüsseln.",
@@ -1760,11 +1734,11 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.99990165,
+      "score": 0.62687886,
       "signalType": "business_structure"
     },
     {
-      "title": "RingConn Gen 3: What’s New in the Next-Generation Smart Ring?",
+      "title": "RingConn Gen 3: What's New in the Next-Generation Smart Ring?",
       "url": "https://ringconn.com/blogs/news/ringconn-gen-3-whats-new",
       "publishedAt": null,
       "summary": "# RingConn Gen 3: What’s New in the Next-Generation Smart Ring? But not every new generation actually changes the experience in a meaningful way. That is what makes RingConn Gen 3 worth paying attention to. Instead of offering only a lighter refresh or a few minor spec upgrades, RingConn Gen 3 pushes the product line toward something more ambitious: a smarter, more proactive, more complete health ring that still keeps the category’s biggest advantages—comfort, low friction, and true everyday wearability. So what is actually new in RingConn Gen 3? RingConn Gen 3 is the newest flagship in the RingConn lineup, built for users who want more than passive data collection. It is about making the product more useful between check-ins with the app, more helpful over time, and easier to live with every day. Smart vibration makes Gen 3 feel more proactive. One of the most interesting changes in Gen 3 is the addition of Smart Vibration Alerts.",
@@ -1773,11 +1747,11 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9967524,
+      "score": 0.46293488,
       "signalType": "product_market"
     },
     {
-      "title": "From reactive nutrition coaching to real-time metabolic care | Levels | Levels",
+      "title": "From reactive nutrition coaching to real-time metabolic care | Levels",
       "url": "https://www.levels.com/blog/reactive-coaching-real-time-metabolic-care",
       "publishedAt": null,
       "summary": "This story shows how real-time data, unified timelines, and clinician dashboards enable intervention during the moments that actually matter. # From reactive nutrition coaching to real-time metabolic care. Real-time continuous glucose monitoring, unified patient timelines, and practitioner dashboards shift the care model from reactive analysis to intervention during the moments that drive outcomes. Real-time metabolic care changes the equation: when continuous glucose monitoring, food logs, and lifestyle data flow through one patient app and one practitioner dashboard, you can guide behavior during the meal, the workout, and the sleep window—not weeks later in a debrief. ### Learn more about Levels Pro. Extend care beyond the exam room with Levels Pro, the metabolic health operating system that unifies CGM, labs, food logs, and lifestyle data into a single, clinician‑ready view. Levels Pro gives your team the infrastructure to make that shift: one app for patients to learn in real time, one dashboard for clinicians to guide in real time, and a metabolic health operating system that turns reactive nutrition coaching into proactive, personalized, preventative care.",
@@ -1786,7 +1760,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.5746579,
+      "score": 0.9992022,
       "signalType": "product_market"
     },
     {
@@ -1799,7 +1773,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.4813325,
+      "score": 0.9988752,
       "signalType": "product_market"
     },
     {
@@ -1881,19 +1855,6 @@
       "signalType": "product_market"
     },
     {
-      "title": "Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA Notice - Digital Health Wire",
-      "url": "https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/",
-      "publishedAt": null,
-      "summary": "# Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA Notice - Digital Health Wire. [Skip to content](https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/#primary). [![Image 3: Digital Health Wire](https://insightlinks.storage.googleapis.com/digitalhealthwire/2021/06/digitalhealthwire-bold-wire.png)](https://digitalhealthwire.com/). Please check your email for confirmation. Something went wrong, please try again. *   [Top Stories](https://digitalhealthwire.com/top-stories/). *   [Newsletters](https://digitalhealthwire.com/newsletters/). *   [Shows](https://digitalhealthwire.com/show/). *   [Sponsor](https://docs.google.com/forms/d/e/1FAIpQLSeKcBc80XpxZwx--MhCHPqF-hAoMkR9m8pZD9iMxBssls5fDg/viewform?usp=sf_link). Please check your email for confirmation. Something went wrong, please try again. [![Image 4](https://insightlinks.storage.googleapis.com/digitalhealthwire/2025/03/Navina_900x90.jpg)](https://www.navina.ai/?utm_source=digital-health-wire&utm_medium=website&utm_campaign=banner-ad). ###### Get the top digital health stories right in your inbox. Please check your email for confirmation. [![Image 5](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/Photon.png) Digital Health Wire #459 May 11, 2026 ## Photon, Perplexity, and Prior Auths](https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/)[![Image 6](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/JN-2.png) Digital Health Wire #458 May 7, 2026 ## Management Consultants, Doximity Ask, and Docs Make Great Founders](https://digitalhealthwire.com/newsletter/management-consultants-doximity-ask-and-docs-make-great-founders/)[![Image 7](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/Science.png) Digital Health Wire #457 May 4, 2026 ## OpenAI vs Physicians, Teladoc, and DeepMind Co-Clinician](https://digitalhealthwire.com/newsletter/openai-vs-physicians-teladoc-and-deep",
-      "sourceName": "Digital Health Wire",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.9930962,
-      "signalType": "platform_api"
-    },
-    {
       "title": "Photon, Perplexity, and Prior Auths - Digital Health Wire",
       "url": "https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/",
       "publishedAt": null,
@@ -1905,6 +1866,19 @@
       "retrievalMethod": "tavily",
       "score": 0.9912209,
       "signalType": "business_structure"
+    },
+    {
+      "title": "Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA ...",
+      "url": "https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/",
+      "publishedAt": null,
+      "summary": "# Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA Notice - Digital Health Wire. [Skip to content](https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/#primary). [![Image 3: Digital Health Wire](https://insightlinks.storage.googleapis.com/digitalhealthwire/2021/06/digitalhealthwire-bold-wire.png)](https://digitalhealthwire.com/). Please check your email for confirmation. Something went wrong, please try again. *   [Top Stories](https://digitalhealthwire.com/top-stories/). *   [Newsletters](https://digitalhealthwire.com/newsletters/). *   [Shows](https://digitalhealthwire.com/show/). *   [Sponsor](https://docs.google.com/forms/d/e/1FAIpQLSeKcBc80XpxZwx--MhCHPqF-hAoMkR9m8pZD9iMxBssls5fDg/viewform?usp=sf_link). Please check your email for confirmation. Something went wrong, please try again. [![Image 4](https://insightlinks.storage.googleapis.com/digitalhealthwire/2025/03/Navina_900x90.jpg)](https://www.navina.ai/?utm_source=digital-health-wire&utm_medium=website&utm_campaign=banner-ad). ###### Get the top digital health stories right in your inbox. Please check your email for confirmation. [![Image 5](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/Photon.png) Digital Health Wire #459 May 11, 2026 ## Photon, Perplexity, and Prior Auths](https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/)[![Image 6](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/JN-2.png) Digital Health Wire #458 May 7, 2026 ## Management Consultants, Doximity Ask, and Docs Make Great Founders](https://digitalhealthwire.com/newsletter/management-consultants-doximity-ask-and-docs-make-great-founders/)[![Image 7](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/Science.png) Digital Health Wire #457 May 4, 2026 ## OpenAI vs Physicians, Teladoc, and DeepMind Co-Clinician](https://digitalhealthwire.com/newsletter/openai-vs-physicians-teladoc-and-deep",
+      "sourceName": "Digital Health Wire",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.979354,
+      "signalType": "platform_api"
     },
     {
       "title": "Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership | DC Rainmaker",
@@ -1946,7 +1920,7 @@
       "signalType": "product_market"
     },
     {
-      "title": "The new Fitbit Air offers an intriguing alternative to the Pixel Watch, but is Google's Whoop competitor compelling enough for you? | Android Central",
+      "title": "The new Fitbit Air offers an intriguing alternative to the Pixel Watch ...",
       "url": "https://www.androidcentral.com/wearables/fitbit/poll-would-you-ditch-your-wearable-for-the-fitbit-air",
       "publishedAt": null,
       "summary": "Close-up of the Fitbit Air fitness tracker. Google Fitbit Air product with woman wearing tracker on wrist. Close-up showing the back of the Fitbit Charge 6. Google Health will leave behind some classic Fitbit app features: Here's all of them. # The new Fitbit Air offers an intriguing alternative to the Pixel Watch, but is Google's Whoop competitor compelling enough for you? Would you ditch your current wearable for the Fitbit Air? Google surprised everyone this past week by introducing its latest fitness wearable: the Fitbit Air. It's a bit different from past Fitbit devices, as it has no display for input and offers a lightweight, Whoop-like design that can be interchanged with various bands. What are your thoughts on Fitbit's latest wearable, and will you be picking one up? According to Google, the Fitbit Air lasts up to a week on a full charge, which is more than what you'll get from most Wear OS smartwatches.",
@@ -1955,47 +1929,47 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.60694176,
+      "score": 0.63452125,
       "signalType": "platform_api"
     },
     {
-      "title": "2026年05月15日医疗器械批准证明文件（电子证照纠错）送达信息",
-      "url": "https://www.nmpa.gov.cn/zwfw/sdxx/sdxxylqx/qxpjfb/20260515153002126.html",
+      "title": "Wearables | Latest News, Photos & Videos | WIRED",
+      "url": "http://www.wired.com/tag/wearables",
       "publishedAt": null,
-      "summary": "2022年11月1日起，行政相对人可登录国家药品监督管理局政务服务门户的法人空间查看电子证照，按照相关提示自行打印。",
-      "sourceName": "China NMPA Medical Device Approvals",
-      "sourceCategory": "regulatory",
+      "summary": "### Google Is Rebranding the Fitbit App to ‘Google Health’. ### The New Google Fitbit Has No Screen and Costs $100. Tractive: Which Smart Cat Collar to Buy for Health and GPS Tracking. ### The Best Smart Glasses to Augment Your Reality. ### These New Smart Glasses From Ex-OnePlus Engineers Have a Hidden Cost. ### The Best Fitbit Models for Every Lifestyle. ### The Best Apple Watch Is Back to Its Cheapest Price. ### This Beanie Is Designed to Read Your Thoughts. ### The Best Fitness Trackers Check Your Sleep, Heart Rate, or Even Your Blood. ### The Fi Mini Smart Collar Is a Fitness Tracker for Your Pet. ### Apple’s Fanciest Watch Is $100 Off. ### The Best Apple Watch Accessories. ### The Best Apple Watch Bands for Every Occasion. ### I Tested Every New Garmin Training Feature, From Food Tracking to Sports Scores. ### The Best Heart Rate Monitors Check Your Cardiac Health. ### What Is the Best Garmin Watch Right Now?",
+      "sourceName": "WIRED Wearables",
+      "sourceCategory": "industry_news",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.997981,
-      "signalType": "clinical_regulatory"
+      "score": 0.99950445,
+      "signalType": "product_market"
     },
     {
-      "title": "2026年05月14日医疗器械批准证明文件（电子证照纠错）送达信息",
-      "url": "https://www.nmpa.gov.cn/zwfw/sdxx/sdxxylqx/qxpjfb/20260514161722157.html",
+      "title": "Wearables | Latest News, Photos & Videos | WIRED",
+      "url": "http://wired.com/tag/wearables",
       "publishedAt": null,
-      "summary": "2022年11月1日起，行政相对人可登录国家药品监督管理局政务服务门户的法人空间查看电子证照，按照相关提示自行打印。",
-      "sourceName": "China NMPA Medical Device Approvals",
-      "sourceCategory": "regulatory",
+      "summary": "### Google Is Rebranding the Fitbit App to ‘Google Health’. ### The New Google Fitbit Has No Screen and Costs $100. Tractive: Which Smart Cat Collar to Buy for Health and GPS Tracking. ### The Best Smart Glasses to Augment Your Reality. ### These New Smart Glasses From Ex-OnePlus Engineers Have a Hidden Cost. ### The Best Fitbit Models for Every Lifestyle. ### The Best Apple Watch Is Back to Its Cheapest Price. ### This Beanie Is Designed to Read Your Thoughts. ### The Best Fitness Trackers Check Your Sleep, Heart Rate, or Even Your Blood. ### The Fi Mini Smart Collar Is a Fitness Tracker for Your Pet. ### Apple’s Fanciest Watch Is $100 Off. ### The Best Apple Watch Accessories. ### The Best Apple Watch Bands for Every Occasion. ### I Tested Every New Garmin Training Feature, From Food Tracking to Sports Scores. ### The Best Heart Rate Monitors Check Your Cardiac Health. ### What Is the Best Garmin Watch Right Now?",
+      "sourceName": "WIRED Wearables",
+      "sourceCategory": "industry_news",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.99732697,
-      "signalType": "clinical_regulatory"
+      "score": 0.99948066,
+      "signalType": "product_market"
     },
     {
-      "title": "2026年05月12日医疗器械不予注册批件送达信息",
-      "url": "https://www.nmpa.gov.cn/zwfw/sdxx/sdxxylqx/qxpjfb/20260512154029169.html",
+      "title": "Wearables | Latest News, Photos & Videos | WIRED",
+      "url": "https://wired.com/tag/wearables",
       "publishedAt": null,
-      "summary": "2024年6月1日起，行政相对人可登录国家药品监督管理局政务服务门户——我的办件中查看电子文书，按照相关提示自行打印。 序号. 受理号. 产品名称. 申请人. 1. CQZ2401739.",
-      "sourceName": "China NMPA Medical Device Approvals",
-      "sourceCategory": "regulatory",
+      "summary": "### Google Is Rebranding the Fitbit App to ‘Google Health’. ### The New Google Fitbit Has No Screen and Costs $100. Tractive: Which Smart Cat Collar to Buy for Health and GPS Tracking. ### The Best Smart Glasses to Augment Your Reality. ### These New Smart Glasses From Ex-OnePlus Engineers Have a Hidden Cost. ### The Best Fitbit Models for Every Lifestyle. ### The Best Apple Watch Is Back to Its Cheapest Price. ### This Beanie Is Designed to Read Your Thoughts. ### The Best Fitness Trackers Check Your Sleep, Heart Rate, or Even Your Blood. ### The Fi Mini Smart Collar Is a Fitness Tracker for Your Pet. ### Apple’s Fanciest Watch Is $100 Off. ### The Best Apple Watch Accessories. ### The Best Apple Watch Bands for Every Occasion. ### I Tested Every New Garmin Training Feature, From Food Tracking to Sports Scores. ### The Best Heart Rate Monitors Check Your Cardiac Health. ### What Is the Best Garmin Watch Right Now?",
+      "sourceName": "WIRED Wearables",
+      "sourceCategory": "industry_news",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.997285,
-      "signalType": "clinical_regulatory"
+      "score": 0.9994642,
+      "signalType": "product_market"
     },
     {
       "title": "[PDF] Wavelet-Based Masked Multiscale Reconstruction for PPG ...",
@@ -2008,6 +1982,71 @@
       "sourceLang": "en",
       "retrievalMethod": "tavily",
       "score": 0.5473921,
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Embedded Multi-Sensor Smartwatch for Computationally Intensive Biosignal Processing | IEEE Conference Publication | IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/document/10798302",
+      "publishedAt": null,
+      "summary": "Conferences >2024 IEEE Biomedical Circuits... Over the past decades, the rapid expansion of the wearable market has led to significant advances in integrated devices and technologies, particularly in smartwatches. Over the past decades, the rapid expansion of the wearable market has led to significant advances in integrated devices and technologies, particularly in smartwatches. These devices can unobtrusively acquire various physiological signals such as ECG, EDA, and PPG, resulting ideal for real-time monitoring of vital parameters in medical diagnostics, consumer health, and sports performance analysis. However, existing commercial solutions often do not focus on health-specific applications and face challenges in sensor integration, hardware/software optimization, and onboard signal processing. This paper introduces GAPWatch, a smartwatch-shaped platform with a PCB size of 49×47×1.2 mm based on GAP9 SoC for efficient onboard signal processing and designed to acquire ECG, PPG, inertial data, and 16-channels sEMG. The system is validated in three scenarios: high-rate sEMG acquisition and streaming, low-rate ECG, PPG, and IMU data streaming, and onboard heart rate (HR) estimation using a TCN. **Published in:** 2024 IEEE Biomedical Circuits and Systems Conference (BioCAS). **Date of Conference:** 24-26 October 2024. In particular, smartwatches have emerged as versatile platforms capable of acquiring a variety of physiological signals such as electrocardiogram (ECG), electrodermal activity (EDA), and photoplethysmogram (PPG). Their unobtrusive nature, coupled with the increasing advances of sensor technology and computational capabilities, makes smartwatches an ideal candidate for real-time monitoring of multiple vital parameters from a single, compact device, which can be utilized across various applications, including medical diagnostics, consumer health, and sports performance analysis [1]. Moreover, wearable devices allow the development of more advanced human-ma",
+      "sourceName": "IEEE EMBC Proceedings",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.6617704,
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Wrist-Worn Devices for Remote Monitoring of Cardiovascular Disease: A Survey | IEEE Journals & Magazine | IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/document/11142265",
+      "publishedAt": null,
+      "summary": "Title: Wrist-Worn Devices for Remote Monitoring of Cardiovascular Disease: A Survey | IEEE Journals & Magazine | IEEE Xplore\nThis survey reviews studies from January 2019 to December 2024 that utilized wrist-worn sensors for assessing cardiovascular health aspects, including hypertension, abnormal cardiac rhythms, sleep tracking, activity monitoring and post-stroke rehabilitation. Continuous monitoring of lifestyle habits, including sleep quality and activity levels, and demographic, physiological or clinical data, including heart rate (HR), blood pressure (BP), blood oxygen saturation (SpO2), body weight, heart rate variability (HRV), ECG, respiratory rate (RespR), blood glucose, cholesterol, albumin, triglycerides, haemoglobin, age, gender and prescribed medication usage can provide a risk assessment for CVD, helping to control, modify and treat risk factors for CVD development. A wearable patch and a chest-worn sensor are less convenient to wear; however, they can be worn under clothing and provide higher quality continuous ECG recordings or heart rate measurements ), ), ), ) compared to wrist- or hand-worn devices, particularly during exercise ), ) or hand activity. Fitness tracking devices such as the Fitbit Charge 6 are equipped with sensors for measuring ECG, photoplethysmogram (PPG), skin temperature, built-in global positioning system (GPS), accelerometer (ACC) and gyroscope (GYRO) data that are used for evaluating abnormal heart rhythms, irregular heart rates, resting heart rate, breathing rate, oxygen saturation, moderate or vigorous activity levels, sleep duration, sleep stages and sleep consistency ). reviewed research literature on the use of smartwatches for monitoring conditions such as stress, heart disease, device safety, movement disorders, sleep tracking, blood pressure, the COVID pandemic and studies validating the measurements made using a smartwatch, e.g. heart rate or accelerometer data, compared to standard clinical equipment ). 1. Compared ",
+      "sourceName": "IEEE EMBC Proceedings",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.5951402,
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Wearable ECG platform for continuous cardiac monitoring | IEEE Conference Publication | IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/document/7590779",
+      "publishedAt": null,
+      "summary": "Wearable ECG platform for continuous cardiac monitoring | IEEE Conference Publication | IEEE Xplore. # Wearable ECG platform for continuous cardiac monitoring. An ultra-low power ECG platform for continuous and minimally intrusive monitoring for systems with minimal processing capabilities, is presented in this paper. The platform is capable of detecting abnormalities in the ECG signal by extracting and analyzing features related to various cardiac trends. The platform is built to continuously operate on any of the 12 leads and the presented work includes a single lead implementation that works on lead I or II. In addition, the device stores raw ECG waveform locally and is designed to run for 10 days on a single charge. **Published in:** 2016 38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC). The electrocardiogram (ECG) is a composite signal representing the electrical activity of the heart and is one of the most useful diagnostic tools in emergency medicine.",
+      "sourceName": "IEEE EMBC Proceedings",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.5883458,
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/document/10385998",
+      "publishedAt": null,
+      "summary": "Title: End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore\nEnd-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore. Conferences >2023 IEEE International Confe... # End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous...Show More. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous monitoring of cardiovascular parameters, such as heart rate (HR) and heart rate variability (HRV). However, PPG signals collected in daily life are prone to artifacts and noise, posing challenges to HR and HRV extraction. The existing HR and HRV extraction methods cannot effectively handle noisy PPG signals and ensure accurate results. Additionally, current Python packages were primarily designed for analyzing \"clean\" PPG signals, limiting their performance in handling artifacts and noise and resulting in unreliable HR and HRV measurements. In this paper, we propose a robust end-to-end PPG processing pipeline to reliably extract HR and HRV from PPG signals collected in free-living settings. The pipeline comprises three machine learning-based PPG analysis methods: signal quality assessment, reconstruction of noisy signal, and systolic peak detection. We assess the proposed PPG pipeline using a dataset including PPG and Electrocardiogram (ECG) signals recorded from 46 individuals by smartwatches. **Published in:** 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM).",
+      "sourceName": "IEEE BIBM Proceedings",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.7016523,
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10385998",
+      "publishedAt": null,
+      "summary": "Title: End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore\nEnd-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore. Conferences >2023 IEEE International Confe... # End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous...Show More. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous monitoring of cardiovascular parameters, such as heart rate (HR) and heart rate variability (HRV). However, PPG signals collected in daily life are prone to artifacts and noise, posing challenges to HR and HRV extraction. The existing HR and HRV extraction methods cannot effectively handle noisy PPG signals and ensure accurate results. Additionally, current Python packages were primarily designed for analyzing \"clean\" PPG signals, limiting their performance in handling artifacts and noise and resulting in unreliable HR and HRV measurements. In this paper, we propose a robust end-to-end PPG processing pipeline to reliably extract HR and HRV from PPG signals collected in free-living settings. The pipeline comprises three machine learning-based PPG analysis methods: signal quality assessment, reconstruction of noisy signal, and systolic peak detection. We assess the proposed PPG pipeline using a dataset including PPG and Electrocardiogram (ECG) signals recorded from 46 individuals by smartwatches. **Published in:** 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM).",
+      "sourceName": "IEEE BIBM Proceedings",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.70067,
       "signalType": "algorithm_evidence"
     },
     {
@@ -2050,19 +2089,6 @@
       "signalType": "algorithm_evidence"
     },
     {
-      "title": "Everyday Furniture as Tangible Interfaces: Implicit Living Room ...",
-      "url": "https://dl.acm.org/doi/10.1145/3795926.3795964",
-      "publishedAt": null,
-      "summary": "Objective data comprised behavior videos, sensor readings, state recognition results, task completion accuracy, and participant demographics. ... Wearable",
-      "sourceName": "ISWC Proceedings",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.27361974,
-      "signalType": "algorithm_evidence"
-    },
-    {
       "title": "Resource-Efficient Continual Learning for Sensor-Based Human ...",
       "url": "https://dl.acm.org/doi/abs/10.1145/3530910",
       "publishedAt": null,
@@ -2073,19 +2099,6 @@
       "sourceLang": "en",
       "retrievalMethod": "tavily",
       "score": 0.13849701,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Table of Contents - IEEE Xplore",
-      "url": "https://ieeexplore.ieee.org/iel8/10927737/10927739/10928043.pdf",
-      "publishedAt": null,
-      "summary": "Wearable Temperature Detection System for Personalised Health Tracking ... Fabrication of Sensors less Automated Guided Vehicle for Small Warehouse Rack.",
-      "sourceName": "IEEE Sensors / Wearable Proceedings",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.99910307,
       "signalType": "algorithm_evidence"
     },
     {
@@ -2112,6 +2125,19 @@
       "sourceLang": "en",
       "retrievalMethod": "tavily",
       "score": 0.9967524,
+      "signalType": "algorithm_evidence"
+    },
+    {
+      "title": "Enhancing Stress Detection Accuracy: A CNN-LSTM Model for ECG ...",
+      "url": "https://ieeexplore.ieee.org/document/11009625/",
+      "publishedAt": null,
+      "summary": "Abstract: Stress detection using physiological signals is crucial for modern healthcare and well-being systems, particularly given the increasing prevalence",
+      "sourceName": "IEEE Sensors / Wearable Proceedings",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.9912209,
       "signalType": "algorithm_evidence"
     }
   ],
@@ -2424,19 +2450,6 @@
         "signalType": "product_market"
       },
       {
-        "title": "Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA Notice - Digital Health Wire",
-        "url": "https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/",
-        "publishedAt": null,
-        "summary": "# Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA Notice - Digital Health Wire. [Skip to content](https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/#primary). [![Image 3: Digital Health Wire](https://insightlinks.storage.googleapis.com/digitalhealthwire/2021/06/digitalhealthwire-bold-wire.png)](https://digitalhealthwire.com/). Please check your email for confirmation. Something went wrong, please try again. *   [Top Stories](https://digitalhealthwire.com/top-stories/). *   [Newsletters](https://digitalhealthwire.com/newsletters/). *   [Shows](https://digitalhealthwire.com/show/). *   [Sponsor](https://docs.google.com/forms/d/e/1FAIpQLSeKcBc80XpxZwx--MhCHPqF-hAoMkR9m8pZD9iMxBssls5fDg/viewform?usp=sf_link). Please check your email for confirmation. Something went wrong, please try again. [![Image 4](https://insightlinks.storage.googleapis.com/digitalhealthwire/2025/03/Navina_900x90.jpg)](https://www.navina.ai/?utm_source=digital-health-wire&utm_medium=website&utm_campaign=banner-ad). ###### Get the top digital health stories right in your inbox. Please check your email for confirmation. [![Image 5](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/Photon.png) Digital Health Wire #459 May 11, 2026 ## Photon, Perplexity, and Prior Auths](https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/)[![Image 6](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/JN-2.png) Digital Health Wire #458 May 7, 2026 ## Management Consultants, Doximity Ask, and Docs Make Great Founders](https://digitalhealthwire.com/newsletter/management-consultants-doximity-ask-and-docs-make-great-founders/)[![Image 7](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/Science.png) Digital Health Wire #457 May 4, 2026 ## OpenAI vs Physicians, Teladoc, and DeepMind Co-Clinician](https://digitalhealthwire.com/newsletter/openai-vs-physicians-teladoc-and-deep",
-        "sourceName": "Digital Health Wire",
-        "sourceCategory": "industry_news",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.9930962,
-        "signalType": "platform_api"
-      },
-      {
         "title": "Photon, Perplexity, and Prior Auths - Digital Health Wire",
         "url": "https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/",
         "publishedAt": null,
@@ -2448,6 +2461,19 @@
         "retrievalMethod": "tavily",
         "score": 0.9912209,
         "signalType": "business_structure"
+      },
+      {
+        "title": "Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA ...",
+        "url": "https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/",
+        "publishedAt": null,
+        "summary": "# Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA Notice - Digital Health Wire. [Skip to content](https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/#primary). [![Image 3: Digital Health Wire](https://insightlinks.storage.googleapis.com/digitalhealthwire/2021/06/digitalhealthwire-bold-wire.png)](https://digitalhealthwire.com/). Please check your email for confirmation. Something went wrong, please try again. *   [Top Stories](https://digitalhealthwire.com/top-stories/). *   [Newsletters](https://digitalhealthwire.com/newsletters/). *   [Shows](https://digitalhealthwire.com/show/). *   [Sponsor](https://docs.google.com/forms/d/e/1FAIpQLSeKcBc80XpxZwx--MhCHPqF-hAoMkR9m8pZD9iMxBssls5fDg/viewform?usp=sf_link). Please check your email for confirmation. Something went wrong, please try again. [![Image 4](https://insightlinks.storage.googleapis.com/digitalhealthwire/2025/03/Navina_900x90.jpg)](https://www.navina.ai/?utm_source=digital-health-wire&utm_medium=website&utm_campaign=banner-ad). ###### Get the top digital health stories right in your inbox. Please check your email for confirmation. [![Image 5](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/Photon.png) Digital Health Wire #459 May 11, 2026 ## Photon, Perplexity, and Prior Auths](https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/)[![Image 6](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/JN-2.png) Digital Health Wire #458 May 7, 2026 ## Management Consultants, Doximity Ask, and Docs Make Great Founders](https://digitalhealthwire.com/newsletter/management-consultants-doximity-ask-and-docs-make-great-founders/)[![Image 7](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/Science.png) Digital Health Wire #457 May 4, 2026 ## OpenAI vs Physicians, Teladoc, and DeepMind Co-Clinician](https://digitalhealthwire.com/newsletter/openai-vs-physicians-teladoc-and-deep",
+        "sourceName": "Digital Health Wire",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.979354,
+        "signalType": "platform_api"
       },
       {
         "title": "Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership | DC Rainmaker",
@@ -2489,7 +2515,7 @@
         "signalType": "product_market"
       },
       {
-        "title": "The new Fitbit Air offers an intriguing alternative to the Pixel Watch, but is Google's Whoop competitor compelling enough for you? | Android Central",
+        "title": "The new Fitbit Air offers an intriguing alternative to the Pixel Watch ...",
         "url": "https://www.androidcentral.com/wearables/fitbit/poll-would-you-ditch-your-wearable-for-the-fitbit-air",
         "publishedAt": null,
         "summary": "Close-up of the Fitbit Air fitness tracker. Google Fitbit Air product with woman wearing tracker on wrist. Close-up showing the back of the Fitbit Charge 6. Google Health will leave behind some classic Fitbit app features: Here's all of them. # The new Fitbit Air offers an intriguing alternative to the Pixel Watch, but is Google's Whoop competitor compelling enough for you? Would you ditch your current wearable for the Fitbit Air? Google surprised everyone this past week by introducing its latest fitness wearable: the Fitbit Air. It's a bit different from past Fitbit devices, as it has no display for input and offers a lightweight, Whoop-like design that can be interchanged with various bands. What are your thoughts on Fitbit's latest wearable, and will you be picking one up? According to Google, the Fitbit Air lasts up to a week on a full charge, which is more than what you'll get from most Wear OS smartwatches.",
@@ -2498,8 +2524,47 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.60694176,
+        "score": 0.63452125,
         "signalType": "platform_api"
+      },
+      {
+        "title": "Wearables | Latest News, Photos & Videos | WIRED",
+        "url": "http://www.wired.com/tag/wearables",
+        "publishedAt": null,
+        "summary": "### Google Is Rebranding the Fitbit App to ‘Google Health’. ### The New Google Fitbit Has No Screen and Costs $100. Tractive: Which Smart Cat Collar to Buy for Health and GPS Tracking. ### The Best Smart Glasses to Augment Your Reality. ### These New Smart Glasses From Ex-OnePlus Engineers Have a Hidden Cost. ### The Best Fitbit Models for Every Lifestyle. ### The Best Apple Watch Is Back to Its Cheapest Price. ### This Beanie Is Designed to Read Your Thoughts. ### The Best Fitness Trackers Check Your Sleep, Heart Rate, or Even Your Blood. ### The Fi Mini Smart Collar Is a Fitness Tracker for Your Pet. ### Apple’s Fanciest Watch Is $100 Off. ### The Best Apple Watch Accessories. ### The Best Apple Watch Bands for Every Occasion. ### I Tested Every New Garmin Training Feature, From Food Tracking to Sports Scores. ### The Best Heart Rate Monitors Check Your Cardiac Health. ### What Is the Best Garmin Watch Right Now?",
+        "sourceName": "WIRED Wearables",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.99950445,
+        "signalType": "product_market"
+      },
+      {
+        "title": "Wearables | Latest News, Photos & Videos | WIRED",
+        "url": "http://wired.com/tag/wearables",
+        "publishedAt": null,
+        "summary": "### Google Is Rebranding the Fitbit App to ‘Google Health’. ### The New Google Fitbit Has No Screen and Costs $100. Tractive: Which Smart Cat Collar to Buy for Health and GPS Tracking. ### The Best Smart Glasses to Augment Your Reality. ### These New Smart Glasses From Ex-OnePlus Engineers Have a Hidden Cost. ### The Best Fitbit Models for Every Lifestyle. ### The Best Apple Watch Is Back to Its Cheapest Price. ### This Beanie Is Designed to Read Your Thoughts. ### The Best Fitness Trackers Check Your Sleep, Heart Rate, or Even Your Blood. ### The Fi Mini Smart Collar Is a Fitness Tracker for Your Pet. ### Apple’s Fanciest Watch Is $100 Off. ### The Best Apple Watch Accessories. ### The Best Apple Watch Bands for Every Occasion. ### I Tested Every New Garmin Training Feature, From Food Tracking to Sports Scores. ### The Best Heart Rate Monitors Check Your Cardiac Health. ### What Is the Best Garmin Watch Right Now?",
+        "sourceName": "WIRED Wearables",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.99948066,
+        "signalType": "product_market"
+      },
+      {
+        "title": "Wearables | Latest News, Photos & Videos | WIRED",
+        "url": "https://wired.com/tag/wearables",
+        "publishedAt": null,
+        "summary": "### Google Is Rebranding the Fitbit App to ‘Google Health’. ### The New Google Fitbit Has No Screen and Costs $100. Tractive: Which Smart Cat Collar to Buy for Health and GPS Tracking. ### The Best Smart Glasses to Augment Your Reality. ### These New Smart Glasses From Ex-OnePlus Engineers Have a Hidden Cost. ### The Best Fitbit Models for Every Lifestyle. ### The Best Apple Watch Is Back to Its Cheapest Price. ### This Beanie Is Designed to Read Your Thoughts. ### The Best Fitness Trackers Check Your Sleep, Heart Rate, or Even Your Blood. ### The Fi Mini Smart Collar Is a Fitness Tracker for Your Pet. ### Apple’s Fanciest Watch Is $100 Off. ### The Best Apple Watch Accessories. ### The Best Apple Watch Bands for Every Occasion. ### I Tested Every New Garmin Training Feature, From Food Tracking to Sports Scores. ### The Best Heart Rate Monitors Check Your Cardiac Health. ### What Is the Best Garmin Watch Right Now?",
+        "sourceName": "WIRED Wearables",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.9994642,
+        "signalType": "product_market"
       }
     ],
     "academic": [
@@ -3165,6 +3230,71 @@
         "signalType": "algorithm_evidence"
       },
       {
+        "title": "Embedded Multi-Sensor Smartwatch for Computationally Intensive Biosignal Processing | IEEE Conference Publication | IEEE Xplore",
+        "url": "https://ieeexplore.ieee.org/document/10798302",
+        "publishedAt": null,
+        "summary": "Conferences >2024 IEEE Biomedical Circuits... Over the past decades, the rapid expansion of the wearable market has led to significant advances in integrated devices and technologies, particularly in smartwatches. Over the past decades, the rapid expansion of the wearable market has led to significant advances in integrated devices and technologies, particularly in smartwatches. These devices can unobtrusively acquire various physiological signals such as ECG, EDA, and PPG, resulting ideal for real-time monitoring of vital parameters in medical diagnostics, consumer health, and sports performance analysis. However, existing commercial solutions often do not focus on health-specific applications and face challenges in sensor integration, hardware/software optimization, and onboard signal processing. This paper introduces GAPWatch, a smartwatch-shaped platform with a PCB size of 49×47×1.2 mm based on GAP9 SoC for efficient onboard signal processing and designed to acquire ECG, PPG, inertial data, and 16-channels sEMG. The system is validated in three scenarios: high-rate sEMG acquisition and streaming, low-rate ECG, PPG, and IMU data streaming, and onboard heart rate (HR) estimation using a TCN. **Published in:** 2024 IEEE Biomedical Circuits and Systems Conference (BioCAS). **Date of Conference:** 24-26 October 2024. In particular, smartwatches have emerged as versatile platforms capable of acquiring a variety of physiological signals such as electrocardiogram (ECG), electrodermal activity (EDA), and photoplethysmogram (PPG). Their unobtrusive nature, coupled with the increasing advances of sensor technology and computational capabilities, makes smartwatches an ideal candidate for real-time monitoring of multiple vital parameters from a single, compact device, which can be utilized across various applications, including medical diagnostics, consumer health, and sports performance analysis [1]. Moreover, wearable devices allow the development of more advanced human-ma",
+        "sourceName": "IEEE EMBC Proceedings",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.6617704,
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Wrist-Worn Devices for Remote Monitoring of Cardiovascular Disease: A Survey | IEEE Journals & Magazine | IEEE Xplore",
+        "url": "https://ieeexplore.ieee.org/document/11142265",
+        "publishedAt": null,
+        "summary": "Title: Wrist-Worn Devices for Remote Monitoring of Cardiovascular Disease: A Survey | IEEE Journals & Magazine | IEEE Xplore\nThis survey reviews studies from January 2019 to December 2024 that utilized wrist-worn sensors for assessing cardiovascular health aspects, including hypertension, abnormal cardiac rhythms, sleep tracking, activity monitoring and post-stroke rehabilitation. Continuous monitoring of lifestyle habits, including sleep quality and activity levels, and demographic, physiological or clinical data, including heart rate (HR), blood pressure (BP), blood oxygen saturation (SpO2), body weight, heart rate variability (HRV), ECG, respiratory rate (RespR), blood glucose, cholesterol, albumin, triglycerides, haemoglobin, age, gender and prescribed medication usage can provide a risk assessment for CVD, helping to control, modify and treat risk factors for CVD development. A wearable patch and a chest-worn sensor are less convenient to wear; however, they can be worn under clothing and provide higher quality continuous ECG recordings or heart rate measurements ), ), ), ) compared to wrist- or hand-worn devices, particularly during exercise ), ) or hand activity. Fitness tracking devices such as the Fitbit Charge 6 are equipped with sensors for measuring ECG, photoplethysmogram (PPG), skin temperature, built-in global positioning system (GPS), accelerometer (ACC) and gyroscope (GYRO) data that are used for evaluating abnormal heart rhythms, irregular heart rates, resting heart rate, breathing rate, oxygen saturation, moderate or vigorous activity levels, sleep duration, sleep stages and sleep consistency ). reviewed research literature on the use of smartwatches for monitoring conditions such as stress, heart disease, device safety, movement disorders, sleep tracking, blood pressure, the COVID pandemic and studies validating the measurements made using a smartwatch, e.g. heart rate or accelerometer data, compared to standard clinical equipment ). 1. Compared ",
+        "sourceName": "IEEE EMBC Proceedings",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.5951402,
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Wearable ECG platform for continuous cardiac monitoring | IEEE Conference Publication | IEEE Xplore",
+        "url": "https://ieeexplore.ieee.org/document/7590779",
+        "publishedAt": null,
+        "summary": "Wearable ECG platform for continuous cardiac monitoring | IEEE Conference Publication | IEEE Xplore. # Wearable ECG platform for continuous cardiac monitoring. An ultra-low power ECG platform for continuous and minimally intrusive monitoring for systems with minimal processing capabilities, is presented in this paper. The platform is capable of detecting abnormalities in the ECG signal by extracting and analyzing features related to various cardiac trends. The platform is built to continuously operate on any of the 12 leads and the presented work includes a single lead implementation that works on lead I or II. In addition, the device stores raw ECG waveform locally and is designed to run for 10 days on a single charge. **Published in:** 2016 38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC). The electrocardiogram (ECG) is a composite signal representing the electrical activity of the heart and is one of the most useful diagnostic tools in emergency medicine.",
+        "sourceName": "IEEE EMBC Proceedings",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.5883458,
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore",
+        "url": "https://ieeexplore.ieee.org/document/10385998",
+        "publishedAt": null,
+        "summary": "Title: End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore\nEnd-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore. Conferences >2023 IEEE International Confe... # End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous...Show More. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous monitoring of cardiovascular parameters, such as heart rate (HR) and heart rate variability (HRV). However, PPG signals collected in daily life are prone to artifacts and noise, posing challenges to HR and HRV extraction. The existing HR and HRV extraction methods cannot effectively handle noisy PPG signals and ensure accurate results. Additionally, current Python packages were primarily designed for analyzing \"clean\" PPG signals, limiting their performance in handling artifacts and noise and resulting in unreliable HR and HRV measurements. In this paper, we propose a robust end-to-end PPG processing pipeline to reliably extract HR and HRV from PPG signals collected in free-living settings. The pipeline comprises three machine learning-based PPG analysis methods: signal quality assessment, reconstruction of noisy signal, and systolic peak detection. We assess the proposed PPG pipeline using a dataset including PPG and Electrocardiogram (ECG) signals recorded from 46 individuals by smartwatches. **Published in:** 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM).",
+        "sourceName": "IEEE BIBM Proceedings",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.7016523,
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore",
+        "url": "https://ieeexplore.ieee.org/abstract/document/10385998",
+        "publishedAt": null,
+        "summary": "Title: End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore\nEnd-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore. Conferences >2023 IEEE International Confe... # End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous...Show More. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous monitoring of cardiovascular parameters, such as heart rate (HR) and heart rate variability (HRV). However, PPG signals collected in daily life are prone to artifacts and noise, posing challenges to HR and HRV extraction. The existing HR and HRV extraction methods cannot effectively handle noisy PPG signals and ensure accurate results. Additionally, current Python packages were primarily designed for analyzing \"clean\" PPG signals, limiting their performance in handling artifacts and noise and resulting in unreliable HR and HRV measurements. In this paper, we propose a robust end-to-end PPG processing pipeline to reliably extract HR and HRV from PPG signals collected in free-living settings. The pipeline comprises three machine learning-based PPG analysis methods: signal quality assessment, reconstruction of noisy signal, and systolic peak detection. We assess the proposed PPG pipeline using a dataset including PPG and Electrocardiogram (ECG) signals recorded from 46 individuals by smartwatches. **Published in:** 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM).",
+        "sourceName": "IEEE BIBM Proceedings",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.70067,
+        "signalType": "algorithm_evidence"
+      },
+      {
         "title": "Intelligent Wearable Systems: Opportunities and Challenges in ...",
         "url": "https://dl.acm.org/doi/abs/10.1145/3648469",
         "publishedAt": null,
@@ -3204,19 +3334,6 @@
         "signalType": "algorithm_evidence"
       },
       {
-        "title": "Everyday Furniture as Tangible Interfaces: Implicit Living Room ...",
-        "url": "https://dl.acm.org/doi/10.1145/3795926.3795964",
-        "publishedAt": null,
-        "summary": "Objective data comprised behavior videos, sensor readings, state recognition results, task completion accuracy, and participant demographics. ... Wearable",
-        "sourceName": "ISWC Proceedings",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.27361974,
-        "signalType": "algorithm_evidence"
-      },
-      {
         "title": "Resource-Efficient Continual Learning for Sensor-Based Human ...",
         "url": "https://dl.acm.org/doi/abs/10.1145/3530910",
         "publishedAt": null,
@@ -3227,19 +3344,6 @@
         "sourceLang": "en",
         "retrievalMethod": "tavily",
         "score": 0.13849701,
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Table of Contents - IEEE Xplore",
-        "url": "https://ieeexplore.ieee.org/iel8/10927737/10927739/10928043.pdf",
-        "publishedAt": null,
-        "summary": "Wearable Temperature Detection System for Personalised Health Tracking ... Fabrication of Sensors less Automated Guided Vehicle for Small Warehouse Rack.",
-        "sourceName": "IEEE Sensors / Wearable Proceedings",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.99910307,
         "signalType": "algorithm_evidence"
       },
       {
@@ -3266,6 +3370,19 @@
         "sourceLang": "en",
         "retrievalMethod": "tavily",
         "score": 0.9967524,
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Enhancing Stress Detection Accuracy: A CNN-LSTM Model for ECG ...",
+        "url": "https://ieeexplore.ieee.org/document/11009625/",
+        "publishedAt": null,
+        "summary": "Abstract: Stress detection using physiological signals is crucial for modern healthcare and well-being systems, particularly given the increasing prevalence",
+        "sourceName": "IEEE Sensors / Wearable Proceedings",
+        "sourceCategory": "academic",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.9912209,
         "signalType": "algorithm_evidence"
       }
     ],
@@ -3700,45 +3817,6 @@
         "sourceLang": "en",
         "retrievalMethod": "api",
         "signalType": "clinical_regulatory"
-      },
-      {
-        "title": "2026年05月15日医疗器械批准证明文件（电子证照纠错）送达信息",
-        "url": "https://www.nmpa.gov.cn/zwfw/sdxx/sdxxylqx/qxpjfb/20260515153002126.html",
-        "publishedAt": null,
-        "summary": "2022年11月1日起，行政相对人可登录国家药品监督管理局政务服务门户的法人空间查看电子证照，按照相关提示自行打印。",
-        "sourceName": "China NMPA Medical Device Approvals",
-        "sourceCategory": "regulatory",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.997981,
-        "signalType": "clinical_regulatory"
-      },
-      {
-        "title": "2026年05月14日医疗器械批准证明文件（电子证照纠错）送达信息",
-        "url": "https://www.nmpa.gov.cn/zwfw/sdxx/sdxxylqx/qxpjfb/20260514161722157.html",
-        "publishedAt": null,
-        "summary": "2022年11月1日起，行政相对人可登录国家药品监督管理局政务服务门户的法人空间查看电子证照，按照相关提示自行打印。",
-        "sourceName": "China NMPA Medical Device Approvals",
-        "sourceCategory": "regulatory",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.99732697,
-        "signalType": "clinical_regulatory"
-      },
-      {
-        "title": "2026年05月12日医疗器械不予注册批件送达信息",
-        "url": "https://www.nmpa.gov.cn/zwfw/sdxx/sdxxylqx/qxpjfb/20260512154029169.html",
-        "publishedAt": null,
-        "summary": "2024年6月1日起，行政相对人可登录国家药品监督管理局政务服务门户——我的办件中查看电子文书，按照相关提示自行打印。 序号. 受理号. 产品名称. 申请人. 1. CQZ2401739.",
-        "sourceName": "China NMPA Medical Device Approvals",
-        "sourceCategory": "regulatory",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.997285,
-        "signalType": "clinical_regulatory"
       }
     ],
     "vendor_research": [
@@ -3755,7 +3833,7 @@
         "signalType": "algorithm_evidence"
       },
       {
-        "title": "Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge | Samsung Research",
+        "title": "Samsung R&D Institute Poland Awarded 1st Place at Interspeech ...",
         "url": "https://research.samsung.com/news/Samsung-R-D-Institute-Poland-awarded-1st-place-at-INTERSPEECH-2026-Challenge",
         "publishedAt": null,
         "summary": "- Samsung R&D Institute United Kingdom. - Samsung R&D Institute Poland. - Samsung R&D Institute Ukraine. - Samsung R&D Institute Russia. - Samsung R&D Institute Israel. - Samsung R&D Institute Jordan. - Samsung R&D Institute India-Bangalore. - Samsung R&D Institute Philippines. - Samsung R&D Institute Indonesia. - Samsung R&D Institute Bangladesh. - Samsung R&D Institute China-Beijing. # Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge. The Audio Intelligence Group at Samsung R&D Institute Poland (SRPOL) achieved a major breakthrough in the international NeckVibe Challenge, securing first place in the detection of Phonotraumatic Vocal Hyperfunction (PVH). The challenge involved nine global teams from institutions including Seoul National University, Gwangju Institute of Science and Technology, and Harvard University, representing Poland, South Korea, India, and the USA. This year’s first-place at the NeckVibe challenge is the third consecutive win for the SRPOL Audio Intelligence Group (ICASSP 2024, INTERSPEECH 2025) using lightweight AI and signal processing to solve complex health problems.",
@@ -3764,7 +3842,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.21423115,
+        "score": 0.19456702,
         "signalType": "algorithm_evidence"
       }
     ],
@@ -3781,32 +3859,6 @@
         "retrievalMethod": "tavily",
         "score": 0.49804688,
         "signalType": "product_market"
-      },
-      {
-        "title": "HealthKit updates | Apple Developer Documentation",
-        "url": "https://developer.apple.com/documentation/Updates/HealthKit",
-        "publishedAt": null,
-        "summary": "Title: HealthKit updates | Apple Developer Documentation\n1 of 90 symbols inside <root>. 1 of 119 symbols inside -1272746079. 2 of 119 symbols inside -1272746079 visionOS. 4 of 119 symbols inside -1272746079 Creating your first visionOS app. 8 of 119 symbols inside -1272746079. 9 of 119 symbols inside -1272746079 SwiftData. 10 of 119 symbols inside -1272746079 Building a document-based app using SwiftData. 11 of 119 symbols inside -1272746079. 22 of 119 symbols inside -1272746079 Animating data updates in widgets and Live Activities. 23 of 119 symbols inside -1272746079 Linking to specific app scenes from your widget or Live Activity. 29 of 119 symbols inside -1272746079 Displaying live data with Live Activities. 30 of 119 symbols inside -1272746079. 99 of 119 symbols inside -1272746079. 102 of 119 symbols inside -1272746079 Group Activities. 102 of 119 symbols inside -1272746079 Group Activities. 103 of 119 symbols inside -1272746079. 106 of 119 symbols inside -1272746079. 107 of 119 symbols inside -1272746079 HealthKit updates. 108 of 119 symbols inside -1272746079. 112 of 119 symbols inside -1272746079. 115 of 119 symbols inside -1272746079 Virtualization. 116 of 119 symbols inside -1272746079. 117 of 119 symbols inside -1272746079 ScreenCaptureKit updates. 118 of 119 symbols inside -1272746079. 119 of 119 symbols inside -1272746079 Symbols. 7 of 90 symbols inside <root>. 8 of 90 symbols inside <root>Accelerate updates. 9 of 90 symbols inside <root>Accessibility updates. 10 of 90 symbols inside <root>ActivityKit updates. 11 of 90 symbols inside <root>AdAttributionKit Updates. 12 of 90 symbols inside <root>App Clips updates. 13 of 90 symbols inside <root>App Intents updates. 14 of 90 symbols inside <root>AppKit updates. 15 of 90 symbols inside <root>Apple Intelligence updates. 16 of 90 symbols inside <root>AppleMapsServerAPI Updates. 17 of 90 symbols inside <root>Apple Pencil updates. 18 of 90 symbols inside <root>ARKit updates. 19 of 90 symbols inside <root>Audio ",
-        "sourceName": "Apple HealthKit Updates",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.76300776,
-        "signalType": "platform_api"
-      },
-      {
-        "title": "HealthKit updates | Apple Developer Documentation",
-        "url": "https://developer.apple.com/documentation/Updates/HealthKit?changes=_6_3",
-        "publishedAt": null,
-        "summary": "Title: HealthKit updates | Apple Developer Documentation\n99 of 119 symbols inside -1272746079. 31 of 119 symbols inside -1272746079 SwiftUI updates. 30 of 119 symbols inside -1272746079. 29 of 119 symbols inside -1272746079 Displaying live data with Live Activities. 23 of 119 symbols inside -1272746079 Linking to specific app scenes from your widget or Live Activity. 22 of 119 symbols inside -1272746079 Animating data updates in widgets and Live Activities. 11 of 119 symbols inside -1272746079. 10 of 119 symbols inside -1272746079 Building a document-based app using SwiftData. 9 of 119 symbols inside -1272746079 SwiftData. 8 of 119 symbols inside -1272746079. 4 of 119 symbols inside -1272746079 Creating your first visionOS app. 2 of 119 symbols inside -1272746079 visionOS. 1 of 119 symbols inside -1272746079. 1 of 90 symbols inside <root>. 102 of 119 symbols inside -1272746079 Group Activities. 28 of 90 symbols inside <root>Core Location updates. 27 of 90 symbols inside <root>ContactsUI updates. 26 of 90 symbols inside <root>CallKit updates. 25 of 90 symbols inside <root>BrowserEngineKit updates. 24 of 90 symbols inside <root>Bundle Resources updates. 23 of 90 symbols inside <root>Background Tasks updates. 22 of 90 symbols inside <root>AVFoundation updates. 21 of 90 symbols inside <root>AVFAudio updates. 20 of 90 symbols inside <root>AuthenticationServices updates. 19 of 90 symbols inside <root>Audio Toolbox updates. 18 of 90 symbols inside <root>ARKit updates. 17 of 90 symbols inside <root>Apple Pencil updates. 16 of 90 symbols inside <root>AppleMapsServerAPI Updates. 15 of 90 symbols inside <root>Apple Intelligence updates. 14 of 90 symbols inside <root>AppKit updates. 13 of 90 symbols inside <root>App Intents updates. 12 of 90 symbols inside <root>App Clips updates. 11 of 90 symbols inside <root>AdAttributionKit Updates. 10 of 90 symbols inside <root>ActivityKit updates. 9 of 90 symbols inside <root>Accessibility updates. 8 of 90 symbols inside <root>Accelerate u",
-        "sourceName": "Apple HealthKit Updates",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.7420672,
-        "signalType": "platform_api"
       },
       {
         "title": "watchOS 9.4 Release Notes | Apple Developer Documentation",
@@ -3887,7 +3939,7 @@
         "signalType": "platform_api"
       },
       {
-        "title": "Health Connect  |  Jetpack  |  Android Developers",
+        "title": "Health Connect | Jetpack - Android Developers",
         "url": "https://developer.android.com/jetpack/androidx/releases/health-connect",
         "publishedAt": null,
         "summary": "# Health Connect. | April 22, 2026 | 1.1.0 | - | - | 1.2.0-alpha04 |. To help us strengthen user privacy and security, developers integrating with Health Connect **must declare read and/or write access for the data types** that their apps use. For more information, visit Provide information for the Health apps declaration form and Health Connect by Android Permissions. To add a dependency on health, you must add the Google Maven repository to your. Add the dependencies for the artifacts you need in the `build.gradle` file for. ## Health Connect Testing Version 1.0. `androidx.health.connect:connect-testing:1.0.0-alpha03` is released. `androidx.health.connect:connect-testing:1.0.0-alpha03`. You can use the library to create local unit tests, which typically verify the behavior of the classes in your app that interact with the Health Connect client. `androidx.health.connect:connect-client:1.1.0`, `androidx.health.connect:connect-client-external-protobuf:1.1.0`, and `androidx.health.connect:connect-client-proto:1.1.0` have been promoted to its first stable release with no changes since its previous RC release. `androidx.health.connect:connect-client:1.1.0-rc03`, `androidx.health.connect:connect-client-external-protobuf:1.1.0-rc03`, and `androidx.health.connect:connect-client-proto:1.1.0-rc03` are released. `androidx.health.connect:connect-client:1.1.0-rc03`. `androidx.health.connect:connect-client-external-protobuf:1.1.0-rc03`. `androidx.health.connect:connect-client-proto:1.1.0-rc03`. `androidx.health.connect:connect-client:1.1.0-beta02`, `androidx.health.connect:connect-client-external-protobuf:1.1.0-beta02`, and `androidx.health.connect:connect-client-proto:1.1.0-beta02` are released. `androidx.health.connect:connect-client:1.1.0-beta02`. `androidx.health.connect:connect-client-proto:1.1.0-beta02`.",
@@ -3896,7 +3948,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9999621,
+        "score": 0.8991304,
         "signalType": "platform_api"
       },
       {
@@ -4130,11 +4182,11 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.11555113,
+        "score": 0.5389832,
         "signalType": "clinical_regulatory"
       },
       {
-        "title": "Meet the members of the 2026 Abbott HeartMates Draft | Abbott Newsroom",
+        "title": "Meet the members of the 2026 Abbott HeartMates Draft",
         "url": "https://www.abbott.com/en-us/corpnewsroom/healthy-heart/meet-the-members-of-the-2026-abbott-heartmates-draft",
         "publishedAt": null,
         "summary": "This year’s class is made up of 11 individuals who exemplify what it means to be a member of the Abbott HeartMates community through their active participation in the program and their commitment to inspiring others by sharing their stories with the world. At 31 years old and with little knowledge of her family’s heart history, Sonya was diagnosed with a bicuspid aortic valve, a congenital heart condition in which the aortic valve has two flaps instead of three. An echocardiogram revealed that her valve disease had progressed from moderate to severe, and she had developed an aortic aneurysm, a bulge that occurs in the wall of the aorta and can be life-threatening if it ruptures. Within weeks — and shortly after graduating with her masters in social work —  Sonya had open-heart surgery in 2019 to replace her valve and repair her aneurysm. “Recovery from surgery has been a journey that I'm grateful to have experienced,” she says.",
@@ -4143,7 +4195,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.023691783,
+        "score": 0.012624949,
         "signalType": "product_market"
       },
       {
@@ -4156,7 +4208,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9996724,
+        "score": 0.575517,
         "signalType": "product_market"
       },
       {
@@ -4169,11 +4221,11 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.99293363,
+        "score": 0.17317663,
         "signalType": "product_market"
       },
       {
-        "title": "Nachricht",
+        "title": "Nachricht - RingConn",
         "url": "https://de.ringconn.com/blogs/news",
         "publishedAt": null,
         "summary": "Zur Account-Seite  Suche öffnen. Suche öffnen  Zur Account-Seite. RingConn präsentiert auf der IFA 2025 eine Demo zu Blutdruckinformationen. Diese Woche haben wir auf der IFA Berlin 2025 etwas vorgestellt, auf das wir lange hingearbeitet haben: eine Demo unserer kommenden Funktion „Blood Pressure Insights“ . Für uns ist es mehr als nur ... The Smart Ring for Women: A New Era in Health & Wellness. Der smarte Ring für Frauen: Eine neue Ära in Gesundheit und Wohlbefinden. Major Upgrade: RingConn’s Period Forecasts Just Got Smarter. Wichtiges Upgrade: RingConns Periodenvorhersagen sind jetzt intelligenter. Im April haben wir ein umfassendes Upgrade unserer Funktion „Periodenprognosen“ eingeführt – entwickelt, um Ihnen noch genauere, wissenschaftlich fundierte und personalisierte Einblicke während ... Track Temperature Shifts Across Your Cycle with a Smart Ring. Verfolge Temperaturschwankungen während deines Zyklus mit einem intelligenten Ring. TL;DR: Die Messung Ihrer Körpertemperatur mit einem Smartring hilft Ihnen, subtile Signale Ihres Menstruationszyklus, Ihres Energielevels, Ihrer Stimmung und Ihres Schlafs zu entschlüsseln.",
@@ -4182,11 +4234,11 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.99990165,
+        "score": 0.62687886,
         "signalType": "business_structure"
       },
       {
-        "title": "RingConn Gen 3: What’s New in the Next-Generation Smart Ring?",
+        "title": "RingConn Gen 3: What's New in the Next-Generation Smart Ring?",
         "url": "https://ringconn.com/blogs/news/ringconn-gen-3-whats-new",
         "publishedAt": null,
         "summary": "# RingConn Gen 3: What’s New in the Next-Generation Smart Ring? But not every new generation actually changes the experience in a meaningful way. That is what makes RingConn Gen 3 worth paying attention to. Instead of offering only a lighter refresh or a few minor spec upgrades, RingConn Gen 3 pushes the product line toward something more ambitious: a smarter, more proactive, more complete health ring that still keeps the category’s biggest advantages—comfort, low friction, and true everyday wearability. So what is actually new in RingConn Gen 3? RingConn Gen 3 is the newest flagship in the RingConn lineup, built for users who want more than passive data collection. It is about making the product more useful between check-ins with the app, more helpful over time, and easier to live with every day. Smart vibration makes Gen 3 feel more proactive. One of the most interesting changes in Gen 3 is the addition of Smart Vibration Alerts.",
@@ -4195,11 +4247,11 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9967524,
+        "score": 0.46293488,
         "signalType": "product_market"
       },
       {
-        "title": "From reactive nutrition coaching to real-time metabolic care | Levels | Levels",
+        "title": "From reactive nutrition coaching to real-time metabolic care | Levels",
         "url": "https://www.levels.com/blog/reactive-coaching-real-time-metabolic-care",
         "publishedAt": null,
         "summary": "This story shows how real-time data, unified timelines, and clinician dashboards enable intervention during the moments that actually matter. # From reactive nutrition coaching to real-time metabolic care. Real-time continuous glucose monitoring, unified patient timelines, and practitioner dashboards shift the care model from reactive analysis to intervention during the moments that drive outcomes. Real-time metabolic care changes the equation: when continuous glucose monitoring, food logs, and lifestyle data flow through one patient app and one practitioner dashboard, you can guide behavior during the meal, the workout, and the sleep window—not weeks later in a debrief. ### Learn more about Levels Pro. Extend care beyond the exam room with Levels Pro, the metabolic health operating system that unifies CGM, labs, food logs, and lifestyle data into a single, clinician‑ready view. Levels Pro gives your team the infrastructure to make that shift: one app for patients to learn in real time, one dashboard for clinicians to guide in real time, and a metabolic health operating system that turns reactive nutrition coaching into proactive, personalized, preventative care.",
@@ -4208,7 +4260,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.5746579,
+        "score": 0.9992022,
         "signalType": "product_market"
       },
       {
@@ -4221,7 +4273,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.4813325,
+        "score": 0.9988752,
         "signalType": "product_market"
       }
     ]
@@ -4597,10 +4649,10 @@
         "error": null
       },
       "Apple HealthKit Updates": {
-        "fetched": 2,
-        "qualityKept": 2,
-        "finalKept": 2,
-        "kept": 2,
+        "fetched": 0,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
@@ -4677,7 +4729,7 @@
         "error": null
       },
       "Huawei Health Kit": {
-        "fetched": 0,
+        "fetched": 3,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -4909,19 +4961,19 @@
         "error": null
       },
       "WIRED Wearables": {
-        "fetched": 0,
+        "fetched": 5,
+        "qualityKept": 4,
+        "finalKept": 3,
+        "kept": 3,
+        "capped": 1,
+        "error": null
+      },
+      "China NMPA Medical Device Approvals": {
+        "fetched": 1,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
         "capped": 0,
-        "error": null
-      },
-      "China NMPA Medical Device Approvals": {
-        "fetched": 5,
-        "qualityKept": 5,
-        "finalKept": 3,
-        "kept": 3,
-        "capped": 2,
         "error": null
       },
       "NeurIPS Health Workshops / OpenReview": {
@@ -4933,26 +4985,26 @@
         "error": null
       },
       "ICML Health Workshops / PMLR": {
-        "fetched": 0,
-        "qualityKept": 0,
+        "fetched": 5,
+        "qualityKept": 1,
         "finalKept": 0,
         "kept": 0,
         "capped": 0,
         "error": null
       },
       "IEEE EMBC Proceedings": {
-        "fetched": 0,
-        "qualityKept": 0,
-        "finalKept": 0,
-        "kept": 0,
+        "fetched": 5,
+        "qualityKept": 3,
+        "finalKept": 3,
+        "kept": 3,
         "capped": 0,
         "error": null
       },
       "IEEE BIBM Proceedings": {
-        "fetched": 0,
-        "qualityKept": 0,
-        "finalKept": 0,
-        "kept": 0,
+        "fetched": 5,
+        "qualityKept": 4,
+        "finalKept": 2,
+        "kept": 2,
         "capped": 0,
         "error": null
       },
@@ -4966,18 +5018,18 @@
       },
       "ISWC Proceedings": {
         "fetched": 5,
-        "qualityKept": 4,
-        "finalKept": 2,
-        "kept": 2,
+        "qualityKept": 3,
+        "finalKept": 1,
+        "kept": 1,
         "capped": 0,
         "error": null
       },
       "IEEE Sensors / Wearable Proceedings": {
         "fetched": 5,
-        "qualityKept": 4,
+        "qualityKept": 3,
         "finalKept": 3,
         "kept": 3,
-        "capped": 1,
+        "capped": 0,
         "error": null
       },
       "Digital Biomarkers Journal": {
@@ -4992,10 +5044,10 @@
     "filtered_out_by_blacklist": 24,
     "filtered_out_by_keyword": 606,
     "filtered_out_by_source_exclude": 8,
-    "filtered_out_by_tavily_quality": 84,
+    "filtered_out_by_tavily_quality": 98,
     "filtered_out_by_date": 273,
-    "duplicate_urls": 2,
-    "tavily_items_capped": 16,
+    "duplicate_urls": 5,
+    "tavily_items_capped": 14,
     "top3_categories": null,
     "top3_scores": null,
     "top3_rejected_candidates": null
