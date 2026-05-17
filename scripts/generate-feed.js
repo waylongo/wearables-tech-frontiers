@@ -187,7 +187,9 @@ function passesEntryPageFilter(item) {
     /\bconnect iq sdk\b/,
     /^(home|overview)$/i,
     /^(home|overview)\s*[|-]/i,
-    /\s[|-]\s*(home|overview)$/i
+    /\s[|-]\s*(home|overview)$/i,
+    /^[a-z0-9 &/+.-]+\s\|\s(?:[a-z0-9 ]+\s)?developers?$/i,
+    /^[a-z0-9 &/+.-]+\s\|\s(?:[a-z0-9 ]+\s)?developer documentation$/i
   ];
   return !entryPatterns.some(re => re.test(title));
 }
