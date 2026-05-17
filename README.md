@@ -10,8 +10,8 @@
 | 厂商研究 | GitHub Actions 中心抓 RSS | Apple ML Research、Google Research、DeepMind |
 | 临床注册 | GitHub Actions 中心调用公开 API | ClinicalTrials.gov |
 | 监管硬信号 | GitHub Actions 中心抓 RSS/API + Tavily | FDA MedWatch、openFDA device 510(k)、PMA、Recall、中国 NMPA 医疗器械监管 |
-| 行业媒体 | GitHub Actions 中心抓 RSS + 关键词过滤 | MobiHealthNews、9to5Mac、9to5Google、The Verge、Fierce Healthcare |
-| 官方 / 厂商 / 行业兜底 | GitHub Actions 中心调用 Tavily | Apple、Google、Samsung、Huawei、Xiaomi、OPPO、vivo、OnePlus、Oura、WHOOP、Garmin、Withings、Dexcom、Abbott、Zepp、Suunto、Polar、COROS、Ultrahuman、RingConn、Levels、MedTech Dive、Rock Health 等 |
+| 行业媒体 | GitHub Actions 中心抓 RSS + Tavily | MobiHealthNews、9to5Mac、9to5Google、Fierce Healthcare、MedTech Dive、Healthcare IT News、Rock Health、Digital Health Wire、DC Rainmaker |
+| 官方 / 厂商 / 行业兜底 | GitHub Actions 中心调用 Tavily | Apple、Google / Fitbit、Samsung、Xiaomi、Garmin、Oura、WHOOP、Withings、Dexcom、Abbott、Levels 等 |
 | 平台 API 变更 | GitHub Actions 中心调用 Tavily | Apple HealthKit / WorkoutKit / watchOS docs、Android Health Connect / Health Services / Wear OS docs |
 
 中心 feed 每周一由 GitHub Actions 更新到 `feed-wearables.json`。用户本地只负责拉取 JSON、按个人配置过滤，并让 agent 按 prompts remix。

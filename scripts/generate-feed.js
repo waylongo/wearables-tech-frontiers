@@ -454,8 +454,10 @@ async function saveState(state, items) {
 function canonicalUrlForDedupe(url) {
   try {
     const u = new URL(url);
+    u.protocol = 'https:';
+    u.hostname = u.hostname.replace(/^www\./, '');
     u.hash = '';
-    const host = u.hostname.replace(/^www\./, '');
+    const host = u.hostname;
     if (host === 'ieeexplore.ieee.org') {
       const m = u.pathname.match(/^\/(?:abstract\/)?document\/(\d+)/);
       if (m) {
@@ -463,9 +465,13 @@ function canonicalUrlForDedupe(url) {
         u.search = '';
       }
     }
-    return u.toString().replace(/\/$/, '');
+    if (host === 'dl.acm.org') {
+      u.pathname = u.pathname.replace(/^\/doi\/(?:abs|pdf)\//, '/doi/');
+      u.search = '';
+    }
+    return u.toString().replace(/\/+$/, '');
   } catch {
-    return url;
+    return String(url).replace(/^http:\/\//, 'https://').replace(/^https:\/\/www\./, 'https://').replace(/\/+$/, '');
   }
 }
 
