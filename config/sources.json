@@ -2181,7 +2181,8 @@
           "author index",
           "preface"
         ],
-        "maxItems": 3
+        "maxItems": 3,
+        "requireRecentYear": true
       },
       {
         "name": "ICML Health Workshops / PMLR",
@@ -2213,7 +2214,8 @@
           "author index",
           "preface"
         ],
-        "maxItems": 3
+        "maxItems": 3,
+        "requireRecentYear": true
       },
       {
         "name": "IEEE EMBC Proceedings",
@@ -2248,7 +2250,8 @@
           "author index",
           "preface"
         ],
-        "maxItems": 3
+        "maxItems": 3,
+        "requireRecentYear": true
       },
       {
         "name": "IEEE BIBM Proceedings",
@@ -2284,7 +2287,8 @@
           "author index",
           "preface"
         ],
-        "maxItems": 3
+        "maxItems": 3,
+        "requireRecentYear": true
       },
       {
         "name": "ACM IMWUT / UbiComp",
@@ -2316,7 +2320,8 @@
           "author index",
           "preface"
         ],
-        "maxItems": 3
+        "maxItems": 3,
+        "requireRecentYear": true
       },
       {
         "name": "ISWC Proceedings",
@@ -2348,7 +2353,8 @@
           "author index",
           "preface"
         ],
-        "maxItems": 3
+        "maxItems": 3,
+        "requireRecentYear": true
       },
       {
         "name": "IEEE Sensors / Wearable Proceedings",
@@ -2382,7 +2388,8 @@
           "author index",
           "preface"
         ],
-        "maxItems": 3
+        "maxItems": 3,
+        "requireRecentYear": true
       },
       {
         "name": "Digital Biomarkers Journal",

@@ -380,6 +380,30 @@ function tavilyTimeRange(days) {
   return 'year';
 }
 
+function inferPublicationYear(item) {
+  const hay = `${item.title || ''}\n${item.summary || ''}`;
+  const patterns = [
+    /\bpublished in:\s*(\d{4})\b/i,
+    /\bdate of conference:\s*[^.\n]*\b(20\d{2})\b/i,
+    /\b(20\d{2})\s+IEEE\b/i,
+    /\b(20\d{2})\s+ACM\b/i,
+    /\b(?:NeurIPS|ICML|EMBC|BIBM|ISWC|UbiComp|IMWUT)\s*(20\d{2})\b/i
+  ];
+  for (const re of patterns) {
+    const m = hay.match(re);
+    if (m) return parseInt(m[1], 10);
+  }
+  return null;
+}
+
+function passesTavilyFreshness(item, site, days) {
+  if (item.publishedAt) return withinDays(item.publishedAt, days);
+  if (!site.requireRecentYear) return true;
+  const year = inferPublicationYear(item);
+  if (!year) return false;
+  return year >= new Date().getUTCFullYear();
+}
+
 async function fetchTavilySite(site, apiKey, days) {
   const domains = tavilyDomain(site);
   const query = tavilyQuery(site);
@@ -622,6 +646,10 @@ async function main() {
         ];
         if (!passesUrlExcludeFilter(it, urlExclude)) {
           healthcheck.filtered_out_by_tavily_quality++;
+          continue;
+        }
+        if (!passesTavilyFreshness(it, site, args.days)) {
+          healthcheck.filtered_out_by_date++;
           continue;
         }
         healthcheck.tavily_per_site[site.name].qualityKept++;
