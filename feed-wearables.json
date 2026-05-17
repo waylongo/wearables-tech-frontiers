@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "status": "ok",
-  "generatedAt": "2026-05-17T03:48:03.755Z",
+  "generatedAt": "2026-05-17T05:11:15.910Z",
   "lookbackDays": 30,
   "stats": {
     "rawItems": 1007,
-    "keptItems": 134,
+    "keptItems": 120,
     "sourcesQueried": 20,
     "sourcesWithResults": 13,
     "sourcesFailed": 0,
@@ -13,7 +13,7 @@
     "apiSourcesWithResults": 2,
     "apiSourcesFailed": 0,
     "tavilySitesQueried": 35,
-    "tavilySitesWithResults": 27,
+    "tavilySitesWithResults": 19,
     "tavilySitesFailed": 0
   },
   "items": [
@@ -375,110 +375,6 @@
       "signalType": "clinical_regulatory"
     },
     {
-      "title": "GLP-1 Medication & Behavioral Health Programs on Weight & Metabolic Outcomes: FLOURISH and THRIVE Prospective Cohort Study",
-      "url": "https://clinicaltrials.gov/study/NCT07588984",
-      "publishedAt": "2026-05-15",
-      "summary": "Status: NOT_YET_RECRUITING | Conditions: Obesity & Overweight; Weight Loss; Preventative Health; Body Weight; Cardiovascular Disease Risk Factor | Interventions: Noom Weight; Free Tier; Education-only control; Semaglutide; Tirzepatide",
-      "nctId": "NCT07588984",
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_registry",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "api",
-      "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "Automated IADL Sensing to Refine Measurement of Older Adult Daily Activity",
-      "url": "https://clinicaltrials.gov/study/NCT07585864",
-      "publishedAt": "2026-05-15",
-      "summary": "Status: NOT_YET_RECRUITING | Conditions: Cognitive Ability General; Functional Abilities",
-      "nctId": "NCT07585864",
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_registry",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "api",
-      "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "Parent Tube Weaning Interviews",
-      "url": "https://clinicaltrials.gov/study/NCT07054983",
-      "publishedAt": "2026-05-15",
-      "summary": "Status: ENROLLING_BY_INVITATION | Conditions: Feeding Difficulties; Remote Patient Monitoring; Pediatric Feeding Disorders | Interventions: Qualitative Research Interview | Phase: NA",
-      "nctId": "NCT07054983",
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_registry",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "api",
-      "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "Assessing the Impact of Perceptions of Unpredictability on Objective Measures of Food Consumption and Metabolism",
-      "url": "https://clinicaltrials.gov/study/NCT06690294",
-      "publishedAt": "2026-05-15",
-      "summary": "Status: NOT_YET_RECRUITING | Conditions: Healthy Volunteer; Obestity",
-      "nctId": "NCT06690294",
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_registry",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "api",
-      "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "REM Enhancement Sleep Technology for Well-being, Emotion, and Life Lift",
-      "url": "https://clinicaltrials.gov/study/NCT07589114",
-      "publishedAt": "2026-05-15",
-      "summary": "Status: RECRUITING | Conditions: Healthy Adult Participants | Interventions: Mobile smartwatch application. | Phase: NA",
-      "nctId": "NCT07589114",
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_registry",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "api",
-      "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "Virtual E-health System for Pacemakers",
-      "url": "https://clinicaltrials.gov/study/NCT03636230",
-      "publishedAt": "2026-05-15",
-      "summary": "Status: ACTIVE_NOT_RECRUITING | Conditions: Pacemaker | Interventions: Remote Monitoring; Standard of care | Phase: NA",
-      "nctId": "NCT03636230",
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_registry",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "api",
-      "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "Continuous Temperature Monitoring (CTM) for Cytokine Release Syndrome (CRS), an Immune-Related Adverse Event",
-      "url": "https://clinicaltrials.gov/study/NCT07499128",
-      "publishedAt": "2026-05-15",
-      "summary": "Status: NOT_YET_RECRUITING | Conditions: Cytokine Release Syndrome; Neoplasms; Lymphoma; Precursor Cell Lymphoblastic Leukemia-Lymphoma; Multiple Myeloma | Interventions: TempTraq; VitalTraq | Phase: NA",
-      "nctId": "NCT07499128",
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_registry",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "api",
-      "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "Early Motor-Cognitive Integrative Training on Cognitive and Motor Performance in Patients With Aneurysmal Subarachnoid Hemorrhage",
-      "url": "https://clinicaltrials.gov/study/NCT07588997",
-      "publishedAt": "2026-05-15",
-      "summary": "Status: RECRUITING | Conditions: Subarachnoid Aneurysm Hemorrhage | Interventions: early motor-cognitive integrated training (e-MCIT); Early mobilization | Phase: NA",
-      "nctId": "NCT07588997",
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_registry",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "api",
-      "signalType": "clinical_regulatory"
-    },
-    {
       "title": "Dexcom unveils next-generation G8 CGM for real-time glucose monitoring",
       "url": "https://www.mobihealthnews.com/news/dexcom-unveils-next-generation-g8-cgm-real-time-glucose-monitoring",
       "publishedAt": "Thu, 14 May 2026 17:26:30 -0400",
@@ -755,6 +651,18 @@
       "signalType": "algorithm_evidence"
     },
     {
+      "title": "Trividia Health Correction for TRUE METRIX Blood Glucose Monitoring Systems",
+      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/trividia-health-correction-true-metrix-blood-glucose-monitoring-systems",
+      "publishedAt": "Tue, 05 May 2026 00:00:00 EDT",
+      "summary": "FT. LAUDERDALE, FL – May 1, 2026 – Trividia Health, Inc., a global leader in diabetes management, today provided an important update to the medical device labeling correction it announced on February 6, 2026, for all TRUE METRIX®, TRUE METRIX® AIR, TRUE METRIX® GO, and TRUE METRIX® PRO Blood Glucose",
+      "sourceName": "FDA MedWatch Safety Alerts",
+      "sourceCategory": "regulatory",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "clinical_regulatory"
+    },
+    {
       "title": "Dynamically predicting renal failure after development of diabetes across biobanks",
       "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001375",
       "publishedAt": "2026-05-04T14:00:00Z",
@@ -791,6 +699,30 @@
       "signalType": "algorithm_evidence"
     },
     {
+      "title": "Blood Glucose Monitor Recall: Trividia Health Issues Correction for TRUE METRIX Blood Glucose Monitoring Systems",
+      "url": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/blood-glucose-monitor-recall-trividia-health-issues-correction-true-metrix-blood-glucose-monitoring",
+      "publishedAt": "Tue, 28 Apr 2026 00:00:00 EDT",
+      "summary": "Trividia recommends that device users who receive an E-5 error code and are experiencing symptoms of high glucose should seek medical care immediately.",
+      "sourceName": "FDA MedWatch Safety Alerts",
+      "sourceCategory": "regulatory",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "Sharing digital health data responsibly: Balancing open science with participant privacy",
+      "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001377",
+      "publishedAt": "2026-04-24T14:00:00Z",
+      "summary": "<p>by Camille Nebeker, Shahin Samiei, Santosh Kumar</p>\r\n\r\nData sharing is essential for modern science, advancing transparency, reproducibility, and discovery. Emerging evidence shows that certain digital health data, particularly high-frequency accelerometry from body-worn sensors, carry re-identification risks even when de-identified. In 2023, the National Institutes of Health published its Data Management and Sharing (DMS) Policy formalizing a commitment to openness by requiring all funded researchers to share scientific data. However, the policy did not anticipate that raw motion signals collected by wearable devices can function as biometric identifiers. The WristPrint study demonstrated that a single day of raw accelerometry data could be used to re-identify individuals with 96% accuracy. Related research in gait detection shows that as few as ten steps may be enough to uniquely identify someone. These findings highlight gaps in current data sharing policies and the need for tailored guidance. We argue that policy updates, enforceable data use agreements, and educational initiatives are essential to align openness with protection. The path forward is not to retreat from data sharing but to share more wisely, safeguarding participant trust while sustaining scientific progress.",
+      "sourceName": "PLOS Digital Health",
+      "sourceCategory": "academic",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "rss",
+      "signalType": "algorithm_evidence"
+    },
+    {
       "title": "Health Tech Weekly Rundown: Headspace app launches on Apple Watch; Visby, RAINN partner on safe access program",
       "url": "https://www.fiercehealthcare.com/health-tech/health-tech-weekly-rundown-carrot-adds-menopause-care-ai-native-metabolic-health",
       "publishedAt": "May 14, 2026 2:06pm",
@@ -801,6 +733,110 @@
       "sourceLang": "en",
       "retrievalMethod": "rss",
       "signalType": "product_market"
+    },
+    {
+      "title": "GLP-1 Medication & Behavioral Health Programs on Weight & Metabolic Outcomes: FLOURISH and THRIVE Prospective Cohort Study",
+      "url": "https://clinicaltrials.gov/study/NCT07588984",
+      "publishedAt": "2026-05-15",
+      "summary": "Status: NOT_YET_RECRUITING | Conditions: Obesity & Overweight; Weight Loss; Preventative Health; Body Weight; Cardiovascular Disease Risk Factor | Interventions: Noom Weight; Free Tier; Education-only control; Semaglutide; Tirzepatide",
+      "nctId": "NCT07588984",
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_registry",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "api",
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "Automated IADL Sensing to Refine Measurement of Older Adult Daily Activity",
+      "url": "https://clinicaltrials.gov/study/NCT07585864",
+      "publishedAt": "2026-05-15",
+      "summary": "Status: NOT_YET_RECRUITING | Conditions: Cognitive Ability General; Functional Abilities",
+      "nctId": "NCT07585864",
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_registry",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "api",
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "Parent Tube Weaning Interviews",
+      "url": "https://clinicaltrials.gov/study/NCT07054983",
+      "publishedAt": "2026-05-15",
+      "summary": "Status: ENROLLING_BY_INVITATION | Conditions: Feeding Difficulties; Remote Patient Monitoring; Pediatric Feeding Disorders | Interventions: Qualitative Research Interview | Phase: NA",
+      "nctId": "NCT07054983",
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_registry",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "api",
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "Assessing the Impact of Perceptions of Unpredictability on Objective Measures of Food Consumption and Metabolism",
+      "url": "https://clinicaltrials.gov/study/NCT06690294",
+      "publishedAt": "2026-05-15",
+      "summary": "Status: NOT_YET_RECRUITING | Conditions: Healthy Volunteer; Obestity",
+      "nctId": "NCT06690294",
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_registry",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "api",
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "REM Enhancement Sleep Technology for Well-being, Emotion, and Life Lift",
+      "url": "https://clinicaltrials.gov/study/NCT07589114",
+      "publishedAt": "2026-05-15",
+      "summary": "Status: RECRUITING | Conditions: Healthy Adult Participants | Interventions: Mobile smartwatch application. | Phase: NA",
+      "nctId": "NCT07589114",
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_registry",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "api",
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "Virtual E-health System for Pacemakers",
+      "url": "https://clinicaltrials.gov/study/NCT03636230",
+      "publishedAt": "2026-05-15",
+      "summary": "Status: ACTIVE_NOT_RECRUITING | Conditions: Pacemaker | Interventions: Remote Monitoring; Standard of care | Phase: NA",
+      "nctId": "NCT03636230",
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_registry",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "api",
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "Continuous Temperature Monitoring (CTM) for Cytokine Release Syndrome (CRS), an Immune-Related Adverse Event",
+      "url": "https://clinicaltrials.gov/study/NCT07499128",
+      "publishedAt": "2026-05-15",
+      "summary": "Status: NOT_YET_RECRUITING | Conditions: Cytokine Release Syndrome; Neoplasms; Lymphoma; Precursor Cell Lymphoblastic Leukemia-Lymphoma; Multiple Myeloma | Interventions: TempTraq; VitalTraq | Phase: NA",
+      "nctId": "NCT07499128",
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_registry",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "api",
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "Early Motor-Cognitive Integrative Training on Cognitive and Motor Performance in Patients With Aneurysmal Subarachnoid Hemorrhage",
+      "url": "https://clinicaltrials.gov/study/NCT07588997",
+      "publishedAt": "2026-05-15",
+      "summary": "Status: RECRUITING | Conditions: Subarachnoid Aneurysm Hemorrhage | Interventions: early motor-cognitive integrated training (e-MCIT); Early mobilization | Phase: NA",
+      "nctId": "NCT07588997",
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_registry",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "api",
+      "signalType": "clinical_regulatory"
     },
     {
       "title": "Using Smartwatches to Monitor Smoking in Real-life Situations",
@@ -907,18 +943,6 @@
       "signalType": "clinical_regulatory"
     },
     {
-      "title": "Trividia Health Correction for TRUE METRIX Blood Glucose Monitoring Systems",
-      "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/trividia-health-correction-true-metrix-blood-glucose-monitoring-systems",
-      "publishedAt": "Tue, 05 May 2026 00:00:00 EDT",
-      "summary": "FT. LAUDERDALE, FL – May 1, 2026 – Trividia Health, Inc., a global leader in diabetes management, today provided an important update to the medical device labeling correction it announced on February 6, 2026, for all TRUE METRIX®, TRUE METRIX® AIR, TRUE METRIX® GO, and TRUE METRIX® PRO Blood Glucose",
-      "sourceName": "FDA MedWatch Safety Alerts",
-      "sourceCategory": "regulatory",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "clinical_regulatory"
-    },
-    {
       "title": "FDA 510(k) decision Nasal Alar SpO2 Sensor (989803205381); Nasal Alar SpO2 Sensor (989803205391); Nasal Alar Sp02 Sensor (989803205401) (Philips Medizin Systeme)",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253887",
       "publishedAt": "2026-05-01",
@@ -940,18 +964,6 @@
       "url": "http://www.fda.gov/medical-devices/safety-communications/risks-using-true-metrix-blood-glucose-monitoring-systems-trividia-health-fda-safety-communication",
       "publishedAt": "Tue, 28 Apr 2026 00:00:00 EDT",
       "summary": "FDA alerts of risks with use TRUE METRIX Blood Glucose Monitoring Systems by Trividia Health.",
-      "sourceName": "FDA MedWatch Safety Alerts",
-      "sourceCategory": "regulatory",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "Blood Glucose Monitor Recall: Trividia Health Issues Correction for TRUE METRIX Blood Glucose Monitoring Systems",
-      "url": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/blood-glucose-monitor-recall-trividia-health-issues-correction-true-metrix-blood-glucose-monitoring",
-      "publishedAt": "Tue, 28 Apr 2026 00:00:00 EDT",
-      "summary": "Trividia recommends that device users who receive an E-5 error code and are experiencing symptoms of high glucose should seek medical care immediately.",
       "sourceName": "FDA MedWatch Safety Alerts",
       "sourceCategory": "regulatory",
       "sourcePriority": "P1",
@@ -994,18 +1006,6 @@
       "signalType": "clinical_regulatory"
     },
     {
-      "title": "Sharing digital health data responsibly: Balancing open science with participant privacy",
-      "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001377",
-      "publishedAt": "2026-04-24T14:00:00Z",
-      "summary": "<p>by Camille Nebeker, Shahin Samiei, Santosh Kumar</p>\r\n\r\nData sharing is essential for modern science, advancing transparency, reproducibility, and discovery. Emerging evidence shows that certain digital health data, particularly high-frequency accelerometry from body-worn sensors, carry re-identification risks even when de-identified. In 2023, the National Institutes of Health published its Data Management and Sharing (DMS) Policy formalizing a commitment to openness by requiring all funded researchers to share scientific data. However, the policy did not anticipate that raw motion signals collected by wearable devices can function as biometric identifiers. The WristPrint study demonstrated that a single day of raw accelerometry data could be used to re-identify individuals with 96% accuracy. Related research in gait detection shows that as few as ten steps may be enough to uniquely identify someone. These findings highlight gaps in current data sharing policies and the need for tailored guidance. We argue that policy updates, enforceable data use agreements, and educational initiatives are essential to align openness with protection. The path forward is not to retreat from data sharing but to share more wisely, safeguarding participant trust while sustaining scientific progress.",
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "rss",
-      "signalType": "algorithm_evidence"
-    },
-    {
       "title": "FDA 510(k) decision FloPatch FP120 (Flosonics Medical)",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252810",
       "publishedAt": "2026-04-24",
@@ -1023,19 +1023,6 @@
       "signalType": "clinical_regulatory"
     },
     {
-      "title": "Apple introduces a new Pride Collection - Apple",
-      "url": "https://www.apple.com/newsroom/2026/05/apple-introduces-a-new-pride-collection/",
-      "publishedAt": null,
-      "summary": "# Apple introduces a new Pride Collection. Apple Watch Series 11 is paired with the Pride Luminance watch face and Pride Edition Sport Loop. Matching wallpaper from the new Apple Watch Pride Collection is displayed on an 11-inch iPad Pro and iPhone 17 Pro. Today, Apple introduced a new Apple Watch Pride Edition Sport Loop, watch face, and iPhone and iPad wallpaper to celebrate LGBTQ+ communities around the world during Pride Month and beyond. The new Pride Edition Sport Loop, available to order today, is woven from a rainbow of 11 colors of nylon yarns. The resulting design is joyful and vibrant, showcasing a full spectrum of colors that reflect the unique identities that shape LGBTQ+ communities worldwide. The new Pride Luminance watch face complements the band design with colors that refract dynamically to celebrate the vibrancy, spirit, and individuality of the LGBTQ+ community. With this collection, users can customize the watch face with even more color options to create a unique expression of themselves and their communities.",
-      "sourceName": "Apple Newsroom / Watch",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.49804688,
-      "signalType": "product_market"
-    },
-    {
       "title": "watchOS 9.4 Release Notes | Apple Developer Documentation",
       "url": "https://developer.apple.com/documentation/watchos-release-notes/watchos-9_4-release-notes?changes=latest_7",
       "publishedAt": null,
@@ -1049,6 +1036,32 @@
       "signalType": "platform_api"
     },
     {
+      "title": "atan(_:) | Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/simd/atan(_:)-al43?changes=_2",
+      "publishedAt": null,
+      "summary": "Release Notes. Featured Updates · iOS · iPadOS · macOS · watchOS · visionOS · tvOS · Xcode ... Health & Fitness · In-App Purchase · Localization · Maps & Location",
+      "sourceName": "Apple Developer HealthKit / WorkoutKit / watchOS",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.99509466,
+      "signalType": "platform_api"
+    },
+    {
+      "title": "Introducing the all-new Fitbit Air - Google Blog",
+      "url": "https://blog.google/products-and-platforms/devices/fitbit/fitbit-air/",
+      "publishedAt": null,
+      "summary": "# Introducing the all-new Fitbit Air. Our newest screenless wearable is lightweight and delivers our most in-depth health insights yet. We are introducing the Fitbit Air, our smallest and most affordable tracker designed for comfortable, 24/7 health monitoring. This screenless device pairs with the Google Health app to provide advanced fitness insights, sleep tracking, and a week-long battery life. You can pre-order the Fitbit Air today starting at $99.99, which includes a three-month trial of Google Health Premium. * Meet the Fitbit Air, a tiny, affordable tracker designed for comfortable, all-day health monitoring. * Pre-order yours today for $99.99 and get a three-month Google Health Premium trial. You can check all your stats and get personalized advice through the Google Health app on your phone. The Google Fitbit Air Special Edition will also be available for pre-order today, and on-shelf in the U.S. May 26 for $129.99.",
+      "sourceName": "Google Blog / Fitbit",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.99933845,
+      "signalType": "product_market"
+    },
+    {
       "title": "Introducing the new Google Fitbit Air and Google Health app",
       "url": "https://blog.google/products-and-platforms/products/google-health/google-health-fitbit/",
       "publishedAt": null,
@@ -1058,21 +1071,8 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.48074743,
+      "score": 0.99890983,
       "signalType": "platform_api"
-    },
-    {
-      "title": "Introducing the Google Health app",
-      "url": "https://blog.google/products-and-platforms/products/google-health/google-health-app/",
-      "publishedAt": null,
-      "summary": "# A new era for your wellness: Introducing the Google Health app. The Google Health app brings all of your health and wellness into one place debuting new and advanced capabilities. The Fitbit app is becoming the Google Health app, offering a redesigned, centralized hub for your wellness data. You will see an intuitive four-tab layout, improved data tracking, and a new artificial intelligence coach to help you reach your goals. * The Fitbit app is becoming the Google Health app to centralize your wellness data. * The new Google Health Coach uses artificial intelligence to provide personalized workout and health insights. The Fitbit app is becoming the new Google Health app to help you track your fitness and wellness in one place. We’re updating the Fitbit app to become the Google Health app, a centralized place for your health and wellness data. And, on Health, in addition to getting a snapshot of your key health metrics, you can get summaries of your medical records from the Coach.",
-      "sourceName": "Google Blog / Fitbit",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.468621,
-      "signalType": "product_market"
     },
     {
       "title": "Track sleep sessions | Android health & fitness",
@@ -1088,20 +1088,7 @@
       "signalType": "platform_api"
     },
     {
-      "title": "Track steps | Android health & fitness",
-      "url": "https://developer.android.com/health-and-fitness/health-connect/features/steps",
-      "publishedAt": null,
-      "summary": "Health Connect provides a *steps* data type for recording step counts using. Steps are a fundamental measurement in health. ## Read mobile steps. With Android 14 (API level 34) and SDK Extension version 20 or higher,. Health Connect provides on-device step counting. the `READ_STEPS` permission, Health Connect starts capturing steps from the. Android-powered device, and users see steps data automatically added to. To check if on-device step counting is available, you need to verify that the. If your app needs to read on-device steps, or if it displays step data. data, you should attribute data from the android package to the current device. The following example shows how to read aggregated mobile step count data by. Before attempting to use Health Connect, your app should verify that Health Connect is available. permissions for the `Steps` data type. To read steps, you need to request the following permissions:. The following example shows how to read the total step count for a.",
-      "sourceName": "Android Developers Health & Fitness",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.46774563,
-      "signalType": "platform_api"
-    },
-    {
-      "title": "Health Connect | Jetpack - Android Developers",
+      "title": "Health Connect  |  Jetpack  |  Android Developers",
       "url": "https://developer.android.com/jetpack/androidx/releases/health-connect",
       "publishedAt": null,
       "summary": "# Health Connect. | April 22, 2026 | 1.1.0 | - | - | 1.2.0-alpha04 |. To help us strengthen user privacy and security, developers integrating with Health Connect **must declare read and/or write access for the data types** that their apps use. For more information, visit Provide information for the Health apps declaration form and Health Connect by Android Permissions. To add a dependency on health, you must add the Google Maven repository to your. Add the dependencies for the artifacts you need in the `build.gradle` file for. ## Health Connect Testing Version 1.0. `androidx.health.connect:connect-testing:1.0.0-alpha03` is released. `androidx.health.connect:connect-testing:1.0.0-alpha03`. You can use the library to create local unit tests, which typically verify the behavior of the classes in your app that interact with the Health Connect client. `androidx.health.connect:connect-client:1.1.0`, `androidx.health.connect:connect-client-external-protobuf:1.1.0`, and `androidx.health.connect:connect-client-proto:1.1.0` have been promoted to its first stable release with no changes since its previous RC release. `androidx.health.connect:connect-client:1.1.0-rc03`, `androidx.health.connect:connect-client-external-protobuf:1.1.0-rc03`, and `androidx.health.connect:connect-client-proto:1.1.0-rc03` are released. `androidx.health.connect:connect-client:1.1.0-rc03`. `androidx.health.connect:connect-client-external-protobuf:1.1.0-rc03`. `androidx.health.connect:connect-client-proto:1.1.0-rc03`. `androidx.health.connect:connect-client:1.1.0-beta02`, `androidx.health.connect:connect-client-external-protobuf:1.1.0-beta02`, and `androidx.health.connect:connect-client-proto:1.1.0-beta02` are released. `androidx.health.connect:connect-client:1.1.0-beta02`. `androidx.health.connect:connect-client-proto:1.1.0-beta02`.",
@@ -1110,21 +1097,8 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.81979275,
+      "score": 0.8266142,
       "signalType": "platform_api"
-    },
-    {
-      "title": "[CES 2026] A Care Companion for Family Health and Safety",
-      "url": "https://news.samsung.com/sg/ces-2026-a-care-companion-for-family-health-and-safety",
-      "publishedAt": null,
-      "summary": "In the Self Care – Good Sleep section, visitors learned how wearables such as Galaxy Watch and Galaxy Ring track sleep conditions while working in concert with",
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.71377134,
-      "signalType": "product_market"
     },
     {
       "title": "Level Up Your Health with Galaxy Watch and Receive a Withings Smart Scale on Us",
@@ -1136,24 +1110,24 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.66045773,
+      "score": 0.99977654,
       "signalType": "product_market"
     },
     {
-      "title": "Health | Samsung Developers",
-      "url": "http://developer.samsung.com/health",
+      "title": "[World Health Day 2026] How Jacob Kiplimo's Galaxy Watch Turns ...",
+      "url": "https://news.samsung.com/ca/world-health-day-2026-how-jacob-kiplimos-galaxy-watch-turns-data-into-world-record-performance",
       "publishedAt": null,
-      "summary": "# Samsung Health SDK Suite. Develop innovative health and wellness applications for Galaxy Watch and smartphones. # Accelerate health and wellness innovation with Samsung Health SDKs. Samsung's Health SDKs enable a broad ecosystem of partners to accelerate innovation and solution development. As Galaxy Watch sensors and capabilities improve, you can read, with user consent, and integrate health data from Galaxy Watch and smartphones into your existing applications and platforms, as well as create innovative and powerful new products that enhance users' well-being through health insights. ##### Samsung Health Data SDK allows partners the ability to integrate Samsung Health data into their own apps, enabling them to monitor users` health and provide health and wellness services based on user consent. By connecting smartphones with Samsung wearables like the Galaxy Watch and Galaxy Ring as well as other connected devices such as activity trackers or heart rate monitors, it seamlessly integrates health monitoring into daily life. ##### Samsung Health Sensor SDK is a software platform that enables the medical community and digital health solution providers to harness the power of Galaxy Watch’s advanced sensors; providing both raw sensor signal data and processed data with our differentiated features. ##### Samsung Health Accessory SDK defines Bluetooth Low Energy (BLE) compatibility guidelines and Samsung Health specifications based on Bluetooth Generic Attributes (GATT), including service structure to connect with Samsung Health. ##### Samsung Health Research Stack is backed by open-source tools, applications, and services for running, managing, and analyzing medical research studies and clinician services on Android and Wear OS devices. ##### Samsung collaborates with the world’s most innovative organizations to pave the way for better health and wellness by advancing solutions in connected care. ### Samsung Health SDK Suite Guide. Use Samsung Health SDK Suite to impl",
-      "sourceName": "Samsung Developers Health",
+      "summary": "# [World Health Day 2026] How Jacob Kiplimo’s Galaxy Watch Turns Data Into World-Record Performance. When **Jacob Kiplimo** storms past the finish line, he’s not just running on talent — he’s running on data. After securing a dominant win at the 2025 Chicago Marathon and shattering the half-marathon world record this March in Lisbon, the 25-year-old is now targeting success at the 2026 London Marathon. To mark World Health Day (WHD) 2026 on April 7, Samsung asked him to detail his data-driven training regime which embodies this year’s WHD slogan, “Together for health. With exclusive access to his Samsung Health metrics, we take an inside look into his grueling training program which has seen him cover **over 100 km in just one week**. Discover how insights led him to adjust his training for optimal recovery and how even a “rest day” can include a 3 km run. I use the **Running Coach** feature in Samsung Health to get real-time analysis and reports on my running form through the **Running Analysis** feature in Samsung Health.",
+      "sourceName": "Samsung Global Newsroom (Digital Health)",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.8900749,
-      "signalType": "platform_api"
+      "score": 0.9992679,
+      "signalType": "product_market"
     },
     {
-      "title": "Samsung R&D Institute Poland Awarded 1st Place at Interspeech ...",
+      "title": "Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge | Samsung Research",
       "url": "https://research.samsung.com/news/Samsung-R-D-Institute-Poland-awarded-1st-place-at-INTERSPEECH-2026-Challenge",
       "publishedAt": null,
       "summary": "- Samsung R&D Institute United Kingdom. - Samsung R&D Institute Poland. - Samsung R&D Institute Ukraine. - Samsung R&D Institute Russia. - Samsung R&D Institute Israel. - Samsung R&D Institute Jordan. - Samsung R&D Institute India-Bangalore. - Samsung R&D Institute Philippines. - Samsung R&D Institute Indonesia. - Samsung R&D Institute Bangladesh. - Samsung R&D Institute China-Beijing. # Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge. The Audio Intelligence Group at Samsung R&D Institute Poland (SRPOL) achieved a major breakthrough in the international NeckVibe Challenge, securing first place in the detection of Phonotraumatic Vocal Hyperfunction (PVH). The challenge involved nine global teams from institutions including Seoul National University, Gwangju Institute of Science and Technology, and Harvard University, representing Poland, South Korea, India, and the USA. This year’s first-place at the NeckVibe challenge is the third consecutive win for the SRPOL Audio Intelligence Group (ICASSP 2024, INTERSPEECH 2025) using lightweight AI and signal processing to solve complex health problems.",
@@ -1162,7 +1136,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.1947048,
+      "score": 0.24508502,
       "signalType": "algorithm_evidence"
     },
     {
@@ -1218,30 +1192,43 @@
       "signalType": "platform_api"
     },
     {
-      "title": "Since Steps uses a new algorithm on WHOOP 5.0/MG, is it more ...",
-      "url": "https://www.community.whoop.com/t/since-steps-uses-a-new-algorithm-on-whoop-5-0-mg-is-it-more-accurate/562/19",
+      "title": "Oura Developer Docs",
+      "url": "https://developer.ouraring.com/",
       "publishedAt": null,
-      "summary": "Since Steps uses a new algorithm on WHOOP 5.0/MG, is it more accurate? ... I am also curious as to why there can't be a feature utilized by the current hardware",
-      "sourceName": "WHOOP / The Locker",
+      "summary": "Welcome to the Oura API Documentation The Oura API makes it easy to access data generated by the Oura Ring. For example, you can use the API to fetch a user's sleep score: GET /v2/usercollection/daily\\_sleep? start\\_date=2024-09-08&end\\_date=2024-09-08 { \"data\": [ { \"id\": \"be279d97-67d4-4304-800e-0a5414d636ea\", \"contributors\": { \"deep_sleep\": 78, \"efficiency\": 90, \"latency\": 83, \"rem_sleep\": 95, \"restfulness\": 86, \"timing\": 85, \"total_sleep\": 85 }, \"day\": \"2024-09-08\", \"score\": 86, \"timestamp\": \"2024-09-08T00:00:00+00:00\" } ], \"next_token\": null} To use the Oura API, you will need an Oura account and either a Personal Access Token or an OAuth2 Access Token. Next Creating an Oura Account © 2024 Ōura Health Oy. All Rights Reserved. ŌURA and OURA and Ō are trademarks of Ōura Health Oy and may not be used without permission. We use cookies on our site to enhance your experience, improve our site, and to deliver content and ads that are relevant to you. You can choose to accept all cookies by clicking Accept, or you can manage them individually by clicking Manage cookies, where you can read more. To monitor the performance of our site and to enhance your browsing experience. To understand user behavior in order to provide you with a more relevant browsing experience or personalize the content on our site. To personalize and measure the effectiveness of advertising on our site and other websites.",
+      "sourceName": "Oura Developer API",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.99457306,
-      "signalType": "product_market"
+      "score": 0.99984646,
+      "signalType": "platform_api"
     },
     {
       "title": "WHOOP 101 | WHOOP for Developers",
       "url": "https://developer.whoop.com/docs/whoop-101",
       "publishedAt": null,
-      "summary": "Title: WHOOP 101 | WHOOP for Developers\n# WHOOP 101. WHOOP is a 24/7 wearable that helps members understand how well their bodies function and how they change over time. Through continuous monitoring of physiological signals, WHOOP helps members understand how well their body performs and recovers. As a developer, you have the opportunity to build integrations that leverage WHOOP insights across three pillars - **Strain, Recovery, and Sleep**. WHOOP Strain is a measurement of the amount of stress on your body. WHOOP scores Strain continuously for members throughout the day and every workout. If you do the same workout two days in a row, you will likely report different Strain scores based on fluctuations in how your body recovered and changed. WHOOP categorizes Strain score values into Light, Moderate, High, and All Out. * **Light Strain (0-9)** - This strain category indicates room for active recovery with minimal stress on the body. * **Moderate Strain (10-13)** - This category indicates moderate stress on the body, which helps maintain fitness. * How Does WHOOP Strain Work? WHOOP tracks workouts for you and how much Strain accumulated over the workout. WHOOP keeps track of what type of activity you performed (e.g., Running, Cycle), Strain score, and other physiological measurements such as duration in Heart Rate Zones. WHOOP Recovery is a daily measure of how prepared your body is to perform. When you wake up in the morning, WHOOP calculates a Recovery score as a percentage between 0 - 100%. The higher the score, the more primed your body is to take on Strain that day. WHOOP calculates Recovery scores using measurements from the previous day and your sleep, such as resting heart rate (RHR), heart rate variability (HRV), respiratory rate, sleep duration/quality, skin temperature, and blood oxygen. Unlike Strain, a Recovery score does not change over the day (unless you edit your sleep which triggers a Recovery score re-calculation). WHOOP categorizes Recovery scor",
+      "summary": "WHOOP is a 24/7 wearable that helps members understand how well their bodies function and how they change over time. As a developer, you have the opportunity to build integrations that leverage WHOOP insights across three pillars - **Strain, Recovery, and Sleep**. WHOOP Strain is a measurement of the amount of stress on your body. The Strain score is a number on a 0 to 21 scale, based on the Borg Scale of Perceived Exertion. If you do the same workout two days in a row, you will likely report different Strain scores based on fluctuations in how your body recovered and changed. WHOOP Recovery is a daily measure of how prepared your body is to perform. The higher the score, the more primed your body is to take on Strain that day. Unlike Strain, a Recovery score does not change over the day (unless you edit your sleep which triggers a Recovery score re-calculation).",
       "sourceName": "WHOOP Developer API",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.767847,
+      "score": 0.9999385,
       "signalType": "platform_api"
+    },
+    {
+      "title": "API Changelog | WHOOP for Developers",
+      "url": "https://developer.whoop.com/docs/api-changelog",
+      "publishedAt": null,
+      "summary": "Learn how to look up mappings from v1 to v2 ids.**. This changelog highlights notable changes to the WHOOP Developer Platform, such as new API endpoints or webhook event types. ### Webhook Updates, New V1 Migration API​. Updated webhook documentation to clarify that v1 webhooks are no longer being published. Provided documentation for new activity mapping endpoint to look up historical v1 activity ids. * **Documentation**: ✨New✨ v1 -> v2 activity id mapping documentation for activity v1 id lookups. Updated webhook documentation to clarify that v2 recovery webhooks use the UUID of the associated sleep, not the cycle ID. * **v1 Recovery Webhooks**: Continue to use cycle ID as the identifier. * **v2 Recovery Webhooks**: Use the UUID of the sleep that the recovery is associated with. * **Documentation**: Updated webhook documentation to reflect the correct identifier usage. ### v2 API Launch​. * **Migration Guide**: A comprehensive v1 to v2 migration guide is available to assist with the transition. Strength Trainer activities are available via the `/workout` endpoint.",
+      "sourceName": "WHOOP Developer API",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.99991846,
+      "signalType": "clinical_regulatory"
     },
     {
       "title": "WHOOP API Docs | WHOOP for Developers",
@@ -1253,25 +1240,12 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.73322314,
+      "score": 0.9998894,
       "signalType": "platform_api"
     },
     {
-      "title": "Recovery | WHOOP for Developers",
-      "url": "https://developer.whoop.com/docs/developing/user-data/recovery",
-      "publishedAt": null,
-      "summary": "WHOOP Recovery is a daily measure of how prepared your body is to perform. In addition to the WHOOP Recovery score, the Recovery object has objective measurements that factored into the score such as the resting heart rate (RHR), heart rate variability (HRV), and for 4.0 members, blood oxygen (SpO2) and skin temperature. | cycle\\_id required | integer  The Recovery represents how recovered the user is for this physiological cycle |. | user\\_id required | integer  The WHOOP User for the recovery |. | created\\_at required | string  The time the recovery was recorded in WHOOP |. | updated\\_at required | string  The time the recovery was last updated in WHOOP |. | score\\_state required | string  Enum: \"SCORED\" \"PENDING\\_SCORE\" \"UNSCORABLE\"  `SCORED` means the recovery was scored and the measurement values will be present. `UNSCORABLE` means this activity could not be scored for some reason - commonly because there is not enough user metric data for the time range. Recovery data is available through the Cycle endpoints in the V2 API.",
-      "sourceName": "WHOOP Developer API",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.61196244,
-      "signalType": "clinical_regulatory"
-    },
-    {
       "title": "Advanced Research API | Withings",
-      "url": "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+      "url": "http://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
       "publishedAt": null,
       "summary": "# Advanced Research API. ## Designed for research groups, universities, and advanced health studies. The Advanced Research API provides research institutions, universities, and healthcare innovators with direct access to raw sensor data from Withings devices, enabling groundbreaking insights and in-depth studies on health and behavior. **3-axis Accelerometer**: Withings trackers are equipped with a MEMS accelerometer that samples at 25Hz by default (up to 100Hz), ideal for detailed motion and activity analysis. **PPG Sensor**: Withings devices utilize optical techniques to track blood volume changes in the microvascular bed. Depending on the device, you'll have access to a PPG sensor with either three LEDs (green, red, and infrared) or one LED (green), providing versatile data for cardiovascular research. ### Compatible Devices. Currently, the Advanced Research API is compatible exclusively with the Withings ScanWatch. ### Raw data documentation. Looking for the raw data services and data structure documentation? Learn about raw data services, activation, and data structure for accelerometer and PPG sensors.",
       "sourceName": "Withings API / Research",
@@ -1279,33 +1253,33 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9999976,
+      "score": 0.8003337,
       "signalType": "platform_api"
     },
     {
-      "title": "Pulling Health Data Manually | Withings",
-      "url": "https://developer.withings.com/developer-guide/v3/integration-guide/onsite-mode/data-api/fetch-data-example-manual",
+      "title": "Partner Hub | Withings",
+      "url": "https://developer.withings.com/developer-guide/data-api/authentication",
       "publishedAt": null,
-      "summary": "In some cases, you might prefer to fetch the user's health data manually rather than relying on the notification system. This approach requires providing a mechanism within your application—such as a button—that allows the user to initiate the data retrieval process when they're ready. To facilitate manual data retrieval, include a user interface element (like a \"Refresh Data\" button) that the user can interact with once their measurement is complete. This action signals your system to fetch the latest health data from the Withings API. The first step in the data retrieval process is to locate the access token associated with the user. By querying your database, you can retrieve this token, which authorizes your request to the Withings API. With the access token and time range in hand, decide which API endpoint to call based on the type of data you wish to retrieve. Construct your API call with the necessary parameters and execute the request to fetch the health data.",
+      "summary": "# Withings Partner Hub. Access powerful tools and APIs to seamlessly integrate Withings devices and health biomarkers into your Remote Patient Monitoring workflows and EHR systems. Discover our extensive range of health biomarkers accessible via API.### API Plans. Explore our diverse API offerings and find the perfect plan for your integration needs.### New · AI Agent Onboarding. Discover our guides, crafted to ensure a seamless process based on your needs.### API Reference. Start integrating Withings devices into your application with our Public API, designed for individuals and partners without a formal contract.### Cellular Solution. Integrate Withings health data directly into your mobile application using our easy-to-implement SDK for iOS and Android.### RPM. Give healthcare providers seamless access to patient data for real-time monitoring and improved patient outcomes.### Logistics API. Direct-to-patient dropshipping of pre-configured devices and kits, with personalization options and full API integration.### Advanced Research API. Access advanced data points for research and build insights with a specialized API for clinical and academic studies.",
       "sourceName": "Withings API / Research",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9999777,
-      "signalType": "clinical_regulatory"
+      "score": 0.72231215,
+      "signalType": "platform_api"
     },
     {
-      "title": "Public API | Withings",
-      "url": "http://developer.withings.com/developer-guide/v3/withings-solutions/app-to-app-solution",
+      "title": "Partner Hub | Withings",
+      "url": "https://developer.withings.com/developer-guide/v3/integration-guide/advanced-research-api/fetch-raw-data/raw-data-structure",
       "publishedAt": null,
-      "summary": "# Public API. ## The Withings Public API allows individuals and companies—whether or not they have a Withings contract—to access data from Withings users who have consented to share their information. User Creates Account and Sets Up Device via Withings App. The user creates their account and configures their device through the Withings app, readying it for data collection. User Grants Data Access via OAuth Web Flow. The user grants access to their health data for the partner app through the OAuth Web flow, enabling secure data sharing. Device Transmits Data via WiFi or BLE. The device transmits health data securely to Withings' servers over WiFi or BLE. Data is stored securely in Withings' cloud, compliant with HDS and HIPAA standards. Using the user’s access token, the partner retrieves health data through the Withings API. Ready to use Withings Public API to get health data from your program members? Start using the Public API to integrate Withings devices without a formal contract.",
+      "summary": "# Withings Partner Hub. Access powerful tools and APIs to seamlessly integrate Withings devices and health biomarkers into your Remote Patient Monitoring workflows and EHR systems. Discover our extensive range of health biomarkers accessible via API.### API Plans. Explore our diverse API offerings and find the perfect plan for your integration needs.### New · AI Agent Onboarding. Discover our guides, crafted to ensure a seamless process based on your needs.### API Reference. Start integrating Withings devices into your application with our Public API, designed for individuals and partners without a formal contract.### Cellular Solution. Integrate Withings health data directly into your mobile application using our easy-to-implement SDK for iOS and Android.### RPM. Give healthcare providers seamless access to patient data for real-time monitoring and improved patient outcomes.### Logistics API. Direct-to-patient dropshipping of pre-configured devices and kits, with personalization options and full API integration.### Advanced Research API. Access advanced data points for research and build insights with a specialized API for clinical and academic studies.",
       "sourceName": "Withings API / Research",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9999652,
+      "score": 0.7190094,
       "signalType": "platform_api"
     },
     {
@@ -1335,45 +1309,6 @@
       "signalType": "product_market"
     },
     {
-      "title": "Overview",
-      "url": "https://developer.dexcom.com/docs/",
-      "publishedAt": null,
-      "summary": "The Dexcom Developer Program offers developers the opportunity to apply for access to the Dexcom API and become an authorized Digital Health Partner. Authorized Digital Health Partners with Full Access to the API can market as an official Dexcom Digital Health Partner and are included on the Dexcom Partnerships Gallery. The Dexcom API is RESTful and utilizes the OAuth 2.0 standard for authentication, allowing individuals to securely authorize their Dexcom CGM data for use in third-party applications. Using the Dexcom API, authorized Digital Health Partners can leverage Dexcom CGM data, such as estimated glucose values and events, to build or enhance their apps. Data produced by a Dexcom CGM is an invaluable tool for people with diabetes and their care teams, and incorporating this data into your app can help users benefit from this resource in innovative ways. To become an authorized Digital Health Partner and gain full access to the Dexcom API, the Dexcom Strategic Partnerships team will review your application and determine if Dexcom will authorize your request.",
-      "sourceName": "Dexcom Developer API",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.8088086,
-      "signalType": "platform_api"
-    },
-    {
-      "title": "Dexcom API | Home",
-      "url": "https://developer.dexcom.com",
-      "publishedAt": null,
-      "summary": "Title: Dexcom API | Home\n# Welcome to the Dexcom Developer Program. ### Integrate with the most connected CGM brand.1. ### Develop with the Dexcom Web API. Connect Dexcom CGM data into your platform with our retrospective API. ### Join our connected ecosystem. Data from Dexcom CGM systems are an invaluable tool for people with diabetes and their care teams. Help users benefit from this resource by integrating your solution with Dexcom CGM systems. 1 Dexcom, data on file, 2024. BRIEF SAFETY STATEMENT: Failure to use the Dexcom Continuous Glucose Monitoring System and its components according to the instructions for use provided with your device and available at https://www.dexcom.com/safety-information and to properly consider all indications, contraindications, warnings, precautions, and cautions in those instructions for use may result in you missing a severe hypoglycemia (low blood glucose) or hyperglycemia (high blood glucose) occurrence and/or making a treatment decision that may result in injury. If your glucose alerts and readings from the Dexcom CGM do not match symptoms, use a blood glucose meter to make diabetes treatment decisions. Seek medical advice and attention when appropriate, including for any medical emergency.",
-      "sourceName": "Dexcom Developer API",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.7892503,
-      "signalType": "platform_api"
-    },
-    {
-      "title": "Dexcom API | Home",
-      "url": "https://developer.dexcom.com/overview",
-      "publishedAt": null,
-      "summary": "Title: Dexcom API | Home\n# Welcome to the Dexcom Developer Program. ### Integrate with the most connected CGM brand.1. ### Develop with the Dexcom Web API. Connect Dexcom CGM data into your platform with our retrospective API. ### Join our connected ecosystem. Data from Dexcom CGM systems are an invaluable tool for people with diabetes and their care teams. Help users benefit from this resource by integrating your solution with Dexcom CGM systems. 1 Dexcom, data on file, 2024. BRIEF SAFETY STATEMENT: Failure to use the Dexcom Continuous Glucose Monitoring System and its components according to the instructions for use provided with your device and available at https://www.dexcom.com/safety-information and to properly consider all indications, contraindications, warnings, precautions, and cautions in those instructions for use may result in you missing a severe hypoglycemia (low blood glucose) or hyperglycemia (high blood glucose) occurrence and/or making a treatment decision that may result in injury. If your glucose alerts and readings from the Dexcom CGM do not match symptoms, use a blood glucose meter to make diabetes treatment decisions. Seek medical advice and attention when appropriate, including for any medical emergency.",
-      "sourceName": "Dexcom Developer API",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.78512776,
-      "signalType": "platform_api"
-    },
-    {
       "title": "About Abbott | Company Overview, Mission and Values",
       "url": "https://www.abbott.com/en-us/about-abbott",
       "publishedAt": null,
@@ -1400,7 +1335,7 @@
       "signalType": "product_market"
     },
     {
-      "title": "From reactive nutrition coaching to real-time metabolic care | Levels",
+      "title": "From reactive nutrition coaching to real-time metabolic care | Levels | Levels",
       "url": "https://www.levels.com/blog/reactive-coaching-real-time-metabolic-care",
       "publishedAt": null,
       "summary": "This story shows how real-time data, unified timelines, and clinician dashboards enable intervention during the moments that actually matter. # From reactive nutrition coaching to real-time metabolic care. Real-time continuous glucose monitoring, unified patient timelines, and practitioner dashboards shift the care model from reactive analysis to intervention during the moments that drive outcomes. Real-time metabolic care changes the equation: when continuous glucose monitoring, food logs, and lifestyle data flow through one patient app and one practitioner dashboard, you can guide behavior during the meal, the workout, and the sleep window—not weeks later in a debrief. ### Learn more about Levels Pro. Extend care beyond the exam room with Levels Pro, the metabolic health operating system that unifies CGM, labs, food logs, and lifestyle data into a single, clinician‑ready view. Levels Pro gives your team the infrastructure to make that shift: one app for patients to learn in real time, one dashboard for clinicians to guide in real time, and a metabolic health operating system that turns reactive nutrition coaching into proactive, personalized, preventative care.",
@@ -1409,7 +1344,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9992022,
+      "score": 0.9994429,
       "signalType": "product_market"
     },
     {
@@ -1465,29 +1400,16 @@
       "signalType": "clinical_regulatory"
     },
     {
-      "title": "Changing assault-based STI outcomes with remote care delivery | Healthcare IT News",
-      "url": "https://www.healthcareitnews.com/news/changing-assault-based-sti-outcomes-remote-care-delivery",
+      "title": "Successful digital transformation requires buy-in from end users",
+      "url": "https://www.healthcareitnews.com/video/successful-digital-transformation-requires-buy-end-users",
       "publishedAt": null,
-      "summary": "Under national anti-sexual violence organization RAINN's new Safe Access Program, Visby Medical said patients in care deserts with positive chlamydia, gonorrhea and trichomoniasis infections can access the medication they need without in-person appointments. While its new partnership with Visby aims to improve detection and treatment of sexually transmitted infections (STIs) in regions of 17 states with known healthcare gaps, it could also help address post-assault mental health trauma that prevents some from seeking care in a clinical setting. Visby said it funded RAINN's initial program to distribute 1,000 test kits across rural and underserved communities across 17 states, \"where healthcare access is most limited,\" and is working to scale the program nationwide, he said. Some healthcare technology leaders regard the rural United States as a forgotten frontier because health systems care for 20% of the U.S. population, but they employ one-tenth the number of U.S. providers. \"Rural areas are projected to face a physician shortage of nearly 60% compared to a 10% shortage in urban areas,\" the GAO said in the report.",
+      "summary": "Rather than just rolling them out from the top down, IT teams should introduce new tools to clinical leaders and explain their benefits, says Jesus Diaz,",
       "sourceName": "Healthcare IT News",
       "sourceCategory": "industry_news",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.30265945,
-      "signalType": "business_structure"
-    },
-    {
-      "title": "Advanced AI holds promise for high-stakes healthcare, studies show | Healthcare IT News",
-      "url": "https://www.healthcareitnews.com/news/advanced-ai-holds-promise-high-stakes-healthcare-studies-show",
-      "publishedAt": null,
-      "summary": "In one study, Mayo Clinic researchers showed how its Radiomics-based Early Detection Model, or REDMOD, can triple radiologists' sensitivity in detecting pancreatic cancer at its visually occult pre-diagnostic stage in routine abdominal CT scans. Mayo Clinic said its researchers tested their REDMOD AI framework to detect pancreatic ductal adenocarcinoma in real patient imaging and called the results a \"milestone\" in efforts to achieve earlier detection of one of the deadliest forms of cancer. \"The greatest barrier to saving lives from pancreatic cancer has been our inability to see the disease when it is still curable,\" said Dr. Ajit Goenka, the study's senior author and a Mayo Clinic radiologist and nuclear medicine specialist, on the health system's website. Mayo Clinic researchers validated the model on an independent test set, and it identified PDAs at a median lead time of 475 days, they said in their report published in *Gut.*.",
-      "sourceName": "Healthcare IT News",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.23116307,
+      "score": 0.8479678,
       "signalType": "product_market"
     },
     {
@@ -1500,11 +1422,63 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.22464213,
+      "score": 0.79692537,
       "signalType": "product_market"
     },
     {
-      "title": "Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA ...",
+      "title": "UMC El Paso cuts ED boarding by half with dashboards | Healthcare IT News",
+      "url": "https://www.healthcareitnews.com/news/umc-el-paso-cuts-ed-boarding-half-dashboards",
+      "publishedAt": null,
+      "summary": "# UMC El Paso cuts ED boarding by half with dashboards. Jesus Reverol of University Medical Center of El Paso on healthcare analytics. Jesus Reverol, administrative director of performance improvement at University Medical Center of El Paso. UMC El Paso launched a length of stay improvement initiative in March 2023 and continued to build on that foundation into 2025 with additional operational and care delivery improvements. \"Coming out of COVID, we also saw a sustained rise in patient acuity that never really normalized,\" said Jesus Reverol, administrative director of performance improvement at UMC El Paso. When boarding hours rise, it's not just an ED problem – it's a signal that something upstream, particularly around discharges and inpatient flow, is not working as efficiently as it should, he added. The shift UMC El Paso needed to make was not just about adding tools – it was about fundamentally changing how we used data to manage the hospital in real time, Reverol said.",
+      "sourceName": "Healthcare IT News",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.52147114,
+      "signalType": "product_market"
+    },
+    {
+      "title": "2020 Midyear digital health market update: Unprecedented funding in an unprecedented time | Rock Health",
+      "url": "https://rockhealth.com/insights/2020-midyear-digital-health-market-update-unprecedented-funding-in-an-unprecedented-time",
+      "publishedAt": null,
+      "summary": "Corporate venture capital funds invested in startups with similar value propositions this year compared to recent years, namely companies that provide consumer health information, on-demand healthcare services, precision medicine, and research and development solutions. ## A continued downward trend in M&A clouds the path to liquidity for investors, but public digital health companies are thriving as the market rebounds. Digital health companies providing on-demand healthcare services (e.g., Alto Pharmacy, Amwell) raised $1.1B in the first half of the year, while monitoring of disease firms raised $831M, putting each category on pace to exceed 2019’s totals by 100%. In H1 2020, digital behavioral health companies received $588M, roughly the annual funding for this segment in any previous year (total behavioral health funding in prior three years was 2019: $539M, 2018: $658M, 2017: $273M). The majority of funding in this segment in H1 of 2020 has gone to digital behavioral health companies that provide one of two services:.",
+      "sourceName": "Rock Health Insights",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.99946004,
+      "signalType": "platform_api"
+    },
+    {
+      "title": "Q3 2022 digital health funding: The market isn’t the same as it was | Rock Health",
+      "url": "https://rockhealth.com/insights/q3-2022-digital-health-funding-the-market-isnt-the-same-as-it-was",
+      "publishedAt": null,
+      "summary": "# Q3 2022 digital health funding: The market isn’t the same as it was. With $2.2B raised across 125 deals, Q3 takes the title of the smallest funding quarter in the sector for all of 2022—in fact, it’s the lowest quarter by dollars raised in digital health since Q4 2019 ($2.1B). With Q3 included, 2022 year-to-date funding totals $12.6B across 458 deals, raising doubts that this year’s digital health pot will reach even half of last year’s $29.2B haul. At some point in 2022, it’s likely that growth-stage digital health startups in need of additional cash turned to investors already on their cap tables for quiet cash infusions (inside rounds), or pursued extension rounds, bridge rounds, or venture debt to raise new capital without otherwise impacting their share price. Catalyzed by FDA approvals for immersive physician tools and digital therapeutics in late 2021, this year’s funding for digital health startups applying augmented and virtual reality (AR/VR) technologies reached a new high, logging $239M through Q3 2022 compared to $198M in all of 2021.",
+      "sourceName": "Rock Health Insights",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.9993881,
+      "signalType": "clinical_regulatory"
+    },
+    {
+      "title": "Digital health funding 2016 midyear review | Rock Health",
+      "url": "https://rockhealth.com/insights/digital-health-funding-2016-midyear-review",
+      "publishedAt": null,
+      "summary": "After years of record-breaking venture funding in the digital health sector, we wondered if 2016 would continue on this torrid pace. The numbers are in: we ended the first half of 2016 with slightly over $2B in total venture funding–on track with the levels of both 2014 and 2015. While this number didn’t eclipse either of the previous years’ numbers, it’s important to keep context: in a year when everyone expected funding to decline, digital health has been as steady as ever and accounted for a healthy 8% of total venture funding. The first half of 2016 came out on top in one aspect however, as a record-breaking 151 companies raised more than $2M. We’re excited to see how the rest of the year plays out, and expect more M&A activity, a few IPOs, and many more deals from (more) new investors. ## The pace of digital health funding in the first half of 2016 echoed the record-breaking years of 2014 and 2015, with funding just eclipsing $2B.",
+      "sourceName": "Rock Health Insights",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.9993228,
+      "signalType": "business_structure"
+    },
+    {
+      "title": "Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA Notice - Digital Health Wire",
       "url": "https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/",
       "publishedAt": null,
       "summary": "# Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA Notice - Digital Health Wire. [Skip to content](https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/#primary). [![Image 3: Digital Health Wire](https://insightlinks.storage.googleapis.com/digitalhealthwire/2021/06/digitalhealthwire-bold-wire.png)](https://digitalhealthwire.com/). Please check your email for confirmation. Something went wrong, please try again. *   [Top Stories](https://digitalhealthwire.com/top-stories/). *   [Newsletters](https://digitalhealthwire.com/newsletters/). *   [Shows](https://digitalhealthwire.com/show/). *   [Sponsor](https://docs.google.com/forms/d/e/1FAIpQLSeKcBc80XpxZwx--MhCHPqF-hAoMkR9m8pZD9iMxBssls5fDg/viewform?usp=sf_link). Please check your email for confirmation. Something went wrong, please try again. [![Image 4](https://insightlinks.storage.googleapis.com/digitalhealthwire/2025/03/Navina_900x90.jpg)](https://www.navina.ai/?utm_source=digital-health-wire&utm_medium=website&utm_campaign=banner-ad). ###### Get the top digital health stories right in your inbox. Please check your email for confirmation. [![Image 5](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/Photon.png) Digital Health Wire #459 May 11, 2026 ## Photon, Perplexity, and Prior Auths](https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/)[![Image 6](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/JN-2.png) Digital Health Wire #458 May 7, 2026 ## Management Consultants, Doximity Ask, and Docs Make Great Founders](https://digitalhealthwire.com/newsletter/management-consultants-doximity-ask-and-docs-make-great-founders/)[![Image 7](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/Science.png) Digital Health Wire #457 May 4, 2026 ## OpenAI vs Physicians, Teladoc, and DeepMind Co-Clinician](https://digitalhealthwire.com/newsletter/openai-vs-physicians-teladoc-and-deep",
@@ -1513,7 +1487,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.3084719,
+      "score": 0.31047532,
       "signalType": "platform_api"
     },
     {
@@ -1526,20 +1500,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.22210097,
-      "signalType": "business_structure"
-    },
-    {
-      "title": "Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership | DC Rainmaker",
-      "url": "https://www.dcrainmaker.com/2026/05/tidbits-garmin-suunto-lawsuit-partnership-form-swim-2-lt-peloton-spotify.html",
-      "publishedAt": null,
-      "summary": "+ The Girl’s Sports Gear I Use List. # Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership. Here’s a smattering of interesting things that I noticed over the past few days, or, today in some cases. You may remember that a few months back I posted about the update of the Suunto lawsuit against Garmin for a variety of things. And then on top of that, Garmin countersued Suunto for an equal random arrangement of patent infringement allegations. But when Garmin countersued, they expanded it to Suunto’s parent company, Dongguan Liesheng, by including a bunch of mostly no-name watches that Dongguan Liesheng sells in the US on Amazon. > “The circumstances of Dongguan’s inclusion as a Counterclaim-Defendant strongly suggest that Garmin’s purpose in naming Dongguan was not to vindicate a legitimate infringement claim, but rather to impose the burden and expense of federal patent litigation on the foreign parent company of its litigation adversary as a tactical maneuver.",
-      "sourceName": "DC Rainmaker",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.32988858,
+      "score": 0.22220221,
       "signalType": "business_structure"
     },
     {
@@ -1552,8 +1513,21 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.28336525,
+      "score": 0.9993881,
       "signalType": "product_market"
+    },
+    {
+      "title": "Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership | DC Rainmaker",
+      "url": "https://www.dcrainmaker.com/2026/05/tidbits-garmin-suunto-lawsuit-partnership-form-swim-2-lt-peloton-spotify.html",
+      "publishedAt": null,
+      "summary": "+ The Girl’s Sports Gear I Use List. # Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership. Here’s a smattering of interesting things that I noticed over the past few days, or, today in some cases. You may remember that a few months back I posted about the update of the Suunto lawsuit against Garmin for a variety of things. And then on top of that, Garmin countersued Suunto for an equal random arrangement of patent infringement allegations. But when Garmin countersued, they expanded it to Suunto’s parent company, Dongguan Liesheng, by including a bunch of mostly no-name watches that Dongguan Liesheng sells in the US on Amazon. > “The circumstances of Dongguan’s inclusion as a Counterclaim-Defendant strongly suggest that Garmin’s purpose in naming Dongguan was not to vindicate a legitimate infringement claim, but rather to impose the burden and expense of federal patent litigation on the foreign parent company of its litigation adversary as a tactical maneuver.",
+      "sourceName": "DC Rainmaker",
+      "sourceCategory": "industry_news",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.9993687,
+      "signalType": "business_structure"
     },
     {
       "title": "Polar Street X In-Depth Review: What's the Catch?",
@@ -1565,164 +1539,8 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.26975837,
+      "score": 0.9986646,
       "signalType": "product_market"
-    },
-    {
-      "title": "[PDF] Wavelet-Based Masked Multiscale Reconstruction for PPG ...",
-      "url": "https://openreview.net/pdf?id=kJbY2CsTPb",
-      "publishedAt": null,
-      "summary": "The pretraining task is defined to randomly mask out subsets of wavelet coefficients derived from multi-resolution decomposition of raw PPG signals and train the encoder to reconstruct them. On 10 of 13 health-related tasks, MMR trained on large-scale wearable PPG data outperforms or matches state-of-the-art open-source PPG foundation models and other self-supervised baselines. To summarize, our contributions are: (i) We pretrain a large-scale wavelet-based PPG foundation model on ∼50K hours of PPG data with a masked multiscale reconstruction objective, enabling the model to capture rich time–frequency information across multiple scales. 2 Background Foundation models (FMs) for biosignals have recently shown strong promise, with large-scale self-supervised pretraining on ECG and PPG data from wearables demonstrating transferable repre-sentations across diverse downstream tasks [Abbaspourazad et al., 2024b, Pillai et al., 2024, Saha et al., 2025, Yang et al., 2023]. Recent deep learning approaches incorporate wavelets in end-to-end pipelines, such as wavelet-informed tokenization [Masserano et al., 2024], and the combination of learnable wavelet decompositions with frequency-guided masking for biosignal foundation models [Chen et al., 2025]. Importantly, these results were achieved using real-world wearable PPG data sampled at a low rate, compared to PaPaGei models trained on clean, high-frequency (125–500 Hz) clinical signals. 5 Discussion and Future Work Pretraining on diverse smartwatch data with wavelet-based multi-scale reconstruction of PPG signals provides a strong foundation for robust physiological feature learning and downstream cardiovascular tasks. For example, [Abbaspourazad et al., 2024b] trained foundation models on PPG and ECG from ∼141K Apple Watch users, demonstrating the value of contrastive learning at scale. More recently, deep learning models have incorporated wavelets end-to-end, such as wavelet-based tokenization for time-series foundation mod",
-      "sourceName": "NeurIPS Health Workshops / OpenReview",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.5473921,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Embedded Multi-Sensor Smartwatch for Computationally Intensive Biosignal Processing | IEEE Conference Publication | IEEE Xplore",
-      "url": "https://ieeexplore.ieee.org/document/10798302",
-      "publishedAt": null,
-      "summary": "Conferences >2024 IEEE Biomedical Circuits... Over the past decades, the rapid expansion of the wearable market has led to significant advances in integrated devices and technologies, particularly in smartwatches. Over the past decades, the rapid expansion of the wearable market has led to significant advances in integrated devices and technologies, particularly in smartwatches. These devices can unobtrusively acquire various physiological signals such as ECG, EDA, and PPG, resulting ideal for real-time monitoring of vital parameters in medical diagnostics, consumer health, and sports performance analysis. However, existing commercial solutions often do not focus on health-specific applications and face challenges in sensor integration, hardware/software optimization, and onboard signal processing. This paper introduces GAPWatch, a smartwatch-shaped platform with a PCB size of 49×47×1.2 mm based on GAP9 SoC for efficient onboard signal processing and designed to acquire ECG, PPG, inertial data, and 16-channels sEMG. The system is validated in three scenarios: high-rate sEMG acquisition and streaming, low-rate ECG, PPG, and IMU data streaming, and onboard heart rate (HR) estimation using a TCN. **Published in:** 2024 IEEE Biomedical Circuits and Systems Conference (BioCAS). **Date of Conference:** 24-26 October 2024. In particular, smartwatches have emerged as versatile platforms capable of acquiring a variety of physiological signals such as electrocardiogram (ECG), electrodermal activity (EDA), and photoplethysmogram (PPG). Their unobtrusive nature, coupled with the increasing advances of sensor technology and computational capabilities, makes smartwatches an ideal candidate for real-time monitoring of multiple vital parameters from a single, compact device, which can be utilized across various applications, including medical diagnostics, consumer health, and sports performance analysis [1]. Moreover, wearable devices allow the development of more advanced human-ma",
-      "sourceName": "IEEE EMBC Proceedings",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.6617704,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Wrist-Worn Devices for Remote Monitoring of Cardiovascular Disease: A Survey | IEEE Journals & Magazine | IEEE Xplore",
-      "url": "https://ieeexplore.ieee.org/document/11142265",
-      "publishedAt": null,
-      "summary": "Title: Wrist-Worn Devices for Remote Monitoring of Cardiovascular Disease: A Survey | IEEE Journals & Magazine | IEEE Xplore\nThis survey reviews studies from January 2019 to December 2024 that utilized wrist-worn sensors for assessing cardiovascular health aspects, including hypertension, abnormal cardiac rhythms, sleep tracking, activity monitoring and post-stroke rehabilitation. Continuous monitoring of lifestyle habits, including sleep quality and activity levels, and demographic, physiological or clinical data, including heart rate (HR), blood pressure (BP), blood oxygen saturation (SpO2), body weight, heart rate variability (HRV), ECG, respiratory rate (RespR), blood glucose, cholesterol, albumin, triglycerides, haemoglobin, age, gender and prescribed medication usage can provide a risk assessment for CVD, helping to control, modify and treat risk factors for CVD development. A wearable patch and a chest-worn sensor are less convenient to wear; however, they can be worn under clothing and provide higher quality continuous ECG recordings or heart rate measurements ), ), ), ) compared to wrist- or hand-worn devices, particularly during exercise ), ) or hand activity. Fitness tracking devices such as the Fitbit Charge 6 are equipped with sensors for measuring ECG, photoplethysmogram (PPG), skin temperature, built-in global positioning system (GPS), accelerometer (ACC) and gyroscope (GYRO) data that are used for evaluating abnormal heart rhythms, irregular heart rates, resting heart rate, breathing rate, oxygen saturation, moderate or vigorous activity levels, sleep duration, sleep stages and sleep consistency ). reviewed research literature on the use of smartwatches for monitoring conditions such as stress, heart disease, device safety, movement disorders, sleep tracking, blood pressure, the COVID pandemic and studies validating the measurements made using a smartwatch, e.g. heart rate or accelerometer data, compared to standard clinical equipment ). 1. Compared ",
-      "sourceName": "IEEE EMBC Proceedings",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.5951402,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Wearable ECG platform for continuous cardiac monitoring | IEEE Conference Publication | IEEE Xplore",
-      "url": "https://ieeexplore.ieee.org/document/7590779",
-      "publishedAt": null,
-      "summary": "Wearable ECG platform for continuous cardiac monitoring | IEEE Conference Publication | IEEE Xplore. # Wearable ECG platform for continuous cardiac monitoring. An ultra-low power ECG platform for continuous and minimally intrusive monitoring for systems with minimal processing capabilities, is presented in this paper. The platform is capable of detecting abnormalities in the ECG signal by extracting and analyzing features related to various cardiac trends. The platform is built to continuously operate on any of the 12 leads and the presented work includes a single lead implementation that works on lead I or II. In addition, the device stores raw ECG waveform locally and is designed to run for 10 days on a single charge. **Published in:** 2016 38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC). The electrocardiogram (ECG) is a composite signal representing the electrical activity of the heart and is one of the most useful diagnostic tools in emergency medicine.",
-      "sourceName": "IEEE EMBC Proceedings",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.5883458,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore",
-      "url": "https://ieeexplore.ieee.org/document/10385998",
-      "publishedAt": null,
-      "summary": "Title: End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore\nEnd-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore. Conferences >2023 IEEE International Confe... # End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous...Show More. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous monitoring of cardiovascular parameters, such as heart rate (HR) and heart rate variability (HRV). However, PPG signals collected in daily life are prone to artifacts and noise, posing challenges to HR and HRV extraction. The existing HR and HRV extraction methods cannot effectively handle noisy PPG signals and ensure accurate results. Additionally, current Python packages were primarily designed for analyzing \"clean\" PPG signals, limiting their performance in handling artifacts and noise and resulting in unreliable HR and HRV measurements. In this paper, we propose a robust end-to-end PPG processing pipeline to reliably extract HR and HRV from PPG signals collected in free-living settings. The pipeline comprises three machine learning-based PPG analysis methods: signal quality assessment, reconstruction of noisy signal, and systolic peak detection. We assess the proposed PPG pipeline using a dataset including PPG and Electrocardiogram (ECG) signals recorded from 46 individuals by smartwatches. **Published in:** 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM).",
-      "sourceName": "IEEE BIBM Proceedings",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.7016523,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Intelligent Wearable Systems: Opportunities and Challenges in ...",
-      "url": "https://dl.acm.org/doi/abs/10.1145/3648469",
-      "publishedAt": null,
-      "summary": "This article provides an overview of various types of intelligent wearables and their applications in health and sports, categorizes machine learning algorithms",
-      "sourceName": "ACM IMWUT / UbiComp",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.34820226,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Towards Reliable Driver Drowsiness Detection Leveraging Wearables",
-      "url": "https://dl.acm.org/doi/abs/10.1145/3560821",
-      "publishedAt": null,
-      "summary": "We propose FDWatch, a novel drowsiness detection system that exploits the low-cost Photoplethysmogram (PPG) sensor and motion sensor integrated into wrist-worn",
-      "sourceName": "ACM IMWUT / UbiComp",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.23792146,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "The Design Space of Wearables for Sports and Fitness Practices",
-      "url": "https://dl.acm.org/doi/pdf/10.1145/3411764.3445700",
-      "publishedAt": null,
-      "summary": "ABSTRACT. The growing interest in wearables for sports and fitness calls for design knowledge and conceptualizations that can help shape future designs.",
-      "sourceName": "ACM IMWUT / UbiComp",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.23598804,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Resource-Efficient Continual Learning for Sensor-Based Human ...",
-      "url": "https://dl.acm.org/doi/abs/10.1145/3530910",
-      "publishedAt": null,
-      "summary": "Recent advances in deep learning have granted unrivaled performance to sensor-based human activity recognition (HAR). However, in a real-world scenario,",
-      "sourceName": "ISWC Proceedings",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.13849701,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "A Data-Driven Approach for Sleep Stage Detection Using Machine ...",
-      "url": "https://ieeexplore.ieee.org/document/11471495/",
-      "publishedAt": null,
-      "summary": "In this study, we develop and evaluate an ML framework for identifying sleep stages using physiological signals such as photoplethysmography (PPG), PSG, and PPG",
-      "sourceName": "IEEE Sensors / Wearable Proceedings",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.99750805,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Nanoelectronic Sensors for Real-Time Health and Environmental ...",
-      "url": "https://ieeexplore.ieee.org/document/11167273/",
-      "publishedAt": null,
-      "summary": "Nanoelectronics sensors are revolutionizing realtime monitoring applications in both healthcare and environmental domains due to their miniaturized size,",
-      "sourceName": "IEEE Sensors / Wearable Proceedings",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.9967524,
-      "signalType": "algorithm_evidence"
-    },
-    {
-      "title": "Enhancing Stress Detection Accuracy: A CNN-LSTM Model for ECG ...",
-      "url": "https://ieeexplore.ieee.org/document/11009625/",
-      "publishedAt": null,
-      "summary": "Abstract: Stress detection using physiological signals is crucial for modern healthcare and well-being systems, particularly given the increasing prevalence",
-      "sourceName": "IEEE Sensors / Wearable Proceedings",
-      "sourceCategory": "academic",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.9912209,
-      "signalType": "algorithm_evidence"
     }
   ],
   "groupedByCategory": {
@@ -1995,29 +1813,16 @@
         "signalType": "clinical_regulatory"
       },
       {
-        "title": "Changing assault-based STI outcomes with remote care delivery | Healthcare IT News",
-        "url": "https://www.healthcareitnews.com/news/changing-assault-based-sti-outcomes-remote-care-delivery",
+        "title": "Successful digital transformation requires buy-in from end users",
+        "url": "https://www.healthcareitnews.com/video/successful-digital-transformation-requires-buy-end-users",
         "publishedAt": null,
-        "summary": "Under national anti-sexual violence organization RAINN's new Safe Access Program, Visby Medical said patients in care deserts with positive chlamydia, gonorrhea and trichomoniasis infections can access the medication they need without in-person appointments. While its new partnership with Visby aims to improve detection and treatment of sexually transmitted infections (STIs) in regions of 17 states with known healthcare gaps, it could also help address post-assault mental health trauma that prevents some from seeking care in a clinical setting. Visby said it funded RAINN's initial program to distribute 1,000 test kits across rural and underserved communities across 17 states, \"where healthcare access is most limited,\" and is working to scale the program nationwide, he said. Some healthcare technology leaders regard the rural United States as a forgotten frontier because health systems care for 20% of the U.S. population, but they employ one-tenth the number of U.S. providers. \"Rural areas are projected to face a physician shortage of nearly 60% compared to a 10% shortage in urban areas,\" the GAO said in the report.",
+        "summary": "Rather than just rolling them out from the top down, IT teams should introduce new tools to clinical leaders and explain their benefits, says Jesus Diaz,",
         "sourceName": "Healthcare IT News",
         "sourceCategory": "industry_news",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.30265945,
-        "signalType": "business_structure"
-      },
-      {
-        "title": "Advanced AI holds promise for high-stakes healthcare, studies show | Healthcare IT News",
-        "url": "https://www.healthcareitnews.com/news/advanced-ai-holds-promise-high-stakes-healthcare-studies-show",
-        "publishedAt": null,
-        "summary": "In one study, Mayo Clinic researchers showed how its Radiomics-based Early Detection Model, or REDMOD, can triple radiologists' sensitivity in detecting pancreatic cancer at its visually occult pre-diagnostic stage in routine abdominal CT scans. Mayo Clinic said its researchers tested their REDMOD AI framework to detect pancreatic ductal adenocarcinoma in real patient imaging and called the results a \"milestone\" in efforts to achieve earlier detection of one of the deadliest forms of cancer. \"The greatest barrier to saving lives from pancreatic cancer has been our inability to see the disease when it is still curable,\" said Dr. Ajit Goenka, the study's senior author and a Mayo Clinic radiologist and nuclear medicine specialist, on the health system's website. Mayo Clinic researchers validated the model on an independent test set, and it identified PDAs at a median lead time of 475 days, they said in their report published in *Gut.*.",
-        "sourceName": "Healthcare IT News",
-        "sourceCategory": "industry_news",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.23116307,
+        "score": 0.8479678,
         "signalType": "product_market"
       },
       {
@@ -2030,11 +1835,63 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.22464213,
+        "score": 0.79692537,
         "signalType": "product_market"
       },
       {
-        "title": "Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA ...",
+        "title": "UMC El Paso cuts ED boarding by half with dashboards | Healthcare IT News",
+        "url": "https://www.healthcareitnews.com/news/umc-el-paso-cuts-ed-boarding-half-dashboards",
+        "publishedAt": null,
+        "summary": "# UMC El Paso cuts ED boarding by half with dashboards. Jesus Reverol of University Medical Center of El Paso on healthcare analytics. Jesus Reverol, administrative director of performance improvement at University Medical Center of El Paso. UMC El Paso launched a length of stay improvement initiative in March 2023 and continued to build on that foundation into 2025 with additional operational and care delivery improvements. \"Coming out of COVID, we also saw a sustained rise in patient acuity that never really normalized,\" said Jesus Reverol, administrative director of performance improvement at UMC El Paso. When boarding hours rise, it's not just an ED problem – it's a signal that something upstream, particularly around discharges and inpatient flow, is not working as efficiently as it should, he added. The shift UMC El Paso needed to make was not just about adding tools – it was about fundamentally changing how we used data to manage the hospital in real time, Reverol said.",
+        "sourceName": "Healthcare IT News",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.52147114,
+        "signalType": "product_market"
+      },
+      {
+        "title": "2020 Midyear digital health market update: Unprecedented funding in an unprecedented time | Rock Health",
+        "url": "https://rockhealth.com/insights/2020-midyear-digital-health-market-update-unprecedented-funding-in-an-unprecedented-time",
+        "publishedAt": null,
+        "summary": "Corporate venture capital funds invested in startups with similar value propositions this year compared to recent years, namely companies that provide consumer health information, on-demand healthcare services, precision medicine, and research and development solutions. ## A continued downward trend in M&A clouds the path to liquidity for investors, but public digital health companies are thriving as the market rebounds. Digital health companies providing on-demand healthcare services (e.g., Alto Pharmacy, Amwell) raised $1.1B in the first half of the year, while monitoring of disease firms raised $831M, putting each category on pace to exceed 2019’s totals by 100%. In H1 2020, digital behavioral health companies received $588M, roughly the annual funding for this segment in any previous year (total behavioral health funding in prior three years was 2019: $539M, 2018: $658M, 2017: $273M). The majority of funding in this segment in H1 of 2020 has gone to digital behavioral health companies that provide one of two services:.",
+        "sourceName": "Rock Health Insights",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.99946004,
+        "signalType": "platform_api"
+      },
+      {
+        "title": "Q3 2022 digital health funding: The market isn’t the same as it was | Rock Health",
+        "url": "https://rockhealth.com/insights/q3-2022-digital-health-funding-the-market-isnt-the-same-as-it-was",
+        "publishedAt": null,
+        "summary": "# Q3 2022 digital health funding: The market isn’t the same as it was. With $2.2B raised across 125 deals, Q3 takes the title of the smallest funding quarter in the sector for all of 2022—in fact, it’s the lowest quarter by dollars raised in digital health since Q4 2019 ($2.1B). With Q3 included, 2022 year-to-date funding totals $12.6B across 458 deals, raising doubts that this year’s digital health pot will reach even half of last year’s $29.2B haul. At some point in 2022, it’s likely that growth-stage digital health startups in need of additional cash turned to investors already on their cap tables for quiet cash infusions (inside rounds), or pursued extension rounds, bridge rounds, or venture debt to raise new capital without otherwise impacting their share price. Catalyzed by FDA approvals for immersive physician tools and digital therapeutics in late 2021, this year’s funding for digital health startups applying augmented and virtual reality (AR/VR) technologies reached a new high, logging $239M through Q3 2022 compared to $198M in all of 2021.",
+        "sourceName": "Rock Health Insights",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.9993881,
+        "signalType": "clinical_regulatory"
+      },
+      {
+        "title": "Digital health funding 2016 midyear review | Rock Health",
+        "url": "https://rockhealth.com/insights/digital-health-funding-2016-midyear-review",
+        "publishedAt": null,
+        "summary": "After years of record-breaking venture funding in the digital health sector, we wondered if 2016 would continue on this torrid pace. The numbers are in: we ended the first half of 2016 with slightly over $2B in total venture funding–on track with the levels of both 2014 and 2015. While this number didn’t eclipse either of the previous years’ numbers, it’s important to keep context: in a year when everyone expected funding to decline, digital health has been as steady as ever and accounted for a healthy 8% of total venture funding. The first half of 2016 came out on top in one aspect however, as a record-breaking 151 companies raised more than $2M. We’re excited to see how the rest of the year plays out, and expect more M&A activity, a few IPOs, and many more deals from (more) new investors. ## The pace of digital health funding in the first half of 2016 echoed the record-breaking years of 2014 and 2015, with funding just eclipsing $2B.",
+        "sourceName": "Rock Health Insights",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.9993228,
+        "signalType": "business_structure"
+      },
+      {
+        "title": "Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA Notice - Digital Health Wire",
         "url": "https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/",
         "publishedAt": null,
         "summary": "# Q1 Investment Overview, OpenLoop Acquisition, and the 2027 MA Notice - Digital Health Wire. [Skip to content](https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/#primary). [![Image 3: Digital Health Wire](https://insightlinks.storage.googleapis.com/digitalhealthwire/2021/06/digitalhealthwire-bold-wire.png)](https://digitalhealthwire.com/). Please check your email for confirmation. Something went wrong, please try again. *   [Top Stories](https://digitalhealthwire.com/top-stories/). *   [Newsletters](https://digitalhealthwire.com/newsletters/). *   [Shows](https://digitalhealthwire.com/show/). *   [Sponsor](https://docs.google.com/forms/d/e/1FAIpQLSeKcBc80XpxZwx--MhCHPqF-hAoMkR9m8pZD9iMxBssls5fDg/viewform?usp=sf_link). Please check your email for confirmation. Something went wrong, please try again. [![Image 4](https://insightlinks.storage.googleapis.com/digitalhealthwire/2025/03/Navina_900x90.jpg)](https://www.navina.ai/?utm_source=digital-health-wire&utm_medium=website&utm_campaign=banner-ad). ###### Get the top digital health stories right in your inbox. Please check your email for confirmation. [![Image 5](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/Photon.png) Digital Health Wire #459 May 11, 2026 ## Photon, Perplexity, and Prior Auths](https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/)[![Image 6](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/JN-2.png) Digital Health Wire #458 May 7, 2026 ## Management Consultants, Doximity Ask, and Docs Make Great Founders](https://digitalhealthwire.com/newsletter/management-consultants-doximity-ask-and-docs-make-great-founders/)[![Image 7](https://insightlinks.storage.googleapis.com/digitalhealthwire/2026/05/Science.png) Digital Health Wire #457 May 4, 2026 ## OpenAI vs Physicians, Teladoc, and DeepMind Co-Clinician](https://digitalhealthwire.com/newsletter/openai-vs-physicians-teladoc-and-deep",
@@ -2043,7 +1900,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.3084719,
+        "score": 0.31047532,
         "signalType": "platform_api"
       },
       {
@@ -2056,20 +1913,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.22210097,
-        "signalType": "business_structure"
-      },
-      {
-        "title": "Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership | DC Rainmaker",
-        "url": "https://www.dcrainmaker.com/2026/05/tidbits-garmin-suunto-lawsuit-partnership-form-swim-2-lt-peloton-spotify.html",
-        "publishedAt": null,
-        "summary": "+ The Girl’s Sports Gear I Use List. # Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership. Here’s a smattering of interesting things that I noticed over the past few days, or, today in some cases. You may remember that a few months back I posted about the update of the Suunto lawsuit against Garmin for a variety of things. And then on top of that, Garmin countersued Suunto for an equal random arrangement of patent infringement allegations. But when Garmin countersued, they expanded it to Suunto’s parent company, Dongguan Liesheng, by including a bunch of mostly no-name watches that Dongguan Liesheng sells in the US on Amazon. > “The circumstances of Dongguan’s inclusion as a Counterclaim-Defendant strongly suggest that Garmin’s purpose in naming Dongguan was not to vindicate a legitimate infringement claim, but rather to impose the burden and expense of federal patent litigation on the foreign parent company of its litigation adversary as a tactical maneuver.",
-        "sourceName": "DC Rainmaker",
-        "sourceCategory": "industry_news",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.32988858,
+        "score": 0.22220221,
         "signalType": "business_structure"
       },
       {
@@ -2082,8 +1926,21 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.28336525,
+        "score": 0.9993881,
         "signalType": "product_market"
+      },
+      {
+        "title": "Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership | DC Rainmaker",
+        "url": "https://www.dcrainmaker.com/2026/05/tidbits-garmin-suunto-lawsuit-partnership-form-swim-2-lt-peloton-spotify.html",
+        "publishedAt": null,
+        "summary": "+ The Girl’s Sports Gear I Use List. # Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership. Here’s a smattering of interesting things that I noticed over the past few days, or, today in some cases. You may remember that a few months back I posted about the update of the Suunto lawsuit against Garmin for a variety of things. And then on top of that, Garmin countersued Suunto for an equal random arrangement of patent infringement allegations. But when Garmin countersued, they expanded it to Suunto’s parent company, Dongguan Liesheng, by including a bunch of mostly no-name watches that Dongguan Liesheng sells in the US on Amazon. > “The circumstances of Dongguan’s inclusion as a Counterclaim-Defendant strongly suggest that Garmin’s purpose in naming Dongguan was not to vindicate a legitimate infringement claim, but rather to impose the burden and expense of federal patent litigation on the foreign parent company of its litigation adversary as a tactical maneuver.",
+        "sourceName": "DC Rainmaker",
+        "sourceCategory": "industry_news",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.9993687,
+        "signalType": "business_structure"
       },
       {
         "title": "Polar Street X In-Depth Review: What's the Catch?",
@@ -2095,7 +1952,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.26975837,
+        "score": 0.9986646,
         "signalType": "product_market"
       }
     ],
@@ -2435,162 +2292,6 @@
         "sourceLang": "en",
         "retrievalMethod": "rss",
         "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "[PDF] Wavelet-Based Masked Multiscale Reconstruction for PPG ...",
-        "url": "https://openreview.net/pdf?id=kJbY2CsTPb",
-        "publishedAt": null,
-        "summary": "The pretraining task is defined to randomly mask out subsets of wavelet coefficients derived from multi-resolution decomposition of raw PPG signals and train the encoder to reconstruct them. On 10 of 13 health-related tasks, MMR trained on large-scale wearable PPG data outperforms or matches state-of-the-art open-source PPG foundation models and other self-supervised baselines. To summarize, our contributions are: (i) We pretrain a large-scale wavelet-based PPG foundation model on ∼50K hours of PPG data with a masked multiscale reconstruction objective, enabling the model to capture rich time–frequency information across multiple scales. 2 Background Foundation models (FMs) for biosignals have recently shown strong promise, with large-scale self-supervised pretraining on ECG and PPG data from wearables demonstrating transferable repre-sentations across diverse downstream tasks [Abbaspourazad et al., 2024b, Pillai et al., 2024, Saha et al., 2025, Yang et al., 2023]. Recent deep learning approaches incorporate wavelets in end-to-end pipelines, such as wavelet-informed tokenization [Masserano et al., 2024], and the combination of learnable wavelet decompositions with frequency-guided masking for biosignal foundation models [Chen et al., 2025]. Importantly, these results were achieved using real-world wearable PPG data sampled at a low rate, compared to PaPaGei models trained on clean, high-frequency (125–500 Hz) clinical signals. 5 Discussion and Future Work Pretraining on diverse smartwatch data with wavelet-based multi-scale reconstruction of PPG signals provides a strong foundation for robust physiological feature learning and downstream cardiovascular tasks. For example, [Abbaspourazad et al., 2024b] trained foundation models on PPG and ECG from ∼141K Apple Watch users, demonstrating the value of contrastive learning at scale. More recently, deep learning models have incorporated wavelets end-to-end, such as wavelet-based tokenization for time-series foundation mod",
-        "sourceName": "NeurIPS Health Workshops / OpenReview",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.5473921,
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Embedded Multi-Sensor Smartwatch for Computationally Intensive Biosignal Processing | IEEE Conference Publication | IEEE Xplore",
-        "url": "https://ieeexplore.ieee.org/document/10798302",
-        "publishedAt": null,
-        "summary": "Conferences >2024 IEEE Biomedical Circuits... Over the past decades, the rapid expansion of the wearable market has led to significant advances in integrated devices and technologies, particularly in smartwatches. Over the past decades, the rapid expansion of the wearable market has led to significant advances in integrated devices and technologies, particularly in smartwatches. These devices can unobtrusively acquire various physiological signals such as ECG, EDA, and PPG, resulting ideal for real-time monitoring of vital parameters in medical diagnostics, consumer health, and sports performance analysis. However, existing commercial solutions often do not focus on health-specific applications and face challenges in sensor integration, hardware/software optimization, and onboard signal processing. This paper introduces GAPWatch, a smartwatch-shaped platform with a PCB size of 49×47×1.2 mm based on GAP9 SoC for efficient onboard signal processing and designed to acquire ECG, PPG, inertial data, and 16-channels sEMG. The system is validated in three scenarios: high-rate sEMG acquisition and streaming, low-rate ECG, PPG, and IMU data streaming, and onboard heart rate (HR) estimation using a TCN. **Published in:** 2024 IEEE Biomedical Circuits and Systems Conference (BioCAS). **Date of Conference:** 24-26 October 2024. In particular, smartwatches have emerged as versatile platforms capable of acquiring a variety of physiological signals such as electrocardiogram (ECG), electrodermal activity (EDA), and photoplethysmogram (PPG). Their unobtrusive nature, coupled with the increasing advances of sensor technology and computational capabilities, makes smartwatches an ideal candidate for real-time monitoring of multiple vital parameters from a single, compact device, which can be utilized across various applications, including medical diagnostics, consumer health, and sports performance analysis [1]. Moreover, wearable devices allow the development of more advanced human-ma",
-        "sourceName": "IEEE EMBC Proceedings",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.6617704,
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Wrist-Worn Devices for Remote Monitoring of Cardiovascular Disease: A Survey | IEEE Journals & Magazine | IEEE Xplore",
-        "url": "https://ieeexplore.ieee.org/document/11142265",
-        "publishedAt": null,
-        "summary": "Title: Wrist-Worn Devices for Remote Monitoring of Cardiovascular Disease: A Survey | IEEE Journals & Magazine | IEEE Xplore\nThis survey reviews studies from January 2019 to December 2024 that utilized wrist-worn sensors for assessing cardiovascular health aspects, including hypertension, abnormal cardiac rhythms, sleep tracking, activity monitoring and post-stroke rehabilitation. Continuous monitoring of lifestyle habits, including sleep quality and activity levels, and demographic, physiological or clinical data, including heart rate (HR), blood pressure (BP), blood oxygen saturation (SpO2), body weight, heart rate variability (HRV), ECG, respiratory rate (RespR), blood glucose, cholesterol, albumin, triglycerides, haemoglobin, age, gender and prescribed medication usage can provide a risk assessment for CVD, helping to control, modify and treat risk factors for CVD development. A wearable patch and a chest-worn sensor are less convenient to wear; however, they can be worn under clothing and provide higher quality continuous ECG recordings or heart rate measurements ), ), ), ) compared to wrist- or hand-worn devices, particularly during exercise ), ) or hand activity. Fitness tracking devices such as the Fitbit Charge 6 are equipped with sensors for measuring ECG, photoplethysmogram (PPG), skin temperature, built-in global positioning system (GPS), accelerometer (ACC) and gyroscope (GYRO) data that are used for evaluating abnormal heart rhythms, irregular heart rates, resting heart rate, breathing rate, oxygen saturation, moderate or vigorous activity levels, sleep duration, sleep stages and sleep consistency ). reviewed research literature on the use of smartwatches for monitoring conditions such as stress, heart disease, device safety, movement disorders, sleep tracking, blood pressure, the COVID pandemic and studies validating the measurements made using a smartwatch, e.g. heart rate or accelerometer data, compared to standard clinical equipment ). 1. Compared ",
-        "sourceName": "IEEE EMBC Proceedings",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.5951402,
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Wearable ECG platform for continuous cardiac monitoring | IEEE Conference Publication | IEEE Xplore",
-        "url": "https://ieeexplore.ieee.org/document/7590779",
-        "publishedAt": null,
-        "summary": "Wearable ECG platform for continuous cardiac monitoring | IEEE Conference Publication | IEEE Xplore. # Wearable ECG platform for continuous cardiac monitoring. An ultra-low power ECG platform for continuous and minimally intrusive monitoring for systems with minimal processing capabilities, is presented in this paper. The platform is capable of detecting abnormalities in the ECG signal by extracting and analyzing features related to various cardiac trends. The platform is built to continuously operate on any of the 12 leads and the presented work includes a single lead implementation that works on lead I or II. In addition, the device stores raw ECG waveform locally and is designed to run for 10 days on a single charge. **Published in:** 2016 38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC). The electrocardiogram (ECG) is a composite signal representing the electrical activity of the heart and is one of the most useful diagnostic tools in emergency medicine.",
-        "sourceName": "IEEE EMBC Proceedings",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.5883458,
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore",
-        "url": "https://ieeexplore.ieee.org/document/10385998",
-        "publishedAt": null,
-        "summary": "Title: End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore\nEnd-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction | IEEE Conference Publication | IEEE Xplore. Conferences >2023 IEEE International Confe... # End-to-End PPG Processing Pipeline for Wearables: From Quality Assessment and Motion Artifacts Removal to HR/HRV Feature Extraction. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous...Show More. The rapid development of wearable technology has enabled remote photoplethysmography (PPG)-based health monitoring in everyday settings, offering real-time and continuous monitoring of cardiovascular parameters, such as heart rate (HR) and heart rate variability (HRV). However, PPG signals collected in daily life are prone to artifacts and noise, posing challenges to HR and HRV extraction. The existing HR and HRV extraction methods cannot effectively handle noisy PPG signals and ensure accurate results. Additionally, current Python packages were primarily designed for analyzing \"clean\" PPG signals, limiting their performance in handling artifacts and noise and resulting in unreliable HR and HRV measurements. In this paper, we propose a robust end-to-end PPG processing pipeline to reliably extract HR and HRV from PPG signals collected in free-living settings. The pipeline comprises three machine learning-based PPG analysis methods: signal quality assessment, reconstruction of noisy signal, and systolic peak detection. We assess the proposed PPG pipeline using a dataset including PPG and Electrocardiogram (ECG) signals recorded from 46 individuals by smartwatches. **Published in:** 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM).",
-        "sourceName": "IEEE BIBM Proceedings",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.7016523,
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Intelligent Wearable Systems: Opportunities and Challenges in ...",
-        "url": "https://dl.acm.org/doi/abs/10.1145/3648469",
-        "publishedAt": null,
-        "summary": "This article provides an overview of various types of intelligent wearables and their applications in health and sports, categorizes machine learning algorithms",
-        "sourceName": "ACM IMWUT / UbiComp",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.34820226,
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Towards Reliable Driver Drowsiness Detection Leveraging Wearables",
-        "url": "https://dl.acm.org/doi/abs/10.1145/3560821",
-        "publishedAt": null,
-        "summary": "We propose FDWatch, a novel drowsiness detection system that exploits the low-cost Photoplethysmogram (PPG) sensor and motion sensor integrated into wrist-worn",
-        "sourceName": "ACM IMWUT / UbiComp",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.23792146,
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "The Design Space of Wearables for Sports and Fitness Practices",
-        "url": "https://dl.acm.org/doi/pdf/10.1145/3411764.3445700",
-        "publishedAt": null,
-        "summary": "ABSTRACT. The growing interest in wearables for sports and fitness calls for design knowledge and conceptualizations that can help shape future designs.",
-        "sourceName": "ACM IMWUT / UbiComp",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.23598804,
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Resource-Efficient Continual Learning for Sensor-Based Human ...",
-        "url": "https://dl.acm.org/doi/abs/10.1145/3530910",
-        "publishedAt": null,
-        "summary": "Recent advances in deep learning have granted unrivaled performance to sensor-based human activity recognition (HAR). However, in a real-world scenario,",
-        "sourceName": "ISWC Proceedings",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.13849701,
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "A Data-Driven Approach for Sleep Stage Detection Using Machine ...",
-        "url": "https://ieeexplore.ieee.org/document/11471495/",
-        "publishedAt": null,
-        "summary": "In this study, we develop and evaluate an ML framework for identifying sleep stages using physiological signals such as photoplethysmography (PPG), PSG, and PPG",
-        "sourceName": "IEEE Sensors / Wearable Proceedings",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.99750805,
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Nanoelectronic Sensors for Real-Time Health and Environmental ...",
-        "url": "https://ieeexplore.ieee.org/document/11167273/",
-        "publishedAt": null,
-        "summary": "Nanoelectronics sensors are revolutionizing realtime monitoring applications in both healthcare and environmental domains due to their miniaturized size,",
-        "sourceName": "IEEE Sensors / Wearable Proceedings",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.9967524,
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Enhancing Stress Detection Accuracy: A CNN-LSTM Model for ECG ...",
-        "url": "https://ieeexplore.ieee.org/document/11009625/",
-        "publishedAt": null,
-        "summary": "Abstract: Stress detection using physiological signals is crucial for modern healthcare and well-being systems, particularly given the increasing prevalence",
-        "sourceName": "IEEE Sensors / Wearable Proceedings",
-        "sourceCategory": "academic",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.9912209,
-        "signalType": "algorithm_evidence"
       }
     ],
     "clinical_registry": [
@@ -2920,39 +2621,24 @@
         "signalType": "clinical_regulatory"
       }
     ],
-    "vendor_research": [
-      {
-        "title": "Enabling a new model for healthcare with AI co-clinician",
-        "url": "https://deepmind.google/blog/ai-co-clinician/",
-        "publishedAt": "Thu, 30 Apr 2026 12:14:15 +0000",
-        "summary": "Researching the path to AI-augmented care and development of an AI co-clinician.",
-        "sourceName": "Google DeepMind Blog",
-        "sourceCategory": "vendor_research",
-        "sourcePriority": "P2",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "algorithm_evidence"
-      },
-      {
-        "title": "Samsung R&D Institute Poland Awarded 1st Place at Interspeech ...",
-        "url": "https://research.samsung.com/news/Samsung-R-D-Institute-Poland-awarded-1st-place-at-INTERSPEECH-2026-Challenge",
-        "publishedAt": null,
-        "summary": "- Samsung R&D Institute United Kingdom. - Samsung R&D Institute Poland. - Samsung R&D Institute Ukraine. - Samsung R&D Institute Russia. - Samsung R&D Institute Israel. - Samsung R&D Institute Jordan. - Samsung R&D Institute India-Bangalore. - Samsung R&D Institute Philippines. - Samsung R&D Institute Indonesia. - Samsung R&D Institute Bangladesh. - Samsung R&D Institute China-Beijing. # Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge. The Audio Intelligence Group at Samsung R&D Institute Poland (SRPOL) achieved a major breakthrough in the international NeckVibe Challenge, securing first place in the detection of Phonotraumatic Vocal Hyperfunction (PVH). The challenge involved nine global teams from institutions including Seoul National University, Gwangju Institute of Science and Technology, and Harvard University, representing Poland, South Korea, India, and the USA. This year’s first-place at the NeckVibe challenge is the third consecutive win for the SRPOL Audio Intelligence Group (ICASSP 2024, INTERSPEECH 2025) using lightweight AI and signal processing to solve complex health problems.",
-        "sourceName": "Samsung Research Publications",
-        "sourceCategory": "vendor_research",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.1947048,
-        "signalType": "algorithm_evidence"
-      }
-    ],
     "regulatory": [
       {
         "title": "Trividia Health Correction for TRUE METRIX Blood Glucose Monitoring Systems",
         "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/trividia-health-correction-true-metrix-blood-glucose-monitoring-systems",
         "publishedAt": "Tue, 05 May 2026 00:00:00 EDT",
         "summary": "FT. LAUDERDALE, FL – May 1, 2026 – Trividia Health, Inc., a global leader in diabetes management, today provided an important update to the medical device labeling correction it announced on February 6, 2026, for all TRUE METRIX®, TRUE METRIX® AIR, TRUE METRIX® GO, and TRUE METRIX® PRO Blood Glucose",
+        "sourceName": "FDA MedWatch Safety Alerts",
+        "sourceCategory": "regulatory",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "clinical_regulatory"
+      },
+      {
+        "title": "Blood Glucose Monitor Recall: Trividia Health Issues Correction for TRUE METRIX Blood Glucose Monitoring Systems",
+        "url": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/blood-glucose-monitor-recall-trividia-health-issues-correction-true-metrix-blood-glucose-monitoring",
+        "publishedAt": "Tue, 28 Apr 2026 00:00:00 EDT",
+        "summary": "Trividia recommends that device users who receive an E-5 error code and are experiencing symptoms of high glucose should seek medical care immediately.",
         "sourceName": "FDA MedWatch Safety Alerts",
         "sourceCategory": "regulatory",
         "sourcePriority": "P1",
@@ -2982,18 +2668,6 @@
         "url": "http://www.fda.gov/medical-devices/safety-communications/risks-using-true-metrix-blood-glucose-monitoring-systems-trividia-health-fda-safety-communication",
         "publishedAt": "Tue, 28 Apr 2026 00:00:00 EDT",
         "summary": "FDA alerts of risks with use TRUE METRIX Blood Glucose Monitoring Systems by Trividia Health.",
-        "sourceName": "FDA MedWatch Safety Alerts",
-        "sourceCategory": "regulatory",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "rss",
-        "signalType": "clinical_regulatory"
-      },
-      {
-        "title": "Blood Glucose Monitor Recall: Trividia Health Issues Correction for TRUE METRIX Blood Glucose Monitoring Systems",
-        "url": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/blood-glucose-monitor-recall-trividia-health-issues-correction-true-metrix-blood-glucose-monitoring",
-        "publishedAt": "Tue, 28 Apr 2026 00:00:00 EDT",
-        "summary": "Trividia recommends that device users who receive an E-5 error code and are experiencing symptoms of high glucose should seek medical care immediately.",
         "sourceName": "FDA MedWatch Safety Alerts",
         "sourceCategory": "regulatory",
         "sourcePriority": "P1",
@@ -3053,20 +2727,34 @@
         "signalType": "clinical_regulatory"
       }
     ],
-    "vendor_websearch": [
+    "vendor_research": [
       {
-        "title": "Apple introduces a new Pride Collection - Apple",
-        "url": "https://www.apple.com/newsroom/2026/05/apple-introduces-a-new-pride-collection/",
+        "title": "Enabling a new model for healthcare with AI co-clinician",
+        "url": "https://deepmind.google/blog/ai-co-clinician/",
+        "publishedAt": "Thu, 30 Apr 2026 12:14:15 +0000",
+        "summary": "Researching the path to AI-augmented care and development of an AI co-clinician.",
+        "sourceName": "Google DeepMind Blog",
+        "sourceCategory": "vendor_research",
+        "sourcePriority": "P2",
+        "sourceLang": "en",
+        "retrievalMethod": "rss",
+        "signalType": "algorithm_evidence"
+      },
+      {
+        "title": "Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge | Samsung Research",
+        "url": "https://research.samsung.com/news/Samsung-R-D-Institute-Poland-awarded-1st-place-at-INTERSPEECH-2026-Challenge",
         "publishedAt": null,
-        "summary": "# Apple introduces a new Pride Collection. Apple Watch Series 11 is paired with the Pride Luminance watch face and Pride Edition Sport Loop. Matching wallpaper from the new Apple Watch Pride Collection is displayed on an 11-inch iPad Pro and iPhone 17 Pro. Today, Apple introduced a new Apple Watch Pride Edition Sport Loop, watch face, and iPhone and iPad wallpaper to celebrate LGBTQ+ communities around the world during Pride Month and beyond. The new Pride Edition Sport Loop, available to order today, is woven from a rainbow of 11 colors of nylon yarns. The resulting design is joyful and vibrant, showcasing a full spectrum of colors that reflect the unique identities that shape LGBTQ+ communities worldwide. The new Pride Luminance watch face complements the band design with colors that refract dynamically to celebrate the vibrancy, spirit, and individuality of the LGBTQ+ community. With this collection, users can customize the watch face with even more color options to create a unique expression of themselves and their communities.",
-        "sourceName": "Apple Newsroom / Watch",
-        "sourceCategory": "vendor_websearch",
+        "summary": "- Samsung R&D Institute United Kingdom. - Samsung R&D Institute Poland. - Samsung R&D Institute Ukraine. - Samsung R&D Institute Russia. - Samsung R&D Institute Israel. - Samsung R&D Institute Jordan. - Samsung R&D Institute India-Bangalore. - Samsung R&D Institute Philippines. - Samsung R&D Institute Indonesia. - Samsung R&D Institute Bangladesh. - Samsung R&D Institute China-Beijing. # Samsung R&D Institute Poland Awarded 1st Place at Interspeech 2026 Challenge. The Audio Intelligence Group at Samsung R&D Institute Poland (SRPOL) achieved a major breakthrough in the international NeckVibe Challenge, securing first place in the detection of Phonotraumatic Vocal Hyperfunction (PVH). The challenge involved nine global teams from institutions including Seoul National University, Gwangju Institute of Science and Technology, and Harvard University, representing Poland, South Korea, India, and the USA. This year’s first-place at the NeckVibe challenge is the third consecutive win for the SRPOL Audio Intelligence Group (ICASSP 2024, INTERSPEECH 2025) using lightweight AI and signal processing to solve complex health problems.",
+        "sourceName": "Samsung Research Publications",
+        "sourceCategory": "vendor_research",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.49804688,
-        "signalType": "product_market"
-      },
+        "score": 0.24508502,
+        "signalType": "algorithm_evidence"
+      }
+    ],
+    "vendor_websearch": [
       {
         "title": "watchOS 9.4 Release Notes | Apple Developer Documentation",
         "url": "https://developer.apple.com/documentation/watchos-release-notes/watchos-9_4-release-notes?changes=latest_7",
@@ -3081,6 +2769,32 @@
         "signalType": "platform_api"
       },
       {
+        "title": "atan(_:) | Apple Developer Documentation",
+        "url": "https://developer.apple.com/documentation/simd/atan(_:)-al43?changes=_2",
+        "publishedAt": null,
+        "summary": "Release Notes. Featured Updates · iOS · iPadOS · macOS · watchOS · visionOS · tvOS · Xcode ... Health & Fitness · In-App Purchase · Localization · Maps & Location",
+        "sourceName": "Apple Developer HealthKit / WorkoutKit / watchOS",
+        "sourceCategory": "vendor_websearch",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.99509466,
+        "signalType": "platform_api"
+      },
+      {
+        "title": "Introducing the all-new Fitbit Air - Google Blog",
+        "url": "https://blog.google/products-and-platforms/devices/fitbit/fitbit-air/",
+        "publishedAt": null,
+        "summary": "# Introducing the all-new Fitbit Air. Our newest screenless wearable is lightweight and delivers our most in-depth health insights yet. We are introducing the Fitbit Air, our smallest and most affordable tracker designed for comfortable, 24/7 health monitoring. This screenless device pairs with the Google Health app to provide advanced fitness insights, sleep tracking, and a week-long battery life. You can pre-order the Fitbit Air today starting at $99.99, which includes a three-month trial of Google Health Premium. * Meet the Fitbit Air, a tiny, affordable tracker designed for comfortable, all-day health monitoring. * Pre-order yours today for $99.99 and get a three-month Google Health Premium trial. You can check all your stats and get personalized advice through the Google Health app on your phone. The Google Fitbit Air Special Edition will also be available for pre-order today, and on-shelf in the U.S. May 26 for $129.99.",
+        "sourceName": "Google Blog / Fitbit",
+        "sourceCategory": "vendor_websearch",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.99933845,
+        "signalType": "product_market"
+      },
+      {
         "title": "Introducing the new Google Fitbit Air and Google Health app",
         "url": "https://blog.google/products-and-platforms/products/google-health/google-health-fitbit/",
         "publishedAt": null,
@@ -3090,21 +2804,8 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.48074743,
+        "score": 0.99890983,
         "signalType": "platform_api"
-      },
-      {
-        "title": "Introducing the Google Health app",
-        "url": "https://blog.google/products-and-platforms/products/google-health/google-health-app/",
-        "publishedAt": null,
-        "summary": "# A new era for your wellness: Introducing the Google Health app. The Google Health app brings all of your health and wellness into one place debuting new and advanced capabilities. The Fitbit app is becoming the Google Health app, offering a redesigned, centralized hub for your wellness data. You will see an intuitive four-tab layout, improved data tracking, and a new artificial intelligence coach to help you reach your goals. * The Fitbit app is becoming the Google Health app to centralize your wellness data. * The new Google Health Coach uses artificial intelligence to provide personalized workout and health insights. The Fitbit app is becoming the new Google Health app to help you track your fitness and wellness in one place. We’re updating the Fitbit app to become the Google Health app, a centralized place for your health and wellness data. And, on Health, in addition to getting a snapshot of your key health metrics, you can get summaries of your medical records from the Coach.",
-        "sourceName": "Google Blog / Fitbit",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.468621,
-        "signalType": "product_market"
       },
       {
         "title": "Track sleep sessions | Android health & fitness",
@@ -3120,20 +2821,7 @@
         "signalType": "platform_api"
       },
       {
-        "title": "Track steps | Android health & fitness",
-        "url": "https://developer.android.com/health-and-fitness/health-connect/features/steps",
-        "publishedAt": null,
-        "summary": "Health Connect provides a *steps* data type for recording step counts using. Steps are a fundamental measurement in health. ## Read mobile steps. With Android 14 (API level 34) and SDK Extension version 20 or higher,. Health Connect provides on-device step counting. the `READ_STEPS` permission, Health Connect starts capturing steps from the. Android-powered device, and users see steps data automatically added to. To check if on-device step counting is available, you need to verify that the. If your app needs to read on-device steps, or if it displays step data. data, you should attribute data from the android package to the current device. The following example shows how to read aggregated mobile step count data by. Before attempting to use Health Connect, your app should verify that Health Connect is available. permissions for the `Steps` data type. To read steps, you need to request the following permissions:. The following example shows how to read the total step count for a.",
-        "sourceName": "Android Developers Health & Fitness",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.46774563,
-        "signalType": "platform_api"
-      },
-      {
-        "title": "Health Connect | Jetpack - Android Developers",
+        "title": "Health Connect  |  Jetpack  |  Android Developers",
         "url": "https://developer.android.com/jetpack/androidx/releases/health-connect",
         "publishedAt": null,
         "summary": "# Health Connect. | April 22, 2026 | 1.1.0 | - | - | 1.2.0-alpha04 |. To help us strengthen user privacy and security, developers integrating with Health Connect **must declare read and/or write access for the data types** that their apps use. For more information, visit Provide information for the Health apps declaration form and Health Connect by Android Permissions. To add a dependency on health, you must add the Google Maven repository to your. Add the dependencies for the artifacts you need in the `build.gradle` file for. ## Health Connect Testing Version 1.0. `androidx.health.connect:connect-testing:1.0.0-alpha03` is released. `androidx.health.connect:connect-testing:1.0.0-alpha03`. You can use the library to create local unit tests, which typically verify the behavior of the classes in your app that interact with the Health Connect client. `androidx.health.connect:connect-client:1.1.0`, `androidx.health.connect:connect-client-external-protobuf:1.1.0`, and `androidx.health.connect:connect-client-proto:1.1.0` have been promoted to its first stable release with no changes since its previous RC release. `androidx.health.connect:connect-client:1.1.0-rc03`, `androidx.health.connect:connect-client-external-protobuf:1.1.0-rc03`, and `androidx.health.connect:connect-client-proto:1.1.0-rc03` are released. `androidx.health.connect:connect-client:1.1.0-rc03`. `androidx.health.connect:connect-client-external-protobuf:1.1.0-rc03`. `androidx.health.connect:connect-client-proto:1.1.0-rc03`. `androidx.health.connect:connect-client:1.1.0-beta02`, `androidx.health.connect:connect-client-external-protobuf:1.1.0-beta02`, and `androidx.health.connect:connect-client-proto:1.1.0-beta02` are released. `androidx.health.connect:connect-client:1.1.0-beta02`. `androidx.health.connect:connect-client-proto:1.1.0-beta02`.",
@@ -3142,21 +2830,8 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.81979275,
+        "score": 0.8266142,
         "signalType": "platform_api"
-      },
-      {
-        "title": "[CES 2026] A Care Companion for Family Health and Safety",
-        "url": "https://news.samsung.com/sg/ces-2026-a-care-companion-for-family-health-and-safety",
-        "publishedAt": null,
-        "summary": "In the Self Care – Good Sleep section, visitors learned how wearables such as Galaxy Watch and Galaxy Ring track sleep conditions while working in concert with",
-        "sourceName": "Samsung Global Newsroom (Digital Health)",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.71377134,
-        "signalType": "product_market"
       },
       {
         "title": "Level Up Your Health with Galaxy Watch and Receive a Withings Smart Scale on Us",
@@ -3168,21 +2843,21 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.66045773,
+        "score": 0.99977654,
         "signalType": "product_market"
       },
       {
-        "title": "Health | Samsung Developers",
-        "url": "http://developer.samsung.com/health",
+        "title": "[World Health Day 2026] How Jacob Kiplimo's Galaxy Watch Turns ...",
+        "url": "https://news.samsung.com/ca/world-health-day-2026-how-jacob-kiplimos-galaxy-watch-turns-data-into-world-record-performance",
         "publishedAt": null,
-        "summary": "# Samsung Health SDK Suite. Develop innovative health and wellness applications for Galaxy Watch and smartphones. # Accelerate health and wellness innovation with Samsung Health SDKs. Samsung's Health SDKs enable a broad ecosystem of partners to accelerate innovation and solution development. As Galaxy Watch sensors and capabilities improve, you can read, with user consent, and integrate health data from Galaxy Watch and smartphones into your existing applications and platforms, as well as create innovative and powerful new products that enhance users' well-being through health insights. ##### Samsung Health Data SDK allows partners the ability to integrate Samsung Health data into their own apps, enabling them to monitor users` health and provide health and wellness services based on user consent. By connecting smartphones with Samsung wearables like the Galaxy Watch and Galaxy Ring as well as other connected devices such as activity trackers or heart rate monitors, it seamlessly integrates health monitoring into daily life. ##### Samsung Health Sensor SDK is a software platform that enables the medical community and digital health solution providers to harness the power of Galaxy Watch’s advanced sensors; providing both raw sensor signal data and processed data with our differentiated features. ##### Samsung Health Accessory SDK defines Bluetooth Low Energy (BLE) compatibility guidelines and Samsung Health specifications based on Bluetooth Generic Attributes (GATT), including service structure to connect with Samsung Health. ##### Samsung Health Research Stack is backed by open-source tools, applications, and services for running, managing, and analyzing medical research studies and clinician services on Android and Wear OS devices. ##### Samsung collaborates with the world’s most innovative organizations to pave the way for better health and wellness by advancing solutions in connected care. ### Samsung Health SDK Suite Guide. Use Samsung Health SDK Suite to impl",
-        "sourceName": "Samsung Developers Health",
+        "summary": "# [World Health Day 2026] How Jacob Kiplimo’s Galaxy Watch Turns Data Into World-Record Performance. When **Jacob Kiplimo** storms past the finish line, he’s not just running on talent — he’s running on data. After securing a dominant win at the 2025 Chicago Marathon and shattering the half-marathon world record this March in Lisbon, the 25-year-old is now targeting success at the 2026 London Marathon. To mark World Health Day (WHD) 2026 on April 7, Samsung asked him to detail his data-driven training regime which embodies this year’s WHD slogan, “Together for health. With exclusive access to his Samsung Health metrics, we take an inside look into his grueling training program which has seen him cover **over 100 km in just one week**. Discover how insights led him to adjust his training for optimal recovery and how even a “rest day” can include a 3 km run. I use the **Running Coach** feature in Samsung Health to get real-time analysis and reports on my running form through the **Running Analysis** feature in Samsung Health.",
+        "sourceName": "Samsung Global Newsroom (Digital Health)",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.8900749,
-        "signalType": "platform_api"
+        "score": 0.9992679,
+        "signalType": "product_market"
       },
       {
         "title": "Xiaomi Smart Band 10 Glimmer Edition HyperOS3 V3.2.1 Update",
@@ -3237,30 +2912,43 @@
         "signalType": "platform_api"
       },
       {
-        "title": "Since Steps uses a new algorithm on WHOOP 5.0/MG, is it more ...",
-        "url": "https://www.community.whoop.com/t/since-steps-uses-a-new-algorithm-on-whoop-5-0-mg-is-it-more-accurate/562/19",
+        "title": "Oura Developer Docs",
+        "url": "https://developer.ouraring.com/",
         "publishedAt": null,
-        "summary": "Since Steps uses a new algorithm on WHOOP 5.0/MG, is it more accurate? ... I am also curious as to why there can't be a feature utilized by the current hardware",
-        "sourceName": "WHOOP / The Locker",
+        "summary": "Welcome to the Oura API Documentation The Oura API makes it easy to access data generated by the Oura Ring. For example, you can use the API to fetch a user's sleep score: GET /v2/usercollection/daily\\_sleep? start\\_date=2024-09-08&end\\_date=2024-09-08 { \"data\": [ { \"id\": \"be279d97-67d4-4304-800e-0a5414d636ea\", \"contributors\": { \"deep_sleep\": 78, \"efficiency\": 90, \"latency\": 83, \"rem_sleep\": 95, \"restfulness\": 86, \"timing\": 85, \"total_sleep\": 85 }, \"day\": \"2024-09-08\", \"score\": 86, \"timestamp\": \"2024-09-08T00:00:00+00:00\" } ], \"next_token\": null} To use the Oura API, you will need an Oura account and either a Personal Access Token or an OAuth2 Access Token. Next Creating an Oura Account © 2024 Ōura Health Oy. All Rights Reserved. ŌURA and OURA and Ō are trademarks of Ōura Health Oy and may not be used without permission. We use cookies on our site to enhance your experience, improve our site, and to deliver content and ads that are relevant to you. You can choose to accept all cookies by clicking Accept, or you can manage them individually by clicking Manage cookies, where you can read more. To monitor the performance of our site and to enhance your browsing experience. To understand user behavior in order to provide you with a more relevant browsing experience or personalize the content on our site. To personalize and measure the effectiveness of advertising on our site and other websites.",
+        "sourceName": "Oura Developer API",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.99457306,
-        "signalType": "product_market"
+        "score": 0.99984646,
+        "signalType": "platform_api"
       },
       {
         "title": "WHOOP 101 | WHOOP for Developers",
         "url": "https://developer.whoop.com/docs/whoop-101",
         "publishedAt": null,
-        "summary": "Title: WHOOP 101 | WHOOP for Developers\n# WHOOP 101. WHOOP is a 24/7 wearable that helps members understand how well their bodies function and how they change over time. Through continuous monitoring of physiological signals, WHOOP helps members understand how well their body performs and recovers. As a developer, you have the opportunity to build integrations that leverage WHOOP insights across three pillars - **Strain, Recovery, and Sleep**. WHOOP Strain is a measurement of the amount of stress on your body. WHOOP scores Strain continuously for members throughout the day and every workout. If you do the same workout two days in a row, you will likely report different Strain scores based on fluctuations in how your body recovered and changed. WHOOP categorizes Strain score values into Light, Moderate, High, and All Out. * **Light Strain (0-9)** - This strain category indicates room for active recovery with minimal stress on the body. * **Moderate Strain (10-13)** - This category indicates moderate stress on the body, which helps maintain fitness. * How Does WHOOP Strain Work? WHOOP tracks workouts for you and how much Strain accumulated over the workout. WHOOP keeps track of what type of activity you performed (e.g., Running, Cycle), Strain score, and other physiological measurements such as duration in Heart Rate Zones. WHOOP Recovery is a daily measure of how prepared your body is to perform. When you wake up in the morning, WHOOP calculates a Recovery score as a percentage between 0 - 100%. The higher the score, the more primed your body is to take on Strain that day. WHOOP calculates Recovery scores using measurements from the previous day and your sleep, such as resting heart rate (RHR), heart rate variability (HRV), respiratory rate, sleep duration/quality, skin temperature, and blood oxygen. Unlike Strain, a Recovery score does not change over the day (unless you edit your sleep which triggers a Recovery score re-calculation). WHOOP categorizes Recovery scor",
+        "summary": "WHOOP is a 24/7 wearable that helps members understand how well their bodies function and how they change over time. As a developer, you have the opportunity to build integrations that leverage WHOOP insights across three pillars - **Strain, Recovery, and Sleep**. WHOOP Strain is a measurement of the amount of stress on your body. The Strain score is a number on a 0 to 21 scale, based on the Borg Scale of Perceived Exertion. If you do the same workout two days in a row, you will likely report different Strain scores based on fluctuations in how your body recovered and changed. WHOOP Recovery is a daily measure of how prepared your body is to perform. The higher the score, the more primed your body is to take on Strain that day. Unlike Strain, a Recovery score does not change over the day (unless you edit your sleep which triggers a Recovery score re-calculation).",
         "sourceName": "WHOOP Developer API",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.767847,
+        "score": 0.9999385,
         "signalType": "platform_api"
+      },
+      {
+        "title": "API Changelog | WHOOP for Developers",
+        "url": "https://developer.whoop.com/docs/api-changelog",
+        "publishedAt": null,
+        "summary": "Learn how to look up mappings from v1 to v2 ids.**. This changelog highlights notable changes to the WHOOP Developer Platform, such as new API endpoints or webhook event types. ### Webhook Updates, New V1 Migration API​. Updated webhook documentation to clarify that v1 webhooks are no longer being published. Provided documentation for new activity mapping endpoint to look up historical v1 activity ids. * **Documentation**: ✨New✨ v1 -> v2 activity id mapping documentation for activity v1 id lookups. Updated webhook documentation to clarify that v2 recovery webhooks use the UUID of the associated sleep, not the cycle ID. * **v1 Recovery Webhooks**: Continue to use cycle ID as the identifier. * **v2 Recovery Webhooks**: Use the UUID of the sleep that the recovery is associated with. * **Documentation**: Updated webhook documentation to reflect the correct identifier usage. ### v2 API Launch​. * **Migration Guide**: A comprehensive v1 to v2 migration guide is available to assist with the transition. Strength Trainer activities are available via the `/workout` endpoint.",
+        "sourceName": "WHOOP Developer API",
+        "sourceCategory": "vendor_websearch",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.99991846,
+        "signalType": "clinical_regulatory"
       },
       {
         "title": "WHOOP API Docs | WHOOP for Developers",
@@ -3272,25 +2960,12 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.73322314,
+        "score": 0.9998894,
         "signalType": "platform_api"
       },
       {
-        "title": "Recovery | WHOOP for Developers",
-        "url": "https://developer.whoop.com/docs/developing/user-data/recovery",
-        "publishedAt": null,
-        "summary": "WHOOP Recovery is a daily measure of how prepared your body is to perform. In addition to the WHOOP Recovery score, the Recovery object has objective measurements that factored into the score such as the resting heart rate (RHR), heart rate variability (HRV), and for 4.0 members, blood oxygen (SpO2) and skin temperature. | cycle\\_id required | integer  The Recovery represents how recovered the user is for this physiological cycle |. | user\\_id required | integer  The WHOOP User for the recovery |. | created\\_at required | string  The time the recovery was recorded in WHOOP |. | updated\\_at required | string  The time the recovery was last updated in WHOOP |. | score\\_state required | string  Enum: \"SCORED\" \"PENDING\\_SCORE\" \"UNSCORABLE\"  `SCORED` means the recovery was scored and the measurement values will be present. `UNSCORABLE` means this activity could not be scored for some reason - commonly because there is not enough user metric data for the time range. Recovery data is available through the Cycle endpoints in the V2 API.",
-        "sourceName": "WHOOP Developer API",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.61196244,
-        "signalType": "clinical_regulatory"
-      },
-      {
         "title": "Advanced Research API | Withings",
-        "url": "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+        "url": "http://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
         "publishedAt": null,
         "summary": "# Advanced Research API. ## Designed for research groups, universities, and advanced health studies. The Advanced Research API provides research institutions, universities, and healthcare innovators with direct access to raw sensor data from Withings devices, enabling groundbreaking insights and in-depth studies on health and behavior. **3-axis Accelerometer**: Withings trackers are equipped with a MEMS accelerometer that samples at 25Hz by default (up to 100Hz), ideal for detailed motion and activity analysis. **PPG Sensor**: Withings devices utilize optical techniques to track blood volume changes in the microvascular bed. Depending on the device, you'll have access to a PPG sensor with either three LEDs (green, red, and infrared) or one LED (green), providing versatile data for cardiovascular research. ### Compatible Devices. Currently, the Advanced Research API is compatible exclusively with the Withings ScanWatch. ### Raw data documentation. Looking for the raw data services and data structure documentation? Learn about raw data services, activation, and data structure for accelerometer and PPG sensors.",
         "sourceName": "Withings API / Research",
@@ -3298,33 +2973,33 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9999976,
+        "score": 0.8003337,
         "signalType": "platform_api"
       },
       {
-        "title": "Pulling Health Data Manually | Withings",
-        "url": "https://developer.withings.com/developer-guide/v3/integration-guide/onsite-mode/data-api/fetch-data-example-manual",
+        "title": "Partner Hub | Withings",
+        "url": "https://developer.withings.com/developer-guide/data-api/authentication",
         "publishedAt": null,
-        "summary": "In some cases, you might prefer to fetch the user's health data manually rather than relying on the notification system. This approach requires providing a mechanism within your application—such as a button—that allows the user to initiate the data retrieval process when they're ready. To facilitate manual data retrieval, include a user interface element (like a \"Refresh Data\" button) that the user can interact with once their measurement is complete. This action signals your system to fetch the latest health data from the Withings API. The first step in the data retrieval process is to locate the access token associated with the user. By querying your database, you can retrieve this token, which authorizes your request to the Withings API. With the access token and time range in hand, decide which API endpoint to call based on the type of data you wish to retrieve. Construct your API call with the necessary parameters and execute the request to fetch the health data.",
+        "summary": "# Withings Partner Hub. Access powerful tools and APIs to seamlessly integrate Withings devices and health biomarkers into your Remote Patient Monitoring workflows and EHR systems. Discover our extensive range of health biomarkers accessible via API.### API Plans. Explore our diverse API offerings and find the perfect plan for your integration needs.### New · AI Agent Onboarding. Discover our guides, crafted to ensure a seamless process based on your needs.### API Reference. Start integrating Withings devices into your application with our Public API, designed for individuals and partners without a formal contract.### Cellular Solution. Integrate Withings health data directly into your mobile application using our easy-to-implement SDK for iOS and Android.### RPM. Give healthcare providers seamless access to patient data for real-time monitoring and improved patient outcomes.### Logistics API. Direct-to-patient dropshipping of pre-configured devices and kits, with personalization options and full API integration.### Advanced Research API. Access advanced data points for research and build insights with a specialized API for clinical and academic studies.",
         "sourceName": "Withings API / Research",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9999777,
-        "signalType": "clinical_regulatory"
+        "score": 0.72231215,
+        "signalType": "platform_api"
       },
       {
-        "title": "Public API | Withings",
-        "url": "http://developer.withings.com/developer-guide/v3/withings-solutions/app-to-app-solution",
+        "title": "Partner Hub | Withings",
+        "url": "https://developer.withings.com/developer-guide/v3/integration-guide/advanced-research-api/fetch-raw-data/raw-data-structure",
         "publishedAt": null,
-        "summary": "# Public API. ## The Withings Public API allows individuals and companies—whether or not they have a Withings contract—to access data from Withings users who have consented to share their information. User Creates Account and Sets Up Device via Withings App. The user creates their account and configures their device through the Withings app, readying it for data collection. User Grants Data Access via OAuth Web Flow. The user grants access to their health data for the partner app through the OAuth Web flow, enabling secure data sharing. Device Transmits Data via WiFi or BLE. The device transmits health data securely to Withings' servers over WiFi or BLE. Data is stored securely in Withings' cloud, compliant with HDS and HIPAA standards. Using the user’s access token, the partner retrieves health data through the Withings API. Ready to use Withings Public API to get health data from your program members? Start using the Public API to integrate Withings devices without a formal contract.",
+        "summary": "# Withings Partner Hub. Access powerful tools and APIs to seamlessly integrate Withings devices and health biomarkers into your Remote Patient Monitoring workflows and EHR systems. Discover our extensive range of health biomarkers accessible via API.### API Plans. Explore our diverse API offerings and find the perfect plan for your integration needs.### New · AI Agent Onboarding. Discover our guides, crafted to ensure a seamless process based on your needs.### API Reference. Start integrating Withings devices into your application with our Public API, designed for individuals and partners without a formal contract.### Cellular Solution. Integrate Withings health data directly into your mobile application using our easy-to-implement SDK for iOS and Android.### RPM. Give healthcare providers seamless access to patient data for real-time monitoring and improved patient outcomes.### Logistics API. Direct-to-patient dropshipping of pre-configured devices and kits, with personalization options and full API integration.### Advanced Research API. Access advanced data points for research and build insights with a specialized API for clinical and academic studies.",
         "sourceName": "Withings API / Research",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9999652,
+        "score": 0.7190094,
         "signalType": "platform_api"
       },
       {
@@ -3354,45 +3029,6 @@
         "signalType": "product_market"
       },
       {
-        "title": "Overview",
-        "url": "https://developer.dexcom.com/docs/",
-        "publishedAt": null,
-        "summary": "The Dexcom Developer Program offers developers the opportunity to apply for access to the Dexcom API and become an authorized Digital Health Partner. Authorized Digital Health Partners with Full Access to the API can market as an official Dexcom Digital Health Partner and are included on the Dexcom Partnerships Gallery. The Dexcom API is RESTful and utilizes the OAuth 2.0 standard for authentication, allowing individuals to securely authorize their Dexcom CGM data for use in third-party applications. Using the Dexcom API, authorized Digital Health Partners can leverage Dexcom CGM data, such as estimated glucose values and events, to build or enhance their apps. Data produced by a Dexcom CGM is an invaluable tool for people with diabetes and their care teams, and incorporating this data into your app can help users benefit from this resource in innovative ways. To become an authorized Digital Health Partner and gain full access to the Dexcom API, the Dexcom Strategic Partnerships team will review your application and determine if Dexcom will authorize your request.",
-        "sourceName": "Dexcom Developer API",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.8088086,
-        "signalType": "platform_api"
-      },
-      {
-        "title": "Dexcom API | Home",
-        "url": "https://developer.dexcom.com",
-        "publishedAt": null,
-        "summary": "Title: Dexcom API | Home\n# Welcome to the Dexcom Developer Program. ### Integrate with the most connected CGM brand.1. ### Develop with the Dexcom Web API. Connect Dexcom CGM data into your platform with our retrospective API. ### Join our connected ecosystem. Data from Dexcom CGM systems are an invaluable tool for people with diabetes and their care teams. Help users benefit from this resource by integrating your solution with Dexcom CGM systems. 1 Dexcom, data on file, 2024. BRIEF SAFETY STATEMENT: Failure to use the Dexcom Continuous Glucose Monitoring System and its components according to the instructions for use provided with your device and available at https://www.dexcom.com/safety-information and to properly consider all indications, contraindications, warnings, precautions, and cautions in those instructions for use may result in you missing a severe hypoglycemia (low blood glucose) or hyperglycemia (high blood glucose) occurrence and/or making a treatment decision that may result in injury. If your glucose alerts and readings from the Dexcom CGM do not match symptoms, use a blood glucose meter to make diabetes treatment decisions. Seek medical advice and attention when appropriate, including for any medical emergency.",
-        "sourceName": "Dexcom Developer API",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.7892503,
-        "signalType": "platform_api"
-      },
-      {
-        "title": "Dexcom API | Home",
-        "url": "https://developer.dexcom.com/overview",
-        "publishedAt": null,
-        "summary": "Title: Dexcom API | Home\n# Welcome to the Dexcom Developer Program. ### Integrate with the most connected CGM brand.1. ### Develop with the Dexcom Web API. Connect Dexcom CGM data into your platform with our retrospective API. ### Join our connected ecosystem. Data from Dexcom CGM systems are an invaluable tool for people with diabetes and their care teams. Help users benefit from this resource by integrating your solution with Dexcom CGM systems. 1 Dexcom, data on file, 2024. BRIEF SAFETY STATEMENT: Failure to use the Dexcom Continuous Glucose Monitoring System and its components according to the instructions for use provided with your device and available at https://www.dexcom.com/safety-information and to properly consider all indications, contraindications, warnings, precautions, and cautions in those instructions for use may result in you missing a severe hypoglycemia (low blood glucose) or hyperglycemia (high blood glucose) occurrence and/or making a treatment decision that may result in injury. If your glucose alerts and readings from the Dexcom CGM do not match symptoms, use a blood glucose meter to make diabetes treatment decisions. Seek medical advice and attention when appropriate, including for any medical emergency.",
-        "sourceName": "Dexcom Developer API",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.78512776,
-        "signalType": "platform_api"
-      },
-      {
         "title": "About Abbott | Company Overview, Mission and Values",
         "url": "https://www.abbott.com/en-us/about-abbott",
         "publishedAt": null,
@@ -3419,7 +3055,7 @@
         "signalType": "product_market"
       },
       {
-        "title": "From reactive nutrition coaching to real-time metabolic care | Levels",
+        "title": "From reactive nutrition coaching to real-time metabolic care | Levels | Levels",
         "url": "https://www.levels.com/blog/reactive-coaching-real-time-metabolic-care",
         "publishedAt": null,
         "summary": "This story shows how real-time data, unified timelines, and clinician dashboards enable intervention during the moments that actually matter. # From reactive nutrition coaching to real-time metabolic care. Real-time continuous glucose monitoring, unified patient timelines, and practitioner dashboards shift the care model from reactive analysis to intervention during the moments that drive outcomes. Real-time metabolic care changes the equation: when continuous glucose monitoring, food logs, and lifestyle data flow through one patient app and one practitioner dashboard, you can guide behavior during the meal, the workout, and the sleep window—not weeks later in a debrief. ### Learn more about Levels Pro. Extend care beyond the exam room with Levels Pro, the metabolic health operating system that unifies CGM, labs, food logs, and lifestyle data into a single, clinician‑ready view. Levels Pro gives your team the infrastructure to make that shift: one app for patients to learn in real time, one dashboard for clinicians to guide in real time, and a metabolic health operating system that turns reactive nutrition coaching into proactive, personalized, preventative care.",
@@ -3428,7 +3064,7 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9992022,
+        "score": 0.9994429,
         "signalType": "product_market"
       },
       {
@@ -3791,34 +3427,34 @@
     },
     "tavily_per_site": {
       "Apple Newsroom / Watch": {
-        "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "fetched": 4,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
       "Apple Developer HealthKit / WorkoutKit / watchOS": {
         "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "qualityKept": 2,
+        "finalKept": 2,
+        "kept": 2,
         "capped": 0,
         "error": null
       },
       "Google Blog / Fitbit": {
         "fetched": 5,
-        "qualityKept": 2,
+        "qualityKept": 3,
         "finalKept": 2,
         "kept": 2,
-        "capped": 0,
+        "capped": 1,
         "error": null
       },
       "Android Developers Health & Fitness": {
         "fetched": 5,
-        "qualityKept": 2,
-        "finalKept": 2,
-        "kept": 2,
+        "qualityKept": 1,
+        "finalKept": 1,
+        "kept": 1,
         "capped": 0,
         "error": null
       },
@@ -3839,10 +3475,10 @@
         "error": null
       },
       "Samsung Developers Health": {
-        "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "fetched": 0,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
@@ -3887,18 +3523,18 @@
         "error": null
       },
       "Oura Developer API": {
-        "fetched": 0,
-        "qualityKept": 0,
-        "finalKept": 0,
-        "kept": 0,
+        "fetched": 1,
+        "qualityKept": 1,
+        "finalKept": 1,
+        "kept": 1,
         "capped": 0,
         "error": null
       },
       "WHOOP / The Locker": {
         "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
@@ -3935,11 +3571,11 @@
         "error": null
       },
       "Dexcom Developer API": {
-        "fetched": 5,
-        "qualityKept": 5,
-        "finalKept": 3,
-        "kept": 3,
-        "capped": 2,
+        "fetched": 0,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
+        "capped": 0,
         "error": null
       },
       "Abbott Biowearables": {
@@ -3968,18 +3604,18 @@
       },
       "Healthcare IT News": {
         "fetched": 5,
-        "qualityKept": 5,
+        "qualityKept": 4,
         "finalKept": 3,
         "kept": 3,
-        "capped": 2,
+        "capped": 1,
         "error": null
       },
       "Rock Health Insights": {
-        "fetched": 0,
-        "qualityKept": 0,
-        "finalKept": 0,
-        "kept": 0,
-        "capped": 0,
+        "fetched": 5,
+        "qualityKept": 4,
+        "finalKept": 3,
+        "kept": 3,
+        "capped": 1,
         "error": null
       },
       "Digital Health Wire": {
@@ -4008,15 +3644,15 @@
       },
       "NeurIPS Health Workshops / OpenReview": {
         "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
       "ICML Health Workshops / PMLR": {
-        "fetched": 5,
-        "qualityKept": 1,
+        "fetched": 0,
+        "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
         "capped": 0,
@@ -4024,41 +3660,41 @@
       },
       "IEEE EMBC Proceedings": {
         "fetched": 5,
-        "qualityKept": 3,
-        "finalKept": 3,
-        "kept": 3,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
       "IEEE BIBM Proceedings": {
-        "fetched": 5,
-        "qualityKept": 4,
-        "finalKept": 1,
-        "kept": 1,
+        "fetched": 0,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
       "ACM IMWUT / UbiComp": {
         "fetched": 5,
-        "qualityKept": 3,
-        "finalKept": 3,
-        "kept": 3,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
       "ISWC Proceedings": {
         "fetched": 5,
-        "qualityKept": 3,
-        "finalKept": 1,
-        "kept": 1,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
       "IEEE Sensors / Wearable Proceedings": {
         "fetched": 5,
-        "qualityKept": 3,
-        "finalKept": 3,
-        "kept": 3,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
@@ -4071,13 +3707,13 @@
         "error": null
       }
     },
-    "filtered_out_by_blacklist": 23,
-    "filtered_out_by_keyword": 622,
-    "filtered_out_by_source_exclude": 9,
-    "filtered_out_by_tavily_quality": 70,
-    "filtered_out_by_date": 273,
-    "duplicate_urls": 7,
-    "tavily_items_capped": 13,
+    "filtered_out_by_blacklist": 24,
+    "filtered_out_by_keyword": 623,
+    "filtered_out_by_source_exclude": 7,
+    "filtered_out_by_tavily_quality": 63,
+    "filtered_out_by_date": 286,
+    "duplicate_urls": 1,
+    "tavily_items_capped": 12,
     "top3_categories": null,
     "top3_scores": null,
     "top3_rejected_candidates": null
