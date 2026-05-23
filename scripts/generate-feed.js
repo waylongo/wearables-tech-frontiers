@@ -52,11 +52,38 @@ function stripTags(s) {
     .trim();
 }
 
-function decodeEntities(s) {
+function decodeEntitiesOnce(s) {
+  const named = {
+    amp: '&',
+    lt: '<',
+    gt: '>',
+    quot: '"',
+    apos: "'",
+    nbsp: ' ',
+    mdash: '-',
+    ndash: '-',
+    rsquo: "'",
+    lsquo: "'",
+    ldquo: '"',
+    rdquo: '"',
+    hellip: '...',
+    ge: '>=',
+    le: '<='
+  };
   return (s || '')
-    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&apos;/g, "'")
-    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(parseInt(n, 10)));
+    .replace(/&([a-z]+);/gi, (m, name) => Object.prototype.hasOwnProperty.call(named, name.toLowerCase()) ? named[name.toLowerCase()] : m)
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(parseInt(n, 10)));
+}
+
+function decodeEntities(s) {
+  let out = s || '';
+  for (let i = 0; i < 3; i++) {
+    const next = decodeEntitiesOnce(out);
+    if (next === out) break;
+    out = next;
+  }
+  return out;
 }
 
 function extractField(block, tag) {
@@ -276,6 +303,15 @@ function passesEntryPageFilter(item) {
     /^developer hub$/
   ];
   return !entryPatterns.some(re => re.test(title));
+}
+
+function passesTavilySummaryQuality(item) {
+  const summary = item.summary || '';
+  const markdownLinks = summary.match(/\[[^\]]+\]\([^)]+\)/g) || [];
+  if (markdownLinks.length >= 5) return false;
+  const compact = summary.toLowerCase().replace(/\s+/g, ' ');
+  if (compact.startsWith('* [store]') && compact.includes('shop the latest')) return false;
+  return true;
 }
 
 function inferSignalType(item) {
@@ -809,6 +845,10 @@ async function main() {
         }
         if (!passesEntryPageFilter(it)) {
           healthcheck.filtered_out_by_entry_page++;
+          continue;
+        }
+        if (!passesTavilySummaryQuality(it)) {
+          healthcheck.filtered_out_by_tavily_quality++;
           continue;
         }
         if (!passesTavilyFreshness(it, site, args.days)) {

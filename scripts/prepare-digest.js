@@ -140,11 +140,38 @@ function stripTags(s) {
     .trim();
 }
 
-function decodeEntities(s) {
+function decodeEntitiesOnce(s) {
+  const named = {
+    amp: '&',
+    lt: '<',
+    gt: '>',
+    quot: '"',
+    apos: "'",
+    nbsp: ' ',
+    mdash: '-',
+    ndash: '-',
+    rsquo: "'",
+    lsquo: "'",
+    ldquo: '"',
+    rdquo: '"',
+    hellip: '...',
+    ge: '>=',
+    le: '<='
+  };
   return (s || '')
-    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&apos;/g, "'")
-    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(parseInt(n, 10)));
+    .replace(/&([a-z]+);/gi, (m, name) => Object.prototype.hasOwnProperty.call(named, name.toLowerCase()) ? named[name.toLowerCase()] : m)
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(parseInt(n, 10)));
+}
+
+function decodeEntities(s) {
+  let out = s || '';
+  for (let i = 0; i < 3; i++) {
+    const next = decodeEntitiesOnce(out);
+    if (next === out) break;
+    out = next;
+  }
+  return out;
 }
 
 function extractField(block, tag) {

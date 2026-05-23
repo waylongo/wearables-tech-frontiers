@@ -1698,7 +1698,10 @@
           "sleep"
         ],
         "keywordScope": "title_summary",
-        "maxItems": 2
+        "maxItems": 2,
+        "excludeKeywordFilter": [
+          "pride collection"
+        ]
       },
       {
         "name": "Apple Developer HealthKit / WorkoutKit / watchOS",
@@ -1838,7 +1841,7 @@
           "research stack"
         ],
         "keywordScope": "title_summary",
-        "maxItems": 2
+        "maxItems": 1
       },
       {
         "name": "Android Developers Health & Fitness",
@@ -1877,7 +1880,8 @@
           "/documentation/foundation",
           "/documentation/dispatch",
           "/documentation/xcode",
-          "/documentation/coregraphics"
+          "/documentation/coregraphics",
+          "path-prefix:/health-and-fitness/health-connect/features"
         ],
         "excludeKeywordFilter": [
           "overview",
@@ -2005,7 +2009,12 @@
           "research stack"
         ],
         "keywordScope": "title_summary",
-        "maxItems": 2
+        "maxItems": 2,
+        "excludeKeywordFilter": [
+          "purchase eligible",
+          "smart scale on us",
+          "withings smart scale on us"
+        ]
       },
       {
         "name": "Samsung Developers Health",
@@ -2267,7 +2276,11 @@
           "research stack"
         ],
         "keywordScope": "title_summary",
-        "maxItems": 2
+        "maxItems": 2,
+        "excludeKeywordFilter": [
+          "redmi note",
+          "xiaomi community"
+        ]
       },
       {
         "name": "Garmin Developers",
@@ -2343,7 +2356,13 @@
           "ring"
         ],
         "keywordScope": "title_summary",
-        "maxItems": 2
+        "maxItems": 2,
+        "urlExcludeFilter": [
+          ".pdf"
+        ],
+        "excludeKeywordFilter": [
+          "healthcare guide"
+        ]
       },
       {
         "name": "Oura Developer API",
@@ -2447,7 +2466,13 @@
           "feature"
         ],
         "keywordScope": "title_summary",
-        "maxItems": 2
+        "maxItems": 2,
+        "excludeKeywordFilter": [
+          "podcast",
+          "what whoop measures",
+          "self-experimentation",
+          "guide to"
+        ]
       },
       {
         "name": "WHOOP Developer API",
@@ -2682,7 +2707,14 @@
           "research stack"
         ],
         "keywordScope": "title_summary",
-        "maxItems": 2
+        "maxItems": 2,
+        "urlExcludeFilter": [
+          "path:/en-us/all-access"
+        ],
+        "excludeKeywordFilter": [
+          "all access learning hub",
+          "learning hub"
+        ]
       },
       {
         "name": "Dexcom Developer API",
@@ -3087,7 +3119,10 @@
           "research stack"
         ],
         "keywordScope": "title_summary",
-        "maxItems": 3
+        "maxItems": 3,
+        "excludeKeywordFilter": [
+          "in-depth review"
+        ]
       },
       {
         "name": "NeurIPS Health Workshops / OpenReview",
