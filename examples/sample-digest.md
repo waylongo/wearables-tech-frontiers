@@ -31,7 +31,35 @@ Past 30 days · 913 raw items -> blacklist -0 -> keywords -646 -> date window -3
   Affected area: platform / product
   Apple HealthKit Updates + Android Health Connect Release Notes · 2026-05-16 · https://developer.apple.com/documentation/Updates/HealthKit
 
-## Algorithm & Evidence
+## Industry News
+
+• Apple HealthKit and WorkoutKit docs are monitored as platform-change sources
+  Signal type: platform_api
+  Why it matters: data-type, permission, and workout API changes can alter app architecture and roadmap timing.
+  Affected area: platform / product
+  Apple HealthKit Updates · 2026-05-16 · https://developer.apple.com/documentation/Updates/HealthKit
+
+• Android Health Connect and Health Services docs are monitored as Wear OS health signals
+  Signal type: platform_api
+  Why it matters: Health Connect schema and Wear OS health-service changes affect Android health data interoperability.
+  Affected area: platform / product
+  Android Health Connect Release Notes · 2026-05-16 · https://developer.android.com/jetpack/androidx/releases/health-connect
+
+• Device launches and official vendor updates stay below hard evidence unless they change platform, clinical, or category direction
+  Signal type: product_market
+  Why it matters: this keeps the digest from becoming a launch-news list.
+  Affected area: product / market
+  9to5Mac / 9to5Google / official vendor sources · 2026-05-16 · https://9to5mac.com/
+
+## Company Research
+
+• Official research channels are separated from launch and market coverage
+  Signal type: algorithm_evidence
+  Why it matters: company research can reveal sensor, model, and dataset direction before product release notes.
+  Affected area: algorithm / sensor
+  Apple Machine Learning Research · 2026-05-16 · https://machinelearning.apple.com/
+
+## Academic
 
 • ECG and PPG papers remain grouped as evidence, not mixed into product news
   Signal type: algorithm_evidence
@@ -52,36 +80,6 @@ Past 30 days · 913 raw items -> blacklist -0 -> keywords -646 -> date window -3
   Why it matters: 510(k) decisions expose device categories and competitors before they appear in product coverage.
   Affected area: clinical / sensor / market
   openFDA Device 510(k): wearable-relevant clearances · 2026-05-01 · https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253887
-
-## Platform & API
-
-• Apple HealthKit and WorkoutKit docs are monitored as platform-change sources
-  Signal type: platform_api
-  Why it matters: data-type, permission, and workout API changes can alter app architecture and roadmap timing.
-  Affected area: platform / product
-  Apple HealthKit Updates · 2026-05-16 · https://developer.apple.com/documentation/Updates/HealthKit
-
-• Android Health Connect and Health Services docs are monitored as Wear OS health signals
-  Signal type: platform_api
-  Why it matters: Health Connect schema and Wear OS health-service changes affect Android health data interoperability.
-  Affected area: platform / product
-  Android Health Connect Release Notes · 2026-05-16 · https://developer.android.com/jetpack/androidx/releases/health-connect
-
-## Product / Market
-
-• Device launches and official vendor updates stay below hard evidence unless they change platform, clinical, or category direction
-  Signal type: product_market
-  Why it matters: this keeps the digest from becoming a launch-news list.
-  Affected area: product / market
-  9to5Mac / 9to5Google / official vendor sources · 2026-05-16 · https://9to5mac.com/
-
-## Worth Skimming
-
-• Broader industry news is retained only when it has a wearable, sensor, digital-health, or business-model angle.
-  Signal type: business_structure
-  Why it matters: funding, partnerships, EHR integration, and reimbursement can matter when tied to wearable adoption.
-  Affected area: market / product
-  MobiHealthNews · 2026-05-16 · https://www.mobihealthnews.com/
 
 --- Run Healthcheck ---
 feed: local_rss · generatedAt=2026-05-16T12:44:00Z

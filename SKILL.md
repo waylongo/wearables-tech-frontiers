@@ -73,11 +73,18 @@ Then stop.
 
 Follow the prompts returned by the script:
 
-- `prompts.digest_intro`: structure, section mapping, Top Signals, healthcheck footer
-- `prompts.summarize_papers`: academic items
-- `prompts.summarize_official`: vendor research items
-- `prompts.summarize_news`: industry news, vendor websearch, clinical registry, regulatory items
+- `prompts.digest_intro`: source-category section order, Top Signals, healthcheck footer
+- `prompts.summarize_news`: Industry News items (`industry_news`, `vendor_websearch`) and Clinical / Regulatory items (`clinical_registry`, `regulatory`)
+- `prompts.summarize_official`: Company Research items from `vendor_research`
+- `prompts.summarize_papers`: Academic items from `academic`
 - `prompts.translate`: apply when `config.language` is `zh` or `bilingual`
+
+Use this body order after Top Signals:
+
+1. Industry News
+2. Company Research
+3. Academic
+4. Clinical / Regulatory
 
 Populate:
 

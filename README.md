@@ -8,11 +8,11 @@ It is an on-demand skill for following wearables R&D, platform, clinical, produc
 
 The source catalog is `config/sources.json`.
 
+- **Industry news**: launches, health features, partnerships, funding, M&A, category movement, and official vendor updates.
+- **Company research**: official research channels such as Apple Machine Learning Research, Google Research, and DeepMind.
 - **Academic evidence**: papers, preprints, validation studies, datasets, and physiological time-series methods from arXiv, PubMed, medRxiv, bioRxiv, and digital-health journals.
-- **Vendor research**: official research channels such as Apple Machine Learning Research, Google Research, and DeepMind.
 - **Clinical / Regulatory**: ClinicalTrials.gov, FDA MedWatch, openFDA 510(k), PMA, and recall signals.
 - **Platform & API**: HealthKit, WorkoutKit, Health Connect, Health Services, Wear OS, and related developer updates.
-- **Product / Market**: launches, health features, partnerships, funding, M&A, category movement, and official vendor updates.
 
 Not covered: X/Twitter, paid funding databases, individual openFDA adverse-event reports, push notifications, or telemetry.
 
@@ -72,6 +72,6 @@ Examples:
 - `/wtf`
 - `/wtf latest wearable tech frontiers`
 - `/wtf past 14 days`
-- `/wtf academic and vendor research only`
+- `/wtf academic and company research only`
 - `/wtf switch output to Chinese`
 - `/wtf add this private RSS source: https://example.com/feed.xml`

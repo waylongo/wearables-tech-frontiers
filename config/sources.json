@@ -3152,7 +3152,7 @@
         "id": "open_release",
         "label_en": "Open release",
         "base_score": 9,
-        "criteria": "Vendor or academic publicly releases model weights, pretrained foundation model, large labeled dataset, or production-grade SDK/code for wearable/physiological signals. Must be usable (not just a paper claiming 'code coming soon').",
+        "criteria": "Company or academic publicly releases model weights, pretrained foundation model, large labeled dataset, or production-grade SDK/code for wearable/physiological signals. Must be usable (not just a paper claiming 'code coming soon').",
         "examples_positive": [
           "Meta releases wearable foundation model weights on HuggingFace",
           "Stanford/Apple release 1M-ECG labeled dataset",
