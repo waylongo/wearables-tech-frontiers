@@ -25,6 +25,7 @@ const TAVILY_SEARCH_URL = 'https://api.tavily.com/search';
 const CLINICAL_TRIALS_SEARCH_URL = 'https://clinicaltrials.gov/api/v2/studies';
 const PUBMED_SEARCH_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi';
 const PUBMED_SUMMARY_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi';
+const DAY_MS = 24 * 60 * 60 * 1000;
 
 function parseArgs() {
   const args = { rssOnly: false, days: DEFAULT_LOOKBACK_DAYS };
@@ -77,7 +78,7 @@ function parseFeed(xml) {
     items.push({
       title: title.slice(0, 500),
       url: link,
-      publishedAt: pubDate || null,
+      publishedAt: normalizePublishedAt(pubDate),
       summary: description.slice(0, 2000)
     });
   }
@@ -104,13 +105,34 @@ async function httpGet(url, timeoutMs = 15000) {
   }
 }
 
+function parseDateMs(dateStr) {
+  if (!dateStr) return null;
+  const raw = String(dateStr).trim();
+  if (!raw) return null;
+  const collapsed = raw.replace(/\s+/g, ' ');
+  const candidates = [
+    raw,
+    collapsed,
+    collapsed.replace(/(\d)([ap])\.?m\.?/gi, '$1 $2m')
+  ];
+  for (const candidate of candidates) {
+    const ms = new Date(candidate).getTime();
+    if (Number.isFinite(ms)) return ms;
+  }
+  return null;
+}
+
+function normalizePublishedAt(dateStr) {
+  const ms = parseDateMs(dateStr);
+  return ms == null ? null : new Date(ms).toISOString();
+}
+
 function withinDays(dateStr, days) {
-  if (!dateStr) return true;
-  const d = new Date(dateStr);
-  if (isNaN(d.getTime())) return true;
+  const ms = parseDateMs(dateStr);
+  if (ms == null) return false;
   const now = Date.now();
-  if (d.getTime() > now + 24 * 60 * 60 * 1000) return false;
-  return d.getTime() >= now - days * 24 * 60 * 60 * 1000;
+  if (ms > now + DAY_MS) return false;
+  return ms >= now - days * DAY_MS;
 }
 
 function formatOpenFdaDate(date) {
@@ -195,20 +217,20 @@ function passesEntryPageFilter(item) {
 }
 
 function inferSignalType(item) {
-  if (item.sourceCategory === 'regulatory') return 'clinical_regulatory';
+  const category = item.sourceCategory;
+  if (category === 'clinical_regulatory') return 'clinical_regulatory';
   const hay = `${item.title || ''} ${item.summary || ''} ${item.sourceName || ''}`.toLowerCase();
-  if (item.sourceCategory === 'clinical_registry') return 'clinical_regulatory';
   if (/(fda|510\(k\)|de novo|ce mark|mdr|clearance|approval|clinical trial|clinical validation|registry|endpoint)/i.test(hay)) {
     return 'clinical_regulatory';
   }
-  if (item.sourceCategory === 'academic') return 'algorithm_evidence';
+  if (category === 'academic') return 'algorithm_evidence';
   if (/(api|sdk|developer|healthkit|workoutkit|health connect|health services|schema|permission|release notes|watchos|wear os)/i.test(hay)) {
     return 'platform_api';
   }
   if (/(funding|series [abc]|acquir|merger|partnership|ehr|insurance|subscription|reimbursement|business model)/i.test(hay)) {
     return 'business_structure';
   }
-  if (item.sourceCategory === 'academic' || item.sourceCategory === 'vendor_research') return 'algorithm_evidence';
+  if (category === 'academic' || category === 'company_research') return 'algorithm_evidence';
   return 'product_market';
 }
 
@@ -322,7 +344,7 @@ async function fetchClinicalTrials(source) {
       return {
         title,
         url: `https://clinicaltrials.gov/study/${id}`,
-        publishedAt: updated,
+        publishedAt: normalizePublishedAt(updated),
         summary: summaryParts.join(' | '),
         nctId: id
       };
@@ -366,7 +388,7 @@ async function fetchPubMed(source) {
       return {
         title: row.title,
         url: `https://pubmed.ncbi.nlm.nih.gov/${id}/`,
-        publishedAt: row.pubdate || null,
+        publishedAt: normalizePublishedAt(row.pubdate),
         summary: summaryParts.join(' | '),
         pmid: id
       };
@@ -480,7 +502,7 @@ async function fetchTavilySite(site, apiKey, days) {
     const items = (data.results || []).slice(0, 5).map(r => ({
       title: (r.title || '').slice(0, 500),
       url: r.url,
-      publishedAt: r.published_date || null,
+      publishedAt: normalizePublishedAt(r.published_date),
       summary: (r.content || r.snippet || '').slice(0, 2000),
       score: r.score
     })).filter(it => it.title && it.url);
@@ -765,7 +787,7 @@ async function main() {
     }
   }
 
-  items.sort((a, b) => (new Date(b.publishedAt || 0).getTime()) - (new Date(a.publishedAt || 0).getTime()));
+  items.sort((a, b) => (parseDateMs(b.publishedAt) || 0) - (parseDateMs(a.publishedAt) || 0));
   const groupedByCategory = {};
   for (const item of items) (groupedByCategory[item.sourceCategory] ||= []).push(item);
 

@@ -32,6 +32,7 @@ name in parentheses:
 Translate field labels this way:
 
 - `Signal type`: 信号类型
+- `Summary`: 摘要
 - `Why it matters`: 为什么重要
 - `Affected area`: 影响对象
 - `Method`: 方法

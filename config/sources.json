@@ -1137,10 +1137,10 @@
         ]
       }
     ],
-    "vendor_research": [
+    "company_research": [
       {
         "name": "Apple Machine Learning Research",
-        "category": "vendor_research",
+        "category": "company_research",
         "priority": "P1",
         "rssUrl": "https://machinelearning.apple.com/rss.xml",
         "homeUrl": "https://machinelearning.apple.com/",
@@ -1170,7 +1170,7 @@
       },
       {
         "name": "Google Research Blog",
-        "category": "vendor_research",
+        "category": "company_research",
         "priority": "P1",
         "rssUrl": "https://research.google/blog/rss/",
         "homeUrl": "https://research.google/blog/",
@@ -1200,7 +1200,7 @@
       },
       {
         "name": "Google DeepMind Blog",
-        "category": "vendor_research",
+        "category": "company_research",
         "priority": "P2",
         "rssUrl": "https://deepmind.google/blog/rss.xml",
         "homeUrl": "https://deepmind.google/discover/blog/",
@@ -1294,10 +1294,10 @@
         "keywordScope": "title"
       }
     ],
-    "regulatory": [
+    "clinical_regulatory": [
       {
         "name": "FDA MedWatch Safety Alerts",
-        "category": "regulatory",
+        "category": "clinical_regulatory",
         "priority": "P1",
         "rssUrl": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/medwatch/rss.xml",
         "homeUrl": "https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program",
@@ -1749,7 +1749,7 @@
       },
       {
         "name": "Samsung Research Publications",
-        "sourceCategory": "vendor_research",
+        "sourceCategory": "company_research",
         "query": "site:research.samsung.com publications digital health OR wearable OR biosignal",
         "homeUrl": "https://research.samsung.com/publications",
         "keywordFilter": [
@@ -3307,7 +3307,7 @@
     "clinical_trials": [
       {
         "name": "ClinicalTrials.gov: wearables and digital biomarkers",
-        "category": "clinical_registry",
+        "category": "clinical_regulatory",
         "priority": "P1",
         "query": "wearable OR smartwatch OR \"smart ring\" OR sensor OR actigraphy OR \"remote monitoring\" OR \"digital biomarker\" OR \"continuous monitoring\" OR \"digital device\"",
         "homeUrl": "https://clinicaltrials.gov/",
@@ -3450,7 +3450,7 @@
     "openfda": [
       {
         "name": "openFDA Device 510(k): wearable-relevant clearances",
-        "category": "regulatory",
+        "category": "clinical_regulatory",
         "priority": "P1",
         "kind": "510k",
         "endpoint": "https://api.fda.gov/device/510k.json",
@@ -3507,7 +3507,7 @@
       },
       {
         "name": "openFDA Device PMA: wearable-relevant approvals",
-        "category": "regulatory",
+        "category": "clinical_regulatory",
         "priority": "P1",
         "kind": "pma",
         "endpoint": "https://api.fda.gov/device/pma.json",
@@ -3564,7 +3564,7 @@
       },
       {
         "name": "openFDA Device Recall: wearable-relevant recalls",
-        "category": "regulatory",
+        "category": "clinical_regulatory",
         "priority": "P1",
         "kind": "recall",
         "endpoint": "https://api.fda.gov/device/recall.json",

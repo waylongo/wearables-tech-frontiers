@@ -6,7 +6,7 @@ feed items and does not include runtime search.
 ---
 
 Wearables Tech Frontiers — 2026-05-16
-Past 30 days · 913 raw items -> blacklist -0 -> keywords -646 -> date window -30 -> 237 kept -> 12 selected
+Past <windowDays> days · <rawItems> raw items -> blacklist -<blacklistCount> -> keywords -<keywordCount> -> date window -<dateCount> -> <keptItems> kept -> <N> selected
 
 ## Top Signals
 
@@ -83,6 +83,6 @@ Past 30 days · 913 raw items -> blacklist -0 -> keywords -646 -> date window -3
 
 --- Run Healthcheck ---
 feed: local_rss · generatedAt=2026-05-16T12:44:00Z
-RSS: 14/22 with results · API: 2/5 with results · Tavily: 0/0 with results
-filters: blacklist 0 · keyword 610 · source exclude 10 · Tavily quality 0 · cap 0 · date 30
-Top Signals: regulatory milestone / regulatory milestone / platform surface change · scores: 4.8 / 4.8 / 3.6
+RSS: <sourcesWithResults>/<sourcesQueried> with results · API: <apiSourcesWithResults>/<apiSourcesQueried> with results · Tavily: <tavilySitesWithResults>/<tavilySitesQueried> with results
+filters: blacklist <filtered_out_by_blacklist> · keyword <filtered_out_by_keyword> · source exclude <filtered_out_by_source_exclude> · Tavily quality <filtered_out_by_tavily_quality> · cap <tavily_items_capped> · date <filtered_out_by_date>
+Top Signals: <top3_categories> · scores: <top3_scores>

@@ -23,9 +23,9 @@ Skip empty sections.
 Section mapping is based on `sourceCategory`, not `signalType`:
 
 - `industry_news` and `vendor_websearch` -> Industry News
-- `vendor_research` -> Company Research
+- `company_research` -> Company Research
 - `academic` -> Academic
-- `clinical_registry` and `regulatory` -> Clinical / Regulatory
+- `clinical_regulatory` -> Clinical / Regulatory
 
 Do not output lower-priority items that are not worth including in one of the
 four main source sections.
@@ -50,6 +50,7 @@ Standard bullet:
 
 ```text
 • [Signal headline]
+  Summary: [2-3 sentences summarizing what happened, the concrete evidence/detail in the item, and the implication for wearables/sports-health. Use only `summary`; write `not specified` for missing details.]
   Signal type: [signalType id]
   Why it matters: [one concrete reason]
   Affected area: [algorithm / sensor / clinical / platform / product / market]
@@ -67,7 +68,7 @@ score. For each selected Top Signal:
 
 ```text
 ★ [Title]
-  [One-sentence mechanism: what changed/found/shipped, with concrete method/product/number when available]
+  Summary: [2-3 sentences explaining what changed/found/shipped, the concrete method/product/number when available, and why this is a scarce signal. Use only `summary`; write `not specified` for missing details.]
   Signal type: [signalType id]
   Scarcity: [scarcity label] ([anchor]) · score [score]
   Affected area: [algorithm / sensor / clinical / platform / product / market]
@@ -96,6 +97,7 @@ unnamed rumors, and product reviews without technical or market signal.
 - Use only `items` from the script JSON.
 - Every bullet must carry a URL. No URL means drop the item.
 - Use `summary`; do not refetch URLs or run web search.
+- Each selected item must include a `Summary` field with 2-3 useful sentences so the reader can usually avoid opening the link.
 - Do not invent claims, sample sizes, dates, URLs, source names, scores, or categories.
 - Do not add an extra source-checklist section.
 - Do not use hype.

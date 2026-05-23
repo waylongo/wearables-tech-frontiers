@@ -22,7 +22,7 @@ If `~/.wtf/config.json` does not exist with `onboardingComplete: true`, ask for:
 
 - `windowDays`: 1 / 7 / 14 / 30; default is 30.
 - `language`: `en` / `zh` / `bilingual`; default is `en`.
-- `categories`: any of `academic`, `vendor_research`, `industry_news`, `clinical_registry`, `regulatory`.
+- `categories`: any of `industry_news`, `company_research`, `academic`, `clinical_regulatory`.
 
 Save the selected values:
 
@@ -32,7 +32,7 @@ cat > ~/.wtf/config.json << 'CFGEOF'
 {
   "windowDays": 30,
   "language": "en",
-  "categories": ["academic", "vendor_research", "industry_news", "clinical_registry", "regulatory"],
+  "categories": ["industry_news", "company_research", "academic", "clinical_regulatory"],
   "onboardingComplete": true
 }
 CFGEOF
@@ -74,8 +74,8 @@ Then stop.
 Follow the prompts returned by the script:
 
 - `prompts.digest_intro`: source-category section order, Top Signals, healthcheck footer
-- `prompts.summarize_news`: Industry News items (`industry_news`, `vendor_websearch`) and Clinical / Regulatory items (`clinical_registry`, `regulatory`)
-- `prompts.summarize_official`: Company Research items from `vendor_research`
+- `prompts.summarize_news`: Industry News items (`industry_news`, `vendor_websearch`) and Clinical / Regulatory items (`clinical_regulatory`)
+- `prompts.summarize_official`: Company Research items from `company_research`
 - `prompts.summarize_papers`: Academic items from `academic`
 - `prompts.translate`: apply when `config.language` is `zh` or `bilingual`
 
@@ -106,7 +106,7 @@ Supported fields:
 
 - `windowDays`: 1 / 7 / 14 / 30
 - `language`: `en` / `zh` / `bilingual`
-- `categories`: `academic`, `vendor_research`, `industry_news`, `clinical_registry`, `regulatory`
+- `categories`: `industry_news`, `company_research`, `academic`, `clinical_regulatory`
 
 For source changes, edit `~/.wtf/sources.json`; this forces `local_rss`.
 

@@ -42,6 +42,75 @@ const PROMPT_FILES = [
 ];
 
 const USER_AGENT = 'Mozilla/5.0 (wearables-tech-frontiers-skill/2.0)';
+const DAY_MS = 24 * 60 * 60 * 1000;
+const CANONICAL_CATEGORIES = ['industry_news', 'company_research', 'academic', 'clinical_regulatory'];
+const RETRIEVAL_BUCKETS = ['vendor_websearch'];
+const SUPPORTED_CATEGORIES = [...CANONICAL_CATEGORIES, ...RETRIEVAL_BUCKETS];
+const DEFAULT_CATEGORIES = CANONICAL_CATEGORIES;
+
+function dedupeOrdered(arr) {
+  const seen = new Set();
+  const out = [];
+  for (const x of arr) {
+    if (!seen.has(x)) {
+      seen.add(x);
+      out.push(x);
+    }
+  }
+  return out;
+}
+
+function exitConfigError(detail) {
+  const payload = typeof detail === 'string'
+    ? { status: 'error', message: detail }
+    : { status: 'error', ...detail };
+  console.error(JSON.stringify(payload));
+  process.exit(2);
+}
+
+function normalizeCategoryList(value, label) {
+  const values = Array.isArray(value)
+    ? value
+    : typeof value === 'string'
+      ? value.split(',')
+      : null;
+  if (!values) {
+    exitConfigError(`${label} must be a comma-separated string or an array`);
+  }
+  const categories = values.map(s => String(s).trim()).filter(Boolean);
+  if (categories.length === 0) {
+    exitConfigError(`${label} must include at least one category`);
+  }
+  // Reject before any catalog/feed load or remote search work.
+  const invalid = categories.filter(c => !SUPPORTED_CATEGORIES.includes(c));
+  if (invalid.length > 0) {
+    exitConfigError({
+      message: `${label} contains unsupported category: ${invalid.join(', ')}. Supported categories: ${SUPPORTED_CATEGORIES.join(', ')}`,
+      unsupported: invalid,
+      supported: SUPPORTED_CATEGORIES
+    });
+  }
+  return dedupeOrdered(categories);
+}
+
+async function loadUserConfig(healthcheck) {
+  if (!existsSync(USER_CONFIG)) return {};
+
+  let raw;
+  try {
+    raw = await readFile(USER_CONFIG, 'utf-8');
+  } catch (err) {
+    healthcheck.warnings.push(`User config unreadable: ${err.message}`);
+    return {};
+  }
+
+  try {
+    return JSON.parse(raw);
+  } catch (err) {
+    healthcheck.warnings.push(`User config unreadable: ${err.message}`);
+    return {};
+  }
+}
 
 function parseArgs() {
   const args = { days: null, categories: null, noRemote: false };
@@ -54,7 +123,7 @@ function parseArgs() {
       }
       args.days = n;
     } else if (arg.startsWith('--category=')) {
-      args.categories = arg.slice(11).split(',').map(s => s.trim()).filter(Boolean);
+      args.categories = normalizeCategoryList(arg.slice(11), '--category');
     } else if (arg === '--no-remote') {
       args.noRemote = true;
     }
@@ -97,7 +166,7 @@ function parseFeed(xml) {
     items.push({
       title: title.slice(0, 500),
       url: link,
-      publishedAt: pubDate || null,
+      publishedAt: normalizePublishedAt(pubDate),
       summary: description.slice(0, 2000)
     });
   }
@@ -163,6 +232,11 @@ async function loadPrompt(filename, noRemote, healthcheck) {
     healthcheck.prompt_sources[filename] = 'user_override';
     return await readFile(userPath, 'utf-8');
   }
+  const localPath = join(LOCAL_PROMPTS_DIR, filename);
+  if (existsSync(localPath)) {
+    healthcheck.prompt_sources[filename] = 'local_repo';
+    return await readFile(localPath, 'utf-8');
+  }
   if (!noRemote) {
     const r = await httpGet(`${REMOTE_PROMPTS}/${filename}?ref=main`, 6000);
     if (r.ok && r.text) {
@@ -170,22 +244,43 @@ async function loadPrompt(filename, noRemote, healthcheck) {
       return r.text;
     }
   }
-  const localPath = join(LOCAL_PROMPTS_DIR, filename);
-  if (existsSync(localPath)) {
-    healthcheck.prompt_sources[filename] = 'local_fallback';
-    return await readFile(localPath, 'utf-8');
-  }
   healthcheck.prompt_sources[filename] = 'MISSING';
   return null;
 }
 
+function parseDateMs(dateStr) {
+  if (!dateStr) return null;
+  const raw = String(dateStr).trim();
+  if (!raw) return null;
+  const collapsed = raw.replace(/\s+/g, ' ');
+  const candidates = [
+    raw,
+    collapsed,
+    collapsed.replace(/(\d)([ap])\.?m\.?/gi, '$1 $2m')
+  ];
+  for (const candidate of candidates) {
+    const ms = new Date(candidate).getTime();
+    if (Number.isFinite(ms)) return ms;
+  }
+  return null;
+}
+
+function normalizePublishedAt(dateStr) {
+  const ms = parseDateMs(dateStr);
+  return ms == null ? null : new Date(ms).toISOString();
+}
+
 function withinDays(dateStr, days) {
-  if (!dateStr) return true;
-  const d = new Date(dateStr);
-  if (isNaN(d.getTime())) return true;
+  const ms = parseDateMs(dateStr);
+  if (ms == null) return false;
   const now = Date.now();
-  if (d.getTime() > now + 24 * 60 * 60 * 1000) return false;
-  return d.getTime() >= now - days * 24 * 60 * 60 * 1000;
+  if (ms > now + DAY_MS) return false;
+  return ms >= now - days * DAY_MS;
+}
+
+function hasDateWindow(item, days) {
+  if (item.publishedAt) return withinDays(item.publishedAt, days);
+  return item.sourceCategory === 'vendor_websearch' || item.retrievalMethod === 'tavily';
 }
 
 function formatOpenFdaDate(date) {
@@ -234,20 +329,20 @@ function passesSourceExcludeFilter(item, patterns) {
 }
 
 function inferSignalType(item) {
-  if (item.sourceCategory === 'regulatory') return 'clinical_regulatory';
+  const category = item.sourceCategory;
+  if (category === 'clinical_regulatory') return 'clinical_regulatory';
   const hay = `${item.title || ''} ${item.summary || ''} ${item.sourceName || ''}`.toLowerCase();
-  if (item.sourceCategory === 'clinical_registry') return 'clinical_regulatory';
   if (/(fda|510\(k\)|de novo|ce mark|mdr|clearance|approval|clinical trial|clinical validation|registry|endpoint)/i.test(hay)) {
     return 'clinical_regulatory';
   }
-  if (item.sourceCategory === 'academic') return 'algorithm_evidence';
+  if (category === 'academic') return 'algorithm_evidence';
   if (/(api|sdk|developer|healthkit|workoutkit|health connect|health services|schema|permission|release notes|watchos|wear os)/i.test(hay)) {
     return 'platform_api';
   }
   if (/(funding|series [abc]|acquir|merger|partnership|ehr|insurance|subscription|reimbursement|business model)/i.test(hay)) {
     return 'business_structure';
   }
-  if (item.sourceCategory === 'academic' || item.sourceCategory === 'vendor_research') return 'algorithm_evidence';
+  if (category === 'academic' || category === 'company_research') return 'algorithm_evidence';
   return 'product_market';
 }
 
@@ -354,15 +449,8 @@ async function loadRemoteFeed(args, healthcheck) {
 
 function categoryAllowed(itemCategory, categories) {
   if (categories.includes(itemCategory)) return true;
-  if (itemCategory === 'clinical_registry') {
-    return categories.includes('academic') || categories.includes('industry_news') || categories.includes('clinical_registry');
-  }
-  if (itemCategory === 'regulatory') {
-    return categories.includes('regulatory') || categories.includes('clinical_registry') || categories.includes('industry_news');
-  }
-  if (itemCategory === 'vendor_websearch') {
-    return categories.includes('vendor_research') || categories.includes('industry_news') || categories.includes('vendor_websearch');
-  }
+  // Retrieval bucket folds into Industry News for the section assignment.
+  if (itemCategory === 'vendor_websearch' && categories.includes('industry_news')) return true;
   return false;
 }
 
@@ -391,12 +479,13 @@ function buildFromRemoteFeed(feed, categories, windowDays, healthcheck) {
       localFilteredByCategory++;
       continue;
     }
-    if (!withinDays(it.publishedAt, windowDays)) {
+    if (!hasDateWindow(it, windowDays)) {
       localFilteredByDate++;
       continue;
     }
     allItems.push({
       ...it,
+      publishedAt: normalizePublishedAt(it.publishedAt),
       signalType: it.signalType || inferSignalType(it)
     });
   }
@@ -557,15 +646,11 @@ async function main() {
     top3_rejected_candidates: null
   };
 
-  let userCfg = {};
-  if (existsSync(USER_CONFIG)) {
-    try { userCfg = JSON.parse(await readFile(USER_CONFIG, 'utf-8')); }
-    catch (err) { healthcheck.warnings.push(`User config unreadable: ${err.message}`); }
-  }
+  const userCfg = await loadUserConfig(healthcheck);
   const config = {
     language: userCfg.language || 'en',
     windowDays: userCfg.windowDays || 30,
-    categories: userCfg.categories || ['academic', 'vendor_research', 'industry_news', 'clinical_registry', 'regulatory'],
+    categories: userCfg.categories == null ? DEFAULT_CATEGORIES : normalizeCategoryList(userCfg.categories, 'config.categories'),
     onboardingComplete: userCfg.onboardingComplete || false,
     firstRunShown: userCfg.firstRunShown || false
   };
@@ -579,7 +664,7 @@ async function main() {
     : await buildFromLocalRss(catalog, categories, windowDays, healthcheck);
   healthcheck.stats = sourceData.stats;
 
-  const allItems = sourceData.items.sort((a, b) => (new Date(b.publishedAt || 0).getTime()) - (new Date(a.publishedAt || 0).getTime()));
+  const allItems = sourceData.items.sort((a, b) => (parseDateMs(b.publishedAt) || 0) - (parseDateMs(a.publishedAt) || 0));
   const groupedByCategory = {};
   for (const it of allItems) (groupedByCategory[it.sourceCategory] ||= []).push(it);
 

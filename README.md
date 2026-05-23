@@ -8,11 +8,10 @@ It is an on-demand skill for following wearables R&D, platform, clinical, produc
 
 The source catalog is `config/sources.json`.
 
-- **Industry news**: launches, health features, partnerships, funding, M&A, category movement, and official vendor updates.
-- **Company research**: official research channels such as Apple Machine Learning Research, Google Research, and DeepMind.
-- **Academic evidence**: papers, preprints, validation studies, datasets, and physiological time-series methods from arXiv, PubMed, medRxiv, bioRxiv, and digital-health journals.
-- **Clinical / Regulatory**: ClinicalTrials.gov, FDA MedWatch, openFDA 510(k), PMA, and recall signals.
-- **Platform & API**: HealthKit, WorkoutKit, Health Connect, Health Services, Wear OS, and related developer updates.
+- **Industry News** (`industry_news`): launches, health features, partnerships, funding, M&A, category movement, and official vendor updates. Platform and API surfaces (HealthKit, WorkoutKit, Health Connect, Health Services, Wear OS, related developer updates) are tracked under Industry News.
+- **Company Research** (`company_research`): official company research channels such as Apple Machine Learning Research, Google Research, and DeepMind.
+- **Academic** (`academic`): papers, preprints, validation studies, datasets, and physiological time-series methods from arXiv, PubMed, medRxiv, bioRxiv, and digital-health journals.
+- **Clinical / Regulatory** (`clinical_regulatory`): ClinicalTrials.gov, FDA MedWatch, openFDA 510(k), PMA, and recall signals.
 
 Not covered: X/Twitter, paid funding databases, individual openFDA adverse-event reports, push notifications, or telemetry.
 

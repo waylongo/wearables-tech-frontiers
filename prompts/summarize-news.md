@@ -1,7 +1,6 @@
 # Summarize News Prompt
 
-Use this prompt for `industry_news`, `vendor_websearch`, `clinical_registry`,
-and `regulatory` items.
+Use this prompt for `industry_news`, `vendor_websearch`, and `clinical_regulatory` items.
 
 ## Keep / Drop
 
@@ -22,6 +21,7 @@ technical or market signal.
 
 ```text
 • [Headline reframed as what changed]
+  Summary: [2-3 sentences: what changed, the most concrete product/platform/clinical/business detail available, and the practical implication. Use only `summary`; write `not specified` when the item lacks detail.]
   Signal type: [algorithm_evidence / clinical_regulatory / platform_api / product_market / business_structure]
   Why it matters: [one concrete reason]
   Affected area: [algorithm / sensor / clinical / platform / product / market]
@@ -33,6 +33,7 @@ primary URL:
 
 ```text
 • [Signal]
+  Summary: [2-3 sentences covering the shared story and the clearest concrete details from the available summaries.]
   Signal type: [signalType id]
   Why it matters: [reason]
   Affected area: [target]
@@ -40,3 +41,5 @@ primary URL:
 ```
 
 Reframe clickbait headlines as factual changes. State the fact without hype.
+Keep the summary compact but substantive enough that the reader can understand
+the item without opening the URL.

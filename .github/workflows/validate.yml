@@ -60,11 +60,72 @@ jobs:
             throw new Error('config/sources.json missing primary_rss');
           }
 
+          const ALLOWED_PRIMARY_RSS_KEYS = ['industry_news', 'company_research', 'academic', 'clinical_regulatory'];
+          for (const key of Object.keys(catalog.primary_rss)) {
+            if (!ALLOWED_PRIMARY_RSS_KEYS.includes(key)) {
+              throw new Error(`config/sources.json primary_rss contains unsupported bucket key: ${key} (allowed: ${ALLOWED_PRIMARY_RSS_KEYS.join(', ')})`);
+            }
+          }
+
+          const REMOVED_CATEGORY_IDS = new Set(['vendor_research', 'clinical_registry', 'regulatory']);
+          (function walkRemovedCategories(node, path) {
+            if (Array.isArray(node)) {
+              for (let i = 0; i < node.length; i++) {
+                walkRemovedCategories(node[i], `${path}[${i}]`);
+              }
+              return;
+            }
+            if (node && typeof node === 'object') {
+              for (const [key, value] of Object.entries(node)) {
+                const childPath = `${path}.${key}`;
+                if ((key === 'category' || key === 'sourceCategory') && typeof value === 'string' && REMOVED_CATEGORY_IDS.has(value)) {
+                  throw new Error(`config/sources.json has removed ${key} value "${value}" at ${childPath}`);
+                }
+                walkRemovedCategories(value, childPath);
+              }
+            }
+          })(catalog, 'catalog');
+
           const feed = JSON.parse(fs.readFileSync('feed-wearables.json', 'utf8'));
           if (feed.schemaVersion == null) throw new Error('feed-wearables.json missing schemaVersion');
           if (!Array.isArray(feed.items)) throw new Error('feed-wearables.json items must be an array');
           if (!feed.healthcheck || typeof feed.healthcheck !== 'object') {
             throw new Error('feed-wearables.json missing healthcheck');
+          }
+          const DAY_MS = 24 * 60 * 60 * 1000;
+          function parseDateMs(value) {
+            if (!value) return null;
+            const raw = String(value).trim();
+            if (!raw) return null;
+            const collapsed = raw.replace(/\s+/g, ' ');
+            const candidates = [
+              raw,
+              collapsed,
+              collapsed.replace(/(\d)([ap])\.?m\.?/gi, '$1 $2m')
+            ];
+            for (const candidate of candidates) {
+              const ms = new Date(candidate).getTime();
+              if (Number.isFinite(ms)) return ms;
+            }
+            return null;
+          }
+          const generatedAtMs = parseDateMs(feed.generatedAt);
+          if (generatedAtMs == null) throw new Error('feed-wearables.json generatedAt must be parseable');
+          const lookbackDays = Number(feed.lookbackDays);
+          if (!Number.isFinite(lookbackDays) || lookbackDays < 1) {
+            throw new Error('feed-wearables.json lookbackDays must be a positive number');
+          }
+          for (const item of feed.items) {
+            if (item && typeof item === 'object' && typeof item.sourceCategory === 'string' && REMOVED_CATEGORY_IDS.has(item.sourceCategory)) {
+              throw new Error(`feed-wearables.json item has removed sourceCategory "${item.sourceCategory}": ${item.title || item.url || '<unknown>'}`);
+            }
+            const itemMs = parseDateMs(item.publishedAt);
+            if (itemMs == null) {
+              if (item.sourceCategory === 'vendor_websearch' || item.retrievalMethod === 'tavily') continue;
+              throw new Error(`Feed item has missing or invalid publishedAt: ${item.title || item.url || '<unknown>'}`);
+            }
+            if (itemMs > generatedAtMs + DAY_MS) throw new Error(`Feed item is dated in the future: ${item.title || item.url}`);
+            if (itemMs < generatedAtMs - lookbackDays * DAY_MS) throw new Error(`Feed item is outside lookback window: ${item.title || item.url}`);
           }
 
           const state = JSON.parse(fs.readFileSync('state-feed.json', 'utf8'));
@@ -109,4 +170,28 @@ jobs:
             keptItems: payload.stats?.keptItems,
             sourcesFailed: payload.stats?.sourcesFailed
           }));
+          NODE
+
+      - name: Reject invalid categories
+        run: |
+          node <<'NODE'
+          const { spawnSync } = require('child_process');
+
+          const result = spawnSync(process.execPath, [
+            'scripts/prepare-digest.js',
+            '--category=academics',
+            '--days=30'
+          ], {
+            encoding: 'utf8',
+            maxBuffer: 1024 * 1024
+          });
+
+          if (result.status === 0) {
+            console.error(result.stdout);
+            throw new Error('Expected invalid category to fail');
+          }
+          const payload = JSON.parse(result.stderr || result.stdout);
+          if (!String(payload.message || '').includes('unsupported category')) {
+            throw new Error(`Unexpected invalid category error: ${payload.message}`);
+          }
           NODE
