@@ -15,17 +15,16 @@ Use this prompt when `config.language` is `zh` or `bilingual`.
 Use these names for Chinese output:
 
 - `Top Signals`: Top Signals
-- `Algorithm & Evidence`: 算法与证据
+- `Industry News`: 行业新闻
+- `Company Research`: 公司研究
+- `Academic`: 学术研究
 - `Clinical / Regulatory`: 临床 / 监管
-- `Platform & API`: 平台与 API
-- `Product / Market`: 产品 / 市场
-- `Worth Skimming`: 顺手浏览
 
 For `bilingual`, write the Chinese section name first, followed by the English
 name in parentheses:
 
 ```text
-算法与证据 (Algorithm & Evidence)
+行业新闻 (Industry News)
 ```
 
 ## Field Labels

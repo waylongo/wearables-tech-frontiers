@@ -1,4 +1,4 @@
-# Summarize Official/Vendor Research Prompt
+# Summarize Official/Company Research Prompt
 
 Use this prompt for `sourceCategory == "vendor_research"` items such as Apple
 Machine Learning Research, Google Research, or DeepMind.

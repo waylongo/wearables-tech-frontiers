@@ -15,19 +15,24 @@ Past [windowDays] days · [rawItems] raw items -> blacklist [-blacklistCount] ->
 Skip empty sections.
 
 1. **Top Signals**
-2. **Algorithm & Evidence**
-3. **Clinical / Regulatory**
-4. **Platform & API**
-5. **Product / Market**
-6. **Worth Skimming**
+2. **Industry News**
+3. **Company Research**
+4. **Academic**
+5. **Clinical / Regulatory**
 
-Section mapping:
+Section mapping is based on `sourceCategory`, not `signalType`:
 
-- `algorithm_evidence` -> Algorithm & Evidence
-- `clinical_regulatory` -> Clinical / Regulatory
-- `platform_api` -> Platform & API
-- `product_market` and `business_structure` -> Product / Market
-- Lower-priority but still relevant items -> Worth Skimming
+- `industry_news` and `vendor_websearch` -> Industry News
+- `vendor_research` -> Company Research
+- `academic` -> Academic
+- `clinical_registry` and `regulatory` -> Clinical / Regulatory
+
+Do not output lower-priority items that are not worth including in one of the
+four main source sections.
+
+Keep `Signal type` in every bullet to describe whether the item is algorithm,
+clinical, platform, product, market, or business-related, but do not use
+`signalType` to decide the top-level section.
 
 ## Signal Types
 
