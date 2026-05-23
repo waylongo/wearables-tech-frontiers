@@ -44,7 +44,12 @@ function parseArgs() {
 }
 
 function stripTags(s) {
-  return (s || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/<[^>]+>/g, '').trim();
+  return (s || '')
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+    .replace(/<(script|style)[^>]*>[\s\S]*?<\/\1>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function decodeEntities(s) {
@@ -57,10 +62,10 @@ function decodeEntities(s) {
 function extractField(block, tag) {
   const cdataRe = new RegExp(`<${tag}[^>]*>\\s*<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>\\s*<\\/${tag}>`, 'i');
   const cdata = block.match(cdataRe);
-  if (cdata) return decodeEntities(cdata[1].trim());
+  if (cdata) return stripTags(decodeEntities(cdata[1]));
   const re = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, 'i');
   const m = block.match(re);
-  if (m) return decodeEntities(stripTags(m[1]));
+  if (m) return stripTags(decodeEntities(m[1]));
   const selfRe = new RegExp(`<${tag}[^>]*href=["']([^"']+)["'][^>]*\\/?>`, 'i');
   const self = block.match(selfRe);
   return self ? self[1] : null;
@@ -187,7 +192,32 @@ function passesSourceExcludeFilter(item, patterns) {
 function passesUrlExcludeFilter(item, patterns) {
   if (!patterns?.length) return true;
   const hay = `${item.url || ''}`.toLowerCase();
-  return !patterns.some(p => hay.includes(p.toLowerCase()));
+  let pathname = null;
+  try {
+    pathname = new URL(item.url).pathname.toLowerCase();
+  } catch {
+    pathname = null;
+  }
+  const normalizePath = p => {
+    if (!p) return '/';
+    const prefixed = p.startsWith('/') ? p : `/${p}`;
+    return prefixed.length > 1 && prefixed.endsWith('/') ? prefixed.slice(0, -1) : prefixed;
+  };
+  const normalizedPath = pathname ? normalizePath(pathname) : null;
+  return !patterns.some(pattern => {
+    const p = String(pattern || '').toLowerCase();
+    if (!p) return false;
+    if (p.startsWith('path-prefix:')) {
+      if (!normalizedPath) return false;
+      const prefix = normalizePath(p.slice('path-prefix:'.length));
+      return normalizedPath === prefix || normalizedPath.startsWith(`${prefix}/`);
+    }
+    if (p.startsWith('path:')) {
+      if (!normalizedPath) return false;
+      return normalizedPath === normalizePath(p.slice('path:'.length));
+    }
+    return hay.includes(p);
+  });
 }
 
 function isAllowedIncrementalDocPage(item) {
@@ -211,7 +241,39 @@ function passesEntryPageFilter(item) {
     /^(home|overview)\s*[|-]/i,
     /\s[|-]\s*(home|overview)$/i,
     /^[a-z0-9 &/+.-]+\s\|\s(?:[a-z0-9 ]+\s)?developers?$/i,
-    /^[a-z0-9 &/+.-]+\s\|\s(?:[a-z0-9 ]+\s)?developer documentation$/i
+    /^[a-z0-9 &/+.-]+\s\|\s(?:[a-z0-9 ]+\s)?developer documentation$/i,
+    // Newsroom / press hubs
+    /^newsroom\b/,
+    /\bnewsroom\s*[|\-–]/,
+    /^press\s+(?:room|releases?|center|centre)\b/,
+    /\bmedia\s+(?:room|center|centre)\b/,
+    // User guides / manuals / help hubs
+    /^user\s+(?:guide|manual)\b/,
+    /\buser\s+(?:guide|manual)\s*[|\-–]/,
+    /^help\s*(?:center|centre)?$/,
+    /\bhelp\s*(?:center|centre)\s*[|\-–]/,
+    /^(faq|frequently asked questions)$/,
+    /^getting started\b/,
+    /^quick start\b/,
+    /^setup guide\b/,
+    // Account / data hubs
+    /^raw data\b/,
+    /\braw data\s*[|\-–]/,
+    /^pulling .* manually\b/,
+    /^my account\b/,
+    /^(account|dashboard|sign in|log in|login)$/,
+    // Apple Developer / SDK doc symbol pages
+    /\|\s*apple developer documentation$/,
+    /^[a-z][a-z0-9]*\([^)]*\)$/,
+    /^(class|protocol|module|enum|struct|extension):\s/,
+    /^index\(after:\)$/,
+    // Generic docs hub roots
+    /^api reference\b/,
+    /^reference index\b/,
+    /^developer documentation\b/,
+    /^documentation (home|archive|center|centre)$/,
+    /^sdk overview$/,
+    /^developer hub$/
   ];
   return !entryPatterns.some(re => re.test(title));
 }

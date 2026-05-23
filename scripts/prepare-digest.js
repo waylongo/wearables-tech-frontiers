@@ -132,7 +132,12 @@ function parseArgs() {
 }
 
 function stripTags(s) {
-  return (s || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/<[^>]+>/g, '').trim();
+  return (s || '')
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+    .replace(/<(script|style)[^>]*>[\s\S]*?<\/\1>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function decodeEntities(s) {
@@ -145,10 +150,10 @@ function decodeEntities(s) {
 function extractField(block, tag) {
   const cdataRe = new RegExp(`<${tag}[^>]*>\\s*<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>\\s*<\\/${tag}>`, 'i');
   const cdata = block.match(cdataRe);
-  if (cdata) return decodeEntities(cdata[1].trim());
+  if (cdata) return stripTags(decodeEntities(cdata[1]));
   const re = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, 'i');
   const m = block.match(re);
-  if (m) return decodeEntities(stripTags(m[1]));
+  if (m) return stripTags(decodeEntities(m[1]));
   const selfRe = new RegExp(`<${tag}[^>]*href=["']([^"']+)["'][^>]*\\/?>`, 'i');
   const self = block.match(selfRe);
   return self ? self[1] : null;
@@ -301,6 +306,10 @@ function passesKeywordFilter(item, keywords, scope = 'title_summary') {
   if (!keywords?.length) return true;
   const hay = (scope === 'title' ? item.title : `${item.title} ${item.summary}`).toLowerCase();
   return keywords.some(k => keywordMatches(hay, k));
+}
+
+function passesRequiredKeywordFilter(item, keywords, scope = 'title_summary') {
+  return passesKeywordFilter(item, keywords, scope);
 }
 
 function escapeRe(s) {
@@ -463,6 +472,7 @@ function buildFromRemoteFeed(feed, categories, windowDays, healthcheck) {
   healthcheck.tavily_per_site = feed.healthcheck?.tavily_per_site || {};
   healthcheck.filtered_out_by_blacklist = feed.healthcheck?.filtered_out_by_blacklist || 0;
   healthcheck.filtered_out_by_keyword = feed.healthcheck?.filtered_out_by_keyword || 0;
+  healthcheck.filtered_out_by_required_keyword = feed.healthcheck?.filtered_out_by_required_keyword || 0;
   healthcheck.filtered_out_by_source_exclude = feed.healthcheck?.filtered_out_by_source_exclude || 0;
   healthcheck.filtered_out_by_tavily_quality = feed.healthcheck?.filtered_out_by_tavily_quality || 0;
   healthcheck.filtered_out_by_date = feed.healthcheck?.filtered_out_by_date || 0;
@@ -541,6 +551,10 @@ async function buildFromLocalRss(catalog, categories, windowDays, healthcheck) {
         healthcheck.filtered_out_by_keyword++;
         continue;
       }
+      if (source.requiredKeywordFilter && !passesRequiredKeywordFilter(it, source.requiredKeywordFilter, source.requiredKeywordScope || source.keywordScope)) {
+        healthcheck.filtered_out_by_required_keyword++;
+        continue;
+      }
       if (!passesSourceExcludeFilter(it, source.excludeKeywordFilter)) {
         healthcheck.filtered_out_by_source_exclude++;
         continue;
@@ -580,6 +594,10 @@ async function buildFromLocalRss(catalog, categories, windowDays, healthcheck) {
       }
       if (source.keywordFilter && !passesKeywordFilter(it, source.keywordFilter, source.keywordScope)) {
         healthcheck.filtered_out_by_keyword++;
+        continue;
+      }
+      if (source.requiredKeywordFilter && !passesRequiredKeywordFilter(it, source.requiredKeywordFilter, source.requiredKeywordScope || source.keywordScope)) {
+        healthcheck.filtered_out_by_required_keyword++;
         continue;
       }
       if (!passesSourceExcludeFilter(it, source.excludeKeywordFilter)) {
@@ -636,6 +654,7 @@ async function main() {
     tavily_per_site: {},
     filtered_out_by_blacklist: 0,
     filtered_out_by_keyword: 0,
+    filtered_out_by_required_keyword: 0,
     filtered_out_by_source_exclude: 0,
     filtered_out_by_tavily_quality: 0,
     filtered_out_by_date: 0,
