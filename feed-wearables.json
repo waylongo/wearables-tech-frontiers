@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "status": "ok",
-  "generatedAt": "2026-05-23T12:32:15.463Z",
+  "generatedAt": "2026-05-23T12:40:28.823Z",
   "lookbackDays": 30,
   "stats": {
     "rawItems": 1011,
-    "keptItems": 53,
+    "keptItems": 48,
     "sourcesQueried": 20,
     "sourcesWithResults": 11,
     "sourcesFailed": 0,
@@ -13,7 +13,7 @@
     "apiSourcesWithResults": 2,
     "apiSourcesFailed": 0,
     "tavilySitesQueried": 34,
-    "tavilySitesWithResults": 12,
+    "tavilySitesWithResults": 9,
     "tavilySitesFailed": 0
   },
   "items": [
@@ -21,7 +21,7 @@
       "title": "Sensors, Vol. 26, Pages 3319: Preoperative Decline and Postoperative Recovery of Wearable-Derived Physical Activity over a Four-Year Perioperative Period in Total Knee and Hip Arthroplasty",
       "url": "https://www.mdpi.com/1424-8220/26/11/3319",
       "publishedAt": "2026-05-23T00:00:00.000Z",
-      "summary": "We characterized long-term, objectively measured physical activity trajectories surrounding total knee arthroplasty (TKA) and total hip arthroplasty (THA) and examined factors associated with wearable-derived physical activity recovery. In this observational study within the All of Us Research Program, linked electronic health records and Fitbit step count data spanning the two years before and the two years after surgery were analyzed using piecewise linear mixed-effects models to characterize preoperative and postoperative trajectories. Recovery of physical activity was defined relative to two preoperative baselines&amp;mdash;activity measured immediately before surgery and a more remote baseline approximating longer-term habitual activity&amp;mdash;and associated factors were examined using Cox proportional hazards models. Among 238 participants (147 TKA, 91 THA; mean age 64.9 [SD 8.3] years), both procedures showed progressive preoperative decline, with accelerated decline beginning earlier in TKA than in THA. Postoperative recovery followed a staged pattern, with rapid early improvement, slower intermediate gains, and later stabilization. Recovery to the immediate preoperative baseline occurred earlier than recovery to the remote baseline. Higher activity during the 4 weeks before surgery was associated with a greater likelihood of recovery to the remote baseline. These findings support long-term wearable monitoring as a complementary measure of physical activity recovery after arthroplasty.",
+      "summary": "We characterized long-term, objectively measured physical activity trajectories surrounding total knee arthroplasty (TKA) and total hip arthroplasty (THA) and examined factors associated with wearable-derived physical activity recovery. In this observational study within the All of Us Research Program, linked electronic health records and Fitbit step count data spanning the two years before and the two years after surgery were analyzed using piecewise linear mixed-effects models to characterize preoperative and postoperative trajectories. Recovery of physical activity was defined relative to two preoperative baselines-activity measured immediately before surgery and a more remote baseline approximating longer-term habitual activity-and associated factors were examined using Cox proportional hazards models. Among 238 participants (147 TKA, 91 THA; mean age 64.9 [SD 8.3] years), both procedures showed progressive preoperative decline, with accelerated decline beginning earlier in TKA than in THA. Postoperative recovery followed a staged pattern, with rapid early improvement, slower intermediate gains, and later stabilization. Recovery to the immediate preoperative baseline occurred earlier than recovery to the remote baseline. Higher activity during the 4 weeks before surgery was associated with a greater likelihood of recovery to the remote baseline. These findings support long-term wearable monitoring as a complementary measure of physical activity recovery after arthroplasty.",
       "sourceName": "Sensors Journal",
       "sourceCategory": "academic",
       "sourcePriority": "P2",
@@ -242,7 +242,7 @@
       "title": "Sensors, Vol. 26, Pages 3256: Wearable-Measured Physical Activity Goal Adherence and Body Composition Change in a 12-Month mHealth Weight Loss Trial",
       "url": "https://www.mdpi.com/1424-8220/26/10/3256",
       "publishedAt": "2026-05-21T00:00:00.000Z",
-      "summary": "Background: Wearable activity trackers are commonly used in mHealth weight loss interventions, but evidence linking adherence to moderate-to-vigorous physical activity (MVPA) goals with changes in body composition is limited. We examined associations between adherence to study-prescribed MVPA goals and changes in percent body fat and sex-specific waist circumference (WC) over 12 months in the SMARTER trial. Methods: Participants (N = 502, 79.5% female; mean age 45 years; mean BMI 33.7 kg/m2) were randomized to self-monitoring of diet, PA, and weight (SM) or SM plus daily tailored feedback messages (SM + FB). Weekly adherence to &amp;ge;300 min/week of MVPA was quantified using Fitbit-derived equivalents. Associations between MVPA adherence and changes in percent body fat and sex-specific WC over 12 months were examined using linear mixed models. Results: Among the full sample, greater MVPA adherence was associated with reductions in body fat (b = &amp;minus;0.01; 95% CI: &amp;minus;0.02, &amp;minus;0.005), but not in WC (women: b = &amp;minus;0.01; &amp;minus;0.03, 0.01; men: b = &amp;minus;0.03; &amp;minus;0.05, 0.0002). Among the completers, higher adherence was associated with decreases in body fat (b = &amp;minus;0.01; &amp;minus;0.02, &amp;minus;0.004) and WC (women: b = &amp;minus;0.02; &amp;minus;0.04, &amp;minus;0.004; men: b = &amp;minus;0.04; &amp;minus;0.08, &amp;minus;0.003). Conclusions: Higher MVPA adherence was associated with favorable changes in adiposity over 12 months, supporting the use of wearable-derived PA measures in long-term mHealth behavioral interventions.",
+      "summary": "Background: Wearable activity trackers are commonly used in mHealth weight loss interventions, but evidence linking adherence to moderate-to-vigorous physical activity (MVPA) goals with changes in body composition is limited. We examined associations between adherence to study-prescribed MVPA goals and changes in percent body fat and sex-specific waist circumference (WC) over 12 months in the SMARTER trial. Methods: Participants (N = 502, 79.5% female; mean age 45 years; mean BMI 33.7 kg/m2) were randomized to self-monitoring of diet, PA, and weight (SM) or SM plus daily tailored feedback messages (SM + FB). Weekly adherence to >=300 min/week of MVPA was quantified using Fitbit-derived equivalents. Associations between MVPA adherence and changes in percent body fat and sex-specific WC over 12 months were examined using linear mixed models. Results: Among the full sample, greater MVPA adherence was associated with reductions in body fat (b = &minus;0.01; 95% CI: &minus;0.02, &minus;0.005), but not in WC (women: b = &minus;0.01; &minus;0.03, 0.01; men: b = &minus;0.03; &minus;0.05, 0.0002). Among the completers, higher adherence was associated with decreases in body fat (b = &minus;0.01; &minus;0.02, &minus;0.004) and WC (women: b = &minus;0.02; &minus;0.04, &minus;0.004; men: b = &minus;0.04; &minus;0.08, &minus;0.003). Conclusions: Higher MVPA adherence was associated with favorable changes in adiposity over 12 months, supporting the use of wearable-derived PA measures in long-term mHealth behavioral interventions.",
       "sourceName": "Sensors Journal",
       "sourceCategory": "academic",
       "sourcePriority": "P2",
@@ -453,19 +453,6 @@
       "signalType": "algorithm_evidence"
     },
     {
-      "title": "Apple introduces a new Pride Collection",
-      "url": "https://www.apple.com/newsroom/2026/05/apple-introduces-a-new-pride-collection",
-      "publishedAt": null,
-      "summary": "*   [Store](https://www.apple.com/us/shop/goto/store). *   [Shop the Latest](https://www.apple.com/us/shop/goto/store). *   [Mac](https://www.apple.com/us/shop/goto/buy_mac). *   [iPad](https://www.apple.com/us/shop/goto/buy_ipad). *   [iPhone](https://www.apple.com/us/shop/goto/buy_iphone). *   [Apple Watch](https://www.apple.com/us/shop/goto/buy_watch). *   [Apple Vision Pro](https://www.apple.com/us/shop/goto/buy_vision). *   [AirPods](https://www.apple.com/us/shop/goto/airpods/accessories). *   [Accessories](https://www.apple.com/us/shop/goto/buy_accessories). *   [Apple Trade In](https://www.apple.com/us/shop/goto/trade_in). *   [Education](https://www.apple.com/us/shop/goto/educationrouting). *   [Explore All Mac](https://www.apple.com/mac/). *   [Shop Mac](https://www.apple.com/us/shop/goto/buy_mac). *   [Mac Accessories](https://www.apple.com/us/shop/goto/mac/accessories). *   [Apple Trade In](https://www.apple.com/us/shop/goto/trade_in#mac). *   [Explore All iPad](https://www.apple.com/ipad/). *   [Shop iPad](https://www.apple.com/us/shop/goto/buy_ipad). *   [iPad Accessories](https://www.apple.com/us/shop/goto/ipad/accessories). *   [Apple Trade In](https://www.apple.com/us/shop/goto/trade_in#ipad). *   [Explore All iPhone](https://www.apple.com/iphone/). *   [iPhone 16](https://www.apple.com/us/shop/goto/buy_iphone/iphone_16). *   [Shop iPhone](https://www.apple.com/us/shop/goto/buy_iphone). *   [iPhone Accessories](https://www.apple.com/us/shop/goto/iphone/accessories). *   [Apple Trade In](https://www.apple.com/us/shop/goto/trade_in#iphone). *   [Watch](https://www.apple.com/watch/). *   [Shop Apple Watch](https://www.apple.com/us/shop/goto/buy_watch). *   [Apple Watch Bands](https://www.apple.com/us/shop/goto/watch/bands). *   [Apple Watch Accessories](https://www.apple.com/us/shop/goto/watch/accessories). *   [Apple Trade In](https://www.apple.com/us/shop/goto/trade_in#watch). *   [Explore All AirPods](https://www.apple.com/airpods/). *   [AirPods Acc",
-      "sourceName": "Apple Newsroom / Watch",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.9623913,
-      "signalType": "product_market"
-    },
-    {
       "title": "A new era for your health and wellness - Google Blog",
       "url": "https://blog.google/products-and-platforms/products/google-health/google-health-fitbit",
       "publishedAt": null,
@@ -479,55 +466,29 @@
       "signalType": "platform_api"
     },
     {
-      "title": "A new era for your wellness: Introducing the Google Health app",
-      "url": "https://blog.google/products-and-platforms/products/google-health/google-health-app",
+      "title": "Samsung annonce une avancée majeure dans la détection des ...",
+      "url": "https://news.samsung.com/ca_fr/samsung-annonce-une-avancee-majeure-dans-la-detection-des-evanouissements-grace-a-la-montre-galaxy-watch",
       "publishedAt": null,
-      "summary": "# A new era for your wellness: Introducing the Google Health app. The Google Health app brings all of your health and wellness into one place debuting new and advanced capabilities. The Fitbit app is becoming the Google Health app, offering a redesigned, centralized hub for your wellness data. You will see an intuitive four-tab layout, improved data tracking, and a new artificial intelligence coach to help you reach your goals. * The Fitbit app is becoming the Google Health app to centralize your wellness data. * The new Google Health Coach uses artificial intelligence to provide personalized workout and health insights. The Fitbit app is becoming the new Google Health app to help you track your fitness and wellness in one place. We’re updating the Fitbit app to become the Google Health app, a centralized place for your health and wellness data. And, on Health, in addition to getting a snapshot of your key health metrics, you can get summaries of your medical records from the Coach.",
-      "sourceName": "Google Blog / Fitbit",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.47606868,
-      "signalType": "product_market"
-    },
-    {
-      "title": "Track sleep sessions | Android health & fitness",
-      "url": "https://developer.android.com/health-and-fitness/health-connect/features/sleep-sessions",
-      "publishedAt": null,
-      "summary": "Health Connect provides a sleep session data type, to store information about a user's sleep, such as a nightly session or daytime nap.",
-      "sourceName": "Android Developers Health & Fitness",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.61834323,
-      "signalType": "platform_api"
-    },
-    {
-      "title": "Level Up Your Health with Galaxy Watch and Receive a Withings Smart Scale on Us",
-      "url": "https://news.samsung.com/us/level-up-health-galaxy-watch-receive-withings-smart-scale",
-      "publishedAt": null,
-      "summary": "# Level Up Your Health with Galaxy Watch and Receive a Withings Smart Scale on Us. Purchase eligible Galaxy Watches on Samsung.com to receive a Withings Body Smart scale on us. That’s why Samsung is teaming up with Withings, a leader in digital wellness and health devices, to give Galaxy Watch buyers a Body Smart scale on us — helping them understand how to lead a healthier lifestyle at home, and on the go. Purchase a full-priced, eligible Galaxy Watch Ultra, Galaxy Watch8 Classic, Galaxy Watch8, or Galaxy Watch7 on Samsung.com or Shop Samsung App between May 4 and July 19, 2026 to receive a Withings Body Smart scale on us (MSRP $129.95).1. To receive a Body Smart scale on us, simply purchase a qualifying Galaxy Watch. ###### 1 From 5/4/2026 – 7/19/2026 (excluding trade-ins and when other applicable promotions are active), purchase an eligible full-price Samsung Galaxy Watch Ultra, Watch8 Classic, Watch8 or Watch7 (“Qualifying Purchase”) on Samsung.com or the Shop Samsung App and be eligible to receive a Withings Body Smart Scale (“Gift”).",
+      "summary": "# Samsung annonce une avancée majeure dans la détection des évanouissements grce à la montre Galaxy Watch. Une étude menée conjointement avec l’hôpital Gwangmyeong de l’université Chung-Ang démontre le potentiel de la Galaxy Watch pour la détection précoce des évanouissements, ouvrant ainsi la voie à des systèmes d’alerte en temps réel. Samsung Electronics Co., Ltd. annonce aujourd’hui qu’une étude clinique menée en collaboration avec l’hôpital universitaire Chung-Ang de Gwangmyeong, en Corée, a permis de valider avec succès la capacité à prédire la syncope vasovagale (SVV) avec une grande précision grce à l’utilisation des signaux biologiques recueillis par la montre Galaxy Watch6. À l’aide d’une montre Galaxy Watch équipée d’un capteur de photopléthysmographie (PPG), l’équipe a analysé les données de variabilité de la fréquence cardiaque (VFC) de la montre avec un algorithme d’IA. Les résultats de la recherche ont été publiés dans le Volume 7, numéro 4 de « European Heart Journal – Digital Health », une revue médicale de premier plan, et ils représentent la première étude au monde à démontrer avec succès le potentiel d’une montre intelligente commerciale à fournir une prédiction précoce de la syncope.",
       "sourceName": "Samsung Global Newsroom (Digital Health)",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.99977654,
+      "score": 0.64128816,
       "signalType": "product_market"
     },
     {
-      "title": "[CES 2026] A Care Companion for Family Health and Safety",
-      "url": "https://news.samsung.com/sg/ces-2026-a-care-companion-for-family-health-and-safety",
+      "title": "[World Sleep Day 2026] How Samsung Is Tackling Sleep Apnea to ...",
+      "url": "https://news.samsung.com/ca/world-sleep-day-2026-how-samsung-is-tackling-sleep-apnea-to-energize-your-day",
       "publishedAt": null,
-      "summary": "In the Self Care – Good Sleep section, visitors learned how wearables such as Galaxy Watch and Galaxy Ring track sleep conditions while working in concert with",
+      "summary": "# [World Sleep Day 2026] How Samsung Is Tackling Sleep Apnea to Energize Your Day. Millions worldwide suffer from **sleep apnea**, but 80% of sufferers don’t even know they have it. To mark World Sleep Day 2026, a global study of Samsung Health users is shedding new light on the true extent of the condition and the disruptive impact it has on individuals who suffer with sleep apnea. Aligned with this year’s World Sleep Day theme, “Sleep Well, Live Better,” Samsung is helping to turn the invisible signs of sleep apnea into actionable insights through its **Galaxy Watch** series, helping those affected improve their sleep habits and overall health. With sleep apnea shown to impact all aspects of sleep and lead to other health complications, detection is an essential first step in the fight against the condition. In addition to detecting the signs of sleep apnea, your Galaxy Watch can help you build habits for better holistic sleep health.",
       "sourceName": "Samsung Global Newsroom (Digital Health)",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9991374,
+      "score": 0.56489134,
       "signalType": "product_market"
     },
     {
@@ -540,7 +501,7 @@
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.98242307,
+      "score": 0.391802,
       "signalType": "algorithm_evidence"
     },
     {
@@ -557,55 +518,55 @@
       "signalType": "product_market"
     },
     {
-      "title": "Redmi Note 12 Series - Xiaomi Community",
-      "url": "https://new.c.mi.com/global/post/1421450",
+      "title": "Oura: Built for Women's Health Across Every Life Stage",
+      "url": "https://ouraring.com/blog/oura-built-for-womens-health-across-every-life-stage",
       "publishedAt": null,
-      "summary": "Xiaomi launches Smart Band 10 Pro with HRV monitoring, 2000 nits brightness & gaming mode. Dear Xiaomi Fans,Xiaomi has a...Full Text. Xiaomi News. Xiaomi News.",
-      "sourceName": "Xiaomi Global Wearables",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.99635005,
-      "signalType": "product_market"
-    },
-    {
-      "title": "[PDF] Oura Women's Healthcare Guide",
-      "url": "https://ouraring.com/blog/wp-content/uploads/2026/05/Oura-Womens-Healthcare-Guide-May-2026.pdf",
-      "publishedAt": null,
-      "summary": "Ovulation detection: Oura's ovulation algorithm, using LH testing and ultrasound as references, detected 96.4% of ovulations with average error ±1.26 days.",
+      "summary": "Image of all the ceramic Oura Ring 4 smart rings - Midnight, Cloud, Tide, and Petal Oura Ring 4 Ceramic. Image of all the metallic Oura Ring 4 smart rings - Silver, Black, Stealth, Brushed Silver, Gold, and Rose Gold Oura Ring 4. A person views the Oura app on their smartphone while wearing an Oura ring on their right index finger How It Works. With an average wear time of 23.5 hours per day, Oura captures near-continuous physiologic data across the metrics that matter most in women’s health: skin temperature, heart rate variability, sleep quality, cycle phase, and more. To help OB-GYNs and women’s health clinicians understand how Oura data maps to the questions you’re already asking, we’ve created *An Oura-Informed Guide to Women’s Healthcare*, a practical resource covering what Oura measures, what’s been validated, and how it applies across clinical scenarios from preconception counseling to perimenopause management. Oura’s women’s health features are designed to meet patients where they are and to give clinicians a clearer picture of what’s happening between visits.",
       "sourceName": "Oura Science & Research",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.9914225,
+      "score": 0.3656837,
       "signalType": "product_market"
     },
     {
-      "title": "What WHOOP measures and how it helps you train and recover better",
-      "url": "https://www.whoop.com/us/en/thelocker/podcast-51-what-is-whoop",
+      "title": "14 Science-Backed Tips to Recover After a Bad Night's Sleep",
+      "url": "https://ouraring.com/blog/how-to-recover-from-bad-sleep",
       "publishedAt": null,
-      "summary": "WHOOP measures sleep, recovery, strain, and the physiological signals behind them so you can see how ready your body is to perform, train, and recover each day.",
+      "summary": "Image of all the ceramic Oura Ring 4 smart rings - Midnight, Cloud, Tide, and Petal Oura Ring 4 Ceramic. Image of all the metallic Oura Ring 4 smart rings - Silver, Black, Stealth, Brushed Silver, Gold, and Rose Gold Oura Ring 4. A close-up shot of a woman stretching with her hand near her face and an Oura Ring on her finger. Science and Research   Sleep and Rest   Women's Health   Stress. A person views the Oura app on their smartphone while wearing an Oura ring on their right index finger How It Works. #### Oura Ring 4 is here. Most of us are familiar with the frustration of a restless night spent watching the clock, only to be greeted by a disappointing Oura Sleep Score in the morning. Below, learn how to boost your energy after a poor night’s sleep and how to set yourself up for high-quality rest the next night.",
+      "sourceName": "Oura Science & Research",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.26827666,
+      "signalType": "product_market"
+    },
+    {
+      "title": "Best Recovery Activities Backed by WHOOP Member Data",
+      "url": "https://www.whoop.com/us/en/thelocker/the-best-recovery-activities-according-to-whoop-members",
+      "publishedAt": null,
+      "summary": "# Best Recovery Activities Backed by WHOOP Member Data. The Best Recovery Activities According To WHOOP Members. Recovery is essential to perform at your best, but knowing exactly what to do can be challenging. We took a look at the most popular and effective Recovery activities recorded by WHOOP members that you can try and see how they affect your unique data. WHOOP Recovery is a daily measure of how prepared your body is to perform. ## The most popular recovery activities logged by WHOOP members. ## The most effective recovery activities for WHOOP members. According to WHOOP member data, two of the most effective recovery activities are meditation and massage therapy. ## How to track your recovery activities with WHOOP. The best recovery activities are the ones that work for your body and your lifestyle. By logging activities in the WHOOP app, you can see the direct impact of your behaviors on your daily Recovery score and long-term health trends.",
       "sourceName": "WHOOP / The Locker",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.99722075,
+      "score": 0.9922444,
       "signalType": "product_market"
     },
     {
-      "title": "Self-Experimentation for Performance and Recovery | WHOOP",
-      "url": "https://www.whoop.com/us/en/thelocker/a-guide-to-self-experimentation-optimizing-your-habits-for-performance",
+      "title": "A New Way To See Insights On Which Behaviors Affect Your Recovery",
+      "url": "https://www.whoop.com/us/en/thelocker/a-new-way-to-see-insights-on-which-behaviors-affect-your-recovery",
       "publishedAt": null,
-      "summary": "# Self-Experimentation Guide for Performance | WHOOP. The WHOOP Journal helps you discover the impact of your habits and behaviors through self-experimentation, connecting your daily choices to your physiological data. This guide will show you how to use the Journal to build experiments, interpret your results, and optimize your routine for better performance. The WHOOP Journal is a feature in the app that connects your daily behaviors to your physiological data. By logging choices like diet, caffeine intake, or stress levels, you can see how they impact your Sleep, Strain, and Recovery. It helps you identify the habits that help or hurt your performance. Each morning after your Sleep is processed, WHOOP will prompt you to answer your Journal questions. Access the Journal anytime from the Plan tab to log behaviors or adjust your questions. You can choose from over 300 behaviors to monitor in the WHOOP Journal. After a few weeks of logging, check your Impacts to see how your behaviors relate to your WHOOP data.",
+      "summary": "Get easy-to-view daily insights about which behaviors and habits help or hurt your Recovery.",
       "sourceName": "WHOOP / The Locker",
       "sourceCategory": "vendor_websearch",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.99490017,
+      "score": 0.99094474,
       "signalType": "product_market"
     },
     {
@@ -620,19 +581,6 @@
       "retrievalMethod": "tavily",
       "score": 0.99991846,
       "signalType": "clinical_regulatory"
-    },
-    {
-      "title": "Dexcom All Access Learning Hub - Diabetes Articles for Healthier ...",
-      "url": "https://www.dexcom.com/en-us/all-access",
-      "publishedAt": null,
-      "summary": "Learn tips to manage stress and diabetes, including ways to monitor your raised blood glucose levels with real-time continuous glucose monitoring (CGM). Read",
-      "sourceName": "Dexcom News",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.3605346,
-      "signalType": "product_market"
     },
     {
       "title": "From the CEO: April 2026 - Levels Health",
@@ -661,30 +609,17 @@
       "signalType": "product_market"
     },
     {
-      "title": "Garmin Forerunner 70 In-Depth Review: Garmin's Best Budget Watch?",
-      "url": "https://www.dcrainmaker.com/2026/05/garmin-forerunner-70-depth-review-and-tested.html",
+      "title": "Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 ...",
+      "url": "https://www.dcrainmaker.com/2026/05/tidbits-garmin-suunto-lawsuit-partnership-form-swim-2-lt-peloton-spotify.html",
       "publishedAt": null,
-      "summary": "+ The Girl’s Sports Gear I Use List. # Garmin Forerunner 70 In-Depth Review: Garmin’s Best Budget Watch? I can’t think of a single jump between two watch generations that pack as many new features, or foundational changes, as the jump from the Forerunner 55 to the Forerunner 70. All while keeping the price as low as you’re going to expect from Garmin, at $249 (which is virtually identical to the inflation-adjusted price of the Forerunner 55 some 5 years ago). The Forerunner 70 packs in some 50+ new sport profiles, a new optical heart rate sensor, better GPS, new Quick Workout features (not seen on any other Garmin watch yet), and most critically: The same underlying software platform as seen on Garmin’s higher-end Fenix & Forerunner watches. Nonetheless, both my wife and I have been putting both the Forerunner 70 & Forerunner 170 through their paces over the last little while, and in this in-depth review, I’ll dive into the least expensive unit first.",
+      "summary": "+ The Girl’s Sports Gear I Use List. # Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership. Here’s a smattering of interesting things that I noticed over the past few days, or, today in some cases. You may remember that a few months back I posted about the update of the Suunto lawsuit against Garmin for a variety of things. And then on top of that, Garmin countersued Suunto for an equal random arrangement of patent infringement allegations. But when Garmin countersued, they expanded it to Suunto’s parent company, Dongguan Liesheng, by including a bunch of mostly no-name watches that Dongguan Liesheng sells in the US on Amazon. > “The circumstances of Dongguan’s inclusion as a Counterclaim-Defendant strongly suggest that Garmin’s purpose in naming Dongguan was not to vindicate a legitimate infringement claim, but rather to impose the burden and expense of federal patent litigation on the foreign parent company of its litigation adversary as a tactical maneuver.",
       "sourceName": "DC Rainmaker",
       "sourceCategory": "industry_news",
       "sourcePriority": "P1",
       "sourceLang": "en",
       "retrievalMethod": "tavily",
-      "score": 0.99926203,
-      "signalType": "product_market"
-    },
-    {
-      "title": "Polar Street X In-Depth Review: What's the Catch? - DC Rainmaker",
-      "url": "https://www.dcrainmaker.com/2026/04/polar-street-x-in-depth-sports-review.html",
-      "publishedAt": null,
-      "summary": "+ The Girl’s Sports Gear I Use List. # Polar Street X In-Depth Review: What’s the Catch? The Polar Street X is Polar’s first new watch line in quite a long time. Whereas the Street X is a new series device seemingly aimed to compete with something like the Garmin Instinct series, but at a more budget-friendly price – a mere $249USD. What makes it interesting are two key points: First, it’s Polar’s first watch with a flashlight built-in. That platform means that the watch is identical in software features to not just a slightly more expensive Polar Vantage M3, but equally a much more expensive Polar Grit X2 Pro (save the lack of storage for offline mapping). From there you move to hardware, and there are some substantial differences to Polar’s other watches. The Polar Street X is somewhat unique from Polar in that there’s no previous generation watch to compare it to, since it’s a new line.",
-      "sourceName": "DC Rainmaker",
-      "sourceCategory": "industry_news",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.9989434,
-      "signalType": "product_market"
+      "score": 0.9976769,
+      "signalType": "business_structure"
     }
   ],
   "groupedByCategory": {
@@ -693,7 +628,7 @@
         "title": "Sensors, Vol. 26, Pages 3319: Preoperative Decline and Postoperative Recovery of Wearable-Derived Physical Activity over a Four-Year Perioperative Period in Total Knee and Hip Arthroplasty",
         "url": "https://www.mdpi.com/1424-8220/26/11/3319",
         "publishedAt": "2026-05-23T00:00:00.000Z",
-        "summary": "We characterized long-term, objectively measured physical activity trajectories surrounding total knee arthroplasty (TKA) and total hip arthroplasty (THA) and examined factors associated with wearable-derived physical activity recovery. In this observational study within the All of Us Research Program, linked electronic health records and Fitbit step count data spanning the two years before and the two years after surgery were analyzed using piecewise linear mixed-effects models to characterize preoperative and postoperative trajectories. Recovery of physical activity was defined relative to two preoperative baselines&amp;mdash;activity measured immediately before surgery and a more remote baseline approximating longer-term habitual activity&amp;mdash;and associated factors were examined using Cox proportional hazards models. Among 238 participants (147 TKA, 91 THA; mean age 64.9 [SD 8.3] years), both procedures showed progressive preoperative decline, with accelerated decline beginning earlier in TKA than in THA. Postoperative recovery followed a staged pattern, with rapid early improvement, slower intermediate gains, and later stabilization. Recovery to the immediate preoperative baseline occurred earlier than recovery to the remote baseline. Higher activity during the 4 weeks before surgery was associated with a greater likelihood of recovery to the remote baseline. These findings support long-term wearable monitoring as a complementary measure of physical activity recovery after arthroplasty.",
+        "summary": "We characterized long-term, objectively measured physical activity trajectories surrounding total knee arthroplasty (TKA) and total hip arthroplasty (THA) and examined factors associated with wearable-derived physical activity recovery. In this observational study within the All of Us Research Program, linked electronic health records and Fitbit step count data spanning the two years before and the two years after surgery were analyzed using piecewise linear mixed-effects models to characterize preoperative and postoperative trajectories. Recovery of physical activity was defined relative to two preoperative baselines-activity measured immediately before surgery and a more remote baseline approximating longer-term habitual activity-and associated factors were examined using Cox proportional hazards models. Among 238 participants (147 TKA, 91 THA; mean age 64.9 [SD 8.3] years), both procedures showed progressive preoperative decline, with accelerated decline beginning earlier in TKA than in THA. Postoperative recovery followed a staged pattern, with rapid early improvement, slower intermediate gains, and later stabilization. Recovery to the immediate preoperative baseline occurred earlier than recovery to the remote baseline. Higher activity during the 4 weeks before surgery was associated with a greater likelihood of recovery to the remote baseline. These findings support long-term wearable monitoring as a complementary measure of physical activity recovery after arthroplasty.",
         "sourceName": "Sensors Journal",
         "sourceCategory": "academic",
         "sourcePriority": "P2",
@@ -777,7 +712,7 @@
         "title": "Sensors, Vol. 26, Pages 3256: Wearable-Measured Physical Activity Goal Adherence and Body Composition Change in a 12-Month mHealth Weight Loss Trial",
         "url": "https://www.mdpi.com/1424-8220/26/10/3256",
         "publishedAt": "2026-05-21T00:00:00.000Z",
-        "summary": "Background: Wearable activity trackers are commonly used in mHealth weight loss interventions, but evidence linking adherence to moderate-to-vigorous physical activity (MVPA) goals with changes in body composition is limited. We examined associations between adherence to study-prescribed MVPA goals and changes in percent body fat and sex-specific waist circumference (WC) over 12 months in the SMARTER trial. Methods: Participants (N = 502, 79.5% female; mean age 45 years; mean BMI 33.7 kg/m2) were randomized to self-monitoring of diet, PA, and weight (SM) or SM plus daily tailored feedback messages (SM + FB). Weekly adherence to &amp;ge;300 min/week of MVPA was quantified using Fitbit-derived equivalents. Associations between MVPA adherence and changes in percent body fat and sex-specific WC over 12 months were examined using linear mixed models. Results: Among the full sample, greater MVPA adherence was associated with reductions in body fat (b = &amp;minus;0.01; 95% CI: &amp;minus;0.02, &amp;minus;0.005), but not in WC (women: b = &amp;minus;0.01; &amp;minus;0.03, 0.01; men: b = &amp;minus;0.03; &amp;minus;0.05, 0.0002). Among the completers, higher adherence was associated with decreases in body fat (b = &amp;minus;0.01; &amp;minus;0.02, &amp;minus;0.004) and WC (women: b = &amp;minus;0.02; &amp;minus;0.04, &amp;minus;0.004; men: b = &amp;minus;0.04; &amp;minus;0.08, &amp;minus;0.003). Conclusions: Higher MVPA adherence was associated with favorable changes in adiposity over 12 months, supporting the use of wearable-derived PA measures in long-term mHealth behavioral interventions.",
+        "summary": "Background: Wearable activity trackers are commonly used in mHealth weight loss interventions, but evidence linking adherence to moderate-to-vigorous physical activity (MVPA) goals with changes in body composition is limited. We examined associations between adherence to study-prescribed MVPA goals and changes in percent body fat and sex-specific waist circumference (WC) over 12 months in the SMARTER trial. Methods: Participants (N = 502, 79.5% female; mean age 45 years; mean BMI 33.7 kg/m2) were randomized to self-monitoring of diet, PA, and weight (SM) or SM plus daily tailored feedback messages (SM + FB). Weekly adherence to >=300 min/week of MVPA was quantified using Fitbit-derived equivalents. Associations between MVPA adherence and changes in percent body fat and sex-specific WC over 12 months were examined using linear mixed models. Results: Among the full sample, greater MVPA adherence was associated with reductions in body fat (b = &minus;0.01; 95% CI: &minus;0.02, &minus;0.005), but not in WC (women: b = &minus;0.01; &minus;0.03, 0.01; men: b = &minus;0.03; &minus;0.05, 0.0002). Among the completers, higher adherence was associated with decreases in body fat (b = &minus;0.01; &minus;0.02, &minus;0.004) and WC (women: b = &minus;0.02; &minus;0.04, &minus;0.004; men: b = &minus;0.04; &minus;0.08, &minus;0.003). Conclusions: Higher MVPA adherence was associated with favorable changes in adiposity over 12 months, supporting the use of wearable-derived PA measures in long-term mHealth behavioral interventions.",
         "sourceName": "Sensors Journal",
         "sourceCategory": "academic",
         "sourcePriority": "P2",
@@ -981,30 +916,17 @@
         "signalType": "product_market"
       },
       {
-        "title": "Garmin Forerunner 70 In-Depth Review: Garmin's Best Budget Watch?",
-        "url": "https://www.dcrainmaker.com/2026/05/garmin-forerunner-70-depth-review-and-tested.html",
+        "title": "Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 ...",
+        "url": "https://www.dcrainmaker.com/2026/05/tidbits-garmin-suunto-lawsuit-partnership-form-swim-2-lt-peloton-spotify.html",
         "publishedAt": null,
-        "summary": "+ The Girl’s Sports Gear I Use List. # Garmin Forerunner 70 In-Depth Review: Garmin’s Best Budget Watch? I can’t think of a single jump between two watch generations that pack as many new features, or foundational changes, as the jump from the Forerunner 55 to the Forerunner 70. All while keeping the price as low as you’re going to expect from Garmin, at $249 (which is virtually identical to the inflation-adjusted price of the Forerunner 55 some 5 years ago). The Forerunner 70 packs in some 50+ new sport profiles, a new optical heart rate sensor, better GPS, new Quick Workout features (not seen on any other Garmin watch yet), and most critically: The same underlying software platform as seen on Garmin’s higher-end Fenix & Forerunner watches. Nonetheless, both my wife and I have been putting both the Forerunner 70 & Forerunner 170 through their paces over the last little while, and in this in-depth review, I’ll dive into the least expensive unit first.",
+        "summary": "+ The Girl’s Sports Gear I Use List. # Tech Tidbits: Garmin-Suunto Lawsuit Update, New FORM Swim 2 LT, Peloton-Spotify Partnership. Here’s a smattering of interesting things that I noticed over the past few days, or, today in some cases. You may remember that a few months back I posted about the update of the Suunto lawsuit against Garmin for a variety of things. And then on top of that, Garmin countersued Suunto for an equal random arrangement of patent infringement allegations. But when Garmin countersued, they expanded it to Suunto’s parent company, Dongguan Liesheng, by including a bunch of mostly no-name watches that Dongguan Liesheng sells in the US on Amazon. > “The circumstances of Dongguan’s inclusion as a Counterclaim-Defendant strongly suggest that Garmin’s purpose in naming Dongguan was not to vindicate a legitimate infringement claim, but rather to impose the burden and expense of federal patent litigation on the foreign parent company of its litigation adversary as a tactical maneuver.",
         "sourceName": "DC Rainmaker",
         "sourceCategory": "industry_news",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.99926203,
-        "signalType": "product_market"
-      },
-      {
-        "title": "Polar Street X In-Depth Review: What's the Catch? - DC Rainmaker",
-        "url": "https://www.dcrainmaker.com/2026/04/polar-street-x-in-depth-sports-review.html",
-        "publishedAt": null,
-        "summary": "+ The Girl’s Sports Gear I Use List. # Polar Street X In-Depth Review: What’s the Catch? The Polar Street X is Polar’s first new watch line in quite a long time. Whereas the Street X is a new series device seemingly aimed to compete with something like the Garmin Instinct series, but at a more budget-friendly price – a mere $249USD. What makes it interesting are two key points: First, it’s Polar’s first watch with a flashlight built-in. That platform means that the watch is identical in software features to not just a slightly more expensive Polar Vantage M3, but equally a much more expensive Polar Grit X2 Pro (save the lack of storage for offline mapping). From there you move to hardware, and there are some substantial differences to Polar’s other watches. The Polar Street X is somewhat unique from Polar in that there’s no previous generation watch to compare it to, since it’s a new line.",
-        "sourceName": "DC Rainmaker",
-        "sourceCategory": "industry_news",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.9989434,
-        "signalType": "product_market"
+        "score": 0.9976769,
+        "signalType": "business_structure"
       }
     ],
     "clinical_regulatory": [
@@ -1179,24 +1101,11 @@
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.98242307,
+        "score": 0.391802,
         "signalType": "algorithm_evidence"
       }
     ],
     "vendor_websearch": [
-      {
-        "title": "Apple introduces a new Pride Collection",
-        "url": "https://www.apple.com/newsroom/2026/05/apple-introduces-a-new-pride-collection",
-        "publishedAt": null,
-        "summary": "*   [Store](https://www.apple.com/us/shop/goto/store). *   [Shop the Latest](https://www.apple.com/us/shop/goto/store). *   [Mac](https://www.apple.com/us/shop/goto/buy_mac). *   [iPad](https://www.apple.com/us/shop/goto/buy_ipad). *   [iPhone](https://www.apple.com/us/shop/goto/buy_iphone). *   [Apple Watch](https://www.apple.com/us/shop/goto/buy_watch). *   [Apple Vision Pro](https://www.apple.com/us/shop/goto/buy_vision). *   [AirPods](https://www.apple.com/us/shop/goto/airpods/accessories). *   [Accessories](https://www.apple.com/us/shop/goto/buy_accessories). *   [Apple Trade In](https://www.apple.com/us/shop/goto/trade_in). *   [Education](https://www.apple.com/us/shop/goto/educationrouting). *   [Explore All Mac](https://www.apple.com/mac/). *   [Shop Mac](https://www.apple.com/us/shop/goto/buy_mac). *   [Mac Accessories](https://www.apple.com/us/shop/goto/mac/accessories). *   [Apple Trade In](https://www.apple.com/us/shop/goto/trade_in#mac). *   [Explore All iPad](https://www.apple.com/ipad/). *   [Shop iPad](https://www.apple.com/us/shop/goto/buy_ipad). *   [iPad Accessories](https://www.apple.com/us/shop/goto/ipad/accessories). *   [Apple Trade In](https://www.apple.com/us/shop/goto/trade_in#ipad). *   [Explore All iPhone](https://www.apple.com/iphone/). *   [iPhone 16](https://www.apple.com/us/shop/goto/buy_iphone/iphone_16). *   [Shop iPhone](https://www.apple.com/us/shop/goto/buy_iphone). *   [iPhone Accessories](https://www.apple.com/us/shop/goto/iphone/accessories). *   [Apple Trade In](https://www.apple.com/us/shop/goto/trade_in#iphone). *   [Watch](https://www.apple.com/watch/). *   [Shop Apple Watch](https://www.apple.com/us/shop/goto/buy_watch). *   [Apple Watch Bands](https://www.apple.com/us/shop/goto/watch/bands). *   [Apple Watch Accessories](https://www.apple.com/us/shop/goto/watch/accessories). *   [Apple Trade In](https://www.apple.com/us/shop/goto/trade_in#watch). *   [Explore All AirPods](https://www.apple.com/airpods/). *   [AirPods Acc",
-        "sourceName": "Apple Newsroom / Watch",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.9623913,
-        "signalType": "product_market"
-      },
       {
         "title": "A new era for your health and wellness - Google Blog",
         "url": "https://blog.google/products-and-platforms/products/google-health/google-health-fitbit",
@@ -1211,55 +1120,29 @@
         "signalType": "platform_api"
       },
       {
-        "title": "A new era for your wellness: Introducing the Google Health app",
-        "url": "https://blog.google/products-and-platforms/products/google-health/google-health-app",
+        "title": "Samsung annonce une avancée majeure dans la détection des ...",
+        "url": "https://news.samsung.com/ca_fr/samsung-annonce-une-avancee-majeure-dans-la-detection-des-evanouissements-grace-a-la-montre-galaxy-watch",
         "publishedAt": null,
-        "summary": "# A new era for your wellness: Introducing the Google Health app. The Google Health app brings all of your health and wellness into one place debuting new and advanced capabilities. The Fitbit app is becoming the Google Health app, offering a redesigned, centralized hub for your wellness data. You will see an intuitive four-tab layout, improved data tracking, and a new artificial intelligence coach to help you reach your goals. * The Fitbit app is becoming the Google Health app to centralize your wellness data. * The new Google Health Coach uses artificial intelligence to provide personalized workout and health insights. The Fitbit app is becoming the new Google Health app to help you track your fitness and wellness in one place. We’re updating the Fitbit app to become the Google Health app, a centralized place for your health and wellness data. And, on Health, in addition to getting a snapshot of your key health metrics, you can get summaries of your medical records from the Coach.",
-        "sourceName": "Google Blog / Fitbit",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.47606868,
-        "signalType": "product_market"
-      },
-      {
-        "title": "Track sleep sessions | Android health & fitness",
-        "url": "https://developer.android.com/health-and-fitness/health-connect/features/sleep-sessions",
-        "publishedAt": null,
-        "summary": "Health Connect provides a sleep session data type, to store information about a user's sleep, such as a nightly session or daytime nap.",
-        "sourceName": "Android Developers Health & Fitness",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.61834323,
-        "signalType": "platform_api"
-      },
-      {
-        "title": "Level Up Your Health with Galaxy Watch and Receive a Withings Smart Scale on Us",
-        "url": "https://news.samsung.com/us/level-up-health-galaxy-watch-receive-withings-smart-scale",
-        "publishedAt": null,
-        "summary": "# Level Up Your Health with Galaxy Watch and Receive a Withings Smart Scale on Us. Purchase eligible Galaxy Watches on Samsung.com to receive a Withings Body Smart scale on us. That’s why Samsung is teaming up with Withings, a leader in digital wellness and health devices, to give Galaxy Watch buyers a Body Smart scale on us — helping them understand how to lead a healthier lifestyle at home, and on the go. Purchase a full-priced, eligible Galaxy Watch Ultra, Galaxy Watch8 Classic, Galaxy Watch8, or Galaxy Watch7 on Samsung.com or Shop Samsung App between May 4 and July 19, 2026 to receive a Withings Body Smart scale on us (MSRP $129.95).1. To receive a Body Smart scale on us, simply purchase a qualifying Galaxy Watch. ###### 1 From 5/4/2026 – 7/19/2026 (excluding trade-ins and when other applicable promotions are active), purchase an eligible full-price Samsung Galaxy Watch Ultra, Watch8 Classic, Watch8 or Watch7 (“Qualifying Purchase”) on Samsung.com or the Shop Samsung App and be eligible to receive a Withings Body Smart Scale (“Gift”).",
+        "summary": "# Samsung annonce une avancée majeure dans la détection des évanouissements grce à la montre Galaxy Watch. Une étude menée conjointement avec l’hôpital Gwangmyeong de l’université Chung-Ang démontre le potentiel de la Galaxy Watch pour la détection précoce des évanouissements, ouvrant ainsi la voie à des systèmes d’alerte en temps réel. Samsung Electronics Co., Ltd. annonce aujourd’hui qu’une étude clinique menée en collaboration avec l’hôpital universitaire Chung-Ang de Gwangmyeong, en Corée, a permis de valider avec succès la capacité à prédire la syncope vasovagale (SVV) avec une grande précision grce à l’utilisation des signaux biologiques recueillis par la montre Galaxy Watch6. À l’aide d’une montre Galaxy Watch équipée d’un capteur de photopléthysmographie (PPG), l’équipe a analysé les données de variabilité de la fréquence cardiaque (VFC) de la montre avec un algorithme d’IA. Les résultats de la recherche ont été publiés dans le Volume 7, numéro 4 de « European Heart Journal – Digital Health », une revue médicale de premier plan, et ils représentent la première étude au monde à démontrer avec succès le potentiel d’une montre intelligente commerciale à fournir une prédiction précoce de la syncope.",
         "sourceName": "Samsung Global Newsroom (Digital Health)",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.99977654,
+        "score": 0.64128816,
         "signalType": "product_market"
       },
       {
-        "title": "[CES 2026] A Care Companion for Family Health and Safety",
-        "url": "https://news.samsung.com/sg/ces-2026-a-care-companion-for-family-health-and-safety",
+        "title": "[World Sleep Day 2026] How Samsung Is Tackling Sleep Apnea to ...",
+        "url": "https://news.samsung.com/ca/world-sleep-day-2026-how-samsung-is-tackling-sleep-apnea-to-energize-your-day",
         "publishedAt": null,
-        "summary": "In the Self Care – Good Sleep section, visitors learned how wearables such as Galaxy Watch and Galaxy Ring track sleep conditions while working in concert with",
+        "summary": "# [World Sleep Day 2026] How Samsung Is Tackling Sleep Apnea to Energize Your Day. Millions worldwide suffer from **sleep apnea**, but 80% of sufferers don’t even know they have it. To mark World Sleep Day 2026, a global study of Samsung Health users is shedding new light on the true extent of the condition and the disruptive impact it has on individuals who suffer with sleep apnea. Aligned with this year’s World Sleep Day theme, “Sleep Well, Live Better,” Samsung is helping to turn the invisible signs of sleep apnea into actionable insights through its **Galaxy Watch** series, helping those affected improve their sleep habits and overall health. With sleep apnea shown to impact all aspects of sleep and lead to other health complications, detection is an essential first step in the fight against the condition. In addition to detecting the signs of sleep apnea, your Galaxy Watch can help you build habits for better holistic sleep health.",
         "sourceName": "Samsung Global Newsroom (Digital Health)",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9991374,
+        "score": 0.56489134,
         "signalType": "product_market"
       },
       {
@@ -1276,55 +1159,55 @@
         "signalType": "product_market"
       },
       {
-        "title": "Redmi Note 12 Series - Xiaomi Community",
-        "url": "https://new.c.mi.com/global/post/1421450",
+        "title": "Oura: Built for Women's Health Across Every Life Stage",
+        "url": "https://ouraring.com/blog/oura-built-for-womens-health-across-every-life-stage",
         "publishedAt": null,
-        "summary": "Xiaomi launches Smart Band 10 Pro with HRV monitoring, 2000 nits brightness & gaming mode. Dear Xiaomi Fans,Xiaomi has a...Full Text. Xiaomi News. Xiaomi News.",
-        "sourceName": "Xiaomi Global Wearables",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.99635005,
-        "signalType": "product_market"
-      },
-      {
-        "title": "[PDF] Oura Women's Healthcare Guide",
-        "url": "https://ouraring.com/blog/wp-content/uploads/2026/05/Oura-Womens-Healthcare-Guide-May-2026.pdf",
-        "publishedAt": null,
-        "summary": "Ovulation detection: Oura's ovulation algorithm, using LH testing and ultrasound as references, detected 96.4% of ovulations with average error ±1.26 days.",
+        "summary": "Image of all the ceramic Oura Ring 4 smart rings - Midnight, Cloud, Tide, and Petal Oura Ring 4 Ceramic. Image of all the metallic Oura Ring 4 smart rings - Silver, Black, Stealth, Brushed Silver, Gold, and Rose Gold Oura Ring 4. A person views the Oura app on their smartphone while wearing an Oura ring on their right index finger How It Works. With an average wear time of 23.5 hours per day, Oura captures near-continuous physiologic data across the metrics that matter most in women’s health: skin temperature, heart rate variability, sleep quality, cycle phase, and more. To help OB-GYNs and women’s health clinicians understand how Oura data maps to the questions you’re already asking, we’ve created *An Oura-Informed Guide to Women’s Healthcare*, a practical resource covering what Oura measures, what’s been validated, and how it applies across clinical scenarios from preconception counseling to perimenopause management. Oura’s women’s health features are designed to meet patients where they are and to give clinicians a clearer picture of what’s happening between visits.",
         "sourceName": "Oura Science & Research",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9914225,
+        "score": 0.3656837,
         "signalType": "product_market"
       },
       {
-        "title": "What WHOOP measures and how it helps you train and recover better",
-        "url": "https://www.whoop.com/us/en/thelocker/podcast-51-what-is-whoop",
+        "title": "14 Science-Backed Tips to Recover After a Bad Night's Sleep",
+        "url": "https://ouraring.com/blog/how-to-recover-from-bad-sleep",
         "publishedAt": null,
-        "summary": "WHOOP measures sleep, recovery, strain, and the physiological signals behind them so you can see how ready your body is to perform, train, and recover each day.",
+        "summary": "Image of all the ceramic Oura Ring 4 smart rings - Midnight, Cloud, Tide, and Petal Oura Ring 4 Ceramic. Image of all the metallic Oura Ring 4 smart rings - Silver, Black, Stealth, Brushed Silver, Gold, and Rose Gold Oura Ring 4. A close-up shot of a woman stretching with her hand near her face and an Oura Ring on her finger. Science and Research   Sleep and Rest   Women's Health   Stress. A person views the Oura app on their smartphone while wearing an Oura ring on their right index finger How It Works. #### Oura Ring 4 is here. Most of us are familiar with the frustration of a restless night spent watching the clock, only to be greeted by a disappointing Oura Sleep Score in the morning. Below, learn how to boost your energy after a poor night’s sleep and how to set yourself up for high-quality rest the next night.",
+        "sourceName": "Oura Science & Research",
+        "sourceCategory": "vendor_websearch",
+        "sourcePriority": "P1",
+        "sourceLang": "en",
+        "retrievalMethod": "tavily",
+        "score": 0.26827666,
+        "signalType": "product_market"
+      },
+      {
+        "title": "Best Recovery Activities Backed by WHOOP Member Data",
+        "url": "https://www.whoop.com/us/en/thelocker/the-best-recovery-activities-according-to-whoop-members",
+        "publishedAt": null,
+        "summary": "# Best Recovery Activities Backed by WHOOP Member Data. The Best Recovery Activities According To WHOOP Members. Recovery is essential to perform at your best, but knowing exactly what to do can be challenging. We took a look at the most popular and effective Recovery activities recorded by WHOOP members that you can try and see how they affect your unique data. WHOOP Recovery is a daily measure of how prepared your body is to perform. ## The most popular recovery activities logged by WHOOP members. ## The most effective recovery activities for WHOOP members. According to WHOOP member data, two of the most effective recovery activities are meditation and massage therapy. ## How to track your recovery activities with WHOOP. The best recovery activities are the ones that work for your body and your lifestyle. By logging activities in the WHOOP app, you can see the direct impact of your behaviors on your daily Recovery score and long-term health trends.",
         "sourceName": "WHOOP / The Locker",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.99722075,
+        "score": 0.9922444,
         "signalType": "product_market"
       },
       {
-        "title": "Self-Experimentation for Performance and Recovery | WHOOP",
-        "url": "https://www.whoop.com/us/en/thelocker/a-guide-to-self-experimentation-optimizing-your-habits-for-performance",
+        "title": "A New Way To See Insights On Which Behaviors Affect Your Recovery",
+        "url": "https://www.whoop.com/us/en/thelocker/a-new-way-to-see-insights-on-which-behaviors-affect-your-recovery",
         "publishedAt": null,
-        "summary": "# Self-Experimentation Guide for Performance | WHOOP. The WHOOP Journal helps you discover the impact of your habits and behaviors through self-experimentation, connecting your daily choices to your physiological data. This guide will show you how to use the Journal to build experiments, interpret your results, and optimize your routine for better performance. The WHOOP Journal is a feature in the app that connects your daily behaviors to your physiological data. By logging choices like diet, caffeine intake, or stress levels, you can see how they impact your Sleep, Strain, and Recovery. It helps you identify the habits that help or hurt your performance. Each morning after your Sleep is processed, WHOOP will prompt you to answer your Journal questions. Access the Journal anytime from the Plan tab to log behaviors or adjust your questions. You can choose from over 300 behaviors to monitor in the WHOOP Journal. After a few weeks of logging, check your Impacts to see how your behaviors relate to your WHOOP data.",
+        "summary": "Get easy-to-view daily insights about which behaviors and habits help or hurt your Recovery.",
         "sourceName": "WHOOP / The Locker",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.99490017,
+        "score": 0.99094474,
         "signalType": "product_market"
       },
       {
@@ -1339,19 +1222,6 @@
         "retrievalMethod": "tavily",
         "score": 0.99991846,
         "signalType": "clinical_regulatory"
-      },
-      {
-        "title": "Dexcom All Access Learning Hub - Diabetes Articles for Healthier ...",
-        "url": "https://www.dexcom.com/en-us/all-access",
-        "publishedAt": null,
-        "summary": "Learn tips to manage stress and diabetes, including ways to monitor your raised blood glucose levels with real-time continuous glucose monitoring (CGM). Read",
-        "sourceName": "Dexcom News",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.3605346,
-        "signalType": "product_market"
       },
       {
         "title": "From the CEO: April 2026 - Levels Health",
@@ -1676,9 +1546,9 @@
     "tavily_per_site": {
       "Apple Newsroom / Watch": {
         "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
@@ -1693,16 +1563,16 @@
       "Google Blog / Fitbit": {
         "fetched": 5,
         "qualityKept": 2,
-        "finalKept": 2,
-        "kept": 2,
-        "capped": 0,
+        "finalKept": 1,
+        "kept": 1,
+        "capped": 1,
         "error": null
       },
       "Android Developers Health & Fitness": {
         "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
@@ -1715,11 +1585,11 @@
         "error": null
       },
       "Samsung Global Newsroom (Digital Health)": {
-        "fetched": 4,
-        "qualityKept": 4,
+        "fetched": 5,
+        "qualityKept": 3,
         "finalKept": 2,
         "kept": 2,
-        "capped": 2,
+        "capped": 1,
         "error": null
       },
       "Samsung Developers Health": {
@@ -1748,10 +1618,10 @@
       },
       "Xiaomi Global Wearables": {
         "fetched": 5,
-        "qualityKept": 3,
-        "finalKept": 2,
-        "kept": 2,
-        "capped": 1,
+        "qualityKept": 1,
+        "finalKept": 1,
+        "kept": 1,
+        "capped": 0,
         "error": null
       },
       "Garmin Developers": {
@@ -1764,14 +1634,14 @@
       },
       "Oura Science & Research": {
         "fetched": 4,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "qualityKept": 2,
+        "finalKept": 2,
+        "kept": 2,
         "capped": 0,
         "error": null
       },
       "Oura Developer API": {
-        "fetched": 0,
+        "fetched": 1,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -1780,10 +1650,10 @@
       },
       "WHOOP / The Locker": {
         "fetched": 5,
-        "qualityKept": 4,
+        "qualityKept": 2,
         "finalKept": 2,
         "kept": 2,
-        "capped": 2,
+        "capped": 0,
         "error": null
       },
       "WHOOP Developer API": {
@@ -1812,14 +1682,14 @@
       },
       "Dexcom News": {
         "fetched": 5,
-        "qualityKept": 1,
-        "finalKept": 1,
-        "kept": 1,
+        "qualityKept": 0,
+        "finalKept": 0,
+        "kept": 0,
         "capped": 0,
         "error": null
       },
       "Dexcom Developer API": {
-        "fetched": 0,
+        "fetched": 5,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -1876,10 +1746,10 @@
       },
       "DC Rainmaker": {
         "fetched": 5,
-        "qualityKept": 5,
-        "finalKept": 3,
-        "kept": 3,
-        "capped": 2,
+        "qualityKept": 2,
+        "finalKept": 2,
+        "kept": 2,
+        "capped": 0,
         "error": null
       },
       "NeurIPS Health Workshops / OpenReview": {
@@ -1891,7 +1761,7 @@
         "error": null
       },
       "ICML Health Workshops / PMLR": {
-        "fetched": 0,
+        "fetched": 5,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -1899,7 +1769,7 @@
         "error": null
       },
       "IEEE EMBC Proceedings": {
-        "fetched": 2,
+        "fetched": 5,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -1950,13 +1820,13 @@
     "filtered_out_by_blacklist": 21,
     "filtered_out_by_keyword": 673,
     "filtered_out_by_source_exclude": 8,
-    "filtered_out_by_tavily_quality": 68,
+    "filtered_out_by_tavily_quality": 93,
     "filtered_out_by_required_keyword": 14,
-    "filtered_out_by_entry_page": 8,
-    "filtered_out_by_date": 280,
+    "filtered_out_by_entry_page": 7,
+    "filtered_out_by_date": 281,
     "duplicate_urls": 0,
     "duplicate_titles": 0,
-    "tavily_items_capped": 7,
+    "tavily_items_capped": 2,
     "top3_categories": null,
     "top3_scores": null,
     "top3_rejected_candidates": null
