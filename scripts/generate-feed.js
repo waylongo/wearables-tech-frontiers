@@ -314,6 +314,20 @@ function passesTavilySummaryQuality(item) {
   return true;
 }
 
+function cleanTavilySummary(s) {
+  let out = stripTags(decodeEntities(s || ''))
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/\*\*/g, '')
+    .replace(/^\+\s+the girl.?s sports gear i use list\.\s*/i, '')
+    .replace(/^\s*#+\s*/, '');
+  for (let i = 0; i < 3 && /^image of\b/i.test(out); i++) {
+    const next = out.replace(/^image of[^.]{0,240}\.\s*/i, '');
+    if (next === out) break;
+    out = next;
+  }
+  return out.replace(/\s+/g, ' ').trim();
+}
+
 function inferSignalType(item) {
   const category = item.sourceCategory;
   if (category === 'clinical_regulatory') return 'clinical_regulatory';
@@ -601,7 +615,7 @@ async function fetchTavilySite(site, apiKey, days) {
       title: (r.title || '').slice(0, 500),
       url: r.url,
       publishedAt: normalizePublishedAt(r.published_date),
-      summary: (r.content || r.snippet || '').slice(0, 2000),
+      summary: cleanTavilySummary(r.content || r.snippet || '').slice(0, 2000),
       score: r.score
     })).filter(it => it.title && it.url);
     return { site, items, error: null };

@@ -2010,6 +2010,9 @@
         ],
         "keywordScope": "title_summary",
         "maxItems": 2,
+        "urlExcludeFilter": [
+          "path-prefix:/ca_fr"
+        ],
         "excludeKeywordFilter": [
           "purchase eligible",
           "smart scale on us",
@@ -2361,7 +2364,10 @@
           ".pdf"
         ],
         "excludeKeywordFilter": [
-          "healthcare guide"
+          "healthcare guide",
+          "science-backed tips",
+          "bad night's sleep",
+          "built for women's health across every life stage"
         ]
       },
       {
@@ -2890,7 +2896,10 @@
           "research stack"
         ],
         "keywordScope": "title_summary",
-        "maxItems": 2
+        "maxItems": 2,
+        "excludeKeywordFilter": [
+          "from the ceo"
+        ]
       },
       {
         "name": "MedTech Dive",
