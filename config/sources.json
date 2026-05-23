@@ -160,7 +160,10 @@
           "atac-seq",
           "gene expression profiling",
           "gene regulation",
-          "drug discovery pipeline"
+          "drug discovery pipeline",
+          "oxycodone",
+          "sufentanil",
+          "modified radical mastectomy"
         ],
         "requiredKeywordFilter": [
           "wearable",
@@ -1637,7 +1640,10 @@
           "health tech"
         ],
         "why": "Digital health, provider adoption, regulation and business model signal",
-        "keywordScope": "title"
+        "keywordScope": "title",
+        "excludeKeywordFilter": [
+          "weekly rundown"
+        ]
       }
     ],
     "clinical_regulatory": [
@@ -1699,6 +1705,7 @@
         ],
         "keywordScope": "title_summary",
         "maxItems": 2,
+        "requireRecentYear": true,
         "excludeKeywordFilter": [
           "pride collection"
         ]
@@ -1881,7 +1888,8 @@
           "/documentation/dispatch",
           "/documentation/xcode",
           "/documentation/coregraphics",
-          "path-prefix:/health-and-fitness/health-connect/features"
+          "path-prefix:/health-and-fitness/health-connect/features",
+          "path-prefix:/health-and-fitness/health-connect/ui"
         ],
         "excludeKeywordFilter": [
           "overview",
@@ -2016,7 +2024,8 @@
         "excludeKeywordFilter": [
           "purchase eligible",
           "smart scale on us",
-          "withings smart scale on us"
+          "withings smart scale on us",
+          "care companion for family health and safety"
         ]
       },
       {
@@ -2280,6 +2289,9 @@
         ],
         "keywordScope": "title_summary",
         "maxItems": 2,
+        "urlExcludeFilter": [
+          "new.c.mi.com"
+        ],
         "excludeKeywordFilter": [
           "redmi note",
           "xiaomi community"
@@ -2361,13 +2373,17 @@
         "keywordScope": "title_summary",
         "maxItems": 2,
         "urlExcludeFilter": [
-          ".pdf"
+          ".pdf",
+          "path:/blog/readiness-score",
+          "path-prefix:/blog/it/reviewed-by"
         ],
         "excludeKeywordFilter": [
           "healthcare guide",
           "science-backed tips",
           "bad night's sleep",
-          "built for women's health across every life stage"
+          "built for women's health across every life stage",
+          "your oura readiness score",
+          "reviewed-by"
         ]
       },
       {
@@ -2473,11 +2489,17 @@
         ],
         "keywordScope": "title_summary",
         "maxItems": 2,
+        "urlExcludeFilter": [
+          "community.whoop.com"
+        ],
         "excludeKeywordFilter": [
           "podcast",
           "what whoop measures",
           "self-experimentation",
-          "guide to"
+          "guide to",
+          "best recovery activities",
+          "recovery activities for better recovery scores",
+          "product launch was harder than a marathon"
         ]
       },
       {
@@ -2805,7 +2827,8 @@
           "/documentation/coregraphics",
           "/reference/kotlin",
           "/reference/androidx",
-          "/reference"
+          "/reference",
+          "path:/docs/dexcom/sandbox-data"
         ]
       },
       {
@@ -2851,7 +2874,14 @@
           "research stack"
         ],
         "keywordScope": "title_summary",
-        "maxItems": 2
+        "maxItems": 2,
+        "urlExcludeFilter": [
+          "path:/biowearables.html"
+        ],
+        "excludeKeywordFilter": [
+          "biowearable products and solutions",
+          "track your health in real time"
+        ]
       },
       {
         "name": "Levels Blog",
@@ -3129,8 +3159,13 @@
         ],
         "keywordScope": "title_summary",
         "maxItems": 3,
+        "urlExcludeFilter": [
+          "detailed-comparison-review"
+        ],
         "excludeKeywordFilter": [
-          "in-depth review"
+          "in-depth review",
+          "feature differences",
+          "comparison review"
         ]
       },
       {
@@ -3861,7 +3896,10 @@
           "sciatic",
           "lumbar-related leg pain",
           "force platform",
-          "low back pain"
+          "low back pain",
+          "structured lifestyle counseling integrated into anc",
+          "digital anc eregistry",
+          "air pollution exposure"
         ]
       }
     ],

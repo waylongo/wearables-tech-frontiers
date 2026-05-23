@@ -331,7 +331,7 @@ function parseOpenFdaDate(s) {
 
 function passesKeywordFilter(item, keywords, scope = 'title_summary') {
   if (!keywords?.length) return true;
-  const hay = (scope === 'title' ? item.title : `${item.title} ${item.summary}`).toLowerCase();
+  const hay = normalizeFilterText(scope === 'title' ? item.title : `${item.title} ${item.summary}`);
   return keywords.some(k => keywordMatches(hay, k));
 }
 
@@ -343,8 +343,12 @@ function escapeRe(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+function normalizeFilterText(s) {
+  return (s || '').toLowerCase().replace(/[’‘]/g, "'").replace(/\s+/g, ' ').trim();
+}
+
 function keywordMatches(hay, keyword) {
-  const k = String(keyword || '').toLowerCase();
+  const k = normalizeFilterText(keyword);
   if (!k) return false;
   if (/^[a-z0-9]+$/.test(k) && k.length <= 4) {
     return new RegExp(`(^|[^a-z0-9])${escapeRe(k)}([^a-z0-9]|$)`, 'i').test(hay);
@@ -354,14 +358,14 @@ function keywordMatches(hay, keyword) {
 
 function passesBlacklist(title, patterns) {
   if (!patterns?.length) return true;
-  const t = (title || '').toLowerCase().replace(/[’‘]/g, "'");
-  return !patterns.some(p => t.includes(p.toLowerCase()));
+  const t = normalizeFilterText(title);
+  return !patterns.some(p => t.includes(normalizeFilterText(p)));
 }
 
 function passesSourceExcludeFilter(item, patterns) {
   if (!patterns?.length) return true;
-  const hay = `${item.title || ''} ${item.summary || ''}`.toLowerCase().replace(/[’‘]/g, "'");
-  return !patterns.some(p => hay.includes(p.toLowerCase()));
+  const hay = normalizeFilterText(`${item.title || ''} ${item.summary || ''}`);
+  return !patterns.some(p => hay.includes(normalizeFilterText(p)));
 }
 
 function inferSignalType(item) {
