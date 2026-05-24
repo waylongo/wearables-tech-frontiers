@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-05-24T03:44:29.880Z",
+  "generatedAt": "2026-05-24T03:47:21.706Z",
   "lookbackDays": 30,
   "stats": {
     "rawItems": 1010,
-    "keptItems": 36,
+    "keptItems": 35,
     "sourcesQueried": 20,
     "sourcesWithResults": 9,
     "sourcesFailed": 0,
@@ -436,20 +436,6 @@
       "selectionScore": 6.3
     },
     {
-      "title": "Samsung Announces World-First Breakthrough in Fainting Prediction With Galaxy Watch – Samsung Newsroom Philippines",
-      "url": "https://news.samsung.com/ph/samsung-announces-world-first-breakthrough-in-fainting-prediction-with-galaxy-watch",
-      "publishedAt": null,
-      "summary": "Samsung Announces World-First Breakthrough in Fainting Prediction With Galaxy Watch. Joint study with Chung-Ang University Gwangmyeong Hospital demonstrates potential for early fainting detection using Galaxy Watch, paving the way for real-time warning systems. Samsung today announced that a joint clinical study with Chung-Ang University Gwangmyeong Hospital in Korea has successfully validated the ability to predict vasovagal syncope (VVS) with high accuracy by utilizing biosignals obtained from Galaxy Watch6. “Up to 40% of people experience vasovagal syncope over their lifetime, with one-third experiencing recurrent episodes,” said Professor Junhwan Cho of the Department of Cardiology at Chung-Ang University Gwangmyeong Hospital. Using a Galaxy Watch equipped with a photoplethysmography (PPG) sensor, the team analyzed the watch’s heart rate variability (HRV) data with an AI algorithm. The research findings were published in Volume 7, Issue 4 of “European Heart Journal – Digital Health,” a leading medical journal and they represent the world’s first study to successfully demonstrate the potential for a commercial smartwatch to provide early prediction of syncope.",
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.9987056,
-      "signalType": "product_market",
-      "selectionScore": 5.4
-    },
-    {
       "title": "Health Connect | Jetpack | Android Developers",
       "url": "https://developer.android.com/jetpack/androidx/releases/health-connect",
       "publishedAt": null,
@@ -478,6 +464,20 @@
       "selectionScore": 4.8
     },
     {
+      "title": "Samsung Announces World-First Breakthrough in Fainting ...",
+      "url": "https://news.samsung.com/global/samsung-announces-world-first-breakthrough-in-fainting-prediction-with-galaxy-watch",
+      "publishedAt": null,
+      "summary": "Samsung Announces World-First Breakthrough in Fainting Prediction With Galaxy Watch. Joint study with Chung-Ang University Gwangmyeong Hospital demonstrates potential for early fainting detection using Galaxy Watch, paving the way for real-time warning systems. Samsung today announced that a joint clinical study with Chung-Ang University Gwangmyeong Hospital in Korea has successfully validated the ability to predict vasovagal syncope (VVS) with high accuracy by utilizing biosignals obtained from Galaxy Watch6. “Up to 40% of people experience vasovagal syncope over their lifetime, with one-third experiencing recurrent episodes,” said Professor Junhwan Cho of the Department of Cardiology at Chung-Ang University Gwangmyeong Hospital. Using a Galaxy Watch equipped with a photoplethysmography (PPG) sensor, the team analyzed the watch’s heart rate variability (HRV) data with an AI algorithm. The research findings were published in Volume 7, Issue 4 of “European Heart Journal – Digital Health,” a leading medical journal and they represent the world’s first study to successfully demonstrate the potential for a commercial smartwatch to provide early prediction of syncope.",
+      "sourceName": "Samsung Global Newsroom (Digital Health)",
+      "sourceCategory": "vendor_websearch",
+      "sourcePriority": "P1",
+      "sourceLang": "en",
+      "retrievalMethod": "tavily",
+      "score": 0.9949397,
+      "signalType": "product_market",
+      "selectionScore": 4.7
+    },
+    {
       "title": "Wahoo & COROS Hook Up: Here's What Happening! - DC Rainmaker",
       "url": "https://www.dcrainmaker.com/2026/04/coros-wahoo-partnership.html",
       "publishedAt": null,
@@ -490,20 +490,6 @@
       "score": 0.32318833,
       "signalType": "product_market",
       "selectionScore": 4.3
-    },
-    {
-      "title": "[World Sleep Day 2026] How Samsung Is Tackling Sleep Apnea to ...",
-      "url": "https://news.samsung.com/ca/world-sleep-day-2026-how-samsung-is-tackling-sleep-apnea-to-energize-your-day",
-      "publishedAt": null,
-      "summary": "[World Sleep Day 2026] How Samsung Is Tackling Sleep Apnea to Energize Your Day. Millions worldwide suffer from sleep apnea, but 80% of sufferers don’t even know they have it. To mark World Sleep Day 2026, a global study of Samsung Health users is shedding new light on the true extent of the condition and the disruptive impact it has on individuals who suffer with sleep apnea. Aligned with this year’s World Sleep Day theme, “Sleep Well, Live Better,” Samsung is helping to turn the invisible signs of sleep apnea into actionable insights through its Galaxy Watch series, helping those affected improve their sleep habits and overall health. With sleep apnea shown to impact all aspects of sleep and lead to other health complications, detection is an essential first step in the fight against the condition. In addition to detecting the signs of sleep apnea, your Galaxy Watch can help you build habits for better holistic sleep health.",
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch",
-      "sourcePriority": "P1",
-      "sourceLang": "en",
-      "retrievalMethod": "tavily",
-      "score": 0.9899087,
-      "signalType": "product_market",
-      "selectionScore": 3.7
     }
   ],
   "candidateItems": [
@@ -1104,35 +1090,6 @@
       "score": null
     },
     {
-      "title": "Samsung Announces World-First Breakthrough in Fainting Prediction With Galaxy Watch – Samsung Newsroom Philippines",
-      "url": "https://news.samsung.com/ph/samsung-announces-world-first-breakthrough-in-fainting-prediction-with-galaxy-watch",
-      "publishedAt": null,
-      "summary": "Samsung Announces World-First Breakthrough in Fainting Prediction With Galaxy Watch. Joint study with Chung-Ang University Gwangmyeong Hospital demonstrates potential for early fainting detection using Galaxy Watch, paving the way for real-time warning systems. Samsung today announced that a joint clinical study with Chung-Ang University Gwangmyeong Hospital in Korea has successfully validated the ability to predict vasovagal syncope (VVS) with high accuracy by utilizing biosignals obtained from",
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch",
-      "retrievalMethod": "tavily",
-      "signalType": "product_market",
-      "sourcePriority": "P1",
-      "selectionScore": 5.4,
-      "selectionThreshold": 3.5,
-      "selectionStatus": "selected",
-      "selectionReasons": [
-        "category:vendor_websearch +0.8",
-        "retrieval:tavily +0.3",
-        "priority:P1 +0.5",
-        "signal:product_market +0.5",
-        "relevance:galaxy watch,smartwatch,ppg,hrv,heart rate variability +2.3",
-        "evidence/method detail +0.8",
-        "shipping/product signal +0.5",
-        "tavily rank +0.5"
-      ],
-      "selectionPenalties": [
-        "missing publication date -0.4",
-        "marketing language -0.3"
-      ],
-      "score": 0.9987056
-    },
-    {
       "title": "ACSI: Samsung edges out Apple in cell phone satisfaction, while Apple Watch ties at the top",
       "url": "https://9to5mac.com/2026/05/20/acsi-samsung-edges-out-apple-in-cell-phone-satisfaction-while-apple-watch-ties-at-the-top/",
       "publishedAt": "2026-05-21T00:51:15.000Z",
@@ -1344,7 +1301,7 @@
       "sourcePriority": "P1",
       "selectionScore": 4.7,
       "selectionThreshold": 3.5,
-      "selectionStatus": "near_duplicate_title",
+      "selectionStatus": "selected",
       "selectionReasons": [
         "category:vendor_websearch +0.8",
         "retrieval:tavily +0.3",
@@ -1412,32 +1369,6 @@
       "score": 0.32318833
     },
     {
-      "title": "[World Sleep Day 2026] How Samsung Is Tackling Sleep Apnea to ...",
-      "url": "https://news.samsung.com/ca/world-sleep-day-2026-how-samsung-is-tackling-sleep-apnea-to-energize-your-day",
-      "publishedAt": null,
-      "summary": "[World Sleep Day 2026] How Samsung Is Tackling Sleep Apnea to Energize Your Day. Millions worldwide suffer from sleep apnea, but 80% of sufferers don’t even know they have it. To mark World Sleep Day 2026, a global study of Samsung Health users is shedding new light on the true extent of the condition and the disruptive impact it has on individuals who suffer with sleep apnea. Aligned with this year’s World Sleep Day theme, “Sleep Well, Live Better,” Samsung is helping to turn the invisible sign",
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch",
-      "retrievalMethod": "tavily",
-      "signalType": "product_market",
-      "sourcePriority": "P1",
-      "selectionScore": 3.7,
-      "selectionThreshold": 3.5,
-      "selectionStatus": "selected",
-      "selectionReasons": [
-        "category:vendor_websearch +0.8",
-        "retrieval:tavily +0.3",
-        "priority:P1 +0.5",
-        "signal:product_market +0.5",
-        "relevance:sleep apnea,galaxy watch,samsung health +1.5",
-        "tavily rank +0.5"
-      ],
-      "selectionPenalties": [
-        "missing publication date -0.4"
-      ],
-      "score": 0.9899087
-    },
-    {
       "title": "Introducing the all-new Fitbit Air - Google Blog",
       "url": "https://blog.google/products-and-platforms/devices/fitbit/fitbit-air",
       "publishedAt": null,
@@ -1465,58 +1396,6 @@
       "score": 0.38824743
     },
     {
-      "title": "[World Health Day 2026] How Jacob Kiplimo's Galaxy Watch Turns ...",
-      "url": "https://news.samsung.com/ca/world-health-day-2026-how-jacob-kiplimos-galaxy-watch-turns-data-into-world-record-performance",
-      "publishedAt": null,
-      "summary": "[World Health Day 2026] How Jacob Kiplimo’s Galaxy Watch Turns Data Into World-Record Performance. When Jacob Kiplimo storms past the finish line, he’s not just running on talent — he’s running on data. After securing a dominant win at the 2025 Chicago Marathon and shattering the half-marathon world record this March in Lisbon, the 25-year-old is now targeting success at the 2026 London Marathon. To mark World Health Day (WHD) 2026 on April 7, Samsung asked him to detail his data-driven training",
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch",
-      "retrievalMethod": "tavily",
-      "signalType": "product_market",
-      "sourcePriority": "P1",
-      "selectionScore": 3.4,
-      "selectionThreshold": 3.5,
-      "selectionStatus": "below_score",
-      "selectionReasons": [
-        "category:vendor_websearch +0.8",
-        "retrieval:tavily +0.3",
-        "priority:P1 +0.5",
-        "signal:product_market +0.5",
-        "relevance:galaxy watch,samsung health +1.3",
-        "tavily rank +0.5"
-      ],
-      "selectionPenalties": [
-        "missing publication date -0.4"
-      ],
-      "score": 0.9992679
-    },
-    {
-      "title": "[Interview] How Jacob Kiplimo's Galaxy Watch Turns Data Into World ...",
-      "url": "https://news.samsung.com/my/interview-how-jacob-kiplimos-galaxy-watch-turns-data-into-world-record-performance",
-      "publishedAt": null,
-      "summary": "[Interview] How Jacob Kiplimo’s Galaxy Watch Turns Data Into World-Record Performance. When Jacob Kiplimo storms past the finish line, he’s not just running on talent — he’s running on data. After securing a dominant win at the 2025 Chicago Marathon and shattering the half-marathon world record this March in Lisbon, the 25-year-old is now targeting success at the 2026 London Marathon. *▲ Jacob Kiplimo trains for the London Marathon with his Galaxy Watch8.*. To mark World Health Day (WHD) 2026 on",
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch",
-      "retrievalMethod": "tavily",
-      "signalType": "product_market",
-      "sourcePriority": "P1",
-      "selectionScore": 3.4,
-      "selectionThreshold": 3.5,
-      "selectionStatus": "below_score",
-      "selectionReasons": [
-        "category:vendor_websearch +0.8",
-        "retrieval:tavily +0.3",
-        "priority:P1 +0.5",
-        "signal:product_market +0.5",
-        "relevance:galaxy watch,samsung health +1.3",
-        "tavily rank +0.5"
-      ],
-      "selectionPenalties": [
-        "missing publication date -0.4"
-      ],
-      "score": 0.9973888
-    },
-    {
       "title": "Pre-order Stephen Curry's special edition Fitbit Air - Google Blog",
       "url": "https://blog.google/products-and-platforms/products/google-health/stephen-curry-fitbit-air",
       "publishedAt": null,
@@ -1541,32 +1420,6 @@
         "missing publication date -0.4"
       ],
       "score": 0.33646238
-    },
-    {
-      "title": "Social Run: Samsung Health se posiciona como aliado clave para ...",
-      "url": "https://news.samsung.com/cl/social-run-samsung-health-se-posiciona-como-aliado-clave-para-los-corredores",
-      "publishedAt": null,
-      "summary": "En una nueva edición de este evento deportivo, Samsung se sumó con la app “Samsung Health”, una herramienta pensada para acompañar a runners que buscan entrenar con mayor seguimiento, orden y conocimiento de su rendimiento. El pasado viernes 17 de abril, más de 150 personas participaron de una nueva edición de Social Run en Café Bassotto, en Las Condes, convocando a corredores y entusiastas del running a participar de una experiencia abierta de 5K orientada a acompañar la preparación de quienes ",
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch",
-      "retrievalMethod": "tavily",
-      "signalType": "product_market",
-      "sourcePriority": "P1",
-      "selectionScore": 3.2,
-      "selectionThreshold": 3.5,
-      "selectionStatus": "below_score",
-      "selectionReasons": [
-        "category:vendor_websearch +0.8",
-        "retrieval:tavily +0.3",
-        "priority:P1 +0.5",
-        "signal:product_market +0.5",
-        "relevance:samsung health +1.0",
-        "tavily rank +0.5"
-      ],
-      "selectionPenalties": [
-        "missing publication date -0.4"
-      ],
-      "score": 0.95565146
     },
     {
       "title": "Strengthening Singapore’s AI Future: A New National Partnership",
@@ -1727,8 +1580,8 @@
     }
   ],
   "candidateStats": {
-    "candidateItems": 48,
-    "selectedItems": 36,
+    "candidateItems": 43,
+    "selectedItems": 35,
     "targetMin": 35,
     "targetMax": 55,
     "thresholds": {
@@ -1738,33 +1591,32 @@
       "company_research": 3.5
     },
     "byStatus": {
-      "selected": 36,
-      "near_duplicate_title": 1,
+      "selected": 35,
       "source_cap": 1,
-      "below_score": 10
+      "below_score": 7
     },
     "byRetrieval": {
       "rss": 26,
       "api": 6,
-      "tavily": 16
+      "tavily": 11
     },
     "selectedByRetrieval": {
       "rss": 24,
       "api": 6,
-      "tavily": 6
+      "tavily": 5
     },
     "byCategory": {
       "clinical_regulatory": 9,
       "academic": 13,
       "industry_news": 9,
-      "vendor_websearch": 15,
+      "vendor_websearch": 10,
       "company_research": 2
     },
     "selectedByCategory": {
       "academic": 13,
       "industry_news": 9,
       "clinical_regulatory": 9,
-      "vendor_websearch": 5
+      "vendor_websearch": 4
     }
   },
   "groupedByCategory": {
@@ -2208,20 +2060,6 @@
         "selectionScore": 6.3
       },
       {
-        "title": "Samsung Announces World-First Breakthrough in Fainting Prediction With Galaxy Watch – Samsung Newsroom Philippines",
-        "url": "https://news.samsung.com/ph/samsung-announces-world-first-breakthrough-in-fainting-prediction-with-galaxy-watch",
-        "publishedAt": null,
-        "summary": "Samsung Announces World-First Breakthrough in Fainting Prediction With Galaxy Watch. Joint study with Chung-Ang University Gwangmyeong Hospital demonstrates potential for early fainting detection using Galaxy Watch, paving the way for real-time warning systems. Samsung today announced that a joint clinical study with Chung-Ang University Gwangmyeong Hospital in Korea has successfully validated the ability to predict vasovagal syncope (VVS) with high accuracy by utilizing biosignals obtained from Galaxy Watch6. “Up to 40% of people experience vasovagal syncope over their lifetime, with one-third experiencing recurrent episodes,” said Professor Junhwan Cho of the Department of Cardiology at Chung-Ang University Gwangmyeong Hospital. Using a Galaxy Watch equipped with a photoplethysmography (PPG) sensor, the team analyzed the watch’s heart rate variability (HRV) data with an AI algorithm. The research findings were published in Volume 7, Issue 4 of “European Heart Journal – Digital Health,” a leading medical journal and they represent the world’s first study to successfully demonstrate the potential for a commercial smartwatch to provide early prediction of syncope.",
-        "sourceName": "Samsung Global Newsroom (Digital Health)",
-        "sourceCategory": "vendor_websearch",
-        "sourcePriority": "P1",
-        "sourceLang": "en",
-        "retrievalMethod": "tavily",
-        "score": 0.9987056,
-        "signalType": "product_market",
-        "selectionScore": 5.4
-      },
-      {
         "title": "Health Connect | Jetpack | Android Developers",
         "url": "https://developer.android.com/jetpack/androidx/releases/health-connect",
         "publishedAt": null,
@@ -2250,18 +2088,18 @@
         "selectionScore": 4.8
       },
       {
-        "title": "[World Sleep Day 2026] How Samsung Is Tackling Sleep Apnea to ...",
-        "url": "https://news.samsung.com/ca/world-sleep-day-2026-how-samsung-is-tackling-sleep-apnea-to-energize-your-day",
+        "title": "Samsung Announces World-First Breakthrough in Fainting ...",
+        "url": "https://news.samsung.com/global/samsung-announces-world-first-breakthrough-in-fainting-prediction-with-galaxy-watch",
         "publishedAt": null,
-        "summary": "[World Sleep Day 2026] How Samsung Is Tackling Sleep Apnea to Energize Your Day. Millions worldwide suffer from sleep apnea, but 80% of sufferers don’t even know they have it. To mark World Sleep Day 2026, a global study of Samsung Health users is shedding new light on the true extent of the condition and the disruptive impact it has on individuals who suffer with sleep apnea. Aligned with this year’s World Sleep Day theme, “Sleep Well, Live Better,” Samsung is helping to turn the invisible signs of sleep apnea into actionable insights through its Galaxy Watch series, helping those affected improve their sleep habits and overall health. With sleep apnea shown to impact all aspects of sleep and lead to other health complications, detection is an essential first step in the fight against the condition. In addition to detecting the signs of sleep apnea, your Galaxy Watch can help you build habits for better holistic sleep health.",
+        "summary": "Samsung Announces World-First Breakthrough in Fainting Prediction With Galaxy Watch. Joint study with Chung-Ang University Gwangmyeong Hospital demonstrates potential for early fainting detection using Galaxy Watch, paving the way for real-time warning systems. Samsung today announced that a joint clinical study with Chung-Ang University Gwangmyeong Hospital in Korea has successfully validated the ability to predict vasovagal syncope (VVS) with high accuracy by utilizing biosignals obtained from Galaxy Watch6. “Up to 40% of people experience vasovagal syncope over their lifetime, with one-third experiencing recurrent episodes,” said Professor Junhwan Cho of the Department of Cardiology at Chung-Ang University Gwangmyeong Hospital. Using a Galaxy Watch equipped with a photoplethysmography (PPG) sensor, the team analyzed the watch’s heart rate variability (HRV) data with an AI algorithm. The research findings were published in Volume 7, Issue 4 of “European Heart Journal – Digital Health,” a leading medical journal and they represent the world’s first study to successfully demonstrate the potential for a commercial smartwatch to provide early prediction of syncope.",
         "sourceName": "Samsung Global Newsroom (Digital Health)",
         "sourceCategory": "vendor_websearch",
         "sourcePriority": "P1",
         "sourceLang": "en",
         "retrievalMethod": "tavily",
-        "score": 0.9899087,
+        "score": 0.9949397,
         "signalType": "product_market",
-        "selectionScore": 3.7
+        "selectionScore": 4.7
       }
     ]
   },
@@ -2638,9 +2476,9 @@
       },
       "Samsung Global Newsroom (Digital Health)": {
         "fetched": 10,
-        "qualityKept": 6,
-        "finalKept": 2,
-        "kept": 2,
+        "qualityKept": 1,
+        "finalKept": 1,
+        "kept": 1,
         "capped": 0,
         "error": null
       },
@@ -2661,7 +2499,7 @@
         "error": null
       },
       "Huawei Health Kit": {
-        "fetched": 0,
+        "fetched": 1,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2693,7 +2531,7 @@
         "error": null
       },
       "Oura Developer API": {
-        "fetched": 0,
+        "fetched": 1,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2757,7 +2595,7 @@
         "error": null
       },
       "Levels Blog": {
-        "fetched": 1,
+        "fetched": 0,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2789,7 +2627,7 @@
         "error": null
       },
       "Digital Health Wire": {
-        "fetched": 6,
+        "fetched": 5,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2845,7 +2683,7 @@
         "error": null
       },
       "ISWC Proceedings": {
-        "fetched": 7,
+        "fetched": 8,
         "qualityKept": 0,
         "finalKept": 0,
         "kept": 0,
@@ -2872,17 +2710,17 @@
     "filtered_out_by_blacklist": 20,
     "filtered_out_by_keyword": 670,
     "filtered_out_by_source_exclude": 11,
-    "filtered_out_by_tavily_quality": 202,
+    "filtered_out_by_tavily_quality": 209,
     "filtered_out_by_required_keyword": 10,
     "filtered_out_by_entry_page": 12,
-    "filtered_out_by_date": 302,
+    "filtered_out_by_date": 301,
     "duplicate_urls": 2,
-    "duplicate_titles": 1,
+    "duplicate_titles": 0,
     "tavily_items_capped": 1,
     "top3_categories": null,
     "top3_scores": null,
     "top3_rejected_candidates": null,
-    "candidate_items": 48,
-    "selected_items": 36
+    "candidate_items": 43,
+    "selected_items": 35
   }
 }

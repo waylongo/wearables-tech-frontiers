@@ -272,7 +272,7 @@
     },
     "https://9to5google.com/2026/05/15/fitbit-4-69/": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "9to5Google",
       "sourceCategory": "industry_news"
     },
@@ -878,7 +878,7 @@
     },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001416": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
     },
@@ -1286,7 +1286,7 @@
     },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001373": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
     },
@@ -1322,7 +1322,7 @@
     },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001377": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
     },
@@ -1376,25 +1376,25 @@
     },
     "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/trividia-health-correction-true-metrix-blood-glucose-monitoring-systems": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "FDA MedWatch Safety Alerts",
       "sourceCategory": "clinical_regulatory"
     },
     "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253887": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
       "sourceCategory": "clinical_regulatory"
     },
     "http://www.fda.gov/medical-devices/safety-communications/risks-using-true-metrix-blood-glucose-monitoring-systems-trividia-health-fda-safety-communication": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "FDA MedWatch Safety Alerts",
       "sourceCategory": "clinical_regulatory"
     },
     "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/blood-glucose-monitor-recall-trividia-health-issues-correction-true-metrix-blood-glucose-monitoring": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "FDA MedWatch Safety Alerts",
       "sourceCategory": "clinical_regulatory"
     },
@@ -1628,7 +1628,7 @@
     },
     "https://developer.android.com/jetpack/androidx/releases/health-connect": {
       "firstSeen": 1778936127831,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "Android Health Connect Release Notes",
       "sourceCategory": "vendor_websearch"
     },
@@ -1916,7 +1916,7 @@
     },
     "https://developer.whoop.com/docs/api-changelog": {
       "firstSeen": 1778936127831,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "WHOOP Developer API",
       "sourceCategory": "vendor_websearch"
     },
@@ -2342,7 +2342,7 @@
     },
     "https://www.dcrainmaker.com/2026/04/coros-wahoo-partnership.html": {
       "firstSeen": 1778936127831,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "DC Rainmaker",
       "sourceCategory": "industry_news"
     },
@@ -2846,7 +2846,7 @@
     },
     "https://www.mdpi.com/1424-8220/26/11/3319": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "Sensors Journal",
       "sourceCategory": "academic"
     },
@@ -2858,7 +2858,7 @@
     },
     "https://mhealth.jmir.org/2026/1/e81502": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "JMIR mHealth and uHealth",
       "sourceCategory": "academic"
     },
@@ -2870,19 +2870,19 @@
     },
     "https://9to5google.com/2026/05/22/google-pixel-watch-find-my-phone-ecg-app-issues/": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "9to5Google",
       "sourceCategory": "industry_news"
     },
     "https://9to5google.com/2026/05/22/google-explains-new-wear-os-widgets/": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "9to5Google",
       "sourceCategory": "industry_news"
     },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001335": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
     },
@@ -2900,7 +2900,7 @@
     },
     "https://www.mobihealthnews.com/news/oura-confidentially-files-ipo-revenue-growth-soars": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "MobiHealthNews",
       "sourceCategory": "industry_news"
     },
@@ -2912,7 +2912,7 @@
     },
     "https://www.medrxiv.org/content/10.64898/2026.05.20.26353669v1?rss=1": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "medRxiv: new results",
       "sourceCategory": "academic"
     },
@@ -2930,25 +2930,25 @@
     },
     "https://clinicaltrials.gov/study/NCT06938412": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
     "https://clinicaltrials.gov/study/NCT05794178": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
     "https://clinicaltrials.gov/study/NCT07601724": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
     "https://clinicaltrials.gov/study/NCT06124196": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
@@ -2960,7 +2960,7 @@
     },
     "https://mhealth.jmir.org/2026/1/e70188": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "JMIR mHealth and uHealth",
       "sourceCategory": "academic"
     },
@@ -2972,7 +2972,7 @@
     },
     "https://9to5mac.com/2026/05/21/apple-watch-and-airpods-health-features-get-major-new-global-expansions/": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "9to5Mac",
       "sourceCategory": "industry_news"
     },
@@ -2984,49 +2984,49 @@
     },
     "https://9to5mac.com/2026/05/20/acsi-samsung-edges-out-apple-in-cell-phone-satisfaction-while-apple-watch-ties-at-the-top/": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "9to5Mac",
       "sourceCategory": "industry_news"
     },
     "https://www.mdpi.com/1424-8220/26/10/3273": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "Sensors Journal",
       "sourceCategory": "academic"
     },
     "https://www.mdpi.com/1424-8220/26/10/3256": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "Sensors Journal",
       "sourceCategory": "academic"
     },
     "https://www.mdpi.com/1424-8220/26/10/3235": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "Sensors Journal",
       "sourceCategory": "academic"
     },
     "https://9to5google.com/2026/05/19/google-announces-wear-os-7/": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "9to5Google",
       "sourceCategory": "industry_news"
     },
     "https://9to5mac.com/2026/05/19/apple-watch-has-a-useful-hidden-feature-for-tracking-a-great-healthy-habit/": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "9to5Mac",
       "sourceCategory": "industry_news"
     },
     "https://mhealth.jmir.org/2026/1/e79642": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "JMIR mHealth and uHealth",
       "sourceCategory": "academic"
     },
     "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1729804": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "Frontiers in Digital Health",
       "sourceCategory": "academic"
     },
@@ -3038,7 +3038,7 @@
     },
     "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253152": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
       "sourceCategory": "clinical_regulatory"
     },
@@ -3062,7 +3062,7 @@
     },
     "https://blog.google/products-and-platforms/products/google-health/google-health-fitbit": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779594269878,
+      "lastSeen": 1779594441705,
       "sourceName": "Google Blog / Fitbit",
       "sourceCategory": "vendor_websearch"
     },
@@ -3207,6 +3207,12 @@
     "https://news.samsung.com/ph/samsung-announces-world-first-breakthrough-in-fainting-prediction-with-galaxy-watch": {
       "firstSeen": 1779594269878,
       "lastSeen": 1779594269878,
+      "sourceName": "Samsung Global Newsroom (Digital Health)",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://news.samsung.com/global/samsung-announces-world-first-breakthrough-in-fainting-prediction-with-galaxy-watch": {
+      "firstSeen": 1779594441705,
+      "lastSeen": 1779594441705,
       "sourceName": "Samsung Global Newsroom (Digital Health)",
       "sourceCategory": "vendor_websearch"
     }
