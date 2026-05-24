@@ -40,11 +40,7 @@ Not covered: X/Twitter, paid funding databases, individual openFDA adverse-event
    Claude Code / Codex digest
 ```
 
-`remote_feed` is the default path. It reads the central feed through the GitHub Contents API.
-
-`local_rss` is the fallback path. It is used by `--no-remote` or `~/.wtf/sources.json`, and only fetches local RSS plus the local openFDA subset.
-
-Schema note: `config/sources.json` uses `schema_version`; `feed-wearables.json` uses `schemaVersion`.
+By default, `/wtf` reads the central feed through the GitHub Contents API.
 
 ## Install
 
@@ -73,4 +69,3 @@ Examples:
 - `/wtf past 14 days`
 - `/wtf academic and company research only`
 - `/wtf switch output to Chinese`
-- `/wtf add this private RSS source: https://example.com/feed.xml`
