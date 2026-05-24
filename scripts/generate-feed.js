@@ -79,11 +79,40 @@ function decodeEntitiesOnce(s) {
     minus: '-',
     plusmn: '+/-',
     times: 'x',
+    aacute: 'á',
+    eacute: 'é',
+    iacute: 'í',
+    oacute: 'ó',
+    uacute: 'ú',
+    agrave: 'à',
+    egrave: 'è',
+    igrave: 'ì',
+    ograve: 'ò',
+    ugrave: 'ù',
+    acirc: 'â',
+    ecirc: 'ê',
+    icirc: 'î',
+    ocirc: 'ô',
+    ucirc: 'û',
+    atilde: 'ã',
+    otilde: 'õ',
+    auml: 'ä',
+    euml: 'ë',
+    iuml: 'ï',
+    ouml: 'ö',
+    uuml: 'ü',
+    ntilde: 'ñ',
+    ccedil: 'ç',
     ge: '>=',
     le: '<='
   };
   return (s || '')
-    .replace(/&([a-z]+);/gi, (m, name) => Object.prototype.hasOwnProperty.call(named, name.toLowerCase()) ? named[name.toLowerCase()] : m)
+    .replace(/&([a-z]+);/gi, (m, name) => {
+      const key = name.toLowerCase();
+      if (!Object.prototype.hasOwnProperty.call(named, key)) return m;
+      const value = named[key];
+      return /^[A-Z]/.test(name) && value.length === 1 ? value.toUpperCase() : value;
+    })
     .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
     .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(parseInt(n, 10)));
 }
@@ -232,21 +261,24 @@ function passesSourceExcludeFilter(item, patterns) {
   return !patterns.some(p => hay.includes(normalizeFilterText(p)));
 }
 
+function normalizePath(p) {
+  if (!p) return '/';
+  const prefixed = p.startsWith('/') ? p : `/${p}`;
+  return prefixed.length > 1 && prefixed.endsWith('/') ? prefixed.slice(0, -1) : prefixed;
+}
+
+function urlPathname(url) {
+  try {
+    return normalizePath(new URL(url).pathname.toLowerCase());
+  } catch {
+    return null;
+  }
+}
+
 function passesUrlExcludeFilter(item, patterns) {
   if (!patterns?.length) return true;
   const hay = `${item.url || ''}`.toLowerCase();
-  let pathname = null;
-  try {
-    pathname = new URL(item.url).pathname.toLowerCase();
-  } catch {
-    pathname = null;
-  }
-  const normalizePath = p => {
-    if (!p) return '/';
-    const prefixed = p.startsWith('/') ? p : `/${p}`;
-    return prefixed.length > 1 && prefixed.endsWith('/') ? prefixed.slice(0, -1) : prefixed;
-  };
-  const normalizedPath = pathname ? normalizePath(pathname) : null;
+  const normalizedPath = urlPathname(item.url);
   return !patterns.some(pattern => {
     const p = String(pattern || '').toLowerCase();
     if (!p) return false;
@@ -271,6 +303,7 @@ function isAllowedIncrementalDocPage(item) {
 function passesEntryPageFilter(item) {
   if (isAllowedIncrementalDocPage(item)) return true;
   const title = (item.title || '').toLowerCase().replace(/[’‘]/g, "'");
+  const hay = `${title} ${item.url || ''}`.toLowerCase();
   const entryPatterns = [
     /\bapi\s*\|\s*home\b/,
     /\bdeveloper docs?\b/,
@@ -299,12 +332,21 @@ function passesEntryPageFilter(item) {
     /^getting started\b/,
     /^quick start\b/,
     /^setup guide\b/,
+    /^fetch data example\b/,
+    /\bexamples?\s*[|\-–]/,
+    /\b(?:api|data)\s+examples?\b/,
+    /^(blog|search|research papers?)\s*[|\-–]/,
     // Account / data hubs
     /^raw data\b/,
     /\braw data\s*[|\-–]/,
     /^pulling .* manually\b/,
     /^my account\b/,
     /^(account|dashboard|sign in|log in|login)$/,
+    // Brand/media asset pages
+    /\b(?:brand|design)\s+guidelines\b/,
+    /\busing our logo\b/,
+    /\bwordmark\b/,
+    /\bmedia kit\b/,
     // Apple Developer / SDK doc symbol pages
     /\|\s*apple developer documentation$/,
     /^[a-z][a-z0-9]*\([^)]*\)$/,
@@ -320,7 +362,11 @@ function passesEntryPageFilter(item) {
     /^sdk overview$/,
     /^developer hub$/
   ];
-  return !entryPatterns.some(re => re.test(title));
+  const entryHayPatterns = [
+    /\/(?:developer|integration)-guide\/.*(?:example|sample|tutorial|getting-started|quickstart)/,
+    /\/(?:examples?|samples?|tutorials?)\//
+  ];
+  return !entryPatterns.some(re => re.test(title)) && !entryHayPatterns.some(re => re.test(hay));
 }
 
 function passesTavilySummaryQuality(item) {
@@ -615,7 +661,7 @@ function passesTavilyFreshness(item, site, days) {
   if (item.publishedAt) return withinDays(item.publishedAt, days);
   if (!site.requireRecentYear) return true;
   const year = inferPublicationYear(item);
-  if (!year) return false;
+  if (!year) return true;
   return year === new Date().getUTCFullYear();
 }
 
@@ -807,10 +853,21 @@ function recencyScore(item) {
   return 0;
 }
 
+function hasLocalizedMirrorPath(item) {
+  const pathname = urlPathname(item.url);
+  if (!pathname) return false;
+  const first = pathname.split('/').filter(Boolean)[0] || '';
+  if (!first) return false;
+  return /^[a-z]{2}(?:[_-][a-z]{2})?$/.test(first)
+    && !['api', 'app', 'blog', 'docs', 'help', 'news', 'press', 'shop'].includes(first);
+}
+
 function scoreCandidate(item, catalog) {
   const title = normalizeFilterText(item.title || '');
   const summary = normalizeFilterText(item.summary || '');
+  const urlText = normalizeFilterText(item.url || '');
   const hay = `${title} ${summary}`;
+  const titleUrl = `${title} ${urlText}`;
   const ctx = { score: 0, reasons: [], penalties: [] };
 
   const categoryScores = {
@@ -845,17 +902,20 @@ function scoreCandidate(item, catalog) {
   const relevanceScore = Math.min(2.4, titleMatches.length * 0.75 + bodyMatches.length * 0.25);
   if (relevanceScore > 0) addScore(ctx, relevanceScore, `relevance:${[...new Set([...titleMatches, ...bodyMatches])].slice(0, 5).join(',')}`);
 
-  if (/\b(fda|510\(k\)|de novo|pma|clearance|recall|medwatch|clinical trial|nct\d+|endpoint)\b/i.test(hay)) {
-    addScore(ctx, 0.9, 'clinical/regulatory evidence');
+  if (/\b(fda|510\(k\)|510k|de novo|pma|clearance|cleared|approval|recall|medwatch|clinical trial|nct\d+|clinical validation|validated clinically|endpoint)\b/i.test(hay)) {
+    addScore(ctx, 1.0, 'clinical/regulatory evidence');
   }
-  if (/\b(api|sdk|changelog|change log|release notes?|schema|permission|healthkit|health connect|wear os|connect iq)\b/i.test(hay)) {
-    addScore(ctx, 0.8, 'platform/api signal');
+  if (/\b(api|sdk|changelog|change log|release notes?|breaking changes?|schema|permission|permissions|scope|oauth|webhook|endpoint|healthkit|health connect|wear os|connect iq)\b/i.test(hay)) {
+    addScore(ctx, 0.9, 'platform/api signal');
   }
-  if (/\b(validation|validated|prospective|cohort|dataset|foundation model|self-supervised|benchmark|n\s*[=>=]\s*\d+)/i.test(hay)) {
-    addScore(ctx, 0.8, 'evidence/method detail');
+  if (/\b(peer[- ]reviewed|doi:|validation|validated|prospective|randomi[sz]ed|cohort|dataset|foundation model|self-supervised|benchmark|sensitivity|specificity|n\s*[=>=]\s*\d+)/i.test(hay)) {
+    addScore(ctx, 0.9, 'evidence/method detail');
   }
-  if (/\b(partnership|partners?|acquir|ipo|funding|series [abc]|reimbursement|insurance|ehr)\b/i.test(hay)) {
-    addScore(ctx, 0.6, 'market/business signal');
+  if (/\b(partnership|partners?|collaboration|acquir|acquisition|merger|ipo|funding|raises?|series [abc]|reimbursement|insurance|ehr)\b/i.test(hay)) {
+    addScore(ctx, 0.7, 'market/business signal');
+  }
+  if (/\b(wearable sensors?|smartwatch|smart watch|smart ring|wrist[- ]worn|biosignal|digital biomarkers?|algorithm|sensor fusion|ppg|photoplethysmography|ecg|ekg|cgm|glucose|spo2|hrv|imu|accelerometer|gyroscope|actigraphy|arrhythmia|afib|sleep staging|blood pressure)\b/i.test(hay)) {
+    addScore(ctx, 0.7, 'wearable sensor/algorithm specificity');
   }
   if (/\b(launch|launches|announces|introducing|rolls out|expands|ships|released?)\b/i.test(hay) && (titleMatches.length > 0 || bodyMatches.length > 0)) {
     addScore(ctx, 0.5, 'shipping/product signal');
@@ -863,7 +923,12 @@ function scoreCandidate(item, catalog) {
 
   const recency = recencyScore(item);
   if (recency == null) {
-    subtractScore(ctx, 0.4, 'missing publication date');
+    subtractScore(ctx, item.retrievalMethod === 'tavily' ? 1.0 : 0.4, item.retrievalMethod === 'tavily' ? 'missing tavily publication date' : 'missing publication date');
+    const inferredYear = inferPublicationYear(item);
+    const currentYear = new Date().getUTCFullYear();
+    if (inferredYear && inferredYear < currentYear) {
+      subtractScore(ctx, 1.2, 'stale inferred publication year');
+    }
   } else if (recency > 0) {
     addScore(ctx, recency, 'recency');
   }
@@ -872,14 +937,20 @@ function scoreCandidate(item, catalog) {
     addScore(ctx, Math.min(0.5, Math.max(0, item.score) * 0.5), 'tavily rank');
   }
 
-  if (/\b(best|tips?|guide|how to|what is|101|learn|explained|beginner|reviewed by|first impressions?|podcast)\b/i.test(title)) {
-    subtractScore(ctx, 1.1, 'evergreen/help-style title');
+  if (hasLocalizedMirrorPath(item)) {
+    subtractScore(ctx, 1.2, 'regional/localized mirror path');
   }
-  if (/\b(review|comparison|versus|vs\.?|hands-on|deals?|coupon|discount)\b/i.test(title)) {
-    subtractScore(ctx, 0.9, 'review/deal title');
+  if (/\b(podcast|webinar|episode|first impressions?|hands[- ]on|in[- ]depth review|reviewed[- ]by|reviewer profile|author profile|review|comparison|versus|vs\.?|feature differences|detailed comparison)\b/i.test(titleUrl)) {
+    subtractScore(ctx, 1.1, 'podcast/review/comparison content');
   }
-  if (/\b(world[- ]first|breakthrough|revolutionary|ultimate|transforming|game[- ]changing)\b/i.test(hay)) {
-    subtractScore(ctx, 0.3, 'marketing language');
+  if (/\b(best|tips?|guide to|guide|how to|what is|what .* measures|how .* measures|101|learn|explained|beginner|science-backed tips|bad night's sleep|readiness score|recovery activities|member averages|self-experimentation|visualize your|track progress|inside look|what's next)\b/i.test(titleUrl)) {
+    subtractScore(ctx, 1.0, 'evergreen/help-style content');
+  }
+  if (/\b(deals?|coupon|discount|purchase eligible|free with|smart scale on us|limited edition|special edition|pride collection|track your health in real time|built for .* life stage|care companion)\b/i.test(hay)) {
+    subtractScore(ctx, 0.8, 'promotional content');
+  }
+  if (/\b(world[- ]first|first[- ]ever|breakthrough|revolutionary|ultimate|transforming|game[- ]changing|all[- ]new|next[- ]generation)\b/i.test(hay)) {
+    subtractScore(ctx, 0.8, 'marketing/hype language');
   }
 
   const hasWearableSpecificity = titleMatches.length > 0
@@ -936,15 +1007,18 @@ function selectCandidates(candidates, healthcheck) {
     item.selectionThreshold = threshold;
     if ((item.selectionScore || 0) < threshold) {
       item.selectionStatus = 'below_score';
+      item.selectionDetail = `score ${item.selectionScore || 0} below threshold ${threshold}`;
       continue;
     }
     if (selected.length >= SELECTED_MAX_TARGET) {
       item.selectionStatus = 'pool_cap';
+      item.selectionDetail = `selection pool cap ${SELECTED_MAX_TARGET} reached`;
       continue;
     }
     const titleFingerprint = nearDuplicateTitleKey(item);
     if (titleFingerprint && selectedTitleFingerprints.has(titleFingerprint)) {
       item.selectionStatus = 'near_duplicate_title';
+      item.selectionDetail = `near duplicate title fingerprint: ${titleFingerprint}`;
       healthcheck.duplicate_titles++;
       continue;
     }
@@ -953,6 +1027,7 @@ function selectCandidates(candidates, healthcheck) {
       const keptForSite = selectedByTavilySite[item.sourceName] || 0;
       if (keptForSite >= maxItems) {
         item.selectionStatus = 'source_cap';
+        item.selectionDetail = `${item.sourceName} cap ${maxItems} reached`;
         healthcheck.tavily_per_site[item.sourceName].capped++;
         healthcheck.tavily_items_capped++;
         continue;
@@ -960,6 +1035,7 @@ function selectCandidates(candidates, healthcheck) {
       selectedByTavilySite[item.sourceName] = keptForSite + 1;
     }
     item.selectionStatus = 'selected';
+    item.selectionDetail = `score ${item.selectionScore || 0} met threshold ${threshold}`;
     if (titleFingerprint) selectedTitleFingerprints.add(titleFingerprint);
     selected.push(item);
   }
@@ -986,6 +1062,20 @@ function countBy(items, keyFn) {
     out[key] = (out[key] || 0) + 1;
   }
   return out;
+}
+
+function incrementMap(map, key) {
+  map[key] = (map[key] || 0) + 1;
+}
+
+function recordHardFilter(healthcheck, retrievalMethod, sourceName, reason) {
+  const stats = healthcheck.rejectedStats;
+  if (!stats) return;
+  stats.total++;
+  incrementMap(stats.byReason, reason || 'unknown');
+  incrementMap(stats.byRetrieval, retrievalMethod || 'unknown');
+  incrementMap(stats.bySource, sourceName || 'unknown');
+  incrementMap(stats.bySourceReason, `${sourceName || 'unknown'}|${reason || 'unknown'}`);
 }
 
 function buildCandidateStats(candidates, selected) {
@@ -1017,6 +1107,7 @@ function candidateReviewItem(item) {
     selectionScore: item.selectionScore,
     selectionThreshold: item.selectionThreshold,
     selectionStatus: item.selectionStatus,
+    selectionDetail: item.selectionDetail,
     selectionReasons: item.selectionReasons,
     selectionPenalties: item.selectionPenalties,
     score: item.score || null
@@ -1028,6 +1119,7 @@ function selectedFeedItem(item) {
     sourceMaxItems,
     selectionThreshold,
     selectionStatus,
+    selectionDetail,
     selectionReasons,
     selectionPenalties,
     ...out
@@ -1056,6 +1148,13 @@ async function main() {
     duplicate_urls: 0,
     duplicate_titles: 0,
     tavily_items_capped: 0,
+    rejectedStats: {
+      total: 0,
+      byReason: {},
+      byRetrieval: {},
+      bySource: {},
+      bySourceReason: {}
+    },
     top3_categories: null,
     top3_scores: null,
     top3_rejected_candidates: null
@@ -1073,22 +1172,27 @@ async function main() {
     for (const it of sourceItems) {
       if (!withinDays(it.publishedAt, args.days)) {
         healthcheck.filtered_out_by_date++;
+        recordHardFilter(healthcheck, 'rss', source.name, 'date');
         continue;
       }
       if (!passesBlacklist(it.title, blacklistPatterns)) {
         healthcheck.filtered_out_by_blacklist++;
+        recordHardFilter(healthcheck, 'rss', source.name, 'blacklist');
         continue;
       }
       if (source.keywordFilter && !passesKeywordFilter(it, source.keywordFilter, source.keywordScope)) {
         healthcheck.filtered_out_by_keyword++;
+        recordHardFilter(healthcheck, 'rss', source.name, 'keyword');
         continue;
       }
       if (source.requiredKeywordFilter && !passesRequiredKeywordFilter(it, source.requiredKeywordFilter, source.requiredKeywordScope || source.keywordScope)) {
         healthcheck.filtered_out_by_required_keyword++;
+        recordHardFilter(healthcheck, 'rss', source.name, 'required_keyword');
         continue;
       }
       if (!passesSourceExcludeFilter(it, source.excludeKeywordFilter)) {
         healthcheck.filtered_out_by_source_exclude++;
+        recordHardFilter(healthcheck, 'rss', source.name, 'source_exclude');
         continue;
       }
       const candidate = normalizeOutputItem({
@@ -1103,8 +1207,13 @@ async function main() {
       Object.assign(candidate, scoreCandidate(candidate, catalog));
       const pushed = pushUnique(candidatePool, candidate, seenUrls, seenTitles);
       if (pushed === 'pushed') healthcheck.per_source[source.name].candidates++;
-      else if (pushed === 'duplicate_title') healthcheck.duplicate_titles++;
-      else healthcheck.duplicate_urls++;
+      else if (pushed === 'duplicate_title') {
+        healthcheck.duplicate_titles++;
+        recordHardFilter(healthcheck, 'rss', source.name, 'duplicate_title');
+      } else {
+        healthcheck.duplicate_urls++;
+        recordHardFilter(healthcheck, 'rss', source.name, 'duplicate_url');
+      }
     }
   }
 
@@ -1120,22 +1229,27 @@ async function main() {
     for (const it of sourceItems) {
       if (!withinDays(it.publishedAt, args.days)) {
         healthcheck.filtered_out_by_date++;
+        recordHardFilter(healthcheck, 'api', source.name, 'date');
         continue;
       }
       if (!passesBlacklist(it.title, blacklistPatterns)) {
         healthcheck.filtered_out_by_blacklist++;
+        recordHardFilter(healthcheck, 'api', source.name, 'blacklist');
         continue;
       }
       if (source.keywordFilter && !passesKeywordFilter(it, source.keywordFilter, source.keywordScope)) {
         healthcheck.filtered_out_by_keyword++;
+        recordHardFilter(healthcheck, 'api', source.name, 'keyword');
         continue;
       }
       if (source.requiredKeywordFilter && !passesRequiredKeywordFilter(it, source.requiredKeywordFilter, source.requiredKeywordScope || source.keywordScope)) {
         healthcheck.filtered_out_by_required_keyword++;
+        recordHardFilter(healthcheck, 'api', source.name, 'required_keyword');
         continue;
       }
       if (!passesSourceExcludeFilter(it, source.excludeKeywordFilter)) {
         healthcheck.filtered_out_by_source_exclude++;
+        recordHardFilter(healthcheck, 'api', source.name, 'source_exclude');
         continue;
       }
       const candidate = normalizeOutputItem({
@@ -1150,8 +1264,13 @@ async function main() {
       Object.assign(candidate, scoreCandidate(candidate, catalog));
       const pushed = pushUnique(candidatePool, candidate, seenUrls, seenTitles);
       if (pushed === 'pushed') healthcheck.per_api_source[source.name].candidates++;
-      else if (pushed === 'duplicate_title') healthcheck.duplicate_titles++;
-      else healthcheck.duplicate_urls++;
+      else if (pushed === 'duplicate_title') {
+        healthcheck.duplicate_titles++;
+        recordHardFilter(healthcheck, 'api', source.name, 'duplicate_title');
+      } else {
+        healthcheck.duplicate_urls++;
+        recordHardFilter(healthcheck, 'api', source.name, 'duplicate_url');
+      }
     }
   }
 
@@ -1170,14 +1289,17 @@ async function main() {
       for (const it of siteItems) {
         if (!passesBlacklist(it.title, blacklistPatterns)) {
           healthcheck.filtered_out_by_blacklist++;
+          recordHardFilter(healthcheck, 'tavily', site.name, 'blacklist');
           continue;
         }
         if (site.keywordFilter && !passesKeywordFilter(it, site.keywordFilter, site.keywordScope)) {
           healthcheck.filtered_out_by_tavily_quality++;
+          recordHardFilter(healthcheck, 'tavily', site.name, 'keyword');
           continue;
         }
         if (site.requiredKeywordFilter && !passesRequiredKeywordFilter(it, site.requiredKeywordFilter, site.requiredKeywordScope || site.keywordScope)) {
           healthcheck.filtered_out_by_required_keyword++;
+          recordHardFilter(healthcheck, 'tavily', site.name, 'required_keyword');
           continue;
         }
         const tavilyExclude = [
@@ -1186,6 +1308,7 @@ async function main() {
         ];
         if (!passesSourceExcludeFilter(it, tavilyExclude)) {
           healthcheck.filtered_out_by_tavily_quality++;
+          recordHardFilter(healthcheck, 'tavily', site.name, 'source_exclude');
           continue;
         }
         const urlExclude = [
@@ -1194,18 +1317,22 @@ async function main() {
         ];
         if (!passesUrlExcludeFilter(it, urlExclude)) {
           healthcheck.filtered_out_by_tavily_quality++;
+          recordHardFilter(healthcheck, 'tavily', site.name, 'url_exclude');
           continue;
         }
         if (!passesEntryPageFilter(it)) {
           healthcheck.filtered_out_by_entry_page++;
+          recordHardFilter(healthcheck, 'tavily', site.name, 'entry_page');
           continue;
         }
         if (!passesTavilySummaryQuality(it)) {
           healthcheck.filtered_out_by_tavily_quality++;
+          recordHardFilter(healthcheck, 'tavily', site.name, 'summary_quality');
           continue;
         }
         if (!passesTavilyFreshness(it, site, args.days)) {
           healthcheck.filtered_out_by_date++;
+          recordHardFilter(healthcheck, 'tavily', site.name, 'date');
           continue;
         }
         const candidate = normalizeOutputItem({
@@ -1230,8 +1357,13 @@ async function main() {
         Object.assign(candidate, scoreCandidate(candidate, catalog));
         const pushed = pushUnique(candidatePool, candidate, seenUrls, seenTitles);
         if (pushed === 'pushed') healthcheck.tavily_per_site[site.name].qualityKept++;
-        else if (pushed === 'duplicate_title') healthcheck.duplicate_titles++;
-        else healthcheck.duplicate_urls++;
+        else if (pushed === 'duplicate_title') {
+          healthcheck.duplicate_titles++;
+          recordHardFilter(healthcheck, 'tavily', site.name, 'duplicate_title');
+        } else {
+          healthcheck.duplicate_urls++;
+          recordHardFilter(healthcheck, 'tavily', site.name, 'duplicate_url');
+        }
       }
     }
   }

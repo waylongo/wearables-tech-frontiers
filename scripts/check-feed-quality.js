@@ -52,6 +52,9 @@ function hasBadEntryTitle(title) {
     /^api\s*(?:docs?|reference|home)\b/,
     /^glossary\b/,
     /\bglossary\s*[|\-–]/,
+    /^fetch data example\b/,
+    /\bexamples?\s*[|\-–]/,
+    /^(blog|search|research papers?)\s*[|\-–]/,
     /\|\s*apple developer documentation$/,
     /^[a-z][a-z0-9]*\([^)]*\)$/
   ].some(re => re.test(t));
@@ -64,7 +67,7 @@ function hasBadUrl(url) {
   } catch {
     return false;
   }
-  return [
+  const badPaths = [
     '/privacy',
     '/privacy-policy',
     '/terms',
@@ -79,24 +82,13 @@ function hasBadUrl(url) {
     '/login',
     '/signin',
     '/sign-in'
-  ].some(path => pathname === path || pathname.startsWith(`${path}/`));
-}
-
-function knownNoise(item) {
-  const hay = `${item.title || ''} ${item.summary || ''} ${item.url || ''}`.toLowerCase();
-  const patterns = [
-    'health tech weekly rundown',
-    'best recovery activities',
-    'product launch was harder than a marathon',
-    'pride collection',
-    'xiaomi smart band 10 glimmer edition hyperos',
-    'new.c.mi.com',
-    'your oura readiness score',
-    'reviewed-by',
-    'first impressions',
-    'podcast'
   ];
-  return patterns.find(pattern => hay.includes(pattern)) || null;
+  const badPatterns = [
+    /\/(?:developer|integration)-guide\/.*(?:example|sample|tutorial|getting-started|quickstart)/,
+    /\/(?:examples?|samples?|tutorials?)\//
+  ];
+  return badPaths.some(path => pathname === path || pathname.startsWith(`${path}/`))
+    || badPatterns.some(re => re.test(pathname));
 }
 
 function nearDuplicateTitleKey(item) {
@@ -146,8 +138,6 @@ function scanFeed(feed) {
     if (markdownHeadingRe.test(body)) addContentFinding(findings, 'markdown_heading_residue', item, 'Title or summary contains markdown headings');
     if (hasBadEntryTitle(item.title)) addContentFinding(findings, 'entry_page_title', item, 'Title looks like a hub, guide, or API index page');
     if (hasBadUrl(item.url)) addContentFinding(findings, 'entry_page_url', item, 'URL path looks like a hub, guide, help, privacy, or terms page');
-    const noise = knownNoise(item);
-    if (noise) addContentFinding(findings, 'known_noise', item, noise);
   }
 
   if (Number(feed.stats?.tavilySitesFailed || 0) > 0) {

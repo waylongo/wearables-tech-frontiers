@@ -1705,10 +1705,7 @@
         ],
         "keywordScope": "title_summary",
         "maxItems": 2,
-        "requireRecentYear": true,
-        "excludeKeywordFilter": [
-          "pride collection"
-        ]
+        "requireRecentYear": true
       },
       {
         "name": "Apple Developer HealthKit / WorkoutKit / watchOS",
@@ -2018,20 +2015,7 @@
           "research stack"
         ],
         "keywordScope": "title_summary",
-        "maxItems": 2,
-        "urlExcludeFilter": [
-          "path-prefix:/ca",
-          "path-prefix:/cl",
-          "path-prefix:/my",
-          "path-prefix:/ph",
-          "path-prefix:/ca_fr"
-        ],
-        "excludeKeywordFilter": [
-          "purchase eligible",
-          "smart scale on us",
-          "withings smart scale on us",
-          "care companion for family health and safety"
-        ]
+        "maxItems": 2
       },
       {
         "name": "Samsung Developers Health",
@@ -2378,17 +2362,7 @@
         "keywordScope": "title_summary",
         "maxItems": 2,
         "urlExcludeFilter": [
-          ".pdf",
-          "path:/blog/readiness-score",
-          "path-prefix:/blog/it/reviewed-by"
-        ],
-        "excludeKeywordFilter": [
-          "healthcare guide",
-          "science-backed tips",
-          "bad night's sleep",
-          "built for women's health across every life stage",
-          "your oura readiness score",
-          "reviewed-by"
+          ".pdf"
         ]
       },
       {
@@ -2496,19 +2470,6 @@
         "maxItems": 2,
         "urlExcludeFilter": [
           "community.whoop.com"
-        ],
-        "excludeKeywordFilter": [
-          "podcast",
-          "what whoop measures",
-          "how whoop measures",
-          "effects of alcohol on the body",
-          "whoop member averages",
-          "trend views",
-          "self-experimentation",
-          "guide to",
-          "best recovery activities",
-          "recovery activities for better recovery scores",
-          "product launch was harder than a marathon"
         ]
       },
       {
@@ -2888,10 +2849,6 @@
         "requireRecentYear": true,
         "urlExcludeFilter": [
           "path:/biowearables.html"
-        ],
-        "excludeKeywordFilter": [
-          "biowearable products and solutions",
-          "track your health in real time"
         ]
       },
       {
@@ -3169,17 +3126,7 @@
           "research stack"
         ],
         "keywordScope": "title_summary",
-        "maxItems": 3,
-        "urlExcludeFilter": [
-          "detailed-comparison-review"
-        ],
-        "excludeKeywordFilter": [
-          "in-depth review",
-          "feature differences",
-          "comparison review",
-          "first impressions",
-          "podcast"
-        ]
+        "maxItems": 3
       },
       {
         "name": "NeurIPS Health Workshops / OpenReview",

@@ -158,11 +158,40 @@ function decodeEntitiesOnce(s) {
     minus: '-',
     plusmn: '+/-',
     times: 'x',
+    aacute: 'á',
+    eacute: 'é',
+    iacute: 'í',
+    oacute: 'ó',
+    uacute: 'ú',
+    agrave: 'à',
+    egrave: 'è',
+    igrave: 'ì',
+    ograve: 'ò',
+    ugrave: 'ù',
+    acirc: 'â',
+    ecirc: 'ê',
+    icirc: 'î',
+    ocirc: 'ô',
+    ucirc: 'û',
+    atilde: 'ã',
+    otilde: 'õ',
+    auml: 'ä',
+    euml: 'ë',
+    iuml: 'ï',
+    ouml: 'ö',
+    uuml: 'ü',
+    ntilde: 'ñ',
+    ccedil: 'ç',
     ge: '>=',
     le: '<='
   };
   return (s || '')
-    .replace(/&([a-z]+);/gi, (m, name) => Object.prototype.hasOwnProperty.call(named, name.toLowerCase()) ? named[name.toLowerCase()] : m)
+    .replace(/&([a-z]+);/gi, (m, name) => {
+      const key = name.toLowerCase();
+      if (!Object.prototype.hasOwnProperty.call(named, key)) return m;
+      const value = named[key];
+      return /^[A-Z]/.test(name) && value.length === 1 ? value.toUpperCase() : value;
+    })
     .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
     .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(parseInt(n, 10)));
 }
