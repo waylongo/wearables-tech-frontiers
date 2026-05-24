@@ -2020,6 +2020,10 @@
         "keywordScope": "title_summary",
         "maxItems": 2,
         "urlExcludeFilter": [
+          "path-prefix:/ca",
+          "path-prefix:/cl",
+          "path-prefix:/my",
+          "path-prefix:/ph",
           "path-prefix:/ca_fr"
         ],
         "excludeKeywordFilter": [
