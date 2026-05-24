@@ -49,6 +49,9 @@ jobs:
             node scripts/generate-feed.js
           fi
 
+      - name: Check feed quality
+        run: node scripts/check-feed-quality.js --strict
+
       - name: Write run summary
         run: |
           node <<'NODE' >> "$GITHUB_STEP_SUMMARY"

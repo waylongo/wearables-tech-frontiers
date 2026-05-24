@@ -26,6 +26,15 @@ const CLINICAL_TRIALS_SEARCH_URL = 'https://clinicaltrials.gov/api/v2/studies';
 const PUBMED_SEARCH_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi';
 const PUBMED_SUMMARY_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi';
 const DAY_MS = 24 * 60 * 60 * 1000;
+const TAVILY_MAX_RESULTS_PER_SITE = 10;
+const SELECTED_MIN_TARGET = 35;
+const SELECTED_MAX_TARGET = 55;
+const SELECTION_THRESHOLDS = {
+  default: 3.2,
+  tavily: 3.5,
+  vendor_websearch: 3.5,
+  company_research: 3.5
+};
 
 function parseArgs() {
   const args = { rssOnly: false, days: DEFAULT_LOOKBACK_DAYS };
@@ -67,6 +76,9 @@ function decodeEntitiesOnce(s) {
     ldquo: '"',
     rdquo: '"',
     hellip: '...',
+    minus: '-',
+    plusmn: '+/-',
+    times: 'x',
     ge: '>=',
     le: '<='
   };
@@ -300,6 +312,8 @@ function passesEntryPageFilter(item) {
     /^index\(after:\)$/,
     // Generic docs hub roots
     /^api reference\b/,
+    /^glossary\b/,
+    /\bglossary\s*[|\-–]/,
     /^reference index\b/,
     /^developer documentation\b/,
     /^documentation (home|archive|center|centre)$/,
@@ -331,6 +345,22 @@ function cleanTavilySummary(s) {
     out = next;
   }
   return out.replace(/\s+/g, ' ').trim();
+}
+
+function cleanTextField(value, maxLength) {
+  const out = stripTags(decodeEntities(value || ''))
+    .replace(/(^|\s)#{1,6}\s+/g, '$1')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return maxLength ? out.slice(0, maxLength) : out;
+}
+
+function normalizeOutputItem(item) {
+  return {
+    ...item,
+    title: cleanTextField(item.title, 500),
+    summary: cleanTextField(item.summary, 2000)
+  };
 }
 
 function inferSignalType(item) {
@@ -609,14 +639,14 @@ async function fetchTavilySite(site, apiKey, days) {
         include_domains: domains,
         time_range: tavilyTimeRange(days),
         search_depth: 'basic',
-        max_results: 5,
+        max_results: TAVILY_MAX_RESULTS_PER_SITE,
         include_answer: false,
         include_raw_content: false
       })
     });
     if (!res.ok) return { site, items: [], error: `HTTP ${res.status}` };
     const data = await res.json();
-    const items = (data.results || []).slice(0, 5).map(r => ({
+    const items = (data.results || []).slice(0, TAVILY_MAX_RESULTS_PER_SITE).map(r => ({
       title: (r.title || '').slice(0, 500),
       url: r.url,
       publishedAt: normalizePublishedAt(r.published_date),
@@ -704,6 +734,307 @@ function pushUnique(items, item, seenUrls, seenTitles) {
   return 'pushed';
 }
 
+const SCORING_RELEVANCE_TERMS = [
+  'healthkit',
+  'workoutkit',
+  'health connect',
+  'health services',
+  'wear os',
+  'samsung health',
+  'huawei health',
+  'connect iq',
+  'galaxy ring',
+  'smart ring',
+  'smart rings',
+  'coros',
+  'suunto',
+  'polar',
+  'wahoo',
+  'earable',
+  'earables',
+  'blood pressure',
+  'blood glucose',
+  'glucose monitor',
+  'arrhythmia',
+  'afib',
+  'sleep apnea',
+  'recovery score',
+  'strain',
+  'body battery',
+  'vitals',
+  'respiratory rate'
+];
+
+function uniqueMatches(text, keywords) {
+  const out = [];
+  const seen = new Set();
+  for (const keyword of keywords || []) {
+    const normalized = normalizeFilterText(keyword);
+    if (!normalized || seen.has(normalized)) continue;
+    if (keywordMatches(text, normalized)) {
+      seen.add(normalized);
+      out.push(normalized);
+    }
+  }
+  return out;
+}
+
+function addScore(ctx, points, reason) {
+  ctx.score += points;
+  ctx.reasons.push(`${reason} +${points.toFixed(1)}`);
+}
+
+function subtractScore(ctx, points, reason) {
+  ctx.score -= points;
+  ctx.penalties.push(`${reason} -${points.toFixed(1)}`);
+}
+
+function sourcePriorityScore(priority) {
+  const p = String(priority || '').toUpperCase();
+  if (p === 'P0') return 0.8;
+  if (p === 'P1') return 0.5;
+  if (p === 'P2') return 0.2;
+  return 0.3;
+}
+
+function recencyScore(item) {
+  const ms = parseDateMs(item.publishedAt);
+  if (ms == null) return null;
+  const ageDays = (Date.now() - ms) / DAY_MS;
+  if (ageDays <= 7) return 0.8;
+  if (ageDays <= 14) return 0.5;
+  if (ageDays <= 30) return 0.2;
+  return 0;
+}
+
+function scoreCandidate(item, catalog) {
+  const title = normalizeFilterText(item.title || '');
+  const summary = normalizeFilterText(item.summary || '');
+  const hay = `${title} ${summary}`;
+  const ctx = { score: 0, reasons: [], penalties: [] };
+
+  const categoryScores = {
+    clinical_regulatory: 2.2,
+    academic: 1.8,
+    company_research: 1.2,
+    industry_news: 1.2,
+    vendor_websearch: 0.8
+  };
+  addScore(ctx, categoryScores[item.sourceCategory] ?? 0.8, `category:${item.sourceCategory || 'unknown'}`);
+
+  const retrievalScores = { api: 0.8, rss: 0.7, tavily: 0.3 };
+  addScore(ctx, retrievalScores[item.retrievalMethod] ?? 0.4, `retrieval:${item.retrievalMethod || 'unknown'}`);
+
+  addScore(ctx, sourcePriorityScore(item.sourcePriority), `priority:${item.sourcePriority || 'default'}`);
+
+  const signalScores = {
+    clinical_regulatory: 1.4,
+    algorithm_evidence: 1.1,
+    platform_api: 1.0,
+    business_structure: 0.8,
+    product_market: 0.5
+  };
+  addScore(ctx, signalScores[item.signalType] ?? 0.4, `signal:${item.signalType || 'unknown'}`);
+
+  const relevanceKeywords = [
+    ...(catalog.keyword_filters?.wearables_en || []),
+    ...SCORING_RELEVANCE_TERMS
+  ];
+  const titleMatches = uniqueMatches(title, relevanceKeywords);
+  const bodyMatches = uniqueMatches(summary, relevanceKeywords);
+  const relevanceScore = Math.min(2.4, titleMatches.length * 0.75 + bodyMatches.length * 0.25);
+  if (relevanceScore > 0) addScore(ctx, relevanceScore, `relevance:${[...new Set([...titleMatches, ...bodyMatches])].slice(0, 5).join(',')}`);
+
+  if (/\b(fda|510\(k\)|de novo|pma|clearance|recall|medwatch|clinical trial|nct\d+|endpoint)\b/i.test(hay)) {
+    addScore(ctx, 0.9, 'clinical/regulatory evidence');
+  }
+  if (/\b(api|sdk|changelog|change log|release notes?|schema|permission|healthkit|health connect|wear os|connect iq)\b/i.test(hay)) {
+    addScore(ctx, 0.8, 'platform/api signal');
+  }
+  if (/\b(validation|validated|prospective|cohort|dataset|foundation model|self-supervised|benchmark|n\s*[=>=]\s*\d+)/i.test(hay)) {
+    addScore(ctx, 0.8, 'evidence/method detail');
+  }
+  if (/\b(partnership|partners?|acquir|ipo|funding|series [abc]|reimbursement|insurance|ehr)\b/i.test(hay)) {
+    addScore(ctx, 0.6, 'market/business signal');
+  }
+  if (/\b(launch|launches|announces|introducing|rolls out|expands|ships|released?)\b/i.test(hay) && (titleMatches.length > 0 || bodyMatches.length > 0)) {
+    addScore(ctx, 0.5, 'shipping/product signal');
+  }
+
+  const recency = recencyScore(item);
+  if (recency == null) {
+    subtractScore(ctx, 0.4, 'missing publication date');
+  } else if (recency > 0) {
+    addScore(ctx, recency, 'recency');
+  }
+
+  if (Number.isFinite(item.score)) {
+    addScore(ctx, Math.min(0.5, Math.max(0, item.score) * 0.5), 'tavily rank');
+  }
+
+  if (/\b(best|tips?|guide|how to|what is|101|learn|explained|beginner|reviewed by|first impressions?|podcast)\b/i.test(title)) {
+    subtractScore(ctx, 1.1, 'evergreen/help-style title');
+  }
+  if (/\b(review|comparison|versus|vs\.?|hands-on|deals?|coupon|discount)\b/i.test(title)) {
+    subtractScore(ctx, 0.9, 'review/deal title');
+  }
+  if (/\b(world[- ]first|breakthrough|revolutionary|ultimate|transforming|game[- ]changing)\b/i.test(hay)) {
+    subtractScore(ctx, 0.3, 'marketing language');
+  }
+
+  const hasWearableSpecificity = titleMatches.length > 0
+    || bodyMatches.length > 0
+    || /\b(wearable|watch|ring|tracker|sensor|ppg|ecg|ekg|hrv|spo2|cgm|imu|actigraphy|biosignal|biomarker)\b/i.test(hay);
+  if (!hasWearableSpecificity && ['company_research', 'industry_news', 'vendor_websearch'].includes(item.sourceCategory)) {
+    subtractScore(ctx, 1.2, 'weak wearable specificity');
+  }
+
+  return {
+    selectionScore: Math.round(ctx.score * 10) / 10,
+    selectionReasons: ctx.reasons,
+    selectionPenalties: ctx.penalties
+  };
+}
+
+function minimumSelectionScore(item) {
+  if (item.retrievalMethod === 'tavily') return SELECTION_THRESHOLDS.tavily;
+  if (item.sourceCategory === 'vendor_websearch') return SELECTION_THRESHOLDS.vendor_websearch;
+  if (item.sourceCategory === 'company_research') return SELECTION_THRESHOLDS.company_research;
+  return SELECTION_THRESHOLDS.default;
+}
+
+function sortForSelection(a, b) {
+  const scoreDelta = (b.selectionScore || 0) - (a.selectionScore || 0);
+  if (scoreDelta !== 0) return scoreDelta;
+  return (parseDateMs(b.publishedAt) || 0) - (parseDateMs(a.publishedAt) || 0);
+}
+
+function sortForOutput(a, b) {
+  return (parseDateMs(b.publishedAt) || 0) - (parseDateMs(a.publishedAt) || 0)
+    || (b.selectionScore || 0) - (a.selectionScore || 0);
+}
+
+function nearDuplicateTitleKey(item) {
+  const words = normalizeFilterText(item.title || '')
+    .replace(/\[[^\]]+\]/g, ' ')
+    .replace(/\b(?:samsung|apple|google|fitbit|whoop|oura|garmin|dexcom|newsroom|global|canada|philippines)\b/g, ' ')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  if (words.length < 5) return null;
+  return words.slice(0, 5).join(' ');
+}
+
+function selectCandidates(candidates, healthcheck) {
+  const selected = [];
+  const selectedByTavilySite = {};
+  const selectedTitleFingerprints = new Set();
+  const scored = candidates.map(item => ({ ...item }));
+  for (const item of scored.sort(sortForSelection)) {
+    const threshold = minimumSelectionScore(item);
+    item.selectionThreshold = threshold;
+    if ((item.selectionScore || 0) < threshold) {
+      item.selectionStatus = 'below_score';
+      continue;
+    }
+    if (selected.length >= SELECTED_MAX_TARGET) {
+      item.selectionStatus = 'pool_cap';
+      continue;
+    }
+    const titleFingerprint = nearDuplicateTitleKey(item);
+    if (titleFingerprint && selectedTitleFingerprints.has(titleFingerprint)) {
+      item.selectionStatus = 'near_duplicate_title';
+      healthcheck.duplicate_titles++;
+      continue;
+    }
+    if (item.retrievalMethod === 'tavily') {
+      const maxItems = Number.isFinite(item.sourceMaxItems) ? item.sourceMaxItems : 2;
+      const keptForSite = selectedByTavilySite[item.sourceName] || 0;
+      if (keptForSite >= maxItems) {
+        item.selectionStatus = 'source_cap';
+        healthcheck.tavily_per_site[item.sourceName].capped++;
+        healthcheck.tavily_items_capped++;
+        continue;
+      }
+      selectedByTavilySite[item.sourceName] = keptForSite + 1;
+    }
+    item.selectionStatus = 'selected';
+    if (titleFingerprint) selectedTitleFingerprints.add(titleFingerprint);
+    selected.push(item);
+  }
+  return { selected: selected.sort(sortForOutput), candidates: scored };
+}
+
+function incrementSelectedSourceCount(item, healthcheck) {
+  if (item.retrievalMethod === 'rss') {
+    if (healthcheck.per_source[item.sourceName]) healthcheck.per_source[item.sourceName].kept++;
+  } else if (item.retrievalMethod === 'api') {
+    if (healthcheck.per_api_source[item.sourceName]) healthcheck.per_api_source[item.sourceName].kept++;
+  } else if (item.retrievalMethod === 'tavily') {
+    if (healthcheck.tavily_per_site[item.sourceName]) {
+      healthcheck.tavily_per_site[item.sourceName].finalKept++;
+      healthcheck.tavily_per_site[item.sourceName].kept++;
+    }
+  }
+}
+
+function countBy(items, keyFn) {
+  const out = {};
+  for (const item of items) {
+    const key = keyFn(item) || 'unknown';
+    out[key] = (out[key] || 0) + 1;
+  }
+  return out;
+}
+
+function buildCandidateStats(candidates, selected) {
+  return {
+    candidateItems: candidates.length,
+    selectedItems: selected.length,
+    targetMin: SELECTED_MIN_TARGET,
+    targetMax: SELECTED_MAX_TARGET,
+    thresholds: SELECTION_THRESHOLDS,
+    byStatus: countBy(candidates, item => item.selectionStatus),
+    byRetrieval: countBy(candidates, item => item.retrievalMethod),
+    selectedByRetrieval: countBy(selected, item => item.retrievalMethod),
+    byCategory: countBy(candidates, item => item.sourceCategory),
+    selectedByCategory: countBy(selected, item => item.sourceCategory)
+  };
+}
+
+function candidateReviewItem(item) {
+  return {
+    title: item.title,
+    url: item.url,
+    publishedAt: item.publishedAt,
+    summary: cleanTextField(item.summary, 500),
+    sourceName: item.sourceName,
+    sourceCategory: item.sourceCategory,
+    retrievalMethod: item.retrievalMethod,
+    signalType: item.signalType,
+    sourcePriority: item.sourcePriority,
+    selectionScore: item.selectionScore,
+    selectionThreshold: item.selectionThreshold,
+    selectionStatus: item.selectionStatus,
+    selectionReasons: item.selectionReasons,
+    selectionPenalties: item.selectionPenalties,
+    score: item.score || null
+  };
+}
+
+function selectedFeedItem(item) {
+  const {
+    sourceMaxItems,
+    selectionThreshold,
+    selectionStatus,
+    selectionReasons,
+    selectionPenalties,
+    ...out
+  } = item;
+  return out;
+}
+
 async function main() {
   const args = parseArgs();
   const catalog = JSON.parse(await readFile(CATALOG_PATH, 'utf-8'));
@@ -732,12 +1063,12 @@ async function main() {
 
   const sources = Object.values(catalog.primary_rss || {}).flat();
   const rssResults = await Promise.all(sources.map(fetchFeed));
-  const items = [];
+  const candidatePool = [];
   const seenUrls = new Set();
   const seenTitles = new Set();
 
   for (const { source, items: sourceItems, error } of rssResults) {
-    healthcheck.per_source[source.name] = { fetched: sourceItems.length, kept: 0, error };
+    healthcheck.per_source[source.name] = { fetched: sourceItems.length, candidates: 0, kept: 0, error };
     if (error) continue;
     for (const it of sourceItems) {
       if (!withinDays(it.publishedAt, args.days)) {
@@ -760,7 +1091,7 @@ async function main() {
         healthcheck.filtered_out_by_source_exclude++;
         continue;
       }
-      const pushed = pushUnique(items, {
+      const candidate = normalizeOutputItem({
         ...it,
         sourceName: source.name,
         sourceCategory: source.category,
@@ -768,8 +1099,10 @@ async function main() {
         sourceLang: source.lang || 'en',
         retrievalMethod: 'rss',
         signalType: inferSignalType({ ...it, sourceName: source.name, sourceCategory: source.category })
-      }, seenUrls, seenTitles);
-      if (pushed === 'pushed') healthcheck.per_source[source.name].kept++;
+      });
+      Object.assign(candidate, scoreCandidate(candidate, catalog));
+      const pushed = pushUnique(candidatePool, candidate, seenUrls, seenTitles);
+      if (pushed === 'pushed') healthcheck.per_source[source.name].candidates++;
       else if (pushed === 'duplicate_title') healthcheck.duplicate_titles++;
       else healthcheck.duplicate_urls++;
     }
@@ -782,7 +1115,7 @@ async function main() {
   ];
   const apiResults = await Promise.all(apiFetchers.map(({ source, fetcher }) => fetcher(source)));
   for (const { source, items: sourceItems, error } of apiResults) {
-    healthcheck.per_api_source[source.name] = { fetched: sourceItems.length, kept: 0, error };
+    healthcheck.per_api_source[source.name] = { fetched: sourceItems.length, candidates: 0, kept: 0, error };
     if (error) continue;
     for (const it of sourceItems) {
       if (!withinDays(it.publishedAt, args.days)) {
@@ -805,17 +1138,18 @@ async function main() {
         healthcheck.filtered_out_by_source_exclude++;
         continue;
       }
-      const item = {
+      const candidate = normalizeOutputItem({
         ...it,
         sourceName: source.name,
         sourceCategory: source.category,
         sourcePriority: source.priority,
         sourceLang: source.lang || 'en',
         retrievalMethod: 'api'
-      };
-      item.signalType = source.signalType || inferSignalType(item);
-      const pushed = pushUnique(items, item, seenUrls, seenTitles);
-      if (pushed === 'pushed') healthcheck.per_api_source[source.name].kept++;
+      });
+      candidate.signalType = source.signalType || inferSignalType(candidate);
+      Object.assign(candidate, scoreCandidate(candidate, catalog));
+      const pushed = pushUnique(candidatePool, candidate, seenUrls, seenTitles);
+      if (pushed === 'pushed') healthcheck.per_api_source[source.name].candidates++;
       else if (pushed === 'duplicate_title') healthcheck.duplicate_titles++;
       else healthcheck.duplicate_urls++;
     }
@@ -874,13 +1208,7 @@ async function main() {
           healthcheck.filtered_out_by_date++;
           continue;
         }
-        healthcheck.tavily_per_site[site.name].qualityKept++;
-        if (healthcheck.tavily_per_site[site.name].finalKept >= maxItems) {
-          healthcheck.tavily_per_site[site.name].capped++;
-          healthcheck.tavily_items_capped++;
-          continue;
-        }
-        const pushed = pushUnique(items, {
+        const candidate = normalizeOutputItem({
           title: it.title,
           url: it.url,
           publishedAt: it.publishedAt,
@@ -891,24 +1219,28 @@ async function main() {
           sourceLang: 'en',
           retrievalMethod: 'tavily',
           score: it.score || null,
+          sourceMaxItems: maxItems,
           signalType: site.signalType || inferSignalType({
             title: it.title,
             summary: it.summary,
             sourceName: site.name,
             sourceCategory: site.sourceCategory || 'vendor_websearch'
           })
-        }, seenUrls, seenTitles);
-        if (pushed === 'pushed') {
-          healthcheck.tavily_per_site[site.name].finalKept++;
-          healthcheck.tavily_per_site[site.name].kept++;
-        }
+        });
+        Object.assign(candidate, scoreCandidate(candidate, catalog));
+        const pushed = pushUnique(candidatePool, candidate, seenUrls, seenTitles);
+        if (pushed === 'pushed') healthcheck.tavily_per_site[site.name].qualityKept++;
         else if (pushed === 'duplicate_title') healthcheck.duplicate_titles++;
         else healthcheck.duplicate_urls++;
       }
     }
   }
 
-  items.sort((a, b) => (parseDateMs(b.publishedAt) || 0) - (parseDateMs(a.publishedAt) || 0));
+  const { selected, candidates } = selectCandidates(candidatePool, healthcheck);
+  for (const item of selected) incrementSelectedSourceCount(item, healthcheck);
+  const items = selected.map(selectedFeedItem);
+  healthcheck.candidate_items = candidates.length;
+  healthcheck.selected_items = items.length;
   const groupedByCategory = {};
   for (const item of items) (groupedByCategory[item.sourceCategory] ||= []).push(item);
 
@@ -916,7 +1248,7 @@ async function main() {
   await saveState(state, items);
 
   const feed = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     status: 'ok',
     generatedAt: new Date().toISOString(),
     lookbackDays: args.days,
@@ -934,6 +1266,8 @@ async function main() {
       tavilySitesFailed: Object.values(healthcheck.tavily_per_site).filter(x => x.error).length
     },
     items,
+    candidateItems: candidates.map(candidateReviewItem),
+    candidateStats: buildCandidateStats(candidates, selected),
     groupedByCategory,
     keywordFilters: catalog.keyword_filters || {},
     scarcityTaxonomy: catalog.scarcity_taxonomy || null,

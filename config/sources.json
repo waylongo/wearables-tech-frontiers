@@ -1906,6 +1906,7 @@
           "partner hub",
           "whoop 101",
           "connect iq sdk",
+          "glossary",
           "documentation archive",
           "getting started",
           "quickstart",
@@ -2495,6 +2496,10 @@
         "excludeKeywordFilter": [
           "podcast",
           "what whoop measures",
+          "how whoop measures",
+          "effects of alcohol on the body",
+          "whoop member averages",
+          "trend views",
           "self-experimentation",
           "guide to",
           "best recovery activities",
@@ -2828,7 +2833,8 @@
           "/reference/kotlin",
           "/reference/androidx",
           "/reference",
-          "path:/docs/dexcom/sandbox-data"
+          "path:/docs/dexcom/sandbox-data",
+          "path:/docs/dexcom/glossary"
         ]
       },
       {
@@ -2875,6 +2881,7 @@
         ],
         "keywordScope": "title_summary",
         "maxItems": 2,
+        "requireRecentYear": true,
         "urlExcludeFilter": [
           "path:/biowearables.html"
         ],
@@ -3165,7 +3172,9 @@
         "excludeKeywordFilter": [
           "in-depth review",
           "feature differences",
-          "comparison review"
+          "comparison review",
+          "first impressions",
+          "podcast"
         ]
       },
       {

@@ -29,6 +29,7 @@ jobs:
         run: |
           node --check scripts/prepare-digest.js
           node --check scripts/generate-feed.js
+          node --check scripts/check-feed-quality.js
 
       - name: Validate static artifacts
         run: |
@@ -43,6 +44,7 @@ jobs:
             'state-feed.json',
             'scripts/prepare-digest.js',
             'scripts/generate-feed.js',
+            'scripts/check-feed-quality.js',
             'prompts/digest-intro.md',
             'prompts/summarize-papers.md',
             'prompts/summarize-official.md',
@@ -131,6 +133,9 @@ jobs:
           const state = JSON.parse(fs.readFileSync('state-feed.json', 'utf8'));
           if (!state || typeof state !== 'object') throw new Error('state-feed.json must be an object');
           NODE
+
+      - name: Check feed quality
+        run: node scripts/check-feed-quality.js
 
       - name: Smoke test local fallback
         run: |

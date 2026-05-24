@@ -155,6 +155,9 @@ function decodeEntitiesOnce(s) {
     ldquo: '"',
     rdquo: '"',
     hellip: '...',
+    minus: '-',
+    plusmn: '+/-',
+    times: 'x',
     ge: '>=',
     le: '<='
   };
