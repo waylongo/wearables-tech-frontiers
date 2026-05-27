@@ -28,17 +28,18 @@ const USER_CONFIG = join(USER_DIR, 'config.json');
 const USER_CATALOG = join(USER_DIR, 'sources.json');
 const USER_PROMPTS_DIR = join(USER_DIR, 'prompts');
 
-const REMOTE_CONTENTS_BASE = 'https://api.github.com/repos/waylongo/wearables-tech-frontiers/contents';
-const REMOTE_FEED = `${REMOTE_CONTENTS_BASE}/feed-wearables.json?ref=main`;
-const REMOTE_CATALOG = `${REMOTE_CONTENTS_BASE}/config/sources.json?ref=main`;
-const REMOTE_PROMPTS = `${REMOTE_CONTENTS_BASE}/prompts`;
+const REMOTE_RAW_BASE = 'https://raw.githubusercontent.com/waylongo/wearables-tech-frontiers/main';
+const REMOTE_FEED = `${REMOTE_RAW_BASE}/feed-wearables.json`;
+const REMOTE_CATALOG = `${REMOTE_RAW_BASE}/config/sources.json`;
+const REMOTE_PROMPTS = `${REMOTE_RAW_BASE}/prompts`;
 
 const PROMPT_FILES = [
   'digest-intro.md',
   'summarize-papers.md',
   'summarize-official.md',
   'summarize-news.md',
-  'translate.md'
+  'translate.md',
+  'slides-report.md'
 ];
 
 const USER_AGENT = 'Mozilla/5.0 (wearables-tech-frontiers-skill/2.0)';
@@ -240,14 +241,14 @@ function parseFeed(xml) {
 async function httpGet(url, timeoutMs = 15000) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
-  const isGithubContents = url.startsWith(REMOTE_CONTENTS_BASE);
+  const isGithubRaw = url.startsWith(REMOTE_RAW_BASE);
   try {
     const res = await fetch(url, {
       signal: controller.signal,
       headers: {
         'User-Agent': USER_AGENT,
-        'Accept': isGithubContents
-          ? 'application/vnd.github.raw+json'
+        'Accept': isGithubRaw
+          ? 'application/json'
           : 'application/rss+xml, application/atom+xml, application/xml, application/json, text/xml, */*'
       }
     });
@@ -302,7 +303,7 @@ async function loadPrompt(filename, noRemote, healthcheck) {
     return await readFile(localPath, 'utf-8');
   }
   if (!noRemote) {
-    const r = await httpGet(`${REMOTE_PROMPTS}/${filename}?ref=main`, 6000);
+    const r = await httpGet(`${REMOTE_PROMPTS}/${filename}`, 6000);
     if (r.ok && r.text) {
       healthcheck.prompt_sources[filename] = 'remote';
       return r.text;

@@ -38,9 +38,13 @@ Not covered: X/Twitter, paid funding databases, individual openFDA adverse-event
 5. Agent output
    prompts/*.md
    Claude Code / Codex digest
+
+6. Optional slide report
+   templates/slides.html -> wtf-YYYY-MM-slides.html
+   scripts/export-slides-pdf.sh -> wtf-YYYY-MM-slides.pdf
 ```
 
-By default, `/wtf` reads the central feed through the GitHub Contents API.
+By default, `/wtf` reads the central feed through the GitHub raw CDN.
 
 ## Install
 
@@ -69,3 +73,14 @@ Examples:
 - `/wtf past 14 days`
 - `/wtf academic and company research only`
 - `/wtf switch output to Chinese`
+
+After a digest, `/wtf` can optionally generate a 16:9 HTML slide report and then
+export it to PDF:
+
+```text
+wtf-YYYY-MM-slides.html
+wtf-YYYY-MM-slides.pdf
+```
+
+Files are written to the current directory; existing names get `-2`, `-3`, and
+so on. PDF export requires Chrome/Chromium and uses print-safe slide CSS.

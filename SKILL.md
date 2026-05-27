@@ -78,6 +78,8 @@ Follow the prompts returned by the script:
 - `prompts.summarize_official`: Company Research items from `company_research`
 - `prompts.summarize_papers`: Academic items from `academic`
 - `prompts.translate`: apply when `config.language` is `zh` or `bilingual`
+- `prompts.slides_report`: optional HTML slide report generation after the
+  digest has been written
 
 Use this body order after Top Signals:
 
@@ -97,6 +99,50 @@ Language behavior:
 - `en`: English only
 - `zh`: Chinese only, keeping product names and technical abbreviations in English
 - `bilingual`: Chinese first, paired with English where useful
+
+## Optional HTML Slides
+
+After producing the digest, ask the user:
+
+```text
+需要把这次 digest 生成 HTML 幻灯片报告吗？
+```
+
+If the user says no, stop. If the user says yes:
+
+1. Reuse the current `prepare-digest.js` JSON from this digest run. Do not rerun
+   the feed script, refetch article URLs, or run web search.
+2. Read `${CLAUDE_SKILL_DIR:-$PWD}/templates/slides.html`,
+   `${CLAUDE_SKILL_DIR:-$PWD}/docs/slides-design.md`, and
+   `prompts.slides_report`.
+3. Generate a 16:9 interactive slide deck with richer editorial analysis than
+   the digest text, following the slide report prompt and design spec. Treat
+   each slide as a fixed 16:9 canvas: at most 3 Top Signal cards on the overview
+   slide, at most 4 body cards per slide, and no important content that requires
+   scrolling to read.
+4. Write the file to the current working directory as
+   `wtf-YYYY-MM-slides.html`, using the digest `generatedAt` month in UTC.
+   If the file exists, append `-2`, `-3`, and so on.
+5. Verify the HTML has no remaining `{{...}}` placeholders before reporting the
+   path.
+
+Then ask:
+
+```text
+需要导出为 PDF 吗？
+```
+
+If the user says yes, run:
+
+```bash
+bash "${CLAUDE_SKILL_DIR:-$PWD}/scripts/export-slides-pdf.sh" <html-file>
+```
+
+The PDF should use the same basename, for example `wtf-2026-05-slides.pdf`.
+After export, inspect representative pages for page-edge clipping, single-column
+card collapse, hidden headings, and missing source links. If Chrome/Chromium is
+unavailable, explain that the user can print the HTML from a browser with a
+960x540px page size, no margins, and background graphics enabled.
 
 ## Configuration
 
