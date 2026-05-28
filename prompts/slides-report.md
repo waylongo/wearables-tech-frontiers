@@ -8,7 +8,7 @@ run web search.
 ## Source Files
 
 - Use `templates/slides.html` as the HTML template.
-- Use `docs/slides-design.md` as the visual system. The generated report must
+- Use `prompts/slides-design.md` as the visual system. The generated report must
   follow that design spec: warm parchment background, terracotta accent, warm
   neutrals, serif headings, light shadows, grid cards, no gradients, and no heavy
   shadows.

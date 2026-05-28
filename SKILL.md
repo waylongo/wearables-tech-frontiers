@@ -105,7 +105,7 @@ Language behavior:
 After producing the digest, ask the user:
 
 ```text
-需要把这次 digest 生成 HTML 幻灯片报告吗？
+Generate an HTML slide report for this digest?
 ```
 
 If the user says no, stop. If the user says yes:
@@ -113,7 +113,7 @@ If the user says no, stop. If the user says yes:
 1. Reuse the current `prepare-digest.js` JSON from this digest run. Do not rerun
    the feed script, refetch article URLs, or run web search.
 2. Read `${CLAUDE_SKILL_DIR:-$PWD}/templates/slides.html`,
-   `${CLAUDE_SKILL_DIR:-$PWD}/docs/slides-design.md`, and
+   `${CLAUDE_SKILL_DIR:-$PWD}/prompts/slides-design.md`, and
    `prompts.slides_report`.
 3. Generate a 16:9 interactive slide deck with richer editorial analysis than
    the digest text, following the slide report prompt and design spec. Treat
@@ -129,7 +129,7 @@ If the user says no, stop. If the user says yes:
 Then ask:
 
 ```text
-需要导出为 PDF 吗？
+Export the slide report to PDF?
 ```
 
 If the user says yes, run:
