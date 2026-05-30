@@ -79,7 +79,7 @@ Follow the prompts returned by the script:
 - `prompts.summarize_papers`: Academic items from `academic`
 - `prompts.translate`: apply when `config.language` is `zh` or `bilingual`
 - `prompts.slides_report`: optional HTML slide report generation after the
-  digest has been written
+  digest has been produced and the Markdown save prompt has been handled
 
 Use this body order after Top Signals:
 
@@ -100,9 +100,26 @@ Language behavior:
 - `zh`: Chinese only, keeping product names and technical abbreviations in English
 - `bilingual`: Chinese first, paired with English where useful
 
-## Optional HTML Slides
+## Optional Markdown Digest
 
 After producing the digest, ask the user:
+
+```text
+Save this digest as a Markdown file?
+```
+
+If the user says no, do not write a Markdown file and continue to the optional
+HTML slide report prompt. If the user says yes:
+
+1. Save the already-produced digest text, not the raw `prepare-digest.js` JSON.
+2. Write the file to the current working directory as
+   `wtf-YYYY-MM-digest.md`, using the digest `generatedAt` month in UTC.
+   If the file exists, append `-2`, `-3`, and so on.
+3. Report the path, then continue to the optional HTML slide report prompt.
+
+## Optional HTML Slides
+
+After handling the optional Markdown digest prompt, ask the user:
 
 ```text
 Generate an HTML slide report for this digest?
