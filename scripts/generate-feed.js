@@ -37,9 +37,10 @@ const SELECTION_THRESHOLDS = {
 };
 
 function parseArgs() {
-  const args = { rssOnly: false, days: DEFAULT_LOOKBACK_DAYS };
+  const args = { rssOnly: false, days: DEFAULT_LOOKBACK_DAYS, selfTest: false };
   for (const arg of process.argv.slice(2)) {
     if (arg === '--rss-only') args.rssOnly = true;
+    else if (arg === '--self-test') args.selfTest = true;
     else if (arg.startsWith('--days=')) {
       const n = parseInt(arg.slice(7), 10);
       if (!Number.isFinite(n) || n < 1 || n > 365) {
@@ -104,10 +105,39 @@ function decodeEntitiesOnce(s) {
     ntilde: 'ñ',
     ccedil: 'ç',
     ge: '>=',
-    le: '<='
+    le: '<=',
+    deg: '°',
+    micro: 'μ',
+    mu: 'μ',
+    alpha: 'α',
+    beta: 'β',
+    gamma: 'γ',
+    delta: 'δ',
+    epsilon: 'ε',
+    lambda: 'λ',
+    pi: 'π',
+    sigma: 'σ',
+    omega: 'ω',
+    copy: '(c)',
+    reg: '(r)',
+    trade: '(tm)',
+    bull: '-',
+    middot: '-',
+    thinsp: ' ',
+    ensp: ' ',
+    emsp: ' ',
+    hairsp: ' ',
+    zwj: '',
+    zwnj: '',
+    lrm: '',
+    rlm: '',
+    lsqb: '[',
+    rsqb: ']',
+    lpar: '(',
+    rpar: ')'
   };
   return (s || '')
-    .replace(/&([a-z]+);/gi, (m, name) => {
+    .replace(/&([a-z][a-z0-9]+);/gi, (m, name) => {
       const key = name.toLowerCase();
       if (!Object.prototype.hasOwnProperty.call(named, key)) return m;
       const value = named[key];
@@ -124,7 +154,7 @@ function decodeEntities(s) {
     if (next === out) break;
     out = next;
   }
-  return out;
+  return out.replace(/&[a-z][a-z0-9]+;/gi, ' ');
 }
 
 function extractField(block, tag) {
@@ -407,6 +437,22 @@ function normalizeOutputItem(item) {
     title: cleanTextField(item.title, 500),
     summary: cleanTextField(item.summary, 2000)
   };
+}
+
+function runSelfTest() {
+  const cases = [
+    'Sensors &amp; Health &beta; &#x3bc; &#181; &rsqb;',
+    'Running stride-time variability &unknownEntity; wearable devices',
+    'Agreement&nbsp;and&nbsp;Reliability &ldquo;quoted&rdquo;'
+  ];
+  const entityRe = /&(?:[a-z]+|#\d+|#x[0-9a-f]+);/i;
+  for (const input of cases) {
+    const cleaned = cleanTextField(input, 500);
+    if (entityRe.test(cleaned)) {
+      throw new Error(`Entity cleanup left residue: ${cleaned}`);
+    }
+  }
+  console.log(JSON.stringify({ status: 'ok', check: 'entity-cleanup' }));
 }
 
 function inferSignalType(item) {
@@ -1129,6 +1175,10 @@ function selectedFeedItem(item) {
 
 async function main() {
   const args = parseArgs();
+  if (args.selfTest) {
+    runSelfTest();
+    return;
+  }
   const catalog = JSON.parse(await readFile(CATALOG_PATH, 'utf-8'));
   const blacklistPatterns = catalog.title_blacklist?.patterns || [];
   const healthcheck = {

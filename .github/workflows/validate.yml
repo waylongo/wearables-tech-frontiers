@@ -30,6 +30,7 @@ jobs:
           node --check scripts/prepare-digest.js
           node --check scripts/generate-feed.js
           node --check scripts/check-feed-quality.js
+          node scripts/generate-feed.js --self-test
 
       - name: Validate static artifacts
         run: |
