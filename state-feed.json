@@ -722,7 +722,7 @@
     },
     "https://clinicaltrials.gov/study/NCT07067151": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
+      "lastSeen": 1780409367335,
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
@@ -878,7 +878,7 @@
     },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001416": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1779666534760,
+      "lastSeen": 1780409367335,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
     },
@@ -1388,13 +1388,13 @@
     },
     "http://www.fda.gov/medical-devices/safety-communications/risks-using-true-metrix-blood-glucose-monitoring-systems-trividia-health-fda-safety-communication": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1779666534760,
+      "lastSeen": 1780409367335,
       "sourceName": "FDA MedWatch Safety Alerts",
       "sourceCategory": "clinical_regulatory"
     },
     "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/blood-glucose-monitor-recall-trividia-health-issues-correction-true-metrix-blood-glucose-monitoring": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1779666534760,
+      "lastSeen": 1780409367335,
       "sourceName": "FDA MedWatch Safety Alerts",
       "sourceCategory": "clinical_regulatory"
     },
@@ -2882,7 +2882,7 @@
     },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001335": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
+      "lastSeen": 1780409367335,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
     },
@@ -2960,7 +2960,7 @@
     },
     "https://mhealth.jmir.org/2026/1/e70188": {
       "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
+      "lastSeen": 1780409367335,
       "sourceName": "JMIR mHealth and uHealth",
       "sourceCategory": "academic"
     },
@@ -3281,6 +3281,300 @@
       "lastSeen": 1779666534760,
       "sourceName": "IEEE Sensors / Wearable Proceedings",
       "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2411.15240": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.02208": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.00107": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.00825": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2605.14830": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.00823": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.00752": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2508.15687": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.01188": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.01174": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.00182": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.00807": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2511.06676": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.01473": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.02448": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2509.07229": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2512.18641": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.00550": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.02301": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.00851": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2601.13188": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.00668": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2606.01557": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2501.11307": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2507.02374": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2603.29400": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://clinicaltrials.gov/study/NCT07240831": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07620639": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT06853990": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT04772170": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.mdpi.com/1424-8220/26/11/3498": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://clinicaltrials.gov/study/NCT05509907": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07579182": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.nature.com/articles/s41551-026-01673-z": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "Nature Biomedical Engineering",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/11/3478": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.29.26354454v1?rss=1": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "medRxiv: new results",
+      "sourceCategory": "academic"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.29.26354434v1?rss=1": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "medRxiv: new results",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/11/3490": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/11/3468": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://9to5google.com/2026/05/30/google-pixel-watch-find-my-phone-ecg-app-issues/": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://9to5google.com/2026/05/29/samsung-galaxy-watch-9-classic-raise-to-talk-code/": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/dexcom-uncovers-theft-scrapped-product-notifies-potentially-impacted-users": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "FDA MedWatch Safety Alerts",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.mdpi.com/1424-8220/26/11/3451": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1759967": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "Frontiers in Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/11/3441": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1801405": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "Frontiers in Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001405": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "PLOS Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261359": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253570": {
+      "firstSeen": 1780409367335,
+      "lastSeen": 1780409367335,
+      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
+      "sourceCategory": "clinical_regulatory"
     }
   }
 }
