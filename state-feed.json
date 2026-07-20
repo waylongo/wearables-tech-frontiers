@@ -1,1286 +1,20 @@
 {
   "urls": {
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725563v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.14.719059v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.724657v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.724572v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725540v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725390v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.14.725226v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.13.724913v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725146v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725336v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.14.725108v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.14.725010v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725498v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725596v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.13.724972v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725417v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.14.725203v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725110v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725344v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725454v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.12.724356v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.14.725217v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725193v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.14.725277v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.14.725142v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778937493980,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725338v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.14.725167v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.13.649732v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725113v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725402v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778935424132,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02768-2": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02762-8": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3164": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3167": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3166": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3165": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3161": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3159": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3158": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3153": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3152": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://mhealth.jmir.org/2026/1/e66002": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://mhealth.jmir.org/2026/1/e71251": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001424": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001376": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
     "https://9to5google.com/2026/05/15/fitbit-4-69/": {
       "firstSeen": 1778935424132,
       "lastSeen": 1779594441705,
       "sourceName": "9to5Google",
       "sourceCategory": "industry_news"
     },
-    "https://www.medrxiv.org/content/10.64898/2026.05.06.26348372v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353056v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26352974v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.06.26352294v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26352858v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353066v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26350596v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353058v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353051v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353059v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353070v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353055v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.06.26352338v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26352942v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353062v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.13.26352872v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353057v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353061v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353052v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353029v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353063v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.15.26353201v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.06.26352550v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.15.26353188v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779005617537,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353046v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.11.26352952v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26352987v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26352939v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779005617537,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.12.26353027v1?rss=1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02627-0": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02732-0": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02764-6": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778937493980,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02740-0": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778937493980,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1686746": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1785086": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1784460": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1785141": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1699125": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3150": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3149": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3147": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3146": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3143": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3141": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3139": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3138": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3136": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3137": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3123": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3131": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3132": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3126": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3125": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3124": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3122": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3120": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3117": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://clinicaltrials.gov/study/NCT07589062": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT06077201": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07588659": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT05937854": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT05235113": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT05939453": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07588737": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07590349": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07111130": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07588984": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07585864": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07054983": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT06690294": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07589114": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT03636230": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07499128": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07588997": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
     "https://clinicaltrials.gov/study/NCT07067151": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1783904515129,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT06689553": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://mhealth.jmir.org/2026/1/e71340": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://mhealth.jmir.org/2026/1/e77778": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://mhealth.jmir.org/2026/1/e58908": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://9to5google.com/2026/05/14/google-fitbit-air-initial-impressions/": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001417": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001360": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02725-z": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02752-w": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1745605": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1797571": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3113": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3108": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3110": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3109": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3102": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3096": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3097": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3095": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://clinicaltrials.gov/study/NCT06548594": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07051408": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07537478": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07587294": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT06291298": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07479979": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
+      "lastSeen": 1784516629925,
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001416": {
       "firstSeen": 1778935424132,
       "lastSeen": 1780876245911,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001411": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001407": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001383": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001148": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41551-026-01683-x": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Nature Biomedical Engineering",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41551-026-01670-2": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "Nature Biomedical Engineering",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1746430": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1845875": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3092": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3093": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3091": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3088": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3086": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3089": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3084": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3081": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3074": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779005617537,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3071": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3069": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://mhealth.jmir.org/2026/1/e82276": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001393": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41551-026-01684-w": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Nature Biomedical Engineering",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1810008": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1765310": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1750411": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1757054": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1811789": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://mhealth.jmir.org/2026/1/e81397": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001408": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001406": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41551-026-01669-9": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Nature Biomedical Engineering",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1776155": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://9to5google.com/2026/05/10/fitbit-air-whoop-size/": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5google.com/2026/05/10/google-health-kills-the-fitbit-we-knew-but-maybe-thats-not-a-bad-thing/": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5google.com/2026/05/09/belkin-modular-charging-dock-pixel-watch-review/": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://mhealth.jmir.org/2026/1/e72242": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00025-7/fulltext?rss=yes": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Lancet Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://mhealth.jmir.org/2026/1/e91332": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00029-4/fulltext?rss=yes": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Lancet Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1750207": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1752938": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1829401": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1727102": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://9to5google.com/2026/05/07/google-health-fitbit-features/": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5google.com/2026/05/07/google-fitbit-versa-4-sense-2-still-available-after-air/": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5google.com/2026/05/07/fitbit-air-stephen-curry-edition/": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5google.com/2026/05/07/google-pixel-watch-fitbit-air-support/": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001357": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001326": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000859": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://9to5google.com/2026/05/07/google-health-app-fitbit/": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5google.com/2026/05/07/fitbit-air-launch/": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779005617537,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "http://ieeexplore.ieee.org/document/11511675": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "IEEE Journal of Biomedical and Health Informatics (JBHI)",
-      "sourceCategory": "academic"
-    },
-    "http://ieeexplore.ieee.org/document/11511677": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "IEEE Journal of Biomedical and Health Informatics (JBHI)",
-      "sourceCategory": "academic"
-    },
-    "http://ieeexplore.ieee.org/document/11511676": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "IEEE Journal of Biomedical and Health Informatics (JBHI)",
-      "sourceCategory": "academic"
-    },
-    "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00011-7/fulltext?rss=yes": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Lancet Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1728588": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://mhealth.jmir.org/2026/1/e78689": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000743": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "http://ieeexplore.ieee.org/document/11511350": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "IEEE Journal of Biomedical and Health Informatics (JBHI)",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41551-026-01643-5": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Nature Biomedical Engineering",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001050": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001031": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41551-026-01672-0": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "Nature Biomedical Engineering",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001375": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778994675907,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41551-026-01653-3": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Nature Biomedical Engineering",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001389": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
     },
@@ -1296,83 +30,11 @@
       "sourceName": "Google DeepMind Blog",
       "sourceCategory": "company_research"
     },
-    "https://www.nature.com/articles/s41551-026-01671-1": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Nature Biomedical Engineering",
-      "sourceCategory": "academic"
-    },
-    "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00028-2/fulltext?rss=yes": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Lancet Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001352": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00017-8/fulltext?rss=yes": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Lancet Digital Health",
-      "sourceCategory": "academic"
-    },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001377": {
       "firstSeen": 1778935424132,
       "lastSeen": 1779594441705,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001374": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001363": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(25)00150-5/fulltext?rss=yes": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Lancet Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001382": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001385": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00012-9/fulltext?rss=yes": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778988376733,
-      "sourceName": "Lancet Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001361": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.fiercehealthcare.com/health-tech/health-tech-weekly-rundown-carrot-adds-menopause-care-ai-native-metabolic-health": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "Fierce Healthcare",
-      "sourceCategory": "industry_news"
     },
     "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/trividia-health-correction-true-metrix-blood-glucose-monitoring-systems": {
       "firstSeen": 1778935424132,
@@ -1398,237 +60,9 @@
       "sourceName": "FDA MedWatch Safety Alerts",
       "sourceCategory": "clinical_regulatory"
     },
-    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260260": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252501": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252810": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779061712540,
-      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001359": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1778936127831,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.12.724215v1?rss=1": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.mobihealthnews.com/video/ais-healthcare-future-may-require-hybrid-build-buy-approach": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779061712540,
-      "sourceName": "MobiHealthNews",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.mobihealthnews.com/news/openai-sued-over-alleged-fatal-chatgpt-drug-advice": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779061712540,
-      "sourceName": "MobiHealthNews",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.mobihealthnews.com/news/9amhealth-raises-26m-virtual-specialty-care-platform-and-more-funding-news": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779061712540,
-      "sourceName": "MobiHealthNews",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.mobihealthnews.com/video/combining-data-can-identify-high-risk-cohorts-sdoh-initiatives": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779061712540,
-      "sourceName": "MobiHealthNews",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.mobihealthnews.com/news/asia/malaysia-oks-korean-ai-sepsis-prediction-and-more-ai-briefs": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779061712540,
-      "sourceName": "MobiHealthNews",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.mobihealthnews.com/news/dexcom-unveils-next-generation-g8-cgm-real-time-glucose-monitoring": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779061712540,
-      "sourceName": "MobiHealthNews",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.nature.com/articles/s41746-026-02710-6": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02741-z": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.apple.com/newsroom/archive/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Apple Newsroom / Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.apple.com/newsroom/2026/04/apple-reports-second-quarter-results/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Apple Newsroom / Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.apple.com/newsroom/in-the-loop/2026/04/momentous-marathon-moments/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Apple Newsroom / Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Apple Newsroom / Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.apple.com/newsroom/2026/05/apple-introduces-a-new-pride-collection/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779061712540,
-      "sourceName": "Apple Newsroom / Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/forums/forums/topics/app-and-system-services/app-and-system-services-health-and-fitness?page=2": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Apple Developer Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/forums/topics/app-and-system-services/app-and-system-services-health-and-fitness?sortBy=created&sortOrder=asc&open-dropdown=true": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Apple Developer Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/forums/tags/healthkit?page=3": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Apple Developer Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/forums/topics/health-and-fitness?sortBy=replies&sortOrder=desc&open-dropdown=true": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Apple Developer Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/forums/topics/health-and-fitness?page=2&sortBy=activity&sortOrder=ASC": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Apple Developer Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/documentation/watchos-release-notes/watchos-9_4-release-notes?changes=latest_7": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778995605762,
-      "sourceName": "Apple Developer HealthKit / WorkoutKit / watchOS",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/documentation/swift/customstringconvertible/description-5zvsf?changes=_1": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Apple WorkoutKit / watchOS Developer Docs",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/documentation/swift/collectionofone/index(after:)?changes=__11,__11": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Apple WorkoutKit / watchOS Developer Docs",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/documentation/swift/double/'...(_:)-6ct5v?changes=lat_1_6": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778988376733,
-      "sourceName": "Apple WorkoutKit / watchOS Developer Docs",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed?changes=__3___8_5_8&language=objc": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Apple WorkoutKit / watchOS Developer Docs",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.google/intl/en-au/products/devices-services/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Google Blog / Fitbit",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.google/intl/en-in/products/hardware/a-new-era-for-your-wellness-introducing-the-google-health-app/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Google Blog / Fitbit",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.google/products-and-platforms/products/google-health/google-health-fitbit/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779061712540,
-      "sourceName": "Google Blog / Fitbit",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.google/intl/en-au/products/devices-services/introducing-the-all-new-fitbit-air/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Google Blog / Fitbit",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.google/products-and-platforms/devices/fitbit/fitbit-air/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778995605762,
-      "sourceName": "Google Blog / Fitbit",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.android.com/health-and-fitness/health-services/health-platform?hl=zh-tw": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Android Developers Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.android.com/health-and-fitness/health-connect/get-started?hl=zh-cn": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Android Developers Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.android.com/health-and-fitness/health-services?hl=es-419": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Android Developers Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.android.com/health-and-fitness/health-connect/features/availability?hl=hi": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Android Developers Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.android.com/health-and-fitness/health-connect/get-started?hl=id": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Android Developers Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
     "https://developer.android.com/jetpack/androidx/releases/health-connect": {
       "firstSeen": 1778936127831,
-      "lastSeen": 1779666534760,
+      "lastSeen": 1784516629925,
       "sourceName": "Android Health Connect Release Notes",
       "sourceCategory": "vendor_websearch"
     },
@@ -1644,100 +78,10 @@
       "sourceName": "Samsung Global Newsroom (Digital Health)",
       "sourceCategory": "vendor_websearch"
     },
-    "https://news.samsung.com/us/samsung-announces-breakthrough-study-fainting-prediction-galaxy-watch": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch"
-    },
     "https://news.samsung.com/ca/samsung-announces-breakthrough-in-fainting-prediction-with-galaxy-watch": {
       "firstSeen": 1778936127831,
       "lastSeen": 1783904515129,
       "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://news.samsung.com/cl/social-run-samsung-health-se-posiciona-como-aliado-clave-para-los-corredores": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch"
-    },
-    "http://developer.samsung.com/health": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778995605762,
-      "sourceName": "Samsung Developers Health",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.samsung.com/health/research": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Samsung Developers Health",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.samsung.com/health/s-healthstack": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Samsung Developers Health",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.samsung.com/health/stack": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Samsung Developers Health",
-      "sourceCategory": "vendor_websearch"
-    },
-    "http://developer.samsung.com/health/blog/en/new-health-data-type-support-in-samsung-health-data-sdk": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Samsung Developers Health",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://research.samsung.com/sra": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Samsung Research Publications",
-      "sourceCategory": "company_research"
-    },
-    "https://research.samsung.com/news/Samsung-R-D-Institute-Poland-awarded-1st-place-at-INTERSPEECH-2026-Challenge": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779061712540,
-      "sourceName": "Samsung Research Publications",
-      "sourceCategory": "company_research"
-    },
-    "https://research.samsung.com/blog/LookaheadKV-Fast-and-Accurate-KV-Cache-Eviction-by-Glimpsing-into-the-Future-without-Generation": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Samsung Research Publications",
-      "sourceCategory": "company_research"
-    },
-    "https://consumer.huawei.com/en/press/events/2026/huawei-innovative-product-launch-may-07/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Huawei Consumer Press",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.huawei.com/consumer/en/doc/app/privacy-label": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Huawei Health Kit",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.huawei.com/consumer/en/doc/app/80301": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Huawei Health Kit",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.huawei.com/consumer/en/doc/HMSCore-Library/android-sdk-download-0000001050066905": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Huawei Health Kit",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://new.c.mi.com/global/post/1634625": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Xiaomi Global Wearables",
       "sourceCategory": "vendor_websearch"
     },
     "https://new.c.mi.com/global/post/1663600": {
@@ -1746,593 +90,11 @@
       "sourceName": "Xiaomi Global Wearables",
       "sourceCategory": "vendor_websearch"
     },
-    "https://new.c.mi.com/global/post/1731388": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Xiaomi Global Wearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://c.mi.com/global/post/2050127": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779005617537,
-      "sourceName": "Xiaomi Global Wearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://new.c.mi.com/global/post/2239251": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Xiaomi Global Wearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.oppo.com/en/newsroom/press/oppo-launches-enco-clip2/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "OPPO Newsroom",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.oppo.com/en/newsroom/press/oppo-and-discovery-introduce-filmmaker-accelerator/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "OPPO Newsroom",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.oppo.com/en/newsroom/stories/oppo-earth-day-2026/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "OPPO Newsroom",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.oppo.com/en/newsroom/press/oppo-photography-awards-2026-with-creator-support-programs/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "OPPO Newsroom",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.vivo.com/en/products/x300-ultra": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "vivo Global Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.oneplus.com/global/oneplus-watch-lite": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778988376733,
-      "sourceName": "OnePlus Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.oneplus.com/global/oneplus-watch-3": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "OnePlus Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.oneplus.com/global/oneplus-watch-3-43mm": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "OnePlus Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.oneplus.com/global/oneplus-health": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778988376733,
-      "sourceName": "OnePlus Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.oneplus.com/global#mianContent": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "OnePlus Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.garmin.com/connect-iq/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778994675907,
-      "sourceName": "Garmin Developers",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications.html": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Garmin Developers",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig.html": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Garmin Developers",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Garmin Developers",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Double.html": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Garmin Developers",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ouraring.com/blog/sv/reviewed-by/shyamal-patel-phd-svp-science-at-oura/?srsltid=AfmBOop90qz7whPbgEb8uydTHmMDRgsWnetU4z9b-vg6wilOQHfx5j0q": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Oura Science & Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ouraring.com/blog/pt/author/oura-admin/?srsltid=AfmBOooXT7kmJ94L4JhtnaAnm9Z7BAd6wmDkKoldu-l16bt_NkcOetjI": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Oura Science & Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ouraring.com/blog/it/author/oura-admin/?srsltid=AfmBOoq1VZn2DLRwZOxQDCndhYlc0mBUBGzFHXPO5_WP6SrXMtx42IRp": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Oura Science & Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ouraring.com/blog/nb/author/oura-admin/?srsltid=AfmBOooD5Vwp0SoEMbJqxuIWBBHwiipyjMYEAQj2F5VazouCFl911F72": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Oura Science & Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ouraring.com/privacy-policy?srsltid=AfmBOorIc3HSECXl-ANCUFqQM3gMkWyCTwedOTDCjEI36g8TmCNSoB9n": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Oura Science & Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.whoop.com/us/en/thelocker/a-guide-to-self-experimentation-optimizing-your-habits-for-performance/?srsltid=AfmBOorL6dNLbT-eS3ly93TLHqghx4Yn6r_pdbH1kdwedxIVLQld5jUs": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "WHOOP / The Locker",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.whoop.com/us/en/thelocker/the-best-recovery-activities-according-to-whoop-members/?srsltid=AfmBOooNfehLtzlPPcKd7a0yErK5kS2hbNkmaCauxChIyY4a_Ve4sMLm": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "WHOOP / The Locker",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.whoop.com/us/en/thelocker/member-averages-recovery-strain-sleep-hrv/?srsltid=AfmBOor26v_79MEafy9MZQt9rzsLa8BX4h9L8Gw0x8kDMYQ-7NRRiyg3": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "WHOOP / The Locker",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.community.whoop.com/t/since-steps-uses-a-new-algorithm-on-whoop-5-0-mg-is-it-more-accurate/562/19": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778989683754,
-      "sourceName": "WHOOP / The Locker",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.whoop.com/us/en/press-center/whoop-introduces-navigator-a-new-band-built-to-explore/?srsltid=AfmBOoqr_Lyhf9rmJMjILKEKft6a6OIs9d-Je2HvsG5EJV6IDW-i6XJS": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "WHOOP / The Locker",
-      "sourceCategory": "vendor_websearch"
-    },
     "https://developer.whoop.com/docs/api-changelog": {
       "firstSeen": 1778936127831,
-      "lastSeen": 1779666534760,
+      "lastSeen": 1784516629925,
       "sourceName": "WHOOP Developer API",
       "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.whoop.com/docs/introduction/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "WHOOP Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.whoop.com/docs/whoop-101": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778994675907,
-      "sourceName": "WHOOP Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.whoop.com/api": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778994675907,
-      "sourceName": "WHOOP Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.whoop.com/docs/developing/support/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "WHOOP Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.withings.com/eu/en/press?srsltid=ARcRdnq_Hkk8710iyRMzAZhALycodx09psymluvHlhS1JiXEJS9kyL4Z": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Withings Newsroom",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.withings.com/us/en/health-solutions/insight-hub/withings-accepted-into-cms-access-model?srsltid=ARcRdnpWtMi84mQBlBM35yIT79EjMCK2e1IbaGcGbtSnLtzhUttowVp7": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Withings Newsroom",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.withings.com/us/en/health-solutions/test?srsltid=AfmBOopz9lUuhTN4uCC2IxHTCH3jiv_WHh9SQ2ePSFnbetgbFaoIe6bj": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Withings Newsroom",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://support.withings.com/hc/en-us/articles/45132990128273-BodyFit-Installation-Process": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Withings Newsroom",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://support.withings.com/hc/en-us/articles/42579466152465-BPM-Core-Clinical-Studies-Information": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Withings Newsroom",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://careers.dexcom.com/careers/job/38067926?_gl=1*a18uc7*_gcl_dc*R0NMLjE2MzE2NDExMjkuQ2pnS0VBandrSUdLQmhDZy1LV0o4TnJ3bFFjU0pBQ2E3NVZmbjBpOHg3bHkxRUpmVUNRZFNGOTNxZFVCVnBmSndqMWgxQW45TzRzMG1fRF9Cd0U.*_ga*MTMyNjgwMDc1MC4xNjMxNjQxMTI5*_ga_S6J885VKT2*MTYzMzM2MjM2OS40LjEuMTYzMzM2MzI2MS4w&_ga=2.260829965.1215220365.1633362370-1326800750.1631641129": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Dexcom News",
-      "sourceCategory": "vendor_websearch"
-    },
-    "http://careers.dexcom.com/careers/job/41751847?domain=dexcom.com": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Dexcom News",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.dexcom.com/en-my/faqs/what-is-the-difference-between-a-dexcom-cgm-sensor-glucose-reading-and-blood-glucose-value": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Dexcom News",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://careers.dexcom.com/careers/job/41893822?domain=dexcom.com&triggerGoButton=false": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Dexcom News",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.dexcom.com/en-ca/blog": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Dexcom News",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.dexcom.com/docs/dexcomv2/endpoint-overview/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Dexcom Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.dexcom.com/docs/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778989683754,
-      "sourceName": "Dexcom Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.dexcom.com/support/faq": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Dexcom Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.dexcom.com/docs/dexcom/sandbox-data": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "Dexcom Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.dexcom.com/node/1": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "Dexcom Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.abbott.com/en-us/privacy-policy/belgium-privacy-policy-dutch": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Abbott Biowearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.abbott.com/en-us/privacy-policy/luxembourg-privacy-policy-french": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Abbott Biowearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.abbott.com/en-us/corpnewsroom/healthy-heart/meet-the-members-of-the-2026-abbott-heartmates-draft": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779005617537,
-      "sourceName": "Abbott Biowearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://support.amazfit.com/en/amazfit_gts/imgs/electronic_manual.pdf": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Zepp Press",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://uk.amazfit.com/blogs/news/hyrox-and-amazfit-strengthen-alliance-with-global-three-year-partnership?srsltid=AfmBOoqgSSY95dieyUmDyAWcQrkaBulXaMNN_QX5m8mVEu-aNwctGuo8": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Zepp Press",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://support.amazfit.com/en/amazfit_neo/imgs/electronic_manual.pdf": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Zepp Press",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://us.amazfit.com/pages/amazfit-earth-day-sale?srsltid=AfmBOoqJ1pkTz8EEqlTsDKcWfXIdm2IFKck65tJrzfVkgaDCA8K81ZUw": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Zepp Press",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://it.amazfit.com/products/cheetah-2-ultra": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Zepp Press",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.polar.com/blog/category/sleep-recovery": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "Polar Training Load",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.polar.com/blog/category/sleep-recovery/page/3": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "Polar Training Load",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.polar.com/blog/category/sleep-recovery/feed": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Polar Training Load",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://support.polar.com/e_manuals/vantage-v3/polar-vantage-v3-user-manual-english/recovery-pro.htm": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Polar Training Load",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://support.polar.com/e_manuals/V800/Polar_V800_user_manual_English/Content/Training_Load_&_Recovery.htm": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Polar Training Load",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://eu.coros.com/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "COROS Training Hub",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://support.coros.com/hc/en-us/articles/360061452651-COROS-Fitness-Metrics-Explained": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "COROS Training Hub",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://support.coros.com/hc/en-us/articles/28021624992404-Cycling-Fitness-Metrics": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "COROS Training Hub",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://coros.com/stories/latest-news/c/connect-coros-and-wahoo": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "COROS Training Hub",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://support.coros.com/hc/en-us/profiles/393479410171?before=aWgAAAAAAAAAZDD%2FQ18AAAAAabwAi9RTAAAA&filter_by=articles&sort_by=votes": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "COROS Training Hub",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.ultrahuman.com/blog/pmos-why-pcos-has-a-new-name/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "Ultrahuman Blog",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.ultrahuman.com/blog/why-waking-up-at-3-am-could-be-your-metabolism-and-how-to-change-it/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778988376733,
-      "sourceName": "Ultrahuman Blog",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.ultrahuman.com/blog/ultrahuman-early-summer-release-sprint-25": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Ultrahuman Blog",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.ultrahuman.com/blog/ultrahuman-ring-recovery-score-guide/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Ultrahuman Blog",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.ultrahuman.com/blog/sleep-algorithm-2-0-explained-personalized-sleep-scoring/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Ultrahuman Blog",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://de.ringconn.com/blogs/news": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778988376733,
-      "sourceName": "RingConn News",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ringconn.com/blogs/news/ringconn-gen-3-whats-new": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778988376733,
-      "sourceName": "RingConn News",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.levels.com/blog/reactive-coaching-real-time-metabolic-care": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779061712540,
-      "sourceName": "Levels Blog",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.levels.com/blog/cgm-program-pricing-clinic-adoption": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779061712540,
-      "sourceName": "Levels Blog",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.levels.com/blog/article_types/cardiovascular-markers": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Levels Blog",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.levels.com/blog/guide-to-pancreatic-blood-tests": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Levels Blog",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.levels.com/blog/using-ai-for-health-ami-bhatt": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Levels Blog",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.medtechdive.com/news/dexcom-to-add-2-board-directors-with-activist-investor-elliott/820374/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778994675907,
-      "sourceName": "MedTech Dive",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.medtechdive.com/news/apple-fends-off-masimo-challenge-to-apple-watch-redesign/818158/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778994675907,
-      "sourceName": "MedTech Dive",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.medtechdive.com/news/artera-gets-fda-clearance-for-ai-breast-cancer-risk-prediction-tool/819665/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778994675907,
-      "sourceName": "MedTech Dive",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.medtechdive.com/news/minimed-posts-double-digit-sales-growth-widening-net-loss/818078/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "MedTech Dive",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.medtechdive.com/news/mobia-medical-plans-ipo/819292/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "MedTech Dive",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.healthcareitnews.com/video/successful-digital-transformation-requires-buy-end-users": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778994675907,
-      "sourceName": "Healthcare IT News",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.healthcareitnews.com/news/how-self-driving-networks-are-reshaping-healthcare": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "Healthcare IT News",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.healthcareitnews.com/blog/ai-wont-fix-healthcare-until-we-fix-infrastructure": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778994675907,
-      "sourceName": "Healthcare IT News",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.healthcareitnews.com/news/umc-el-paso-cuts-ed-boarding-half-dashboards": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778994675907,
-      "sourceName": "Healthcare IT News",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.healthcareitnews.com/blog/tefca-and-cms-aligned-networks-inflection-point-digital-quality-measurement-or-fragmentation": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Healthcare IT News",
-      "sourceCategory": "industry_news"
-    },
-    "https://rockhealth.com/insights/digital-health-funding-2015-year-in-review": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "Rock Health Insights",
-      "sourceCategory": "industry_news"
-    },
-    "https://rockhealth.com/insights/digital-health-2015-midyear": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "Rock Health Insights",
-      "sourceCategory": "industry_news"
-    },
-    "https://rockhealth.com/insights/digital-health-funding": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "Rock Health Insights",
-      "sourceCategory": "industry_news"
-    },
-    "https://rockhealth.com/insights/next-gen-innovation-opportunities-in-pediatric-digital-health": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Rock Health Insights",
-      "sourceCategory": "industry_news"
-    },
-    "https://rockhealth.com/insights/2022-year-end-digital-health-funding": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Rock Health Insights",
-      "sourceCategory": "industry_news"
-    },
-    "https://digitalhealthwire.com/newsletter/chatgpt-for-clinicians-joyful-and-new-glp-1-sides/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Digital Health Wire",
-      "sourceCategory": "industry_news"
-    },
-    "https://digitalhealthwire.com/newsletter/q1-investment-overview-openloop-acquisition-and-the-2027-ma-notice/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778994675907,
-      "sourceName": "Digital Health Wire",
-      "sourceCategory": "industry_news"
-    },
-    "https://digitalhealthwire.com/newsletter/photon-perplexity-and-prior-auths/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778994675907,
-      "sourceName": "Digital Health Wire",
-      "sourceCategory": "industry_news"
-    },
-    "https://digitalhealthwire.com/himss-2026-recap-and-major-announcements/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Digital Health Wire",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.dcrainmaker.com/2026/04/tidbits-coros-pace-4-black-crystal-strength-dashboards.html": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "DC Rainmaker",
-      "sourceCategory": "industry_news"
     },
     "https://www.dcrainmaker.com/2026/05/tidbits-garmin-suunto-lawsuit-partnership-form-swim-2-lt-peloton-spotify.html": {
       "firstSeen": 1778936127831,
@@ -2346,190 +108,10 @@
       "sourceName": "DC Rainmaker",
       "sourceCategory": "industry_news"
     },
-    "https://www.dcrainmaker.com/2026/05/garmin-forerunner70-vs-forerunner170-detailed-comparison-review.html": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "DC Rainmaker",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.dcrainmaker.com/2026/05/fit-file-podcast-should-whoop-worry-about-fitbit-air.html": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "DC Rainmaker",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.androidcentral.com/wearables/fitbit/poll-would-you-ditch-your-wearable-for-the-fitbit-air": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778988376733,
-      "sourceName": "Android Central Wearables",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.androidcentral.com/wearables/google-pixel-watch/a-buggy-fitbit-update-is-blinding-sensors-on-the-pixel-watch-3-and-4": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Android Central Wearables",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.androidcentral.com/wearables/the-battle-for-your-finger-heats-up-as-ringconn-gen-3-opens-preorders": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Android Central Wearables",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.androidcentral.com/wearables/fitbit/fitbit-as-we-know-it-might-be-on-the-way-out-for-google-health": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Android Central Wearables",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.androidcentral.com/wearables/google-fitbit-air-could-be-here-soon": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Android Central Wearables",
-      "sourceCategory": "industry_news"
-    },
-    "http://wired.com/tag/wearables": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778988376733,
-      "sourceName": "WIRED Wearables",
-      "sourceCategory": "industry_news"
-    },
-    "https://wired.com/tag/wearables": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778988376733,
-      "sourceName": "WIRED Wearables",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.wired.com/tag/wearables/": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778937493980,
-      "sourceName": "WIRED Wearables",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.wired.com/tag/wearables?page=2": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "WIRED Wearables",
-      "sourceCategory": "industry_news"
-    },
-    "http://www.wired.com/tag/wearables": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778988376733,
-      "sourceName": "WIRED Wearables",
-      "sourceCategory": "industry_news"
-    },
-    "https://karger.com/DIB": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1778936127831,
-      "sourceName": "Digital Biomarkers Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.12.724341v1?rss=1": {
-      "firstSeen": 1778937493980,
-      "lastSeen": 1778988376733,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02739-7": {
-      "firstSeen": 1778937493980,
-      "lastSeen": 1778988376733,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02751-x": {
-      "firstSeen": 1778937493980,
-      "lastSeen": 1778988376733,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3085": {
-      "firstSeen": 1778937493980,
-      "lastSeen": 1779061712540,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://developer.ouraring.com/": {
-      "firstSeen": 1778937493980,
-      "lastSeen": 1778994675907,
-      "sourceName": "Oura Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis": {
-      "firstSeen": 1778937493980,
-      "lastSeen": 1778989683754,
-      "sourceName": "Withings API / Research",
-      "sourceCategory": "vendor_websearch"
-    },
     "https://developer.withings.com/developer-guide/v3/integration-guide/onsite-mode/data-api/fetch-data-example-manual": {
       "firstSeen": 1778937493980,
       "lastSeen": 1779535259258,
       "sourceName": "Withings API / Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "http://developer.withings.com/developer-guide/v3/withings-solutions/app-to-app-solution": {
-      "firstSeen": 1778937493980,
-      "lastSeen": 1778989683754,
-      "sourceName": "Withings API / Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.suunto.com/News/suunto-launches-zonesense-a-new-intensity-measurement--a-revolution-for-all-endurance-sports?category=news": {
-      "firstSeen": 1778937493980,
-      "lastSeen": 1778937493980,
-      "sourceName": "Suunto News",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.suunto.com/News/suunto-launches-zonesense-a-new-intensity-measurement--a-revolution-for-all-endurance-sports": {
-      "firstSeen": 1778937493980,
-      "lastSeen": 1778937493980,
-      "sourceName": "Suunto News",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://9to5mac.com/2026/05/16/apple-watch-series-12-heres-what-we-know-so-far/": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1779061712540,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.13.724821v1?rss=1": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778995605762,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02776-2": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778988376733,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://www.nature.com/articles/s41746-026-02759-3": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778988376733,
-      "sourceName": "npj Digital Medicine",
-      "sourceCategory": "academic"
-    },
-    "https://developer.apple.com/documentation/Updates/HealthKit": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778988076174,
-      "sourceName": "Apple HealthKit Updates",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/documentation/Updates/HealthKit?changes=_6_3": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778988076174,
-      "sourceName": "Apple HealthKit Updates",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/documentation/simd/atan(_:)-al43?changes=_2": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778994675907,
-      "sourceName": "Apple Developer HealthKit / WorkoutKit / watchOS",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.google/products-and-platforms/products/google-health/google-health-app/": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1779061712540,
-      "sourceName": "Google Blog / Fitbit",
       "sourceCategory": "vendor_websearch"
     },
     "https://developer.android.com/health-and-fitness/health-connect/features/sleep-sessions": {
@@ -2538,77 +120,11 @@
       "sourceName": "Android Developers Health & Fitness",
       "sourceCategory": "vendor_websearch"
     },
-    "https://c.mi.com/global/post/1663600": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1779061712540,
-      "sourceName": "Xiaomi Global Wearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://new.c.mi.com/global/post/1764675": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1779061712540,
-      "sourceName": "Xiaomi Global Wearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/WorkoutStep.html": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1779061712540,
-      "sourceName": "Garmin Developers",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.whoop.com/docs/developing/user-data/recovery": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778989683754,
-      "sourceName": "WHOOP Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://investors.dexcom.com/files/doc_presentations/2026/May/15/Investor-Day-Presentation_FINAL-PDF.pdf": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1779061712540,
-      "sourceName": "Dexcom News",
-      "sourceCategory": "vendor_websearch"
-    },
     "https://www.dexcom.com/en-us/all-access": {
       "firstSeen": 1778988076174,
       "lastSeen": 1779539535462,
       "sourceName": "Dexcom News",
       "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.dexcom.com": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778989683754,
-      "sourceName": "Dexcom Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.dexcom.com/overview": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778989683754,
-      "sourceName": "Dexcom Developer API",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.abbott.com/en-us/about-abbott": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778995605762,
-      "sourceName": "Abbott Biowearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.ultrahuman.com/blog/": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778988376733,
-      "sourceName": "Ultrahuman Blog",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.healthcareitnews.com/news/changing-assault-based-sti-outcomes-remote-care-delivery": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778989683754,
-      "sourceName": "Healthcare IT News",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.healthcareitnews.com/news/advanced-ai-holds-promise-high-stakes-healthcare-studies-show": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778989683754,
-      "sourceName": "Healthcare IT News",
-      "sourceCategory": "industry_news"
     },
     "https://www.dcrainmaker.com/2026/04/polar-street-x-in-depth-sports-review.html": {
       "firstSeen": 1778988076174,
@@ -2616,125 +132,11 @@
       "sourceName": "DC Rainmaker",
       "sourceCategory": "industry_news"
     },
-    "https://www.nmpa.gov.cn/zwfw/sdxx/sdxxylqx/qxpjfb/20260515153002126.html": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778988076174,
-      "sourceName": "China NMPA Medical Device Approvals",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.nmpa.gov.cn/zwfw/sdxx/sdxxylqx/qxpjfb/20260514161722157.html": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778988076174,
-      "sourceName": "China NMPA Medical Device Approvals",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.nmpa.gov.cn/zwfw/sdxx/sdxxylqx/qxpjfb/20260512154029169.html": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778988076174,
-      "sourceName": "China NMPA Medical Device Approvals",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://openreview.net/pdf?id=kJbY2CsTPb": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778989683754,
-      "sourceName": "NeurIPS Health Workshops / OpenReview",
-      "sourceCategory": "academic"
-    },
     "https://dl.acm.org/doi/abs/10.1145/3648469": {
       "firstSeen": 1778988076174,
       "lastSeen": 1782690677550,
       "sourceName": "ACM IMWUT / UbiComp",
       "sourceCategory": "academic"
-    },
-    "https://dl.acm.org/doi/abs/10.1145/3560821": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778989683754,
-      "sourceName": "ACM IMWUT / UbiComp",
-      "sourceCategory": "academic"
-    },
-    "https://dl.acm.org/doi/pdf/10.1145/3411764.3445700": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778989683754,
-      "sourceName": "ACM IMWUT / UbiComp",
-      "sourceCategory": "academic"
-    },
-    "https://dl.acm.org/doi/10.1145/3795926.3795964": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778988076174,
-      "sourceName": "ISWC Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://dl.acm.org/doi/abs/10.1145/3530910": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778989683754,
-      "sourceName": "ISWC Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://ieeexplore.ieee.org/iel8/10927737/10927739/10928043.pdf": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778988076174,
-      "sourceName": "IEEE Sensors / Wearable Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://ieeexplore.ieee.org/document/11471495/": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778989683754,
-      "sourceName": "IEEE Sensors / Wearable Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://ieeexplore.ieee.org/document/11167273/": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1778989683754,
-      "sourceName": "IEEE Sensors / Wearable Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://ieeexplore.ieee.org/document/10798302": {
-      "firstSeen": 1778988227681,
-      "lastSeen": 1778989683754,
-      "sourceName": "IEEE EMBC Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://ieeexplore.ieee.org/document/11142265": {
-      "firstSeen": 1778988227681,
-      "lastSeen": 1778989683754,
-      "sourceName": "IEEE EMBC Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://ieeexplore.ieee.org/document/7590779": {
-      "firstSeen": 1778988227681,
-      "lastSeen": 1778989683754,
-      "sourceName": "IEEE EMBC Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://ieeexplore.ieee.org/document/10385998": {
-      "firstSeen": 1778988227681,
-      "lastSeen": 1778989683754,
-      "sourceName": "IEEE BIBM Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://ieeexplore.ieee.org/abstract/document/10385998": {
-      "firstSeen": 1778988227681,
-      "lastSeen": 1778988227681,
-      "sourceName": "IEEE BIBM Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://ieeexplore.ieee.org/document/11009625/": {
-      "firstSeen": 1778988227681,
-      "lastSeen": 1778989683754,
-      "sourceName": "IEEE Sensors / Wearable Proceedings",
-      "sourceCategory": "academic"
-    },
-    "http://developer.withings.com/developer-guide/v3/withings-solutions/research-apis": {
-      "firstSeen": 1778988376733,
-      "lastSeen": 1778994675907,
-      "sourceName": "Withings API / Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.android.com/health-and-fitness/health-connect/features/steps": {
-      "firstSeen": 1778989683754,
-      "lastSeen": 1779061712540,
-      "sourceName": "Android Developers Health & Fitness",
-      "sourceCategory": "vendor_websearch"
     },
     "https://news.samsung.com/ca/world-health-day-2026-how-jacob-kiplimos-galaxy-watch-turns-data-into-world-record-performance": {
       "firstSeen": 1778994675907,
@@ -2742,106 +144,10 @@
       "sourceName": "Samsung Global Newsroom (Digital Health)",
       "sourceCategory": "vendor_websearch"
     },
-    "https://developer.withings.com/developer-guide/data-api/authentication": {
-      "firstSeen": 1778994675907,
-      "lastSeen": 1778994675907,
-      "sourceName": "Withings API / Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.withings.com/developer-guide/v3/integration-guide/advanced-research-api/fetch-raw-data/raw-data-structure": {
-      "firstSeen": 1778994675907,
-      "lastSeen": 1778994675907,
-      "sourceName": "Withings API / Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://rockhealth.com/insights/2020-midyear-digital-health-market-update-unprecedented-funding-in-an-unprecedented-time": {
-      "firstSeen": 1778994675907,
-      "lastSeen": 1778994675907,
-      "sourceName": "Rock Health Insights",
-      "sourceCategory": "industry_news"
-    },
-    "https://rockhealth.com/insights/q3-2022-digital-health-funding-the-market-isnt-the-same-as-it-was": {
-      "firstSeen": 1778994675907,
-      "lastSeen": 1778994675907,
-      "sourceName": "Rock Health Insights",
-      "sourceCategory": "industry_news"
-    },
-    "https://rockhealth.com/insights/digital-health-funding-2016-midyear-review": {
-      "firstSeen": 1778994675907,
-      "lastSeen": 1778994675907,
-      "sourceName": "Rock Health Insights",
-      "sourceCategory": "industry_news"
-    },
-    "https://clinicaltrials.gov/study/NCT06586918": {
-      "firstSeen": 1778995605762,
-      "lastSeen": 1779061712540,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.725337v1?rss=1": {
-      "firstSeen": 1779005617537,
-      "lastSeen": 1779005617537,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
     "https://developer.android.com/health-and-fitness/health-connect/features/exercise-routes": {
       "firstSeen": 1779005617537,
       "lastSeen": 1779535259258,
       "sourceName": "Android Developers Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.huawei.com/consumer/en/doc/atomic-guides/health-service-kit-ability-as": {
-      "firstSeen": 1779005617537,
-      "lastSeen": 1779005617537,
-      "sourceName": "Huawei Health Kit",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.huawei.com/consumer/en/doc/HMSCore-Guides/harmonyos-enabling-health-kit-0000001204685000": {
-      "firstSeen": 1779005617537,
-      "lastSeen": 1779005617537,
-      "sourceName": "Huawei Health Kit",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.13.26353115v1?rss=1": {
-      "firstSeen": 1779061712540,
-      "lastSeen": 1779061712540,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.06.26352104v1?rss=1": {
-      "firstSeen": 1779061712540,
-      "lastSeen": 1779061712540,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.15.724948v1?rss=1": {
-      "firstSeen": 1779061712540,
-      "lastSeen": 1779061712540,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.12.724707v1?rss=1": {
-      "firstSeen": 1779061712540,
-      "lastSeen": 1779061712540,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.12.724698v1?rss=1": {
-      "firstSeen": 1779061712540,
-      "lastSeen": 1779061712540,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.14.725135v1?rss=1": {
-      "firstSeen": 1779061712540,
-      "lastSeen": 1779061712540,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.apple.com/newsroom/2026/05/wackadoo-join-bluey-for-the-ultimate-playdate-on-apple-arcade-starting-may-21/": {
-      "firstSeen": 1779061712540,
-      "lastSeen": 1779061712540,
-      "sourceName": "Apple Newsroom / Watch",
       "sourceCategory": "vendor_websearch"
     },
     "https://www.mdpi.com/1424-8220/26/11/3319": {
@@ -3836,7 +1142,7 @@
     },
     "https://digitalhealthwire.com/newsletter/wearables-teladoc-and-new-frontier-models": {
       "firstSeen": 1780876245911,
-      "lastSeen": 1782086149473,
+      "lastSeen": 1784516629925,
       "sourceName": "Digital Health Wire",
       "sourceCategory": "industry_news"
     },
@@ -3848,7 +1154,7 @@
     },
     "https://dl.acm.org/doi/10.1145/2499621": {
       "firstSeen": 1780876245911,
-      "lastSeen": 1780876245911,
+      "lastSeen": 1784516629925,
       "sourceName": "ACM IMWUT / UbiComp",
       "sourceCategory": "academic"
     },
@@ -4364,7 +1670,7 @@
     },
     "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/first-aid-kit-recall-north-american-rescue-issues-correction-first-aid-kits-containing-true-metrix": {
       "firstSeen": 1782690677550,
-      "lastSeen": 1783904515129,
+      "lastSeen": 1784516629925,
       "sourceName": "FDA MedWatch Safety Alerts",
       "sourceCategory": "clinical_regulatory"
     },
@@ -4562,13 +1868,13 @@
     },
     "https://mhealth.jmir.org/2026/1/e88223": {
       "firstSeen": 1783904515129,
-      "lastSeen": 1783904515129,
+      "lastSeen": 1784516629925,
       "sourceName": "JMIR mHealth and uHealth",
       "sourceCategory": "academic"
     },
     "https://mhealth.jmir.org/2026/1/e95642": {
       "firstSeen": 1783904515129,
-      "lastSeen": 1783904515129,
+      "lastSeen": 1784516629925,
       "sourceName": "JMIR mHealth and uHealth",
       "sourceCategory": "academic"
     },
@@ -4682,7 +1988,7 @@
     },
     "https://research.google/blog/sensorfm-towards-a-general-intelligence-and-interface-for-wearable-health-data/": {
       "firstSeen": 1783904515129,
-      "lastSeen": 1783904515129,
+      "lastSeen": 1784516629925,
       "sourceName": "Google Research Blog",
       "sourceCategory": "company_research"
     },
@@ -4766,13 +2072,13 @@
     },
     "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253384": {
       "firstSeen": 1783904515129,
-      "lastSeen": 1783904515129,
+      "lastSeen": 1784516629925,
       "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
       "sourceCategory": "clinical_regulatory"
     },
     "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P240035": {
       "firstSeen": 1783904515129,
-      "lastSeen": 1783904515129,
+      "lastSeen": 1784516629925,
       "sourceName": "openFDA Device PMA: wearable-relevant approvals",
       "sourceCategory": "clinical_regulatory"
     },
@@ -4802,7 +2108,7 @@
     },
     "https://ieeexplore.ieee.org/servlet/Login?logout=%2Fdocument%2F10831890%2F": {
       "firstSeen": 1783904515129,
-      "lastSeen": 1783904515129,
+      "lastSeen": 1784516629925,
       "sourceName": "IEEE Sensors / Wearable Proceedings",
       "sourceCategory": "academic"
     },
@@ -4823,6 +2129,240 @@
       "lastSeen": 1783904515129,
       "sourceName": "IEEE Sensors / Wearable Proceedings",
       "sourceCategory": "academic"
+    },
+    "https://9to5google.com/2026/07/19/google-pixel-watch-bands-discounts-july-2026/": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://mhealth.jmir.org/2026/1/e83385": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "JMIR mHealth and uHealth",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/14/4529": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://clinicaltrials.gov/study/NCT06404268": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07711327": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT06679790": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.mdpi.com/1424-8220/26/14/4534": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://clinicaltrials.gov/study/NCT07704710": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.nature.com/articles/s41746-026-03017-2": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "npj Digital Medicine",
+      "sourceCategory": "academic"
+    },
+    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1879670": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Frontiers in Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://clinicaltrials.gov/study/NCT07710755": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT05634395": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://9to5google.com/2026/07/16/google-health-outage-breaks-device-sync-for-all-fitbit-pixel-watch-users/": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.fiercehealthcare.com/regulatory/medicare-proposes-stricter-requirements-remote-monitoring-services-limiting-use-third": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Fierce Healthcare",
+      "sourceCategory": "industry_news"
+    },
+    "https://9to5mac.com/2026/07/16/signal-ring-gives-blood-pressure-readings-not-just-alerts-like-apple-watch/": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1804993": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Frontiers in Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1830655": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Frontiers in Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/14/4520": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://mhealth.jmir.org/2026/1/e91479": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "JMIR mHealth and uHealth",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/14/4486": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://mhealth.jmir.org/2026/1/e81829": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "JMIR mHealth and uHealth",
+      "sourceCategory": "academic"
+    },
+    "https://9to5mac.com/2026/07/14/apple-watch-among-wearables-exempted-from-eu-user-replaceable-battery-rules/": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://9to5google.com/2026/07/13/first-fitbit-air-update/": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://9to5google.com/2026/07/13/pixel-10-pro-discount/": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253463": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://dl.acm.org/doi/10.1145/3328931": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "ISWC Proceedings",
+      "sourceCategory": "academic"
+    },
+    "https://dl.acm.org/doi/10.1145/3699776": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "ISWC Proceedings",
+      "sourceCategory": "academic"
+    },
+    "http://developer.garmin.com/connect-iq/sdk": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Garmin Developers",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://ouraring.com/blog/oura-ring-cardiovascular-health-study": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Oura Science & Research",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://www.levels.com/blog/how-continuous-glucose-monitoring-can-help-during-menopause": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Levels Blog",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://ieeexplore.ieee.org/iel8/19/11329398/11573182.pdf": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "IEEE Sensors / Wearable Proceedings",
+      "sourceCategory": "academic"
+    },
+    "https://ieeexplore.ieee.org/iel8/8782705/11281521/11571010.pdf": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "IEEE Sensors / Wearable Proceedings",
+      "sourceCategory": "academic"
+    },
+    "https://ouraring.com/blog/oura-ring-accuracy-validation-study-university-of-tokyo": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Oura Science & Research",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://developer.huawei.com/consumer/en/doc/hmscore-guides/obtain-smart-watch-data-0000001365189921": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Huawei Health Kit",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://investors.dexcom.com/news/news-details/2026/Dexcom-G7-15-Day-Receives-Health-Canada-Authorization-Extending-Wear-and-Continuity-for-Canadian-Adults-Living-with-Diabetes/default.aspx": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Dexcom News",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://www.whoop.com/us/en/thelocker/the-whoop-approach-to-measuring-sleep": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "WHOOP / The Locker",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://www.levels.com/blog/7-reasons-dr-casey-means-believes-in-cgm": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Levels Blog",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://dl.acm.org/toc/imwut/2026/10/2": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "ACM IMWUT / UbiComp",
+      "sourceCategory": "academic"
+    },
+    "https://developer.huawei.com/consumer/en/doc/hmscore-guides/extended-starting-ending-workout-0000001052835041": {
+      "firstSeen": 1784516629925,
+      "lastSeen": 1784516629925,
+      "sourceName": "Huawei Health Kit",
+      "sourceCategory": "vendor_websearch"
     }
   }
 }
