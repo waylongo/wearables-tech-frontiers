@@ -1,11 +1,5 @@
 {
   "urls": {
-    "https://9to5google.com/2026/05/15/fitbit-4-69/": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779594441705,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
     "https://clinicaltrials.gov/study/NCT07067151": {
       "firstSeen": 1778935424132,
       "lastSeen": 1784516629925,
@@ -17,36 +11,6 @@
       "lastSeen": 1780876245911,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001373": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779666534760,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://deepmind.google/blog/ai-co-clinician/": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779540375878,
-      "sourceName": "Google DeepMind Blog",
-      "sourceCategory": "company_research"
-    },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001377": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779594441705,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/trividia-health-correction-true-metrix-blood-glucose-monitoring-systems": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779666534760,
-      "sourceName": "FDA MedWatch Safety Alerts",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253887": {
-      "firstSeen": 1778935424132,
-      "lastSeen": 1779666534760,
-      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
-      "sourceCategory": "clinical_regulatory"
     },
     "http://www.fda.gov/medical-devices/safety-communications/risks-using-true-metrix-blood-glucose-monitoring-systems-trividia-health-fda-safety-communication": {
       "firstSeen": 1778935424132,
@@ -62,20 +26,8 @@
     },
     "https://developer.android.com/jetpack/androidx/releases/health-connect": {
       "firstSeen": 1778936127831,
-      "lastSeen": 1784516629925,
+      "lastSeen": 1785114387119,
       "sourceName": "Android Health Connect Release Notes",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://news.samsung.com/sg/ces-2026-a-care-companion-for-family-health-and-safety": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779540375878,
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://news.samsung.com/us/level-up-health-galaxy-watch-receive-withings-smart-scale": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779539535462,
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
       "sourceCategory": "vendor_websearch"
     },
     "https://news.samsung.com/ca/samsung-announces-breakthrough-in-fainting-prediction-with-galaxy-watch": {
@@ -84,53 +36,11 @@
       "sourceName": "Samsung Global Newsroom (Digital Health)",
       "sourceCategory": "vendor_websearch"
     },
-    "https://new.c.mi.com/global/post/1663600": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779540375878,
-      "sourceName": "Xiaomi Global Wearables",
-      "sourceCategory": "vendor_websearch"
-    },
     "https://developer.whoop.com/docs/api-changelog": {
       "firstSeen": 1778936127831,
-      "lastSeen": 1784516629925,
+      "lastSeen": 1785114387119,
       "sourceName": "WHOOP Developer API",
       "sourceCategory": "vendor_websearch"
-    },
-    "https://www.dcrainmaker.com/2026/05/tidbits-garmin-suunto-lawsuit-partnership-form-swim-2-lt-peloton-spotify.html": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779540375878,
-      "sourceName": "DC Rainmaker",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.dcrainmaker.com/2026/04/coros-wahoo-partnership.html": {
-      "firstSeen": 1778936127831,
-      "lastSeen": 1779594441705,
-      "sourceName": "DC Rainmaker",
-      "sourceCategory": "industry_news"
-    },
-    "https://developer.withings.com/developer-guide/v3/integration-guide/onsite-mode/data-api/fetch-data-example-manual": {
-      "firstSeen": 1778937493980,
-      "lastSeen": 1779535259258,
-      "sourceName": "Withings API / Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.android.com/health-and-fitness/health-connect/features/sleep-sessions": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1779539535462,
-      "sourceName": "Android Developers Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.dexcom.com/en-us/all-access": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1779539535462,
-      "sourceName": "Dexcom News",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.dcrainmaker.com/2026/04/polar-street-x-in-depth-sports-review.html": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1779539535462,
-      "sourceName": "DC Rainmaker",
-      "sourceCategory": "industry_news"
     },
     "https://dl.acm.org/doi/abs/10.1145/3648469": {
       "firstSeen": 1778988076174,
@@ -138,131 +48,11 @@
       "sourceName": "ACM IMWUT / UbiComp",
       "sourceCategory": "academic"
     },
-    "https://news.samsung.com/ca/world-health-day-2026-how-jacob-kiplimos-galaxy-watch-turns-data-into-world-record-performance": {
-      "firstSeen": 1778994675907,
-      "lastSeen": 1779540375878,
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.android.com/health-and-fitness/health-connect/features/exercise-routes": {
-      "firstSeen": 1779005617537,
-      "lastSeen": 1779535259258,
-      "sourceName": "Android Developers Health & Fitness",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.mdpi.com/1424-8220/26/11/3319": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mobihealthnews.com/video/ai-implementation-marathon-not-sprint": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "MobiHealthNews",
-      "sourceCategory": "industry_news"
-    },
-    "https://mhealth.jmir.org/2026/1/e81502": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://www.mobihealthnews.com/news/hims-hers-launches-generic-semaglutide-offering-canada": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "MobiHealthNews",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5google.com/2026/05/22/google-pixel-watch-find-my-phone-ecg-app-issues/": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5google.com/2026/05/22/google-explains-new-wear-os-widgets/": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001335": {
       "firstSeen": 1779535259258,
       "lastSeen": 1781481158500,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
-    },
-    "https://www.mobihealthnews.com/news/himsscast-scaling-profitable-company-little-venture-funding": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "MobiHealthNews",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.mobihealthnews.com/video/successful-digital-modernization-starts-identifying-workflow-issues": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "MobiHealthNews",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.mobihealthnews.com/news/oura-confidentially-files-ipo-revenue-growth-soars": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "MobiHealthNews",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.20.26353683v1?rss=1": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779540375878,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.05.20.26353669v1?rss=1": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.20.726548v1?rss=1": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.05.20.726669v1?rss=1": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://clinicaltrials.gov/study/NCT06938412": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT05794178": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07601724": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT06124196": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07442318": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779540375878,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
     },
     "https://mhealth.jmir.org/2026/1/e70188": {
       "firstSeen": 1779535259258,
@@ -270,323 +60,11 @@
       "sourceName": "JMIR mHealth and uHealth",
       "sourceCategory": "academic"
     },
-    "https://www.mobihealthnews.com/video/how-adopting-new-healthcare-technology-can-backfire": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "MobiHealthNews",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5mac.com/2026/05/21/apple-watch-and-airpods-health-features-get-major-new-global-expansions/": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.fiercehealthcare.com/health-tech/health-tech-weekly-rundown-prime-healthcare-collette-health-partner-virtual-sitting": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779540375878,
-      "sourceName": "Fierce Healthcare",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5mac.com/2026/05/20/acsi-samsung-edges-out-apple-in-cell-phone-satisfaction-while-apple-watch-ties-at-the-top/": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3273": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3256": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/10/3235": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779594441705,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://9to5google.com/2026/05/19/google-announces-wear-os-7/": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5mac.com/2026/05/19/apple-watch-has-a-useful-hidden-feature-for-tracking-a-great-healthy-habit/": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
-    "https://mhealth.jmir.org/2026/1/e79642": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1729804": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://deepmind.google/blog/strengthening-singapores-ai-future-a-new-national-partnership/": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779540375878,
-      "sourceName": "Google DeepMind Blog",
-      "sourceCategory": "company_research"
-    },
-    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253152": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.apple.com/newsroom": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "Apple Newsroom / Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.apple.com/newsroom/2026/05/apple-unveils-new-accessibility-features-and-updates-with-apple-intelligence": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "Apple Newsroom / Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.apple.com/documentation/combine/publishers/filter/init(upstream:isincluded:)?changes=__9%2C__9": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "Apple Developer HealthKit / WorkoutKit / watchOS",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.google/products-and-platforms/products/google-health/google-health-fitbit": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779666534760,
-      "sourceName": "Google Blog / Fitbit",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.google/products-and-platforms/products/google-health/google-health-app": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779539535462,
-      "sourceName": "Google Blog / Fitbit",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://news.samsung.com/my/interview-how-jacob-kiplimos-galaxy-watch-turns-data-into-world-record-performance": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch"
-    },
     "https://research.samsung.com/blog/When-One-Sensor-Learns-Another-Cross-Modal-AI-for-Wearables": {
       "firstSeen": 1779535259258,
       "lastSeen": 1781481158500,
       "sourceName": "Samsung Research Publications",
       "sourceCategory": "company_research"
-    },
-    "https://www.mi.com/global/event/user-guide": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "Xiaomi Global Wearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ouraring.com/blog/it/reviewed-by/shyamal-patel-phd-svp-science-at-oura": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "Oura Science & Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ouraring.com/blog/oura-built-for-womens-health-across-every-life-stage": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779540028821,
-      "sourceName": "Oura Science & Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.whoop.com/us/en/thelocker/heart-rate-recovery": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "WHOOP / The Locker",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.whoop.com/us/en/thelocker/podcast-51-what-is-whoop": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779539535462,
-      "sourceName": "WHOOP / The Locker",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.withings.com/eu/en/press": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "Withings Newsroom",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.withings.com/eu/en/landing/scanwatch-nova-brilliant-campaign-3": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "Withings Newsroom",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "Withings API / Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.dexcom.com/en-us/all-access/user-stories/mason-miller-diabetes": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779535259258,
-      "sourceName": "Dexcom News",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.levels.com/blog/from-the-ceo-apr26": {
-      "firstSeen": 1779535259258,
-      "lastSeen": 1779540028821,
-      "sourceName": "Levels Blog",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.apple.com/newsroom/2026/05/apple-introduces-a-new-pride-collection": {
-      "firstSeen": 1779539535462,
-      "lastSeen": 1779539535462,
-      "sourceName": "Apple Newsroom / Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://new.c.mi.com/global/post/1421450": {
-      "firstSeen": 1779539535462,
-      "lastSeen": 1779539535462,
-      "sourceName": "Xiaomi Global Wearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ouraring.com/blog/wp-content/uploads/2026/05/Oura-Womens-Healthcare-Guide-May-2026.pdf": {
-      "firstSeen": 1779539535462,
-      "lastSeen": 1779539535462,
-      "sourceName": "Oura Science & Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.whoop.com/us/en/thelocker/a-guide-to-self-experimentation-optimizing-your-habits-for-performance": {
-      "firstSeen": 1779539535462,
-      "lastSeen": 1779539535462,
-      "sourceName": "WHOOP / The Locker",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.dcrainmaker.com/2026/05/garmin-forerunner-70-depth-review-and-tested.html": {
-      "firstSeen": 1779539535462,
-      "lastSeen": 1779539535462,
-      "sourceName": "DC Rainmaker",
-      "sourceCategory": "industry_news"
-    },
-    "https://news.samsung.com/ca_fr/samsung-annonce-une-avancee-majeure-dans-la-detection-des-evanouissements-grace-a-la-montre-galaxy-watch": {
-      "firstSeen": 1779540028821,
-      "lastSeen": 1779540028821,
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://news.samsung.com/ca/world-sleep-day-2026-how-samsung-is-tackling-sleep-apnea-to-energize-your-day": {
-      "firstSeen": 1779540028821,
-      "lastSeen": 1779594269878,
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ouraring.com/blog/how-to-recover-from-bad-sleep": {
-      "firstSeen": 1779540028821,
-      "lastSeen": 1779540028821,
-      "sourceName": "Oura Science & Research",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.whoop.com/us/en/thelocker/the-best-recovery-activities-according-to-whoop-members": {
-      "firstSeen": 1779540028821,
-      "lastSeen": 1779540375878,
-      "sourceName": "WHOOP / The Locker",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.whoop.com/us/en/thelocker/a-new-way-to-see-insights-on-which-behaviors-affect-your-recovery": {
-      "firstSeen": 1779540028821,
-      "lastSeen": 1779540375878,
-      "sourceName": "WHOOP / The Locker",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://news.samsung.com/ph/samsung-announces-world-first-breakthrough-in-fainting-prediction-with-galaxy-watch": {
-      "firstSeen": 1779594269878,
-      "lastSeen": 1779594269878,
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://news.samsung.com/global/samsung-announces-world-first-breakthrough-in-fainting-prediction-with-galaxy-watch": {
-      "firstSeen": 1779594441705,
-      "lastSeen": 1779666534760,
-      "sourceName": "Samsung Global Newsroom (Digital Health)",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://9to5mac.com/2026/05/24/apple-improving-heart-rate-tracking-in-watchos-27-mulberry-health-coach-delays/": {
-      "firstSeen": 1779666534760,
-      "lastSeen": 1779666534760,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.mdpi.com/1424-8220/26/11/3326": {
-      "firstSeen": 1779666534760,
-      "lastSeen": 1779666534760,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/11/3328": {
-      "firstSeen": 1779666534760,
-      "lastSeen": 1779666534760,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://openreview.net/pdf?id=LlG34C6mHF": {
-      "firstSeen": 1779666534760,
-      "lastSeen": 1779666534760,
-      "sourceName": "ICML Health Workshops / PMLR",
-      "sourceCategory": "academic"
-    },
-    "https://abbott.com/en-us/corpnewsroom/strategy-and-strength/abbott-enters-us-consumer-biowearables-market-with-lingo-and-libre-rio": {
-      "firstSeen": 1779666534760,
-      "lastSeen": 1779666534760,
-      "sourceName": "Abbott Biowearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ieeexplore.ieee.org/iel8/7333/4359219/11533557.pdf": {
-      "firstSeen": 1779666534760,
-      "lastSeen": 1779666534760,
-      "sourceName": "IEEE Sensors / Wearable Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://ieeexplore.ieee.org/iel8/11040154/11040167/11040818.pdf": {
-      "firstSeen": 1779666534760,
-      "lastSeen": 1779666534760,
-      "sourceName": "IEEE Sensors / Wearable Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://dl.acm.org/doi/10.1145/3123021.3123035": {
-      "firstSeen": 1779666534760,
-      "lastSeen": 1779666534760,
-      "sourceName": "ACM IMWUT / UbiComp",
-      "sourceCategory": "academic"
-    },
-    "https://www.abbott.com/corpnewsroom/strategy-and-strength/abbotts-biowearable-one-sensor-for-glucose-ketones.html": {
-      "firstSeen": 1779666534760,
-      "lastSeen": 1779666534760,
-      "sourceName": "Abbott Biowearables",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ieeexplore.ieee.org/iel8/6287639/6514899/10643131.pdf": {
-      "firstSeen": 1779666534760,
-      "lastSeen": 1779666534760,
-      "sourceName": "IEEE EMBC Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://ieeexplore.ieee.org/iel8/11251507/11251526/11254380.pdf": {
-      "firstSeen": 1779666534760,
-      "lastSeen": 1779666534760,
-      "sourceName": "IEEE Sensors / Wearable Proceedings",
-      "sourceCategory": "academic"
     },
     "https://arxiv.org/abs/2411.15240": {
       "firstSeen": 1780409367335,
@@ -1154,8 +632,8 @@
     },
     "https://dl.acm.org/doi/10.1145/2499621": {
       "firstSeen": 1780876245911,
-      "lastSeen": 1784516629925,
-      "sourceName": "ACM IMWUT / UbiComp",
+      "lastSeen": 1785114387119,
+      "sourceName": "ISWC Proceedings",
       "sourceCategory": "academic"
     },
     "https://dl.acm.org/doi/abs/10.1145/3561533": {
@@ -1706,7 +1184,7 @@
     },
     "https://clinicaltrials.gov/study/NCT07553364": {
       "firstSeen": 1782690677550,
-      "lastSeen": 1782690677550,
+      "lastSeen": 1785114387119,
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
@@ -1988,7 +1466,7 @@
     },
     "https://research.google/blog/sensorfm-towards-a-general-intelligence-and-interface-for-wearable-health-data/": {
       "firstSeen": 1783904515129,
-      "lastSeen": 1784516629925,
+      "lastSeen": 1785114387119,
       "sourceName": "Google Research Blog",
       "sourceCategory": "company_research"
     },
@@ -2132,13 +1610,13 @@
     },
     "https://9to5google.com/2026/07/19/google-pixel-watch-bands-discounts-july-2026/": {
       "firstSeen": 1784516629925,
-      "lastSeen": 1784516629925,
+      "lastSeen": 1785114387119,
       "sourceName": "9to5Google",
       "sourceCategory": "industry_news"
     },
     "https://mhealth.jmir.org/2026/1/e83385": {
       "firstSeen": 1784516629925,
-      "lastSeen": 1784516629925,
+      "lastSeen": 1785114387119,
       "sourceName": "JMIR mHealth and uHealth",
       "sourceCategory": "academic"
     },
@@ -2276,7 +1754,7 @@
     },
     "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253463": {
       "firstSeen": 1784516629925,
-      "lastSeen": 1784516629925,
+      "lastSeen": 1785114387119,
       "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
       "sourceCategory": "clinical_regulatory"
     },
@@ -2312,7 +1790,7 @@
     },
     "https://ieeexplore.ieee.org/iel8/19/11329398/11573182.pdf": {
       "firstSeen": 1784516629925,
-      "lastSeen": 1784516629925,
+      "lastSeen": 1785114387119,
       "sourceName": "IEEE Sensors / Wearable Proceedings",
       "sourceCategory": "academic"
     },
@@ -2330,7 +1808,7 @@
     },
     "https://developer.huawei.com/consumer/en/doc/hmscore-guides/obtain-smart-watch-data-0000001365189921": {
       "firstSeen": 1784516629925,
-      "lastSeen": 1784516629925,
+      "lastSeen": 1785114387119,
       "sourceName": "Huawei Health Kit",
       "sourceCategory": "vendor_websearch"
     },
@@ -2354,15 +1832,219 @@
     },
     "https://dl.acm.org/toc/imwut/2026/10/2": {
       "firstSeen": 1784516629925,
-      "lastSeen": 1784516629925,
+      "lastSeen": 1785114387119,
       "sourceName": "ACM IMWUT / UbiComp",
       "sourceCategory": "academic"
     },
     "https://developer.huawei.com/consumer/en/doc/hmscore-guides/extended-starting-ending-workout-0000001052835041": {
       "firstSeen": 1784516629925,
-      "lastSeen": 1784516629925,
+      "lastSeen": 1785114387119,
       "sourceName": "Huawei Health Kit",
       "sourceCategory": "vendor_websearch"
+    },
+    "https://9to5mac.com/2026/07/26/apple-watch-series-12-and-ultra-4-what-to-expect/": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.mdpi.com/1424-8220/26/15/4722": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://9to5mac.com/2026/07/24/watchos-27-adds-new-feature-to-improve-your-apple-watch-battery-life/": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://clinicaltrials.gov/study/NCT06858787": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07374315": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07725445": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07724808": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT02707029": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07558148": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://mhealth.jmir.org/2026/1/e81972": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "JMIR mHealth and uHealth",
+      "sourceCategory": "academic"
+    },
+    "https://9to5google.com/2026/07/23/first-fitbit-air-update/": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001505": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "PLOS Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://9to5google.com/2026/07/23/samsung-galaxy-watch-9-five-years-wear-os-updates/": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.mdpi.com/1424-8220/26/15/4676": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/15/4695": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/15/4680": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/15/4685": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://9to5google.com/2026/07/22/pixel-watch-5-specs-leak/": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://9to5mac.com/2026/07/21/apple-shares-true-story-video-on-how-apple-watch-helped-rescue-an-injured-cyclist/": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://mhealth.jmir.org/2026/1/e93050": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "JMIR mHealth and uHealth",
+      "sourceCategory": "academic"
+    },
+    "https://mhealth.jmir.org/2026/1/e85425": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "JMIR mHealth and uHealth",
+      "sourceCategory": "academic"
+    },
+    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252978": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261962": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.medtechdive.com/news/whoop-hires-fda-digital-health-committee-chair-as-chief-medical-officer/825949": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "MedTech Dive",
+      "sourceCategory": "industry_news"
+    },
+    "https://developer.dexcom.com/docs/dexcomv3/endpoint-overview": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "Dexcom Developer API",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://ieeexplore.ieee.org/iel8/6287639/11323511/11580340.pdf": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "IEEE EMBC Proceedings",
+      "sourceCategory": "academic"
+    },
+    "https://dl.acm.org/doi/10.1145/3811242.3819996": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "ISWC Proceedings",
+      "sourceCategory": "academic"
+    },
+    "https://dl.acm.org/doi/10.1145/3025453.3025561": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "ISWC Proceedings",
+      "sourceCategory": "academic"
+    },
+    "https://news.samsung.com/global/galaxy-unpacked-july-2026-a-first-look-at-galaxy-watch-ultra2-and-galaxy-watch9": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "Samsung Global Newsroom (Digital Health)",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://www.withings.com/en-eu/pages/press": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "Withings Newsroom",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://www.medtechdive.com/news/resmed-ventilator-safety-issue-linked-to-5-serious-injuries/825620": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "MedTech Dive",
+      "sourceCategory": "industry_news"
+    },
+    "https://ieeexplore.ieee.org/iel8/7333/4359219/11616602.pdf": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "IEEE Sensors / Wearable Proceedings",
+      "sourceCategory": "academic"
+    },
+    "https://developer.apple.com/documentation/tvos-release-notes/tvos-26_6-release-notes?changes=l_6": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "Apple Developer HealthKit / WorkoutKit / watchOS",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://ieeexplore.ieee.org/document/11558955": {
+      "firstSeen": 1785114387119,
+      "lastSeen": 1785114387119,
+      "sourceName": "IEEE Sensors / Wearable Proceedings",
+      "sourceCategory": "academic"
     }
   }
 }
