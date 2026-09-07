@@ -2,13 +2,13 @@
   "urls": {
     "https://clinicaltrials.gov/study/NCT07067151": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
     "https://developer.android.com/jetpack/androidx/releases/health-connect": {
       "firstSeen": 1778936127831,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "Android Health Connect Release Notes",
       "sourceCategory": "vendor_websearch"
     },
@@ -560,7 +560,7 @@
     },
     "https://www.levels.com/blog/how-continuous-glucose-monitoring-can-help-during-menopause": {
       "firstSeen": 1784516629925,
-      "lastSeen": 1787528629460,
+      "lastSeen": 1788743485050,
       "sourceName": "Levels Blog",
       "sourceCategory": "vendor_websearch"
     },
@@ -764,7 +764,7 @@
     },
     "https://developer.dexcom.com/docs/dexcomv3/endpoint-overview": {
       "firstSeen": 1785114387119,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "Dexcom Developer API",
       "sourceCategory": "vendor_websearch"
     },
@@ -1076,7 +1076,7 @@
     },
     "https://developer.dexcom.com/docs/dexcom/scopes-access": {
       "firstSeen": 1785719099635,
-      "lastSeen": 1787528629460,
+      "lastSeen": 1788743485050,
       "sourceName": "Dexcom Developer API",
       "sourceCategory": "vendor_websearch"
     },
@@ -1514,25 +1514,25 @@
     },
     "https://ieeexplore.ieee.org/document/9797694": {
       "firstSeen": 1786923750197,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "IEEE EMBC Proceedings",
       "sourceCategory": "academic"
     },
     "https://blog.google/products-and-platforms/devices/pixel/pixel-watch-5": {
       "firstSeen": 1786923750197,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "Google Blog / Fitbit",
       "sourceCategory": "vendor_websearch"
     },
     "https://ieeexplore.ieee.org/document/10839270": {
       "firstSeen": 1786923750197,
-      "lastSeen": 1788139593696,
-      "sourceName": "IEEE BIBM Proceedings",
+      "lastSeen": 1788743485050,
+      "sourceName": "IEEE EMBC Proceedings",
       "sourceCategory": "academic"
     },
     "https://ieeexplore.ieee.org/document/9018016": {
       "firstSeen": 1786923750197,
-      "lastSeen": 1787528629460,
+      "lastSeen": 1788743485050,
       "sourceName": "IEEE Sensors / Wearable Proceedings",
       "sourceCategory": "academic"
     },
@@ -1550,7 +1550,7 @@
     },
     "https://ieeexplore.ieee.org/document/11114802": {
       "firstSeen": 1786923750197,
-      "lastSeen": 1787528629460,
+      "lastSeen": 1788743485050,
       "sourceName": "IEEE Sensors / Wearable Proceedings",
       "sourceCategory": "academic"
     },
@@ -1598,7 +1598,7 @@
     },
     "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/": {
       "firstSeen": 1787528629460,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "Google Research Blog",
       "sourceCategory": "company_research"
     },
@@ -1700,7 +1700,7 @@
     },
     "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00068-3/fulltext?rss=yes": {
       "firstSeen": 1787528629460,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "Lancet Digital Health",
       "sourceCategory": "academic"
     },
@@ -1790,7 +1790,7 @@
     },
     "https://developer.huawei.com/consumer/en/doc/best-practices/bpta-smartwatch": {
       "firstSeen": 1787528629460,
-      "lastSeen": 1787528629460,
+      "lastSeen": 1788743485050,
       "sourceName": "Huawei Health Kit",
       "sourceCategory": "vendor_websearch"
     },
@@ -1820,19 +1820,19 @@
     },
     "https://mhealth.jmir.org/2026/1/e87324": {
       "firstSeen": 1788139593696,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "JMIR mHealth and uHealth",
       "sourceCategory": "academic"
     },
     "https://9to5google.com/2026/08/28/pixelated-114-who-watches-the-pixel-watch/": {
       "firstSeen": 1788139593696,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "9to5Google",
       "sourceCategory": "industry_news"
     },
     "https://9to5google.com/2026/08/28/fitbit-air-tape-bicep-tracking/": {
       "firstSeen": 1788139593696,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "9to5Google",
       "sourceCategory": "industry_news"
     },
@@ -1904,7 +1904,7 @@
     },
     "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/": {
       "firstSeen": 1788139593696,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "Google Research Blog",
       "sourceCategory": "company_research"
     },
@@ -1940,7 +1940,7 @@
     },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001647": {
       "firstSeen": 1788139593696,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
     },
@@ -1952,19 +1952,19 @@
     },
     "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253425": {
       "firstSeen": 1788139593696,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
       "sourceCategory": "clinical_regulatory"
     },
     "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K262472": {
       "firstSeen": 1788139593696,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
       "sourceCategory": "clinical_regulatory"
     },
     "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K254036": {
       "firstSeen": 1788139593696,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
       "sourceCategory": "clinical_regulatory"
     },
@@ -1994,7 +1994,7 @@
     },
     "https://news.samsung.com/global/tag/galaxy-watch": {
       "firstSeen": 1788139593696,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1788743485050,
       "sourceName": "Samsung Global Newsroom (Digital Health)",
       "sourceCategory": "vendor_websearch"
     },
@@ -2015,6 +2015,204 @@
       "lastSeen": 1788139593696,
       "sourceName": "Samsung Research Publications",
       "sourceCategory": "company_research"
+    },
+    "https://www.mdpi.com/1424-8220/26/17/5644": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/17/5651": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://9to5mac.com/2026/09/04/watchos-27-removes-three-features-that-apple-watch-users-might-miss-after-updating/": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.mdpi.com/1424-8220/26/17/5625": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://clinicaltrials.gov/study/NCT07805044": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07805291": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.mdpi.com/1424-8220/26/17/5640": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://clinicaltrials.gov/study/NCT07805733": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.mdpi.com/1424-8220/26/17/5639": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://clinicaltrials.gov/study/NCT07607782": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT03494127": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.mdpi.com/1424-8220/26/17/5630": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00046-4/fulltext?rss=yes": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Lancet Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://9to5mac.com/2026/09/03/apple-watch-loses-a-useful-multitasking-feature-in-watchos-27-that-ive-been-missing/": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://9to5google.com/2026/09/03/moto-watch-ultra-wear-os-smartwatch-motorola/": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://9to5mac.com/2026/09/03/we-need-to-talk-about-siri-ai-for-apple-watch/": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001633": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "PLOS Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1881771": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Frontiers in Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://9to5mac.com/2026/09/02/ios-27-basically-turns-your-iphone-and-airpods-into-an-apple-watch-at-the-gym/": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://9to5google.com/2026/09/02/google-mrbeast-fitbit-air-gemini-deal/": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001623": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "PLOS Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/17/5578": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1915478": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Frontiers in Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://9to5google.com/2026/09/01/first-pixel-watch-5-update/": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://9to5mac.com/2026/09/01/apple-watch-series-12-three-new-features-coming-next-week/": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://mhealth.jmir.org/2026/1/e91407": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "JMIR mHealth and uHealth",
+      "sourceCategory": "academic"
+    },
+    "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00115-9/fulltext?rss=yes": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Lancet Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://www.mddionline.com/digital-health/wearable-medical-devices": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Healthcare IT News",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.nytimes.com/2026/08/15/business/dealbook/wearables-healthcare.html": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Healthcare IT News",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.ama-assn.org/practice-management/digital-health/what-doctors-want-patients-know-about-health-wearables": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Healthcare IT News",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.medtechdive.com/news/5-questions-on-abbotts-glucose-ketone-sensors/828193": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "MedTech Dive",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.medtechdive.com/news/abbott-receives-fda-nod-for-dual-analyte-sensor/828770": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "MedTech Dive",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.levels.com/blog/a-pharmacists-perspective-on-continuous-glucose-monitors": {
+      "firstSeen": 1788743485050,
+      "lastSeen": 1788743485050,
+      "sourceName": "Levels Blog",
+      "sourceCategory": "vendor_websearch"
     }
   }
 }
