@@ -2,7 +2,7 @@
   "urls": {
     "https://clinicaltrials.gov/study/NCT07067151": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1790560193274,
+      "lastSeen": 1791166445557,
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
@@ -32,7 +32,7 @@
     },
     "https://clinicaltrials.gov/study/NCT05052216": {
       "firstSeen": 1781481158500,
-      "lastSeen": 1786319841139,
+      "lastSeen": 1791166445557,
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
@@ -48,23 +48,11 @@
       "sourceName": "openFDA Device PMA: wearable-relevant approvals",
       "sourceCategory": "clinical_regulatory"
     },
-    "https://research.google/blog/sensorfm-towards-a-general-intelligence-and-interface-for-wearable-health-data/": {
-      "firstSeen": 1783904515129,
-      "lastSeen": 1785719099635,
-      "sourceName": "Google Research Blog",
-      "sourceCategory": "company_research"
-    },
     "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P240035": {
       "firstSeen": 1783904515129,
       "lastSeen": 1789953596410,
       "sourceName": "openFDA Device PMA: wearable-relevant approvals",
       "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.medtechdive.com/news/physician-wearable-data-use-hindered-workflow-reimbursement-challenges-american-medical-association/824746": {
-      "firstSeen": 1783904515129,
-      "lastSeen": 1785719099635,
-      "sourceName": "MedTech Dive",
-      "sourceCategory": "industry_news"
     },
     "https://www.levels.com/blog/how-continuous-glucose-monitoring-can-help-during-menopause": {
       "firstSeen": 1784516629925,
@@ -84,27 +72,9 @@
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
-    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001505": {
-      "firstSeen": 1785114387119,
-      "lastSeen": 1785719099635,
-      "sourceName": "PLOS Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252978": {
-      "firstSeen": 1785114387119,
-      "lastSeen": 1785719099635,
-      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261962": {
-      "firstSeen": 1785114387119,
-      "lastSeen": 1785719099635,
-      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
-      "sourceCategory": "clinical_regulatory"
-    },
     "https://www.medtechdive.com/news/whoop-hires-fda-digital-health-committee-chair-as-chief-medical-officer/825949": {
       "firstSeen": 1785114387119,
-      "lastSeen": 1785719099635,
+      "lastSeen": 1791166445557,
       "sourceName": "MedTech Dive",
       "sourceCategory": "industry_news"
     },
@@ -113,36 +83,6 @@
       "lastSeen": 1789348814411,
       "sourceName": "Dexcom Developer API",
       "sourceCategory": "vendor_websearch"
-    },
-    "https://ieeexplore.ieee.org/iel8/6287639/11323511/11580340.pdf": {
-      "firstSeen": 1785114387119,
-      "lastSeen": 1785719099635,
-      "sourceName": "IEEE EMBC Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/15/4863": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/15/4876": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/15/4849": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.biorxiv.org/content/10.64898/2026.07.28.741277v1?rss=1": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "bioRxiv: new results",
-      "sourceCategory": "academic"
     },
     "https://mhealth.jmir.org/2026/1/e84506": {
       "firstSeen": 1785719099635,
@@ -156,185 +96,11 @@
       "sourceName": "JMIR mHealth and uHealth",
       "sourceCategory": "academic"
     },
-    "https://mhealth.jmir.org/2026/1/e76632": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://clinicaltrials.gov/study/NCT07739823": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT05828056": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07739810": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.07.30.26359295v1?rss=1": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://clinicaltrials.gov/study/NCT07635121": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.mdpi.com/1424-8220/26/15/4837": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.07.29.26359254v1?rss=1": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://clinicaltrials.gov/study/NCT06850025": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07739134": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.07.30.26359253v1?rss=1": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://clinicaltrials.gov/study/NCT06430086": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT05810636": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07739342": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07738653": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07739875": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.07.30.26359231v1?rss=1": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/15/4822": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1885289": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1839031": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://mhealth.jmir.org/2026/1/e67157": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1900115": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/15/4817": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://9to5mac.com/2026/07/28/ios-27-smarter-find-my-location-sharing-apple-watch/": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5mac.com/2026/07/28/man-credits-apple-watch-with-saving-his-life-after-collapsing-at-home/": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.mdpi.com/1424-8220/26/15/4792": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/15/4795": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
     "https://machinelearning.apple.com/research/audio-synthesis-diffusion-transformers": {
       "firstSeen": 1785719099635,
       "lastSeen": 1786319841139,
       "sourceName": "Apple Machine Learning Research",
       "sourceCategory": "company_research"
-    },
-    "https://9to5google.com/2026/07/27/google-giving-away-pixel-watch-2/": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.medtechdive.com/news/fda-warns-smartwatches-noninvasive-blood-sugar/708320": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "MedTech Dive",
-      "sourceCategory": "industry_news"
     },
     "https://www.dcrainmaker.com/2026/07/garmin-acquires-training-trainheroic.html": {
       "firstSeen": 1785719099635,
@@ -342,22 +108,10 @@
       "sourceName": "DC Rainmaker",
       "sourceCategory": "industry_news"
     },
-    "https://blog.google/products-and-platforms/platforms/wear-os/5-ways-to-personalize": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Google Blog / Fitbit",
-      "sourceCategory": "vendor_websearch"
-    },
     "https://investors.dexcom.com/news/news-details/2026/Dexcom-Announced-as-First-Participant-Selected-for-FDAs-TEMPO-Digital-Health-Devices-Pilot-Program/default.aspx": {
       "firstSeen": 1785719099635,
       "lastSeen": 1786923750197,
       "sourceName": "Dexcom News",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://www.withings.com/fi-fi/pages/research-clinical-trials": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Withings Newsroom",
       "sourceCategory": "vendor_websearch"
     },
     "http://developer.android.com/jetpack/androidx/releases/health-connect": {
@@ -383,12 +137,6 @@
       "lastSeen": 1786319841139,
       "sourceName": "IEEE Sensors / Wearable Proceedings",
       "sourceCategory": "academic"
-    },
-    "https://www.withings.com/nl-nl/pages/hypertension": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1785719099635,
-      "sourceName": "Withings Newsroom",
-      "sourceCategory": "vendor_websearch"
     },
     "https://9to5mac.com/2026/08/09/a-new-ceramic-apple-watch-could-go-on-sale-soon/": {
       "firstSeen": 1786319841139,
@@ -968,7 +716,7 @@
     },
     "https://clinicaltrials.gov/study/NCT07780266": {
       "firstSeen": 1787528629460,
-      "lastSeen": 1788139593696,
+      "lastSeen": 1791166445557,
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
@@ -1274,7 +1022,7 @@
     },
     "https://www.medtechdive.com/news/fda-cleared-wearable-blood-pressure-device-hits-market/544908": {
       "firstSeen": 1788139593696,
-      "lastSeen": 1789348814411,
+      "lastSeen": 1791166445557,
       "sourceName": "MedTech Dive",
       "sourceCategory": "industry_news"
     },
@@ -2024,7 +1772,7 @@
     },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001691": {
       "firstSeen": 1790560193274,
-      "lastSeen": 1790560193274,
+      "lastSeen": 1791166445557,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
     },
@@ -2156,7 +1904,7 @@
     },
     "https://machinelearning.apple.com/research/latent-space-distillation": {
       "firstSeen": 1790560193274,
-      "lastSeen": 1790560193274,
+      "lastSeen": 1791166445557,
       "sourceName": "Apple Machine Learning Research",
       "sourceCategory": "company_research"
     },
@@ -2186,13 +1934,13 @@
     },
     "https://mhealth.jmir.org/2026/1/e92493": {
       "firstSeen": 1790560193274,
-      "lastSeen": 1790560193274,
+      "lastSeen": 1791166445557,
       "sourceName": "JMIR mHealth and uHealth",
       "sourceCategory": "academic"
     },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001743": {
       "firstSeen": 1790560193274,
-      "lastSeen": 1790560193274,
+      "lastSeen": 1791166445557,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
     },
@@ -2204,7 +1952,7 @@
     },
     "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K254119": {
       "firstSeen": 1790560193274,
-      "lastSeen": 1790560193274,
+      "lastSeen": 1791166445557,
       "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
       "sourceCategory": "clinical_regulatory"
     },
@@ -2234,7 +1982,7 @@
     },
     "https://blog.google/products-and-platforms/products/google-health/health-guardian-features-live": {
       "firstSeen": 1790560193274,
-      "lastSeen": 1790560193274,
+      "lastSeen": 1791166445557,
       "sourceName": "Google Blog / Fitbit",
       "sourceCategory": "vendor_websearch"
     },
@@ -2246,13 +1994,13 @@
     },
     "https://www.levels.com/blog/inside-disruptive-nutrition": {
       "firstSeen": 1790560193274,
-      "lastSeen": 1790560193274,
+      "lastSeen": 1791166445557,
       "sourceName": "Levels Blog",
       "sourceCategory": "vendor_websearch"
     },
     "https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system": {
       "firstSeen": 1790560193274,
-      "lastSeen": 1790560193274,
+      "lastSeen": 1791166445557,
       "sourceName": "Apple Newsroom / Watch",
       "sourceCategory": "vendor_websearch"
     },
@@ -2264,7 +2012,7 @@
     },
     "https://developer.android.com/health-and-fitness/health-connect/experiences/workouts": {
       "firstSeen": 1790560193274,
-      "lastSeen": 1790560193274,
+      "lastSeen": 1791166445557,
       "sourceName": "Android Developers Health & Fitness",
       "sourceCategory": "vendor_websearch"
     },
@@ -2273,6 +2021,252 @@
       "lastSeen": 1790560193274,
       "sourceName": "IEEE Sensors / Wearable Proceedings",
       "sourceCategory": "academic"
+    },
+    "https://9to5mac.com/2026/10/03/heres-why-i-upgraded-from-the-apple-watch-series-10-to-series-12/": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.mdpi.com/1424-8220/26/19/6272": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/19/6277": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://clinicaltrials.gov/study/NCT07462312": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT05976074": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07316153": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT06680830": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07148843": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT06479876": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07856459": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07853859": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07628959": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.mdpi.com/1424-8220/26/19/6259": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.nature.com/articles/s41746-026-03256-3": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "npj Digital Medicine",
+      "sourceCategory": "academic"
+    },
+    "https://clinicaltrials.gov/study/NCT07856121": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.mdpi.com/1424-8220/26/19/6267": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://9to5mac.com/2026/10/01/happy-hour-610/": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://mhealth.jmir.org/2026/1/e91724": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "JMIR mHealth and uHealth",
+      "sourceCategory": "academic"
+    },
+    "https://9to5google.com/2026/09/30/facer-wear-os-library-update-timex/": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://9to5mac.com/2026/09/30/apple-watch-series-12-ultra-4-adding-two-new-features-soon/": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "9to5Mac",
+      "sourceCategory": "industry_news"
+    },
+    "https://9to5google.com/2026/09/30/fitbit-air-launches-in-india-later-this-week/": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.mdpi.com/1424-8220/26/19/6230": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/19/6202": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/19/6235": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://9to5google.com/2026/09/29/pixel-watch-4-5s-handy-usb-c-travel-charger-is-currently-on-sale/": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://9to5google.com/2026/09/29/forget-the-fitbit-air-active-bands-these-cheap-alternatives-are-way-better/": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://mhealth.jmir.org/2026/1/e79512": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "JMIR mHealth and uHealth",
+      "sourceCategory": "academic"
+    },
+    "https://9to5google.com/2026/09/28/pixel-watch-update-adds-googles-new-3d-emoji/": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "9to5Google",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1930008": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "Frontiers in Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://www.medtechdive.com/news/oura-to-add-blood-pressure-feature-following-fda-policy-change/821427": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "MedTech Dive",
+      "sourceCategory": "industry_news"
+    },
+    "https://dl.acm.org/doi/10.1145/3830727.3834824": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ACM IMWUT / UbiComp",
+      "sourceCategory": "academic"
+    },
+    "https://www.dcrainmaker.com/2026/09/garmins-acquires-moxy-and-garmin-gets-sued.html": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "DC Rainmaker",
+      "sourceCategory": "industry_news"
+    },
+    "https://ieeexplore.ieee.org/iel8/6287639/6514899/11550055.pdf": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "IEEE EMBC Proceedings",
+      "sourceCategory": "academic"
+    },
+    "https://dl.acm.org/doi/10.1145/3830727.3834842": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ISWC Proceedings",
+      "sourceCategory": "academic"
+    },
+    "https://www.dcrainmaker.com/2026/09/wahoo-new-apple-watch-running-app.html": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "DC Rainmaker",
+      "sourceCategory": "industry_news"
+    },
+    "https://ieeexplore.ieee.org/document/11385165": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "IEEE Sensors / Wearable Proceedings",
+      "sourceCategory": "academic"
+    },
+    "https://digitalhealthwire.com/oura-gets-ready-to-ring-the-bell": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "Digital Health Wire",
+      "sourceCategory": "industry_news"
+    },
+    "https://www.dexcom.com/en-za/dexcom-one-plus-cgm-system": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "Dexcom News",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://dl.acm.org/toc/imwut/2026/10/2": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "ACM IMWUT / UbiComp",
+      "sourceCategory": "academic"
+    },
+    "https://apple.com/newsroom/2026/09/get-ready-to-experience-iphone-18-pro-the-new-apple-watch-lineup-and-airpods-5": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "Apple Newsroom / Watch",
+      "sourceCategory": "vendor_websearch"
+    },
+    "https://www.dcrainmaker.com/2026/09/apples-backyard-detailed.html": {
+      "firstSeen": 1791166445557,
+      "lastSeen": 1791166445557,
+      "sourceName": "DC Rainmaker",
+      "sourceCategory": "industry_news"
     }
   }
 }
