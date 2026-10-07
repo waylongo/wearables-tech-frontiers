@@ -1,27 +1,9 @@
 {
   "schema_version": 2,
-  "generatedAt": "2026-05-17",
+  "generatedAt": "2026-10-07",
   "note": "Wearables & sports-health intelligence sources. primary_rss = verified RSS/Atom feeds. api_sources = public APIs fetched centrally. websearch_sites = fetched centrally by GitHub Actions via Tavily. title_blacklist = hard filter before LLM sees items.",
   "primary_rss": {
     "academic": [
-      {
-        "name": "arXiv eess.SP (Signal Processing)",
-        "category": "academic",
-        "priority": "P1",
-        "rssUrl": "https://rss.arxiv.org/rss/eess.SP",
-        "homeUrl": "https://arxiv.org/list/eess.SP/recent",
-        "lang": "en",
-        "why": "PPG/ECG/IMU algorithm preprints"
-      },
-      {
-        "name": "arXiv cs.HC (Human-Computer Interaction)",
-        "category": "academic",
-        "priority": "P1",
-        "rssUrl": "https://rss.arxiv.org/rss/cs.HC",
-        "homeUrl": "https://arxiv.org/list/cs.HC/recent",
-        "lang": "en",
-        "why": "Wearable UX, sensor fusion, health HCI"
-      },
       {
         "name": "medRxiv: new results",
         "category": "academic",
@@ -724,6 +706,12 @@
       },
       {
         "name": "Lancet Digital Health",
+        "fallbackWebsearch": {
+          "domains": [
+            "thelancet.com"
+          ],
+          "query": "\"Lancet Digital Health\" wearable smartwatch actigraphy digital biomarker"
+        },
         "category": "academic",
         "priority": "P1",
         "rssUrl": "https://www.thelancet.com/rssfeed/landig_online.xml",
@@ -1027,6 +1015,12 @@
       },
       {
         "name": "IEEE Journal of Biomedical and Health Informatics (JBHI)",
+        "fallbackWebsearch": {
+          "domains": [
+            "ieeexplore.ieee.org"
+          ],
+          "query": "\"IEEE Journal of Biomedical and Health Informatics\" wearable PPG ECG digital biomarker"
+        },
         "category": "academic",
         "priority": "P1",
         "rssUrl": "https://ieeexplore.ieee.org/rss/TOC6221020.XML",
@@ -1547,6 +1541,12 @@
     "industry_news": [
       {
         "name": "MobiHealthNews",
+        "fallbackWebsearch": {
+          "domains": [
+            "mobihealthnews.com"
+          ],
+          "query": "wearable smartwatch smart ring digital biomarker health monitoring"
+        },
         "category": "industry_news",
         "priority": "P1",
         "rssUrl": "https://www.mobihealthnews.com/feed",
@@ -3706,6 +3706,96 @@
     ]
   },
   "api_sources": {
+    "arxiv": [
+      {
+        "name": "arXiv eess.SP (Signal Processing)",
+        "category": "academic",
+        "priority": "P1",
+        "homeUrl": "https://arxiv.org/list/eess.SP/recent",
+        "lang": "en",
+        "why": "PPG/ECG/IMU algorithm preprints",
+        "arxivCategory": "eess.SP",
+        "keywordFilter": [
+          "wearable",
+          "smartwatch",
+          "smartband",
+          "smart ring",
+          "fitness tracker",
+          "apple watch",
+          "pixel watch",
+          "galaxy watch",
+          "galaxy ring",
+          "oura ring",
+          "whoop",
+          "fitbit",
+          "garmin",
+          "withings",
+          "dexcom",
+          "cgm",
+          "continuous glucose",
+          "ppg",
+          "ecg",
+          "ekg",
+          "hrv",
+          "spo2",
+          "sleep tracking",
+          "sleep staging",
+          "heart rate variability",
+          "actigraphy",
+          "activity recognition",
+          "biosignal",
+          "digital biomarker",
+          "on-device health",
+          "health coaching",
+          "remote monitoring"
+        ],
+        "keywordScope": "title_summary"
+      },
+      {
+        "name": "arXiv cs.HC (Human-Computer Interaction)",
+        "category": "academic",
+        "priority": "P1",
+        "homeUrl": "https://arxiv.org/list/cs.HC/recent",
+        "lang": "en",
+        "why": "Wearable UX, sensor fusion, health HCI",
+        "arxivCategory": "cs.HC",
+        "keywordFilter": [
+          "wearable",
+          "smartwatch",
+          "smartband",
+          "smart ring",
+          "fitness tracker",
+          "apple watch",
+          "pixel watch",
+          "galaxy watch",
+          "galaxy ring",
+          "oura ring",
+          "whoop",
+          "fitbit",
+          "garmin",
+          "withings",
+          "dexcom",
+          "cgm",
+          "continuous glucose",
+          "ppg",
+          "ecg",
+          "ekg",
+          "hrv",
+          "spo2",
+          "sleep tracking",
+          "sleep staging",
+          "heart rate variability",
+          "actigraphy",
+          "activity recognition",
+          "biosignal",
+          "digital biomarker",
+          "on-device health",
+          "health coaching",
+          "remote monitoring"
+        ],
+        "keywordScope": "title_summary"
+      }
+    ],
     "pubmed": [
       {
         "name": "PubMed: wearable health algorithms",

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { readFile } from 'fs/promises';
-import { dirname, join } from 'path';
+import { readFile, writeFile, mkdir } from 'fs/promises';
+import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -11,10 +11,12 @@ const REPO_ROOT = join(__dirname, '..');
 function parseArgs() {
   const args = {
     feedPath: join(REPO_ROOT, 'feed-wearables.json'),
-    strict: false
+    strict: false,
+    reportPath: null
   };
   for (const arg of process.argv.slice(2)) {
     if (arg === '--strict') args.strict = true;
+    else if (arg.startsWith('--report=')) args.reportPath = arg.slice('--report='.length);
     else if (arg.startsWith('--feed=')) args.feedPath = arg.slice('--feed='.length);
   }
   return args;
@@ -105,10 +107,17 @@ function nearDuplicateTitleKey(item) {
   return words.slice(0, 5).join(' ');
 }
 
-function scanFeed(feed) {
+export function scanFeed(feed) {
   const findings = [];
-  const warnings = [];
+  const warnings = [...(feed.healthcheck?.warnings || [])];
   const items = Array.isArray(feed.items) ? feed.items : [];
+  if (!items.length) addContentFinding(findings, 'empty_feed', {}, 'Feed must contain at least one selected item');
+  const generatedAt = Date.parse(feed.generatedAt);
+  const days = Number(feed.lookbackDays);
+  if (Number(feed.schemaVersion) >= 2) {
+    if (!Number.isFinite(generatedAt)) addContentFinding(findings, 'invalid_generated_at', {}, 'generatedAt must be parseable');
+    if (!Number.isFinite(days) || days < 1) addContentFinding(findings, 'invalid_lookback_days', {}, 'lookbackDays must be positive');
+  }
   const htmlRe = /<\/?(?:p|a|img|div|span|br|strong|em|ul|ol|li|script|style)\b/i;
   const entityRe = /&(?:[a-z]+|#\d+|#x[0-9a-f]+);/i;
   const markdownLinkRe = /\[[^\]]+\]\([^)]+\)/;
@@ -119,6 +128,14 @@ function scanFeed(feed) {
 
   for (const item of items) {
     const body = `${item.title || ''} ${item.summary || ''}`;
+    if (Number.isFinite(generatedAt) && Number.isFinite(days) && days > 0) {
+      const date = Date.parse(item.publishedAt);
+      if (!Number.isFinite(date) && item.retrievalMethod !== 'tavily' && item.sourceCategory !== 'vendor_websearch') {
+        addContentFinding(findings, 'invalid_publication_date', item, 'Missing or invalid publishedAt');
+      } else if (Number.isFinite(date) && (date > generatedAt + 86400000 || date < generatedAt - days * 86400000)) {
+        addContentFinding(findings, 'date_outside_window', item, 'Publication date is outside the feed window');
+      }
+    }
     if (!item.url) addContentFinding(findings, 'missing_url', item, 'Feed items must include a URL');
     if (seenUrls.has(item.url)) addContentFinding(findings, 'duplicate_url', item, item.url);
     seenUrls.add(item.url);
@@ -141,7 +158,7 @@ function scanFeed(feed) {
   }
 
   if (Number(feed.stats?.tavilySitesFailed || 0) > 0) {
-    addContentFinding(findings, 'tavily_failure', {}, `${feed.stats.tavilySitesFailed} Tavily site(s) failed`);
+    warnings.push(`${feed.stats.tavilySitesFailed} Tavily site(s) failed; coverage degraded`);
   }
 
   const hasSelectionLayer = Number(feed.schemaVersion || 0) >= 2 || feed.candidateStats || feed.candidateItems;
@@ -163,34 +180,36 @@ function scanFeed(feed) {
   return { findings, warnings, hasSelectionLayer };
 }
 
-const args = parseArgs();
-const feed = JSON.parse(await readFile(args.feedPath, 'utf-8'));
-const { findings, warnings, hasSelectionLayer } = scanFeed(feed);
-const strictContent = args.strict || hasSelectionLayer;
-const blockingFindings = strictContent
-  ? findings
-  : findings.filter(f => ['missing_url', 'duplicate_url', 'duplicate_title'].includes(f.kind));
-const legacyWarnings = strictContent ? [] : findings.filter(f => !blockingFindings.includes(f));
-
-for (const warning of warnings) console.error(`warning: ${warning}`);
-for (const finding of legacyWarnings) {
-  console.error(`warning: legacy feed content issue (${finding.kind}): ${finding.title || finding.detail}`);
+export function checkFeedQuality(feed, { strict = false } = {}) {
+  const { findings, warnings, hasSelectionLayer } = scanFeed(feed);
+  const strictContent = strict || Boolean(hasSelectionLayer);
+  const blockingFindings = strictContent ? findings
+    : findings.filter(f => ['empty_feed', 'missing_url', 'duplicate_url', 'duplicate_title'].includes(f.kind));
+  const legacyWarnings = strictContent ? [] : findings.filter(f => !blockingFindings.includes(f));
+  return { status: blockingFindings.length ? 'failed' : 'passed', schemaVersion: feed.schemaVersion || null,
+    itemCount: Array.isArray(feed.items) ? feed.items.length : 0,
+    candidateItems: Array.isArray(feed.candidateItems) ? feed.candidateItems.length : null,
+    strict: strictContent, findings: blockingFindings,
+    warnings: [...new Set([...warnings, ...legacyWarnings.map(f => `Legacy feed content issue (${f.kind}): ${f.title || f.detail}`)])] };
 }
 
-if (blockingFindings.length > 0) {
-  console.error('Feed quality check failed:');
-  for (const finding of blockingFindings) {
-    console.error(`- ${finding.kind}: ${finding.title || finding.detail}${finding.url ? ` (${finding.url})` : ''}`);
+async function main() {
+  const args = parseArgs();
+  let report;
+  try { report = checkFeedQuality(JSON.parse(await readFile(args.feedPath, 'utf-8')), args); }
+  catch (error) { report = { status: 'failed', itemCount: 0, warnings: [], findings: [{ kind: 'unreadable_feed', detail: error.message }] }; }
+  if (args.reportPath) {
+    await mkdir(dirname(resolve(args.reportPath)), { recursive: true });
+    await writeFile(args.reportPath, JSON.stringify(report, null, 2));
   }
-  process.exit(1);
+  for (const warning of report.warnings) console.error(`warning: ${warning}`);
+  if (report.status === 'failed') {
+    console.error('Feed quality check failed:');
+    for (const finding of report.findings) console.error(`- ${finding.kind}: ${finding.title || finding.detail}${finding.url ? ` (${finding.url})` : ''}`);
+    process.exitCode = 1;
+  } else console.log(JSON.stringify({ ...report, status: 'ok', feedPath: args.feedPath, warnings: report.warnings.length }));
 }
 
-console.log(JSON.stringify({
-  status: 'ok',
-  feedPath: args.feedPath,
-  schemaVersion: feed.schemaVersion || null,
-  itemCount: Array.isArray(feed.items) ? feed.items.length : 0,
-  candidateItems: Array.isArray(feed.candidateItems) ? feed.candidateItems.length : null,
-  strict: strictContent,
-  warnings: warnings.length + legacyWarnings.length
-}));
+if (process.argv[1] && resolve(process.argv[1]) === __filename) {
+  main().catch(error => { console.error(error.message); process.exitCode = 1; });
+}

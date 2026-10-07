@@ -12,9 +12,12 @@
 
 import { readFile } from 'fs/promises';
 import { existsSync } from 'fs';
-import { dirname, join } from 'path';
+import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import { homedir } from 'os';
+import { httpGet } from './lib/http.mjs';
+import { fetchArxiv } from './lib/academic.mjs';
+import { applyCoverage, mergeRemoteCoverage } from './lib/coverage.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -42,7 +45,6 @@ const PROMPT_FILES = [
   'slides-report.md'
 ];
 
-const USER_AGENT = 'Mozilla/5.0 (wearables-tech-frontiers-skill/2.0)';
 const DAY_MS = 24 * 60 * 60 * 1000;
 const CANONICAL_CATEGORIES = ['industry_news', 'company_research', 'academic', 'clinical_regulatory'];
 const RETRIEVAL_BUCKETS = ['vendor_websearch'];
@@ -238,29 +240,6 @@ function parseFeed(xml) {
   return items;
 }
 
-async function httpGet(url, timeoutMs = 15000) {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
-  const isGithubRaw = url.startsWith(REMOTE_RAW_BASE);
-  try {
-    const res = await fetch(url, {
-      signal: controller.signal,
-      headers: {
-        'User-Agent': USER_AGENT,
-        'Accept': isGithubRaw
-          ? 'application/json'
-          : 'application/rss+xml, application/atom+xml, application/xml, application/json, text/xml, */*'
-      }
-    });
-    if (!res.ok) return { ok: false, status: res.status, text: null };
-    return { ok: true, status: res.status, text: await res.text() };
-  } catch (err) {
-    return { ok: false, status: 0, text: null, error: err.message };
-  } finally {
-    clearTimeout(timer);
-  }
-}
-
 async function loadCatalog(noRemote, healthcheck) {
   if (existsSync(USER_CATALOG)) {
     try {
@@ -335,16 +314,15 @@ function normalizePublishedAt(dateStr) {
   return ms == null ? null : new Date(ms).toISOString();
 }
 
-function withinDays(dateStr, days) {
+function withinDays(dateStr, days, now = Date.now()) {
   const ms = parseDateMs(dateStr);
   if (ms == null) return false;
-  const now = Date.now();
   if (ms > now + DAY_MS) return false;
   return ms >= now - days * DAY_MS;
 }
 
-function hasDateWindow(item, days) {
-  if (item.publishedAt) return withinDays(item.publishedAt, days);
+function hasDateWindow(item, days, now = Date.now()) {
+  if (item.publishedAt) return withinDays(item.publishedAt, days, now);
   return item.sourceCategory === 'vendor_websearch' || item.retrievalMethod === 'tavily';
 }
 
@@ -527,7 +505,8 @@ function categoryAllowed(itemCategory, categories) {
   return false;
 }
 
-function buildFromRemoteFeed(feed, categories, windowDays, healthcheck) {
+export function buildFromRemoteFeed(feed, categories, windowDays, healthcheck, now = Date.now()) {
+  mergeRemoteCoverage(feed, healthcheck, now);
   healthcheck.feed_source = 'remote_feed';
   healthcheck.remote_feed_generated_at = feed.generatedAt || null;
   healthcheck.remote_feed_lookback_days = feed.lookbackDays || null;
@@ -553,7 +532,7 @@ function buildFromRemoteFeed(feed, categories, windowDays, healthcheck) {
       localFilteredByCategory++;
       continue;
     }
-    if (!hasDateWindow(it, windowDays)) {
+    if (!hasDateWindow(it, windowDays, now)) {
       localFilteredByDate++;
       continue;
     }
@@ -585,25 +564,30 @@ function buildFromRemoteFeed(feed, categories, windowDays, healthcheck) {
   };
 }
 
-async function buildFromLocalRss(catalog, categories, windowDays, healthcheck) {
+export async function buildFromLocalRss(catalog, categories, windowDays, healthcheck, {
+  fetchRss = fetchFeed, fetchArxivSource = fetchArxiv, fetchFda = fetchOpenFda, now = Date.now()
+} = {}) {
   healthcheck.feed_source = 'local_rss';
   const sources = [];
   for (const cat of categories) {
     for (const s of (catalog.primary_rss?.[cat] || [])) sources.push(s);
   }
-  if (sources.length === 0) {
-    healthcheck.warnings.push(`No primary_rss sources matched categories: ${categories.join(', ')}`);
+  if (sources.length === 0 && ![...(catalog.api_sources?.arxiv || []), ...(catalog.api_sources?.openfda || [])]
+    .some(source => categoryAllowed(source.category, categories))) {
+    healthcheck.warnings.push(`No local RSS/API sources matched categories: ${categories.join(', ')}`);
   }
 
-  const fetchResults = await Promise.all(sources.map(fetchFeed));
+  const fetchResults = await Promise.all(sources.map(fetchRss));
   const blacklistPatterns = catalog.title_blacklist?.patterns || [];
   const allItems = [];
+  const seenArxivIds = new Set();
   for (const { source, items, error } of fetchResults) {
-    healthcheck.per_source[source.name] = { fetched: items.length, kept: 0, error };
+    healthcheck.per_source[source.name] = { fetched: items.length,
+      datePassed: items.filter(it => withinDays(it.publishedAt, windowDays, now)).length, kept: 0, error };
     if (error) continue;
 
     for (const it of items) {
-      if (!withinDays(it.publishedAt, windowDays)) {
+      if (!withinDays(it.publishedAt, windowDays, now)) {
         healthcheck.filtered_out_by_date++;
         continue;
       }
@@ -638,17 +622,20 @@ async function buildFromLocalRss(catalog, categories, windowDays, healthcheck) {
   }
 
   const apiFetchers = [
+    ...(catalog.api_sources?.arxiv || []).filter(source => categoryAllowed(source.category, categories))
+      .map(source => ({ source, fetcher: s => fetchArxivSource(s, windowDays, { now, keywords: catalog.keyword_filters?.wearables_en || [] }) })),
     ...(catalog.api_sources?.openfda || [])
       .filter(source => categoryAllowed(source.category, categories))
-      .map(source => ({ source, fetcher: s => fetchOpenFda(s, windowDays) }))
+      .map(source => ({ source, fetcher: s => fetchFda(s, windowDays) }))
   ];
   const apiResults = await Promise.all(apiFetchers.map(({ source, fetcher }) => fetcher(source)));
-  for (const { source, items, error } of apiResults) {
-    healthcheck.per_api_source[source.name] = { fetched: items.length, kept: 0, error };
-    if (error) continue;
+  for (const { source, items, error, warnings = [], partial = false } of apiResults) {
+    healthcheck.per_api_source[source.name] = { fetched: items.length,
+      datePassed: items.filter(it => withinDays(it.publishedAt, windowDays, now)).length, kept: 0, error, partial, warnings };
+    if (error && !items.length) continue;
 
     for (const it of items) {
-      if (!withinDays(it.publishedAt, windowDays)) {
+      if (!withinDays(it.publishedAt, windowDays, now)) {
         healthcheck.filtered_out_by_date++;
         continue;
       }
@@ -668,6 +655,10 @@ async function buildFromLocalRss(catalog, categories, windowDays, healthcheck) {
         healthcheck.filtered_out_by_source_exclude++;
         continue;
       }
+      if (it.arxivId) {
+        if (seenArxivIds.has(it.arxivId)) continue;
+        seenArxivIds.add(it.arxivId);
+      }
       const item = {
         ...it,
         sourceName: source.name,
@@ -682,6 +673,7 @@ async function buildFromLocalRss(catalog, categories, windowDays, healthcheck) {
     }
   }
 
+  applyCoverage({ healthcheck }, catalog, {}, { now });
   return {
     items: allItems,
     stats: {
@@ -779,7 +771,9 @@ async function main() {
   console.log(JSON.stringify(output, null, 2));
 }
 
-main().catch(err => {
-  console.error(JSON.stringify({ status: 'error', message: err.message, stack: err.stack }));
-  process.exit(1);
-});
+if (process.argv[1] && resolve(process.argv[1]) === __filename) {
+  main().catch(err => {
+    console.error(JSON.stringify({ status: 'error', message: err.message, stack: err.stack }));
+    process.exitCode = 1;
+  });
+}

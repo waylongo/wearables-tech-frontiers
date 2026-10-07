@@ -2,7 +2,7 @@ name: Generate Wearables Feed
 
 on:
   schedule:
-    # Runs every Monday at 07:30 Beijing time (Sunday 23:30 UTC).
+    # Target: Monday 07:30 Beijing time. GitHub may delay scheduled runs.
     - cron: "30 23 * * 0"
   workflow_dispatch:
     inputs:
@@ -25,11 +25,14 @@ jobs:
     timeout-minutes: 30
     permissions:
       contents: write
-
+      actions: read
     steps:
+      - name: Set staging directory
+        run: echo "WTF_OUTPUT_DIR=$RUNNER_TEMP/wearables-feed-run" >> "$GITHUB_ENV"
+
       - uses: actions/checkout@v6
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
           fetch-depth: 0
 
       - uses: actions/setup-node@v6
@@ -37,52 +40,55 @@ jobs:
           node-version: "22"
 
       - name: Sync latest main
+        if: github.ref_name == 'main'
         run: git pull --ff-only origin main
 
-      - name: Generate feed
+      - name: Generate and validate candidate feed
+        id: pipeline
+        continue-on-error: true
         env:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+          WTF_MODE: ${{ inputs.mode }}
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.mode }}" = "rss-only" ]; then
-            node scripts/generate-feed.js --rss-only
-          else
-            node scripts/generate-feed.js
-          fi
+          args=("--output-dir=$WTF_OUTPUT_DIR")
+          if [ "$GITHUB_REF_NAME" = "main" ]; then args+=(--publish); fi
+          if [ "$WTF_MODE" = "rss-only" ]; then args+=(--rss-only); fi
+          node scripts/run-feed.js "${args[@]}"
 
-      - name: Check feed quality
-        run: node scripts/check-feed-quality.js --strict
-
-      - name: Write run summary
+      - name: Commit feed or failure diagnostics
+        id: commit
+        if: always() && github.ref_name == 'main'
         run: |
-          node <<'NODE' >> "$GITHUB_STEP_SUMMARY"
-          const feed = require('./feed-wearables.json');
-          const stats = feed.stats || {};
-          const health = feed.healthcheck || {};
-          const warnings = health.warnings || [];
-          console.log('## Wearables Feed Summary');
-          console.log('');
-          console.log(`- Generated at: ${feed.generatedAt || 'unknown'}`);
-          console.log(`- Lookback days: ${feed.lookbackDays || 'unknown'}`);
-          console.log(`- Kept items: ${stats.keptItems ?? 'unknown'}`);
-          console.log(`- Raw items: ${stats.rawItems ?? 'unknown'}`);
-          console.log(`- RSS sources: ${stats.sourcesWithResults ?? 0}/${stats.sourcesQueried ?? 0} with results, ${stats.sourcesFailed ?? 0} failed`);
-          console.log(`- API sources: ${stats.apiSourcesWithResults ?? 0}/${stats.apiSourcesQueried ?? 0} with results, ${stats.apiSourcesFailed ?? 0} failed`);
-          console.log(`- Tavily sites: ${stats.tavilySitesWithResults ?? 0}/${stats.tavilySitesQueried ?? 0} with results, ${stats.tavilySitesFailed ?? 0} failed`);
-          console.log(`- Duplicate URLs skipped: ${health.duplicate_urls ?? 0}`);
-          console.log(`- Duplicate titles skipped: ${health.duplicate_titles ?? 0}`);
-          console.log(`- Filtered out: date=${health.filtered_out_by_date ?? 0}, blacklist=${health.filtered_out_by_blacklist ?? 0}, keyword=${health.filtered_out_by_keyword ?? 0}, required_keyword=${health.filtered_out_by_required_keyword ?? 0}, source_exclude=${health.filtered_out_by_source_exclude ?? 0}, entry_page=${health.filtered_out_by_entry_page ?? 0}, tavily_quality=${health.filtered_out_by_tavily_quality ?? 0}`);
-          if (warnings.length) {
-            console.log('');
-            console.log('### Warnings');
-            for (const warning of warnings) console.log(`- ${warning}`);
-          }
-          NODE
-
-      - name: Commit and push feed
-        run: |
+          test -f "$WTF_OUTPUT_DIR/state-feed.json"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash origin main
           git add feed-wearables.json state-feed.json
-          git diff --cached --quiet || git commit -m "chore: update wearables feed [skip ci]"
+          git diff --cached --quiet || git commit -m "chore: update wearables feed diagnostics [skip ci]"
           git push origin HEAD:main
+
+      - name: Write run summary and annotations
+        if: always()
+        env:
+          WTF_PUSH_OUTCOME: ${{ steps.commit.outcome }}
+        run: node scripts/run-feed.js --summary "--output-dir=$WTF_OUTPUT_DIR" "--push-outcome=$WTF_PUSH_OUTCOME"
+
+      - name: Save candidate and diagnostic artifacts
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: wearables-feed-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 90
+          if-no-files-found: warn
+          path: |
+            ${{ env.WTF_OUTPUT_DIR }}/diagnostics.json
+            ${{ env.WTF_OUTPUT_DIR }}/generation-report.json
+            ${{ env.WTF_OUTPUT_DIR }}/quality-report.json
+            ${{ env.WTF_OUTPUT_DIR }}/feed-wearables.json
+            ${{ env.WTF_OUTPUT_DIR }}/candidate-state.json
+            ${{ env.WTF_OUTPUT_DIR }}/state-feed.json
+
+      - name: Preserve failed workflow status
+        if: always() && (steps.pipeline.outcome != 'success' || steps.commit.outcome == 'failure')
+        run: exit 1
