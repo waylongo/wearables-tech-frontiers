@@ -106,8 +106,11 @@ unnamed rumors, and product reviews without technical or market signal.
 
 ```text
 --- Run Healthcheck ---
-feed: [feed_source] · generatedAt=[remote_feed_generated_at or generatedAt]
+feed: [feed_source] · generatedAt=[remote_feed_generated_at or generatedAt] · coverage: [coverageStatus or unknown]
 RSS: [sourcesWithResults]/[sourcesQueried] with results · API: [apiSourcesWithResults]/[apiSourcesQueried] with results · Tavily: [tavilySitesWithResults]/[tavilySitesQueried] with results
 filters: blacklist [filtered_out_by_blacklist] · keyword [filtered_out_by_keyword] · source exclude [filtered_out_by_source_exclude] · Tavily quality [filtered_out_by_tavily_quality] · cap [tavily_items_capped] · date [filtered_out_by_date]
 Top Signals: [top3_categories as labels] · scores: [top3_scores]
 ```
+
+Below the healthcheck footer, list `healthcheck.warnings` in short lines when present.
+Explain missing source coverage and stale feeds plainly; do not hide warnings behind a successful run status.

@@ -30,7 +30,11 @@ jobs:
           node --check scripts/prepare-digest.js
           node --check scripts/generate-feed.js
           node --check scripts/check-feed-quality.js
+          node --check scripts/run-feed.js
           node scripts/generate-feed.js --self-test
+
+      - name: Test collection, coverage, and publication
+        run: node --test tests/*.test.mjs
 
       - name: Validate static artifacts
         run: |
@@ -46,6 +50,10 @@ jobs:
             'scripts/prepare-digest.js',
             'scripts/generate-feed.js',
             'scripts/check-feed-quality.js',
+            'scripts/run-feed.js',
+            'scripts/lib/http.mjs',
+            'scripts/lib/academic.mjs',
+            'scripts/lib/coverage.mjs',
             'prompts/digest-intro.md',
             'prompts/summarize-papers.md',
             'prompts/summarize-official.md',
@@ -61,6 +69,10 @@ jobs:
           if (catalog.schema_version == null) throw new Error('config/sources.json missing schema_version');
           if (!catalog.primary_rss || typeof catalog.primary_rss !== 'object') {
             throw new Error('config/sources.json missing primary_rss');
+          }
+          if (!Array.isArray(catalog.api_sources?.arxiv)) throw new Error('Missing api_sources.arxiv');
+          for (const source of catalog.api_sources.arxiv) {
+            if (!source.arxivCategory || source.category !== 'academic') throw new Error('Invalid arXiv source');
           }
 
           const ALLOWED_PRIMARY_RSS_KEYS = ['industry_news', 'company_research', 'academic', 'clinical_regulatory'];

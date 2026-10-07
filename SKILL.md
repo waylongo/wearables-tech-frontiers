@@ -12,7 +12,7 @@ description: /wtf is a curated wearables and sports-health digest. Use when the 
 - Use only `items` from `prepare-digest.js`.
 - Do not run web search or refetch article URLs during digest generation.
 - Default feed path: `remote_feed`, with central RSS/API/Tavily results.
-- Fallback feed path: `local_rss`, with local RSS plus the local openFDA subset.
+- Fallback feed path: `local_rss`, with local RSS plus arXiv API and the local openFDA subset.
 - Public source catalog: `config/sources.json`.
 - User overrides: `~/.wtf/config.json`, `~/.wtf/sources.json`, `~/.wtf/prompts/*.md`.
 

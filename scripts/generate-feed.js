@@ -3,28 +3,27 @@
 // ============================================================================
 // Wearables Tech Frontiers — Central Feed Generator
 // ============================================================================
-// Runs on GitHub Actions to fetch RSS/Atom sources plus Tavily vendor-site
-// fallback results, then publishes feed-wearables.json.
+// Fetches RSS/Atom, scholarly APIs and Tavily results. GitHub Actions uses
+// run-feed.js to validate the staged candidate before publication.
 // ============================================================================
 
-import { readFile, writeFile } from 'fs/promises';
+import { readFile, writeFile, mkdir } from 'fs/promises';
 import { existsSync } from 'fs';
-import { dirname, join } from 'path';
+import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
+import { httpGet, request } from './lib/http.mjs';
+import { fetchPubMed, fetchArxiv } from './lib/academic.mjs';
+import { applyCoverage, candidateState, sourceRows } from './lib/coverage.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const REPO_ROOT = join(__dirname, '..');
 const CATALOG_PATH = join(REPO_ROOT, 'config', 'sources.json');
-const FEED_PATH = join(REPO_ROOT, 'feed-wearables.json');
 const STATE_PATH = join(REPO_ROOT, 'state-feed.json');
 
-const USER_AGENT = 'Mozilla/5.0 (wearables-tech-frontiers-feed/1.0)';
 const DEFAULT_LOOKBACK_DAYS = 30;
 const TAVILY_SEARCH_URL = 'https://api.tavily.com/search';
 const CLINICAL_TRIALS_SEARCH_URL = 'https://clinicaltrials.gov/api/v2/studies';
-const PUBMED_SEARCH_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi';
-const PUBMED_SUMMARY_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi';
 const DAY_MS = 24 * 60 * 60 * 1000;
 const TAVILY_MAX_RESULTS_PER_SITE = 10;
 const SELECTED_MIN_TARGET = 35;
@@ -36,11 +35,12 @@ const SELECTION_THRESHOLDS = {
   company_research: 3.5
 };
 
-function parseArgs() {
-  const args = { rssOnly: false, days: DEFAULT_LOOKBACK_DAYS, selfTest: false };
+export function parseArgs() {
+  const args = { rssOnly: false, days: DEFAULT_LOOKBACK_DAYS, selfTest: false, outputDir: null };
   for (const arg of process.argv.slice(2)) {
     if (arg === '--rss-only') args.rssOnly = true;
     else if (arg === '--self-test') args.selfTest = true;
+    else if (arg.startsWith('--output-dir=')) args.outputDir = resolve(arg.slice(13));
     else if (arg.startsWith('--days=')) {
       const n = parseInt(arg.slice(7), 10);
       if (!Number.isFinite(n) || n < 1 || n > 365) {
@@ -188,26 +188,6 @@ function parseFeed(xml) {
   return items;
 }
 
-async function httpGet(url, timeoutMs = 15000) {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
-  try {
-    const res = await fetch(url, {
-      signal: controller.signal,
-      headers: {
-        'User-Agent': USER_AGENT,
-        'Accept': 'application/rss+xml, application/atom+xml, application/xml, application/json, text/xml, */*'
-      }
-    });
-    if (!res.ok) return { ok: false, status: res.status, text: null };
-    return { ok: true, status: res.status, text: await res.text() };
-  } catch (err) {
-    return { ok: false, status: 0, text: null, error: err.message };
-  } finally {
-    clearTimeout(timer);
-  }
-}
-
 function parseDateMs(dateStr) {
   if (!dateStr) return null;
   const raw = String(dateStr).trim();
@@ -230,10 +210,9 @@ function normalizePublishedAt(dateStr) {
   return ms == null ? null : new Date(ms).toISOString();
 }
 
-function withinDays(dateStr, days) {
+function withinDays(dateStr, days, now = Date.now()) {
   const ms = parseDateMs(dateStr);
   if (ms == null) return false;
-  const now = Date.now();
   if (ms > now + DAY_MS) return false;
   return ms >= now - days * DAY_MS;
 }
@@ -409,10 +388,28 @@ function passesTavilySummaryQuality(item) {
   return true;
 }
 
+function stripMarkdownArtifacts(s) {
+  let out = String(s || '');
+  const inlineLinkRe = /\[([^\]]+)\]\((?:\\.|[^()\\]|\([^()]*\))*\)/g;
+  const imageRe = /!\[([^\]]*)\]\((?:\\.|[^()\\]|\([^()]*\))*\)/g;
+  for (let i = 0; i < 3; i++) {
+    const next = out
+      .replace(imageRe, '$1')
+      .replace(inlineLinkRe, '$1');
+    if (next === out) break;
+    out = next;
+  }
+  return out
+    .replace(/\[([^\]]+)\]\[[^\]]+\]/g, '$1')
+    .replace(/(?:^|\s)\[[^\]]+\]:\s*\S+.*$/gm, ' ')
+    .replace(/(^|\s)#{1,6}\s+/g, '$1')
+    .replace(/[*_`~]{1,3}/g, '');
+}
+
 function cleanTavilySummary(s) {
   let out = stripTags(decodeEntities(s || ''))
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-    .replace(/\*\*/g, '')
+    .replace(/\*\*/g, '');
+  out = stripMarkdownArtifacts(out)
     .replace(/^\+\s+the girl.?s sports gear i use list\.\s*/i, '')
     .replace(/^\s*#+\s*/, '');
   for (let i = 0; i < 3 && /^image of\b/i.test(out); i++) {
@@ -423,9 +420,8 @@ function cleanTavilySummary(s) {
   return out.replace(/\s+/g, ' ').trim();
 }
 
-function cleanTextField(value, maxLength) {
-  const out = stripTags(decodeEntities(value || ''))
-    .replace(/(^|\s)#{1,6}\s+/g, '$1')
+export function cleanTextField(value, maxLength) {
+  const out = stripMarkdownArtifacts(stripTags(decodeEntities(value || '')))
     .replace(/\s+/g, ' ')
     .trim();
   return maxLength ? out.slice(0, maxLength) : out;
@@ -434,6 +430,7 @@ function cleanTextField(value, maxLength) {
 function normalizeOutputItem(item) {
   return {
     ...item,
+    ...(item.arxivId ? { url: canonicalUrlForDedupe(item.url) } : {}),
     title: cleanTextField(item.title, 500),
     summary: cleanTextField(item.summary, 2000)
   };
@@ -443,16 +440,22 @@ function runSelfTest() {
   const cases = [
     'Sensors &amp; Health &beta; &#x3bc; &#181; &rsqb;',
     'Running stride-time variability &unknownEntity; wearable devices',
-    'Agreement&nbsp;and&nbsp;Reliability &ldquo;quoted&rdquo;'
+    'Agreement&nbsp;and&nbsp;Reliability &ldquo;quoted&rdquo;',
+    '[Wear OS 7 helps your smartwatch keep up with you - Google Blog](https://blog.google/products-and-platforms/platforms/wear-os/google-io-2026-wear-os)',
+    'Wear OS update: [developer notes](https://example.com/path_(beta)) and **platform** changes'
   ];
   const entityRe = /&(?:[a-z]+|#\d+|#x[0-9a-f]+);/i;
+  const markdownLinkRe = /\[[^\]]+\]\([^)]+\)/;
   for (const input of cases) {
     const cleaned = cleanTextField(input, 500);
     if (entityRe.test(cleaned)) {
       throw new Error(`Entity cleanup left residue: ${cleaned}`);
     }
+    if (markdownLinkRe.test(cleaned)) {
+      throw new Error(`Markdown link cleanup left residue: ${cleaned}`);
+    }
   }
-  console.log(JSON.stringify({ status: 'ok', check: 'entity-cleanup' }));
+  console.log(JSON.stringify({ status: 'ok', check: 'text-cleanup' }));
 }
 
 function inferSignalType(item) {
@@ -594,50 +597,6 @@ async function fetchClinicalTrials(source) {
   }
 }
 
-async function fetchPubMed(source) {
-  const searchUrl = new URL(PUBMED_SEARCH_URL);
-  searchUrl.searchParams.set('db', 'pubmed');
-  searchUrl.searchParams.set('term', source.query);
-  searchUrl.searchParams.set('retmode', 'json');
-  searchUrl.searchParams.set('retmax', '25');
-  searchUrl.searchParams.set('sort', 'pub date');
-  const search = await httpGet(searchUrl.toString(), 20000);
-  if (!search.ok) return { source, items: [], error: `search HTTP ${search.status}${search.error ? ': ' + search.error : ''}` };
-
-  try {
-    const ids = JSON.parse(search.text).esearchresult?.idlist || [];
-    if (ids.length === 0) return { source, items: [], error: null };
-
-    const summaryUrl = new URL(PUBMED_SUMMARY_URL);
-    summaryUrl.searchParams.set('db', 'pubmed');
-    summaryUrl.searchParams.set('id', ids.join(','));
-    summaryUrl.searchParams.set('retmode', 'json');
-    const summary = await httpGet(summaryUrl.toString(), 20000);
-    if (!summary.ok) return { source, items: [], error: `summary HTTP ${summary.status}${summary.error ? ': ' + summary.error : ''}` };
-    const data = JSON.parse(summary.text).result || {};
-    const items = ids.map(id => {
-      const row = data[id];
-      if (!row?.title) return null;
-      const authors = (row.authors || []).map(a => a.name).filter(Boolean).slice(0, 4).join(', ');
-      const summaryParts = [
-        row.source && `Journal: ${row.source}`,
-        authors && `Authors: ${authors}`,
-        row.pubdate && `Published: ${row.pubdate}`
-      ].filter(Boolean);
-      return {
-        title: row.title,
-        url: `https://pubmed.ncbi.nlm.nih.gov/${id}/`,
-        publishedAt: normalizePublishedAt(row.pubdate),
-        summary: summaryParts.join(' | '),
-        pmid: id
-      };
-    }).filter(Boolean);
-    return { source, items, error: null };
-  } catch (err) {
-    return { source, items: [], error: `parse: ${err.message}` };
-  }
-}
-
 async function fetchOpenFda(source, days) {
   const end = new Date(Date.now() + 24 * 60 * 60 * 1000);
   const start = new Date(Date.now() - days * 24 * 60 * 60 * 1000);
@@ -703,54 +662,36 @@ function inferPublicationYear(item) {
   return null;
 }
 
-function passesTavilyFreshness(item, site, days) {
-  if (item.publishedAt) return withinDays(item.publishedAt, days);
+function passesTavilyFreshness(item, site, days, now = Date.now()) {
+  if (item.publishedAt) return withinDays(item.publishedAt, days, now);
+  if (site.requireDate) return false;
   if (!site.requireRecentYear) return true;
   const year = inferPublicationYear(item);
   if (!year) return true;
-  return year === new Date().getUTCFullYear();
+  return year === new Date(now).getUTCFullYear();
 }
 
-async function fetchTavilySite(site, apiKey, days) {
-  const domains = tavilyDomain(site);
+export async function fetchTavilySite(site, apiKey, days) {
+  const domains = site.domains || tavilyDomain(site);
   const query = tavilyQuery(site);
   if (!domains.length || !query) return { site, items: [], error: 'missing domain or query' };
-
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 20000);
+  const response = await request(TAVILY_SEARCH_URL, {
+    method: 'POST', timeoutMs: 20000, maxAttempts: 2,
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+    body: JSON.stringify({ query, include_domains: domains, time_range: tavilyTimeRange(days),
+      search_depth: 'basic', max_results: TAVILY_MAX_RESULTS_PER_SITE,
+      include_answer: false, include_raw_content: false })
+  });
+  if (!response.ok) return { site, items: [], error: `HTTP ${response.status}${response.error ? ': ' + response.error : ''}` };
   try {
-    const res = await fetch(TAVILY_SEARCH_URL, {
-      method: 'POST',
-      signal: controller.signal,
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`
-      },
-      body: JSON.stringify({
-        query,
-        include_domains: domains,
-        time_range: tavilyTimeRange(days),
-        search_depth: 'basic',
-        max_results: TAVILY_MAX_RESULTS_PER_SITE,
-        include_answer: false,
-        include_raw_content: false
-      })
-    });
-    if (!res.ok) return { site, items: [], error: `HTTP ${res.status}` };
-    const data = await res.json();
+    const data = JSON.parse(response.text);
     const items = (data.results || []).slice(0, TAVILY_MAX_RESULTS_PER_SITE).map(r => ({
-      title: (r.title || '').slice(0, 500),
-      url: r.url,
+      title: (r.title || '').slice(0, 500), url: r.url,
       publishedAt: normalizePublishedAt(r.published_date),
-      summary: cleanTavilySummary(r.content || r.snippet || '').slice(0, 2000),
-      score: r.score
+      summary: cleanTavilySummary(r.content || r.snippet || '').slice(0, 2000), score: r.score
     })).filter(it => it.title && it.url);
     return { site, items, error: null };
-  } catch (err) {
-    return { site, items: [], error: err.message };
-  } finally {
-    clearTimeout(timer);
-  }
+  } catch (err) { return { site, items: [], error: `parse: ${err.message}` }; }
 }
 
 async function loadState() {
@@ -764,31 +705,18 @@ async function loadState() {
   }
 }
 
-async function saveState(state, items) {
-  const now = Date.now();
-  for (const item of items) {
-    const prev = state.urls[item.url] || {};
-    state.urls[item.url] = {
-      firstSeen: prev.firstSeen || now,
-      lastSeen: now,
-      sourceName: item.sourceName,
-      sourceCategory: item.sourceCategory
-    };
-  }
-  const cutoff = now - 60 * 24 * 60 * 60 * 1000;
-  for (const [url, meta] of Object.entries(state.urls)) {
-    if ((meta.lastSeen || 0) < cutoff) delete state.urls[url];
-  }
-  await writeFile(STATE_PATH, JSON.stringify(state, null, 2));
-}
-
-function canonicalUrlForDedupe(url) {
+export function canonicalUrlForDedupe(url) {
   try {
     const u = new URL(url);
     u.protocol = 'https:';
     u.hostname = u.hostname.replace(/^www\./, '');
     u.hash = '';
     const host = u.hostname;
+    if (host === 'arxiv.org' || host === 'export.arxiv.org') {
+      u.hostname = 'arxiv.org';
+      u.pathname = u.pathname.replace(/^\/pdf\//, '/abs/').replace(/\.pdf$/, '').replace(/v\d+$/, '');
+      u.search = '';
+    }
     if (host === 'ieeexplore.ieee.org') {
       const m = u.pathname.match(/^\/(?:abstract\/)?document\/(\d+)/);
       if (m) {
@@ -889,10 +817,10 @@ function sourcePriorityScore(priority) {
   return 0.3;
 }
 
-function recencyScore(item) {
+function recencyScore(item, now = Date.now()) {
   const ms = parseDateMs(item.publishedAt);
   if (ms == null) return null;
-  const ageDays = (Date.now() - ms) / DAY_MS;
+  const ageDays = (now - ms) / DAY_MS;
   if (ageDays <= 7) return 0.8;
   if (ageDays <= 14) return 0.5;
   if (ageDays <= 30) return 0.2;
@@ -908,7 +836,7 @@ function hasLocalizedMirrorPath(item) {
     && !['api', 'app', 'blog', 'docs', 'help', 'news', 'press', 'shop'].includes(first);
 }
 
-function scoreCandidate(item, catalog) {
+function scoreCandidate(item, catalog, now = Date.now()) {
   const title = normalizeFilterText(item.title || '');
   const summary = normalizeFilterText(item.summary || '');
   const urlText = normalizeFilterText(item.url || '');
@@ -967,11 +895,11 @@ function scoreCandidate(item, catalog) {
     addScore(ctx, 0.5, 'shipping/product signal');
   }
 
-  const recency = recencyScore(item);
+  const recency = recencyScore(item, now);
   if (recency == null) {
     subtractScore(ctx, item.retrievalMethod === 'tavily' ? 1.0 : 0.4, item.retrievalMethod === 'tavily' ? 'missing tavily publication date' : 'missing publication date');
     const inferredYear = inferPublicationYear(item);
-    const currentYear = new Date().getUTCFullYear();
+    const currentYear = new Date(now).getUTCFullYear();
     if (inferredYear && inferredYear < currentYear) {
       subtractScore(ctx, 1.2, 'stale inferred publication year');
     }
@@ -1043,7 +971,7 @@ function nearDuplicateTitleKey(item) {
   return words.slice(0, 5).join(' ');
 }
 
-function selectCandidates(candidates, healthcheck) {
+export function selectCandidates(candidates, healthcheck) {
   const selected = [];
   const selectedByTavilySite = {};
   const selectedTitleFingerprints = new Set();
@@ -1144,6 +1072,9 @@ function candidateReviewItem(item) {
     title: item.title,
     url: item.url,
     publishedAt: item.publishedAt,
+    publishedAtSource: item.publishedAtSource,
+    publicationDates: item.publicationDates,
+    arxivId: item.arxivId,
     summary: cleanTextField(item.summary, 500),
     sourceName: item.sourceName,
     sourceCategory: item.sourceCategory,
@@ -1173,13 +1104,13 @@ function selectedFeedItem(item) {
   return out;
 }
 
-async function main() {
-  const args = parseArgs();
-  if (args.selfTest) {
-    runSelfTest();
-    return;
-  }
-  const catalog = JSON.parse(await readFile(CATALOG_PATH, 'utf-8'));
+export async function generateFeed(args = { days: 30, rssOnly: false }, {
+  catalog: providedCatalog, previousState: providedState, now = Date.now(), env = process.env,
+  fetchRss = fetchFeed, fetchPubmed = fetchPubMed, fetchArxivSource = fetchArxiv,
+  fetchClinical = fetchClinicalTrials, fetchFda = fetchOpenFda, fetchSearch = fetchTavilySite
+} = {}) {
+  const catalog = providedCatalog || JSON.parse(await readFile(CATALOG_PATH, 'utf-8'));
+  const previousState = providedState || await loadState();
   const blacklistPatterns = catalog.title_blacklist?.patterns || [];
   const healthcheck = {
     catalog_source: 'local_repo',
@@ -1211,16 +1142,16 @@ async function main() {
   };
 
   const sources = Object.values(catalog.primary_rss || {}).flat();
-  const rssResults = await Promise.all(sources.map(fetchFeed));
+  const rssResults = await Promise.all(sources.map(fetchRss));
   const candidatePool = [];
   const seenUrls = new Set();
   const seenTitles = new Set();
 
-  for (const { source, items: sourceItems, error } of rssResults) {
-    healthcheck.per_source[source.name] = { fetched: sourceItems.length, candidates: 0, kept: 0, error };
-    if (error) continue;
+  for (const { source, items: sourceItems, error, warnings = [], partial = false } of rssResults) {
+    healthcheck.per_source[source.name] = { fetched: sourceItems.length, datePassed: sourceItems.filter(it => withinDays(it.publishedAt, args.days, now)).length, candidates: 0, kept: 0, error, warnings, partial };
+    if (error && !sourceItems.length) continue;
     for (const it of sourceItems) {
-      if (!withinDays(it.publishedAt, args.days)) {
+      if (!withinDays(it.publishedAt, args.days, now)) {
         healthcheck.filtered_out_by_date++;
         recordHardFilter(healthcheck, 'rss', source.name, 'date');
         continue;
@@ -1254,7 +1185,7 @@ async function main() {
         retrievalMethod: 'rss',
         signalType: inferSignalType({ ...it, sourceName: source.name, sourceCategory: source.category })
       });
-      Object.assign(candidate, scoreCandidate(candidate, catalog));
+      Object.assign(candidate, scoreCandidate(candidate, catalog, now));
       const pushed = pushUnique(candidatePool, candidate, seenUrls, seenTitles);
       if (pushed === 'pushed') healthcheck.per_source[source.name].candidates++;
       else if (pushed === 'duplicate_title') {
@@ -1268,16 +1199,17 @@ async function main() {
   }
 
   const apiFetchers = [
-    ...(catalog.api_sources?.pubmed || []).map(source => ({ source, fetcher: fetchPubMed })),
-    ...(catalog.api_sources?.clinical_trials || []).map(source => ({ source, fetcher: fetchClinicalTrials })),
-    ...(catalog.api_sources?.openfda || []).map(source => ({ source, fetcher: s => fetchOpenFda(s, args.days) }))
+    ...(catalog.api_sources?.pubmed || []).map(source => ({ source, fetcher: s => fetchPubmed(s, args.days, { now }) })),
+    ...(catalog.api_sources?.arxiv || []).map(source => ({ source, fetcher: s => fetchArxivSource(s, args.days, { now, keywords: catalog.keyword_filters?.wearables_en || [] }) })),
+    ...(catalog.api_sources?.clinical_trials || []).map(source => ({ source, fetcher: fetchClinical })),
+    ...(catalog.api_sources?.openfda || []).map(source => ({ source, fetcher: s => fetchFda(s, args.days) }))
   ];
   const apiResults = await Promise.all(apiFetchers.map(({ source, fetcher }) => fetcher(source)));
-  for (const { source, items: sourceItems, error } of apiResults) {
-    healthcheck.per_api_source[source.name] = { fetched: sourceItems.length, candidates: 0, kept: 0, error };
-    if (error) continue;
+  for (const { source, items: sourceItems, error, warnings = [], partial = false } of apiResults) {
+    healthcheck.per_api_source[source.name] = { fetched: sourceItems.length, datePassed: sourceItems.filter(it => withinDays(it.publishedAt, args.days, now)).length, candidates: 0, kept: 0, error, warnings, partial };
+    if (error && !sourceItems.length) continue;
     for (const it of sourceItems) {
-      if (!withinDays(it.publishedAt, args.days)) {
+      if (!withinDays(it.publishedAt, args.days, now)) {
         healthcheck.filtered_out_by_date++;
         recordHardFilter(healthcheck, 'api', source.name, 'date');
         continue;
@@ -1311,7 +1243,7 @@ async function main() {
         retrievalMethod: 'api'
       });
       candidate.signalType = source.signalType || inferSignalType(candidate);
-      Object.assign(candidate, scoreCandidate(candidate, catalog));
+      Object.assign(candidate, scoreCandidate(candidate, catalog, now));
       const pushed = pushUnique(candidatePool, candidate, seenUrls, seenTitles);
       if (pushed === 'pushed') healthcheck.per_api_source[source.name].candidates++;
       else if (pushed === 'duplicate_title') {
@@ -1324,16 +1256,20 @@ async function main() {
     }
   }
 
-  const tavilyKey = process.env.TAVILY_API_KEY;
-  const tavilySites = catalog.websearch_sites?.sites || [];
+  const tavilyKey = env.TAVILY_API_KEY;
+  const fallbackSites = rssResults.filter(result => result.error && result.source.fallbackWebsearch).map(({ source }) => ({
+    ...source, ...source.fallbackWebsearch, sourceCategory: source.category, maxItems: 3, requireDate: true, fallback: true
+  }));
+  const tavilySites = [...(catalog.websearch_sites?.sites || []), ...fallbackSites];
   if (args.rssOnly) {
     healthcheck.warnings.push('Tavily skipped because --rss-only was set');
   } else if (!tavilyKey) {
     healthcheck.warnings.push('TAVILY_API_KEY not set; skipped vendor websearch fallback');
   } else {
-    const tavilyResults = await Promise.all(tavilySites.map(site => fetchTavilySite(site, tavilyKey, args.days)));
+    const tavilyResults = await Promise.all(tavilySites.map(site => fetchSearch(site, tavilyKey, args.days)));
     for (const { site, items: siteItems, error } of tavilyResults) {
-      healthcheck.tavily_per_site[site.name] = { fetched: siteItems.length, qualityKept: 0, finalKept: 0, kept: 0, capped: 0, error };
+      healthcheck.tavily_per_site[site.name] = { fetched: siteItems.length, datePassed: siteItems.filter(it => passesTavilyFreshness(it, site, args.days, now)).length, qualityKept: 0, finalKept: 0, kept: 0, capped: 0, error, fallback: Boolean(site.fallback) };
+      if (site.fallback) healthcheck.per_source[site.name].fallbackStatus = error ? 'failed' : 'completed';
       if (error) continue;
       const maxItems = Number.isFinite(site.maxItems) ? site.maxItems : 2;
       for (const it of siteItems) {
@@ -1380,7 +1316,7 @@ async function main() {
           recordHardFilter(healthcheck, 'tavily', site.name, 'summary_quality');
           continue;
         }
-        if (!passesTavilyFreshness(it, site, args.days)) {
+        if (!passesTavilyFreshness(it, site, args.days, now)) {
           healthcheck.filtered_out_by_date++;
           recordHardFilter(healthcheck, 'tavily', site.name, 'date');
           continue;
@@ -1404,7 +1340,7 @@ async function main() {
             sourceCategory: site.sourceCategory || 'vendor_websearch'
           })
         });
-        Object.assign(candidate, scoreCandidate(candidate, catalog));
+        Object.assign(candidate, scoreCandidate(candidate, catalog, now));
         const pushed = pushUnique(candidatePool, candidate, seenUrls, seenTitles);
         if (pushed === 'pushed') healthcheck.tavily_per_site[site.name].qualityKept++;
         else if (pushed === 'duplicate_title') {
@@ -1418,6 +1354,13 @@ async function main() {
     }
   }
 
+  for (const site of fallbackSites) {
+    const fallback = healthcheck.tavily_per_site[site.name];
+    if (!fallback) healthcheck.per_source[site.name].fallbackStatus = 'skipped';
+    if (!fallback || fallback.error || fallback.datePassed === 0) {
+      healthcheck.warnings.push(`${site.name}: RSS fallback ${!fallback ? 'skipped' : fallback.error ? 'failed' : 'returned no dated items in the window'}`);
+    }
+  }
   const { selected, candidates } = selectCandidates(candidatePool, healthcheck);
   for (const item of selected) incrementSelectedSourceCount(item, healthcheck);
   const items = selected.map(selectedFeedItem);
@@ -1426,16 +1369,13 @@ async function main() {
   const groupedByCategory = {};
   for (const item of items) (groupedByCategory[item.sourceCategory] ||= []).push(item);
 
-  const state = await loadState();
-  await saveState(state, items);
-
   const feed = {
     schemaVersion: 2,
     status: 'ok',
-    generatedAt: new Date().toISOString(),
+    generatedAt: new Date(now).toISOString(),
     lookbackDays: args.days,
     stats: {
-      rawItems: rssResults.reduce((sum, x) => sum + x.items.length, 0) + apiResults.reduce((sum, x) => sum + x.items.length, 0),
+      rawItems: sourceRows(healthcheck).reduce((sum, x) => sum + x.fetched, 0),
       keptItems: items.length,
       sourcesQueried: sources.length,
       sourcesWithResults: Object.values(healthcheck.per_source).filter(x => x.kept > 0).length,
@@ -1443,7 +1383,7 @@ async function main() {
       apiSourcesQueried: apiFetchers.length,
       apiSourcesWithResults: Object.values(healthcheck.per_api_source).filter(x => x.kept > 0).length,
       apiSourcesFailed: Object.values(healthcheck.per_api_source).filter(x => x.error).length,
-      tavilySitesQueried: args.rssOnly || !tavilyKey ? 0 : tavilySites.length,
+      tavilySitesQueried: Object.keys(healthcheck.tavily_per_site).length,
       tavilySitesWithResults: Object.values(healthcheck.tavily_per_site).filter(x => x.kept > 0).length,
       tavilySitesFailed: Object.values(healthcheck.tavily_per_site).filter(x => x.error).length
     },
@@ -1456,11 +1396,31 @@ async function main() {
     healthcheck
   };
 
-  await writeFile(FEED_PATH, JSON.stringify(feed, null, 2));
-  console.error(`feed-wearables.json: ${items.length} items (${feed.stats.sourcesFailed} RSS failures, ${feed.stats.tavilySitesWithResults} Tavily sites with results)`);
+  const sourceHealth = applyCoverage(feed, catalog, previousState, {
+    eventName: env.GITHUB_EVENT_NAME || 'local', runId: env.GITHUB_RUN_ID, now
+  });
+  return { feed, state: candidateState(previousState, items, sourceHealth, now) };
 }
 
-main().catch(err => {
-  console.error(`Feed generation failed: ${err.message}`);
-  process.exit(1);
-});
+async function main() {
+  const args = parseArgs();
+  if (args.selfTest) { runSelfTest(); return; }
+  const outputDir = args.outputDir || REPO_ROOT;
+  await mkdir(outputDir, { recursive: true });
+  try {
+    const { feed, state } = await generateFeed(args);
+    await writeFile(join(outputDir, 'feed-wearables.json'), JSON.stringify(feed, null, 2));
+    await writeFile(join(outputDir, 'state-feed.json'), JSON.stringify(state, null, 2));
+    if (args.outputDir) await writeFile(join(outputDir, 'generation-report.json'), JSON.stringify({
+      status: 'generated', generatedAt: feed.generatedAt, stats: feed.stats, healthcheck: feed.healthcheck
+    }, null, 2));
+    console.error(`feed-wearables.json: ${feed.items.length} items (${feed.stats.sourcesFailed} RSS failures, ${feed.stats.tavilySitesWithResults} Tavily sites with results)`);
+  } catch (error) {
+    if (args.outputDir) await writeFile(join(outputDir, 'generation-report.json'), JSON.stringify({ status: 'failed', error: error.message }, null, 2));
+    throw error;
+  }
+}
+
+if (process.argv[1] && resolve(process.argv[1]) === __filename) {
+  main().catch(err => { console.error(`Feed generation failed: ${err.message}`); process.exitCode = 1; });
+}
