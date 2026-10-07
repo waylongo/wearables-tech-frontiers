@@ -26,10 +26,10 @@ jobs:
     permissions:
       contents: write
       actions: read
-    env:
-      WTF_OUTPUT_DIR: ${{ runner.temp }}/wearables-feed-run
-
     steps:
+      - name: Set staging directory
+        run: echo "WTF_OUTPUT_DIR=$RUNNER_TEMP/wearables-feed-run" >> "$GITHUB_ENV"
+
       - uses: actions/checkout@v6
         with:
           ref: ${{ github.ref_name }}
