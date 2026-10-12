@@ -2,7 +2,7 @@
   "urls": {
     "https://clinicaltrials.gov/study/NCT07067151": {
       "firstSeen": 1778935424132,
-      "lastSeen": 1791166445557,
+      "lastSeen": 1791772379501,
       "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
       "sourceCategory": "clinical_regulatory"
     },
@@ -17,12 +17,6 @@
       "lastSeen": 1790560193274,
       "sourceName": "WHOOP Developer API",
       "sourceCategory": "vendor_websearch"
-    },
-    "https://dl.acm.org/doi/abs/10.1145/3648469": {
-      "firstSeen": 1778988076174,
-      "lastSeen": 1786319841139,
-      "sourceName": "ISWC Proceedings",
-      "sourceCategory": "academic"
     },
     "https://dl.acm.org/doi/10.1145/2499621": {
       "firstSeen": 1780876245911,
@@ -66,12 +60,6 @@
       "sourceName": "Huawei Health Kit",
       "sourceCategory": "vendor_websearch"
     },
-    "https://clinicaltrials.gov/study/NCT02707029": {
-      "firstSeen": 1785114387119,
-      "lastSeen": 1786319841139,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
     "https://www.medtechdive.com/news/whoop-hires-fda-digital-health-committee-chair-as-chief-medical-officer/825949": {
       "firstSeen": 1785114387119,
       "lastSeen": 1791166445557,
@@ -84,47 +72,11 @@
       "sourceName": "Dexcom Developer API",
       "sourceCategory": "vendor_websearch"
     },
-    "https://mhealth.jmir.org/2026/1/e84506": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1786319841139,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://mhealth.jmir.org/2026/1/e88237": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1786319841139,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
-    },
-    "https://machinelearning.apple.com/research/audio-synthesis-diffusion-transformers": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1786319841139,
-      "sourceName": "Apple Machine Learning Research",
-      "sourceCategory": "company_research"
-    },
-    "https://www.dcrainmaker.com/2026/07/garmin-acquires-training-trainheroic.html": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1786319841139,
-      "sourceName": "DC Rainmaker",
-      "sourceCategory": "industry_news"
-    },
     "https://investors.dexcom.com/news/news-details/2026/Dexcom-Announced-as-First-Participant-Selected-for-FDAs-TEMPO-Digital-Health-Devices-Pilot-Program/default.aspx": {
       "firstSeen": 1785719099635,
       "lastSeen": 1786923750197,
       "sourceName": "Dexcom News",
       "sourceCategory": "vendor_websearch"
-    },
-    "http://developer.android.com/jetpack/androidx/releases/health-connect": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1786319841139,
-      "sourceName": "Android Health Connect Release Notes",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://ieeexplore.ieee.org/iel8/6287639/6514899/10643131.pdf": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1786319841139,
-      "sourceName": "IEEE EMBC Proceedings",
-      "sourceCategory": "academic"
     },
     "https://developer.dexcom.com/docs/dexcom/scopes-access": {
       "firstSeen": 1785719099635,
@@ -132,41 +84,11 @@
       "sourceName": "Dexcom Developer API",
       "sourceCategory": "vendor_websearch"
     },
-    "https://ieeexplore.ieee.org/iel8/11040159/11041696/11042032.pdf": {
-      "firstSeen": 1785719099635,
-      "lastSeen": 1786319841139,
-      "sourceName": "IEEE Sensors / Wearable Proceedings",
-      "sourceCategory": "academic"
-    },
-    "https://9to5mac.com/2026/08/09/a-new-ceramic-apple-watch-could-go-on-sale-soon/": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5mac.com/2026/08/09/apple-watch-revamp-redesign-round-screen/": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
     "https://9to5google.com/2026/08/08/googles-pixel-watch-5-takes-notes-from-the-fitbit-air-in-latest-leak/": {
       "firstSeen": 1786319841139,
       "lastSeen": 1786923750197,
       "sourceName": "9to5Google",
       "sourceCategory": "industry_news"
-    },
-    "https://www.mdpi.com/1424-8220/26/16/5042": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://mhealth.jmir.org/2026/1/e81378": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "JMIR mHealth and uHealth",
-      "sourceCategory": "academic"
     },
     "https://9to5google.com/2026/08/07/pixel-watch-5-teaser/": {
       "firstSeen": 1786319841139,
@@ -174,101 +96,11 @@
       "sourceName": "9to5Google",
       "sourceCategory": "industry_news"
     },
-    "https://9to5mac.com/2026/08/07/watchos-27-could-make-apple-watchs-important-new-health-feature-even-better/": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001624": {
       "firstSeen": 1786319841139,
       "lastSeen": 1787528629460,
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
-    },
-    "https://9to5google.com/2026/08/06/gemini-overlay-wear-os/": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://clinicaltrials.gov/study/NCT07752940": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.mdpi.com/1424-8220/26/16/5019": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://clinicaltrials.gov/study/NCT07587762": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT05387551": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT04536480": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07753135": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.mdpi.com/1424-8220/26/16/5018": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://clinicaltrials.gov/study/NCT05400174": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07735390": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07732530": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://clinicaltrials.gov/study/NCT07751614": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.medrxiv.org/content/10.64898/2026.08.04.26359746v1?rss=1": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "medRxiv: new results",
-      "sourceCategory": "academic"
-    },
-    "https://9to5mac.com/2026/08/06/ios-27-basically-turns-your-iphone-and-airpods-into-an-apple-watch-at-the-gym/": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
     },
     "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001056": {
       "firstSeen": 1786319841139,
@@ -282,107 +114,11 @@
       "sourceName": "PLOS Digital Health",
       "sourceCategory": "academic"
     },
-    "https://9to5mac.com/2026/08/06/apple-raises-trade-in-values-for-most-iphone-ipad-mac-and-apple-watch-models/": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.mdpi.com/1424-8220/26/15/4998": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.mdpi.com/1424-8220/26/15/5002": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://9to5mac.com/2026/08/05/these-are-my-favorite-apple-watch-accessories-of-2026-so-far/": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5mac.com/2026/08/05/apple-watch-ultra-4-three-new-features-that-already-have-me-excited/": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "9to5Mac",
-      "sourceCategory": "industry_news"
-    },
-    "https://9to5google.com/2026/08/04/google-assistant-september-2026-shutdown/": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.mdpi.com/1424-8220/26/15/4959": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "Sensors Journal",
-      "sourceCategory": "academic"
-    },
-    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1878569": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "Frontiers in Digital Health",
-      "sourceCategory": "academic"
-    },
-    "https://9to5google.com/2026/08/04/pixel-watch-5-specs-leak-2/": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "9to5Google",
-      "sourceCategory": "industry_news"
-    },
-    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261136": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261082": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K262116": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
-      "sourceCategory": "clinical_regulatory"
-    },
-    "https://www.medtechdive.com/news/whoop-tests-wearable-platform-in-joint-replacement-recovery/825068": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "MedTech Dive",
-      "sourceCategory": "industry_news"
-    },
     "https://dl.acm.org/doi/10.1145/2370216.2370438": {
       "firstSeen": 1786319841139,
       "lastSeen": 1789953596410,
       "sourceName": "ACM IMWUT / UbiComp",
       "sourceCategory": "academic"
-    },
-    "https://dl.acm.org/doi/10.1145/3463506": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "ACM IMWUT / UbiComp",
-      "sourceCategory": "academic"
-    },
-    "https://www.apple.com/newsroom/pdfs/2026/08/south-korea-ecosystem-report-2025.pdf": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "Apple Newsroom / Watch",
-      "sourceCategory": "vendor_websearch"
-    },
-    "https://blog.google/products-and-platforms/platforms/android/galaxy-unpacked-2026": {
-      "firstSeen": 1786319841139,
-      "lastSeen": 1786319841139,
-      "sourceName": "Google Blog / Fitbit",
-      "sourceCategory": "vendor_websearch"
     },
     "https://9to5google.com/2026/08/15/google-pixel-11-ad-unknown-fitbit-tracker/": {
       "firstSeen": 1786923750197,
@@ -2126,7 +1862,7 @@
     },
     "https://mhealth.jmir.org/2026/1/e91724": {
       "firstSeen": 1791166445557,
-      "lastSeen": 1791166445557,
+      "lastSeen": 1791772379501,
       "sourceName": "JMIR mHealth and uHealth",
       "sourceCategory": "academic"
     },
@@ -2267,6 +2003,1409 @@
       "lastSeen": 1791166445557,
       "sourceName": "DC Rainmaker",
       "sourceCategory": "industry_news"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42854180/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/20/6425": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://clinicaltrials.gov/study/NCT07868432": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07673237": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07867197": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT06250725": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://clinicaltrials.gov/study/NCT07868601": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "ClinicalTrials.gov: wearables and digital biomarkers",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://www.frontiersin.org/articles/10.3389/fdgth.2026.1967226": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "Frontiers in Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://mhealth.jmir.org/2026/1/e88919": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "JMIR mHealth and uHealth",
+      "sourceCategory": "academic"
+    },
+    "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001701": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PLOS Digital Health",
+      "sourceCategory": "academic"
+    },
+    "https://www.mdpi.com/1424-8220/26/19/6354": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "Sensors Journal",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42848570/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42845242/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2610.10245": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2610.09818": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42842628/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2610.09052": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2610.08991": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2610.07885": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42838777/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42839204/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2610.02711": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42826929/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2610.01623": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2610.01602": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/41525618/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42828860/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42812046/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42848565/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42816706/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42815219/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2609.36687": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2609.34978": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2609.33117": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42798789/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42790662/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2609.30753": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K254297": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "openFDA Device 510(k): wearable-relevant clearances",
+      "sourceCategory": "clinical_regulatory"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42789208/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42775845/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2609.29396": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2609.28936": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42784530/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42851453/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42743965/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2609.24791": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42764112/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42817403/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42817485/": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "PubMed: wearable health algorithms",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2609.18726": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2609.16619": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2609.16581": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv cs.HC (Human-Computer Interaction)",
+      "sourceCategory": "academic"
+    },
+    "https://arxiv.org/abs/2609.16248": {
+      "firstSeen": 1791772379501,
+      "lastSeen": 1791772379501,
+      "sourceName": "arXiv eess.SP (Signal Processing)",
+      "sourceCategory": "academic"
     }
-  }
+  },
+  "sourceHealth": {
+    "rss:medRxiv: new results": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:bioRxiv: new results": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:npj Digital Medicine": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:Nature Biomedical Engineering": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:JMIR mHealth and uHealth": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:Lancet Digital Health": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:PLOS Digital Health": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:IEEE Journal of Biomedical and Health Informatics (JBHI)": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:Frontiers in Digital Health": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:Sensors Journal": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:Apple Machine Learning Research": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:Google Research Blog": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:Google DeepMind Blog": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:MobiHealthNews": {
+      "consecutiveErrors": 1,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:9to5Mac": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:9to5Google": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:Fierce Healthcare": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "rss:FDA MedWatch Safety Alerts": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "api:PubMed: wearable health algorithms": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "api:arXiv eess.SP (Signal Processing)": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "api:arXiv cs.HC (Human-Computer Interaction)": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "api:ClinicalTrials.gov: wearables and digital biomarkers": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "api:openFDA Device 510(k): wearable-relevant clearances": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "api:openFDA Device PMA: wearable-relevant approvals": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "api:openFDA Device Recall: wearable-relevant recalls": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Apple Newsroom / Watch": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Apple Developer HealthKit / WorkoutKit / watchOS": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Google Blog / Fitbit": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Android Developers Health & Fitness": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Android Health Connect Release Notes": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 1,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Samsung Global Newsroom (Digital Health)": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Samsung Developers Health": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Samsung Research Publications": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Huawei Health Kit": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Xiaomi Global Wearables": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Garmin Developers": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Oura Science & Research": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Oura Developer API": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 1,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:WHOOP / The Locker": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:WHOOP Developer API": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Withings Newsroom": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Withings API / Research": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 1,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Dexcom News": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Dexcom Developer API": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 1,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Abbott Biowearables": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Levels Blog": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:MedTech Dive": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Healthcare IT News": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Rock Health Insights": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Digital Health Wire": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:DC Rainmaker": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:NeurIPS Health Workshops / OpenReview": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:ICML Health Workshops / PMLR": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:IEEE EMBC Proceedings": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:IEEE BIBM Proceedings": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:ACM IMWUT / UbiComp": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:ISWC Proceedings": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:IEEE Sensors / Wearable Proceedings": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:Digital Biomarkers Journal": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 1,
+      "lastScheduledRunId": "38196211695"
+    },
+    "tavily:MobiHealthNews": {
+      "consecutiveErrors": 0,
+      "consecutiveEmpty": 0,
+      "lastScheduledRunId": "38196211695"
+    }
+  },
+  "runHistory": [
+    {
+      "runId": "38196211695",
+      "attempt": 1,
+      "event": "schedule",
+      "startedAt": "2026-10-12T02:32:59.076Z",
+      "createdAt": "2026-10-12T02:32:51Z",
+      "jobStartedAt": "2026-10-12T02:32:53Z",
+      "targetAt": "2026-10-11T23:30:00.000Z",
+      "triggerDelaySeconds": 10971,
+      "queueDelaySeconds": 2,
+      "acceptedAt": "2026-10-12T02:33:18.097Z",
+      "completedAt": "2026-10-12T02:33:18.105Z",
+      "outcome": "passed",
+      "publication": "prepared",
+      "coverageStatus": "degraded",
+      "itemCount": 55,
+      "warnings": [
+        "MobiHealthNews: RSS fallback returned no dated items in the window",
+        "MobiHealthNews: HTTP 403",
+        "MobiHealthNews: all 10 fetched items were rejected by the date window"
+      ],
+      "sources": [
+        {
+          "method": "rss",
+          "name": "medRxiv: new results",
+          "fetched": 30,
+          "datePassed": 30,
+          "candidates": 0,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "rss",
+          "name": "bioRxiv: new results",
+          "fetched": 30,
+          "datePassed": 30,
+          "candidates": 0,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "rss",
+          "name": "npj Digital Medicine",
+          "fetched": 8,
+          "datePassed": 8,
+          "candidates": 1,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "rss",
+          "name": "Nature Biomedical Engineering",
+          "fetched": 8,
+          "datePassed": 8,
+          "candidates": 0,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "rss",
+          "name": "JMIR mHealth and uHealth",
+          "fetched": 10,
+          "datePassed": 10,
+          "candidates": 4,
+          "kept": 2,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "ok"
+        },
+        {
+          "method": "rss",
+          "name": "Lancet Digital Health",
+          "fetched": 18,
+          "datePassed": 4,
+          "candidates": 0,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "rss",
+          "name": "PLOS Digital Health",
+          "fetched": 30,
+          "datePassed": 30,
+          "candidates": 1,
+          "kept": 1,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "ok"
+        },
+        {
+          "method": "rss",
+          "name": "IEEE Journal of Biomedical and Health Informatics (JBHI)",
+          "fetched": 50,
+          "datePassed": 4,
+          "candidates": 0,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "rss",
+          "name": "Frontiers in Digital Health",
+          "fetched": 20,
+          "datePassed": 20,
+          "candidates": 1,
+          "kept": 1,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "ok"
+        },
+        {
+          "method": "rss",
+          "name": "Sensors Journal",
+          "fetched": 100,
+          "datePassed": 100,
+          "candidates": 4,
+          "kept": 2,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "ok"
+        },
+        {
+          "method": "rss",
+          "name": "Apple Machine Learning Research",
+          "fetched": 10,
+          "datePassed": 10,
+          "candidates": 0,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "rss",
+          "name": "Google Research Blog",
+          "fetched": 100,
+          "datePassed": 9,
+          "candidates": 1,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "rss",
+          "name": "Google DeepMind Blog",
+          "fetched": 100,
+          "datePassed": 7,
+          "candidates": 0,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "rss",
+          "name": "MobiHealthNews",
+          "fetched": 0,
+          "datePassed": 0,
+          "candidates": 0,
+          "kept": 0,
+          "error": "HTTP 403",
+          "warnings": [],
+          "partial": false,
+          "fallbackStatus": "completed",
+          "status": "failed"
+        },
+        {
+          "method": "rss",
+          "name": "9to5Mac",
+          "fetched": 100,
+          "datePassed": 100,
+          "candidates": 4,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "rss",
+          "name": "9to5Google",
+          "fetched": 100,
+          "datePassed": 100,
+          "candidates": 7,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "rss",
+          "name": "Fierce Healthcare",
+          "fetched": 25,
+          "datePassed": 23,
+          "candidates": 0,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "rss",
+          "name": "FDA MedWatch Safety Alerts",
+          "fetched": 20,
+          "datePassed": 20,
+          "candidates": 1,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "api",
+          "name": "PubMed: wearable health algorithms",
+          "fetched": 937,
+          "datePassed": 666,
+          "candidates": 661,
+          "kept": 23,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "ok"
+        },
+        {
+          "method": "api",
+          "name": "arXiv eess.SP (Signal Processing)",
+          "fetched": 24,
+          "datePassed": 24,
+          "candidates": 23,
+          "kept": 9,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "ok"
+        },
+        {
+          "method": "api",
+          "name": "arXiv cs.HC (Human-Computer Interaction)",
+          "fetched": 31,
+          "datePassed": 31,
+          "candidates": 31,
+          "kept": 10,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "ok"
+        },
+        {
+          "method": "api",
+          "name": "ClinicalTrials.gov: wearables and digital biomarkers",
+          "fetched": 25,
+          "datePassed": 25,
+          "candidates": 9,
+          "kept": 6,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "ok"
+        },
+        {
+          "method": "api",
+          "name": "openFDA Device 510(k): wearable-relevant clearances",
+          "fetched": 100,
+          "datePassed": 100,
+          "candidates": 2,
+          "kept": 1,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "ok"
+        },
+        {
+          "method": "api",
+          "name": "openFDA Device PMA: wearable-relevant approvals",
+          "fetched": 100,
+          "datePassed": 100,
+          "candidates": 0,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "api",
+          "name": "openFDA Device Recall: wearable-relevant recalls",
+          "fetched": 2,
+          "datePassed": 2,
+          "candidates": 0,
+          "kept": 0,
+          "error": null,
+          "warnings": [],
+          "partial": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Apple Newsroom / Watch",
+          "fetched": 10,
+          "datePassed": 10,
+          "qualityKept": 5,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Apple Developer HealthKit / WorkoutKit / watchOS",
+          "fetched": 10,
+          "datePassed": 10,
+          "qualityKept": 1,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Google Blog / Fitbit",
+          "fetched": 10,
+          "datePassed": 10,
+          "qualityKept": 2,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Android Developers Health & Fitness",
+          "fetched": 9,
+          "datePassed": 9,
+          "qualityKept": 1,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Android Health Connect Release Notes",
+          "fetched": 0,
+          "datePassed": 0,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "empty"
+        },
+        {
+          "method": "tavily",
+          "name": "Samsung Global Newsroom (Digital Health)",
+          "fetched": 10,
+          "datePassed": 10,
+          "qualityKept": 7,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Samsung Developers Health",
+          "fetched": 4,
+          "datePassed": 4,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Samsung Research Publications",
+          "fetched": 9,
+          "datePassed": 9,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Huawei Health Kit",
+          "fetched": 3,
+          "datePassed": 3,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Xiaomi Global Wearables",
+          "fetched": 10,
+          "datePassed": 10,
+          "qualityKept": 1,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Garmin Developers",
+          "fetched": 6,
+          "datePassed": 6,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Oura Science & Research",
+          "fetched": 10,
+          "datePassed": 10,
+          "qualityKept": 3,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Oura Developer API",
+          "fetched": 0,
+          "datePassed": 0,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "empty"
+        },
+        {
+          "method": "tavily",
+          "name": "WHOOP / The Locker",
+          "fetched": 10,
+          "datePassed": 10,
+          "qualityKept": 3,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "WHOOP Developer API",
+          "fetched": 1,
+          "datePassed": 1,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Withings Newsroom",
+          "fetched": 10,
+          "datePassed": 10,
+          "qualityKept": 4,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Withings API / Research",
+          "fetched": 0,
+          "datePassed": 0,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "empty"
+        },
+        {
+          "method": "tavily",
+          "name": "Dexcom News",
+          "fetched": 10,
+          "datePassed": 10,
+          "qualityKept": 3,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Dexcom Developer API",
+          "fetched": 0,
+          "datePassed": 0,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "empty"
+        },
+        {
+          "method": "tavily",
+          "name": "Abbott Biowearables",
+          "fetched": 1,
+          "datePassed": 1,
+          "qualityKept": 1,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Levels Blog",
+          "fetched": 2,
+          "datePassed": 2,
+          "qualityKept": 2,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "MedTech Dive",
+          "fetched": 10,
+          "datePassed": 6,
+          "qualityKept": 2,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Healthcare IT News",
+          "fetched": 4,
+          "datePassed": 3,
+          "qualityKept": 2,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Rock Health Insights",
+          "fetched": 2,
+          "datePassed": 0,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Digital Health Wire",
+          "fetched": 2,
+          "datePassed": 2,
+          "qualityKept": 2,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "DC Rainmaker",
+          "fetched": 10,
+          "datePassed": 10,
+          "qualityKept": 7,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "NeurIPS Health Workshops / OpenReview",
+          "fetched": 6,
+          "datePassed": 6,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "ICML Health Workshops / PMLR",
+          "fetched": 10,
+          "datePassed": 1,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "IEEE EMBC Proceedings",
+          "fetched": 10,
+          "datePassed": 10,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "IEEE BIBM Proceedings",
+          "fetched": 10,
+          "datePassed": 10,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "ACM IMWUT / UbiComp",
+          "fetched": 10,
+          "datePassed": 8,
+          "qualityKept": 2,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "ISWC Proceedings",
+          "fetched": 10,
+          "datePassed": 7,
+          "qualityKept": 2,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "IEEE Sensors / Wearable Proceedings",
+          "fetched": 10,
+          "datePassed": 3,
+          "qualityKept": 2,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "filtered"
+        },
+        {
+          "method": "tavily",
+          "name": "Digital Biomarkers Journal",
+          "fetched": 0,
+          "datePassed": 0,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": false,
+          "status": "empty"
+        },
+        {
+          "method": "tavily",
+          "name": "MobiHealthNews",
+          "fetched": 10,
+          "datePassed": 0,
+          "qualityKept": 0,
+          "finalKept": 0,
+          "kept": 0,
+          "capped": 0,
+          "error": null,
+          "fallback": true,
+          "status": "date_exhausted"
+        }
+      ],
+      "findings": []
+    }
+  ]
 }
